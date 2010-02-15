@@ -1,11 +1,11 @@
 src/rpy/Failure.d src/rpy/Failure.o: ../src/rpy/Failure.cpp \
-  ../src/rpy/Failure.h \
-  C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/oxf/oxf.h \
-  ../src/rpy/ESXState.h ../src/rpy/EmbeddedSystemX.h
+ ../src/rpy/Failure.h \
+ /home/stud/work/courses/tiirts/exercise1/source/embsysx/src/rpy/oxf/oxf.h \
+ ../src/rpy/ESXState.h ../src/rpy/EmbeddedSystemX.h
 
 ../src/rpy/Failure.h:
 
-C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/oxf/oxf.h:
+/home/stud/work/courses/tiirts/exercise1/source/embsysx/src/rpy/oxf/oxf.h:
 
 ../src/rpy/ESXState.h:
 
