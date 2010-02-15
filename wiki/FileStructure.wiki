@@ -1,6 +1,6 @@
 =File Structure on the TIIRTS projects repository=
 {{{
-\exerciseX\
+/exerciseX
 ├───rhapsody
 │   ├───DefaultComponent
 │   │   ├───CygwinConfig
