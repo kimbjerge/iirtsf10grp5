@@ -4,7 +4,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		- size = 0;
 	}
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 5;
+		- size = 4;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -14,11 +14,11 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -34;
-				- m_nLeft = 110;
-				- m_nTop = 110;
-				- m_nRight = 799;
-				- m_nBottom = 395;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 176;
+				- m_nTop = 176;
+				- m_nRight = 1088;
+				- m_nBottom = 572;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
@@ -26,11 +26,11 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _filename = "Default.sbs";
 				- _subsystem = "Default";
 				- _class = "";
-				- _name = "Animated TestModeSequence";
-				- _id = GUID fba004cc-a54c-4798-b0f1-9ff3527b39c1;
+				- _name = "Animated TestStartSequence";
+				- _id = GUID 6bb74a4a-790b-41fd-b51d-bde27e7b11d1;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1175 364 ;
+			- _UpLeft = 0 312 ;
+			- _DownRight = 884 641 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 		}
@@ -42,35 +42,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -34;
-				- m_nLeft = 88;
-				- m_nTop = 88;
-				- m_nRight = 777;
-				- m_nBottom = 373;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IMSC";
-				- _filename = "Default.sbs";
-				- _subsystem = "Default";
-				- _class = "";
-				- _name = "Animated TestStartSequence";
-				- _id = GUID 564ccc27-2bef-4376-bdfc-a1e27d8fccf1;
-			}
-			- _UpLeft = 0 2005 ;
-			- _DownRight = 1241 2390 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 1;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -34;
+				- m_ptMaxPositionY = -23;
 				- m_nLeft = 66;
 				- m_nTop = 66;
 				- m_nRight = 979;
@@ -85,10 +57,10 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID ab5c7395-da3c-4e5d-ac9e-6afc42ef961a;
 			}
-			- _UpLeft = 0 450 ;
-			- _DownRight = 908 978 ;
+			- _UpLeft = 0 130 ;
+			- _DownRight = 912 673 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 2;
+			- m_nDiagramIndex = 1;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -98,7 +70,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -34;
+				- m_ptMaxPositionY = -23;
 				- m_nLeft = 22;
 				- m_nTop = 22;
 				- m_nRight = 551;
@@ -113,10 +85,10 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StateModel";
 				- _id = GUID 4c782279-dd65-468b-a2bb-3838882f6867;
 			}
-			- _UpLeft = 0 24 ;
-			- _DownRight = 1351 720 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1090 574 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 4;
+			- m_nDiagramIndex = 3;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -126,7 +98,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -34;
+				- m_ptMaxPositionY = -23;
 				- m_nLeft = 44;
 				- m_nTop = 44;
 				- m_nRight = 957;
@@ -142,12 +114,12 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _id = GUID 5c793e7e-eb0e-4a2d-b6bd-fe07a24b41b6;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 2672 1554 ;
+			- _DownRight = 2682 1597 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 3;
+			- m_nDiagramIndex = 2;
 		}
 	}
-	- _fullName = "C:\\Projects\\TIIRTS\\exercise1\\rhapsody\\embsysx";
+	- _fullName = "C:\\IHA\\TI-IRTS\\exercise1\\rhapsody\\embsysx";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}
