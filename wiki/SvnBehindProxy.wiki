@@ -1,0 +1,15 @@
+#How to checkout behind a proxy
+
+= Introduction =
+Checking out data from within campus network involves at lot of headacke.
+
+= Details =
+
+*Add Proxy server*
+It is not enough to have set-up the system proxy and http_proxy, svn looks in 
+~/.subversion/servers for a proxy server
+
+Under [global] add the following:
+
+http_proxy_host = www-cache.iha.dk
+http_proxy_port =3128
