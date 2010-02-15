@@ -58,8 +58,8 @@ CPP_DEPS += \
 # Each subdirectory must supply rules for building sources it contributes
 src/rpy/%.o: ../src/rpy/%.cpp
 	@echo 'Building file: $<'
-	@echo 'Invoking: Cygwin C++ Compiler'
-	g++ -I"/home/stud/work/courses/tiirts/exercise1/source/embsysx/src/rpy" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -I"/home/stud/work/courses/tiirts/exercise1/source/embsysx/src/rpy" -I"/home/stud/work/courses/tiirts/exercise1/source/embsysx/src/rpy/oxf" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
