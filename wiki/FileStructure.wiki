@@ -1,0 +1,20 @@
+#File Structure on the TIIRTS projects
+{{{
+\exerciseX\
+├───rhapsody
+│   ├───DefaultComponent
+│   │   ├───CygwinConfig
+│   │   └───DefaultConfig
+│   └───embsysx_rpy
+└───source
+    └───embsysx
+        └───src
+            └───rpy
+                └───oxf
+}}}
+=Rhapsody=
+Only the basic project files and porject data base is included. The Rhapsody project is configured to output c++ files directly into the source file dir, "src"
+
+=Eclipse=
+The workspace does not contain all Eclipse's metadata. When a new project has been checked out, it will have to be imported into the Eclipse workspace.
+Having the exercise/source/project/structure allows us to have several projects in each exercise. 
