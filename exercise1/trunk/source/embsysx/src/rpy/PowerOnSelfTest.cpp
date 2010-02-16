@@ -1,21 +1,25 @@
 /********************************************************************
-	Rhapsody	: 7.5
+	Rhapsody	: 7.5 
 	Login		: phm
-	Component	: DefaultComponent
+	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: PowerOnSelfTest
-//!	Generated Date	: Mon, 15, Feb 2010
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/PowerOnSelfTest.cpp
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/PowerOnSelfTest.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "PowerOnSelfTest.h"
 //## operation SelfTestFailed(EmbeddedSystemX*,int)
 #include "EmbeddedSystemX.h"
+//## dependency Failure
+#include "Failure.h"
+//## dependency Initializing
+#include "Initializing.h"
 //## package Default
 
 //## class PowerOnSelfTest
-ESXState* PowerOnSelfTest::_instance = 0;
+ESXState* PowerOnSelfTest::_instance;
 
 PowerOnSelfTest::PowerOnSelfTest() {
 }
@@ -60,5 +64,5 @@ ESXState* PowerOnSelfTest::get_instance() {
 }
 
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/PowerOnSelfTest.cpp
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/PowerOnSelfTest.cpp
 *********************************************************************/

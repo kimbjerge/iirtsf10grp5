@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Suspended
-//!	Generated Date	: Mon, 15, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Suspended.h
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Suspended.h
 *********************************************************************/
 
 #ifndef Suspended_H
@@ -14,14 +14,23 @@
 //## auto_generated
 #include <oxf/oxf.h>
 //## class Suspended
-#include "OpState.h"
-//## operation Resume(Operational*)
-class Operational;
+#include "Operational.h"
+//## operation Instance()
+class ESXState;
+
+//## operation Resume(EmbeddedSystemX*)
+class EmbeddedSystemX;
+
+//## dependency Mode1
+class Mode1;
+
+//## dependency Ready
+class Ready;
 
 //## package Default
 
 //## class Suspended
-class Suspended : public OpState {
+class Suspended : public Operational {
     ////    Constructors and destructors    ////
     
 public :
@@ -35,13 +44,13 @@ public :
     ////    Operations    ////
     
     //## operation Instance()
-    static OpState* Instance();
+    static ESXState* Instance();
     
-    //## operation Resume(Operational*)
-    virtual void Resume(Operational* op);
+    //## operation Resume(EmbeddedSystemX*)
+    virtual void Resume(EmbeddedSystemX* esx);
     
-    //## operation Stop(Operational*)
-    virtual void Stop(Operational* op);
+    //## operation Stop(EmbeddedSystemX*)
+    virtual void Stop(EmbeddedSystemX* esx);
     
     ////    Additional operations    ////
     
@@ -49,7 +58,7 @@ public :
 
 protected :
 
-    static OpState* _instance;		//## attribute _instance
+    static ESXState* _instance;		//## attribute _instance
     
     //## operation DisplayState()
     virtual void DisplayState();
@@ -57,13 +66,13 @@ protected :
 private :
 
     //## auto_generated
-    static OpState* get_instance();
+    static void set_instance(ESXState* p__instance);
     
     //## auto_generated
-    static void set_instance(OpState* p__instance);
+    static ESXState* get_instance();
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Suspended.h
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Suspended.h
 *********************************************************************/

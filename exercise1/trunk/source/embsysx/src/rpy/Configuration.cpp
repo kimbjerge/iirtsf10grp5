@@ -1,17 +1,21 @@
 /********************************************************************
-	Rhapsody	: 7.5
+	Rhapsody	: 7.5 
 	Login		: phm
-	Component	: DefaultComponent
+	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Configuration
-//!	Generated Date	: Mon, 15, Feb 2010
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Configuration.cpp
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Configuration.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "Configuration.h"
-//## operation ConfigX(Operational*)
-#include "Operational.h"
+//## operation ConfigurationEnded(EmbeddedSystemX*)
+#include "EmbeddedSystemX.h"
+//## operation Instance()
+#include "ESXState.h"
+//## dependency Ready
+#include "Ready.h"
 //## package Default
 
 //## class Configuration
@@ -21,19 +25,19 @@ Configuration::Configuration() {
 Configuration::~Configuration() {
 }
 
-void Configuration::ConfigX(Operational* op) {
-    //#[ operation ConfigX(Operational*)
+void Configuration::ConfigX(EmbeddedSystemX* esx) {
+    //#[ operation ConfigX(EmbeddedSystemX*)
     defaultChange();
     //#]
 }
 
-void Configuration::ConfigurationEnded(Operational* op) {
-    //#[ operation ConfigurationEnded(Operational*)
-    defaultChange();
+void Configuration::ConfigurationEnded(EmbeddedSystemX* esx) {
+    //#[ operation ConfigurationEnded(EmbeddedSystemX*)
+    ChangeState(esx, Ready::Instance());
     //#]
 }
 
-OpState* Configuration::Instance() {
+ESXState* Configuration::Instance() {
     //#[ operation Instance()
     if (_instance == 0)
     {
@@ -43,7 +47,7 @@ OpState* Configuration::Instance() {
     //#]
 }
 
-OpState* Configuration::_instance = 0;
+ESXState* Configuration::_instance;
 
 void Configuration::DisplayState() {
     //#[ operation DisplayState()
@@ -51,14 +55,14 @@ void Configuration::DisplayState() {
     //#]
 }
 
-void Configuration::set_instance(OpState* p__instance) {
-    _instance = p__instance;
-}
-
-OpState* Configuration::get_instance() {
+ESXState* Configuration::get_instance() {
     return _instance;
 }
 
+void Configuration::set_instance(ESXState* p__instance) {
+    _instance = p__instance;
+}
+
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Configuration.cpp
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Configuration.cpp
 *********************************************************************/

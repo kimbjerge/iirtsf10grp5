@@ -1,21 +1,23 @@
 /********************************************************************
-	Rhapsody	: 7.5
+	Rhapsody	: 7.5 
 	Login		: phm
-	Component	: DefaultComponent
+	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Initializing
-//!	Generated Date	: Mon, 15, Feb 2010
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Initializing.cpp
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Initializing.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "Initializing.h"
 //## operation Initialized(EmbeddedSystemX*)
 #include "EmbeddedSystemX.h"
+//## dependency Ready
+#include "Ready.h"
 //## package Default
 
 //## class Initializing
-ESXState* Initializing::_instance = 0;
+ESXState* Initializing::_instance;
 
 Initializing::Initializing() {
 }
@@ -25,7 +27,7 @@ Initializing::~Initializing() {
 
 void Initializing::Initialized(EmbeddedSystemX* esx) {
     //#[ operation Initialized(EmbeddedSystemX*)
-    ChangeState(esx, Operational::Instance());
+    ChangeState(esx, Ready::Instance());
     //#]
 }
 
@@ -54,5 +56,5 @@ ESXState* Initializing::get_instance() {
 }
 
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Initializing.cpp
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Initializing.cpp
 *********************************************************************/

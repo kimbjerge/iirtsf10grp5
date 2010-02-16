@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: TestUser
-//!	Generated Date	: Mon, 15, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/TestUser.h
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/TestUser.h
 *********************************************************************/
 
 #ifndef TestUser_H
@@ -91,17 +91,33 @@ public :
     //## statechart_method
     virtual IOxfReactive::TakeEventStatus rootState_processEvent();
     
-    // tStart:
+    // tStartTest:
     //## statechart_method
-    inline bool tStart_IN() const;
+    inline bool tStartTest_IN() const;
     
-    // tSelftestOk:
+    // tReady:
     //## statechart_method
-    inline bool tSelftestOk_IN() const;
+    inline bool tReady_IN() const;
     
-    // tInitialized:
+    // tPowerOnSelfTest:
     //## statechart_method
-    inline bool tInitialized_IN() const;
+    inline bool tPowerOnSelfTest_IN() const;
+    
+    // tOperational:
+    //## statechart_method
+    inline bool tOperational_IN() const;
+    
+    // tInitializing:
+    //## statechart_method
+    inline bool tInitializing_IN() const;
+    
+    // tFailure:
+    //## statechart_method
+    inline bool tFailure_IN() const;
+    
+    // tConfigruation:
+    //## statechart_method
+    inline bool tConfigruation_IN() const;
     
     // tchMode:
     //## statechart_method
@@ -112,10 +128,14 @@ protected :
 //#[ ignore
     enum TestUser_Enum {
         OMNonState = 0,
-        tStart = 1,
-        tSelftestOk = 2,
-        tInitialized = 3,
-        tchMode = 4
+        tStartTest = 1,
+        tReady = 2,
+        tPowerOnSelfTest = 3,
+        tOperational = 4,
+        tInitializing = 5,
+        tFailure = 6,
+        tConfigruation = 7,
+        tchMode = 8
     };
     
     int rootState_subState;
@@ -130,16 +150,32 @@ inline bool TestUser::rootState_IN() const {
     return true;
 }
 
-inline bool TestUser::tStart_IN() const {
-    return rootState_subState == tStart;
+inline bool TestUser::tStartTest_IN() const {
+    return rootState_subState == tStartTest;
 }
 
-inline bool TestUser::tSelftestOk_IN() const {
-    return rootState_subState == tSelftestOk;
+inline bool TestUser::tReady_IN() const {
+    return rootState_subState == tReady;
 }
 
-inline bool TestUser::tInitialized_IN() const {
-    return rootState_subState == tInitialized;
+inline bool TestUser::tPowerOnSelfTest_IN() const {
+    return rootState_subState == tPowerOnSelfTest;
+}
+
+inline bool TestUser::tOperational_IN() const {
+    return rootState_subState == tOperational;
+}
+
+inline bool TestUser::tInitializing_IN() const {
+    return rootState_subState == tInitializing;
+}
+
+inline bool TestUser::tFailure_IN() const {
+    return rootState_subState == tFailure;
+}
+
+inline bool TestUser::tConfigruation_IN() const {
+    return rootState_subState == tConfigruation;
 }
 
 inline bool TestUser::tchMode_IN() const {
@@ -148,5 +184,5 @@ inline bool TestUser::tchMode_IN() const {
 
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/TestUser.h
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/TestUser.h
 *********************************************************************/

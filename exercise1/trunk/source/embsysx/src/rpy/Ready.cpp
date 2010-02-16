@@ -1,21 +1,25 @@
 /********************************************************************
-	Rhapsody	: 7.5
+	Rhapsody	: 7.5 
 	Login		: phm
-	Component	: DefaultComponent
+	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Ready
-//!	Generated Date	: Mon, 15, Feb 2010
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Ready.cpp
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Ready.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "Ready.h"
-//## operation Configure(Operational*)
-#include "Operational.h"
+//## operation Configure(EmbeddedSystemX*)
+#include "EmbeddedSystemX.h"
+//## operation Instance()
+#include "ESXState.h"
+//## dependency Mode1
+#include "Mode1.h"
 //## package Default
 
 //## class Ready
-OpState* Ready::_instance = 0;
+ESXState* Ready::_instance;
 
 Ready::Ready() {
 }
@@ -23,13 +27,13 @@ Ready::Ready() {
 Ready::~Ready() {
 }
 
-void Ready::Configure(Operational* op) {
-    //#[ operation Configure(Operational*)
-    defaultChange();
+void Ready::Configure(EmbeddedSystemX* esx) {
+    //#[ operation Configure(EmbeddedSystemX*)
+    ChangeState(esx, Configuration::Instance());
     //#]
 }
 
-OpState* Ready::Instance() {
+ESXState* Ready::Instance() {
     //#[ operation Instance()
     if (_instance == 0)
     {
@@ -39,9 +43,9 @@ OpState* Ready::Instance() {
     //#]
 }
 
-void Ready::Start(Operational* op) {
-    //#[ operation Start(Operational*)
-    ChangeState(op, RealTimeLoop::Instance());
+void Ready::Start(EmbeddedSystemX* esx) {
+    //#[ operation Start(EmbeddedSystemX*)
+    ChangeState(esx, Mode1::Instance());
     //#]
 }
 
@@ -51,14 +55,14 @@ void Ready::DisplayState() {
     //#]
 }
 
-OpState* Ready::get_instance() {
-    return _instance;
-}
-
-void Ready::set_instance(OpState* p__instance) {
+void Ready::set_instance(ESXState* p__instance) {
     _instance = p__instance;
 }
 
+ESXState* Ready::get_instance() {
+    return _instance;
+}
+
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Ready.cpp
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Ready.cpp
 *********************************************************************/

@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Initializing
-//!	Generated Date	: Mon, 15, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Initializing.h
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Initializing.h
 *********************************************************************/
 
 #ifndef Initializing_H
@@ -15,8 +15,9 @@
 #include <oxf/oxf.h>
 //## class Initializing
 #include "ESXState.h"
-//## dependency Operational
-#include "Operational.h"
+//## dependency Ready
+class Ready;
+
 //## operation Initialized(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
@@ -66,5 +67,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Initializing.h
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Initializing.h
 *********************************************************************/

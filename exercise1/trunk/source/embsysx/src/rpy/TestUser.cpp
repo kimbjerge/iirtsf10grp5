@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: TestUser
-//!	Generated Date	: Mon, 15, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/TestUser.cpp
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/TestUser.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -24,10 +24,6 @@ TestUser::TestUser(IOxfActive* theActiveContext) {
     //#[ operation TestUser()
     itsEmbeddedSystemX = new EmbeddedSystemX();
     itsEmbeddedSystemX->setItsESXState(PowerOnSelfTest::Instance());
-    Operational *pOp = Operational::Instance();
-    pOp->setItsOpState(Ready::Instance());   
-    RealTimeLoop *pRTL = RealTimeLoop::Instance();
-    pRTL->setItsRTLState(Mode1::Instance());   
     //#]
 }
 
@@ -83,8 +79,8 @@ bool TestUser::cancelTimeout(const IOxfTimeout* arg) {
 
 void TestUser::rootState_entDef() {
     {
-        rootState_subState = tSelftestOk;
-        rootState_active = tSelftestOk;
+        rootState_subState = tStartTest;
+        rootState_active = tStartTest;
         ROOT_timeout = scheduleTimeout(1000, NULL);
     }
 }
@@ -92,7 +88,7 @@ void TestUser::rootState_entDef() {
 IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
     switch (rootState_active) {
-        case tSelftestOk:
+        case tStartTest:
         {
             if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
                 {
@@ -104,41 +100,18 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
                                     ROOT_timeout = NULL;
                                 }
                             //#[ transition 1 
-                            itsEmbeddedSystemX->SelftestOk();
+                            itsEmbeddedSystemX->SelfTestFailed(44);
                             //#]
-                            rootState_subState = tInitialized;
-                            rootState_active = tInitialized;
-                            ROOT_timeout = scheduleTimeout(1000, NULL);
+                            rootState_subState = tFailure;
+                            rootState_active = tFailure;
+                            ROOT_timeout = scheduleTimeout(500, NULL);
                             res = eventConsumed;
                         }
                 }
             
         }
         break;
-        case tInitialized:
-        {
-            if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
-                {
-                    if(getCurrentEvent() == ROOT_timeout)
-                        {
-                            if(ROOT_timeout != NULL)
-                                {
-                                    ROOT_timeout->cancel();
-                                    ROOT_timeout = NULL;
-                                }
-                            //#[ transition 2 
-                            itsEmbeddedSystemX->Initialized();
-                            //#]
-                            rootState_subState = tStart;
-                            rootState_active = tStart;
-                            ROOT_timeout = scheduleTimeout(1000, NULL);
-                            res = eventConsumed;
-                        }
-                }
-            
-        }
-        break;
-        case tStart:
+        case tFailure:
         {
             if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
                 {
@@ -150,10 +123,33 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
                                     ROOT_timeout = NULL;
                                 }
                             //#[ transition 3 
-                            itsEmbeddedSystemX->Start();
+                            itsEmbeddedSystemX->Restart();
                             //#]
-                            rootState_subState = tchMode;
-                            rootState_active = tchMode;
+                            rootState_subState = tPowerOnSelfTest;
+                            rootState_active = tPowerOnSelfTest;
+                            ROOT_timeout = scheduleTimeout(1000, NULL);
+                            res = eventConsumed;
+                        }
+                }
+            
+        }
+        break;
+        case tOperational:
+        {
+            if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+                {
+                    if(getCurrentEvent() == ROOT_timeout)
+                        {
+                            if(ROOT_timeout != NULL)
+                                {
+                                    ROOT_timeout->cancel();
+                                    ROOT_timeout = NULL;
+                                }
+                            //#[ transition 6 
+                            itsEmbeddedSystemX->Configure();
+                            //#]
+                            rootState_subState = tConfigruation;
+                            rootState_active = tConfigruation;
                             ROOT_timeout = scheduleTimeout(1000, NULL);
                             res = eventConsumed;
                         }
@@ -172,8 +168,100 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
                                     ROOT_timeout->cancel();
                                     ROOT_timeout = NULL;
                                 }
-                            //#[ transition 4 
+                            //#[ transition 2 
                             itsEmbeddedSystemX->chMode();
+                            //#]
+                            rootState_subState = tchMode;
+                            rootState_active = tchMode;
+                            ROOT_timeout = scheduleTimeout(1000, NULL);
+                            res = eventConsumed;
+                        }
+                }
+            
+        }
+        break;
+        case tPowerOnSelfTest:
+        {
+            if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+                {
+                    if(getCurrentEvent() == ROOT_timeout)
+                        {
+                            if(ROOT_timeout != NULL)
+                                {
+                                    ROOT_timeout->cancel();
+                                    ROOT_timeout = NULL;
+                                }
+                            //#[ transition 4 
+                            itsEmbeddedSystemX->SelftestOk();
+                            //#]
+                            rootState_subState = tInitializing;
+                            rootState_active = tInitializing;
+                            ROOT_timeout = scheduleTimeout(1000, NULL);
+                            res = eventConsumed;
+                        }
+                }
+            
+        }
+        break;
+        case tInitializing:
+        {
+            if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+                {
+                    if(getCurrentEvent() == ROOT_timeout)
+                        {
+                            if(ROOT_timeout != NULL)
+                                {
+                                    ROOT_timeout->cancel();
+                                    ROOT_timeout = NULL;
+                                }
+                            //#[ transition 5 
+                            itsEmbeddedSystemX->Initialized();
+                            //#]
+                            rootState_subState = tOperational;
+                            rootState_active = tOperational;
+                            ROOT_timeout = scheduleTimeout(500, NULL);
+                            res = eventConsumed;
+                        }
+                }
+            
+        }
+        break;
+        case tConfigruation:
+        {
+            if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+                {
+                    if(getCurrentEvent() == ROOT_timeout)
+                        {
+                            if(ROOT_timeout != NULL)
+                                {
+                                    ROOT_timeout->cancel();
+                                    ROOT_timeout = NULL;
+                                }
+                            //#[ transition 7 
+                            itsEmbeddedSystemX->ConfigurationEnded();
+                            //#]
+                            rootState_subState = tReady;
+                            rootState_active = tReady;
+                            ROOT_timeout = scheduleTimeout(1000, NULL);
+                            res = eventConsumed;
+                        }
+                }
+            
+        }
+        break;
+        case tReady:
+        {
+            if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+                {
+                    if(getCurrentEvent() == ROOT_timeout)
+                        {
+                            if(ROOT_timeout != NULL)
+                                {
+                                    ROOT_timeout->cancel();
+                                    ROOT_timeout = NULL;
+                                }
+                            //#[ transition 8 
+                            itsEmbeddedSystemX->Start();
                             //#]
                             rootState_subState = tchMode;
                             rootState_active = tchMode;
@@ -191,5 +279,5 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
 }
 
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/TestUser.cpp
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/TestUser.cpp
 *********************************************************************/

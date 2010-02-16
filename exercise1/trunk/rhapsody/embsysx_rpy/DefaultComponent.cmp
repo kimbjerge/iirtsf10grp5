@@ -226,7 +226,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID f79cfb19-8c21-43d9-9e55-a8835834a909;
 				- _myState = 73728;
 				- _name = "LinuxSource";
-				- m_path = "C:\\Projects\\TIIRTS\\embsysx\\eclipse\\embsysx\\src\\rpy";
+				- m_path = "C:\\Projects\\TIIRTS\\exercise1\\source\\embsysx\\src\\rpy";
 				- Elements = { IRPYRawContainer 
 					- size = 0;
 				}
@@ -234,8 +234,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- size = 0;
 				}
 			}
-			- weakCGTime = 2.15.2010::9:43:15;
-			- strongCGTime = 2.15.2010::9:43:15;
+			- weakCGTime = 2.16.2010::10:55:17;
+			- strongCGTime = 2.16.2010::10:55:17;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
@@ -360,7 +360,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 2.15.2010::20:31:20;
+	- weakCGTime = 2.16.2010::10:55:17;
 	- strongCGTime = 2.15.2010::20:31:20;
 }
 

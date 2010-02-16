@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: LinuxSource
-//!	Generated Date	: Mon, 15, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/MainDefaultComponent.h
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/MainDefaultComponent.h
 *********************************************************************/
 
 #ifndef MainDefaultComponent_H
@@ -15,5 +15,5 @@
 #include <oxf/oxf.h>
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/MainDefaultComponent.h
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/MainDefaultComponent.h
 *********************************************************************/

@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Failure
-//!	Generated Date	: Mon, 15, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Failure.h
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Failure.h
 *********************************************************************/
 
 #ifndef Failure_H
@@ -15,6 +15,9 @@
 #include <oxf/oxf.h>
 //## class Failure
 #include "ESXState.h"
+//## dependency PowerOnSelfTest
+class PowerOnSelfTest;
+
 //## operation Exit(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
@@ -67,5 +70,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Failure.h
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Failure.h
 *********************************************************************/

@@ -65,9 +65,7 @@ OBJS= \
   Mode1.o \
   Mode2.o \
   Mode3.o \
-  TestUser.o \
-  OpState.o \
-  RTLState.o
+  TestUser.o
 
 
 
@@ -156,7 +154,7 @@ PowerOnSelfTest.o : PowerOnSelfTest.cpp PowerOnSelfTest.h    Failure.h Initializ
 
 
 
-Failure.o : Failure.cpp Failure.h    ESXState.h EmbeddedSystemX.h 
+Failure.o : Failure.cpp Failure.h    PowerOnSelfTest.h ESXState.h EmbeddedSystemX.h 
 	@echo Compiling Failure.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Failure.o Failure.cpp
@@ -164,7 +162,7 @@ Failure.o : Failure.cpp Failure.h    ESXState.h EmbeddedSystemX.h
 
 
 
-Initializing.o : Initializing.cpp Initializing.h    Operational.h ESXState.h EmbeddedSystemX.h 
+Initializing.o : Initializing.cpp Initializing.h    Ready.h ESXState.h EmbeddedSystemX.h 
 	@echo Compiling Initializing.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Initializing.o Initializing.cpp
@@ -172,7 +170,7 @@ Initializing.o : Initializing.cpp Initializing.h    Operational.h ESXState.h Emb
 
 
 
-Operational.o : Operational.cpp Operational.h    OpState.h EmbeddedSystemX.h ESXState.h 
+Operational.o : Operational.cpp Operational.h    EmbeddedSystemX.h ESXState.h 
 	@echo Compiling Operational.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Operational.o Operational.cpp
@@ -180,7 +178,7 @@ Operational.o : Operational.cpp Operational.h    OpState.h EmbeddedSystemX.h ESX
 
 
 
-RealTimeLoop.o : RealTimeLoop.cpp RealTimeLoop.h    RTLState.h Operational.h OpState.h 
+RealTimeLoop.o : RealTimeLoop.cpp RealTimeLoop.h    ESXState.h Operational.h EmbeddedSystemX.h 
 	@echo Compiling RealTimeLoop.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o RealTimeLoop.o RealTimeLoop.cpp
@@ -188,7 +186,7 @@ RealTimeLoop.o : RealTimeLoop.cpp RealTimeLoop.h    RTLState.h Operational.h OpS
 
 
 
-Ready.o : Ready.cpp Ready.h    RealTimeLoop.h OpState.h Operational.h 
+Ready.o : Ready.cpp Ready.h    Mode1.h Configuration.h ESXState.h EmbeddedSystemX.h Operational.h 
 	@echo Compiling Ready.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Ready.o Ready.cpp
@@ -196,7 +194,7 @@ Ready.o : Ready.cpp Ready.h    RealTimeLoop.h OpState.h Operational.h
 
 
 
-Configuration.o : Configuration.cpp Configuration.h    OpState.h Operational.h 
+Configuration.o : Configuration.cpp Configuration.h    Ready.h ESXState.h EmbeddedSystemX.h Operational.h 
 	@echo Compiling Configuration.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Configuration.o Configuration.cpp
@@ -204,7 +202,7 @@ Configuration.o : Configuration.cpp Configuration.h    OpState.h Operational.h
 
 
 
-Suspended.o : Suspended.cpp Suspended.h    OpState.h Operational.h 
+Suspended.o : Suspended.cpp Suspended.h    Ready.h Mode1.h ESXState.h EmbeddedSystemX.h Operational.h 
 	@echo Compiling Suspended.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Suspended.o Suspended.cpp
@@ -212,7 +210,7 @@ Suspended.o : Suspended.cpp Suspended.h    OpState.h Operational.h
 
 
 
-Mode1.o : Mode1.cpp Mode1.h    Mode2.h RTLState.h RealTimeLoop.h 
+Mode1.o : Mode1.cpp Mode1.h    Mode2.h ESXState.h EmbeddedSystemX.h RealTimeLoop.h Operational.h 
 	@echo Compiling Mode1.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Mode1.o Mode1.cpp
@@ -220,7 +218,7 @@ Mode1.o : Mode1.cpp Mode1.h    Mode2.h RTLState.h RealTimeLoop.h
 
 
 
-Mode2.o : Mode2.cpp Mode2.h    Mode3.h RTLState.h RealTimeLoop.h 
+Mode2.o : Mode2.cpp Mode2.h    Mode3.h ESXState.h EmbeddedSystemX.h RealTimeLoop.h Operational.h 
 	@echo Compiling Mode2.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Mode2.o Mode2.cpp
@@ -228,7 +226,7 @@ Mode2.o : Mode2.cpp Mode2.h    Mode3.h RTLState.h RealTimeLoop.h
 
 
 
-Mode3.o : Mode3.cpp Mode3.h    Mode1.h RTLState.h RealTimeLoop.h 
+Mode3.o : Mode3.cpp Mode3.h    Mode1.h ESXState.h EmbeddedSystemX.h RealTimeLoop.h Operational.h 
 	@echo Compiling Mode3.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Mode3.o Mode3.cpp
@@ -240,22 +238,6 @@ TestUser.o : TestUser.cpp TestUser.h    EmbeddedSystemX.h PowerOnSelfTest.h Oper
 	@echo Compiling TestUser.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o TestUser.o TestUser.cpp
-
-
-
-
-OpState.o : OpState.cpp OpState.h    Operational.h 
-	@echo Compiling OpState.cpp
-	$(CREATE_OBJ_DIR)
-	@$(CC) $(ConfigurationCPPCompileSwitches)  -o OpState.o OpState.cpp
-
-
-
-
-RTLState.o : RTLState.cpp RTLState.h    RealTimeLoop.h 
-	@echo Compiling RTLState.cpp
-	$(CREATE_OBJ_DIR)
-	@$(CC) $(ConfigurationCPPCompileSwitches)  -o RTLState.o RTLState.cpp
 
 
 
@@ -302,8 +284,6 @@ clean:
 	$(RM) Mode2.o
 	$(RM) Mode3.o
 	$(RM) TestUser.o
-	$(RM) OpState.o
-	$(RM) RTLState.o
 	$(RM) $(TARGET_MAIN)$(OBJ_EXT) $(ADDITIONAL_OBJS)
 	$(RM) $(TARGET_NAME)$(LIB_EXT)
 	$(RM) $(TARGET_NAME)$(EXE_EXT)

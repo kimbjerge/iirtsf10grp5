@@ -356,7 +356,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "StateModel";
-			- _lastModifiedTime = "2.15.2010::20:31:16";
+			- _lastModifiedTime = "2.16.2010::12:0:47";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 9692cb11-283b-4fe7-80c5-1b1ffc4ad7f4;
 				- m_type = 0;
@@ -2370,7 +2370,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.133144 0 0 0.117647 652.733 793.294 ;
+					- m_transform = 0.133144 0 0 0.117647 659.733 783.294 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";

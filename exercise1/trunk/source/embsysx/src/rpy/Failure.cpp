@@ -1,21 +1,23 @@
 /********************************************************************
-	Rhapsody	: 7.5
+	Rhapsody	: 7.5 
 	Login		: phm
-	Component	: DefaultComponent
+	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Failure
-//!	Generated Date	: Mon, 15, Feb 2010
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Failure.cpp
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Failure.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "Failure.h"
 //## operation Exit(EmbeddedSystemX*)
 #include "EmbeddedSystemX.h"
+//## dependency PowerOnSelfTest
+#include "PowerOnSelfTest.h"
 //## package Default
 
 //## class Failure
-ESXState* Failure::_instance = 0;
+ESXState* Failure::_instance;
 
 Failure::Failure() {
 }
@@ -25,6 +27,7 @@ Failure::~Failure() {
 
 void Failure::Exit(EmbeddedSystemX* esx) {
     //#[ operation Exit(EmbeddedSystemX*)
+    exit(1);
     defaultChange();
     //#]
 }
@@ -41,7 +44,7 @@ ESXState* Failure::Instance() {
 
 void Failure::Restart(EmbeddedSystemX* esx) {
     //#[ operation Restart(EmbeddedSystemX*)
-    defaultChange();
+    ChangeState(esx, PowerOnSelfTest::Instance());
     //#]
 }
 
@@ -60,5 +63,5 @@ ESXState* Failure::get_instance() {
 }
 
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Failure.cpp
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Failure.cpp
 *********************************************************************/

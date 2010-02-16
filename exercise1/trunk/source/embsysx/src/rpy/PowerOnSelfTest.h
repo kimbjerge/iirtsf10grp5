@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: PowerOnSelfTest
-//!	Generated Date	: Mon, 15, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/PowerOnSelfTest.h
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/PowerOnSelfTest.h
 *********************************************************************/
 
 #ifndef PowerOnSelfTest_H
@@ -16,9 +16,11 @@
 //## class PowerOnSelfTest
 #include "ESXState.h"
 //## dependency Failure
-#include "Failure.h"
+class Failure;
+
 //## dependency Initializing
-#include "Initializing.h"
+class Initializing;
+
 //## operation SelfTestFailed(EmbeddedSystemX*,int)
 class EmbeddedSystemX;
 
@@ -71,5 +73,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/PowerOnSelfTest.h
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/PowerOnSelfTest.h
 *********************************************************************/

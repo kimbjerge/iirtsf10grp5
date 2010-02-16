@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: ESXState
-//!	Generated Date	: Mon, 15, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/ESXState.cpp
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/ESXState.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -130,10 +130,10 @@ void ESXState::DisplayState() {
 
 void ESXState::Display(char* name) {
     //#[ operation Display(char*)
-    cout << name << endl;
+    std::cout << name << std::endl;
     //#]
 }
 
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/ESXState.cpp
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/ESXState.cpp
 *********************************************************************/

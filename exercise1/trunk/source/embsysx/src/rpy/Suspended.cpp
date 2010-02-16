@@ -1,21 +1,27 @@
 /********************************************************************
-	Rhapsody	: 7.5
+	Rhapsody	: 7.5 
 	Login		: phm
-	Component	: DefaultComponent
+	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Suspended
-//!	Generated Date	: Mon, 15, Feb 2010
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Suspended.cpp
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Suspended.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "Suspended.h"
-//## operation Resume(Operational*)
-#include "Operational.h"
+//## operation Resume(EmbeddedSystemX*)
+#include "EmbeddedSystemX.h"
+//## operation Instance()
+#include "ESXState.h"
+//## dependency Mode1
+#include "Mode1.h"
+//## dependency Ready
+#include "Ready.h"
 //## package Default
 
 //## class Suspended
-OpState* Suspended::_instance = 0;
+ESXState* Suspended::_instance;
 
 Suspended::Suspended() {
 }
@@ -23,7 +29,7 @@ Suspended::Suspended() {
 Suspended::~Suspended() {
 }
 
-OpState* Suspended::Instance() {
+ESXState* Suspended::Instance() {
     //#[ operation Instance()
     if (_instance == 0)
     {
@@ -33,15 +39,15 @@ OpState* Suspended::Instance() {
     //#]
 }
 
-void Suspended::Resume(Operational* op) {
-    //#[ operation Resume(Operational*)
-    defaultChange();
+void Suspended::Resume(EmbeddedSystemX* esx) {
+    //#[ operation Resume(EmbeddedSystemX*)
+    ChangeState(esx, Mode1::Instance());
     //#]
 }
 
-void Suspended::Stop(Operational* op) {
-    //#[ operation Stop(Operational*)
-    defaultChange();
+void Suspended::Stop(EmbeddedSystemX* esx) {
+    //#[ operation Stop(EmbeddedSystemX*)
+    ChangeState(esx, Ready::Instance());
     //#]
 }
 
@@ -51,14 +57,14 @@ void Suspended::DisplayState() {
     //#]
 }
 
-OpState* Suspended::get_instance() {
-    return _instance;
-}
-
-void Suspended::set_instance(OpState* p__instance) {
+void Suspended::set_instance(ESXState* p__instance) {
     _instance = p__instance;
 }
 
+ESXState* Suspended::get_instance() {
+    return _instance;
+}
+
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Suspended.cpp
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Suspended.cpp
 *********************************************************************/

@@ -14,7 +14,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -23;
+				- m_ptMaxPositionY = -34;
 				- m_nLeft = 176;
 				- m_nTop = 176;
 				- m_nRight = 1088;
@@ -29,8 +29,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "Animated TestStartSequence";
 				- _id = GUID 6bb74a4a-790b-41fd-b51d-bde27e7b11d1;
 			}
-			- _UpLeft = 0 312 ;
-			- _DownRight = 884 641 ;
+			- _UpLeft = 0 289 ;
+			- _DownRight = 927 620 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 		}
@@ -42,7 +42,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -23;
+				- m_ptMaxPositionY = -34;
 				- m_nLeft = 66;
 				- m_nTop = 66;
 				- m_nRight = 979;
@@ -57,8 +57,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID ab5c7395-da3c-4e5d-ac9e-6afc42ef961a;
 			}
-			- _UpLeft = 0 130 ;
-			- _DownRight = 912 673 ;
+			- _UpLeft = 0 129 ;
+			- _DownRight = 938 674 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
 		}
@@ -70,7 +70,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -23;
+				- m_ptMaxPositionY = -34;
 				- m_nLeft = 22;
 				- m_nTop = 22;
 				- m_nRight = 551;
@@ -85,8 +85,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StateModel";
 				- _id = GUID 4c782279-dd65-468b-a2bb-3838882f6867;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1090 574 ;
+			- _UpLeft = 0 438 ;
+			- _DownRight = 1351 974 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 3;
 		}
@@ -98,7 +98,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -23;
+				- m_ptMaxPositionY = -34;
 				- m_nLeft = 44;
 				- m_nTop = 44;
 				- m_nRight = 957;
@@ -113,13 +113,13 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "TestModel";
 				- _id = GUID 5c793e7e-eb0e-4a2d-b6bd-fe07a24b41b6;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 2682 1597 ;
+			- _UpLeft = 0 109 ;
+			- _DownRight = 882 622 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 2;
 		}
 	}
-	- _fullName = "C:\\IHA\\TI-IRTS\\exercise1\\rhapsody\\embsysx";
+	- _fullName = "C:\\Projects\\TIIRTS\\exercise1\\rhapsody\\embsysx";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}

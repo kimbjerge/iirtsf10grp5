@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Mode3
-//!	Generated Date	: Mon, 15, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Mode3.h
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Mode3.h
 *********************************************************************/
 
 #ifndef Mode3_H
@@ -14,16 +14,20 @@
 //## auto_generated
 #include <oxf/oxf.h>
 //## class Mode3
-#include "RTLState.h"
+#include "RealTimeLoop.h"
+//## operation Instance()
+class ESXState;
+
+//## operation chMode(EmbeddedSystemX*)
+class EmbeddedSystemX;
+
 //## dependency Mode1
-#include "Mode1.h"
-//## operation chMode(RealTimeLoop *)
-class RealTimeLoop;
+class Mode1;
 
 //## package Default
 
 //## class Mode3
-class Mode3 : public RTLState {
+class Mode3 : public RealTimeLoop {
     ////    Constructors and destructors    ////
     
 public :
@@ -37,10 +41,10 @@ public :
     ////    Operations    ////
     
     //## operation Instance()
-    static RTLState* Instance();
+    static ESXState* Instance();
     
-    //## operation chMode(RealTimeLoop *)
-    virtual void chMode(RealTimeLoop * rtl);
+    //## operation chMode(EmbeddedSystemX*)
+    virtual void chMode(EmbeddedSystemX* esx);
     
     ////    Additional operations    ////
     
@@ -48,7 +52,7 @@ public :
 
 protected :
 
-    static RTLState* _instance;		//## attribute _instance
+    static ESXState* _instance;		//## attribute _instance
     
     //## operation DisplayState()
     virtual void DisplayState();
@@ -56,13 +60,13 @@ protected :
 private :
 
     //## auto_generated
-    static RTLState* get_instance();
+    static void set_instance(ESXState* p__instance);
     
     //## auto_generated
-    static void set_instance(RTLState* p__instance);
+    static ESXState* get_instance();
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Mode3.h
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Mode3.h
 *********************************************************************/

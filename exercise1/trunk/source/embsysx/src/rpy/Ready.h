@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Ready
-//!	Generated Date	: Mon, 15, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Ready.h
+//!	Generated Date	: Tue, 16, Feb 2010  
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Ready.h
 *********************************************************************/
 
 #ifndef Ready_H
@@ -14,16 +14,22 @@
 //## auto_generated
 #include <oxf/oxf.h>
 //## class Ready
-#include "OpState.h"
-//## dependency RealTimeLoop
-#include "RealTimeLoop.h"
-//## operation Configure(Operational*)
-class Operational;
+#include "Operational.h"
+//## dependency Configuration
+#include "Configuration.h"
+//## dependency Mode1
+class Mode1;
+
+//## operation Instance()
+class ESXState;
+
+//## operation Configure(EmbeddedSystemX*)
+class EmbeddedSystemX;
 
 //## package Default
 
 //## class Ready
-class Ready : public OpState {
+class Ready : public Operational {
     ////    Constructors and destructors    ////
     
 public :
@@ -36,14 +42,14 @@ public :
     
     ////    Operations    ////
     
-    //## operation Configure(Operational*)
-    virtual void Configure(Operational* op);
+    //## operation Configure(EmbeddedSystemX*)
+    virtual void Configure(EmbeddedSystemX* esx);
     
     //## operation Instance()
-    static OpState* Instance();
+    static ESXState* Instance();
     
-    //## operation Start(Operational*)
-    virtual void Start(Operational* op);
+    //## operation Start(EmbeddedSystemX*)
+    virtual void Start(EmbeddedSystemX* esx);
     
     ////    Additional operations    ////
     
@@ -51,7 +57,7 @@ public :
 
 protected :
 
-    static OpState* _instance;		//## attribute _instance
+    static ESXState* _instance;		//## attribute _instance
     
     //## operation DisplayState()
     virtual void DisplayState();
@@ -59,13 +65,13 @@ protected :
 private :
 
     //## auto_generated
-    static OpState* get_instance();
+    static void set_instance(ESXState* p__instance);
     
     //## auto_generated
-    static void set_instance(OpState* p__instance);
+    static ESXState* get_instance();
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/embsysx/eclipse/embsysx/src/rpy/Ready.h
+	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Ready.h
 *********************************************************************/
