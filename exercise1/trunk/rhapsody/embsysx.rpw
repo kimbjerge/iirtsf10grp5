@@ -4,7 +4,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		- size = 0;
 	}
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 4;
+		- size = 3;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -14,25 +14,25 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -34;
-				- m_nLeft = 176;
-				- m_nTop = 176;
-				- m_nRight = 1088;
-				- m_nBottom = 572;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 22;
+				- m_nTop = 22;
+				- m_nRight = 551;
+				- m_nBottom = 502;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
-				- _m2Class = "IMSC";
-				- _filename = "Default.sbs";
-				- _subsystem = "Default";
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
 				- _class = "";
-				- _name = "Animated TestStartSequence";
-				- _id = GUID 6bb74a4a-790b-41fd-b51d-bde27e7b11d1;
+				- _name = "CommandStateModel";
+				- _id = GUID 4c782279-dd65-468b-a2bb-3838882f6867;
 			}
-			- _UpLeft = 0 289 ;
-			- _DownRight = 927 620 ;
+			- _UpLeft = 72 0 ;
+			- _DownRight = 740 577 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 0;
+			- m_nDiagramIndex = 2;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -42,7 +42,35 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -34;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 0;
+				- m_nTop = 0;
+				- m_nRight = 1078;
+				- m_nBottom = 413;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IMSC";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Animated TestStartSequence";
+				- _id = GUID 7255d431-0d6f-4903-9a64-c4f913609ab9;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1256 571 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
 				- m_nLeft = 66;
 				- m_nTop = 66;
 				- m_nRight = 979;
@@ -57,69 +85,13 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID ab5c7395-da3c-4e5d-ac9e-6afc42ef961a;
 			}
-			- _UpLeft = 0 211 ;
-			- _DownRight = 1269 760 ;
+			- _UpLeft = 0 100 ;
+			- _DownRight = 1053 727 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
 		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -34;
-				- m_nLeft = 22;
-				- m_nTop = 22;
-				- m_nRight = 551;
-				- m_nBottom = 502;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IDiagram";
-				- _filename = "";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "StateModel";
-				- _id = GUID 4c782279-dd65-468b-a2bb-3838882f6867;
-			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 664 559 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 3;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -34;
-				- m_nLeft = 44;
-				- m_nTop = 44;
-				- m_nRight = 957;
-				- m_nBottom = 618;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IDiagram";
-				- _filename = "";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "TestModel";
-				- _id = GUID 5c793e7e-eb0e-4a2d-b6bd-fe07a24b41b6;
-			}
-			- _UpLeft = 0 210 ;
-			- _DownRight = 882 723 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 2;
-		}
 	}
-	- _fullName = "C:\\Projects\\TIIRTS\\exercise1\\rhapsody\\embsysx";
+	- _fullName = "C:\\IHA\\TI-IRTS\\exercise2\\rhapsody\\embsysx";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}
