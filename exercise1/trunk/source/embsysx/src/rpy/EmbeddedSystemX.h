@@ -59,51 +59,6 @@ protected :
 
 public :
 
-    //## operation ConfigX()
-    void ConfigX();
-    
-    //## operation ConfigurationEnded()
-    void ConfigurationEnded();
-    
-    //## operation Configure()
-    void Configure();
-    
-    //## operation Exit()
-    void Exit();
-    
-    //## operation Initialized()
-    void Initialized();
-    
-    //## operation Restart()
-    void Restart();
-    
-    //## operation Resume()
-    void Resume();
-    
-    //## operation SelfTestFailed(int)
-    void SelfTestFailed(int ErrorNo);
-    
-    //## operation SelftestOk()
-    void SelftestOk();
-    
-    //## operation Start()
-    void Start();
-    
-    //## operation Stop()
-    void Stop();
-    
-    //## operation Suspend()
-    void Suspend();
-    
-    //## operation chMode()
-    void chMode();
-    
-    //## operation eventX()
-    void eventX();
-    
-    //## operation eventY()
-    void eventY();
-    
     //## operation EmbeddedSystemX()
     EmbeddedSystemX();
 };

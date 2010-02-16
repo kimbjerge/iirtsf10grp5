@@ -65,7 +65,23 @@ OBJS= \
   Mode1.o \
   Mode2.o \
   Mode3.o \
-  TestUser.o
+  TestUser.o \
+  Command.o \
+  SelfTestFailed.o \
+  Initialized.o \
+  Configure.o \
+  ConfigurationEnded.o \
+  Stop.o \
+  Suspend.o \
+  Resume.o \
+  Start.o \
+  Restart.o \
+  ChMode.o \
+  Exit.o \
+  ConfigX.o \
+  eventX.o \
+  eventY.o \
+  SelfTestOk.o
 
 
 
@@ -242,6 +258,134 @@ TestUser.o : TestUser.cpp TestUser.h    EmbeddedSystemX.h PowerOnSelfTest.h Oper
 
 
 
+Command.o : Command.cpp Command.h    ESXState.h 
+	@echo Compiling Command.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Command.o Command.cpp
+
+
+
+
+SelfTestFailed.o : SelfTestFailed.cpp SelfTestFailed.h    ESXState.h Command.h 
+	@echo Compiling SelfTestFailed.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o SelfTestFailed.o SelfTestFailed.cpp
+
+
+
+
+Initialized.o : Initialized.cpp Initialized.h    ESXState.h Command.h 
+	@echo Compiling Initialized.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Initialized.o Initialized.cpp
+
+
+
+
+Configure.o : Configure.cpp Configure.h    ESXState.h Command.h 
+	@echo Compiling Configure.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Configure.o Configure.cpp
+
+
+
+
+ConfigurationEnded.o : ConfigurationEnded.cpp ConfigurationEnded.h    ESXState.h Command.h 
+	@echo Compiling ConfigurationEnded.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o ConfigurationEnded.o ConfigurationEnded.cpp
+
+
+
+
+Stop.o : Stop.cpp Stop.h    ESXState.h Command.h 
+	@echo Compiling Stop.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Stop.o Stop.cpp
+
+
+
+
+Suspend.o : Suspend.cpp Suspend.h    ESXState.h Command.h 
+	@echo Compiling Suspend.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Suspend.o Suspend.cpp
+
+
+
+
+Resume.o : Resume.cpp Resume.h    ESXState.h Command.h 
+	@echo Compiling Resume.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Resume.o Resume.cpp
+
+
+
+
+Start.o : Start.cpp Start.h    ESXState.h Command.h 
+	@echo Compiling Start.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Start.o Start.cpp
+
+
+
+
+Restart.o : Restart.cpp Restart.h    ESXState.h Command.h 
+	@echo Compiling Restart.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Restart.o Restart.cpp
+
+
+
+
+ChMode.o : ChMode.cpp ChMode.h    ESXState.h Command.h 
+	@echo Compiling ChMode.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o ChMode.o ChMode.cpp
+
+
+
+
+Exit.o : Exit.cpp Exit.h    ESXState.h Command.h 
+	@echo Compiling Exit.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Exit.o Exit.cpp
+
+
+
+
+ConfigX.o : ConfigX.cpp ConfigX.h    ESXState.h Command.h 
+	@echo Compiling ConfigX.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o ConfigX.o ConfigX.cpp
+
+
+
+
+eventX.o : eventX.cpp eventX.h    ESXState.h Command.h 
+	@echo Compiling eventX.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o eventX.o eventX.cpp
+
+
+
+
+eventY.o : eventY.cpp eventY.h    ESXState.h Command.h 
+	@echo Compiling eventY.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o eventY.o eventY.cpp
+
+
+
+
+SelfTestOk.o : SelfTestOk.cpp SelfTestOk.h    ESXState.h Command.h 
+	@echo Compiling SelfTestOk.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o SelfTestOk.o SelfTestOk.cpp
+
+
+
+
 
 
 
@@ -284,6 +428,22 @@ clean:
 	$(RM) Mode2.o
 	$(RM) Mode3.o
 	$(RM) TestUser.o
+	$(RM) Command.o
+	$(RM) SelfTestFailed.o
+	$(RM) Initialized.o
+	$(RM) Configure.o
+	$(RM) ConfigurationEnded.o
+	$(RM) Stop.o
+	$(RM) Suspend.o
+	$(RM) Resume.o
+	$(RM) Start.o
+	$(RM) Restart.o
+	$(RM) ChMode.o
+	$(RM) Exit.o
+	$(RM) ConfigX.o
+	$(RM) eventX.o
+	$(RM) eventY.o
+	$(RM) SelfTestOk.o
 	$(RM) $(TARGET_MAIN)$(OBJ_EXT) $(ADDITIONAL_OBJS)
 	$(RM) $(TARGET_NAME)$(LIB_EXT)
 	$(RM) $(TARGET_NAME)$(EXE_EXT)
