@@ -21,11 +21,11 @@ int main() {
 		/* To fix Rhapsody problem of initialization of instance variables */
 		itsEmbeddedSystemX->setItsESXState(PowerOnSelfTest::Instance());
 
-		Operational *pOp = Operational::Instance();
-		pOp->setItsOpState(Ready::Instance());
+//		Operational *pOp = Operational::Instance();
+//		pOp->setItsOpState(Ready::Instance());
 
-		RealTimeLoop *pRTL = RealTimeLoop::Instance();
-		pRTL->setItsRTLState(Mode1::Instance());
+//		RealTimeLoop *pRTL = RealTimeLoop::Instance();
+//		pRTL->setItsRTLState(Mode1::Instance());
 	}
 
     itsEmbeddedSystemX->SelftestOk();
