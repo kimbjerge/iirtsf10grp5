@@ -24,7 +24,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	}
 	- m_configActive = { ICodeGenConfigInfoHandle 
 		- _m2Class = "ICodeGenConfigInfo";
-		- _id = GUID 32bd85d6-f1d7-4f8f-b439-82ddb9ab1bb7;
+		- _id = GUID d5ea84dc-9fba-436f-9b8d-ef4ff9b10445;
 	}
 	- Configs = { IRPYRawContainer 
 		- size = 3;
