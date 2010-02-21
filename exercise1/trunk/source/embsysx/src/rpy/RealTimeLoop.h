@@ -1,11 +1,11 @@
 /*********************************************************************
 	Rhapsody	: 7.5 
-	Login		: phm
+	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: RealTimeLoop
-//!	Generated Date	: Tue, 16, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/RealTimeLoop.h
+//!	Generated Date	: Sun, 21, Feb 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/RealTimeLoop.h
 *********************************************************************/
 
 #ifndef RealTimeLoop_H
@@ -15,7 +15,10 @@
 #include <oxf/oxf.h>
 //## class RealTimeLoop
 #include "Operational.h"
-//## attribute _instance
+//## dependency Mode1
+class Mode1;
+
+//## operation Instance()
 class ESXState;
 
 //## package Default
@@ -40,21 +43,16 @@ public :
 
 protected :
 
-    static ESXState* _instance;		//## attribute _instance
-    
     //## operation DisplayState()
     virtual void DisplayState();
 
-private :
+public :
 
-    //## auto_generated
-    static void set_instance(ESXState* p__instance);
-    
-    //## auto_generated
-    static ESXState* get_instance();
+    //## operation Instance()
+    static ESXState* Instance();
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/RealTimeLoop.h
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/RealTimeLoop.h
 *********************************************************************/

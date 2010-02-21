@@ -1,28 +1,30 @@
 /********************************************************************
 	Rhapsody	: 7.5 
-	Login		: phm
+	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Operational
-//!	Generated Date	: Tue, 16, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Operational.cpp
+//!	Generated Date	: Sun, 21, Feb 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Operational.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "Operational.h"
 //## operation Restart(EmbeddedSystemX*)
 #include "EmbeddedSystemX.h"
+//## dependency PowerOnSelfTest
+#include "PowerOnSelfTest.h"
+//## dependency Ready
+#include "Ready.h"
 //## package Default
 
 //## class Operational
-Operational* Operational::_instance;
-
 Operational::~Operational() {
 }
 
 void Operational::Restart(EmbeddedSystemX* esx) {
     //#[ operation Restart(EmbeddedSystemX*)
-    //KBE??? ChangeState(esx, PowerOnSelfTest::Instance());
+    ChangeState(esx, PowerOnSelfTest::Instance());
     //#]
 }
 
@@ -35,14 +37,12 @@ void Operational::DisplayState() {
 Operational::Operational() {
 }
 
-Operational* Operational::get_instance() {
-    return _instance;
-}
-
-void Operational::set_instance(Operational* p__instance) {
-    _instance = p__instance;
+ESXState* Operational::Instance() {
+    //#[ operation Instance()
+    return Ready::Instance();
+    //#]
 }
 
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Operational.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Operational.cpp
 *********************************************************************/

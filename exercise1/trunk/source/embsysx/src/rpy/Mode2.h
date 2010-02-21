@@ -1,11 +1,11 @@
 /*********************************************************************
 	Rhapsody	: 7.5 
-	Login		: phm
+	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Mode2
-//!	Generated Date	: Tue, 16, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Mode2.h
+//!	Generated Date	: Sun, 21, Feb 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Mode2.h
 *********************************************************************/
 
 #ifndef Mode2_H
@@ -21,8 +21,17 @@ class ESXState;
 //## operation chMode(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
+//## dependency Mode1
+class Mode1;
+
 //## dependency Mode3
 class Mode3;
+
+//## dependency PowerOnSelfTest
+class PowerOnSelfTest;
+
+//## dependency Ready
+class Ready;
 
 //## package Default
 
@@ -68,5 +77,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Mode2.h
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Mode2.h
 *********************************************************************/

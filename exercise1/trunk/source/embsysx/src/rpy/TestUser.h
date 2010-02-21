@@ -1,11 +1,11 @@
 /*********************************************************************
 	Rhapsody	: 7.5 
-	Login		: phm
+	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: TestUser
-//!	Generated Date	: Tue, 16, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/TestUser.h
+//!	Generated Date	: Sun, 21, Feb 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/TestUser.h
 *********************************************************************/
 
 #ifndef TestUser_H
@@ -19,16 +19,30 @@
 #include <oxf/state.h>
 //## auto_generated
 #include <oxf/event.h>
-//## dependency Operational
-#include "Operational.h"
-//## dependency PowerOnSelfTest
-#include "PowerOnSelfTest.h"
-//## dependency RealTimeLoop
-#include "RealTimeLoop.h"
-//## dependency Ready
-#include "Ready.h"
-//## dependency Mode1
-#include "Mode1.h"
+//## attribute tChMode
+#include "ChMode.h"
+//## attribute tConfigurationEnded
+#include "ConfigurationEnded.h"
+//## attribute tConfigure
+#include "Configure.h"
+//## attribute tExit
+#include "Exit.h"
+//## attribute tInitialized
+#include "Initialized.h"
+//## attribute tRestart
+#include "Restart.h"
+//## attribute tResume
+#include "Resume.h"
+//## attribute tSelfTestFailed
+#include "SelfTestFailed.h"
+//## attribute tSelfTestOk
+#include "SelfTestOk.h"
+//## attribute tStart
+#include "Start.h"
+//## attribute tStop
+#include "Stop.h"
+//## attribute tSuspend
+#include "Suspend.h"
 //## link itsEmbeddedSystemX
 class EmbeddedSystemX;
 
@@ -78,6 +92,30 @@ protected :
     ////    Framework operations    ////
     
     ////    Framework    ////
+    
+    ChMode tChMode;		//## attribute tChMode
+    
+    ConfigurationEnded tConfigurationEnded;		//## attribute tConfigurationEnded
+    
+    Configure tConfigure;		//## attribute tConfigure
+    
+    Exit tExit;		//## attribute tExit
+    
+    Initialized tInitialized;		//## attribute tInitialized
+    
+    Restart tRestart;		//## attribute tRestart
+    
+    Resume tResume;		//## attribute tResume
+    
+    SelfTestFailed tSelfTestFailed;		//## attribute tSelfTestFailed
+    
+    SelfTestOk tSelfTestOk;		//## attribute tSelfTestOk
+    
+    Start tStart;		//## attribute tStart
+    
+    Stop tStop;		//## attribute tStop
+    
+    Suspend tSuspend;		//## attribute tSuspend
 
 public :
 
@@ -184,5 +222,5 @@ inline bool TestUser::tchMode_IN() const {
 
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/TestUser.h
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/TestUser.h
 *********************************************************************/

@@ -1,11 +1,11 @@
 /********************************************************************
 	Rhapsody	: 7.5 
-	Login		: phm
+	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Initializing
-//!	Generated Date	: Tue, 16, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Initializing.cpp
+//!	Generated Date	: Sun, 21, Feb 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Initializing.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -17,7 +17,7 @@
 //## package Default
 
 //## class Initializing
-ESXState* Initializing::_instance;
+ESXState* Initializing::_instance = 0;
 
 Initializing::Initializing() {
 }
@@ -27,7 +27,7 @@ Initializing::~Initializing() {
 
 void Initializing::Initialized(EmbeddedSystemX* esx) {
     //#[ operation Initialized(EmbeddedSystemX*)
-    ChangeState(esx, Ready::Instance());
+    ChangeState(esx, Operational::Instance());
     //#]
 }
 
@@ -56,5 +56,5 @@ ESXState* Initializing::get_instance() {
 }
 
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Initializing.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Initializing.cpp
 *********************************************************************/

@@ -7,40 +7,74 @@
 //============================================================================
 
 #include <oxf/oxf.h>
+
+// EmbeddedSystemX
 #include "EmbeddedSystemX.h"
-#include "PowerOnSelfTest.h"
-#include "Ready.h"
-#include "Mode1.h"
+
+// Commands
+#include "SelfTestFailed.h"
+#include "Initialized.h"
+#include "Configure.h"
+#include "ConfigurationEnded.h"
+#include "Stop.h"
+#include "Suspend.h"
+#include "Resume.h"
+#include "Start.h"
+#include "Restart.h"
+#include "ChMode.h"
+#include "Exit.h"
+#include "ConfigX.h"
+#include "eventX.h"
+#include "eventY.h"
+#include "SelfTestOk.h"
 
 
 int main() {
+
+	// Creating commands for test
+	SelfTestFailed tSelfTestFailed;
+	Initialized tInititalized;
+	Configure tConfigure;
+	ConfigurationEnded tConfigurationEnded;
+	Stop tStop;
+	Suspend tSuspend;
+	Resume tResume;
+	Start tStart;
+	Restart tRestart;
+	ChMode tChMode;
+	Exit tExit;
+	ConfigX tConfigX;
+	eventX teventX;
+	eventY teventY;
+	SelfTestOk tSelfTestOk;
+
 	cout << ">>> Embeded System X test started <<<" << endl;
 
 	EmbeddedSystemX* itsEmbeddedSystemX = new EmbeddedSystemX();
-	{
-		/* To fix Rhapsody problem of initialization of instance variables */
-		itsEmbeddedSystemX->setItsESXState(PowerOnSelfTest::Instance());
 
-//		Operational *pOp = Operational::Instance();
-//		pOp->setItsOpState(Ready::Instance());
 
-//		RealTimeLoop *pRTL = RealTimeLoop::Instance();
-//		pRTL->setItsRTLState(Mode1::Instance());
-	}
+	// Performing test scenario
+    itsEmbeddedSystemX->HandleCommand(&tSelfTestFailed);
 
-    itsEmbeddedSystemX->SelftestOk();
+    itsEmbeddedSystemX->HandleCommand(&tRestart);
 
-    itsEmbeddedSystemX->Initialized();
+    itsEmbeddedSystemX->HandleCommand(&tSelfTestOk);
 
-    itsEmbeddedSystemX->Start();
+    itsEmbeddedSystemX->HandleCommand(&tInititalized);
 
-    itsEmbeddedSystemX->chMode();
+    itsEmbeddedSystemX->HandleCommand(&tConfigure);
 
-    itsEmbeddedSystemX->chMode();
+    itsEmbeddedSystemX->HandleCommand(&tConfigurationEnded);
 
-    itsEmbeddedSystemX->chMode();
+    itsEmbeddedSystemX->HandleCommand(&tStart);
 
-    itsEmbeddedSystemX->chMode();
+    itsEmbeddedSystemX->HandleCommand(&tChMode);
+
+    itsEmbeddedSystemX->HandleCommand(&tChMode);
+
+    itsEmbeddedSystemX->HandleCommand(&tChMode);
+
+    itsEmbeddedSystemX->HandleCommand(&tChMode);
 
     cout << ">>> Embeded System X test ended <<<" << endl;
 

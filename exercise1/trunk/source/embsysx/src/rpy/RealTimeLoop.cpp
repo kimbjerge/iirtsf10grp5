@@ -1,22 +1,32 @@
 /********************************************************************
 	Rhapsody	: 7.5 
-	Login		: phm
+	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: RealTimeLoop
-//!	Generated Date	: Tue, 16, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/RealTimeLoop.cpp
+//!	Generated Date	: Sun, 21, Feb 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/RealTimeLoop.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "RealTimeLoop.h"
-//## attribute _instance
+//## operation Instance()
 #include "ESXState.h"
+//## dependency PowerOnSelfTest
+class PowerOnSelfTest;
+
+//## dependency Ready
+#include "Ready.h"
+//## dependency Mode1
+#include "Mode1.h"
+//## dependency PowerOnSelfTest
+#include "PowerOnSelfTest.h"
+//## dependency Ready
+class Ready;
+
 //## package Default
 
 //## class RealTimeLoop
-ESXState* RealTimeLoop::_instance;
-
 RealTimeLoop::RealTimeLoop() {
 }
 
@@ -29,14 +39,12 @@ void RealTimeLoop::DisplayState() {
     //#]
 }
 
-void RealTimeLoop::set_instance(ESXState* p__instance) {
-    _instance = p__instance;
-}
-
-ESXState* RealTimeLoop::get_instance() {
-    return _instance;
+ESXState* RealTimeLoop::Instance() {
+    //#[ operation Instance()
+    return Mode1::Instance();
+    //#]
 }
 
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/RealTimeLoop.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/RealTimeLoop.cpp
 *********************************************************************/

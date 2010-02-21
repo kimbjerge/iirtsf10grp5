@@ -1,11 +1,11 @@
 /********************************************************************
 	Rhapsody	: 7.5 
-	Login		: phm
+	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: PowerOnSelfTest
-//!	Generated Date	: Tue, 16, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/PowerOnSelfTest.cpp
+//!	Generated Date	: Sun, 21, Feb 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/PowerOnSelfTest.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -19,7 +19,7 @@
 //## package Default
 
 //## class PowerOnSelfTest
-ESXState* PowerOnSelfTest::_instance;
+ESXState* PowerOnSelfTest::_instance = 0;
 
 PowerOnSelfTest::PowerOnSelfTest() {
 }
@@ -64,5 +64,5 @@ ESXState* PowerOnSelfTest::get_instance() {
 }
 
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/PowerOnSelfTest.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/PowerOnSelfTest.cpp
 *********************************************************************/

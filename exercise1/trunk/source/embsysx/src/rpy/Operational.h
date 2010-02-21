@@ -1,11 +1,11 @@
 /*********************************************************************
 	Rhapsody	: 7.5 
-	Login		: phm
+	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Operational
-//!	Generated Date	: Tue, 16, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Operational.h
+//!	Generated Date	: Sun, 21, Feb 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Operational.h
 *********************************************************************/
 
 #ifndef Operational_H
@@ -15,6 +15,12 @@
 #include <oxf/oxf.h>
 //## class Operational
 #include "ESXState.h"
+//## dependency PowerOnSelfTest
+class PowerOnSelfTest;
+
+//## dependency Ready
+class Ready;
+
 //## operation Restart(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
@@ -40,8 +46,6 @@ public :
 
 protected :
 
-    static Operational* _instance;		//## attribute _instance
-    
     //## operation DisplayState()
     virtual void DisplayState();
 
@@ -49,17 +53,12 @@ public :
 
     //## auto_generated
     Operational();
-
-private :
-
-    //## auto_generated
-    static Operational* get_instance();
     
-    //## auto_generated
-    static void set_instance(Operational* p__instance);
+    //## operation Instance()
+    static ESXState* Instance();
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Operational.h
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Operational.h
 *********************************************************************/

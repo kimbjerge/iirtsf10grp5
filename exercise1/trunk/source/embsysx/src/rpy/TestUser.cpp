@@ -1,19 +1,19 @@
 /********************************************************************
 	Rhapsody	: 7.5 
-	Login		: phm
+	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: TestUser
-//!	Generated Date	: Tue, 16, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/TestUser.cpp
+//!	Generated Date	: Sun, 21, Feb 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/TestUser.cpp
 *********************************************************************/
 
-//## auto_generated
-#include <oxf/omthread.h>
 //## auto_generated
 #include "TestUser.h"
 //## link itsEmbeddedSystemX
 #include "EmbeddedSystemX.h"
+//## auto_generated
+#include <oxf/omthread.h>
 //## package Default
 
 //## class TestUser
@@ -23,7 +23,6 @@ TestUser::TestUser(IOxfActive* theActiveContext) {
     initStatechart();
     //#[ operation TestUser()
     itsEmbeddedSystemX = new EmbeddedSystemX();
-    itsEmbeddedSystemX->setItsESXState(PowerOnSelfTest::Instance());
     //#]
 }
 
@@ -100,7 +99,7 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
                                     ROOT_timeout = NULL;
                                 }
                             //#[ transition 1 
-                            itsEmbeddedSystemX->SelfTestFailed(44);
+                            itsEmbeddedSystemX->HandleCommand(&tSelfTestFailed);
                             //#]
                             rootState_subState = tFailure;
                             rootState_active = tFailure;
@@ -123,7 +122,7 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
                                     ROOT_timeout = NULL;
                                 }
                             //#[ transition 3 
-                            itsEmbeddedSystemX->Restart();
+                            itsEmbeddedSystemX->HandleCommand(&tRestart);
                             //#]
                             rootState_subState = tPowerOnSelfTest;
                             rootState_active = tPowerOnSelfTest;
@@ -146,7 +145,7 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
                                     ROOT_timeout = NULL;
                                 }
                             //#[ transition 6 
-                            itsEmbeddedSystemX->Configure();
+                            itsEmbeddedSystemX->HandleCommand(&tConfigure);
                             //#]
                             rootState_subState = tConfigruation;
                             rootState_active = tConfigruation;
@@ -169,7 +168,7 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
                                     ROOT_timeout = NULL;
                                 }
                             //#[ transition 2 
-                            itsEmbeddedSystemX->chMode();
+                            itsEmbeddedSystemX->HandleCommand(&tChMode);
                             //#]
                             rootState_subState = tchMode;
                             rootState_active = tchMode;
@@ -192,7 +191,7 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
                                     ROOT_timeout = NULL;
                                 }
                             //#[ transition 4 
-                            itsEmbeddedSystemX->SelftestOk();
+                            itsEmbeddedSystemX->HandleCommand(&tSelfTestOk);
                             //#]
                             rootState_subState = tInitializing;
                             rootState_active = tInitializing;
@@ -215,7 +214,7 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
                                     ROOT_timeout = NULL;
                                 }
                             //#[ transition 5 
-                            itsEmbeddedSystemX->Initialized();
+                            itsEmbeddedSystemX->HandleCommand(&tInitialized);
                             //#]
                             rootState_subState = tOperational;
                             rootState_active = tOperational;
@@ -238,7 +237,7 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
                                     ROOT_timeout = NULL;
                                 }
                             //#[ transition 7 
-                            itsEmbeddedSystemX->ConfigurationEnded();
+                            itsEmbeddedSystemX->HandleCommand(&tConfigurationEnded);
                             //#]
                             rootState_subState = tReady;
                             rootState_active = tReady;
@@ -261,7 +260,7 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
                                     ROOT_timeout = NULL;
                                 }
                             //#[ transition 8 
-                            itsEmbeddedSystemX->Start();
+                            itsEmbeddedSystemX->HandleCommand(&tStart);
                             //#]
                             rootState_subState = tchMode;
                             rootState_active = tchMode;
@@ -279,5 +278,5 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
 }
 
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/TestUser.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/TestUser.cpp
 *********************************************************************/

@@ -1,11 +1,11 @@
 /********************************************************************
 	Rhapsody	: 7.5 
-	Login		: phm
+	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Failure
-//!	Generated Date	: Tue, 16, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Failure.cpp
+//!	Generated Date	: Sun, 21, Feb 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Failure.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -17,7 +17,7 @@
 //## package Default
 
 //## class Failure
-ESXState* Failure::_instance;
+ESXState* Failure::_instance = 0;
 
 Failure::Failure() {
 }
@@ -27,7 +27,7 @@ Failure::~Failure() {
 
 void Failure::Exit(EmbeddedSystemX* esx) {
     //#[ operation Exit(EmbeddedSystemX*)
-    exit(1);
+    //exit(1);
     defaultChange();
     //#]
 }
@@ -63,5 +63,5 @@ ESXState* Failure::get_instance() {
 }
 
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Failure.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Failure.cpp
 *********************************************************************/

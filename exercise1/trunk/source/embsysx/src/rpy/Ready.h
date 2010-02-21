@@ -1,11 +1,11 @@
 /*********************************************************************
 	Rhapsody	: 7.5 
-	Login		: phm
+	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Ready
-//!	Generated Date	: Tue, 16, Feb 2010  
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Ready.h
+//!	Generated Date	: Sun, 21, Feb 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Ready.h
 *********************************************************************/
 
 #ifndef Ready_H
@@ -16,9 +16,13 @@
 //## class Ready
 #include "Operational.h"
 //## dependency Configuration
-#include "Configuration.h"
+class Configuration;
+
 //## dependency Mode1
 class Mode1;
+
+//## dependency PowerOnSelfTest
+class PowerOnSelfTest;
 
 //## operation Instance()
 class ESXState;
@@ -73,5 +77,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/Projects/TIIRTS/exercise1/source/embsysx/src/rpy/Ready.h
+	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Ready.h
 *********************************************************************/
