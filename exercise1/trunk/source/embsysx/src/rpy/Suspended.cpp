@@ -43,7 +43,7 @@ ESXState* Suspended::Instance() {
 
 void Suspended::Resume(EmbeddedSystemX* esx) {
     //#[ operation Resume(EmbeddedSystemX*)
-    ChangeState(esx, Mode1::Instance());
+    ChangeState(esx, RealTimeLoop::Instance());
     //#]
 }
 

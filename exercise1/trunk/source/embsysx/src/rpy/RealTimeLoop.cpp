@@ -21,6 +21,8 @@ class PowerOnSelfTest;
 #include "Mode1.h"
 //## dependency PowerOnSelfTest
 #include "PowerOnSelfTest.h"
+
+#include "Suspended.h"
 //## dependency Ready
 class Ready;
 
@@ -31,6 +33,10 @@ RealTimeLoop::RealTimeLoop() {
 }
 
 RealTimeLoop::~RealTimeLoop() {
+}
+
+void RealTimeLoop::Suspend(EmbeddedSystemX* esx){
+	ChangeState(esx,Suspended::Instance());
 }
 
 void RealTimeLoop::DisplayState() {

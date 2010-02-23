@@ -73,6 +73,9 @@ public :
     //## operation eventY(EmbeddedSystemX*)
     virtual void eventY(EmbeddedSystemX* esx);
     
+    //## operation DisplayState()
+    virtual void DisplayState();
+
     ////    Additional operations    ////
     
     ////    Relations and components    ////
@@ -89,9 +92,6 @@ protected :
     
     //## operation defaultChange()
     void defaultChange();
-    
-    //## operation DisplayState()
-    virtual void DisplayState();
     
     //## operation Display(char*)
     void Display(char* name);

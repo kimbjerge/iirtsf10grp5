@@ -25,7 +25,11 @@ EmbeddedSystemX::~EmbeddedSystemX() {
 
 void EmbeddedSystemX::ChangeState(ESXState* s) {
     //#[ operation ChangeState(ESXState*)
-    itsESXState = s;
+	cout << "Changed state from: " << endl;
+	itsESXState->DisplayState();
+	cout << "Changed state to: " << endl;
+	itsESXState = s;
+    s->DisplayState();
     //#]
 }
 

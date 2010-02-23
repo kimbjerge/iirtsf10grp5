@@ -35,6 +35,8 @@ public :
     //## auto_generated
     virtual ~RealTimeLoop();
     
+    virtual void Suspend(EmbeddedSystemX*);
+
     ////    Operations    ////
     
     ////    Additional operations    ////

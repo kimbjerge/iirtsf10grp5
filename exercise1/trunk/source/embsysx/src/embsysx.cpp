@@ -7,6 +7,7 @@
 //============================================================================
 
 #include <oxf/oxf.h>
+#include <stdlib.h>
 
 // EmbeddedSystemX
 #include "EmbeddedSystemX.h"
@@ -29,6 +30,7 @@
 #include "SelfTestOk.h"
 
 
+
 int main() {
 
 	// Creating commands for test
@@ -42,41 +44,60 @@ int main() {
 	Start tStart;
 	Restart tRestart;
 	ChMode tChMode;
-	Exit tExit;
-	ConfigX tConfigX;
-	eventX teventX;
-	eventY teventY;
 	SelfTestOk tSelfTestOk;
 
 	cout << ">>> Embeded System X test started <<<" << endl;
 
 	EmbeddedSystemX* itsEmbeddedSystemX = new EmbeddedSystemX();
 
-
 	// Performing test scenario
-    itsEmbeddedSystemX->HandleCommand(&tSelfTestFailed);
 
-    itsEmbeddedSystemX->HandleCommand(&tRestart);
+	char * temp = new char[3];
 
-    itsEmbeddedSystemX->HandleCommand(&tSelfTestOk);
+	while(true){
 
-    itsEmbeddedSystemX->HandleCommand(&tInititalized);
+		cin >> temp;
+		int choice = atoi(temp);
 
-    itsEmbeddedSystemX->HandleCommand(&tConfigure);
+		switch(choice){
 
-    itsEmbeddedSystemX->HandleCommand(&tConfigurationEnded);
-
-    itsEmbeddedSystemX->HandleCommand(&tStart);
-
-    itsEmbeddedSystemX->HandleCommand(&tChMode);
-
-    itsEmbeddedSystemX->HandleCommand(&tChMode);
-
-    itsEmbeddedSystemX->HandleCommand(&tChMode);
-
-    itsEmbeddedSystemX->HandleCommand(&tChMode);
-
-    cout << ">>> Embeded System X test ended <<<" << endl;
+			case 0:
+				itsEmbeddedSystemX->HandleCommand(&tSelfTestFailed);
+				break;
+			case 1:
+				itsEmbeddedSystemX->HandleCommand(&tRestart);
+				break;
+			case 2:
+				itsEmbeddedSystemX->HandleCommand(&tSelfTestOk);
+				break;
+			case 3:
+				itsEmbeddedSystemX->HandleCommand(&tInititalized);
+				break;
+			case 4:
+				itsEmbeddedSystemX->HandleCommand(&tConfigure);
+				break;
+			case 5:
+				itsEmbeddedSystemX->HandleCommand(&tConfigurationEnded);
+				break;
+			case 6:
+				itsEmbeddedSystemX->HandleCommand(&tStart);
+				break;
+			case 7:
+				itsEmbeddedSystemX->HandleCommand(&tSuspend);
+				break;
+			case 8:
+				itsEmbeddedSystemX->HandleCommand(&tResume);
+				break;
+			case 9:
+				itsEmbeddedSystemX->HandleCommand(&tStop);
+				break;
+			case 10:
+				itsEmbeddedSystemX->HandleCommand(&tChMode);
+				break;
+			default:
+				cout << "Invalid kommando" << endl;
+		}
+	}
 
     return 0;
 }

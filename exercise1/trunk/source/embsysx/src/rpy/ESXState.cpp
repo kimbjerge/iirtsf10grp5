@@ -112,13 +112,13 @@ void ESXState::eventX(EmbeddedSystemX* esx) {
 
 void ESXState::ChangeState(EmbeddedSystemX* esx, ESXState* s) {
     //#[ operation ChangeState(EmbeddedSystemX*,ESXState*)
-    esx->ChangeState(s);
-    DisplayState();
+	esx->ChangeState(s);
     //#]
 }
 
 void ESXState::defaultChange() {
     //#[ operation defaultChange()
+	 std::cout << "Nothing Changed" << std::endl;
     //#]
 }
 
