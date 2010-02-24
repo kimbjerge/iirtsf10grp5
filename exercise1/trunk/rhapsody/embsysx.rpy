@@ -408,7 +408,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "CommandStateModel";
-			- _lastModifiedTime = "2.16.2010::21:0:57";
+			- _lastModifiedTime = "2.24.2010::19:53:51";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 9692cb11-283b-4fe7-80c5-1b1ffc4ad7f4;
 				- m_type = 0;
@@ -1516,7 +1516,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.133144 0 0 0.0909088 1218.73 837.091 ;
+					- m_transform = 0.133144 0 0 0.11319 1217.73 824.76 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -1535,14 +1535,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_polygon = 4 2 329  2 1451  1061 1451  1061 329  ;
 					- m_nNameFormat = 0;
 					- m_nIsNameFormat = 0;
-					- frameset = "<frameset rows=31%,69%>
+					- frameset = "<frameset rows=19%,81%>
 <frame name=AttributeListCompartment>
 <frame name=PrimitiveOperationListCompartment>";
 					- Attrs = { IRPYRawContainer 
 						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 2;
+						- size = 4;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -1559,6 +1559,22 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _class = "RealTimeLoop";
 							- _name = "Instance()";
 							- _id = GUID bf06abd8-ace5-4c5f-8884-e4571ee3e0dd;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Default.sbs";
+							- _subsystem = "Default";
+							- _class = "RealTimeLoop";
+							- _name = "Stop(EmbeddedSystemX*)";
+							- _id = GUID 0ae9ac72-c0be-4e0d-b084-4305dd2b8863;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Default.sbs";
+							- _subsystem = "Default";
+							- _class = "RealTimeLoop";
+							- _name = "Suspend(EmbeddedSystemX*)";
+							- _id = GUID ea100243-f334-4c7a-933c-a06ae433ae51;
 						}
 					}
 				}

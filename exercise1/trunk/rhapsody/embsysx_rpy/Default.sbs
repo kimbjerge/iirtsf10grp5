@@ -1027,7 +1027,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -41;
+						- m_nHorizontalSpacing = 7;
 						- m_nVerticalSpacing = -52;
 						- m_nOrientationCtrlPt = 8;
 					}
@@ -1047,7 +1047,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 -48 0  ;
+					- m_position = 4 -96 0  -96 437  0 437  0 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -1128,7 +1128,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -153;
+						- m_nHorizontalSpacing = -105;
 						- m_nVerticalSpacing = -52;
 						- m_nOrientationCtrlPt = 8;
 					}
@@ -1148,7 +1148,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 -48 0  ;
+					- m_position = 4 -96 0  -96 437  0 437  0 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -1229,7 +1229,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -273;
+						- m_nHorizontalSpacing = -225;
 						- m_nVerticalSpacing = -52;
 						- m_nOrientationCtrlPt = 8;
 					}
@@ -1249,7 +1249,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 -48 0  ;
+					- m_position = 4 -96 0  -96 437  0 437  0 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -1330,7 +1330,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -992;
+						- m_nHorizontalSpacing = -944;
 						- m_nVerticalSpacing = -52;
 						- m_nOrientationCtrlPt = 8;
 					}
@@ -1350,7 +1350,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 -48 0  ;
+					- m_position = 4 -96 0  -96 437  0 437  0 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -1431,7 +1431,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -905;
+						- m_nHorizontalSpacing = -857;
 						- m_nVerticalSpacing = -52;
 						- m_nOrientationCtrlPt = 8;
 					}
@@ -1451,7 +1451,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 -48 0  ;
+					- m_position = 4 -96 0  -96 437  0 437  0 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -1532,7 +1532,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -827;
+						- m_nHorizontalSpacing = -779;
 						- m_nVerticalSpacing = -52;
 						- m_nOrientationCtrlPt = 8;
 					}
@@ -1552,7 +1552,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 -48 0  ;
+					- m_position = 4 -96 0  -96 437  0 437  0 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -1633,7 +1633,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -508;
+						- m_nHorizontalSpacing = -460;
 						- m_nVerticalSpacing = -52;
 						- m_nOrientationCtrlPt = 8;
 					}
@@ -1653,7 +1653,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 -48 0  ;
+					- m_position = 4 -96 0  -96 437  0 437  0 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -1734,7 +1734,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -396;
+						- m_nHorizontalSpacing = -348;
 						- m_nVerticalSpacing = -52;
 						- m_nOrientationCtrlPt = 8;
 					}
@@ -1754,7 +1754,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 -48 0  ;
+					- m_position = 4 -96 0  -96 437  0 437  0 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -1835,7 +1835,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -735;
+						- m_nHorizontalSpacing = -687;
 						- m_nVerticalSpacing = -52;
 						- m_nOrientationCtrlPt = 8;
 					}
@@ -1855,7 +1855,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 -48 0  ;
+					- m_position = 4 -96 0  -96 437  0 437  0 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -1936,7 +1936,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -619;
+						- m_nHorizontalSpacing = -571;
 						- m_nVerticalSpacing = -52;
 						- m_nOrientationCtrlPt = 8;
 					}
@@ -1956,7 +1956,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 -48 0  ;
+					- m_position = 4 -96 0  -96 437  0 437  0 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -1965,6 +1965,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 6e804601-2392-4f0f-b820-3d109d7c163c;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -2285,6 +2310,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID e691fc8c-dcc8-40be-ba35-b5fc74fa4e05;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -2605,6 +2655,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 5ad576c1-66cf-4ee4-91ff-a98e40f58d4a;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -2925,6 +3000,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID cc2e95af-98df-4abe-a3a4-af86ea898ee4;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -3245,6 +3345,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID a337e105-f20f-4e3e-abff-19f5cfe23aba;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -3565,6 +3690,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 25866254-8bc5-4fce-aa63-f1d9799213e3;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -3885,6 +4035,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID bd9367b3-c8ba-4ee0-bb3e-5a8731e342d0;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -4205,6 +4380,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID fec3a904-a23e-43f1-85a5-5dca187382a1;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -4525,6 +4725,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 05a77118-7810-4645-9263-7b8b1be208aa;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -4845,6 +5070,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID d2c7e040-3049-46d1-9ec7-1f544885ddf0;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -5165,6 +5415,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID bdfa0553-c6ca-4f6b-a55a-41e783b33eaa;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -5485,6 +5760,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID d828cba6-14d5-4fd3-b6d3-2318847270fe;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -5805,6 +6105,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 9c93afd3-177a-4f9e-82e2-02db88e695e7;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -8842,7 +9167,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID d45b4129-c4d1-484d-af02-0892adac1bf1;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 2.16.2010::19:59:17;
+			- weakCGTime = 2.16.2010::20:59:21;
 			- strongCGTime = 2.16.2010::19:59:17;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -9420,6 +9745,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 								}
 								{ IFileFragment 
 									- _id = GUID 70d43127-b4e4-4b91-ac9d-46007a3f8d70;
+									- _name = "EmbeddedSystemX";
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
@@ -9844,6 +10170,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 								}
 								{ IFileFragment 
 									- _id = GUID 5ac44fc3-2465-49ff-84d1-32f48207541b;
+									- _name = "EmbeddedSystemX";
 									- m_type = specFragment;
 									- m_text = "";
 									- m_startRow = 76;
@@ -16855,7 +17182,7 @@ return _instance;";
 			- _myState = 8192;
 			- _name = "RealTimeLoop";
 			- Dependencies = { IRPYRawContainer 
-				- size = 3;
+				- size = 4;
 				- value = 
 				{ IDependency 
 					- _id = GUID de1c75be-0df3-4e2c-9f4e-962706fb2b1d;
@@ -16998,6 +17325,53 @@ return _instance;";
 						- _id = GUID e8a39029-031d-4e23-a503-ae7b93669f90;
 					}
 				}
+				{ IDependency 
+					- _id = GUID 07c182d8-1aa8-4de3-9246-dedcc9876fe9;
+					- _myState = 2048;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Dependency";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "UsageType";
+												- _Value = "Implementation";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Specification,Implementation,Existence";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "Suspended";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "PredefinedTypes.sbs";
+							- _subsystem = "PredefinedTypes";
+							- _class = "";
+							- _name = "Usage";
+							- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID a82604c5-407b-4ad3-a3ff-10a4153118ad;
+					}
+				}
 			}
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
@@ -17007,11 +17381,11 @@ return _instance;";
 				- _name = "CommandStateModel";
 				- _id = GUID 4c782279-dd65-468b-a2bb-3838882f6867;
 			}
-			- _lastID = 4;
-			- weakCGTime = 2.16.2010::20:53:23;
+			- _lastID = 5;
+			- weakCGTime = 2.24.2010::19:53:48;
 			- strongCGTime = 2.16.2010::19:59:17;
 			- Operations = { IRPYRawContainer 
-				- size = 2;
+				- size = 4;
 				- value = 
 				{ IPrimitiveOperation 
 					- _id = GUID cfeddd8d-d899-43bb-9961-e8ef3dcbb380;
@@ -17063,6 +17437,86 @@ return _instance;";
 						- _bodyData = "return Mode1::Instance();";
 					}
 				}
+				{ IPrimitiveOperation 
+					- _id = GUID 0ae9ac72-c0be-4e0d-b084-4305dd2b8863;
+					- _myState = 8192;
+					- _name = "Stop";
+					- _lastID = 1;
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID c66c60fb-125d-43c7-bdb2-50e92e00a483;
+							- _name = "esx";
+							- myTypeOf = { IType 
+								- _id = GUID e7bad403-bfc9-48ad-a4e5-1f84fd56d3c2;
+								- _myState = 8192;
+								- _declaration = "EmbeddedSystemX*";
+								- _kind = Language;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = InOut;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "ChangeState(esx, Ready::Instance());";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID ea100243-f334-4c7a-933c-a06ae433ae51;
+					- _myState = 8192;
+					- _name = "Suspend";
+					- _lastID = 1;
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 20012c90-a71c-491d-8d4f-4d472d084991;
+							- _name = "esx";
+							- myTypeOf = { IType 
+								- _id = GUID a8644947-db78-4e2b-bb37-e0fd428260ff;
+								- _myState = 8192;
+								- _declaration = "EmbeddedSystemX*";
+								- _kind = Language;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = InOut;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "ChangeState(esx, Suspended::Instance());";
+					}
+				}
 			}
 			- Inheritances = { IRPYRawContainer 
 				- size = 1;
@@ -17087,7 +17541,7 @@ return _instance;";
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 6;
+						- size = 7;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID c9bba477-2018-455a-91ec-8d7f46177547;
@@ -17142,13 +17596,26 @@ return _instance;";
 							}
 						}
 						{ IFileFragment 
+							- _id = GUID c636ffbf-9e41-4321-8bba-50aef52f7653;
+							- _name = "EmbeddedSystemX:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency EmbeddedSystemX:spec";
+							- m_startRow = 26;
+							- m_startCol_Short = 1;
+							- m_endRow = 26;
+							- m_endCol_Short = 22;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
 							- _id = GUID 50851d0b-0d39-455f-bcba-54cce4e83e94;
 							- _name = "ESXState:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency ESXState:spec";
-							- m_startRow = 23;
+							- m_startRow = 29;
 							- m_startCol_Short = 1;
-							- m_endRow = 23;
+							- m_endRow = 29;
 							- m_endCol_Short = 15;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -17207,7 +17674,7 @@ return _instance;";
 							- m_text = "";
 							- m_startRow = 34;
 							- m_startCol_Short = 1;
-							- m_endRow = 76;
+							- m_endRow = 70;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -17303,9 +17770,9 @@ return _instance;";
 									- _name = "DisplayState";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 60;
+									- m_startRow = 58;
 									- m_startCol_Short = 18;
-									- m_endRow = 60;
+									- m_endRow = 58;
 									- m_endCol_Short = 32;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -17313,26 +17780,13 @@ return _instance;";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID cf4f35b9-4552-4749-bf92-1a73d8099760;
-									- _name = "set_instance:spec";
-									- m_type = textFragment;
-									- m_text = "//## auto:operation set_instance(ESXState *):spec";
-									- m_startRow = 65;
-									- m_startCol_Short = 17;
-									- m_endRow = 65;
-									- m_endCol_Short = 52;
-									- m_subject = { INObjectHandle 
-										- _m2Class = "";
-									}
-								}
-								{ IFileFragment 
 									- _id = GUID db1458ce-1f0e-4ceb-a158-c0f581bc1d49;
 									- _name = "Instance";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 70;
+									- m_startRow = 63;
 									- m_startCol_Short = 22;
-									- m_endRow = 70;
+									- m_endRow = 63;
 									- m_endCol_Short = 32;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -17340,16 +17794,31 @@ return _instance;";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 84bc6792-26d0-4574-a064-711576a9de9e;
-									- _name = "get_instance:spec";
-									- m_type = textFragment;
-									- m_text = "//## auto:operation get_instance():spec";
-									- m_startRow = 75;
-									- m_startCol_Short = 22;
-									- m_endRow = 75;
-									- m_endCol_Short = 36;
+									- _id = GUID bed69037-c0be-496e-be31-40ee6a0350da;
+									- _name = "Stop";
+									- m_type = specFragment;
+									- m_text = "";
+									- m_startRow = 66;
+									- m_startCol_Short = 18;
+									- m_endRow = 66;
+									- m_endCol_Short = 44;
 									- m_subject = { INObjectHandle 
-										- _m2Class = "";
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID 0ae9ac72-c0be-4e0d-b084-4305dd2b8863;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID e6c54e4b-44a3-4917-b775-1eb8a7fa269a;
+									- _name = "Suspend";
+									- m_type = specFragment;
+									- m_text = "";
+									- m_startRow = 69;
+									- m_startCol_Short = 18;
+									- m_endRow = 69;
+									- m_endCol_Short = 47;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID ea100243-f334-4c7a-933c-a06ae433ae51;
 									}
 								}
 							}
@@ -17363,7 +17832,7 @@ return _instance;";
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 5;
+						- size = 7;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID 6c866ecb-6fec-4969-a1cb-cb0b12e35a46;
@@ -17386,34 +17855,61 @@ return _instance;";
 							- m_startRow = 18;
 							- m_startCol_Short = 1;
 							- m_endRow = 18;
-							- m_endCol_Short = 520;
+							- m_endCol_Short = 521;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 4ed2506a-7028-4b70-bd99-1424fabf0a2a;
-							- _name = "PowerOnSelfTest";
-							- m_type = specFragment;
-							- m_text = "";
+							- _id = GUID edc6185e-3f19-42af-87f7-249cd2c67f0e;
+							- _name = "EmbeddedSystemX:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency EmbeddedSystemX:spec";
 							- m_startRow = 20;
 							- m_startCol_Short = 1;
 							- m_endRow = 20;
-							- m_endCol_Short = 583;
+							- m_endCol_Short = 590;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 640d3719-50db-419c-ab65-65b1f7ea5e07;
+							- _name = "Mode1";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 22;
+							- m_startCol_Short = 1;
+							- m_endRow = 22;
+							- m_endCol_Short = 633;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IDependency";
+								- _id = GUID dbe0ecae-56a2-435c-ab06-cf02c132bbaa;
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 2febe82a-1be1-4562-9e03-52b87d5b6b8c;
+							- _name = "PowerOnSelfTest";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 24;
+							- m_startCol_Short = 1;
+							- m_endRow = 24;
+							- m_endCol_Short = 696;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID 0d7f04fa-b984-4fad-8b61-959955b2d710;
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 486c2646-29c5-45cd-9c01-6e7f183c1570;
+							- _id = GUID 737f9072-1ccb-4439-875f-aa95dedd61e7;
 							- _name = "Ready";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 22;
+							- m_startRow = 26;
 							- m_startCol_Short = 1;
-							- m_endRow = 22;
-							- m_endCol_Short = 626;
+							- m_endRow = 26;
+							- m_endCol_Short = 739;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID de1c75be-0df3-4e2c-9f4e-962706fb2b1d;
@@ -17424,9 +17920,9 @@ return _instance;";
 							- _name = "RealTimeLoop";
 							- m_type = implFragment;
 							- m_text = "";
-							- m_startRow = 36;
+							- m_startRow = 48;
 							- m_startCol_Short = 15;
-							- m_endRow = 36;
+							- m_endRow = 48;
 							- m_endCol_Short = 15;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -17449,7 +17945,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 19611e26-4867-462e-a53b-1c3e486ac737;
-													- _value = "36";
+													- _value = "48";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -17486,9 +17982,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation RealTimeLoop():impl";
-									- m_startRow = 36;
+									- m_startRow = 48;
 									- m_startCol_Short = 15;
-									- m_endRow = 38;
+									- m_endRow = 50;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -17508,7 +18004,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID a9dc7821-5b23-416e-85ba-da30252c93e8;
-													- _value = "40";
+													- _value = "52";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -17545,9 +18041,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~RealTimeLoop():impl";
-									- m_startRow = 40;
+									- m_startRow = 52;
 									- m_startCol_Short = 16;
-									- m_endRow = 42;
+									- m_endRow = 54;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -17567,7 +18063,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID e86cfd78-7928-43f2-88ff-c6ecddfa4b4c;
-													- _value = "44";
+													- _value = "56";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -17604,72 +18100,13 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 44;
+									- m_startRow = 56;
 									- m_startCol_Short = 35;
-									- m_endRow = 49;
+									- m_endRow = 61;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID cfeddd8d-d899-43bb-9961-e8ef3dcbb380;
-									}
-								}
-								{ IFileFragment 
-									- _id = GUID 372228ff-4f5a-4b1f-af33-cc28ac5afd05;
-									- _name = "set_instance:impl";
-									- Tags = { IRPYRawContainer 
-										- size = 2;
-										- value = 
-										{ ITag 
-											- _id = GUID a5b33c60-5f9a-400d-a1b8-06c569b66197;
-											- _name = "BodyStartLine";
-											- ValueSpecifications = { IRPYRawContainer 
-												- size = 1;
-												- value = 
-												{ ILiteralSpecification 
-													- _id = GUID 5368beb2-32e4-4d16-9e73-8f5a4a3db6e1;
-													- _value = "51";
-												}
-											}
-											- _typeOf = { IHandle 
-												- _m2Class = "IType";
-												- _filename = "PredefinedTypes.sbs";
-												- _subsystem = "PredefinedTypes";
-												- _class = "";
-												- _name = "RhpString";
-												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
-											}
-											- _isOrdered = 0;
-										}
-										{ ITag 
-											- _id = GUID 4a677325-8ddf-4a50-8264-69547e1042b2;
-											- _name = "BodyStartCol";
-											- ValueSpecifications = { IRPYRawContainer 
-												- size = 1;
-												- value = 
-												{ ILiteralSpecification 
-													- _id = GUID aa9cbd36-bed0-4357-9135-1589aed35cc4;
-													- _value = "56";
-												}
-											}
-											- _typeOf = { IHandle 
-												- _m2Class = "IType";
-												- _filename = "PredefinedTypes.sbs";
-												- _subsystem = "PredefinedTypes";
-												- _class = "";
-												- _name = "RhpString";
-												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
-											}
-											- _isOrdered = 0;
-										}
-									}
-									- m_type = textFragment;
-									- m_text = "//## auto:operation set_instance(ESXState *):impl";
-									- m_startRow = 51;
-									- m_startCol_Short = 56;
-									- m_endRow = 53;
-									- m_endCol_Short = 1;
-									- m_subject = { INObjectHandle 
-										- _m2Class = "";
 									}
 								}
 								{ IFileFragment 
@@ -17686,7 +18123,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 55f27ae8-649d-4908-ae4e-e55ea5199ce2;
-													- _value = "55";
+													- _value = "63";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -17723,9 +18160,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 55;
+									- m_startRow = 63;
 									- m_startCol_Short = 36;
-									- m_endRow = 60;
+									- m_endRow = 68;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -17733,20 +18170,20 @@ return _instance;";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID d09f1be8-afbc-45a1-9b8a-f6212336adc5;
-									- _name = "get_instance:impl";
+									- _id = GUID 042d9849-fc81-4bbd-9480-bee83ed9f822;
+									- _name = "Stop";
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID 194ba9c0-d613-4425-816e-6a4b0d170e92;
+											- _id = GUID 14404036-b365-44bb-9727-13de22986a60;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID c517aeca-1820-40de-a109-81413894b36a;
-													- _value = "62";
+													- _id = GUID bf1b03a0-03d8-4b0d-ba2a-701bc8328718;
+													- _value = "70";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -17760,14 +18197,14 @@ return _instance;";
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID 64c12d36-31ce-4066-ad6a-65c1164dd91f;
+											- _id = GUID e701b007-dc07-4825-bdea-03fd3b762b28;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID ef0399dc-6072-4bf4-89bd-5206690e223d;
-													- _value = "40";
+													- _id = GUID c56bb750-5ff7-4a05-a615-c0200054af7f;
+													- _value = "47";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -17781,14 +18218,75 @@ return _instance;";
 											- _isOrdered = 0;
 										}
 									}
-									- m_type = textFragment;
-									- m_text = "//## auto:operation get_instance():impl";
-									- m_startRow = 62;
-									- m_startCol_Short = 40;
-									- m_endRow = 64;
+									- m_type = implFragment;
+									- m_text = "";
+									- m_startRow = 70;
+									- m_startCol_Short = 47;
+									- m_endRow = 75;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
-										- _m2Class = "";
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID 0ae9ac72-c0be-4e0d-b084-4305dd2b8863;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 9754c983-35c5-4ece-ae8b-e2a94ae73552;
+									- _name = "Suspend";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID cfe56958-b28b-4b82-9fed-3723d224140a;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 810cd585-1c1a-4892-a75c-7f62155c0e81;
+													- _value = "77";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID 4c818348-ffbb-4da5-bfbb-2793d19ca025;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 4635491d-d3df-409f-a874-7312ec21e5fa;
+													- _value = "50";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = implFragment;
+									- m_text = "";
+									- m_startRow = 77;
+									- m_startCol_Short = 50;
+									- m_endRow = 82;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID ea100243-f334-4c7a-933c-a06ae433ae51;
 									}
 								}
 							}
@@ -17807,7 +18305,7 @@ return _instance;";
 			- _myState = 8192;
 			- _name = "Ready";
 			- Dependencies = { IRPYRawContainer 
-				- size = 2;
+				- size = 3;
 				- value = 
 				{ IDependency 
 					- _id = GUID afa077fb-2a43-43ae-b3a4-7084aef2b15d;
@@ -17903,6 +18401,53 @@ return _instance;";
 						- _id = GUID e74f98a8-1d0a-4743-961c-6289f1d83896;
 					}
 				}
+				{ IDependency 
+					- _id = GUID a15cc950-1bf6-4172-b332-89218a34dead;
+					- _myState = 2048;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Dependency";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "UsageType";
+												- _Value = "Existence";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Specification,Implementation,Existence";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "PowerOnSelfTest";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "PredefinedTypes.sbs";
+							- _subsystem = "PredefinedTypes";
+							- _class = "";
+							- _name = "Usage";
+							- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 40cdbf83-2569-41a6-866e-33d5d5d7e7d7;
+					}
+				}
 			}
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
@@ -17913,7 +18458,7 @@ return _instance;";
 				- _id = GUID 4c782279-dd65-468b-a2bb-3838882f6867;
 			}
 			- _lastID = 4;
-			- weakCGTime = 2.16.2010::20:43:43;
+			- weakCGTime = 2.24.2010::19:47:24;
 			- strongCGTime = 2.16.2010::19:59:17;
 			- Operations = { IRPYRawContainer 
 				- size = 4;
@@ -17995,7 +18540,7 @@ return _instance;";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "ChangeState(esx, Mode1::Instance());";
+						- _bodyData = "ChangeState(esx, RealTimeLoop::Instance());";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -18060,7 +18605,7 @@ return _instance;";
 					- _id = GUID d6127381-92a7-4451-a044-23c8c6553b31;
 					- _name = "_instance";
 					- myTypeOf = { IType 
-						- _id = GUID 48c29c18-c4a9-4766-bca5-a37ec3eed4a3;
+						- _id = GUID e697555b-bb9b-4639-9af7-cddca89d2486;
 						- _myState = 8192;
 						- _declaration = "ESXState*";
 						- _kind = Language;
@@ -18095,7 +18640,7 @@ return _instance;";
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 9;
+						- size = 5;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID 9968c3d8-f4bc-4f23-8350-b342ff56dbb6;
@@ -18105,7 +18650,7 @@ return _instance;";
 							- m_startRow = 15;
 							- m_startCol_Short = 1;
 							- m_endRow = 15;
-							- m_endCol_Short = 440;
+							- m_endCol_Short = 442;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -18124,67 +18669,13 @@ return _instance;";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 2e751aa6-d49d-45b4-a749-defac156800c;
-							- _name = "aom:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency aom:spec";
-							- m_startRow = 19;
-							- m_startCol_Short = 1;
-							- m_endRow = 19;
-							- m_endCol_Short = 527;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID f4694875-0a3e-42a7-b983-b2e625da68c5;
-							- _name = "Default:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency Default:spec";
-							- m_startRow = 21;
-							- m_startCol_Short = 1;
-							- m_endRow = 21;
-							- m_endCol_Short = 570;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID 864b9299-cf6d-48e2-825d-bafca5ed0e68;
-							- _name = "Configuration";
-							- m_type = specFragment;
-							- m_text = "";
-							- m_startRow = 23;
-							- m_startCol_Short = 1;
-							- m_endRow = 23;
-							- m_endCol_Short = 629;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "IDependency";
-								- _id = GUID 1cb78eb2-9071-4956-9612-2fa4d46850b9;
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID 343bd648-a5dd-4dda-97c8-99bf72881e67;
-							- _name = "Mode1";
-							- m_type = specFragment;
-							- m_text = "";
-							- m_startRow = 25;
-							- m_startCol_Short = 1;
-							- m_endRow = 25;
-							- m_endCol_Short = 672;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "IDependency";
-								- _id = GUID afa077fb-2a43-43ae-b3a4-7084aef2b15d;
-							}
-						}
-						{ IFileFragment 
 							- _id = GUID 26166588-6b7e-4b64-b644-1f4e300a0a61;
 							- _name = "ESXState:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency ESXState:spec";
-							- m_startRow = 27;
+							- m_startRow = 28;
 							- m_startCol_Short = 1;
-							- m_endRow = 27;
+							- m_endRow = 28;
 							- m_endCol_Short = 15;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -18195,9 +18686,9 @@ return _instance;";
 							- _name = "EmbeddedSystemX:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency EmbeddedSystemX:spec";
-							- m_startRow = 30;
+							- m_startRow = 31;
 							- m_startCol_Short = 1;
-							- m_endRow = 30;
+							- m_endRow = 31;
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -18217,7 +18708,7 @@ return _instance;";
 										- value = 
 										{ ILiteralSpecification 
 											- _id = GUID 0bdc28e2-2228-4fbf-9a19-f49b0260fb57;
-											- _value = "35";
+											- _value = "36";
 										}
 									}
 									- _typeOf = { IHandle 
@@ -18254,9 +18745,9 @@ return _instance;";
 							}
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 35;
+							- m_startRow = 36;
 							- m_startCol_Short = 1;
-							- m_endRow = 79;
+							- m_endRow = 76;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -18271,9 +18762,9 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Constructors and destructors    ////
 ";
-									- m_startRow = 42;
+									- m_startRow = 37;
 									- m_startCol_Short = 5;
-									- m_endRow = 42;
+									- m_endRow = 37;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -18284,9 +18775,9 @@ return _instance;";
 									- _name = "Ready:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation Ready():spec";
-									- m_startRow = 45;
+									- m_startRow = 42;
 									- m_startCol_Short = 5;
-									- m_endRow = 45;
+									- m_endRow = 42;
 									- m_endCol_Short = 12;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -18297,9 +18788,9 @@ return _instance;";
 									- _name = "~Ready:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~Ready():spec";
-									- m_startRow = 48;
+									- m_startRow = 45;
 									- m_startCol_Short = 14;
-									- m_endRow = 48;
+									- m_endRow = 45;
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -18311,9 +18802,9 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Operations    ////
 ";
-									- m_startRow = 50;
+									- m_startRow = 47;
 									- m_startCol_Short = 5;
-									- m_endRow = 50;
+									- m_endRow = 47;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -18324,9 +18815,9 @@ return _instance;";
 									- _name = "Configure";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 53;
+									- m_startRow = 50;
 									- m_startCol_Short = 18;
-									- m_endRow = 53;
+									- m_endRow = 50;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -18338,9 +18829,9 @@ return _instance;";
 									- _name = "Instance";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 56;
+									- m_startRow = 53;
 									- m_startCol_Short = 22;
-									- m_endRow = 56;
+									- m_endRow = 53;
 									- m_endCol_Short = 32;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -18352,9 +18843,9 @@ return _instance;";
 									- _name = "Start";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 59;
+									- m_startRow = 56;
 									- m_startCol_Short = 18;
-									- m_endRow = 59;
+									- m_endRow = 56;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -18367,9 +18858,9 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Additional operations    ////
 ";
-									- m_startRow = 61;
+									- m_startRow = 58;
 									- m_startCol_Short = 5;
-									- m_endRow = 61;
+									- m_endRow = 58;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -18381,9 +18872,9 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Attributes    ////
 ";
-									- m_startRow = 63;
+									- m_startRow = 60;
 									- m_startCol_Short = 5;
-									- m_endRow = 63;
+									- m_endRow = 60;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -18394,9 +18885,9 @@ return _instance;";
 									- _name = "_instance";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 67;
+									- m_startRow = 64;
 									- m_startCol_Short = 22;
-									- m_endRow = 67;
+									- m_endRow = 64;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
@@ -18408,9 +18899,9 @@ return _instance;";
 									- _name = "DisplayState";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 70;
+									- m_startRow = 67;
 									- m_startCol_Short = 18;
-									- m_endRow = 70;
+									- m_endRow = 67;
 									- m_endCol_Short = 32;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -18422,9 +18913,9 @@ return _instance;";
 									- _name = "set_instance:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation set_instance(ESXState *):spec";
-									- m_startRow = 75;
+									- m_startRow = 72;
 									- m_startCol_Short = 17;
-									- m_endRow = 75;
+									- m_endRow = 72;
 									- m_endCol_Short = 52;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -18435,9 +18926,9 @@ return _instance;";
 									- _name = "get_instance:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation get_instance():spec";
-									- m_startRow = 78;
+									- m_startRow = 75;
 									- m_startCol_Short = 22;
-									- m_endRow = 78;
+									- m_endRow = 75;
 									- m_endCol_Short = 36;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -18454,17 +18945,17 @@ return _instance;";
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 4;
+						- size = 7;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID c78c1a65-2261-4309-8d64-e671e2eefed3;
 							- _name = "Ready:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency Ready:spec";
-							- m_startRow = 16;
+							- m_startRow = 12;
 							- m_startCol_Short = 1;
-							- m_endRow = 16;
-							- m_endCol_Short = 450;
+							- m_endRow = 12;
+							- m_endCol_Short = 408;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -18474,10 +18965,10 @@ return _instance;";
 							- _name = "EmbeddedSystemX:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency EmbeddedSystemX:spec";
-							- m_startRow = 18;
+							- m_startRow = 14;
 							- m_startCol_Short = 1;
-							- m_endRow = 18;
-							- m_endCol_Short = 524;
+							- m_endRow = 14;
+							- m_endCol_Short = 480;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -18487,12 +18978,54 @@ return _instance;";
 							- _name = "ESXState:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency ESXState:spec";
+							- m_startRow = 16;
+							- m_startCol_Short = 1;
+							- m_endRow = 16;
+							- m_endCol_Short = 528;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 8ea3f99d-001b-4816-8273-daf0574f65af;
+							- _name = "Configuration";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 18;
+							- m_startCol_Short = 1;
+							- m_endRow = 18;
+							- m_endCol_Short = 585;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IDependency";
+								- _id = GUID 1cb78eb2-9071-4956-9612-2fa4d46850b9;
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 4aa4d8c6-98d5-4630-96d8-5958461252e2;
+							- _name = "Mode1";
+							- m_type = specFragment;
+							- m_text = "";
 							- m_startRow = 20;
 							- m_startCol_Short = 1;
 							- m_endRow = 20;
-							- m_endCol_Short = 573;
+							- m_endCol_Short = 626;
 							- m_subject = { INObjectHandle 
-								- _m2Class = "";
+								- _m2Class = "IDependency";
+								- _id = GUID afa077fb-2a43-43ae-b3a4-7084aef2b15d;
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 9ce76da6-bb0a-4577-af34-cb9bf8926664;
+							- _name = "PowerOnSelfTest";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 22;
+							- m_startCol_Short = 1;
+							- m_endRow = 22;
+							- m_endCol_Short = 687;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IDependency";
+								- _id = GUID a15cc950-1bf6-4172-b332-89218a34dead;
 							}
 						}
 						{ IFileFragment 
@@ -18500,9 +19033,9 @@ return _instance;";
 							- _name = "Ready";
 							- m_type = implFragment;
 							- m_text = "";
-							- m_startRow = 38;
+							- m_startRow = 28;
 							- m_startCol_Short = 8;
-							- m_endRow = 38;
+							- m_endRow = 28;
 							- m_endCol_Short = 8;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -18516,10 +19049,10 @@ return _instance;";
 									- _name = "_instance";
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 36;
-									- m_startCol_Short = 27;
-									- m_endRow = 36;
-									- m_endCol_Short = 27;
+									- m_startRow = 26;
+									- m_startCol_Short = 28;
+									- m_endRow = 26;
+									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
 										- _id = GUID d6127381-92a7-4451-a044-23c8c6553b31;
@@ -18539,7 +19072,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID b9639296-16b9-4bdd-b556-227c024f0927;
-													- _value = "38";
+													- _value = "28";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -18576,9 +19109,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation Ready():impl";
-									- m_startRow = 38;
+									- m_startRow = 28;
 									- m_startCol_Short = 8;
-									- m_endRow = 40;
+									- m_endRow = 29;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -18598,7 +19131,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID b3805f2c-031e-4a22-8b47-41d71d86d556;
-													- _value = "42";
+													- _value = "31";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -18635,9 +19168,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~Ready():impl";
-									- m_startRow = 42;
+									- m_startRow = 31;
 									- m_startCol_Short = 9;
-									- m_endRow = 44;
+									- m_endRow = 32;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -18657,7 +19190,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 44d6967d-f480-402a-b88c-e11ae7c38a66;
-													- _value = "46";
+													- _value = "34";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -18694,9 +19227,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 46;
+									- m_startRow = 34;
 									- m_startCol_Short = 45;
-									- m_endRow = 51;
+									- m_endRow = 38;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -18717,7 +19250,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 429a4e36-8561-4833-a5c6-f0369427756c;
-													- _value = "53";
+													- _value = "40";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -18754,9 +19287,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 53;
+									- m_startRow = 40;
 									- m_startCol_Short = 29;
-									- m_endRow = 62;
+									- m_endRow = 48;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -18777,7 +19310,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID dbb83927-d13f-4859-89f1-387f8f3d0477;
-													- _value = "64";
+													- _value = "50";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -18814,9 +19347,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 64;
+									- m_startRow = 50;
 									- m_startCol_Short = 41;
-									- m_endRow = 69;
+									- m_endRow = 54;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -18837,7 +19370,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 67b4e9e7-22d1-480c-bd8a-1208c40c6cc9;
-													- _value = "71";
+													- _value = "56";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -18874,9 +19407,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 71;
+									- m_startRow = 56;
 									- m_startCol_Short = 28;
-									- m_endRow = 76;
+									- m_endRow = 60;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -18897,7 +19430,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID ebf24cf1-8f41-4dbb-9a80-10163efb57b5;
-													- _value = "78";
+													- _value = "62";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -18934,9 +19467,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation set_instance(ESXState *):impl";
-									- m_startRow = 78;
+									- m_startRow = 62;
 									- m_startCol_Short = 49;
-									- m_endRow = 80;
+									- m_endRow = 64;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -18956,7 +19489,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 8c7f0ac7-5c6f-46ac-9e28-3b7ffe651b46;
-													- _value = "82";
+													- _value = "66";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -18993,9 +19526,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation get_instance():impl";
-									- m_startRow = 82;
+									- m_startRow = 66;
 									- m_startCol_Short = 33;
-									- m_endRow = 84;
+									- m_endRow = 68;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -20149,7 +20682,7 @@ return _instance;";
 			- _myState = 8192;
 			- _name = "Suspended";
 			- Dependencies = { IRPYRawContainer 
-				- size = 2;
+				- size = 3;
 				- value = 
 				{ IDependency 
 					- _id = GUID b80aa50d-85a6-42f2-b873-58db1f987a47;
@@ -20245,6 +20778,53 @@ return _instance;";
 						- _id = GUID e8a39029-031d-4e23-a503-ae7b93669f90;
 					}
 				}
+				{ IDependency 
+					- _id = GUID d84fbc5b-557a-412a-9314-47df650917db;
+					- _myState = 2048;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Dependency";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "UsageType";
+												- _Value = "Existence";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Specification,Implementation,Existence";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "PowerOnSelfTest";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "PredefinedTypes.sbs";
+							- _subsystem = "PredefinedTypes";
+							- _class = "";
+							- _name = "Usage";
+							- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 40cdbf83-2569-41a6-866e-33d5d5d7e7d7;
+					}
+				}
 			}
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
@@ -20297,7 +20877,7 @@ return _instance;";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "ChangeState(esx, Mode1::Instance());";
+						- _bodyData = "ChangeState(esx, RealTimeLoop::Instance());";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -20437,30 +21017,43 @@ return _instance;";
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 3;
+						- size = 4;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID 4aee46b4-9716-46cf-aaea-dd9de383dcd4;
 							- _name = "Suspended:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency Suspended:spec";
-							- m_startRow = 12;
+							- m_startRow = 16;
 							- m_startCol_Short = 1;
-							- m_endRow = 12;
-							- m_endCol_Short = 417;
+							- m_endRow = 16;
+							- m_endCol_Short = 462;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 80233bc1-73cc-4f8a-8949-32a9630614bd;
-							- _name = "Operational:spec";
+							- _id = GUID 66b5b283-4e09-4135-b4ba-9ce3e690a4bf;
+							- _name = "EmbeddedSystemX:spec";
 							- m_type = textFragment;
-							- m_text = "//## auto:dependency Operational:spec";
-							- m_startRow = 14;
+							- m_text = "//## auto:dependency EmbeddedSystemX:spec";
+							- m_startRow = 18;
 							- m_startCol_Short = 1;
-							- m_endRow = 14;
-							- m_endCol_Short = 480;
+							- m_endRow = 18;
+							- m_endCol_Short = 533;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID f33b8793-8caa-432c-8846-4800d9bc0a19;
+							- _name = "ESXState:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency ESXState:spec";
+							- m_startRow = 20;
+							- m_startCol_Short = 1;
+							- m_endRow = 20;
+							- m_endCol_Short = 582;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -20470,26 +21063,26 @@ return _instance;";
 							- _name = "Suspended";
 							- m_type = implFragment;
 							- m_text = "";
-							- m_startRow = 20;
+							- m_startRow = 44;
 							- m_startCol_Short = 12;
-							- m_endRow = 20;
+							- m_endRow = 44;
 							- m_endCol_Short = 12;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
 								- _id = GUID a82604c5-407b-4ad3-a3ff-10a4153118ad;
 							}
 							- Fragments = { IRPYRawContainer 
-								- size = 8;
+								- size = 9;
 								- value = 
 								{ IFileFragment 
 									- _id = GUID 030a4f65-3a3b-4574-9e45-0b8c98bfe812;
 									- _name = "_instance";
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 18;
-									- m_startCol_Short = 30;
-									- m_endRow = 18;
-									- m_endCol_Short = 30;
+									- m_startRow = 42;
+									- m_startCol_Short = 31;
+									- m_endRow = 42;
+									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
 										- _id = GUID e40fe79b-c8f9-40fb-92f0-fff7dde14863;
@@ -20509,7 +21102,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 5a32683d-5607-48f4-91a8-5046bd76b422;
-													- _value = "20";
+													- _value = "44";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -20546,9 +21139,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation Suspended():impl";
-									- m_startRow = 20;
+									- m_startRow = 44;
 									- m_startCol_Short = 12;
-									- m_endRow = 21;
+									- m_endRow = 46;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -20568,7 +21161,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 33e4c546-2368-4505-b1ca-dc3526364968;
-													- _value = "23";
+													- _value = "48";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -20605,9 +21198,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~Suspended():impl";
-									- m_startRow = 23;
+									- m_startRow = 48;
 									- m_startCol_Short = 13;
-									- m_endRow = 24;
+									- m_endRow = 50;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -20627,7 +21220,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID be8307f4-252b-472c-b9ed-f18377e92df4;
-													- _value = "26";
+													- _value = "52";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -20648,7 +21241,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 1a062253-224a-401a-ab60-e7d671e6a603;
-													- _value = "32";
+													- _value = "33";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -20664,9 +21257,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 26;
-									- m_startCol_Short = 32;
-									- m_endRow = 34;
+									- m_startRow = 52;
+									- m_startCol_Short = 33;
+									- m_endRow = 61;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -20687,7 +21280,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID ad7c7567-6542-4ee0-a49e-b2c62e0d7b1a;
-													- _value = "36";
+													- _value = "63";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -20708,7 +21301,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 71a7cb21-7dca-4177-9148-c12b428aa24e;
-													- _value = "41";
+													- _value = "46";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -20724,9 +21317,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 36;
-									- m_startCol_Short = 41;
-									- m_endRow = 40;
+									- m_startRow = 63;
+									- m_startCol_Short = 46;
+									- m_endRow = 68;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -20747,7 +21340,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 48991b1e-a76c-44e4-ae14-b1d50f5b2e5a;
-													- _value = "42";
+													- _value = "70";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -20768,7 +21361,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 6496e73c-6d8a-4e77-aab1-a5bc5b74bc5b;
-													- _value = "39";
+													- _value = "44";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -20784,9 +21377,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 42;
-									- m_startCol_Short = 39;
-									- m_endRow = 46;
+									- m_startRow = 70;
+									- m_startCol_Short = 44;
+									- m_endRow = 75;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -20807,7 +21400,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 57c7601c-66f8-4d29-802e-39339afa2527;
-													- _value = "48";
+													- _value = "77";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -20844,9 +21437,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 48;
+									- m_startRow = 77;
 									- m_startCol_Short = 32;
-									- m_endRow = 52;
+									- m_endRow = 82;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -20867,7 +21460,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID cd0006b8-dfb4-497f-a510-88dc7ce3c66d;
-													- _value = "54";
+													- _value = "84";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -20888,7 +21481,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID d51e832b-cfa6-4a17-95c1-ea57c66bee9e;
-													- _value = "52";
+													- _value = "53";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -20904,9 +21497,68 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation set_instance(ESXState *):impl";
-									- m_startRow = 54;
-									- m_startCol_Short = 52;
-									- m_endRow = 56;
+									- m_startRow = 84;
+									- m_startCol_Short = 53;
+									- m_endRow = 86;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID e4e67a1c-332e-48ae-b21f-2dde38f6ec3e;
+									- _name = "get_instance:impl";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID 4c2aa24b-7f08-4b4d-b269-3394d6a98c03;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 38049b99-2ce6-469a-9bea-f90f8f2b5d77;
+													- _value = "88";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID 4847cc0b-bc21-47dd-b649-0480517484f7;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID b968eef4-40f7-49b9-b235-48a6cd9c5e43;
+													- _value = "37";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = textFragment;
+									- m_text = "//## auto:operation get_instance():impl";
+									- m_startRow = 88;
+									- m_startCol_Short = 37;
+									- m_endRow = 90;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -20923,56 +21575,17 @@ return _instance;";
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 6;
+						- size = 10;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID e6ccd3b7-1e59-4e96-a768-3812dd4c5b27;
 							- _name = "oxf:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency oxf:spec";
-							- m_startRow = 22;
+							- m_startRow = 15;
 							- m_startCol_Short = 1;
-							- m_endRow = 22;
-							- m_endCol_Short = 605;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID cfa20734-d88d-43b7-a5eb-b83bb13a0138;
-							- _name = "string:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency string:spec";
-							- m_startRow = 24;
-							- m_startCol_Short = 1;
-							- m_endRow = 24;
-							- m_endCol_Short = 645;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID fbf484db-8ec2-49f9-afda-7299ada6d0fa;
-							- _name = "algorithm:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency algorithm:spec";
-							- m_startRow = 26;
-							- m_startCol_Short = 1;
-							- m_endRow = 26;
-							- m_endCol_Short = 688;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID d4be0827-8672-4cde-ac5b-e0fe87a1e9f8;
-							- _name = "OpState:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency OpState:spec";
-							- m_startRow = 28;
-							- m_startCol_Short = 1;
-							- m_endRow = 28;
-							- m_endCol_Short = 732;
+							- m_endRow = 15;
+							- m_endCol_Short = 456;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -20982,10 +21595,104 @@ return _instance;";
 							- _name = "Operational:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency Operational:spec";
-							- m_startRow = 30;
+							- m_startRow = 17;
 							- m_startCol_Short = 1;
-							- m_endRow = 30;
-							- m_endCol_Short = 18;
+							- m_endRow = 17;
+							- m_endCol_Short = 504;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID ba222c29-ff34-4785-9e64-47d78f3d9b04;
+							- _name = "aom:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency aom:spec";
+							- m_startRow = 19;
+							- m_startCol_Short = 1;
+							- m_endRow = 19;
+							- m_endCol_Short = 547;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID a2ef6e55-edfa-4aaa-bcd1-64dd05f57555;
+							- _name = "Default:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency Default:spec";
+							- m_startRow = 21;
+							- m_startCol_Short = 1;
+							- m_endRow = 21;
+							- m_endCol_Short = 590;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID d8e175a4-6ac4-45ef-a66b-9556f517dc41;
+							- _name = "Mode1";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 23;
+							- m_startCol_Short = 1;
+							- m_endRow = 23;
+							- m_endCol_Short = 12;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IDependency";
+								- _id = GUID 511f4542-7d7c-46c3-b964-4ca921d7120e;
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID e1058b22-d704-4b98-a2c4-13dd56c602d0;
+							- _name = "PowerOnSelfTest";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 26;
+							- m_startCol_Short = 1;
+							- m_endRow = 26;
+							- m_endCol_Short = 22;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IDependency";
+								- _id = GUID d84fbc5b-557a-412a-9314-47df650917db;
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 92ede6e8-5b07-4fd7-8bd4-35aff82681ad;
+							- _name = "Ready";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 29;
+							- m_startCol_Short = 1;
+							- m_endRow = 29;
+							- m_endCol_Short = 12;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IDependency";
+								- _id = GUID b80aa50d-85a6-42f2-b873-58db1f987a47;
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID dfb51f09-06b7-4153-98d1-bd4d3f582bd4;
+							- _name = "ESXState:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency ESXState:spec";
+							- m_startRow = 32;
+							- m_startCol_Short = 1;
+							- m_endRow = 32;
+							- m_endCol_Short = 15;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID ecd662cf-9ab3-44a0-b877-35deb0fe5f82;
+							- _name = "EmbeddedSystemX:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency EmbeddedSystemX:spec";
+							- m_startRow = 35;
+							- m_startCol_Short = 1;
+							- m_endRow = 35;
+							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -21004,7 +21711,7 @@ return _instance;";
 										- value = 
 										{ ILiteralSpecification 
 											- _id = GUID f57a05ac-e3ae-493c-bde5-0924ed1a710e;
-											- _value = "35";
+											- _value = "40";
 										}
 									}
 									- _typeOf = { IHandle 
@@ -21025,7 +21732,7 @@ return _instance;";
 										- value = 
 										{ ILiteralSpecification 
 											- _id = GUID 5ebca0de-6f60-4c6d-b081-ae002797d4fe;
-											- _value = "34";
+											- _value = "38";
 										}
 									}
 									- _typeOf = { IHandle 
@@ -21041,16 +21748,16 @@ return _instance;";
 							}
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 35;
+							- m_startRow = 40;
 							- m_startCol_Short = 1;
-							- m_endRow = 72;
+							- m_endRow = 84;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
 								- _id = GUID a82604c5-407b-4ad3-a3ff-10a4153118ad;
 							}
 							- Fragments = { IRPYRawContainer 
-								- size = 12;
+								- size = 13;
 								- value = 
 								{ IFileFragment 
 									- _id = GUID 8b5654ed-61c9-4761-bec5-173142103ef1;
@@ -21058,9 +21765,9 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Constructors and destructors    ////
 ";
-									- m_startRow = 36;
+									- m_startRow = 47;
 									- m_startCol_Short = 5;
-									- m_endRow = 36;
+									- m_endRow = 47;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -21071,9 +21778,9 @@ return _instance;";
 									- _name = "Suspended:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation Suspended():spec";
-									- m_startRow = 41;
+									- m_startRow = 50;
 									- m_startCol_Short = 5;
-									- m_endRow = 41;
+									- m_endRow = 50;
 									- m_endCol_Short = 16;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -21084,9 +21791,9 @@ return _instance;";
 									- _name = "~Suspended:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~Suspended():spec";
-									- m_startRow = 44;
+									- m_startRow = 53;
 									- m_startCol_Short = 14;
-									- m_endRow = 44;
+									- m_endRow = 53;
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -21098,9 +21805,9 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Operations    ////
 ";
-									- m_startRow = 46;
+									- m_startRow = 55;
 									- m_startCol_Short = 5;
-									- m_endRow = 46;
+									- m_endRow = 55;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -21111,10 +21818,10 @@ return _instance;";
 									- _name = "Instance";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 49;
-									- m_startCol_Short = 21;
-									- m_endRow = 49;
-									- m_endCol_Short = 31;
+									- m_startRow = 58;
+									- m_startCol_Short = 22;
+									- m_endRow = 58;
+									- m_endCol_Short = 32;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 38aee095-48fc-41f8-9bc0-2cb5b03fdf76;
@@ -21125,10 +21832,10 @@ return _instance;";
 									- _name = "Resume";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 52;
+									- m_startRow = 61;
 									- m_startCol_Short = 18;
-									- m_endRow = 52;
-									- m_endCol_Short = 41;
+									- m_endRow = 61;
+									- m_endCol_Short = 46;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 05f5f2fe-a1b1-4e9e-9bf8-e2d6ca8a2d7b;
@@ -21139,10 +21846,10 @@ return _instance;";
 									- _name = "Stop";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 55;
+									- m_startRow = 64;
 									- m_startCol_Short = 18;
-									- m_endRow = 55;
-									- m_endCol_Short = 39;
+									- m_endRow = 64;
+									- m_endCol_Short = 44;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID c1a7e7b1-bdd3-453b-8105-4b4c3b9b3fc8;
@@ -21154,9 +21861,9 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Additional operations    ////
 ";
-									- m_startRow = 57;
+									- m_startRow = 66;
 									- m_startCol_Short = 5;
-									- m_endRow = 57;
+									- m_endRow = 66;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -21168,9 +21875,9 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Attributes    ////
 ";
-									- m_startRow = 59;
+									- m_startRow = 68;
 									- m_startCol_Short = 5;
-									- m_endRow = 59;
+									- m_endRow = 68;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -21181,10 +21888,10 @@ return _instance;";
 									- _name = "_instance";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 63;
-									- m_startCol_Short = 21;
-									- m_endRow = 63;
-									- m_endCol_Short = 30;
+									- m_startRow = 72;
+									- m_startCol_Short = 22;
+									- m_endRow = 72;
+									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
 										- _id = GUID e40fe79b-c8f9-40fb-92f0-fff7dde14863;
@@ -21195,9 +21902,9 @@ return _instance;";
 									- _name = "DisplayState";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 66;
+									- m_startRow = 75;
 									- m_startCol_Short = 18;
-									- m_endRow = 66;
+									- m_endRow = 75;
 									- m_endCol_Short = 32;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -21209,10 +21916,23 @@ return _instance;";
 									- _name = "set_instance:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation set_instance(ESXState *):spec";
-									- m_startRow = 71;
+									- m_startRow = 80;
 									- m_startCol_Short = 17;
-									- m_endRow = 71;
-									- m_endCol_Short = 51;
+									- m_endRow = 80;
+									- m_endCol_Short = 52;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID dd0858ac-b996-41ce-bedf-cd67b0102a21;
+									- _name = "get_instance:spec";
+									- m_type = textFragment;
+									- m_text = "//## auto:operation get_instance():spec";
+									- m_startRow = 83;
+									- m_startCol_Short = 22;
+									- m_endRow = 83;
+									- m_endCol_Short = 36;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
@@ -24055,9 +24775,6 @@ return _instance;";
 			- _id = GUID 3f8c7504-c376-4af2-9f3f-41063de76b8d;
 			- _myState = 8192;
 			- _name = "TestUser";
-			- Dependencies = { IRPYRawContainer 
-				- size = 0;
-			}
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "";
@@ -24904,6 +25621,7 @@ return _instance;";
 								}
 								{ IFileFragment 
 									- _id = GUID 2bc40390-4685-48b5-b0c5-dfafa2f6203f;
+									- _name = "TestUser";
 									- m_type = specFragment;
 									- m_text = "";
 									- m_startRow = 68;
@@ -25314,6 +26032,7 @@ return _instance;";
 								- value = 
 								{ IFileFragment 
 									- _id = GUID 3044fbf9-ae40-4d06-998e-e12a42680a35;
+									- _name = "TestUser";
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
@@ -25858,7 +26577,7 @@ return _instance;";
 					- _name = "statechart_0";
 					- _lastID = 12;
 					- weakCGTime = 2.16.2010::20:13:21;
-					- strongCGTime = 2.15.2010::20:31:20;
+					- strongCGTime = 2.16.2010::19:59:17;
 					- _multiplicity = "";
 					- _itsStateChart = { IHandle 
 						- _m2Class = "";
@@ -27673,9 +28392,6 @@ return _instance;";
 					- _id = GUID 4be4705d-9255-4075-94e4-3aa7a8b6f8f0;
 					- _myState = 139264;
 					- _name = "SelfTestFailed";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -27693,9 +28409,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID d39e0c6a-64e8-47ac-ab82-dc519b48bc89;
@@ -27708,9 +28421,6 @@ return _instance;";
 							- m_endCol_Short = 535;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -27787,9 +28497,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 3a4a2548-5837-4853-8aa1-439b1e7f8a4c;
@@ -27848,9 +28555,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -27912,9 +28616,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID ab2f7c12-b956-4076-a524-f080d7f899ea;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -27924,9 +28625,6 @@ return _instance;";
 					- _id = GUID 67c09c64-27f4-4900-b43f-cb63e0c3728f;
 					- _myState = 139264;
 					- _name = "SelfTestFailed";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -27944,9 +28642,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID fa3f8c30-d08e-4dd0-8fee-2886c2ceb39a;
@@ -27959,9 +28654,6 @@ return _instance;";
 							- m_endCol_Short = 519;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -27976,9 +28668,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID be4376bf-2356-47a5-a2c2-1e0e0f2e70f8;
@@ -27992,9 +28681,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID c9805e79-cd23-4560-81b4-d9a1b6baaa3f;
@@ -28007,9 +28693,6 @@ return _instance;";
 							- m_endCol_Short = 15;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -28087,9 +28770,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 0edfc115-c2d7-4f2d-bece-b6e68c9eb3fb;
@@ -28104,9 +28784,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID d95548cd-69e9-409c-a269-5b00bfd51484;
@@ -28120,9 +28797,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 608d9d72-fb7c-45db-9d50-7ef40be726c2;
@@ -28135,9 +28809,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -28153,9 +28824,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID ab8a3865-128e-4a35-b452-3f5b5977d540;
@@ -28169,9 +28837,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID ab2f7c12-b956-4076-a524-f080d7f899ea;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -28302,9 +28967,6 @@ return _instance;";
 					- _id = GUID 5ead8b53-9057-4d3c-9514-84e0293af30a;
 					- _myState = 139264;
 					- _name = "Initialized";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -28322,9 +28984,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID bd10cdde-49cd-4527-948c-cdec2ea10710;
@@ -28338,9 +28997,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 02d16987-b77b-4168-a501-eb342ddfd5c2;
@@ -28353,9 +29009,6 @@ return _instance;";
 							- m_endCol_Short = 625;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -28432,9 +29085,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 89c39fdd-a2f8-477a-b94f-b117d4d32c27;
@@ -28493,9 +29143,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -28557,9 +29204,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID c935eb75-7dd2-47d0-89fb-c5acc1b21967;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -28569,9 +29213,6 @@ return _instance;";
 					- _id = GUID 29d44e82-d202-4414-8774-a11aa38532b2;
 					- _myState = 139264;
 					- _name = "Initialized";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -28589,9 +29230,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 9f3883cf-010f-42ef-b310-b7f31767c75f;
@@ -28604,9 +29242,6 @@ return _instance;";
 							- m_endCol_Short = 507;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -28621,9 +29256,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID ac3e685d-38ff-4baa-9529-e579767b41ba;
@@ -28636,9 +29268,6 @@ return _instance;";
 							- m_endCol_Short = 596;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -28653,9 +29282,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 0f297f64-0a57-4013-beb6-8da7e4b341d0;
@@ -28668,9 +29294,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -28748,9 +29371,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 26290f5a-5844-4be9-995a-2866eb5c262e;
@@ -28765,9 +29385,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID df2680d9-f342-422f-ba21-8ec4d0f632b6;
@@ -28781,9 +29398,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 997e5215-9436-4dd6-9a52-507eb4937816;
@@ -28796,9 +29410,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -28814,9 +29425,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID bec220b6-1d6c-46e9-ac2e-03ab67d90a72;
@@ -28830,9 +29438,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID c935eb75-7dd2-47d0-89fb-c5acc1b21967;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -28963,9 +29568,6 @@ return _instance;";
 					- _id = GUID b11b5306-4e8a-47ad-9072-c3215c12a8e4;
 					- _myState = 139264;
 					- _name = "Configure";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -28983,9 +29585,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 88da483b-c992-456d-a7d8-0f3c43967ceb;
@@ -28998,9 +29597,6 @@ return _instance;";
 							- m_endCol_Short = 499;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -29015,9 +29611,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 254bcbfa-3c3b-4794-ba96-1ceb6abc9aeb;
@@ -29030,9 +29623,6 @@ return _instance;";
 							- m_endCol_Short = 586;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -29047,9 +29637,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 1420a5c6-fb8a-483c-a03a-be455ac90502;
@@ -29062,9 +29649,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -29142,9 +29726,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID f2e8563f-14c3-47ed-a3f2-e6f67f2ab309;
@@ -29159,9 +29740,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID bfb9a9f6-21ca-4878-9b31-4e5a01b4cf6a;
@@ -29175,9 +29753,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID e011f7d1-a0eb-4a70-9366-7bba1c194f47;
@@ -29190,9 +29765,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -29208,9 +29780,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 90a1a45d-7fa4-4bf3-ae81-a8699f69fd34;
@@ -29225,9 +29794,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID fea6f259-f900-4450-8626-f3353837e73d;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -29237,9 +29803,6 @@ return _instance;";
 					- _id = GUID 6483b6b5-d12d-4f15-9cd9-678bfe1d17cd;
 					- _myState = 139264;
 					- _name = "Configure";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -29257,9 +29820,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 5a4f5579-4ef8-46e1-98b4-cc21caf84ccd;
@@ -29273,9 +29833,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID a5df6412-0462-4ed1-a011-bf6aadc62998;
@@ -29288,9 +29845,6 @@ return _instance;";
 							- m_endCol_Short = 619;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -29367,9 +29921,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID e3eafce0-cc7e-49fd-a98a-ffa9f40c5268;
@@ -29428,9 +29979,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -29491,9 +30039,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID fea6f259-f900-4450-8626-f3353837e73d;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -29624,9 +30169,6 @@ return _instance;";
 					- _id = GUID 0981bb22-4d5e-4f7f-84b8-8aba10e790ce;
 					- _myState = 139264;
 					- _name = "ConfigurationEnded";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -29644,9 +30186,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 4a41690b-c49f-47f6-8063-aaf4dc745a07;
@@ -29660,9 +30199,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 9ec030e7-873e-459a-b3c4-b187e23f9f66;
@@ -29675,9 +30211,6 @@ return _instance;";
 							- m_endCol_Short = 646;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -29754,9 +30287,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID cb5182e4-9945-4a4e-926c-04294c7346ed;
@@ -29815,9 +30345,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -29879,9 +30406,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 4e9567d0-a82d-4dd5-a0cf-680aa75001a5;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -29891,9 +30415,6 @@ return _instance;";
 					- _id = GUID ff343b19-cc13-4a16-9feb-0e1331123d08;
 					- _myState = 139264;
 					- _name = "ConfigurationEnded";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -29911,9 +30432,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 43789d8a-435b-490d-a291-0b269969cee6;
@@ -29926,9 +30444,6 @@ return _instance;";
 							- m_endCol_Short = 535;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -29943,9 +30458,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID edbaa08c-8229-48c9-82f3-d325c666f78d;
@@ -29958,9 +30470,6 @@ return _instance;";
 							- m_endCol_Short = 631;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -29975,9 +30484,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID dab4a17a-83bf-4780-8e41-b8f699e7e129;
@@ -29990,9 +30496,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -30070,9 +30573,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 1cd0ea36-6528-4085-a547-52f1facfdb24;
@@ -30087,9 +30587,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID e4255167-8706-41a8-b56a-64280eadbfda;
@@ -30103,9 +30600,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 4ff72b0b-884d-4788-a155-395612f8d7d2;
@@ -30118,9 +30612,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -30136,9 +30627,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID b15b920a-2878-4d11-b288-68fed9ef5197;
@@ -30152,9 +30640,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 4e9567d0-a82d-4dd5-a0cf-680aa75001a5;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -30285,9 +30770,6 @@ return _instance;";
 					- _id = GUID 293ae530-8fc1-4539-827a-8663cd77308d;
 					- _myState = 139264;
 					- _name = "Stop";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -30305,9 +30787,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 2df4126a-3965-424c-847f-403a3fc0fbe7;
@@ -30320,9 +30799,6 @@ return _instance;";
 							- m_endCol_Short = 479;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -30337,9 +30813,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 19ec4042-74b2-472f-b72c-f4350c977fb8;
@@ -30352,9 +30825,6 @@ return _instance;";
 							- m_endCol_Short = 561;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -30369,9 +30839,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 83542d28-5bc8-4892-add0-c13c64e20f2b;
@@ -30384,9 +30851,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -30464,9 +30928,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 83017200-6e5d-4a8b-bd74-322d9f7e0655;
@@ -30481,9 +30942,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID b83a9415-2526-4860-8ac9-a16eef6600b2;
@@ -30497,9 +30955,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 58f7f567-f2f8-41c1-94bf-e02d1d544e9a;
@@ -30512,9 +30967,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -30530,9 +30982,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 93824f17-72ef-4ab4-a841-f82954a7d005;
@@ -30547,9 +30996,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 3f2d885a-1e4d-4641-93e2-52af07a18e74;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -30559,9 +31005,6 @@ return _instance;";
 					- _id = GUID 82102dfa-6fbd-4036-b2c6-b28f5ef33bb3;
 					- _myState = 139264;
 					- _name = "Stop";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -30579,9 +31022,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 6a4ee033-5997-4e5b-a8f9-64c2c19290e8;
@@ -30595,9 +31035,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID e26568d7-8394-4106-a9b1-773b44afb04c;
@@ -30610,9 +31047,6 @@ return _instance;";
 							- m_endCol_Short = 604;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -30689,9 +31123,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID eaaedfe7-3697-4532-a6ed-d082af3f40f1;
@@ -30750,9 +31181,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -30813,9 +31241,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 3f2d885a-1e4d-4641-93e2-52af07a18e74;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -30946,9 +31371,6 @@ return _instance;";
 					- _id = GUID 2f52e9b8-810e-4b46-8dc3-efa816ed7e2d;
 					- _myState = 139264;
 					- _name = "Suspend";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -30966,9 +31388,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 1542d832-5ec3-43cb-a3ab-2431cc6c7891;
@@ -30982,9 +31401,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID e92760fa-f78c-42d1-9bcf-4a5ca94fb8e9;
@@ -30997,9 +31413,6 @@ return _instance;";
 							- m_endCol_Short = 613;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -31076,9 +31489,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID a76ce68d-ba3c-4069-9653-e4b636ef9dc1;
@@ -31137,9 +31547,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -31201,9 +31608,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 7798a265-123e-49b0-b7b2-f07d88962675;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -31213,9 +31617,6 @@ return _instance;";
 					- _id = GUID 22871f7b-e000-4fc0-a625-65b86002c269;
 					- _myState = 139264;
 					- _name = "Suspend";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -31233,9 +31634,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID e1a82690-b21d-421e-961b-d48f86065c7e;
@@ -31248,9 +31646,6 @@ return _instance;";
 							- m_endCol_Short = 491;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -31265,9 +31660,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 2be6c229-3d69-4abd-8a0c-6651b27830c2;
@@ -31280,9 +31672,6 @@ return _instance;";
 							- m_endCol_Short = 576;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -31297,9 +31686,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 10a63aa1-ec39-4037-9db6-88d4286a4f2b;
@@ -31312,9 +31698,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -31392,9 +31775,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 5e9cd28e-37e5-4227-bde9-81eb3e88520a;
@@ -31409,9 +31789,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 56a5bd07-12b7-4eb0-ab72-ac5c51febe32;
@@ -31425,9 +31802,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 39dc422f-5d71-4f96-820c-d20bd1f14b69;
@@ -31440,9 +31814,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -31458,9 +31829,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID d8ca09e4-1886-4ee8-8da1-a60a505502a2;
@@ -31474,9 +31842,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 7798a265-123e-49b0-b7b2-f07d88962675;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -31607,9 +31972,6 @@ return _instance;";
 					- _id = GUID 9785922a-65e5-4aaa-bfd6-8db78268725f;
 					- _myState = 139264;
 					- _name = "Resume";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -31627,9 +31989,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 0e6beba3-e730-4026-a19b-15d84a449fb9;
@@ -31643,9 +32002,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 5027167a-d6c8-4630-ad62-dc8b0909d760;
@@ -31658,9 +32014,6 @@ return _instance;";
 							- m_endCol_Short = 610;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -31737,9 +32090,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID f5bd5ffe-4b60-484a-99df-6687aac72c84;
@@ -31798,9 +32148,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -31862,9 +32209,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 9f45b6bd-f7cc-4b2e-abcb-efd909c4e8ed;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -31874,9 +32218,6 @@ return _instance;";
 					- _id = GUID e120cc5f-940c-471f-b009-7433ce7ebc0b;
 					- _myState = 139264;
 					- _name = "Resume";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -31894,9 +32235,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID dc5cf871-7ce7-4ed3-9e7a-8e030e812a50;
@@ -31909,9 +32247,6 @@ return _instance;";
 							- m_endCol_Short = 487;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -31926,9 +32261,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 21f13ea6-6e2c-49ee-93b9-b1b2befdd265;
@@ -31941,9 +32273,6 @@ return _instance;";
 							- m_endCol_Short = 571;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -31958,9 +32287,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 6209dfca-3142-49b6-9a4b-43985a47b61a;
@@ -31973,9 +32299,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -32053,9 +32376,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 95505d98-2af1-4981-8e91-c5ce7d987ce5;
@@ -32070,9 +32390,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 205c080e-e7a5-4844-ba11-752d9a525bc3;
@@ -32086,9 +32403,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID be153f33-67d5-4f3b-8ee2-63c78b8d6bd5;
@@ -32101,9 +32415,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -32119,9 +32430,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 0831bb78-5d3a-45ca-89bc-4583487e7223;
@@ -32135,9 +32443,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 9f45b6bd-f7cc-4b2e-abcb-efd909c4e8ed;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -32268,9 +32573,6 @@ return _instance;";
 					- _id = GUID 0b51b7a2-f14c-4e36-ac86-023cff60c803;
 					- _myState = 139264;
 					- _name = "Start";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -32288,9 +32590,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID d11b6868-1b69-4cce-af62-d3aec966719a;
@@ -32304,9 +32603,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 96604029-8753-48e8-9e58-159b67f4d959;
@@ -32319,9 +32615,6 @@ return _instance;";
 							- m_endCol_Short = 607;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -32398,9 +32691,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID e891d3bf-7eb0-4605-80f9-66db85ff1f89;
@@ -32459,9 +32749,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -32523,9 +32810,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 2fdfa43a-aedc-44cd-bea5-2e62fbfb7db1;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -32535,9 +32819,6 @@ return _instance;";
 					- _id = GUID e8a217ca-25f1-4ff0-bd23-b1edc42c0f21;
 					- _myState = 139264;
 					- _name = "Start";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -32555,9 +32836,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 781f29b6-4207-4a72-a6b9-f887b989f247;
@@ -32570,9 +32848,6 @@ return _instance;";
 							- m_endCol_Short = 483;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -32587,9 +32862,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID a3138d97-a662-49aa-8144-3e8e0d0d308f;
@@ -32602,9 +32874,6 @@ return _instance;";
 							- m_endCol_Short = 566;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -32619,9 +32888,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID baaee4c6-ad02-49f0-b435-9fe65db73ebb;
@@ -32634,9 +32900,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -32714,9 +32977,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 3ced0fea-6671-41ca-b205-8fba57efdb8a;
@@ -32731,9 +32991,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID f56734d4-6ecf-4910-ac92-70a13534aaea;
@@ -32747,9 +33004,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID cc2b1f94-cb27-455b-8660-4c80ae88a7f5;
@@ -32762,9 +33016,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -32780,9 +33031,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 59111499-9ee9-4b7b-b024-f63cbee7e624;
@@ -32796,9 +33044,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 2fdfa43a-aedc-44cd-bea5-2e62fbfb7db1;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -32929,9 +33174,6 @@ return _instance;";
 					- _id = GUID 1e2ac49e-4832-445d-845b-17b336207212;
 					- _myState = 139264;
 					- _name = "Restart";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -32949,9 +33191,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 883d7351-6e91-4cf4-89bf-4dc700ddf673;
@@ -32965,9 +33204,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 56cdad4a-f5ff-4829-80c2-9e0c038d3d5b;
@@ -32980,9 +33216,6 @@ return _instance;";
 							- m_endCol_Short = 613;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -33059,9 +33292,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 07e78a9d-2907-4248-93ca-ed9cc2d19d4d;
@@ -33120,9 +33350,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -33184,9 +33411,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID e295bf43-8f07-4fff-bb61-f36f433d3756;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -33196,9 +33420,6 @@ return _instance;";
 					- _id = GUID 58455df3-b9b4-43c0-8328-31ccd187e81a;
 					- _myState = 139264;
 					- _name = "Restart";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -33216,9 +33437,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID e84d4d83-671e-4816-a7da-adbca0b18810;
@@ -33231,9 +33449,6 @@ return _instance;";
 							- m_endCol_Short = 491;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -33248,9 +33463,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID ddf6c42c-f0ba-43e1-b09a-11ce9d89e710;
@@ -33263,9 +33475,6 @@ return _instance;";
 							- m_endCol_Short = 576;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -33280,9 +33489,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID a1532f5a-8d9c-493d-870b-0bf717b56a01;
@@ -33295,9 +33501,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -33375,9 +33578,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 4711534b-5093-461f-b99a-8ff6b2133c98;
@@ -33392,9 +33592,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 9275b3cf-60d2-4b30-8573-772f3341ee00;
@@ -33408,9 +33605,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 4b4f94e4-e0a7-4e73-95f7-e3f7daffd87b;
@@ -33423,9 +33617,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -33441,9 +33632,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 6ccd1ecb-c4df-4414-af15-3be9af8a726c;
@@ -33457,9 +33645,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID e295bf43-8f07-4fff-bb61-f36f433d3756;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -33590,9 +33775,6 @@ return _instance;";
 					- _id = GUID fd707606-7683-4d39-aba7-b46ac1a9d6df;
 					- _myState = 139264;
 					- _name = "ChMode";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -33610,9 +33792,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID d142c019-50fe-436d-b4e7-ec5e696e9f86;
@@ -33626,9 +33805,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID c272f566-6198-4123-a37a-12707b783b6b;
@@ -33641,9 +33817,6 @@ return _instance;";
 							- m_endCol_Short = 610;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -33720,9 +33893,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 6126d819-d427-46a6-8c3b-110b94952835;
@@ -33781,9 +33951,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -33845,9 +34012,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 92655ddb-6d99-4583-9104-d13ebf76d2e4;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -33857,9 +34021,6 @@ return _instance;";
 					- _id = GUID acd54c99-1501-4b7d-9c63-a4971a009f5d;
 					- _myState = 139264;
 					- _name = "ChMode";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -33877,9 +34038,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 3de788a2-13f6-4818-902a-31c46ac9b295;
@@ -33892,9 +34050,6 @@ return _instance;";
 							- m_endCol_Short = 487;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -33909,9 +34064,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 6fa75856-47ea-47e2-8767-d99f6eee6641;
@@ -33924,9 +34076,6 @@ return _instance;";
 							- m_endCol_Short = 571;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -33941,9 +34090,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 772e3a14-1b89-4600-9016-dcb4b79dffc2;
@@ -33956,9 +34102,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -34036,9 +34179,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 6a76e36c-e3ad-41a2-b5f8-1aaa912cffcb;
@@ -34053,9 +34193,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 99a0b38d-13c4-401d-b5bc-2e7303c85d15;
@@ -34069,9 +34206,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 7a27222c-6390-403b-832b-eb305e33f274;
@@ -34084,9 +34218,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -34102,9 +34233,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 521cf205-1987-459f-950e-2910cedfeaff;
@@ -34118,9 +34246,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 92655ddb-6d99-4583-9104-d13ebf76d2e4;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -34251,9 +34376,6 @@ return _instance;";
 					- _id = GUID 5e53cb9f-2ff6-4cdc-89b1-4459bd81b863;
 					- _myState = 139264;
 					- _name = "Exit";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -34271,9 +34393,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 98b9bf1f-45cb-4175-90ef-015c76d0b174;
@@ -34286,9 +34405,6 @@ return _instance;";
 							- m_endCol_Short = 479;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -34303,9 +34419,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 70600855-9bdc-4e87-8d87-c1e1bb6edc4a;
@@ -34318,9 +34431,6 @@ return _instance;";
 							- m_endCol_Short = 561;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -34335,9 +34445,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 01a93ccc-8d01-40c2-9b9e-9852b413bba1;
@@ -34350,9 +34457,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -34430,9 +34534,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID cd9aa0ec-ff54-4c01-8cb3-d7d7d0fbe09b;
@@ -34447,9 +34548,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 7379c131-e466-475b-911c-16609297241c;
@@ -34463,9 +34561,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID b7988f5b-5fca-4e21-8796-53324b99fe7b;
@@ -34478,9 +34573,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -34496,9 +34588,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 12a1dbf3-a935-407a-a4b1-6128e36f8609;
@@ -34513,9 +34602,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 365fdb9f-3ddd-4c32-858d-562d02313958;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -34525,9 +34611,6 @@ return _instance;";
 					- _id = GUID d5a3a5e8-c388-403c-bf20-b93b6d87322b;
 					- _myState = 139264;
 					- _name = "Exit";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -34545,9 +34628,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 342e8088-4766-4d0a-8028-de2433ca08ba;
@@ -34561,9 +34641,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID f1284257-4324-4a2c-8514-85acecca23ab;
@@ -34576,9 +34653,6 @@ return _instance;";
 							- m_endCol_Short = 604;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -34655,9 +34729,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 2b6a7e15-024e-4804-a6ac-c7a91ca4ff03;
@@ -34716,9 +34787,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -34779,9 +34847,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 365fdb9f-3ddd-4c32-858d-562d02313958;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -34912,9 +34977,6 @@ return _instance;";
 					- _id = GUID a4570f3f-86e0-4773-bcf7-c5cf4b90a7ef;
 					- _myState = 139264;
 					- _name = "ConfigX";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -34932,9 +34994,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 2f75bd9e-0b9d-4a8b-b4e8-eadbe4d840e0;
@@ -34948,9 +35007,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 21cb2b1a-c45d-497a-be65-cc672369f48c;
@@ -34963,9 +35019,6 @@ return _instance;";
 							- m_endCol_Short = 613;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -35042,9 +35095,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 8d68bd4e-7d9b-4fec-a0bd-620c1fbc62fb;
@@ -35103,9 +35153,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -35167,9 +35214,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 48b57afd-6d81-401f-8dc6-11cc1dbba949;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -35179,9 +35223,6 @@ return _instance;";
 					- _id = GUID cd52f8dc-87de-4d87-97b9-84c094fc94f1;
 					- _myState = 139264;
 					- _name = "ConfigX";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -35199,9 +35240,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID c0324c54-2217-4808-bd7f-d899d0e2e087;
@@ -35214,9 +35252,6 @@ return _instance;";
 							- m_endCol_Short = 491;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -35231,9 +35266,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 6a2a65fe-e884-457b-8132-4aa09c447df4;
@@ -35246,9 +35278,6 @@ return _instance;";
 							- m_endCol_Short = 576;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -35263,9 +35292,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 508a2bf1-624b-4471-88c3-b76cb7728f78;
@@ -35278,9 +35304,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -35358,9 +35381,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 40c4b479-ecff-45b4-ad6a-33c415d25567;
@@ -35375,9 +35395,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 0c45a267-89e4-46ad-8239-987c0b028bd5;
@@ -35391,9 +35408,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID d11d0416-2344-4896-8307-1978e0f99032;
@@ -35406,9 +35420,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -35424,9 +35435,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 076b4b8e-f4a6-4b57-ab0c-ec41a7dedc89;
@@ -35440,9 +35448,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 48b57afd-6d81-401f-8dc6-11cc1dbba949;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -35573,9 +35578,6 @@ return _instance;";
 					- _id = GUID 6d6706d7-5a46-4686-92d6-a3b59040fd73;
 					- _myState = 139264;
 					- _name = "eventX";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -35593,9 +35595,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 2e22f5b1-b04e-4667-9a6a-2c3664f10b66;
@@ -35609,9 +35608,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 6572c5c3-19bc-4741-93c2-26368976c343;
@@ -35624,9 +35620,6 @@ return _instance;";
 							- m_endCol_Short = 610;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -35703,9 +35696,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID f311e5f9-5542-4c96-97a4-ab1c8dfa6b30;
@@ -35764,9 +35754,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -35828,9 +35815,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 1d740f93-e3f2-42a0-891b-20a70947072a;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -35840,9 +35824,6 @@ return _instance;";
 					- _id = GUID e226ed37-aa77-443a-899a-e3649c9ba384;
 					- _myState = 139264;
 					- _name = "eventX";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -35860,9 +35841,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 63de2ac8-1229-4883-a475-12d1c4d4c0a9;
@@ -35875,9 +35853,6 @@ return _instance;";
 							- m_endCol_Short = 487;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -35892,9 +35867,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 1676f562-cb8d-4015-ae20-3e3fff930903;
@@ -35907,9 +35879,6 @@ return _instance;";
 							- m_endCol_Short = 571;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -35924,9 +35893,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID ecba4664-c295-4ac3-82bf-89a1c8916743;
@@ -35939,9 +35905,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -36019,9 +35982,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 88a040d7-4569-4a54-9aab-5a2d90e14a9e;
@@ -36036,9 +35996,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 039e6ad2-eecc-4253-aaee-55398d297ffa;
@@ -36052,9 +36009,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 3bca1314-d419-4c9d-a278-d5ddb572cc2e;
@@ -36067,9 +36021,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -36085,9 +36036,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID c692068f-bacf-47c8-a1e8-280a813aa031;
@@ -36101,9 +36049,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 1d740f93-e3f2-42a0-891b-20a70947072a;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -36234,9 +36179,6 @@ return _instance;";
 					- _id = GUID 6525062f-e3b2-40f2-8379-22a365cf619e;
 					- _myState = 139264;
 					- _name = "eventY";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -36254,9 +36196,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID e0b4145b-345c-42cc-9555-a5dbe774c2f5;
@@ -36270,9 +36209,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 254dd9f5-ba6b-4373-8cf5-e3becd6eda5a;
@@ -36285,9 +36221,6 @@ return _instance;";
 							- m_endCol_Short = 610;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -36364,9 +36297,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 64f113f9-2111-4ce1-9a64-f7365dc87d5a;
@@ -36425,9 +36355,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -36489,9 +36416,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 71e37bdc-63be-4f6e-94e5-f4362ecab6ea;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -36501,9 +36425,6 @@ return _instance;";
 					- _id = GUID 816a4e7c-1636-419f-84a5-f4577901139c;
 					- _myState = 139264;
 					- _name = "eventY";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -36521,9 +36442,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 0d187bc6-81f8-4d84-9dc8-9581a83d3098;
@@ -36536,9 +36454,6 @@ return _instance;";
 							- m_endCol_Short = 487;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -36553,9 +36468,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID ce857188-7c63-4f3d-b020-6491bb0cfa09;
@@ -36568,9 +36480,6 @@ return _instance;";
 							- m_endCol_Short = 571;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -36585,9 +36494,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 972c53df-a5af-414d-a450-49bad36f69cb;
@@ -36600,9 +36506,6 @@ return _instance;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -36680,9 +36583,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 5306fd99-1e40-414f-9b1d-8cf69b8eac97;
@@ -36697,9 +36597,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 29785838-a9e4-4b8a-bca9-1573c0d0b8dc;
@@ -36713,9 +36610,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID bad87a46-11cd-42c5-adb6-4415c8d4f07f;
@@ -36728,9 +36622,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -36746,9 +36637,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 109ea2d9-b66e-4412-8f5b-ee5363f0f4d6;
@@ -36762,9 +36650,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 71e37bdc-63be-4f6e-94e5-f4362ecab6ea;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -36895,9 +36780,6 @@ return _instance;";
 					- _id = GUID 46609008-3c77-4d76-8448-6cdd0aea41d1;
 					- _myState = 139264;
 					- _name = "SelfTestOk";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -36915,9 +36797,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID ee66f429-36f6-49b3-b05d-91b04cd78d40;
@@ -36930,9 +36809,6 @@ return _instance;";
 							- m_endCol_Short = 523;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -37009,9 +36885,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID df27d1f7-764f-4e25-a0c7-c7f957812329;
@@ -37070,9 +36943,6 @@ return _instance;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -37134,9 +37004,6 @@ return _instance;";
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 5c4c9c4a-7879-4af7-815b-731acb206081;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -37146,9 +37013,6 @@ return _instance;";
 					- _id = GUID 442c724e-c2d1-43a5-a297-5fbeb16d133e;
 					- _myState = 139264;
 					- _name = "SelfTestOk";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -37166,9 +37030,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 832ebffe-b1b4-4ab7-9197-6a3763b6db2b;
@@ -37181,9 +37042,6 @@ return _instance;";
 							- m_endCol_Short = 503;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -37198,9 +37056,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID bad39a4f-2ecc-41fa-b309-9fedb62bcc7c;
@@ -37214,9 +37069,6 @@ return _instance;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID f9ea1d79-8088-4c79-9357-aa343b05b33d;
@@ -37229,9 +37081,6 @@ return _instance;";
 							- m_endCol_Short = 15;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -37309,9 +37158,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID d73c1aff-45e9-49bb-9afa-aa5ac11fb27e;
@@ -37326,9 +37172,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 35d274bf-9db2-4ad3-9420-b2ae2c0e35f8;
@@ -37342,9 +37185,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 2abf6c16-46cf-4a9c-b94b-a2fe0fd324da;
@@ -37357,9 +37197,6 @@ return _instance;";
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -37375,9 +37212,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 3e429fd0-da6f-495e-8a91-45a6c61058cd;
@@ -37391,9 +37225,6 @@ return _instance;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 5c4c9c4a-7879-4af7-815b-731acb206081;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}

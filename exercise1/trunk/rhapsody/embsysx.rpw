@@ -4,13 +4,13 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		- size = 0;
 	}
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 3;
+		- size = 5;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -29,16 +29,16 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "CommandStateModel";
 				- _id = GUID 4c782279-dd65-468b-a2bb-3838882f6867;
 			}
-			- _UpLeft = 72 0 ;
-			- _DownRight = 740 577 ;
+			- _UpLeft = 0 60 ;
+			- _DownRight = 1222 672 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 2;
+			- m_nDiagramIndex = 5;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -58,9 +58,37 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _id = GUID 7255d431-0d6f-4903-9a64-c4f913609ab9;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1256 571 ;
+			- _DownRight = 2441 804 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 0;
+			- m_nDiagramIndex = 3;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 110;
+				- m_nTop = 110;
+				- m_nRight = 867;
+				- m_nBottom = 398;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IMSC";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "TestStartSequence";
+				- _id = GUID 13132f50-673b-415b-b4d8-2b5af58db884;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 707 214 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 1;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -85,10 +113,38 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID ab5c7395-da3c-4e5d-ac9e-6afc42ef961a;
 			}
-			- _UpLeft = 0 100 ;
-			- _DownRight = 1053 727 ;
+			- _UpLeft = 0 27 ;
+			- _DownRight = 1053 654 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 1;
+			- m_nDiagramIndex = 4;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 88;
+				- m_nTop = 88;
+				- m_nRight = 801;
+				- m_nBottom = 446;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "TestModel";
+				- _id = GUID 5c793e7e-eb0e-4a2d-b6bd-fe07a24b41b6;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 685 311 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 2;
 		}
 	}
 	- _fullName = "C:\\IHA\\TI-IRTS\\exercise2\\rhapsody\\embsysx";
@@ -97,11 +153,16 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 	}
 
 	- m_favoritesTree = {
-		count=1;
+		count=2;
 		{ - favoritesItem
 			generation = 0;
 			name = Favorites;
 			idOrFolder = folder;
+		}
+		{ - favoritesItem
+			generation = 1;
+			name = CommandStateModel;
+			idOrFolder = GUID 4c782279-dd65-468b-a2bb-3838882f6867;
 		}
 	}
 
