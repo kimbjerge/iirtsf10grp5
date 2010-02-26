@@ -226,7 +226,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID f79cfb19-8c21-43d9-9e55-a8835834a909;
 				- _myState = 73728;
 				- _name = "LinuxSource";
-				- m_path = "C:\\Projects\\TIIRTS\\exercise1\\source\\embsysx\\src\\rpy";
+				- m_path = "C:\\IHA\\TI-IRTS\\exercise2\\source\\embsysx\\src\\rpy";
 				- Elements = { IRPYRawContainer 
 					- size = 0;
 				}
@@ -234,8 +234,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- size = 0;
 				}
 			}
-			- weakCGTime = 2.16.2010::10:55:17;
-			- strongCGTime = 2.16.2010::10:55:17;
+			- weakCGTime = 2.21.2010::9:33:22;
+			- strongCGTime = 2.21.2010::9:33:22;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
@@ -251,13 +251,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					{ IPropertySubject 
 						- _Name = "CPP_CG";
 						- Metaclasses = { IRPYRawContainer 
-							- size = 1;
+							- size = 2;
 							- value = 
 							{ IPropertyMetaclass 
-								- _Name = "Configuration";
+								- _Name = "Attribute";
 								- Properties = { IRPYRawContainer 
 									- size = 1;
 									- value = 
+									{ IProperty 
+										- _Name = "AccessorGenerate";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Configuration";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "ContainerSet";
+										- _Value = "STLContainers";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "OMContainers, STLContainers, OMUContainers";
+									}
 									{ IProperty 
 										- _Name = "Environment";
 										- _Value = "Cygwin";
@@ -303,7 +321,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _targetMain = "";
 			- _instrumentation = Animation;
 			- _timeModel = RealTime;
-			- m_generateActors = 1;
+			- m_generateActors = 0;
 			- _statechartImplementation = Flat;
 			- _initializationCode = "";
 			- _checksList = 0 ;
@@ -318,8 +336,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _filename = "Default.sbs";
 					- _subsystem = "Default";
 					- _class = "";
-					- _name = "TestUser";
-					- _id = GUID 3f8c7504-c376-4af2-9f3f-41063de76b8d;
+					- _name = "Tester";
+					- _id = GUID 2609214b-03a5-4d38-b6c4-1013596be70b;
 				}
 			}
 			- _root = { IFolder 
@@ -334,8 +352,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- size = 0;
 				}
 			}
-			- weakCGTime = 2.15.2010::15:13:34;
-			- strongCGTime = 2.15.2010::15:13:34;
+			- weakCGTime = 2.24.2010::20:53:33;
+			- strongCGTime = 2.24.2010::20:53:33;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
@@ -360,7 +378,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 2.16.2010::13:25:26;
+	- weakCGTime = 2.24.2010::20:53:26;
 	- strongCGTime = 2.16.2010::13:25:26;
 }
 
