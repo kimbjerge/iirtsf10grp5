@@ -3,49 +3,42 @@
 	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
-	Model Element	: Restart
+	Model Element	: Creator
 //!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Restart.h
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Creator.h
 *********************************************************************/
 
-#ifndef Restart_H
-#define Restart_H
+#ifndef Creator_H
+#define Creator_H
 
 //## auto_generated
 #include <oxf/oxf.h>
 //## auto_generated
 #include "Default.h"
-//## class Restart
-#include "Command.h"
-//## dependency ESXState
-class ESXState;
-
-//## operation Execute(ESXState*,EmbeddedSystemX*)
-class EmbeddedSystemX;
+//## operation CreateCommand()
+class Command;
 
 //## package Default
 
-//## class Restart
-class Restart : public Command {
-    ////    Friends    ////
-    
+//## class Creator
+class Creator {
     ////    Constructors and destructors    ////
     
 public :
 
     //## auto_generated
-    Restart();
+    Creator();
     
     //## auto_generated
-    virtual ~Restart();
+    virtual ~Creator() = 0;
     
     ////    Operations    ////
     
-    //## operation Execute(ESXState*,EmbeddedSystemX*)
-    virtual void Execute(ESXState* s, EmbeddedSystemX* esx);
+    //## operation CreateCommand()
+    virtual Command* CreateCommand() = 0;
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Restart.h
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Creator.h
 *********************************************************************/

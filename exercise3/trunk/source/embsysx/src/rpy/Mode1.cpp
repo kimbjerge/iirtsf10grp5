@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Mode1
-//!	Generated Date	: Sun, 21, Feb 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Mode1.cpp
+//!	Generated Date	: Mon, 1, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Mode1.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -20,10 +20,12 @@
 #include "PowerOnSelfTest.h"
 //## dependency Ready
 #include "Ready.h"
+//## dependency Suspended
+#include "Suspended.h"
 //## package Default
 
 //## class Mode1
-ESXState* Mode1::_instance = 0;
+ESXState* Mode1::_instance;
 
 Mode1::Mode1() {
 }
@@ -62,5 +64,5 @@ ESXState* Mode1::get_instance() {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Mode1.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Mode1.cpp
 *********************************************************************/

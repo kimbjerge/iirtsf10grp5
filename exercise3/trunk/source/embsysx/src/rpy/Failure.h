@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Failure
-//!	Generated Date	: Sun, 21, Feb 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Failure.h
+//!	Generated Date	: Mon, 1, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Failure.h
 *********************************************************************/
 
 #ifndef Failure_H
@@ -15,6 +15,8 @@
 #include <oxf/oxf.h>
 //## class Failure
 #include "ESXState.h"
+//## auto_generated
+#include "Default.h"
 //## dependency PowerOnSelfTest
 class PowerOnSelfTest;
 
@@ -70,5 +72,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Failure.h
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Failure.h
 *********************************************************************/

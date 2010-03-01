@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: PowerOnSelfTest
-//!	Generated Date	: Sun, 21, Feb 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/PowerOnSelfTest.cpp
+//!	Generated Date	: Mon, 1, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/PowerOnSelfTest.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -19,7 +19,7 @@
 //## package Default
 
 //## class PowerOnSelfTest
-ESXState* PowerOnSelfTest::_instance = 0;
+ESXState* PowerOnSelfTest::_instance;
 
 PowerOnSelfTest::PowerOnSelfTest() {
 }
@@ -64,5 +64,5 @@ ESXState* PowerOnSelfTest::get_instance() {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/PowerOnSelfTest.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/PowerOnSelfTest.cpp
 *********************************************************************/

@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Suspended
-//!	Generated Date	: Sun, 21, Feb 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Suspended.cpp
+//!	Generated Date	: Mon, 1, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Suspended.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -23,7 +23,7 @@
 //## package Default
 
 //## class Suspended
-ESXState* Suspended::_instance = 0;
+ESXState* Suspended::_instance;
 
 Suspended::Suspended() {
 }
@@ -68,5 +68,5 @@ ESXState* Suspended::get_instance() {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Suspended.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Suspended.cpp
 *********************************************************************/

@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: ESXState
-//!	Generated Date	: Sun, 21, Feb 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/ESXState.cpp
+//!	Generated Date	: Mon, 1, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/ESXState.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -102,6 +102,7 @@ void ESXState::eventY(EmbeddedSystemX* esx) {
 
 ESXState::ESXState() {
     //#[ operation ESXState()
+    stateName = new char[100];
     //#]
 }
 
@@ -112,13 +113,13 @@ void ESXState::eventX(EmbeddedSystemX* esx) {
 
 void ESXState::ChangeState(EmbeddedSystemX* esx, ESXState* s) {
     //#[ operation ChangeState(EmbeddedSystemX*,ESXState*)
-	esx->ChangeState(s);
+    esx->ChangeState(s);
+    DisplayState();
     //#]
 }
 
 void ESXState::defaultChange() {
     //#[ operation defaultChange()
-	 std::cout << "Nothing Changed" << std::endl;
     //#]
 }
 
@@ -130,10 +131,15 @@ void ESXState::DisplayState() {
 
 void ESXState::Display(char* name) {
     //#[ operation Display(char*)
-    std::cout << name << std::endl;
+    strcpy (stateName, name);
+    //std::cout << stateName << std::endl;
     //#]
 }
 
+char* ESXState::getStateName() const {
+    return stateName;
+}
+
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/ESXState.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/ESXState.cpp
 *********************************************************************/

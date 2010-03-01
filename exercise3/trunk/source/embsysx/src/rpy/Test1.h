@@ -3,30 +3,33 @@
 	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
-	Model Element	: Restart
+	Model Element	: Test1
 //!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Restart.h
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Test1.h
 *********************************************************************/
 
-#ifndef Restart_H
-#define Restart_H
+#ifndef Test1_H
+#define Test1_H
 
 //## auto_generated
 #include <oxf/oxf.h>
 //## auto_generated
 #include "Default.h"
-//## class Restart
-#include "Command.h"
-//## dependency ESXState
-class ESXState;
+//## class Test1
+#include "TestCase.h"
+//## auto_generated
+class Command;
 
-//## operation Execute(ESXState*,EmbeddedSystemX*)
+//## dependency Restart
+class Restart;
+
+//## auto_generated
 class EmbeddedSystemX;
 
 //## package Default
 
-//## class Restart
-class Restart : public Command {
+//## class Test1
+class Test1 : public TestCase {
     ////    Friends    ////
     
     ////    Constructors and destructors    ////
@@ -34,18 +37,25 @@ class Restart : public Command {
 public :
 
     //## auto_generated
-    Restart();
+    Test1();
     
     //## auto_generated
-    virtual ~Restart();
+    ~Test1();
     
     ////    Operations    ////
-    
-    //## operation Execute(ESXState*,EmbeddedSystemX*)
-    virtual void Execute(ESXState* s, EmbeddedSystemX* esx);
+
+protected :
+
+    //## operation CreateTestCommands()
+    void CreateTestCommands();
+
+public :
+
+    //## operation Test1(EmbeddedSystemX*)
+    Test1(EmbeddedSystemX* esx);
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Restart.h
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Test1.h
 *********************************************************************/

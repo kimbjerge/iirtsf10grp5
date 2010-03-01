@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: ESXState
-//!	Generated Date	: Sun, 21, Feb 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/ESXState.h
+//!	Generated Date	: Mon, 1, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/ESXState.h
 *********************************************************************/
 
 #ifndef ESXState_H
@@ -15,6 +15,8 @@
 #include <oxf/oxf.h>
 //## dependency EmbeddedSystemX
 #include "EmbeddedSystemX.h"
+//## auto_generated
+#include "Default.h"
 //## package Default
 
 //## class ESXState
@@ -73,9 +75,6 @@ public :
     //## operation eventY(EmbeddedSystemX*)
     virtual void eventY(EmbeddedSystemX* esx);
     
-    //## operation DisplayState()
-    virtual void DisplayState();
-
     ////    Additional operations    ////
     
     ////    Relations and components    ////
@@ -93,11 +92,21 @@ protected :
     //## operation defaultChange()
     void defaultChange();
     
+    //## operation DisplayState()
+    virtual void DisplayState();
+    
     //## operation Display(char*)
     void Display(char* name);
+    
+    char* stateName;		//## attribute stateName
+
+public :
+
+    //## auto_generated
+    char* getStateName() const;
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/ESXState.h
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/ESXState.h
 *********************************************************************/

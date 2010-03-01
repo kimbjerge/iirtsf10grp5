@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Ready
-//!	Generated Date	: Sun, 21, Feb 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Ready.h
+//!	Generated Date	: Mon, 1, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Ready.h
 *********************************************************************/
 
 #ifndef Ready_H
@@ -15,14 +15,13 @@
 #include <oxf/oxf.h>
 //## class Ready
 #include "Operational.h"
+//## auto_generated
+#include "Default.h"
 //## dependency Configuration
 class Configuration;
 
 //## dependency Mode1
 class Mode1;
-
-//## dependency PowerOnSelfTest
-class PowerOnSelfTest;
 
 //## operation Instance()
 class ESXState;
@@ -77,5 +76,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Ready.h
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Ready.h
 *********************************************************************/

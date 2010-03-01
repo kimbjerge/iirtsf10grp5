@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Configuration
-//!	Generated Date	: Sun, 21, Feb 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Configuration.cpp
+//!	Generated Date	: Mon, 1, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Configuration.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -49,7 +49,7 @@ ESXState* Configuration::Instance() {
     //#]
 }
 
-ESXState* Configuration::_instance = 0;
+ESXState* Configuration::_instance;
 
 void Configuration::DisplayState() {
     //#[ operation DisplayState()
@@ -66,5 +66,5 @@ void Configuration::set_instance(ESXState* p__instance) {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Configuration.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Configuration.cpp
 *********************************************************************/

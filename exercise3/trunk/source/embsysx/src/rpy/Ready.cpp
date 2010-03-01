@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Ready
-//!	Generated Date	: Sun, 21, Feb 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Ready.cpp
+//!	Generated Date	: Mon, 1, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Ready.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -20,10 +20,13 @@
 #include "Mode1.h"
 //## dependency PowerOnSelfTest
 #include "PowerOnSelfTest.h"
+//## dependency PowerOnSelfTest
+class PowerOnSelfTest;
+
 //## package Default
 
 //## class Ready
-ESXState* Ready::_instance = 0;
+ESXState* Ready::_instance;
 
 Ready::Ready() {
 }
@@ -49,7 +52,7 @@ ESXState* Ready::Instance() {
 
 void Ready::Start(EmbeddedSystemX* esx) {
     //#[ operation Start(EmbeddedSystemX*)
-    ChangeState(esx, Mode1::Instance());
+    ChangeState(esx, RealTimeLoop::Instance());
     //#]
 }
 
@@ -68,5 +71,5 @@ ESXState* Ready::get_instance() {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/Ready.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Ready.cpp
 *********************************************************************/

@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: SelfTestFailed
-//!	Generated Date	: Sun, 21, Feb 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/SelfTestFailed.h
+//!	Generated Date	: Mon, 1, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/SelfTestFailed.h
 *********************************************************************/
 
 #ifndef SelfTestFailed_H
@@ -13,6 +13,8 @@
 
 //## auto_generated
 #include <oxf/oxf.h>
+//## auto_generated
+#include "Default.h"
 //## class SelfTestFailed
 #include "Command.h"
 //## operation Execute(ESXState*,EmbeddedSystemX*)
@@ -45,5 +47,5 @@ public :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/SelfTestFailed.h
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/SelfTestFailed.h
 *********************************************************************/

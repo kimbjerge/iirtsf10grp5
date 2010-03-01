@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: EmbeddedSystemX
-//!	Generated Date	: Sun, 21, Feb 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/EmbeddedSystemX.cpp
+//!	Generated Date	: Mon, 1, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/EmbeddedSystemX.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -25,11 +25,7 @@ EmbeddedSystemX::~EmbeddedSystemX() {
 
 void EmbeddedSystemX::ChangeState(ESXState* s) {
     //#[ operation ChangeState(ESXState*)
-	cout << "Changed state from: " << endl;
-	itsESXState->DisplayState();
-	cout << "Changed state to: " << endl;
-	itsESXState = s;
-    s->DisplayState();
+    itsESXState = s;
     //#]
 }
 
@@ -62,5 +58,5 @@ void EmbeddedSystemX::HandleCommand(Command* pCommand) {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise2/source/embsysx/src/rpy/EmbeddedSystemX.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/EmbeddedSystemX.cpp
 *********************************************************************/
