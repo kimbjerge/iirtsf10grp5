@@ -4,7 +4,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		- size = 0;
 	}
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 4;
+		- size = 5;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -29,10 +29,10 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "CommandStateModel";
 				- _id = GUID 4c782279-dd65-468b-a2bb-3838882f6867;
 			}
-			- _UpLeft = 0 40 ;
-			- _DownRight = 501 473 ;
+			- _UpLeft = 775 380 ;
+			- _DownRight = 1276 813 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 3;
+			- m_nDiagramIndex = 4;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -57,10 +57,10 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID ab5c7395-da3c-4e5d-ac9e-6afc42ef961a;
 			}
-			- _UpLeft = 0 27 ;
-			- _DownRight = 1053 654 ;
+			- _UpLeft = 0 150 ;
+			- _DownRight = 1053 777 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 2;
+			- m_nDiagramIndex = 3;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -86,7 +86,35 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _id = GUID addcaee5-fac4-4b62-80e1-6852326eb553;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 973 333 ;
+			- _DownRight = 1034 354 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 1;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 110;
+				- m_nTop = 110;
+				- m_nRight = 774;
+				- m_nBottom = 407;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "TestEx1_2Model";
+				- _id = GUID 62502485-f568-4116-ae22-359ec146a278;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 636 250 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 		}
@@ -110,13 +138,13 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _filename = "";
 				- _subsystem = "";
 				- _class = "";
-				- _name = "TestModel";
+				- _name = "TestEx3_Model";
 				- _id = GUID 5c793e7e-eb0e-4a2d-b6bd-fe07a24b41b6;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1222 764 ;
+			- _UpLeft = 0 410 ;
+			- _DownRight = 776 813 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 1;
+			- m_nDiagramIndex = 2;
 		}
 	}
 	- _fullName = "C:\\IHA\\TI-IRTS\\exercise3\\rhapsody\\embsysx";
