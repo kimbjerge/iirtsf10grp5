@@ -15,8 +15,6 @@
 #include <oxf/oxf.h>
 //## class Suspended
 #include "Operational.h"
-//## auto_generated
-#include "Default.h"
 //## dependency Mode1
 class Mode1;
 

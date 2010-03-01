@@ -19,8 +19,6 @@
 #include <oxf/state.h>
 //## auto_generated
 #include <oxf/event.h>
-//## auto_generated
-#include "Default.h"
 //## attribute tChMode
 #include "ChMode.h"
 //## attribute tConfigurationEnded
@@ -89,8 +87,6 @@ protected :
     
     ////    Relations and components    ////
     
-    EmbeddedSystemX* itsEmbeddedSystemX;		//## link itsEmbeddedSystemX
-    
     ////    Framework operations    ////
     
     ////    Framework    ////
@@ -118,6 +114,8 @@ protected :
     Stop tStop;		//## attribute tStop
     
     Suspend tSuspend;		//## attribute tSuspend
+    
+    EmbeddedSystemX* itsEmbeddedSystemX;		//## link itsEmbeddedSystemX
 
 public :
 

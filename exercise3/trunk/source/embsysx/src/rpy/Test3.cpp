@@ -15,16 +15,38 @@ template <class TheCommand> class CommandCreator;
 
 //## auto_generated
 #include "EmbeddedSystemX.h"
+//## dependency ChMode
+#include "ChMode.h"
 //## auto_generated
 #include "Command.h"
+//## dependency ConfigurationEnded
+#include "ConfigurationEnded.h"
+//## dependency Configure
+#include "Configure.h"
 //## dependency Creator
 #include "Creator.h"
+//## dependency eventX
+#include "eventX.h"
+//## dependency eventY
+#include "eventY.h"
+//## dependency Exit
+#include "Exit.h"
 //## dependency Initialized
 #include "Initialized.h"
 //## dependency Restart
 #include "Restart.h"
+//## dependency Resume
+#include "Resume.h"
+//## dependency SelfTestFailed
+#include "SelfTestFailed.h"
 //## dependency SelfTestOk
 #include "SelfTestOk.h"
+//## dependency Start
+#include "Start.h"
+//## dependency Stop
+#include "Stop.h"
+//## dependency Suspend
+#include "Suspend.h"
 //## dependency SelfTestOk
 class SelfTestOk;
 

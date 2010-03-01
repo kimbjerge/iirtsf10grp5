@@ -132,7 +132,7 @@ void ESXState::DisplayState() {
 void ESXState::Display(char* name) {
     //#[ operation Display(char*)
     strcpy (stateName, name);
-    //std::cout << stateName << std::endl;
+    std::cout << stateName << std::endl;
     //#]
 }
 

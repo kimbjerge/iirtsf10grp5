@@ -13,8 +13,6 @@
 
 //## auto_generated
 #include <oxf/oxf.h>
-//## auto_generated
-#include "Default.h"
 //## class Start
 #include "Command.h"
 //## dependency ESXState

@@ -15,8 +15,6 @@
 #include <oxf/oxf.h>
 //## class Mode1
 #include "RealTimeLoop.h"
-//## auto_generated
-#include "Default.h"
 //## operation Instance()
 class ESXState;
 

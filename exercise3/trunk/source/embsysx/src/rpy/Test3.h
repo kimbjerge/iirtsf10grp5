@@ -13,21 +13,52 @@
 
 //## auto_generated
 #include <oxf/oxf.h>
-//## auto_generated
-#include "Default.h"
 //## class Test3
 #include "TestCase.h"
+//## dependency ChMode
+class ChMode;
+
 //## auto_generated
 class Command;
 
+//## dependency ConfigurationEnded
+class ConfigurationEnded;
+
+//## dependency Configure
+class Configure;
+
 //## dependency Creator
 class Creator;
+
+//## dependency Exit
+class Exit;
 
 //## dependency Initialized
 class Initialized;
 
 //## dependency Restart
 class Restart;
+
+//## dependency Resume
+class Resume;
+
+//## dependency SelfTestFailed
+class SelfTestFailed;
+
+//## dependency Start
+class Start;
+
+//## dependency Stop
+class Stop;
+
+//## dependency Suspend
+class Suspend;
+
+//## dependency eventX
+class eventX;
+
+//## dependency eventY
+class eventY;
 
 //## auto_generated
 class EmbeddedSystemX;

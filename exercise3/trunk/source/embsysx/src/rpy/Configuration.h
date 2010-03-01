@@ -15,8 +15,6 @@
 #include <oxf/oxf.h>
 //## class Configuration
 #include "Operational.h"
-//## auto_generated
-#include "Default.h"
 //## dependency PowerOnSelfTest
 class PowerOnSelfTest;
 

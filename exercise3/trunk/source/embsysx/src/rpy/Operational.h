@@ -15,8 +15,6 @@
 #include <oxf/oxf.h>
 //## class Operational
 #include "ESXState.h"
-//## auto_generated
-#include "Default.h"
 //## dependency PowerOnSelfTest
 class PowerOnSelfTest;
 

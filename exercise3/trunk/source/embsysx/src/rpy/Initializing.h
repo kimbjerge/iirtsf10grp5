@@ -15,8 +15,6 @@
 #include <oxf/oxf.h>
 //## class Initializing
 #include "ESXState.h"
-//## auto_generated
-#include "Default.h"
 //## dependency Ready
 class Ready;
 

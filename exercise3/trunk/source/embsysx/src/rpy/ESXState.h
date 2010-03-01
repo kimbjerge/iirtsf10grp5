@@ -15,8 +15,6 @@
 #include <oxf/oxf.h>
 //## dependency EmbeddedSystemX
 #include "EmbeddedSystemX.h"
-//## auto_generated
-#include "Default.h"
 //## package Default
 
 //## class ESXState

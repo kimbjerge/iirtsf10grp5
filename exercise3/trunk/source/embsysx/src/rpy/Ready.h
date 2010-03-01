@@ -15,8 +15,6 @@
 #include <oxf/oxf.h>
 //## class Ready
 #include "Operational.h"
-//## auto_generated
-#include "Default.h"
 //## dependency Configuration
 class Configuration;
 

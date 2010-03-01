@@ -15,8 +15,6 @@
 #include <oxf/oxf.h>
 //## operation CreateCommand()
 #include "Command.h"
-//## auto_generated
-#include "Default.h"
 //## class CommandCreator
 #include "Creator.h"
 //## operation CreateCommand()

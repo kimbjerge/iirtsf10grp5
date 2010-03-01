@@ -13,15 +13,10 @@
 
 //## auto_generated
 #include <oxf/oxf.h>
-//## auto_generated
-#include "Default.h"
 //## class Test1
 #include "TestCase.h"
 //## auto_generated
 class Command;
-
-//## dependency Restart
-class Restart;
 
 //## auto_generated
 class EmbeddedSystemX;
