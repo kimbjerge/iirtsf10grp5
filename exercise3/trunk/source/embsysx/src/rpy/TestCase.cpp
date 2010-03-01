@@ -12,8 +12,6 @@
 #include "TestCase.h"
 //## link itsEmbeddedSystemX
 #include "EmbeddedSystemX.h"
-//## link itsCommand
-#include "Command.h"
 //## dependency ChMode
 #include "ChMode.h"
 //## dependency ConfigurationEnded
@@ -74,26 +72,30 @@ void TestCase::ExecuteTestCommands() {
     //#]
 }
 
-OMIterator<Command*> TestCase::getItsCommand() const {
-    OMIterator<Command*> iter(itsCommand);
+std::list<Command*>::const_iterator TestCase::getItsCommand() const {
+    std::list<Command*>::const_iterator iter;
+    iter = itsCommand.begin();
     return iter;
 }
 
 void TestCase::addItsCommand(Command* p_Command) {
-    itsCommand.add(p_Command);
+    itsCommand.push_back(p_Command);
 }
 
 void TestCase::removeItsCommand(Command* p_Command) {
-    itsCommand.remove(p_Command);
+    std::list<Command*>::iterator pos = std::find(itsCommand.begin(), itsCommand.end(),p_Command);
+    if (pos != itsCommand.end()) {
+    	itsCommand.erase(pos);
+    }
 }
 
 void TestCase::clearItsCommand() {
-    itsCommand.removeAll();
+    itsCommand.clear();
 }
 
 void TestCase::cleanUpRelations() {
     {
-        itsCommand.removeAll();
+        itsCommand.clear();
     }
     if(itsEmbeddedSystemX != NULL)
         {
@@ -250,6 +252,10 @@ Creator* TestCase::getPeventYCreator() const {
 
 void TestCase::setPeventYCreator(Creator* p_peventYCreator) {
     peventYCreator = p_peventYCreator;
+}
+
+std::list<Command*>::const_iterator TestCase::getItsCommandEnd() const {
+    return itsCommand.end();
 }
 
 void TestCase::setPSelfTestOkCreator(Creator* p_pSelfTestOkCreator) {

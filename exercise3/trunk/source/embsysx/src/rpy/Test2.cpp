@@ -17,8 +17,6 @@ template <class TheCommand> class CommandCreator;
 #include "EmbeddedSystemX.h"
 //## dependency ChMode
 #include "ChMode.h"
-//## auto_generated
-#include "Command.h"
 //## dependency ConfigurationEnded
 #include "ConfigurationEnded.h"
 //## dependency Configure

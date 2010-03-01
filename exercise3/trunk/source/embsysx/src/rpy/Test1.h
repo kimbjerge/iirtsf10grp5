@@ -11,13 +11,21 @@
 #ifndef Test1_H
 #define Test1_H
 
+//#[ ignore
+#ifdef _MSC_VER
+// disable Microsoft compiler warning (debug information truncated)
+#pragma warning(disable: 4786)
+#endif
+//#]
+
 //## auto_generated
 #include <oxf/oxf.h>
 //## class Test1
 #include "TestCase.h"
 //## auto_generated
-class Command;
-
+#include <string>
+//## auto_generated
+#include <algorithm>
 //## auto_generated
 class EmbeddedSystemX;
 

@@ -12,8 +12,6 @@
 #include "Test1.h"
 //## auto_generated
 #include "EmbeddedSystemX.h"
-//## auto_generated
-#include "Command.h"
 //## dependency ChMode
 #include "ChMode.h"
 //## dependency ConfigurationEnded

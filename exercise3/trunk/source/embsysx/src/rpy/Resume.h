@@ -11,10 +11,21 @@
 #ifndef Resume_H
 #define Resume_H
 
+//#[ ignore
+#ifdef _MSC_VER
+// disable Microsoft compiler warning (debug information truncated)
+#pragma warning(disable: 4786)
+#endif
+//#]
+
 //## auto_generated
 #include <oxf/oxf.h>
 //## class Resume
 #include "Command.h"
+//## auto_generated
+#include <string>
+//## auto_generated
+#include <algorithm>
 //## dependency ESXState
 class ESXState;
 

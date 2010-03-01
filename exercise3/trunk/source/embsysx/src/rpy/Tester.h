@@ -11,19 +11,31 @@
 #ifndef Tester_H
 #define Tester_H
 
+//#[ ignore
+#ifdef _MSC_VER
+// disable Microsoft compiler warning (debug information truncated)
+#pragma warning(disable: 4786)
+#endif
+//#]
+
 //## auto_generated
 #include <oxf/oxf.h>
+//## auto_generated
+#include <string>
+//## auto_generated
+#include <algorithm>
+//## auto_generated
+#include <list>
+//## auto_generated
+#include <iterator>
 //## link itsTestCase
-class TestCase;
-
+#include "TestCase.h"
 //## auto_generated
 #include <oxf/omreactive.h>
 //## auto_generated
 #include <oxf/state.h>
 //## auto_generated
 #include <oxf/event.h>
-//## auto_generated
-#include <oxf/omcollec.h>
 //## dependency Test1
 class Test1;
 
@@ -60,7 +72,10 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
-    OMIterator<TestCase*> getItsTestCase() const;
+    std::list<TestCase*>::const_iterator getItsTestCase() const;
+    
+    //## auto_generated
+    std::list<TestCase*>::const_iterator getItsTestCaseEnd() const;
     
     //## auto_generated
     void addItsTestCase(TestCase* p_TestCase);
@@ -78,7 +93,7 @@ protected :
     
     ////    Relations and components    ////
     
-    OMCollection<TestCase*> itsTestCase;		//## link itsTestCase
+    std::list<TestCase*> itsTestCase;		//## link itsTestCase
 
 public :
 

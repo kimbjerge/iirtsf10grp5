@@ -11,10 +11,21 @@
 #ifndef ESXState_H
 #define ESXState_H
 
+//#[ ignore
+#ifdef _MSC_VER
+// disable Microsoft compiler warning (debug information truncated)
+#pragma warning(disable: 4786)
+#endif
+//#]
+
 //## auto_generated
 #include <oxf/oxf.h>
 //## dependency EmbeddedSystemX
 #include "EmbeddedSystemX.h"
+//## auto_generated
+#include <string>
+//## auto_generated
+#include <algorithm>
 //## package Default
 
 //## class ESXState

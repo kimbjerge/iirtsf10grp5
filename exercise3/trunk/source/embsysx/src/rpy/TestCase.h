@@ -11,15 +11,27 @@
 #ifndef TestCase_H
 #define TestCase_H
 
+//#[ ignore
+#ifdef _MSC_VER
+// disable Microsoft compiler warning (debug information truncated)
+#pragma warning(disable: 4786)
+#endif
+//#]
+
 //## auto_generated
 #include <oxf/oxf.h>
 //## link itsCommand
-class Command;
-
+#include "Command.h"
 //## dependency CommandCreator
 #include "CommandCreator.h"
 //## auto_generated
-#include <oxf/omcollec.h>
+#include <string>
+//## auto_generated
+#include <algorithm>
+//## auto_generated
+#include <list>
+//## auto_generated
+#include <iterator>
 //## dependency ChMode
 class ChMode;
 
@@ -101,7 +113,7 @@ private :
 public :
 
     //## auto_generated
-    OMIterator<Command*> getItsCommand() const;
+    std::list<Command*>::const_iterator getItsCommand() const;
     
     //## auto_generated
     void addItsCommand(Command* p_Command);
@@ -119,7 +131,7 @@ protected :
     
     ////    Relations and components    ////
     
-    OMCollection<Command*> itsCommand;		//## link itsCommand
+    std::list<Command*> itsCommand;		//## link itsCommand
 
 private :
 
@@ -264,7 +276,14 @@ protected :
     Creator* peventXCreator;		//## attribute peventXCreator
     
     Creator* peventYCreator;		//## attribute peventYCreator
-    
+
+public :
+
+    //## auto_generated
+    std::list<Command*>::const_iterator getItsCommandEnd() const;
+
+protected :
+
     //## auto_generated
     void setPSelfTestOkCreator(Creator* p_pSelfTestOkCreator);
 };

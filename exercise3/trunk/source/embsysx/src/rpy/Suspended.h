@@ -11,10 +11,21 @@
 #ifndef Suspended_H
 #define Suspended_H
 
+//#[ ignore
+#ifdef _MSC_VER
+// disable Microsoft compiler warning (debug information truncated)
+#pragma warning(disable: 4786)
+#endif
+//#]
+
 //## auto_generated
 #include <oxf/oxf.h>
 //## class Suspended
 #include "Operational.h"
+//## auto_generated
+#include <string>
+//## auto_generated
+#include <algorithm>
 //## dependency Mode1
 class Mode1;
 

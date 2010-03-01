@@ -20,8 +20,6 @@
 #include "EmbeddedSystemX.h"
 //## auto_generated
 #include <oxf/omthread.h>
-//## link itsTestCase
-#include "TestCase.h"
 //## package Default
 
 //## class Tester
@@ -55,21 +53,29 @@ void Tester::RunTests() {
     //#]
 }
 
-OMIterator<TestCase*> Tester::getItsTestCase() const {
-    OMIterator<TestCase*> iter(itsTestCase);
+std::list<TestCase*>::const_iterator Tester::getItsTestCase() const {
+    std::list<TestCase*>::const_iterator iter;
+    iter = itsTestCase.begin();
     return iter;
 }
 
+std::list<TestCase*>::const_iterator Tester::getItsTestCaseEnd() const {
+    return itsTestCase.end();
+}
+
 void Tester::addItsTestCase(TestCase* p_TestCase) {
-    itsTestCase.add(p_TestCase);
+    itsTestCase.push_back(p_TestCase);
 }
 
 void Tester::removeItsTestCase(TestCase* p_TestCase) {
-    itsTestCase.remove(p_TestCase);
+    std::list<TestCase*>::iterator pos = std::find(itsTestCase.begin(), itsTestCase.end(),p_TestCase);
+    if (pos != itsTestCase.end()) {
+    	itsTestCase.erase(pos);
+    }
 }
 
 void Tester::clearItsTestCase() {
-    itsTestCase.removeAll();
+    itsTestCase.clear();
 }
 
 void Tester::cleanUpRelations() {
@@ -78,7 +84,7 @@ void Tester::cleanUpRelations() {
             itsEmbeddedSystemX = NULL;
         }
     {
-        itsTestCase.removeAll();
+        itsTestCase.clear();
     }
 }
 

@@ -13,6 +13,10 @@
 
 //## auto_generated
 #include <oxf/oxf.h>
+//## auto_generated
+#include <string>
+//## auto_generated
+#include <algorithm>
 #endif
 /*********************************************************************
 	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/MainDefaultComponent.h
