@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Creator
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Creator.h
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Creator.h
 *********************************************************************/
 
 #ifndef Creator_H
@@ -24,10 +24,12 @@
 #include <string>
 //## auto_generated
 #include <algorithm>
+//## auto_generated
+#include "Discrete.h"
 //## operation CreateCommand()
 class Command;
 
-//## package Default
+//## package Discrete
 
 //## class Creator
 class Creator {
@@ -49,5 +51,5 @@ public :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Creator.h
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Creator.h
 *********************************************************************/

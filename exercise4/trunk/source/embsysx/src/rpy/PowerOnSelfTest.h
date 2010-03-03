@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: PowerOnSelfTest
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/PowerOnSelfTest.h
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/PowerOnSelfTest.h
 *********************************************************************/
 
 #ifndef PowerOnSelfTest_H
@@ -26,6 +26,8 @@
 #include <algorithm>
 //## class PowerOnSelfTest
 #include "ESXState.h"
+//## auto_generated
+#include "Discrete.h"
 //## dependency Failure
 class Failure;
 
@@ -35,7 +37,7 @@ class Initializing;
 //## operation SelfTestFailed(EmbeddedSystemX*,int)
 class EmbeddedSystemX;
 
-//## package Default
+//## package Discrete
 
 //## class PowerOnSelfTest
 class PowerOnSelfTest : public ESXState {
@@ -84,5 +86,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/PowerOnSelfTest.h
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/PowerOnSelfTest.h
 *********************************************************************/

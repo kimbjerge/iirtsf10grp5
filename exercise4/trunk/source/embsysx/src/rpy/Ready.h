@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Ready
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Ready.h
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Ready.h
 *********************************************************************/
 
 #ifndef Ready_H
@@ -26,6 +26,8 @@
 #include <string>
 //## auto_generated
 #include <algorithm>
+//## auto_generated
+#include "Discrete.h"
 //## dependency Configuration
 class Configuration;
 
@@ -38,7 +40,7 @@ class ESXState;
 //## operation Configure(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
-//## package Default
+//## package Discrete
 
 //## class Ready
 class Ready : public Operational {
@@ -85,5 +87,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Ready.h
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Ready.h
 *********************************************************************/

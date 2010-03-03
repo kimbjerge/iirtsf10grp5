@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: EmbeddedSystemX
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/EmbeddedSystemX.h
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/EmbeddedSystemX.h
 *********************************************************************/
 
 #ifndef EmbeddedSystemX_H
@@ -24,16 +24,24 @@
 #include <string>
 //## auto_generated
 #include <algorithm>
+//## auto_generated
+#include "Discrete.h"
 //## dependency Command
 class Command;
 
 //## dependency PowerOnSelfTest
 class PowerOnSelfTest;
 
+//## operation setStrategy(EventStrategy*)
+class EventStrategy;
+
+//## link itsRealTimeThread
+class RealTimeThread;
+
 //## operation ChangeState(ESXState*)
 class ESXState;
 
-//## package Default
+//## package Discrete
 
 //## class EmbeddedSystemX
 class EmbeddedSystemX {
@@ -81,9 +89,28 @@ public :
     
     //## operation HandleCommand(Command*)
     void HandleCommand(Command* pCommand);
+    
+    //## operation responseEventX()
+    void responseEventX();
+    
+    //## operation responseEventY()
+    void responseEventY();
+    
+    //## operation setStrategy(EventStrategy*)
+    void setStrategy(EventStrategy* aStrategy);
+    
+    //## auto_generated
+    RealTimeThread* getItsRealTimeThread() const;
+    
+    //## auto_generated
+    void setItsRealTimeThread(RealTimeThread* p_RealTimeThread);
+
+protected :
+
+    RealTimeThread* itsRealTimeThread;		//## link itsRealTimeThread
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/EmbeddedSystemX.h
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/EmbeddedSystemX.h
 *********************************************************************/

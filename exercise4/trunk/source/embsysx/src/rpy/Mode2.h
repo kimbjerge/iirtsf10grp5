@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Mode2
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Mode2.h
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Mode2.h
 *********************************************************************/
 
 #ifndef Mode2_H
@@ -26,28 +26,20 @@
 #include <algorithm>
 //## class Mode2
 #include "RealTimeLoop.h"
+//## link itsM2Strategy
+#include "M2Strategy.h"
+//## auto_generated
+#include "Discrete.h"
+//## dependency Mode3
+class Mode3;
+
 //## operation Instance()
 class ESXState;
 
 //## operation chMode(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
-//## dependency Mode1
-class Mode1;
-
-//## dependency Mode3
-class Mode3;
-
-//## dependency PowerOnSelfTest
-class PowerOnSelfTest;
-
-//## dependency Ready
-class Ready;
-
-//## dependency Suspended
-class Suspended;
-
-//## package Default
+//## package Discrete
 
 //## class Mode2
 class Mode2 : public RealTimeLoop {
@@ -84,12 +76,29 @@ private :
 
     //## auto_generated
     static void set_instance(ESXState* p__instance);
+
+public :
+
+    //## operation eventX(EmbeddedSystemX*)
+    virtual void eventX(EmbeddedSystemX* esx);
     
+    //## operation eventY(EmbeddedSystemX*)
+    virtual void eventY(EmbeddedSystemX* esx);
+    
+    //## auto_generated
+    M2Strategy* getItsM2Strategy() const;
+
+protected :
+
+    M2Strategy itsM2Strategy;		//## link itsM2Strategy
+
+private :
+
     //## auto_generated
     static ESXState* get_instance();
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Mode2.h
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Mode2.h
 *********************************************************************/

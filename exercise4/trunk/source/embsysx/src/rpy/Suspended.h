@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Suspended
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Suspended.h
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Suspended.h
 *********************************************************************/
 
 #ifndef Suspended_H
@@ -26,6 +26,8 @@
 #include <string>
 //## auto_generated
 #include <algorithm>
+//## auto_generated
+#include "Discrete.h"
 //## dependency Mode1
 class Mode1;
 
@@ -41,7 +43,7 @@ class ESXState;
 //## operation Resume(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
-//## package Default
+//## package Discrete
 
 //## class Suspended
 class Suspended : public Operational {
@@ -88,5 +90,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Suspended.h
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Suspended.h
 *********************************************************************/

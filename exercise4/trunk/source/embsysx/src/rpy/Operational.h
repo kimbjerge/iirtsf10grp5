@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Operational
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Operational.h
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Operational.h
 *********************************************************************/
 
 #ifndef Operational_H
@@ -26,6 +26,8 @@
 #include <string>
 //## auto_generated
 #include <algorithm>
+//## auto_generated
+#include "Discrete.h"
 //## dependency PowerOnSelfTest
 class PowerOnSelfTest;
 
@@ -35,7 +37,7 @@ class Ready;
 //## operation Restart(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
-//## package Default
+//## package Discrete
 
 //## class Operational
 class Operational : public ESXState {
@@ -71,5 +73,5 @@ public :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Operational.h
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Operational.h
 *********************************************************************/

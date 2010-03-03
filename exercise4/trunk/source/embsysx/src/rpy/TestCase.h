@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: TestCase
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/TestCase.h
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/TestCase.h
 *********************************************************************/
 
 #ifndef TestCase_H
@@ -28,6 +28,8 @@
 #include <string>
 //## auto_generated
 #include <algorithm>
+//## auto_generated
+#include "Discrete.h"
 //## auto_generated
 #include <list>
 //## auto_generated
@@ -80,7 +82,7 @@ class eventY;
 //## link itsEmbeddedSystemX
 class EmbeddedSystemX;
 
-//## package Default
+//## package Discrete
 
 //## class TestCase
 class TestCase {
@@ -290,5 +292,5 @@ protected :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/TestCase.h
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/TestCase.h
 *********************************************************************/

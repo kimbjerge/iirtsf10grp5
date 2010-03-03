@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Restart
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Restart.cpp
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Restart.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -14,7 +14,7 @@
 #include "EmbeddedSystemX.h"
 //## dependency ESXState
 #include "ESXState.h"
-//## package Default
+//## package Discrete
 
 //## class Restart
 Restart::Restart() {
@@ -30,5 +30,5 @@ void Restart::Execute(ESXState* s, EmbeddedSystemX* esx) {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Restart.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Restart.cpp
 *********************************************************************/

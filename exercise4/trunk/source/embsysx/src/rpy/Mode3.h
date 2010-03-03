@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Mode3
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Mode3.h
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Mode3.h
 *********************************************************************/
 
 #ifndef Mode3_H
@@ -26,25 +26,20 @@
 #include <algorithm>
 //## class Mode3
 #include "RealTimeLoop.h"
+//## link itsM3Strategy
+#include "M3Strategy.h"
+//## auto_generated
+#include "Discrete.h"
+//## dependency Mode1
+class Mode1;
+
 //## operation Instance()
 class ESXState;
 
 //## operation chMode(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
-//## dependency Mode1
-class Mode1;
-
-//## dependency PowerOnSelfTest
-class PowerOnSelfTest;
-
-//## dependency Ready
-class Ready;
-
-//## dependency Suspended
-class Suspended;
-
-//## package Default
+//## package Discrete
 
 //## class Mode3
 class Mode3 : public RealTimeLoop {
@@ -81,12 +76,26 @@ private :
 
     //## auto_generated
     static void set_instance(ESXState* p__instance);
+
+public :
+
+    //## operation eventX(EmbeddedSystemX*)
+    virtual void eventX(EmbeddedSystemX* esx);
     
+    //## auto_generated
+    M3Strategy* getItsM3Strategy() const;
+
+protected :
+
+    M3Strategy itsM3Strategy;		//## link itsM3Strategy
+
+private :
+
     //## auto_generated
     static ESXState* get_instance();
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Mode3.h
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Mode3.h
 *********************************************************************/

@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Test3
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Test3.h
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Test3.h
 *********************************************************************/
 
 #ifndef Test3_H
@@ -26,52 +26,12 @@
 #include <algorithm>
 //## class Test3
 #include "TestCase.h"
-//## dependency ChMode
-class ChMode;
-
-//## dependency ConfigurationEnded
-class ConfigurationEnded;
-
-//## dependency Configure
-class Configure;
-
-//## dependency Creator
-class Creator;
-
-//## dependency Exit
-class Exit;
-
-//## dependency Initialized
-class Initialized;
-
-//## dependency Restart
-class Restart;
-
-//## dependency Resume
-class Resume;
-
-//## dependency SelfTestFailed
-class SelfTestFailed;
-
-//## dependency Start
-class Start;
-
-//## dependency Stop
-class Stop;
-
-//## dependency Suspend
-class Suspend;
-
-//## dependency eventX
-class eventX;
-
-//## dependency eventY
-class eventY;
-
+//## auto_generated
+#include "Discrete.h"
 //## auto_generated
 class EmbeddedSystemX;
 
-//## package Default
+//## package Discrete
 
 //## class Test3
 class Test3 : public TestCase {
@@ -102,5 +62,5 @@ public :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Test3.h
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Test3.h
 *********************************************************************/

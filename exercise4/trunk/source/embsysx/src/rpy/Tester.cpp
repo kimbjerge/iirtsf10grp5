@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Tester
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Tester.cpp
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Tester.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -20,7 +20,7 @@
 #include "EmbeddedSystemX.h"
 //## auto_generated
 #include <oxf/omthread.h>
-//## package Default
+//## package Discrete
 
 //## class Tester
 Tester::Tester(IOxfActive* theActiveContext) {
@@ -162,5 +162,5 @@ IOxfReactive::TakeEventStatus Tester::rootState_processEvent() {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Tester.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Tester.cpp
 *********************************************************************/

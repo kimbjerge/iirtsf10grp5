@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Initializing
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Initializing.h
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Initializing.h
 *********************************************************************/
 
 #ifndef Initializing_H
@@ -26,13 +26,15 @@
 #include <string>
 //## auto_generated
 #include <algorithm>
+//## auto_generated
+#include "Discrete.h"
 //## dependency Ready
 class Ready;
 
 //## operation Initialized(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
-//## package Default
+//## package Discrete
 
 //## class Initializing
 class Initializing : public ESXState {
@@ -78,5 +80,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Initializing.h
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Initializing.h
 *********************************************************************/

@@ -4,13 +4,13 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: ESXState
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/ESXState.cpp
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/ESXState.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "ESXState.h"
-//## package Default
+//## package Discrete
 
 //## class ESXState
 ESXState::~ESXState() {
@@ -108,6 +108,7 @@ ESXState::ESXState() {
 
 void ESXState::eventX(EmbeddedSystemX* esx) {
     //#[ operation eventX(EmbeddedSystemX*)
+    defaultChange();
     //#]
 }
 
@@ -141,5 +142,5 @@ char* ESXState::getStateName() const {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/ESXState.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/ESXState.cpp
 *********************************************************************/

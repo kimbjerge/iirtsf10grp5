@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Failure
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Failure.h
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Failure.h
 *********************************************************************/
 
 #ifndef Failure_H
@@ -26,13 +26,15 @@
 #include <string>
 //## auto_generated
 #include <algorithm>
+//## auto_generated
+#include "Discrete.h"
 //## dependency PowerOnSelfTest
 class PowerOnSelfTest;
 
 //## operation Exit(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
-//## package Default
+//## package Discrete
 
 //## class Failure
 class Failure : public ESXState {
@@ -81,5 +83,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Failure.h
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Failure.h
 *********************************************************************/

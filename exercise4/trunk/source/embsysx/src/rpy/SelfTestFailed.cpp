@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: SelfTestFailed
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/SelfTestFailed.cpp
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/SelfTestFailed.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -14,7 +14,7 @@
 #include "ESXState.h"
 //## operation Execute(ESXState*,EmbeddedSystemX*)
 #include "EmbeddedSystemX.h"
-//## package Default
+//## package Discrete
 
 //## class SelfTestFailed
 SelfTestFailed::SelfTestFailed() {
@@ -30,5 +30,5 @@ void SelfTestFailed::Execute(ESXState* s, EmbeddedSystemX* esx) {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/SelfTestFailed.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/SelfTestFailed.cpp
 *********************************************************************/

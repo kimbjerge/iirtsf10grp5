@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Test2
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Test2.cpp
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Test2.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -48,18 +48,6 @@ template <class TheCommand> class CommandCreator;
 //## dependency ConfigurationEnded
 class ConfigurationEnded;
 
-//## dependency Configure
-class Configure;
-
-//## dependency eventY
-class eventY;
-
-//## dependency Resume
-class Resume;
-
-//## dependency SelfTestFailed
-class SelfTestFailed;
-
 //## dependency SelfTestOk
 class SelfTestOk;
 
@@ -75,22 +63,34 @@ class Start;
 //## dependency Stop
 class Stop;
 
-//## dependency Creator
-class Creator;
-
-//## dependency Restart
-class Restart;
+//## dependency Exit
+class Exit;
 
 //## dependency ChMode
 class ChMode;
 
-//## dependency Exit
-class Exit;
+//## dependency Configure
+class Configure;
+
+//## dependency Creator
+class Creator;
 
 //## dependency Initialized
 class Initialized;
 
-//## package Default
+//## dependency Restart
+class Restart;
+
+//## dependency Resume
+class Resume;
+
+//## dependency SelfTestFailed
+class SelfTestFailed;
+
+//## dependency eventY
+class eventY;
+
+//## package Discrete
 
 //## class Test2
 Test2::Test2() {
@@ -111,8 +111,10 @@ void Test2::CreateTestCommands() {
     addItsCommand(pchModeCreator->CreateCommand()); 
     addItsCommand(pSuspendCreator->CreateCommand()); 
     addItsCommand(pResumeCreator->CreateCommand());     
+    addItsCommand(peventXCreator->CreateCommand()); 
     addItsCommand(pchModeCreator->CreateCommand()); 
     addItsCommand(peventXCreator->CreateCommand()); 
+    addItsCommand(peventYCreator->CreateCommand()); 
     addItsCommand(pchModeCreator->CreateCommand()); 
     addItsCommand(peventXCreator->CreateCommand()); 
     addItsCommand(pchModeCreator->CreateCommand()); 
@@ -128,5 +130,5 @@ Test2::Test2(EmbeddedSystemX* esx) {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Test2.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Test2.cpp
 *********************************************************************/

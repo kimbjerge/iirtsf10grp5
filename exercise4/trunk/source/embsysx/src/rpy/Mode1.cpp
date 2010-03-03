@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Mode1
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Mode1.cpp
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Mode1.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -22,7 +22,16 @@
 #include "Ready.h"
 //## dependency Suspended
 #include "Suspended.h"
-//## package Default
+//## dependency Ready
+class Ready;
+
+//## dependency Suspended
+class Suspended;
+
+//## dependency PowerOnSelfTest
+class PowerOnSelfTest;
+
+//## package Discrete
 
 //## class Mode1
 ESXState* Mode1::_instance;
@@ -59,10 +68,21 @@ void Mode1::set_instance(ESXState* p__instance) {
     _instance = p__instance;
 }
 
+void Mode1::eventX(EmbeddedSystemX* esx) {
+    //#[ operation eventX(EmbeddedSystemX*)
+    esx->setStrategy(&itsM1Strategy);
+    esx->responseEventX();
+    //#]
+}
+
+M1Strategy* Mode1::getItsM1Strategy() const {
+    return (M1Strategy*) &itsM1Strategy;
+}
+
 ESXState* Mode1::get_instance() {
     return _instance;
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Mode1.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Mode1.cpp
 *********************************************************************/

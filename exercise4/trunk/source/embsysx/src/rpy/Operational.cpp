@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Operational
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Operational.cpp
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Operational.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -16,7 +16,7 @@
 #include "PowerOnSelfTest.h"
 //## dependency Ready
 #include "Ready.h"
-//## package Default
+//## package Discrete
 
 //## class Operational
 Operational::~Operational() {
@@ -44,5 +44,5 @@ ESXState* Operational::Instance() {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/Operational.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Operational.cpp
 *********************************************************************/

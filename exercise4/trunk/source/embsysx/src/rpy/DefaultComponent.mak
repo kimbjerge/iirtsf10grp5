@@ -87,7 +87,14 @@ OBJS= \
   Tester.o \
   Test1.o \
   Test2.o \
-  Test3.o
+  Test3.o \
+  RealTimeThread.o \
+  EventStrategy.o \
+  M1Strategy.o \
+  M2Strategy.o \
+  M3Strategy.o \
+  Discrete.o \
+  Continuous.o
 
 
 
@@ -152,7 +159,7 @@ endif
 
 
 
-EmbeddedSystemX.o : EmbeddedSystemX.cpp EmbeddedSystemX.h    ESXState.h Command.h PowerOnSelfTest.h 
+EmbeddedSystemX.o : EmbeddedSystemX.cpp EmbeddedSystemX.h    Discrete.h ESXState.h RealTimeThread.h Command.h PowerOnSelfTest.h EventStrategy.h 
 	@echo Compiling EmbeddedSystemX.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o EmbeddedSystemX.o EmbeddedSystemX.cpp
@@ -160,7 +167,7 @@ EmbeddedSystemX.o : EmbeddedSystemX.cpp EmbeddedSystemX.h    ESXState.h Command.
 
 
 
-ESXState.o : ESXState.cpp ESXState.h    EmbeddedSystemX.h 
+ESXState.o : ESXState.cpp ESXState.h    Discrete.h EmbeddedSystemX.h 
 	@echo Compiling ESXState.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o ESXState.o ESXState.cpp
@@ -168,7 +175,7 @@ ESXState.o : ESXState.cpp ESXState.h    EmbeddedSystemX.h
 
 
 
-PowerOnSelfTest.o : PowerOnSelfTest.cpp PowerOnSelfTest.h    Failure.h Initializing.h ESXState.h EmbeddedSystemX.h 
+PowerOnSelfTest.o : PowerOnSelfTest.cpp PowerOnSelfTest.h    Discrete.h Failure.h Initializing.h ESXState.h EmbeddedSystemX.h 
 	@echo Compiling PowerOnSelfTest.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o PowerOnSelfTest.o PowerOnSelfTest.cpp
@@ -176,7 +183,7 @@ PowerOnSelfTest.o : PowerOnSelfTest.cpp PowerOnSelfTest.h    Failure.h Initializ
 
 
 
-Failure.o : Failure.cpp Failure.h    PowerOnSelfTest.h ESXState.h EmbeddedSystemX.h 
+Failure.o : Failure.cpp Failure.h    Discrete.h PowerOnSelfTest.h ESXState.h EmbeddedSystemX.h 
 	@echo Compiling Failure.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Failure.o Failure.cpp
@@ -184,7 +191,7 @@ Failure.o : Failure.cpp Failure.h    PowerOnSelfTest.h ESXState.h EmbeddedSystem
 
 
 
-Initializing.o : Initializing.cpp Initializing.h    Ready.h ESXState.h EmbeddedSystemX.h 
+Initializing.o : Initializing.cpp Initializing.h    Discrete.h Ready.h ESXState.h EmbeddedSystemX.h 
 	@echo Compiling Initializing.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Initializing.o Initializing.cpp
@@ -192,7 +199,7 @@ Initializing.o : Initializing.cpp Initializing.h    Ready.h ESXState.h EmbeddedS
 
 
 
-Operational.o : Operational.cpp Operational.h    PowerOnSelfTest.h Ready.h EmbeddedSystemX.h ESXState.h 
+Operational.o : Operational.cpp Operational.h    Discrete.h PowerOnSelfTest.h Ready.h EmbeddedSystemX.h ESXState.h 
 	@echo Compiling Operational.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Operational.o Operational.cpp
@@ -200,7 +207,7 @@ Operational.o : Operational.cpp Operational.h    PowerOnSelfTest.h Ready.h Embed
 
 
 
-RealTimeLoop.o : RealTimeLoop.cpp RealTimeLoop.h    Ready.h PowerOnSelfTest.h Mode1.h Suspended.h ESXState.h EmbeddedSystemX.h Operational.h 
+RealTimeLoop.o : RealTimeLoop.cpp RealTimeLoop.h    Discrete.h Ready.h PowerOnSelfTest.h Mode1.h Suspended.h ESXState.h EmbeddedSystemX.h Operational.h 
 	@echo Compiling RealTimeLoop.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o RealTimeLoop.o RealTimeLoop.cpp
@@ -208,7 +215,7 @@ RealTimeLoop.o : RealTimeLoop.cpp RealTimeLoop.h    Ready.h PowerOnSelfTest.h Mo
 
 
 
-Ready.o : Ready.cpp Ready.h    Mode1.h Configuration.h PowerOnSelfTest.h ESXState.h EmbeddedSystemX.h Operational.h 
+Ready.o : Ready.cpp Ready.h    Discrete.h Mode1.h Configuration.h PowerOnSelfTest.h ESXState.h EmbeddedSystemX.h Operational.h 
 	@echo Compiling Ready.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Ready.o Ready.cpp
@@ -216,7 +223,7 @@ Ready.o : Ready.cpp Ready.h    Mode1.h Configuration.h PowerOnSelfTest.h ESXStat
 
 
 
-Configuration.o : Configuration.cpp Configuration.h    Ready.h ESXState.h EmbeddedSystemX.h Operational.h 
+Configuration.o : Configuration.cpp Configuration.h    Discrete.h Ready.h ESXState.h EmbeddedSystemX.h Operational.h 
 	@echo Compiling Configuration.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Configuration.o Configuration.cpp
@@ -224,7 +231,7 @@ Configuration.o : Configuration.cpp Configuration.h    Ready.h ESXState.h Embedd
 
 
 
-Suspended.o : Suspended.cpp Suspended.h    Ready.h Mode1.h PowerOnSelfTest.h ESXState.h EmbeddedSystemX.h Operational.h 
+Suspended.o : Suspended.cpp Suspended.h    Discrete.h Ready.h Mode1.h PowerOnSelfTest.h ESXState.h EmbeddedSystemX.h Operational.h 
 	@echo Compiling Suspended.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Suspended.o Suspended.cpp
@@ -232,7 +239,7 @@ Suspended.o : Suspended.cpp Suspended.h    Ready.h Mode1.h PowerOnSelfTest.h ESX
 
 
 
-Mode1.o : Mode1.cpp Mode1.h    Mode2.h ESXState.h EmbeddedSystemX.h RealTimeLoop.h Operational.h 
+Mode1.o : Mode1.cpp Mode1.h    Discrete.h M1Strategy.h Mode2.h Ready.h Suspended.h PowerOnSelfTest.h ESXState.h EmbeddedSystemX.h RealTimeLoop.h Operational.h EventStrategy.h 
 	@echo Compiling Mode1.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Mode1.o Mode1.cpp
@@ -240,7 +247,7 @@ Mode1.o : Mode1.cpp Mode1.h    Mode2.h ESXState.h EmbeddedSystemX.h RealTimeLoop
 
 
 
-Mode2.o : Mode2.cpp Mode2.h    Mode3.h ESXState.h EmbeddedSystemX.h RealTimeLoop.h Operational.h 
+Mode2.o : Mode2.cpp Mode2.h    Discrete.h M2Strategy.h Mode3.h Ready.h Suspended.h PowerOnSelfTest.h Mode1.h ESXState.h EmbeddedSystemX.h RealTimeLoop.h Operational.h EventStrategy.h 
 	@echo Compiling Mode2.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Mode2.o Mode2.cpp
@@ -248,7 +255,7 @@ Mode2.o : Mode2.cpp Mode2.h    Mode3.h ESXState.h EmbeddedSystemX.h RealTimeLoop
 
 
 
-Mode3.o : Mode3.cpp Mode3.h    Mode1.h ESXState.h EmbeddedSystemX.h RealTimeLoop.h Operational.h 
+Mode3.o : Mode3.cpp Mode3.h    Discrete.h M3Strategy.h Mode1.h Ready.h Suspended.h PowerOnSelfTest.h ESXState.h EmbeddedSystemX.h RealTimeLoop.h Operational.h EventStrategy.h 
 	@echo Compiling Mode3.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Mode3.o Mode3.cpp
@@ -256,7 +263,7 @@ Mode3.o : Mode3.cpp Mode3.h    Mode1.h ESXState.h EmbeddedSystemX.h RealTimeLoop
 
 
 
-TestUser.o : TestUser.cpp TestUser.h    EmbeddedSystemX.h SelfTestFailed.h SelfTestOk.h Start.h Suspend.h Restart.h Exit.h Initialized.h Configure.h ConfigurationEnded.h Stop.h Resume.h ChMode.h 
+TestUser.o : TestUser.cpp TestUser.h    Discrete.h EmbeddedSystemX.h SelfTestFailed.h SelfTestOk.h Start.h Suspend.h Restart.h Exit.h Initialized.h Configure.h ConfigurationEnded.h Stop.h Resume.h ChMode.h 
 	@echo Compiling TestUser.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o TestUser.o TestUser.cpp
@@ -264,7 +271,7 @@ TestUser.o : TestUser.cpp TestUser.h    EmbeddedSystemX.h SelfTestFailed.h SelfT
 
 
 
-Command.o : Command.cpp Command.h    ESXState.h EmbeddedSystemX.h 
+Command.o : Command.cpp Command.h    Discrete.h ESXState.h EmbeddedSystemX.h 
 	@echo Compiling Command.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Command.o Command.cpp
@@ -272,7 +279,7 @@ Command.o : Command.cpp Command.h    ESXState.h EmbeddedSystemX.h
 
 
 
-SelfTestFailed.o : SelfTestFailed.cpp SelfTestFailed.h    ESXState.h EmbeddedSystemX.h Command.h 
+SelfTestFailed.o : SelfTestFailed.cpp SelfTestFailed.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling SelfTestFailed.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o SelfTestFailed.o SelfTestFailed.cpp
@@ -280,7 +287,7 @@ SelfTestFailed.o : SelfTestFailed.cpp SelfTestFailed.h    ESXState.h EmbeddedSys
 
 
 
-Initialized.o : Initialized.cpp Initialized.h    ESXState.h EmbeddedSystemX.h Command.h 
+Initialized.o : Initialized.cpp Initialized.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling Initialized.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Initialized.o Initialized.cpp
@@ -288,7 +295,7 @@ Initialized.o : Initialized.cpp Initialized.h    ESXState.h EmbeddedSystemX.h Co
 
 
 
-Configure.o : Configure.cpp Configure.h    ESXState.h EmbeddedSystemX.h Command.h 
+Configure.o : Configure.cpp Configure.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling Configure.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Configure.o Configure.cpp
@@ -296,7 +303,7 @@ Configure.o : Configure.cpp Configure.h    ESXState.h EmbeddedSystemX.h Command.
 
 
 
-ConfigurationEnded.o : ConfigurationEnded.cpp ConfigurationEnded.h    ESXState.h EmbeddedSystemX.h Command.h 
+ConfigurationEnded.o : ConfigurationEnded.cpp ConfigurationEnded.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling ConfigurationEnded.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o ConfigurationEnded.o ConfigurationEnded.cpp
@@ -304,7 +311,7 @@ ConfigurationEnded.o : ConfigurationEnded.cpp ConfigurationEnded.h    ESXState.h
 
 
 
-Stop.o : Stop.cpp Stop.h    ESXState.h EmbeddedSystemX.h Command.h 
+Stop.o : Stop.cpp Stop.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling Stop.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Stop.o Stop.cpp
@@ -312,7 +319,7 @@ Stop.o : Stop.cpp Stop.h    ESXState.h EmbeddedSystemX.h Command.h
 
 
 
-Suspend.o : Suspend.cpp Suspend.h    ESXState.h EmbeddedSystemX.h Command.h 
+Suspend.o : Suspend.cpp Suspend.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling Suspend.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Suspend.o Suspend.cpp
@@ -320,7 +327,7 @@ Suspend.o : Suspend.cpp Suspend.h    ESXState.h EmbeddedSystemX.h Command.h
 
 
 
-Resume.o : Resume.cpp Resume.h    ESXState.h EmbeddedSystemX.h Command.h 
+Resume.o : Resume.cpp Resume.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling Resume.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Resume.o Resume.cpp
@@ -328,7 +335,7 @@ Resume.o : Resume.cpp Resume.h    ESXState.h EmbeddedSystemX.h Command.h
 
 
 
-Start.o : Start.cpp Start.h    ESXState.h EmbeddedSystemX.h Command.h 
+Start.o : Start.cpp Start.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling Start.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Start.o Start.cpp
@@ -336,7 +343,7 @@ Start.o : Start.cpp Start.h    ESXState.h EmbeddedSystemX.h Command.h
 
 
 
-Restart.o : Restart.cpp Restart.h    ESXState.h EmbeddedSystemX.h Command.h 
+Restart.o : Restart.cpp Restart.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling Restart.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Restart.o Restart.cpp
@@ -344,7 +351,7 @@ Restart.o : Restart.cpp Restart.h    ESXState.h EmbeddedSystemX.h Command.h
 
 
 
-ChMode.o : ChMode.cpp ChMode.h    ESXState.h EmbeddedSystemX.h Command.h 
+ChMode.o : ChMode.cpp ChMode.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling ChMode.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o ChMode.o ChMode.cpp
@@ -352,7 +359,7 @@ ChMode.o : ChMode.cpp ChMode.h    ESXState.h EmbeddedSystemX.h Command.h
 
 
 
-Exit.o : Exit.cpp Exit.h    ESXState.h EmbeddedSystemX.h Command.h 
+Exit.o : Exit.cpp Exit.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling Exit.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Exit.o Exit.cpp
@@ -360,7 +367,7 @@ Exit.o : Exit.cpp Exit.h    ESXState.h EmbeddedSystemX.h Command.h
 
 
 
-ConfigX.o : ConfigX.cpp ConfigX.h    ESXState.h EmbeddedSystemX.h Command.h 
+ConfigX.o : ConfigX.cpp ConfigX.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling ConfigX.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o ConfigX.o ConfigX.cpp
@@ -368,7 +375,7 @@ ConfigX.o : ConfigX.cpp ConfigX.h    ESXState.h EmbeddedSystemX.h Command.h
 
 
 
-eventX.o : eventX.cpp eventX.h    ESXState.h EmbeddedSystemX.h Command.h 
+eventX.o : eventX.cpp eventX.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling eventX.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o eventX.o eventX.cpp
@@ -376,7 +383,7 @@ eventX.o : eventX.cpp eventX.h    ESXState.h EmbeddedSystemX.h Command.h
 
 
 
-eventY.o : eventY.cpp eventY.h    ESXState.h EmbeddedSystemX.h Command.h 
+eventY.o : eventY.cpp eventY.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling eventY.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o eventY.o eventY.cpp
@@ -384,7 +391,7 @@ eventY.o : eventY.cpp eventY.h    ESXState.h EmbeddedSystemX.h Command.h
 
 
 
-SelfTestOk.o : SelfTestOk.cpp SelfTestOk.h    ESXState.h EmbeddedSystemX.h Command.h 
+SelfTestOk.o : SelfTestOk.cpp SelfTestOk.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling SelfTestOk.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o SelfTestOk.o SelfTestOk.cpp
@@ -392,7 +399,7 @@ SelfTestOk.o : SelfTestOk.cpp SelfTestOk.h    ESXState.h EmbeddedSystemX.h Comma
 
 
 
-Creator.o : Creator.cpp Creator.h    Command.h 
+Creator.o : Creator.cpp Creator.h    Discrete.h Command.h 
 	@echo Compiling Creator.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Creator.o Creator.cpp
@@ -400,7 +407,7 @@ Creator.o : Creator.cpp Creator.h    Command.h
 
 
 
-TestCase.o : TestCase.cpp TestCase.h    Command.h EmbeddedSystemX.h SelfTestOk.h Creator.h CommandCreator.h Initialized.h Restart.h Exit.h Configure.h ConfigurationEnded.h Stop.h Start.h Suspend.h Resume.h SelfTestFailed.h ChMode.h eventX.h eventY.h 
+TestCase.o : TestCase.cpp TestCase.h    Discrete.h Command.h EmbeddedSystemX.h SelfTestOk.h Creator.h CommandCreator.h Initialized.h Restart.h Exit.h Configure.h ConfigurationEnded.h Stop.h Start.h Suspend.h Resume.h SelfTestFailed.h ChMode.h eventX.h eventY.h 
 	@echo Compiling TestCase.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o TestCase.o TestCase.cpp
@@ -408,7 +415,7 @@ TestCase.o : TestCase.cpp TestCase.h    Command.h EmbeddedSystemX.h SelfTestOk.h
 
 
 
-Tester.o : Tester.cpp Tester.h    TestCase.h EmbeddedSystemX.h Test1.h Test2.h Test3.h 
+Tester.o : Tester.cpp Tester.h    Discrete.h TestCase.h EmbeddedSystemX.h Test1.h Test2.h Test3.h 
 	@echo Compiling Tester.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Tester.o Tester.cpp
@@ -416,7 +423,7 @@ Tester.o : Tester.cpp Tester.h    TestCase.h EmbeddedSystemX.h Test1.h Test2.h T
 
 
 
-Test1.o : Test1.cpp Test1.h    CommandCreator.h SelfTestOk.h Creator.h Initialized.h Restart.h ConfigurationEnded.h Start.h Resume.h eventY.h Configure.h Stop.h ChMode.h SelfTestFailed.h Exit.h Suspend.h eventX.h EmbeddedSystemX.h TestCase.h Command.h 
+Test1.o : Test1.cpp Test1.h    Discrete.h CommandCreator.h SelfTestOk.h Creator.h Initialized.h Restart.h ConfigurationEnded.h Start.h Resume.h eventY.h Configure.h Stop.h ChMode.h SelfTestFailed.h Exit.h Suspend.h eventX.h EmbeddedSystemX.h TestCase.h Command.h 
 	@echo Compiling Test1.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Test1.o Test1.cpp
@@ -424,7 +431,7 @@ Test1.o : Test1.cpp Test1.h    CommandCreator.h SelfTestOk.h Creator.h Initializ
 
 
 
-Test2.o : Test2.cpp Test2.h    CommandCreator.h SelfTestOk.h Restart.h Creator.h Initialized.h Suspend.h ConfigurationEnded.h Start.h Resume.h eventY.h Configure.h Stop.h ChMode.h SelfTestFailed.h Exit.h eventX.h EmbeddedSystemX.h TestCase.h Command.h 
+Test2.o : Test2.cpp Test2.h    Discrete.h CommandCreator.h SelfTestOk.h Restart.h Creator.h Initialized.h Suspend.h ConfigurationEnded.h Start.h Resume.h eventY.h Configure.h Stop.h ChMode.h SelfTestFailed.h Exit.h eventX.h EmbeddedSystemX.h TestCase.h Command.h 
 	@echo Compiling Test2.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Test2.o Test2.cpp
@@ -432,10 +439,66 @@ Test2.o : Test2.cpp Test2.h    CommandCreator.h SelfTestOk.h Restart.h Creator.h
 
 
 
-Test3.o : Test3.cpp Test3.h    CommandCreator.h SelfTestOk.h EmbeddedSystemX.h TestCase.h Command.h 
+Test3.o : Test3.cpp Test3.h    Discrete.h CommandCreator.h SelfTestOk.h Start.h Creator.h SelfTestFailed.h ConfigurationEnded.h Restart.h Exit.h Stop.h eventX.h Configure.h Resume.h ChMode.h Initialized.h Suspend.h eventY.h EmbeddedSystemX.h TestCase.h Command.h 
 	@echo Compiling Test3.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Test3.o Test3.cpp
+
+
+
+
+RealTimeThread.o : RealTimeThread.cpp RealTimeThread.h    Continuous.h EventStrategy.h 
+	@echo Compiling RealTimeThread.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o RealTimeThread.o RealTimeThread.cpp
+
+
+
+
+EventStrategy.o : EventStrategy.cpp EventStrategy.h    Continuous.h 
+	@echo Compiling EventStrategy.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o EventStrategy.o EventStrategy.cpp
+
+
+
+
+M1Strategy.o : M1Strategy.cpp M1Strategy.h    Continuous.h EventStrategy.h 
+	@echo Compiling M1Strategy.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o M1Strategy.o M1Strategy.cpp
+
+
+
+
+M2Strategy.o : M2Strategy.cpp M2Strategy.h    Continuous.h EventStrategy.h 
+	@echo Compiling M2Strategy.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o M2Strategy.o M2Strategy.cpp
+
+
+
+
+M3Strategy.o : M3Strategy.cpp M3Strategy.h    Continuous.h EventStrategy.h 
+	@echo Compiling M3Strategy.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o M3Strategy.o M3Strategy.cpp
+
+
+
+
+Discrete.o : Discrete.cpp Discrete.h    EmbeddedSystemX.h ESXState.h PowerOnSelfTest.h Failure.h Initializing.h Operational.h RealTimeLoop.h Ready.h Configuration.h Suspended.h Mode1.h Mode2.h Mode3.h TestUser.h Command.h SelfTestFailed.h Initialized.h Configure.h ConfigurationEnded.h Stop.h Suspend.h Resume.h Start.h Restart.h ChMode.h Exit.h ConfigX.h eventX.h eventY.h SelfTestOk.h Creator.h CommandCreator.h TestCase.h Tester.h Test1.h Test2.h Test3.h Continuous.h 
+	@echo Compiling Discrete.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Discrete.o Discrete.cpp
+
+
+
+
+Continuous.o : Continuous.cpp Continuous.h    RealTimeThread.h EventStrategy.h M1Strategy.h M2Strategy.h M3Strategy.h 
+	@echo Compiling Continuous.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Continuous.o Continuous.cpp
 
 
 
@@ -504,6 +567,13 @@ clean:
 	$(RM) Test1.o
 	$(RM) Test2.o
 	$(RM) Test3.o
+	$(RM) RealTimeThread.o
+	$(RM) EventStrategy.o
+	$(RM) M1Strategy.o
+	$(RM) M2Strategy.o
+	$(RM) M3Strategy.o
+	$(RM) Discrete.o
+	$(RM) Continuous.o
 	$(RM) $(TARGET_MAIN)$(OBJ_EXT) $(ADDITIONAL_OBJS)
 	$(RM) $(TARGET_NAME)$(LIB_EXT)
 	$(RM) $(TARGET_NAME)$(EXE_EXT)

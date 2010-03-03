@@ -4,19 +4,23 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: EmbeddedSystemX
-//!	Generated Date	: Mon, 1, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/EmbeddedSystemX.cpp
+//!	Generated Date	: Wed, 3, Mar 2010  
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/EmbeddedSystemX.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "EmbeddedSystemX.h"
 //## operation ChangeState(ESXState*)
 #include "ESXState.h"
+//## operation setStrategy(EventStrategy*)
+#include "EventStrategy.h"
+//## link itsRealTimeThread
+#include "RealTimeThread.h"
 //## dependency Command
 #include "Command.h"
 //## dependency PowerOnSelfTest
 #include "PowerOnSelfTest.h"
-//## package Default
+//## package Discrete
 
 //## class EmbeddedSystemX
 EmbeddedSystemX::~EmbeddedSystemX() {
@@ -42,12 +46,18 @@ void EmbeddedSystemX::cleanUpRelations() {
         {
             itsESXState = NULL;
         }
+    if(itsRealTimeThread != NULL)
+        {
+            itsRealTimeThread = NULL;
+        }
 }
 
 EmbeddedSystemX::EmbeddedSystemX() {
     itsESXState = NULL;
+    itsRealTimeThread = NULL;
     //#[ operation EmbeddedSystemX()
-    itsESXState = PowerOnSelfTest::Instance();
+    itsESXState = PowerOnSelfTest::Instance(); 
+    itsRealTimeThread = new RealTimeThread();
     //#]
 }
 
@@ -57,6 +67,32 @@ void EmbeddedSystemX::HandleCommand(Command* pCommand) {
     //#]
 }
 
+void EmbeddedSystemX::responseEventX() {
+    //#[ operation responseEventX()
+    itsRealTimeThread->responseEventX();
+    //#]
+}
+
+void EmbeddedSystemX::responseEventY() {
+    //#[ operation responseEventY()
+    itsRealTimeThread->responseEventY();
+    //#]
+}
+
+void EmbeddedSystemX::setStrategy(EventStrategy* aStrategy) {
+    //#[ operation setStrategy(EventStrategy*)
+    itsRealTimeThread->setStrategy(aStrategy);
+    //#]
+}
+
+RealTimeThread* EmbeddedSystemX::getItsRealTimeThread() const {
+    return itsRealTimeThread;
+}
+
+void EmbeddedSystemX::setItsRealTimeThread(RealTimeThread* p_RealTimeThread) {
+    itsRealTimeThread = p_RealTimeThread;
+}
+
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise3/source/embsysx/src/rpy/EmbeddedSystemX.cpp
+	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/EmbeddedSystemX.cpp
 *********************************************************************/
