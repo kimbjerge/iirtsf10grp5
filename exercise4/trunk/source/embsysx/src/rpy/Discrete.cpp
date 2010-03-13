@@ -80,11 +80,6 @@
 #include "Test3.h"
 //## auto_generated
 #include "TestCase.h"
-//## auto_generated
-#include "Tester.h"
-//## auto_generated
-#include "TestUser.h"
-//## package Discrete
 
 
 

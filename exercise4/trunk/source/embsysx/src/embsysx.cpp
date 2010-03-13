@@ -28,10 +28,12 @@
 #include "eventX.h"
 #include "eventY.h"
 #include "SelfTestOk.h"
+#include "TestCase.h"
+#include "Test1.h"
+#include "Test2.h"
+#include "Test3.h"
 
-
-
-int main() {
+void TestEx2 (void) {
 
 	// Creating commands for test
 	SelfTestFailed tSelfTestFailed;
@@ -46,7 +48,7 @@ int main() {
 	ChMode tChMode;
 	SelfTestOk tSelfTestOk;
 
-	cout << ">>> Embeded System X test started <<<" << endl;
+	cout << ">>> Embeded System X Exercise 2 started <<<" << endl;
 
 	EmbeddedSystemX* itsEmbeddedSystemX = new EmbeddedSystemX();
 
@@ -99,5 +101,27 @@ int main() {
 		}
 	}
 
+};
+
+#define NUM_TESTS 3
+
+void TestEx4 (void) {
+	int i;
+	TestCase* tests[NUM_TESTS];
+	EmbeddedSystemX *itsEmbeddedSystemX = new EmbeddedSystemX();
+	tests[0] = new Test1(itsEmbeddedSystemX);
+	tests[1] = new Test2(itsEmbeddedSystemX);
+	tests[2] = new Test3(itsEmbeddedSystemX);
+
+	cout << ">>> Embeded System X test Exercise 4 started <<<" << endl;
+	for (i = 0; i < NUM_TESTS; i++)
+		tests[i]->PerformTest();
+
+
+};
+
+int main() {
+
+	TestEx4();
     return 0;
 }
