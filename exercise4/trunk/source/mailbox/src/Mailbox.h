@@ -41,6 +41,7 @@ template <class Item> Mailbox<Item>::Mailbox(const long int cap)
 template <class Item> Mailbox<Item>::~Mailbox()
 {
 	delete pMutex;
+	delete mails;
 };
 
 template <class Item> void Mailbox<Item>::increment(int &idx)
