@@ -24,7 +24,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	}
 	- m_configActive = { ICodeGenConfigInfoHandle 
 		- _m2Class = "ICodeGenConfigInfo";
-		- _id = GUID 32bd85d6-f1d7-4f8f-b439-82ddb9ab1bb7;
+		- _id = GUID d5ea84dc-9fba-436f-9b8d-ef4ff9b10445;
 	}
 	- Configs = { IRPYRawContainer 
 		- size = 3;
@@ -232,7 +232,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID f79cfb19-8c21-43d9-9e55-a8835834a909;
 				- _myState = 73728;
 				- _name = "LinuxSource";
-				- m_path = "C:\\IHA\\TI-IRTS\\exercise4\\source\\embsysx\\src\\rpy";
+				- m_path = "C:\\Ubuntu_share\\exercise4\\source\\embsysx\\src\\rpy";
 				- Elements = { IRPYRawContainer 
 					- size = 0;
 				}
@@ -240,8 +240,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- size = 0;
 				}
 			}
-			- weakCGTime = 3.2.2010::21:44:44;
-			- strongCGTime = 3.2.2010::21:44:44;
+			- weakCGTime = 3.15.2010::13:33:52;
+			- strongCGTime = 3.15.2010::13:33:52;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
