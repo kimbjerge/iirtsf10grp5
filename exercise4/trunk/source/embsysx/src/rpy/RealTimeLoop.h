@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: RealTimeLoop
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/RealTimeLoop.h
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/RealTimeLoop.h
 *********************************************************************/
 
 #ifndef RealTimeLoop_H
@@ -34,10 +34,10 @@ class Mode1;
 //## dependency Suspended
 class Suspended;
 
-//## operation Stop(EmbeddedSystemX*)
+//## operation Instance(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
-//## operation Instance()
+//## operation Instance(EmbeddedSystemX*)
 class ESXState;
 
 //## package Discrete
@@ -67,8 +67,8 @@ protected :
 
 public :
 
-    //## operation Instance()
-    static ESXState* Instance();
+    //## operation Instance(EmbeddedSystemX*)
+    static ESXState* Instance(EmbeddedSystemX* esx);
     
     //## operation Stop(EmbeddedSystemX*)
     virtual void Stop(EmbeddedSystemX* esx);
@@ -79,5 +79,5 @@ public :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/RealTimeLoop.h
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/RealTimeLoop.h
 *********************************************************************/

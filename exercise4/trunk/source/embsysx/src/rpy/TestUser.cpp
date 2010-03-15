@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: TestUser
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/TestUser.cpp
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/TestUser.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -278,5 +278,5 @@ IOxfReactive::TakeEventStatus TestUser::rootState_processEvent() {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/TestUser.cpp
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/TestUser.cpp
 *********************************************************************/

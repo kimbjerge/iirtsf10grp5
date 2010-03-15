@@ -15,7 +15,10 @@ CPP_SRCS += \
 ../src/rpy/Discrete.cpp \
 ../src/rpy/ESXState.cpp \
 ../src/rpy/EmbeddedSystemX.cpp \
+../src/rpy/Event.cpp \
 ../src/rpy/EventStrategy.cpp \
+../src/rpy/EventX.cpp \
+../src/rpy/EventY.cpp \
 ../src/rpy/Exit.cpp \
 ../src/rpy/Failure.cpp \
 ../src/rpy/Initialized.cpp \
@@ -42,9 +45,7 @@ CPP_SRCS += \
 ../src/rpy/Test1.cpp \
 ../src/rpy/Test2.cpp \
 ../src/rpy/Test3.cpp \
-../src/rpy/TestCase.cpp \
-../src/rpy/eventX.cpp \
-../src/rpy/eventY.cpp 
+../src/rpy/TestCase.cpp 
 
 OBJS += \
 ./src/rpy/ChMode.o \
@@ -58,7 +59,10 @@ OBJS += \
 ./src/rpy/Discrete.o \
 ./src/rpy/ESXState.o \
 ./src/rpy/EmbeddedSystemX.o \
+./src/rpy/Event.o \
 ./src/rpy/EventStrategy.o \
+./src/rpy/EventX.o \
+./src/rpy/EventY.o \
 ./src/rpy/Exit.o \
 ./src/rpy/Failure.o \
 ./src/rpy/Initialized.o \
@@ -85,9 +89,7 @@ OBJS += \
 ./src/rpy/Test1.o \
 ./src/rpy/Test2.o \
 ./src/rpy/Test3.o \
-./src/rpy/TestCase.o \
-./src/rpy/eventX.o \
-./src/rpy/eventY.o 
+./src/rpy/TestCase.o 
 
 CPP_DEPS += \
 ./src/rpy/ChMode.d \
@@ -101,7 +103,10 @@ CPP_DEPS += \
 ./src/rpy/Discrete.d \
 ./src/rpy/ESXState.d \
 ./src/rpy/EmbeddedSystemX.d \
+./src/rpy/Event.d \
 ./src/rpy/EventStrategy.d \
+./src/rpy/EventX.d \
+./src/rpy/EventY.d \
 ./src/rpy/Exit.d \
 ./src/rpy/Failure.d \
 ./src/rpy/Initialized.d \
@@ -128,16 +133,14 @@ CPP_DEPS += \
 ./src/rpy/Test1.d \
 ./src/rpy/Test2.d \
 ./src/rpy/Test3.d \
-./src/rpy/TestCase.d \
-./src/rpy/eventX.d \
-./src/rpy/eventY.d 
+./src/rpy/TestCase.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
 src/rpy/%.o: ../src/rpy/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I"/home/stud/work/courses/tiirts/exercise4/source/embsysx/src/rpy" -I"/home/stud/work/courses/tiirts/exercise4/source/embsysx/src/rpy/oxf" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	g++ -I"/mnt/hgfs/Ubuntu_share/exercise4/source/embsysx/src/rpy" -I"/mnt/hgfs/Ubuntu_share/exercise4/source/embsysx/src/rpy/oxf" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

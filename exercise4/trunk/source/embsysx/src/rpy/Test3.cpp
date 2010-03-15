@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Test3
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Test3.cpp
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Test3.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -23,10 +23,6 @@ template <class TheCommand> class CommandCreator;
 #include "Configure.h"
 //## dependency Creator
 #include "Creator.h"
-//## dependency eventX
-#include "eventX.h"
-//## dependency eventY
-#include "eventY.h"
 //## dependency Exit
 #include "Exit.h"
 //## dependency Initialized
@@ -45,24 +41,6 @@ template <class TheCommand> class CommandCreator;
 #include "Stop.h"
 //## dependency Suspend
 #include "Suspend.h"
-//## dependency ChMode
-class ChMode;
-
-//## dependency Creator
-class Creator;
-
-//## dependency eventX
-class eventX;
-
-//## dependency eventY
-class eventY;
-
-//## dependency Initialized
-class Initialized;
-
-//## dependency Stop
-class Stop;
-
 //## dependency SelfTestOk
 class SelfTestOk;
 
@@ -72,14 +50,26 @@ class ConfigurationEnded;
 //## dependency Configure
 class Configure;
 
-//## dependency Exit
-class Exit;
-
 //## dependency Restart
 class Restart;
 
 //## dependency Resume
 class Resume;
+
+//## dependency Suspend
+class Suspend;
+
+//## dependency ChMode
+class ChMode;
+
+//## dependency Creator
+class Creator;
+
+//## dependency Exit
+class Exit;
+
+//## dependency Initialized
+class Initialized;
 
 //## dependency SelfTestFailed
 class SelfTestFailed;
@@ -87,8 +77,8 @@ class SelfTestFailed;
 //## dependency Start
 class Start;
 
-//## dependency Suspend
-class Suspend;
+//## dependency Stop
+class Stop;
 
 //## package Discrete
 
@@ -105,23 +95,11 @@ void Test3::CreateTestCommands() {
     addItsCommand(pSelfTestOkCreator->CreateCommand());
     addItsCommand(pInitializedCreator->CreateCommand());
     addItsCommand(pStartCreator->CreateCommand()); 
-    addItsCommand(peventXCreator->CreateCommand()); 
-    addItsCommand(peventYCreator->CreateCommand()); 
     addItsCommand(pchModeCreator->CreateCommand()); 
-    addItsCommand(peventXCreator->CreateCommand()); 
-    addItsCommand(peventYCreator->CreateCommand()); 
     addItsCommand(pchModeCreator->CreateCommand()); 
-    addItsCommand(peventXCreator->CreateCommand()); 
-    addItsCommand(peventYCreator->CreateCommand()); 
     addItsCommand(pchModeCreator->CreateCommand()); 
-    addItsCommand(peventXCreator->CreateCommand()); 
-    addItsCommand(peventYCreator->CreateCommand()); 
     addItsCommand(pchModeCreator->CreateCommand()); 
-    addItsCommand(peventXCreator->CreateCommand()); 
-    addItsCommand(peventYCreator->CreateCommand()); 
     addItsCommand(pchModeCreator->CreateCommand()); 
-    addItsCommand(peventXCreator->CreateCommand()); 
-    addItsCommand(peventYCreator->CreateCommand()); 
     addItsCommand(pRestartCreator->CreateCommand()); 
     //#]
 }
@@ -133,5 +111,5 @@ Test3::Test3(EmbeddedSystemX* esx) {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Test3.cpp
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Test3.cpp
 *********************************************************************/

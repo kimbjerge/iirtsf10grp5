@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: TestCase
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/TestCase.cpp
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/TestCase.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -20,10 +20,6 @@
 #include "Configure.h"
 //## dependency Creator
 #include "Creator.h"
-//## dependency eventX
-#include "eventX.h"
-//## dependency eventY
-#include "eventY.h"
 //## dependency Exit
 #include "Exit.h"
 //## dependency Initialized
@@ -117,8 +113,7 @@ void TestCase::CreateCreators() {
     pResumeCreator = new CommandCreator<Resume>;
     pSelfTestFailedCreator = new CommandCreator<SelfTestFailed>;
     pchModeCreator = new CommandCreator<ChMode>;
-    peventXCreator = new CommandCreator<eventX>;
-    peventYCreator = new CommandCreator<eventY>;
+    
     //#]
 }
 
@@ -238,22 +233,6 @@ void TestCase::setPchModeCreator(Creator* p_pchModeCreator) {
     pchModeCreator = p_pchModeCreator;
 }
 
-Creator* TestCase::getPeventXCreator() const {
-    return peventXCreator;
-}
-
-void TestCase::setPeventXCreator(Creator* p_peventXCreator) {
-    peventXCreator = p_peventXCreator;
-}
-
-Creator* TestCase::getPeventYCreator() const {
-    return peventYCreator;
-}
-
-void TestCase::setPeventYCreator(Creator* p_peventYCreator) {
-    peventYCreator = p_peventYCreator;
-}
-
 std::list<Command*>::const_iterator TestCase::getItsCommandEnd() const {
     return itsCommand.end();
 }
@@ -263,5 +242,5 @@ void TestCase::setPSelfTestOkCreator(Creator* p_pSelfTestOkCreator) {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/TestCase.cpp
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/TestCase.cpp
 *********************************************************************/

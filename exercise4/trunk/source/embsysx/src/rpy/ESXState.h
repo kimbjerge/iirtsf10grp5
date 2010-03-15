@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: ESXState
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/ESXState.h
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/ESXState.h
 *********************************************************************/
 
 #ifndef ESXState_H
@@ -80,12 +80,6 @@ public :
     //## operation chMode(EmbeddedSystemX *)
     virtual void chMode(EmbeddedSystemX * esx);
     
-    //## operation eventX(EmbeddedSystemX*)
-    virtual void eventX(EmbeddedSystemX* esx);
-    
-    //## operation eventY(EmbeddedSystemX*)
-    virtual void eventY(EmbeddedSystemX* esx);
-    
     ////    Additional operations    ////
     
     ////    Relations and components    ////
@@ -119,5 +113,5 @@ public :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/ESXState.h
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/ESXState.h
 *********************************************************************/

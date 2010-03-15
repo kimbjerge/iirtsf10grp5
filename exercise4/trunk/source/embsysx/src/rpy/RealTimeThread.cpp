@@ -4,14 +4,16 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: RealTimeThread
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/RealTimeThread.cpp
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/RealTimeThread.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "RealTimeThread.h"
 //## operation setStrategy(EventStrategy*)
 #include "EventStrategy.h"
+//## dependency Event
+#include "Event.h"
 //## package Continuous
 
 //## class RealTimeThread
@@ -21,18 +23,6 @@ RealTimeThread::RealTimeThread() {
 
 RealTimeThread::~RealTimeThread() {
     cleanUpRelations();
-}
-
-void RealTimeThread::responseEventX() {
-    //#[ operation responseEventX()
-    itsEventStrategy->ResponseX();
-    //#]
-}
-
-void RealTimeThread::responseEventY() {
-    //#[ operation responseEventY()
-    itsEventStrategy->ResponseY();
-    //#]
 }
 
 void RealTimeThread::setStrategy(EventStrategy* aStrategy) {
@@ -56,6 +46,22 @@ void RealTimeThread::cleanUpRelations() {
         }
 }
 
+void RealTimeThread::run() {
+    //#[ operation run()
+    //#]
+}
+
+void * RealTimeThread::getMailbox() {
+    //#[ operation getMailbox()
+    //#]
+}
+
+void RealTimeThread::start() {
+    //#[ operation start()
+    std::cout << "RealTimeThread start" << std::endl;
+    //#]
+}
+
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/RealTimeThread.cpp
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/RealTimeThread.cpp
 *********************************************************************/

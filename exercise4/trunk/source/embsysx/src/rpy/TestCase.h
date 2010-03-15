@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: TestCase
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/TestCase.h
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/TestCase.h
 *********************************************************************/
 
 #ifndef TestCase_H
@@ -72,12 +72,6 @@ class Stop;
 
 //## dependency Suspend
 class Suspend;
-
-//## dependency eventX
-class eventX;
-
-//## dependency eventY
-class eventY;
 
 //## link itsEmbeddedSystemX
 class EmbeddedSystemX;
@@ -245,18 +239,6 @@ protected :
     //## auto_generated
     void setPchModeCreator(Creator* p_pchModeCreator);
     
-    //## auto_generated
-    Creator* getPeventXCreator() const;
-    
-    //## auto_generated
-    void setPeventXCreator(Creator* p_peventXCreator);
-    
-    //## auto_generated
-    Creator* getPeventYCreator() const;
-    
-    //## auto_generated
-    void setPeventYCreator(Creator* p_peventYCreator);
-    
     Creator* pConfigurationEndedCreator;		//## attribute pConfigurationEndedCreator
     
     Creator* pConfigureCreator;		//## attribute pConfigureCreator
@@ -274,10 +256,6 @@ protected :
     Creator* pSuspendCreator;		//## attribute pSuspendCreator
     
     Creator* pchModeCreator;		//## attribute pchModeCreator
-    
-    Creator* peventXCreator;		//## attribute peventXCreator
-    
-    Creator* peventYCreator;		//## attribute peventYCreator
 
 public :
 
@@ -292,5 +270,5 @@ protected :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/TestCase.h
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/TestCase.h
 *********************************************************************/

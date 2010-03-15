@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: ESXState
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/ESXState.cpp
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/ESXState.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -94,21 +94,9 @@ void ESXState::chMode(EmbeddedSystemX * esx) {
     //#]
 }
 
-void ESXState::eventY(EmbeddedSystemX* esx) {
-    //#[ operation eventY(EmbeddedSystemX*)
-    defaultChange();
-    //#]
-}
-
 ESXState::ESXState() {
     //#[ operation ESXState()
     stateName = new char[100];
-    //#]
-}
-
-void ESXState::eventX(EmbeddedSystemX* esx) {
-    //#[ operation eventX(EmbeddedSystemX*)
-    defaultChange();
     //#]
 }
 
@@ -142,5 +130,5 @@ char* ESXState::getStateName() const {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/ESXState.cpp
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/ESXState.cpp
 *********************************************************************/

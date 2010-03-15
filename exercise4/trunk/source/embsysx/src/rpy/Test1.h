@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Test1
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Test1.h
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Test1.h
 *********************************************************************/
 
 #ifndef Test1_H
@@ -62,5 +62,5 @@ public :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Test1.h
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Test1.h
 *********************************************************************/

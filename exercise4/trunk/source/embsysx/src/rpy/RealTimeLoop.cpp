@@ -4,15 +4,15 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: RealTimeLoop
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/RealTimeLoop.cpp
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/RealTimeLoop.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "RealTimeLoop.h"
-//## operation Instance()
+//## operation Instance(EmbeddedSystemX*)
 #include "ESXState.h"
-//## operation Stop(EmbeddedSystemX*)
+//## operation Instance(EmbeddedSystemX*)
 #include "EmbeddedSystemX.h"
 //## dependency Mode1
 #include "Mode1.h"
@@ -21,10 +21,10 @@ class PowerOnSelfTest;
 
 //## dependency Ready
 #include "Ready.h"
-//## dependency PowerOnSelfTest
-#include "PowerOnSelfTest.h"
 //## dependency Suspended
 #include "Suspended.h"
+//## dependency PowerOnSelfTest
+#include "PowerOnSelfTest.h"
 //## dependency Ready
 class Ready;
 
@@ -43,9 +43,9 @@ void RealTimeLoop::DisplayState() {
     //#]
 }
 
-ESXState* RealTimeLoop::Instance() {
-    //#[ operation Instance()
-    return Mode1::Instance();
+ESXState* RealTimeLoop::Instance(EmbeddedSystemX* esx) {
+    //#[ operation Instance(EmbeddedSystemX*)
+    return Mode1::Instance(esx);
     //#]
 }
 
@@ -62,5 +62,5 @@ void RealTimeLoop::Suspend(EmbeddedSystemX* esx) {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/RealTimeLoop.cpp
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/RealTimeLoop.cpp
 *********************************************************************/

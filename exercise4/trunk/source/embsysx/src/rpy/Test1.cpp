@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Test1
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Test1.cpp
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Test1.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -20,10 +20,6 @@
 #include "Configure.h"
 //## dependency Creator
 #include "Creator.h"
-//## dependency eventX
-#include "eventX.h"
-//## dependency eventY
-#include "eventY.h"
 //## dependency Exit
 #include "Exit.h"
 //## dependency Initialized
@@ -69,9 +65,6 @@ class Restart;
 //## dependency Suspend
 class Suspend;
 
-//## dependency eventY
-class eventY;
-
 //## dependency ConfigurationEnded
 class ConfigurationEnded;
 
@@ -86,9 +79,6 @@ class SelfTestOk;
 
 //## dependency Start
 class Start;
-
-//## dependency eventX
-class eventX;
 
 //## package Discrete
 
@@ -120,5 +110,5 @@ Test1::Test1(EmbeddedSystemX* esx) {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Test1.cpp
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Test1.cpp
 *********************************************************************/

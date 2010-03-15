@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: EmbeddedSystemX
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/EmbeddedSystemX.h
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/EmbeddedSystemX.h
 *********************************************************************/
 
 #ifndef EmbeddedSystemX_H
@@ -90,12 +90,6 @@ public :
     //## operation HandleCommand(Command*)
     void HandleCommand(Command* pCommand);
     
-    //## operation responseEventX()
-    void responseEventX();
-    
-    //## operation responseEventY()
-    void responseEventY();
-    
     //## operation setStrategy(EventStrategy*)
     void setStrategy(EventStrategy* aStrategy);
     
@@ -108,9 +102,14 @@ public :
 protected :
 
     RealTimeThread* itsRealTimeThread;		//## link itsRealTimeThread
+
+public :
+
+    //## operation start()
+    void start();
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/EmbeddedSystemX.h
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/EmbeddedSystemX.h
 *********************************************************************/

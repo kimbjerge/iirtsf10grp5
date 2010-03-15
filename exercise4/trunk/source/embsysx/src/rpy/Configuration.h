@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Configuration
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Configuration.h
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Configuration.h
 *********************************************************************/
 
 #ifndef Configuration_H
@@ -83,5 +83,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Configuration.h
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Configuration.h
 *********************************************************************/

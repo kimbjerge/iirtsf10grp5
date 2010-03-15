@@ -79,8 +79,6 @@ OBJS= \
   ChMode.o \
   Exit.o \
   ConfigX.o \
-  eventX.o \
-  eventY.o \
   SelfTestOk.o \
   Creator.o \
   TestCase.o \
@@ -93,6 +91,9 @@ OBJS= \
   M1Strategy.o \
   M2Strategy.o \
   M3Strategy.o \
+  Event.o \
+  EventX.o \
+  EventY.o \
   Discrete.o \
   Continuous.o
 
@@ -375,22 +376,6 @@ ConfigX.o : ConfigX.cpp ConfigX.h    Discrete.h ESXState.h EmbeddedSystemX.h Com
 
 
 
-eventX.o : eventX.cpp eventX.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
-	@echo Compiling eventX.cpp
-	$(CREATE_OBJ_DIR)
-	@$(CC) $(ConfigurationCPPCompileSwitches)  -o eventX.o eventX.cpp
-
-
-
-
-eventY.o : eventY.cpp eventY.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
-	@echo Compiling eventY.cpp
-	$(CREATE_OBJ_DIR)
-	@$(CC) $(ConfigurationCPPCompileSwitches)  -o eventY.o eventY.cpp
-
-
-
-
 SelfTestOk.o : SelfTestOk.cpp SelfTestOk.h    Discrete.h ESXState.h EmbeddedSystemX.h Command.h 
 	@echo Compiling SelfTestOk.cpp
 	$(CREATE_OBJ_DIR)
@@ -407,7 +392,7 @@ Creator.o : Creator.cpp Creator.h    Discrete.h Command.h
 
 
 
-TestCase.o : TestCase.cpp TestCase.h    Discrete.h Command.h EmbeddedSystemX.h SelfTestOk.h Creator.h CommandCreator.h Initialized.h Restart.h Exit.h Configure.h ConfigurationEnded.h Stop.h Start.h Suspend.h Resume.h SelfTestFailed.h ChMode.h eventX.h eventY.h 
+TestCase.o : TestCase.cpp TestCase.h    Discrete.h Command.h EmbeddedSystemX.h SelfTestOk.h Creator.h CommandCreator.h Initialized.h Restart.h Exit.h Configure.h ConfigurationEnded.h Stop.h Start.h Suspend.h Resume.h SelfTestFailed.h ChMode.h 
 	@echo Compiling TestCase.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o TestCase.o TestCase.cpp
@@ -423,7 +408,7 @@ Tester.o : Tester.cpp Tester.h    Discrete.h TestCase.h EmbeddedSystemX.h Test1.
 
 
 
-Test1.o : Test1.cpp Test1.h    Discrete.h CommandCreator.h SelfTestOk.h Creator.h Initialized.h Restart.h ConfigurationEnded.h Start.h Resume.h eventY.h Configure.h Stop.h ChMode.h SelfTestFailed.h Exit.h Suspend.h eventX.h EmbeddedSystemX.h TestCase.h Command.h 
+Test1.o : Test1.cpp Test1.h    Discrete.h CommandCreator.h SelfTestOk.h Creator.h Initialized.h Restart.h ConfigurationEnded.h Start.h Resume.h Configure.h Stop.h ChMode.h SelfTestFailed.h Exit.h Suspend.h EmbeddedSystemX.h TestCase.h Command.h 
 	@echo Compiling Test1.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Test1.o Test1.cpp
@@ -431,7 +416,7 @@ Test1.o : Test1.cpp Test1.h    Discrete.h CommandCreator.h SelfTestOk.h Creator.
 
 
 
-Test2.o : Test2.cpp Test2.h    Discrete.h CommandCreator.h SelfTestOk.h Restart.h Creator.h Initialized.h Suspend.h ConfigurationEnded.h Start.h Resume.h eventY.h Configure.h Stop.h ChMode.h SelfTestFailed.h Exit.h eventX.h EmbeddedSystemX.h TestCase.h Command.h 
+Test2.o : Test2.cpp Test2.h    Discrete.h CommandCreator.h SelfTestOk.h Restart.h Creator.h Initialized.h Suspend.h ConfigurationEnded.h Start.h Resume.h Configure.h Stop.h ChMode.h SelfTestFailed.h Exit.h EmbeddedSystemX.h TestCase.h Command.h 
 	@echo Compiling Test2.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Test2.o Test2.cpp
@@ -439,7 +424,7 @@ Test2.o : Test2.cpp Test2.h    Discrete.h CommandCreator.h SelfTestOk.h Restart.
 
 
 
-Test3.o : Test3.cpp Test3.h    Discrete.h CommandCreator.h SelfTestOk.h Start.h Creator.h SelfTestFailed.h ConfigurationEnded.h Restart.h Exit.h Stop.h eventX.h Configure.h Resume.h ChMode.h Initialized.h Suspend.h eventY.h EmbeddedSystemX.h TestCase.h Command.h 
+Test3.o : Test3.cpp Test3.h    Discrete.h CommandCreator.h SelfTestOk.h Start.h Creator.h SelfTestFailed.h ConfigurationEnded.h Restart.h Exit.h Stop.h Configure.h Resume.h ChMode.h Initialized.h Suspend.h EmbeddedSystemX.h TestCase.h Command.h 
 	@echo Compiling Test3.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Test3.o Test3.cpp
@@ -447,7 +432,7 @@ Test3.o : Test3.cpp Test3.h    Discrete.h CommandCreator.h SelfTestOk.h Start.h 
 
 
 
-RealTimeThread.o : RealTimeThread.cpp RealTimeThread.h    Continuous.h EventStrategy.h 
+RealTimeThread.o : RealTimeThread.cpp RealTimeThread.h    Continuous.h EventStrategy.h Event.h 
 	@echo Compiling RealTimeThread.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o RealTimeThread.o RealTimeThread.cpp
@@ -487,7 +472,31 @@ M3Strategy.o : M3Strategy.cpp M3Strategy.h    Continuous.h EventStrategy.h
 
 
 
-Discrete.o : Discrete.cpp Discrete.h    EmbeddedSystemX.h ESXState.h PowerOnSelfTest.h Failure.h Initializing.h Operational.h RealTimeLoop.h Ready.h Configuration.h Suspended.h Mode1.h Mode2.h Mode3.h TestUser.h Command.h SelfTestFailed.h Initialized.h Configure.h ConfigurationEnded.h Stop.h Suspend.h Resume.h Start.h Restart.h ChMode.h Exit.h ConfigX.h eventX.h eventY.h SelfTestOk.h Creator.h CommandCreator.h TestCase.h Tester.h Test1.h Test2.h Test3.h Continuous.h 
+Event.o : Event.cpp Event.h    Continuous.h EventStrategy.h 
+	@echo Compiling Event.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Event.o Event.cpp
+
+
+
+
+EventX.o : EventX.cpp EventX.h    Continuous.h EventStrategy.h Event.h 
+	@echo Compiling EventX.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o EventX.o EventX.cpp
+
+
+
+
+EventY.o : EventY.cpp EventY.h    Continuous.h EventStrategy.h Event.h 
+	@echo Compiling EventY.cpp
+	$(CREATE_OBJ_DIR)
+	@$(CC) $(ConfigurationCPPCompileSwitches)  -o EventY.o EventY.cpp
+
+
+
+
+Discrete.o : Discrete.cpp Discrete.h    EmbeddedSystemX.h ESXState.h PowerOnSelfTest.h Failure.h Initializing.h Operational.h RealTimeLoop.h Ready.h Configuration.h Suspended.h Mode1.h Mode2.h Mode3.h TestUser.h Command.h SelfTestFailed.h Initialized.h Configure.h ConfigurationEnded.h Stop.h Suspend.h Resume.h Start.h Restart.h ChMode.h Exit.h ConfigX.h SelfTestOk.h Creator.h CommandCreator.h TestCase.h Tester.h Test1.h Test2.h Test3.h Continuous.h 
 	@echo Compiling Discrete.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Discrete.o Discrete.cpp
@@ -495,7 +504,7 @@ Discrete.o : Discrete.cpp Discrete.h    EmbeddedSystemX.h ESXState.h PowerOnSelf
 
 
 
-Continuous.o : Continuous.cpp Continuous.h    RealTimeThread.h EventStrategy.h M1Strategy.h M2Strategy.h M3Strategy.h 
+Continuous.o : Continuous.cpp Continuous.h    RealTimeThread.h EventStrategy.h M1Strategy.h M2Strategy.h M3Strategy.h Event.h EventX.h EventY.h 
 	@echo Compiling Continuous.cpp
 	$(CREATE_OBJ_DIR)
 	@$(CC) $(ConfigurationCPPCompileSwitches)  -o Continuous.o Continuous.cpp
@@ -558,8 +567,6 @@ clean:
 	$(RM) ChMode.o
 	$(RM) Exit.o
 	$(RM) ConfigX.o
-	$(RM) eventX.o
-	$(RM) eventY.o
 	$(RM) SelfTestOk.o
 	$(RM) Creator.o
 	$(RM) TestCase.o
@@ -572,6 +579,9 @@ clean:
 	$(RM) M1Strategy.o
 	$(RM) M2Strategy.o
 	$(RM) M3Strategy.o
+	$(RM) Event.o
+	$(RM) EventX.o
+	$(RM) EventY.o
 	$(RM) Discrete.o
 	$(RM) Continuous.o
 	$(RM) $(TARGET_MAIN)$(OBJ_EXT) $(ADDITIONAL_OBJS)

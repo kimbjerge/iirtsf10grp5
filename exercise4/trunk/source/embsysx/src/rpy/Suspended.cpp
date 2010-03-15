@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Suspended
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Suspended.cpp
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Suspended.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -23,7 +23,7 @@
 //## package Discrete
 
 //## class Suspended
-ESXState* Suspended::_instance;
+ESXState* Suspended::_instance = 0;
 
 Suspended::Suspended() {
 }
@@ -43,7 +43,7 @@ ESXState* Suspended::Instance() {
 
 void Suspended::Resume(EmbeddedSystemX* esx) {
     //#[ operation Resume(EmbeddedSystemX*)
-    ChangeState(esx, RealTimeLoop::Instance());
+    ChangeState(esx, RealTimeLoop::Instance(esx));
     //#]
 }
 
@@ -68,5 +68,5 @@ ESXState* Suspended::get_instance() {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Suspended.cpp
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Suspended.cpp
 *********************************************************************/

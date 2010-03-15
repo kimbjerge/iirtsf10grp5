@@ -3,13 +3,13 @@
 	Login		: KBE
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
-	Model Element	: eventY
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/eventY.h
+	Model Element	: EventY
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/EventY.h
 *********************************************************************/
 
-#ifndef eventY_H
-#define eventY_H
+#ifndef EventY_H
+#define EventY_H
 
 //#[ ignore
 #ifdef _MSC_VER
@@ -20,24 +20,21 @@
 
 //## auto_generated
 #include <oxf/oxf.h>
-//## class eventY
-#include "Command.h"
 //## auto_generated
 #include <string>
 //## auto_generated
 #include <algorithm>
 //## auto_generated
-#include "Discrete.h"
-//## dependency ESXState
-class ESXState;
+#include "Continuous.h"
+//## class EventY
+#include "Event.h"
+//## operation Execute(EventStrategy*)
+class EventStrategy;
 
-//## operation Execute(ESXState*,EmbeddedSystemX*)
-class EmbeddedSystemX;
+//## package Continuous
 
-//## package Discrete
-
-//## class eventY
-class eventY : public Command {
+//## class EventY
+class EventY : public Event {
     ////    Friends    ////
     
     ////    Constructors and destructors    ////
@@ -45,18 +42,18 @@ class eventY : public Command {
 public :
 
     //## auto_generated
-    eventY();
+    EventY();
     
     //## auto_generated
-    virtual ~eventY();
+    virtual ~EventY();
     
     ////    Operations    ////
     
-    //## operation Execute(ESXState*,EmbeddedSystemX*)
-    virtual void Execute(ESXState* s, EmbeddedSystemX* esx);
+    //## operation Execute(EventStrategy*)
+    virtual void Execute(EventStrategy* es);
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/eventY.h
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/EventY.h
 *********************************************************************/

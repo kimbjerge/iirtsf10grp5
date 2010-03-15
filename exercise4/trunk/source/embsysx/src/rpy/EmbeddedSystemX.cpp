@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: EmbeddedSystemX
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/EmbeddedSystemX.cpp
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/EmbeddedSystemX.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -67,18 +67,6 @@ void EmbeddedSystemX::HandleCommand(Command* pCommand) {
     //#]
 }
 
-void EmbeddedSystemX::responseEventX() {
-    //#[ operation responseEventX()
-    itsRealTimeThread->responseEventX();
-    //#]
-}
-
-void EmbeddedSystemX::responseEventY() {
-    //#[ operation responseEventY()
-    itsRealTimeThread->responseEventY();
-    //#]
-}
-
 void EmbeddedSystemX::setStrategy(EventStrategy* aStrategy) {
     //#[ operation setStrategy(EventStrategy*)
     itsRealTimeThread->setStrategy(aStrategy);
@@ -93,6 +81,12 @@ void EmbeddedSystemX::setItsRealTimeThread(RealTimeThread* p_RealTimeThread) {
     itsRealTimeThread = p_RealTimeThread;
 }
 
+void EmbeddedSystemX::start() {
+    //#[ operation start()
+    itsRealTimeThread->start();
+    //#]
+}
+
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/EmbeddedSystemX.cpp
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/EmbeddedSystemX.cpp
 *********************************************************************/

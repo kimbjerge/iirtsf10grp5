@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Continuous
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Continuous.h
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Continuous.h
 *********************************************************************/
 
 #ifndef Continuous_H
@@ -25,7 +25,16 @@
 //## auto_generated
 #include <algorithm>
 //## auto_generated
+class Event;
+
+//## auto_generated
 class EventStrategy;
+
+//## auto_generated
+class EventX;
+
+//## auto_generated
+class EventY;
 
 //## auto_generated
 class M1Strategy;
@@ -45,5 +54,5 @@ class RealTimeThread;
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Continuous.h
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Continuous.h
 *********************************************************************/

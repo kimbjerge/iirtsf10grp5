@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Discrete
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Discrete.cpp
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Discrete.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -30,10 +30,6 @@
 #include "EmbeddedSystemX.h"
 //## auto_generated
 #include "ESXState.h"
-//## auto_generated
-#include "eventX.h"
-//## auto_generated
-#include "eventY.h"
 //## auto_generated
 #include "Exit.h"
 //## auto_generated
@@ -80,9 +76,10 @@
 #include "Test3.h"
 //## auto_generated
 #include "TestCase.h"
+//## package Discrete
 
 
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Discrete.cpp
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Discrete.cpp
 *********************************************************************/

@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: RealTimeThread
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/RealTimeThread.h
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/RealTimeThread.h
 *********************************************************************/
 
 #ifndef RealTimeThread_H
@@ -26,6 +26,9 @@
 #include <algorithm>
 //## auto_generated
 #include "Continuous.h"
+//## dependency Event
+class Event;
+
 //## operation setStrategy(EventStrategy*)
 class EventStrategy;
 
@@ -47,12 +50,6 @@ public :
     
     ////    Operations    ////
     
-    //## operation responseEventX()
-    void responseEventX();
-    
-    //## operation responseEventY()
-    void responseEventY();
-    
     //## operation setStrategy(EventStrategy*)
     void setStrategy(EventStrategy* aStrategy);
     
@@ -72,9 +69,20 @@ protected :
     ////    Relations and components    ////
     
     EventStrategy* itsEventStrategy;		//## link itsEventStrategy
+
+public :
+
+    //## operation run()
+    void run();
+    
+    //## operation getMailbox()
+    void * getMailbox();
+    
+    //## operation start()
+    void start();
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/RealTimeThread.h
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/RealTimeThread.h
 *********************************************************************/

@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Mode3
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Mode3.h
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Mode3.h
 *********************************************************************/
 
 #ifndef Mode3_H
@@ -33,10 +33,10 @@
 //## dependency Mode1
 class Mode1;
 
-//## operation Instance()
+//## operation Instance(EmbeddedSystemX*)
 class ESXState;
 
-//## operation chMode(EmbeddedSystemX*)
+//## operation Instance(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
 //## package Discrete
@@ -55,8 +55,8 @@ public :
     
     ////    Operations    ////
     
-    //## operation Instance()
-    static ESXState* Instance();
+    //## operation Instance(EmbeddedSystemX*)
+    static ESXState* Instance(EmbeddedSystemX* esx);
     
     //## operation chMode(EmbeddedSystemX*)
     virtual void chMode(EmbeddedSystemX* esx);
@@ -79,9 +79,6 @@ private :
 
 public :
 
-    //## operation eventX(EmbeddedSystemX*)
-    virtual void eventX(EmbeddedSystemX* esx);
-    
     //## auto_generated
     M3Strategy* getItsM3Strategy() const;
 
@@ -97,5 +94,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Mode3.h
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Mode3.h
 *********************************************************************/

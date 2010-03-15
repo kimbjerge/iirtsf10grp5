@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Mode2
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Mode2.h
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Mode2.h
 *********************************************************************/
 
 #ifndef Mode2_H
@@ -33,10 +33,10 @@
 //## dependency Mode3
 class Mode3;
 
-//## operation Instance()
+//## operation Instance(EmbeddedSystemX*)
 class ESXState;
 
-//## operation chMode(EmbeddedSystemX*)
+//## operation Instance(EmbeddedSystemX*)
 class EmbeddedSystemX;
 
 //## package Discrete
@@ -55,8 +55,8 @@ public :
     
     ////    Operations    ////
     
-    //## operation Instance()
-    static ESXState* Instance();
+    //## operation Instance(EmbeddedSystemX*)
+    static ESXState* Instance(EmbeddedSystemX* esx);
     
     //## operation chMode(EmbeddedSystemX*)
     virtual void chMode(EmbeddedSystemX* esx);
@@ -79,12 +79,6 @@ private :
 
 public :
 
-    //## operation eventX(EmbeddedSystemX*)
-    virtual void eventX(EmbeddedSystemX* esx);
-    
-    //## operation eventY(EmbeddedSystemX*)
-    virtual void eventY(EmbeddedSystemX* esx);
-    
     //## auto_generated
     M2Strategy* getItsM2Strategy() const;
 
@@ -100,5 +94,5 @@ private :
 
 #endif
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Mode2.h
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Mode2.h
 *********************************************************************/

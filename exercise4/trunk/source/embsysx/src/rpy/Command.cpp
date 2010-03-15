@@ -4,8 +4,8 @@
 	Component	: DefaultComponent 
 	Configuration 	: LinuxSource
 	Model Element	: Command
-//!	Generated Date	: Wed, 3, Mar 2010  
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Command.cpp
+//!	Generated Date	: Mon, 15, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Command.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -24,5 +24,5 @@ Command::~Command() {
 }
 
 /*********************************************************************
-	File Path	: C:/IHA/TI-IRTS/exercise4/source/embsysx/src/rpy/Command.cpp
+	File Path	: C:/Ubuntu_share/exercise4/source/embsysx/src/rpy/Command.cpp
 *********************************************************************/
