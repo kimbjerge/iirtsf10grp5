@@ -4,20 +4,26 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/embsysx.cpp 
+../src/BinarySemaphore.cpp \
+../src/CountingSemaphore.cpp \
+../src/testSem.cpp 
 
 OBJS += \
-./src/embsysx.o 
+./src/BinarySemaphore.o \
+./src/CountingSemaphore.o \
+./src/testSem.o 
 
 CPP_DEPS += \
-./src/embsysx.d 
+./src/BinarySemaphore.d \
+./src/CountingSemaphore.d \
+./src/testSem.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
 src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I"/home/stud/work/courses/tiirts/exercise4/source/embsysx/src/rpy" -I"/home/stud/work/courses/tiirts/exercise4/source/embsysx/src/rpy/oxf" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -lpthread -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

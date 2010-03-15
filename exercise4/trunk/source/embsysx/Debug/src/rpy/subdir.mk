@@ -137,7 +137,7 @@ CPP_DEPS += \
 src/rpy/%.o: ../src/rpy/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I"/mnt/hgfs/Ubuntu_share/exercise4/source/embsysx/src/rpy" -I"/mnt/hgfs/Ubuntu_share/exercise4/source/embsysx/src/rpy/oxf" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	g++ -I"/home/stud/work/courses/tiirts/exercise4/source/embsysx/src/rpy" -I"/home/stud/work/courses/tiirts/exercise4/source/embsysx/src/rpy/oxf" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
