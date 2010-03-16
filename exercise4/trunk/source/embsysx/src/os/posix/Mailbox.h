@@ -1,14 +1,20 @@
 #ifndef Mailbox_H
 #define Mailbox_H
 #include "Mutex.h"
+#include "CountingSemaphore.h"
 
+// Mailbox - blocking or nonblocking
+// Default the mailbox is blocking when mailbox is empty
+// Waiting at a semaphore for items to be put in mailbox
+// If nonblocking - get returns 0 if mailbox is empty
+// put returns false if the mailbox is full
 template <class Item> class Mailbox
 {
 
 public:
-    Mailbox(const long int cap);
+    Mailbox(const long int cap, bool blocking = true);
     ~Mailbox();
-	void put(Item n);
+	bool put(Item n);
 	Item get(void);
 	int getSize(void)
 	{
@@ -19,27 +25,34 @@ private:
 	void increment(int &idx);
 
 	Mutex* pMutex;
+	CountingSemaphore *pSemaphore;
 	long int capacity;
 	int num_mails;
 	int first;
 	int last;
+	bool block;
     Item *mails;
 };
 
 // Mailbox template constructor
-template <class Item> Mailbox<Item>::Mailbox(const long int cap)
+template <class Item> Mailbox<Item>::Mailbox(const long int cap, bool blocking)
 {
-	pMutex = new Mutex();
 	capacity = cap;
 	num_mails = 0;
 	first = 0;
 	last = 0;
+	block = blocking;
+	if (block)
+  	  pSemaphore = new CountingSemaphore(0);
+	pMutex = new Mutex();
 	mails = new Item[capacity];
 };
 
 // Mailbox template destructor
 template <class Item> Mailbox<Item>::~Mailbox()
 {
+	if (block)
+		delete pSemaphore;
 	delete pMutex;
 	delete mails;
 };
@@ -51,33 +64,45 @@ template <class Item> void Mailbox<Item>::increment(int &idx)
 };
 
 // Mailbox template put Item
-template <class Item> void Mailbox<Item>::put(Item n)
+template <class Item> bool Mailbox<Item>::put(Item n)
 {
-	// Don't wait if mailbox is full
+	bool succeded = false;
+
+	// Mutex to handle atomic access of mailbox
+	pMutex->wait();
 	if (num_mails < capacity)
 	{
-		// Mutex to ensure atomic operation
-		pMutex->wait();
-		if (num_mails < capacity)
-		{
-			mails[first] = n;
-			increment(first);
-			num_mails++;
-		}
-		pMutex->signal();
+		mails[first] = n;
+		increment(first);
+		num_mails++;
+		succeded = true;
 	}
+	pMutex->signal();
+
+	// Signal new mail in mailbox
+	if (block and succeded)
+		pSemaphore->signal();
+
+	return succeded;
 };
 
 // Mailbox template get Item
 template <class Item> Item Mailbox<Item>::get(void)
 {
 	Item item = 0;
+	bool succeded = false;
 
-	// Don't wait if mailbox is empty
-	if (num_mails > 0)
+	while (!succeded)
 	{
+		// Wait for mails if blocking mailbox
+		if (block and num_mails == 0)
+		{
+			pSemaphore->wait();
+		}
+
 		// Mutex to ensure atomic operation
 		pMutex->wait();
+		// Ensure mail in mailbox
 		if (num_mails > 0)
 		{
 			item = mails[last];
@@ -89,11 +114,15 @@ template <class Item> Item Mailbox<Item>::get(void)
 				first = 0;
 				last = 0;
 			}
+			succeded = true;
 		}
 		pMutex->signal();
-	}
-	return item;
 
+		// Exit if nonblocking
+		if (!block) break;
+	}
+
+	return item;
 };
 
 #endif
