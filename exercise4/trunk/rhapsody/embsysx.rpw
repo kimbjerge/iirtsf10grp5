@@ -37,8 +37,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -58,7 +58,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _id = GUID d403c6af-e0a5-4846-9c67-58d00049b87b;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1134 659 ;
+			- _DownRight = 1551 1061 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 3;
 		}
@@ -85,8 +85,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "CommandModel";
 				- _id = GUID 9246b02e-9839-4e4f-90fa-7ac1db118214;
 			}
-			- _UpLeft = 334 357 ;
-			- _DownRight = 1258 771 ;
+			- _UpLeft = 46 161 ;
+			- _DownRight = 970 575 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
 		}
@@ -121,8 +121,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -141,8 +141,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "TestModel";
 				- _id = GUID 5c793e7e-eb0e-4a2d-b6bd-fe07a24b41b6;
 			}
-			- _UpLeft = 0 10 ;
-			- _DownRight = 890 587 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 499 227 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 5;
 		}
@@ -203,7 +203,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 			- m_nDiagramIndex = 0;
 		}
 	}
-	- _fullName = "C:\\IHA\\TI-IRTS\\exercise4\\rhapsody\\embsysx";
+	- _fullName = "C:\\Ubuntu_share\\exercise4\\rhapsody\\embsysx";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}
