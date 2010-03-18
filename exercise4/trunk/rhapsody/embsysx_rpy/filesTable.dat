@@ -2,11 +2,11 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 
 - filesTable = { IRPYRawContainer 
 	- size = 5;
-	- value = "C:\\Programmer\\IBM\\Rational\\Rhapsody\\7.5\\Share\\Profiles\\CGSimplifiedModelProfileCpp.sbs" "CGSimplifiedModelProfileCpp"
-	"Projects.rpl" ""
+	- value = "Projects.rpl" ""
 	"embsysx.rpy" ""
-	"embsysx_rpy\\Default.sbs" "Default"
+	"embsysx_rpy\\Continuous.sbs" "Continuous"
 	"embsysx_rpy\\DefaultComponent.cmp" "DefaultComponent"
+	"embsysx_rpy\\Discrete.sbs" "Discrete"
 	
 }
 
