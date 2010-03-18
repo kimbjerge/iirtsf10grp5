@@ -49963,7 +49963,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID d45b4129-c4d1-484d-af02-0892adac1bf1;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 3.2.2010::21:34:5;
+			- weakCGTime = 3.15.2010::13:23:32;
 			- strongCGTime = 3.2.2010::21:12:43;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -50643,6 +50643,7 @@ itsRealTimeThread = new RealTimeThread();";
 								}
 								{ IFileFragment 
 									- _id = GUID 820b8397-0a93-44c0-9fd5-8016da6b95d1;
+									- _name = "EmbeddedSystemX";
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
@@ -51370,6 +51371,7 @@ itsRealTimeThread = new RealTimeThread();";
 								}
 								{ IFileFragment 
 									- _id = GUID 1787037b-7c74-48ee-9a2b-69683e3536db;
+									- _name = "EmbeddedSystemX";
 									- m_type = specFragment;
 									- m_text = "";
 									- m_startRow = 97;
@@ -88001,6 +88003,7 @@ addItsCommand(pRestartCreator->CreateCommand()); ";
 								}
 								{ IFileFragment 
 									- _id = GUID e5a0dac5-b0f8-4225-a7ee-bbefff8402a2;
+									- _name = "Test2";
 									- m_type = specFragment;
 									- m_text = "";
 									- m_startRow = 66;
@@ -88443,6 +88446,7 @@ addItsCommand(pRestartCreator->CreateCommand()); ";
 								}
 								{ IFileFragment 
 									- _id = GUID 91e2f56c-92ff-4ecc-b55c-c362184cb460;
+									- _name = "Test2";
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
@@ -89544,6 +89548,7 @@ addItsCommand(pRestartCreator->CreateCommand()); ";
 								}
 								{ IFileFragment 
 									- _id = GUID 76dacbf2-c76c-40fc-a6c2-56add850ee17;
+									- _name = "Test3";
 									- m_type = specFragment;
 									- m_text = "";
 									- m_startRow = 66;
@@ -89986,6 +89991,7 @@ addItsCommand(pRestartCreator->CreateCommand()); ";
 								}
 								{ IFileFragment 
 									- _id = GUID 09fd1a38-5a97-422c-8cd0-b66acc107dae;
+									- _name = "Test3";
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 

@@ -212,7 +212,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "CommandStrategyModel";
-			- _lastModifiedTime = "3.15.2010::13:24:47";
+			- _lastModifiedTime = "3.15.2010::13:57:18";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 23685b2c-b4fc-45a4-8a9b-02eedcb371ec;
 				- m_type = 0;
@@ -2363,7 +2363,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.181303 0 0 0.101604 14.6374 401.572 ;
+					- m_transform = 0.181303 0 0 0.101604 14.6374 403.572 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -2720,7 +2720,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 3.15.2010::13:23:55;
+	- weakCGTime = 3.15.2010::13:57:18;
 	- strongCGTime = 3.2.2010::21:0:2;
 	- _defaultComposite = GUID d6a3072b-80f8-4c8b-bdc1-7aa468411872;
 	- _eventsBaseID = -1;
@@ -2731,7 +2731,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID d6a3072b-80f8-4c8b-bdc1-7aa468411872;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 3.2.2010::21:11:5;
+			- weakCGTime = 3.15.2010::13:23:55;
 			- strongCGTime = 3.2.2010::21:0:2;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -6271,9 +6271,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _id = GUID 2ef04e70-fafc-49fe-a66a-4185a83862dc;
 					- _myState = 139264;
 					- _name = "EventX";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -6291,9 +6288,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID d64ba2dd-b0f0-4978-8690-325b56e53cbb;
@@ -6306,9 +6300,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_endCol_Short = 634;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -6323,9 +6314,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID cf659a9f-0b7a-448f-b6a2-2bb7ad2dfcb7;
@@ -6338,9 +6326,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_endCol_Short = 717;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -6355,9 +6340,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID aa601f83-5243-41bd-95d8-3c9581e91296;
@@ -6371,9 +6353,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 4ded79af-5876-4a7a-b7f2-6f09e21f92e3;
@@ -6386,9 +6365,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_endCol_Short = 20;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -6466,9 +6442,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 21549049-18a1-4918-ad6a-578acf917668;
@@ -6483,9 +6456,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 4b1dd48b-007f-4afb-9f98-14080bee1cb1;
@@ -6499,9 +6469,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 283ec70d-0c52-4dd9-bb4e-351ed586f92e;
@@ -6514,9 +6481,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -6532,9 +6496,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 517e197c-60a5-4bc4-8a77-4d6b6efb1f34;
@@ -6549,9 +6510,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 17131f26-b8bb-4806-acf4-3586ee3e28c3;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -6561,9 +6519,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _id = GUID cc7dd66e-7878-43c9-8e7e-9dff4645e338;
 					- _myState = 139264;
 					- _name = "EventX";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -6581,9 +6536,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 82e92a59-d579-413b-8470-b34386c6a542;
@@ -6596,9 +6548,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_endCol_Short = 521;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -6675,9 +6624,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 5b2f8cff-4870-47db-9dbb-69e620dc6329;
@@ -6736,9 +6682,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -6799,9 +6742,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 17131f26-b8bb-4806-acf4-3586ee3e28c3;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -6915,9 +6855,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _id = GUID cd0844e7-8cd7-442e-95c7-e35cae03f5e8;
 					- _myState = 139264;
 					- _name = "EventY";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -6935,9 +6872,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID ebd98193-32f9-4e7e-9677-9ef025a02364;
@@ -6950,9 +6884,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_endCol_Short = 634;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -6967,9 +6898,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 480ab57d-68af-466e-a2ec-5f2313e05935;
@@ -6982,9 +6910,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_endCol_Short = 717;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -6999,9 +6924,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID da17c11c-326a-4c2b-8b07-371f1413972b;
@@ -7015,9 +6937,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 852a94cf-0977-4efd-af19-391871b0d879;
@@ -7030,9 +6949,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_endCol_Short = 20;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -7110,9 +7026,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 32fb01a6-c8c4-45eb-9f9d-faf5fc502cfc;
@@ -7127,9 +7040,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 205d1638-ab9e-4140-8122-db14e6d68685;
@@ -7143,9 +7053,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 76c5bb1e-94f3-4a0a-a53b-3f821c25dd6b;
@@ -7158,9 +7065,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7176,9 +7080,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 7f796f24-ec0f-4437-a138-b965fcaa5177;
@@ -7193,9 +7094,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 373b88ff-8411-4a9f-94c5-c4096637971d;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -7205,9 +7103,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _id = GUID 304e4012-f291-48cb-be74-ef1497eca8cc;
 					- _myState = 139264;
 					- _name = "EventY";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -7225,9 +7120,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 35ccd6a2-8d50-4746-828f-67632f44a5f1;
@@ -7240,9 +7132,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_endCol_Short = 521;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -7319,9 +7208,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 3395ec59-f0e1-406d-bbf1-7bbfc8bf7d3e;
@@ -7380,9 +7266,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7443,9 +7326,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 373b88ff-8411-4a9f-94c5-c4096637971d;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
