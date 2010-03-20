@@ -1,5 +1,13 @@
 I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 { ISubsystem 
+	- _ownerHandle = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Application.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Application";
+		- _id = GUID e13ed91e-36da-4077-8d2d-9ea2a971507e;
+	}
 	- _id = GUID feef58f9-5b35-4e28-b74b-ab6e92db495b;
 	- _myState = 8192;
 	- _name = "Continuous";
@@ -8,7 +16,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _filename = "";
 		- _subsystem = "";
 		- _class = "";
-		- _name = "ArchitectureView";
+		- _name = "ApplicationArchitectureView";
 		- _id = GUID 9bb92a72-8b86-46be-9253-7d90456e2224;
 	}
 	- _lastID = 3;
@@ -212,7 +220,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "CommandStrategyModel";
-			- _lastModifiedTime = "3.15.2010::13:57:18";
+			- _lastModifiedTime = "3.19.2010::21:44:30";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 23685b2c-b4fc-45a4-8a9b-02eedcb371ec;
 				- m_type = 0;
@@ -1137,14 +1145,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IClass";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "";
 						- _name = "EmbeddedSystemX";
 						- _id = GUID bbd9277d-ca6f-4e3c-b14c-fd226a306c2b;
 					}
 					- m_pParent = GUID e4c9dfba-dc5a-48be-a800-af7ec3963245;
 					- m_name = { CGIText 
-						- m_str = "Discrete::EmbeddedSystemX";
+						- m_str = "Application::Discrete::EmbeddedSystemX";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -1188,7 +1196,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "EmbeddedSystemX";
 							- _name = "setStrategy(EventStrategy*)";
 							- _id = GUID 048fa8dd-9317-4a48-a9c2-299bac48f71d;
@@ -1196,7 +1204,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "EmbeddedSystemX";
 							- _name = "start()";
 							- _id = GUID dfd5b075-2603-47cc-8aee-c208ea2e610d;
@@ -1234,7 +1242,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IAssociationEnd";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "EmbeddedSystemX";
 						- _name = "itsRealTimeThread";
 						- _id = GUID e34c2052-61ed-466f-8c77-54931d79c3d1;
@@ -1406,14 +1414,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IClass";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "";
 						- _name = "Mode1";
 						- _id = GUID e8a39029-031d-4e23-a503-ae7b93669f90;
 					}
 					- m_pParent = GUID e4c9dfba-dc5a-48be-a800-af7ec3963245;
 					- m_name = { CGIText 
-						- m_str = "Discrete::Mode1";
+						- m_str = "Application::Discrete::Mode1";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -1454,7 +1462,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IAttribute";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode1";
 							- _name = "_instance";
 							- _id = GUID 3e2bee7e-327b-4f89-adce-2f7eeb9ece8b;
@@ -1466,7 +1474,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode1";
 							- _name = "chMode(EmbeddedSystemX*)";
 							- _id = GUID f9007cb9-cf24-4d0e-8f90-a81123e420ea;
@@ -1474,7 +1482,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode1";
 							- _name = "Instance(EmbeddedSystemX* )";
 							- _id = GUID 0cca5d52-05a9-40f0-8820-8913a0b7650b;
@@ -1482,7 +1490,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode1";
 							- _name = "DisplayState()";
 							- _id = GUID e02bd233-40c8-41d8-9dd4-2c9af7734901;
@@ -1520,14 +1528,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IClass";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "";
 						- _name = "Mode2";
 						- _id = GUID d9e7d211-5b81-4625-b842-da76d715289c;
 					}
 					- m_pParent = GUID e4c9dfba-dc5a-48be-a800-af7ec3963245;
 					- m_name = { CGIText 
-						- m_str = "Discrete::Mode2";
+						- m_str = "Application::Discrete::Mode2";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -1568,7 +1576,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IAttribute";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode2";
 							- _name = "_instance";
 							- _id = GUID 5312d910-bbc2-4765-9fbb-89e679bd76a4;
@@ -1580,7 +1588,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode2";
 							- _name = "chMode(EmbeddedSystemX*)";
 							- _id = GUID 1a7e5ff8-4090-4237-835f-4929b4f35ebd;
@@ -1588,7 +1596,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode2";
 							- _name = "Instance(EmbeddedSystemX*)";
 							- _id = GUID 062e7900-9aa9-4196-96db-8c87d6d8932b;
@@ -1596,7 +1604,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode2";
 							- _name = "DisplayState()";
 							- _id = GUID ca3ac459-e60b-447e-8499-558f1007a396;
@@ -1634,14 +1642,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IClass";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "";
 						- _name = "Mode3";
 						- _id = GUID f827d5ad-f359-4ebb-9462-8a6380f1fa84;
 					}
 					- m_pParent = GUID e4c9dfba-dc5a-48be-a800-af7ec3963245;
 					- m_name = { CGIText 
-						- m_str = "Discrete::Mode3";
+						- m_str = "Application::Discrete::Mode3";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -1682,7 +1690,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IAttribute";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode3";
 							- _name = "_instance";
 							- _id = GUID f4e1014a-327a-404b-aa37-34592338bc32;
@@ -1694,7 +1702,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode3";
 							- _name = "chMode(EmbeddedSystemX*)";
 							- _id = GUID e040a28c-d422-4637-a2ec-daa0b93457b4;
@@ -1702,7 +1710,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode3";
 							- _name = "Instance(EmbeddedSystemX*)";
 							- _id = GUID 038c55a8-d6b1-4928-91a3-0ea840c5f4fd;
@@ -1710,7 +1718,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode3";
 							- _name = "DisplayState()";
 							- _id = GUID 5615d3f0-6290-4649-9349-76c992aba5f6;
@@ -1748,7 +1756,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IAssociationEnd";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "Mode1";
 						- _name = "itsM1Strategy";
 						- _id = GUID 568047ca-5e29-4fa2-be91-caf572e7b4c3;
@@ -1921,7 +1929,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IAssociationEnd";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "Mode2";
 						- _name = "itsM2Strategy";
 						- _id = GUID 8815b2ab-d6ab-446f-bef5-ab4da7f1ce6e;
@@ -2094,7 +2102,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IAssociationEnd";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "Mode3";
 						- _name = "itsM3Strategy";
 						- _id = GUID dedc323c-d8a0-4463-91ff-05863a63bc28;
@@ -2720,8 +2728,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 3.15.2010::13:57:18;
-	- strongCGTime = 3.2.2010::21:0:2;
+	- weakCGTime = 3.20.2010::6:59:39;
+	- strongCGTime = 3.20.2010::6:59:39;
 	- _defaultComposite = GUID d6a3072b-80f8-4c8b-bdc1-7aa468411872;
 	- _eventsBaseID = -1;
 	- Classes = { IRPYRawContainer 
@@ -2731,8 +2739,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID d6a3072b-80f8-4c8b-bdc1-7aa468411872;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 3.15.2010::13:23:55;
-			- strongCGTime = 3.2.2010::21:0:2;
+			- weakCGTime = 3.20.2010::6:59:39;
+			- strongCGTime = 3.20.2010::6:59:39;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
@@ -2799,7 +2807,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID d403c6af-e0a5-4846-9c67-58d00049b87b;
 			}
 			- _lastID = 7;
-			- weakCGTime = 3.15.2010::13:24:47;
+			- weakCGTime = 3.19.2010::21:44:30;
 			- strongCGTime = 3.2.2010::21:0:20;
 			- Operations = { IRPYRawContainer 
 				- size = 4;
@@ -4085,7 +4093,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _m2Class = "IDiagram";
 				- _id = GUID d403c6af-e0a5-4846-9c67-58d00049b87b;
 			}
-			- weakCGTime = 3.2.2010::21:0:30;
+			- weakCGTime = 3.19.2010::21:44:30;
 			- strongCGTime = 3.2.2010::21:0:30;
 			- Operations = { IRPYRawContainer 
 				- size = 2;
@@ -4755,7 +4763,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _m2Class = "IDiagram";
 				- _id = GUID d403c6af-e0a5-4846-9c67-58d00049b87b;
 			}
-			- weakCGTime = 3.2.2010::21:0:32;
+			- weakCGTime = 3.19.2010::21:44:30;
 			- strongCGTime = 3.2.2010::21:0:32;
 			- Operations = { IRPYRawContainer 
 				- size = 2;
@@ -5425,7 +5433,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _m2Class = "IDiagram";
 				- _id = GUID d403c6af-e0a5-4846-9c67-58d00049b87b;
 			}
-			- weakCGTime = 3.2.2010::21:0:35;
+			- weakCGTime = 3.19.2010::21:44:30;
 			- strongCGTime = 3.2.2010::21:0:35;
 			- Operations = { IRPYRawContainer 
 				- size = 2;
@@ -6179,7 +6187,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _m2Class = "IDiagram";
 				- _id = GUID d403c6af-e0a5-4846-9c67-58d00049b87b;
 			}
-			- weakCGTime = 3.15.2010::13:4:1;
+			- weakCGTime = 3.19.2010::21:44:30;
 			- strongCGTime = 3.15.2010::12:16:48;
 			- Operations = { IRPYRawContainer 
 				- size = 1;
@@ -6763,7 +6771,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _m2Class = "IDiagram";
 				- _id = GUID d403c6af-e0a5-4846-9c67-58d00049b87b;
 			}
-			- weakCGTime = 3.15.2010::13:4:17;
+			- weakCGTime = 3.19.2010::21:44:30;
 			- strongCGTime = 3.15.2010::12:16:57;
 			- Operations = { IRPYRawContainer 
 				- size = 1;

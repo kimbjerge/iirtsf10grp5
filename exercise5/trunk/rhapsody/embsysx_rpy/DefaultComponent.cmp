@@ -1,9 +1,9 @@
 I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 { IComponent 
 	- _id = GUID 7fa57e01-5ba5-4c03-83e7-d8faa73d90ec;
-	- _myState = 139264;
+	- _myState = 8192;
 	- _name = "DefaultComponent";
-	- _lastID = 2;
+	- _lastID = 3;
 	- m_buildType = Executable;
 	- m_libraries = "";
 	- m_additionalSources = "";
@@ -14,9 +14,26 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _id = GUID 53944f4a-522e-40c7-9a13-3658c083dea6;
 		- _myState = 73728;
 		- _name = "Files";
-		- m_path = "";
+		- m_path = "C:\\Ubuntu_share\\exercise5\\source\\embsysx\\src\\os\\posix";
 		- Elements = { IRPYRawContainer 
-			- size = 0;
+			- size = 2;
+			- value = 
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Application.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Application";
+				- _id = GUID e13ed91e-36da-4077-8d2d-9ea2a971507e;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AbstractOS.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AbstractOS";
+				- _id = GUID dcfee0e4-02ba-4b0c-a96b-f604793a5971;
+			}
 		}
 		- Files = { IRPYRawContainer 
 			- size = 0;
@@ -27,7 +44,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _id = GUID 32bd85d6-f1d7-4f8f-b439-82ddb9ab1bb7;
 	}
 	- Configs = { IRPYRawContainer 
-		- size = 3;
+		- size = 4;
 		- value = 
 		{ ICodeGenConfigInfo 
 			- _id = GUID 771b99dd-1c0e-4dad-bbb7-2c6f8714b9b4;
@@ -116,7 +133,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				{ IHandle 
 					- _m2Class = "IClass";
 					- _filename = "Discrete.sbs";
-					- _subsystem = "Discrete";
+					- _subsystem = "Application::Discrete";
 					- _class = "";
 					- _name = "TestUser";
 					- _id = GUID 3f8c7504-c376-4af2-9f3f-41063de76b8d;
@@ -222,7 +239,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				{ IHandle 
 					- _m2Class = "IClass";
 					- _filename = "Discrete.sbs";
-					- _subsystem = "Discrete";
+					- _subsystem = "Application::Discrete";
 					- _class = "";
 					- _name = "TestUser";
 					- _id = GUID 3f8c7504-c376-4af2-9f3f-41063de76b8d;
@@ -252,7 +269,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _myState = 8192;
 			- _properties = { IPropertyContainer 
 				- Subjects = { IRPYRawContainer 
-					- size = 1;
+					- size = 3;
 					- value = 
 					{ IPropertySubject 
 						- _Name = "CPP_CG";
@@ -274,7 +291,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							{ IPropertyMetaclass 
 								- _Name = "Configuration";
 								- Properties = { IRPYRawContainer 
-									- size = 2;
+									- size = 4;
 									- value = 
 									{ IProperty 
 										- _Name = "ContainerSet";
@@ -283,10 +300,198 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 										- _ExtraTypeInfo = "OMContainers, STLContainers, OMUContainers";
 									}
 									{ IProperty 
+										- _Name = "DefaultImplementationDirectory";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "DefaultSpecificationDirectory";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
 										- _Name = "Environment";
 										- _Value = "Cygwin";
 										- _Type = Enum;
 										- _ExtraTypeInfo = "Microsoft,MicrosoftDLL,MSVC9,MSVC9DLL,VxWorks,VxWorks6diab,VxWorks6gnu,VxWorks6diab_RTP,VxWorks6gnu_RTP,Solaris2,Cygwin,MultiWin32,Multi4Win32,MSStandardLibrary,MSVC9StandardLibrary,MicrosoftWinCE600,OseSfk,Linux,Solaris2GNU,QNXNeutrinoGCC, QNXNeutrinoMomentics,INTEGRITY,INTEGRITY5,IntegrityESTL,Integrity5ESTL,NucleusPLUS-PPC,WorkbenchManaged,WorkbenchManaged_RTP";
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "CPP_ReverseEngineering";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 3;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Filtering";
+								- Properties = { IRPYRawContainer 
+									- size = 4;
+									- value = 
+									{ IProperty 
+										- _Name = "CreateReferenceClasses";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "IncludeInheritanceInReference";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "ReferenceClasses";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "ReferenceDirectories";
+										- _Value = "";
+										- _Type = String;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "ImplementationTrait";
+								- Properties = { IRPYRawContainer 
+									- size = 8;
+									- value = 
+									{ IProperty 
+										- _Name = "AnalyzeIncludeFiles";
+										- _Value = "OnlyFromSelected";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "IgnoreIncludes, OnlyLogicalHeader, OnlyFromSelected, AllIncludes";
+									}
+									{ IProperty 
+										- _Name = "ImportAsExternal";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "MapToPackage";
+										- _Value = "User";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "User,Directory";
+									}
+									{ IProperty 
+										- _Name = "ModelStyle";
+										- _Value = "ObjectBased";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Functional, ObjectBased";
+									}
+									{ IProperty 
+										- _Name = "ReflectDataMembers";
+										- _Value = "VisibilityAndHelpers";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "None, VisibilityOnly, VisibilityAndHelpers";
+									}
+									{ IProperty 
+										- _Name = "RootDirectory";
+										- _Value = "C:\\Ubuntu_share\\exercise5\\source\\embsysx\\src\\os";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "UserDataTypes";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "UserPackage";
+										- _Value = "OSLinux";
+										- _Type = String;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Parser";
+								- Properties = { IRPYRawContainer 
+									- size = 5;
+									- value = 
+									{ IProperty 
+										- _Name = "AdditionalKeywords";
+										- _Value = "far,near";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "Defined";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "ForceExpansionMacros";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "IncludePath";
+										- _Value = "C:\\Ubuntu_share\\exercise4\\source\\semaphore\\src,C:\\Ubuntu_share\\exercise4\\source\\mailbox\\src,C:\\Ubuntu_share\\exercise5\\source\\embsysx\\src\\os\\posix";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "Undefined";
+										- _Value = "";
+										- _Type = String;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "ReverseEngineering";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 3;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Main";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "Files";
+										- _Value = "C:\\Ubuntu_share\\exercise5\\source\\embsysx\\src\\os\\posix\\";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "UseTreeViewByDefault";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Progress";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "ModelUpdatingFailed";
+										- _Value = "Report";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Ignore,Report,Abort";
+									}
+									{ IProperty 
+										- _Name = "ParsingError";
+										- _Value = "Report";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Ignore,Report,Abort";
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Update";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "CreateObjectModelDiagrams";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "Policy";
+										- _Value = "Overwrite";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Overwrite,Merge";
 									}
 								}
 							}
@@ -319,6 +524,16 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- isConfigurationFileHyperLink = 1;
 				}
 			}
+			- EmbededFiles = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IEmbededFile 
+					- _id = GUID f8bbf925-f9e8-4a35-b475-a3ec0d48e575;
+					- _name = "CollectedMacros.h";
+					- _MayNeedToRelocate = 0;
+					- _LastKnownFullPath = "C:\\Ubuntu_share\\exercise5\\rhapsody\\embsysx_rpy\\CollectedMacros.h";
+				}
+			}
 			- _scopeType = Explicit;
 			- _libraries = "";
 			- _additionalSources = "";
@@ -340,7 +555,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				{ IHandle 
 					- _m2Class = "IClass";
 					- _filename = "Discrete.sbs";
-					- _subsystem = "Discrete";
+					- _subsystem = "Application::Discrete";
 					- _class = "";
 					- _name = "Tester";
 					- _id = GUID 2609214b-03a5-4d38-b6c4-1013596be70b;
@@ -348,9 +563,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 			- _root = { IFolder 
 				- _id = GUID a9d4325d-c851-4010-8178-2f2a7a56a305;
-				- _myState = 8192;
+				- _myState = 73728;
 				- _name = "CygwinConfig";
-				- m_path = "";
+				- m_path = "C:\\Ubuntu_share\\exercise5\\rhapsody\\Cygwin";
 				- Elements = { IRPYRawContainer 
 					- size = 0;
 				}
@@ -358,32 +573,86 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- size = 0;
 				}
 			}
-			- weakCGTime = 2.24.2010::20:53:33;
-			- strongCGTime = 2.24.2010::20:53:33;
+			- weakCGTime = 3.20.2010::9:23:49;
+			- strongCGTime = 3.20.2010::9:23:49;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
 			- m_allInAnimScope = 1;
 		}
-	}
-	- HandlesInMe = { IRPYRawContainer 
-		- size = 2;
-		- value = 
-		{ IHandle 
-			- _m2Class = "ISubsystem";
-			- _filename = "Discrete.sbs";
-			- _subsystem = "";
-			- _class = "";
-			- _name = "Discrete";
-			- _id = GUID bf038c11-5336-45b2-b90b-68033de5c7be;
-		}
-		{ IHandle 
-			- _m2Class = "ISubsystem";
-			- _filename = "Continuous.sbs";
-			- _subsystem = "";
-			- _class = "";
-			- _name = "Continuous";
-			- _id = GUID feef58f9-5b35-4e28-b74b-ab6e92db495b;
+		{ ICodeGenConfigInfo 
+			- _id = GUID 8d97dc1a-4072-4f41-8960-222f67194f9d;
+			- _myState = 8192;
+			- _name = "CygwinStateChart";
+			- HyperLinks = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IMHyperLink 
+					- _id = GUID 0b301902-b4fb-4b9d-82c3-edfbc0f06aa9;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Makefile";
+					- _linkType = "FREE";
+					- _linkTarget = "C:/Ubuntu_share/exercise5/source/embsysx/src/os/posix/configuration_2/DefaultComponent.mak";
+					- isConfigurationFileHyperLink = 1;
+				}
+				{ IMHyperLink 
+					- _id = GUID af9d5f5d-136b-4615-977b-065a776a32bd;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Main File";
+					- _linkType = "FREE";
+					- _linkTarget = "C:\\Ubuntu_share\\exercise5\\source\\embsysx\\src\\os\\posix/configuration_2/MainDefaultComponent";
+					- isConfigurationFileHyperLink = 1;
+				}
+			}
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = None;
+			- _timeModel = RealTime;
+			- m_generateActors = 0;
+			- _statechartImplementation = Reuseable;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "Discrete.sbs";
+					- _subsystem = "Application::Discrete";
+					- _class = "";
+					- _name = "Tester";
+					- _id = GUID 2609214b-03a5-4d38-b6c4-1013596be70b;
+				}
+			}
+			- _root = { IFolder 
+				- _id = GUID 653e3800-577f-43d3-9eca-126858a60a21;
+				- _myState = 73728;
+				- _name = "CygwinStateChart";
+				- m_path = "C:\\Ubuntu_share\\exercise5\\rhapsody\\CygwinStateChart";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 3.20.2010::9:27:46;
+			- strongCGTime = 3.20.2010::9:27:46;
+			- AnimScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_allInAnimScope = 1;
 		}
 	}
 	- VariationPoints = { IRPYRawContainer 
@@ -392,7 +661,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 3.2.2010::21:44:44;
-	- strongCGTime = 3.1.2010::9:2:52;
+	- weakCGTime = 3.20.2010::9:26:11;
+	- strongCGTime = 3.20.2010::8:56:55;
 }
 
