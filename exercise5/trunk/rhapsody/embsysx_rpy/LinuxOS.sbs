@@ -1144,7 +1144,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 3.20.2010::8:57:3;
+	- weakCGTime = 3.20.2010::9:35:10;
 	- strongCGTime = 3.20.2010::8:57:3;
 	- _defaultComposite = GUID a386d582-3100-4a9e-a55c-4e52380c866e;
 	- _eventsBaseID = -1;

@@ -8,7 +8,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _filename = "";
 		- _subsystem = "";
 		- _class = "";
-		- _name = "FiveLayeredArchitectureView";
+		- _name = "SystemFiveLayeredArchitectureView";
 		- _id = GUID 57558d18-7041-4fd2-bb90-000561c3e719;
 	}
 	- _lastID = 8;
@@ -79,7 +79,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "OS Abstraction";
-			- _lastModifiedTime = "3.20.2010::9:15:19";
+			- _lastModifiedTime = "3.20.2010::9:38:27";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 0f6ae559-1ba8-4825-89ae-9b6ab248e5bf;
 				- m_type = 0;
@@ -481,8 +481,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 5;
 					}
-					- m_drawBehavior = 2056;
-					- m_transform = 0.0793201 0 0 0.101604 476.841 13.5722 ;
+					- m_drawBehavior = 2088;
+					- m_transform = 0.0793201 0 0 0.101604 410.841 34.5722 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -507,7 +507,16 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 0;
+						- size = 2;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID 5b367f1b-4d4c-4378-9c25-5f55e01dcff4;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID 336cdd4f-b8fb-4943-bad4-ed3f0f733936;
+						}
 					}
 				}
 				
@@ -529,7 +538,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 3.20.2010::9:15:8;
+	- weakCGTime = 3.20.2010::9:35:10;
 	- strongCGTime = 3.20.2010::7:43:41;
 	- _defaultComposite = GUID fc513e39-edfa-44ff-8922-f38f41b2bcdb;
 	- _eventsBaseID = -1;
@@ -540,8 +549,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID fc513e39-edfa-44ff-8922-f38f41b2bcdb;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 3.20.2010::7:8:44;
-			- strongCGTime = 3.20.2010::6:59:6;
+			- weakCGTime = 3.20.2010::9:35:10;
+			- strongCGTime = 3.20.2010::7:43:41;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
