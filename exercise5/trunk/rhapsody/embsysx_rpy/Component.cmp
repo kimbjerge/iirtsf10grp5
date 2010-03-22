@@ -42,7 +42,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _name = "Files";
 		- m_path = "";
 		- Elements = { IRPYRawContainer 
-			- size = 2;
+			- size = 4;
 			- value = 
 			{ IHandle 
 				- _m2Class = "ISubsystem";
@@ -60,6 +60,22 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _name = "Discrete";
 				- _id = GUID bf038c11-5336-45b2-b90b-68033de5c7be;
 			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AbstractOS.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AbstractOS";
+				- _id = GUID dcfee0e4-02ba-4b0c-a96b-f604793a5971;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Application.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Application";
+				- _id = GUID e13ed91e-36da-4077-8d2d-9ea2a971507e;
+			}
 		}
 		- Files = { IRPYRawContainer 
 			- size = 0;
@@ -67,10 +83,10 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	}
 	- m_configActive = { ICodeGenConfigInfoHandle 
 		- _m2Class = "ICodeGenConfigInfo";
-		- _id = GUID e8b667ce-dd55-4117-aa38-52194b55aa3c;
+		- _id = GUID 833236e0-2af8-4b87-abbf-cfe04a01bb6d;
 	}
 	- Configs = { IRPYRawContainer 
-		- size = 2;
+		- size = 1;
 		- value = 
 		{ ICodeGenConfigInfo 
 			- _id = GUID 833236e0-2af8-4b87-abbf-cfe04a01bb6d;
@@ -178,106 +194,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 			- m_allInAnimScope = 1;
 		}
-		{ ICodeGenConfigInfo 
-			- _id = GUID e8b667ce-dd55-4117-aa38-52194b55aa3c;
-			- _myState = 8192;
-			- _properties = { IPropertyContainer 
-				- Subjects = { IRPYRawContainer 
-					- size = 1;
-					- value = 
-					{ IPropertySubject 
-						- _Name = "CPP_CG";
-						- Metaclasses = { IRPYRawContainer 
-							- size = 1;
-							- value = 
-							{ IPropertyMetaclass 
-								- _Name = "Configuration";
-								- Properties = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IProperty 
-										- _Name = "Environment";
-										- _Value = "Linux";
-										- _Type = Enum;
-										- _ExtraTypeInfo = "Microsoft,MicrosoftDLL,MSVC9,MSVC9DLL,VxWorks,VxWorks6diab,VxWorks6gnu,VxWorks6diab_RTP,VxWorks6gnu_RTP,Solaris2,Cygwin,MultiWin32,Multi4Win32,MSStandardLibrary,MSVC9StandardLibrary,MicrosoftWinCE600,OseSfk,Linux,Solaris2GNU,QNXNeutrinoGCC, QNXNeutrinoMomentics,INTEGRITY,INTEGRITY5,IntegrityESTL,Integrity5ESTL,NucleusPLUS-PPC,WorkbenchManaged,WorkbenchManaged_RTP";
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			- _name = "LinuxSource";
-			- HyperLinks = { IRPYRawContainer 
-				- size = 2;
-				- value = 
-				{ IMHyperLink 
-					- _id = GUID 870c9f26-9147-4c18-832a-f1102a36cbf7;
-					- _dependsOn = { INObjectHandle 
-						- _m2Class = "";
-					}
-					- _linkDispName = "Edit Makefile";
-					- _linkType = "FREE";
-					- _linkTarget = "C:/Ubuntu_share/exercise5/rhapsody/Component/configuration_0/Component.mak";
-					- isConfigurationFileHyperLink = 1;
-				}
-				{ IMHyperLink 
-					- _id = GUID f1d72149-33e1-473e-8868-b2d9e9e472c2;
-					- _dependsOn = { INObjectHandle 
-						- _m2Class = "";
-					}
-					- _linkDispName = "Edit Main File";
-					- _linkType = "FREE";
-					- _linkTarget = "C:/Ubuntu_share/exercise5/rhapsody/Component/configuration_0/MainComponent";
-					- isConfigurationFileHyperLink = 1;
-				}
-			}
-			- _scopeType = Explicit;
-			- _libraries = "";
-			- _additionalSources = "";
-			- _standardHeaders = "";
-			- _includePath = "";
-			- _targetMain = "";
-			- _instrumentation = None;
-			- _timeModel = RealTime;
-			- m_generateActors = 0;
-			- _statechartImplementation = Flat;
-			- _initializationCode = "";
-			- _checksList = 0 ;
-			- ScopeElements = { IRPYRawContainer 
-				- size = 0;
-			}
-			- InitialInstances = { IRPYRawContainer 
-				- size = 1;
-				- value = 
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Discrete.sbs";
-					- _subsystem = "Application::Discrete";
-					- _class = "";
-					- _name = "Tester";
-					- _id = GUID 2609214b-03a5-4d38-b6c4-1013596be70b;
-				}
-			}
-			- _root = { IFolder 
-				- _id = GUID 99231dfe-aa0c-4efc-b845-53744ed2267c;
-				- _myState = 73728;
-				- _name = "LinuxSource";
-				- m_path = "C:\\Ubuntu_share\\exercise5\\source\\embsysx\\src\\rpy";
-				- Elements = { IRPYRawContainer 
-					- size = 0;
-				}
-				- Files = { IRPYRawContainer 
-					- size = 0;
-				}
-			}
-			- weakCGTime = 3.22.2010::14:22:27;
-			- strongCGTime = 3.22.2010::14:22:27;
-			- AnimScopeElements = { IRPYRawContainer 
-				- size = 0;
-			}
-			- m_allInAnimScope = 1;
-		}
 	}
 	- VariationPoints = { IRPYRawContainer 
 		- size = 0;
@@ -285,7 +201,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 3.22.2010::14:21:14;
-	- strongCGTime = 3.22.2010::13:31:0;
+	- weakCGTime = 3.22.2010::21:35:3;
+	- strongCGTime = 3.22.2010::21:26:43;
 }
 

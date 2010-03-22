@@ -79,7 +79,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "OS Abstraction";
-			- _lastModifiedTime = "3.22.2010::11:35:5";
+			- _lastModifiedTime = "3.22.2010::21:38:21";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 0f6ae559-1ba8-4825-89ae-9b6ab248e5bf;
 				- m_type = 0;
@@ -645,7 +645,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 3.22.2010::15:2:32;
+	- weakCGTime = 3.22.2010::21:38:21;
 	- strongCGTime = 3.20.2010::7:43:41;
 	- _defaultComposite = GUID fc513e39-edfa-44ff-8922-f38f41b2bcdb;
 	- _eventsBaseID = -1;
@@ -656,7 +656,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID fc513e39-edfa-44ff-8922-f38f41b2bcdb;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 3.22.2010::11:35:3;
+			- weakCGTime = 3.22.2010::15:2:32;
 			- strongCGTime = 3.20.2010::7:43:41;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -698,7 +698,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID 2a7de03f-373f-4c19-8411-305f9f05a8ae;
 			}
 			- _lastID = 3;
-			- weakCGTime = 3.22.2010::11:32:26;
+			- weakCGTime = 3.22.2010::20:48:41;
 			- strongCGTime = 3.22.2010::11:27:6;
 			- Operations = { IRPYRawContainer 
 				- size = 7;
@@ -758,15 +758,15 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 1;
 						- value = 
 						{ IArgument 
-							- _id = GUID ad938038-562d-40ca-8690-a407bd32107d;
+							- _id = GUID 0d18f6ed-5bd8-4e13-9cba-f5915596d3a2;
 							- _name = "_pri";
 							- _typeOf = { IHandle 
 								- _m2Class = "IType";
-								- _filename = "LinuxOS.sbs";
-								- _subsystem = "LinuxOS";
+								- _filename = "PredefinedTypesC++.sbs";
+								- _subsystem = "PredefinedTypesCpp";
 								- _class = "";
-								- _name = "ThreadPriority";
-								- _id = GUID dc574373-d84b-4838-8e13-2ea98f6229a8;
+								- _name = "int";
+								- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
 							}
 							- _isOrdered = 0;
 							- _argumentDirection = In;
@@ -968,7 +968,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _m2Class = "IDiagram";
 				- _id = GUID 2a7de03f-373f-4c19-8411-305f9f05a8ae;
 			}
-			- weakCGTime = 3.20.2010::9:15:19;
+			- weakCGTime = 3.22.2010::21:38:32;
 			- strongCGTime = 3.20.2010::9:15:19;
 			- Operations = { IRPYRawContainer 
 				- size = 2;
@@ -1029,6 +1029,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 0;
 			}
 			- _classModifier = Unspecified;
 		}
@@ -1360,7 +1363,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						}
 					}
 					- _name = "Item";
-					- weakCGTime = 3.19.2010::22:0:7;
+					- weakCGTime = 3.22.2010::15:6:20;
 					- strongCGTime = 3.19.2010::22:0:7;
 					- _multiplicity = "";
 					- _itsStateChart = { IHandle 
@@ -1369,7 +1372,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _classModifier = Unspecified;
 				}
 			}
-			- weakCGTime = 3.22.2010::15:6:20;
+			- weakCGTime = 3.22.2010::21:42:55;
 			- strongCGTime = 3.19.2010::22:0:7;
 			- Operations = { IRPYRawContainer 
 				- size = 3;
