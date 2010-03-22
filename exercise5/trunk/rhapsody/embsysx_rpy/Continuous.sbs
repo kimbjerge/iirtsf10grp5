@@ -1,5 +1,13 @@
 I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 { ISubsystem 
+	- _ownerHandle = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Application.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Application";
+		- _id = GUID e13ed91e-36da-4077-8d2d-9ea2a971507e;
+	}
 	- _id = GUID feef58f9-5b35-4e28-b74b-ab6e92db495b;
 	- _myState = 8192;
 	- _name = "Continuous";
@@ -212,7 +220,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "CommandStrategyModel";
-			- _lastModifiedTime = "3.22.2010::14:12:57";
+			- _lastModifiedTime = "3.22.2010::14:57:50";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 23685b2c-b4fc-45a4-8a9b-02eedcb371ec;
 				- m_type = 0;
@@ -892,7 +900,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.157696 0 0 0.130124 325.685 28.1889 ;
+					- m_transform = 0.157696 0 0 0.152406 325.685 20.8582 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -918,7 +926,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 4;
+						- size = 5;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -935,6 +943,10 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _id = GUID fe0cfee4-4a2c-49f4-9c10-358b31a5abc9;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID 783487fd-75a3-4dc5-a663-d3e1b21f228e;
 						}
 					}
 				}
@@ -1007,7 +1019,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_anglePoint1 = 0 0 ;
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
-					- m_SourcePort = 833 829 ;
+					- m_SourcePort = 833 755 ;
 					- m_TargetPort = 107 792 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
@@ -1137,7 +1149,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IClass";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "";
 						- _name = "EmbeddedSystemX";
 						- _id = GUID bbd9277d-ca6f-4e3c-b14c-fd226a306c2b;
@@ -1157,7 +1169,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 4104;
-					- m_transform = 0.172805 0 0 0.109626 25.6544 52.9332 ;
+					- m_transform = 0.172805 0 0 0.118539 25.6544 50.0009 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -1183,12 +1195,12 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 2;
+						- size = 3;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "EmbeddedSystemX";
 							- _name = "setStrategy(EventStrategy*)";
 							- _id = GUID 048fa8dd-9317-4a48-a9c2-299bac48f71d;
@@ -1196,10 +1208,18 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "EmbeddedSystemX";
 							- _name = "start()";
 							- _id = GUID dfd5b075-2603-47cc-8aee-c208ea2e610d;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Discrete.sbs";
+							- _subsystem = "Application::Discrete";
+							- _class = "EmbeddedSystemX";
+							- _name = "kill()";
+							- _id = GUID 3be215b2-4ce3-4685-97ac-9e09d542ffa4;
 						}
 					}
 				}
@@ -1234,7 +1254,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IAssociationEnd";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "EmbeddedSystemX";
 						- _name = "itsRealTimeThread";
 						- _id = GUID e34c2052-61ed-466f-8c77-54931d79c3d1;
@@ -1276,8 +1296,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_anglePoint1 = 0 0 ;
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
-					- m_SourcePort = 968 721 ;
-					- m_TargetPort = 300 798 ;
+					- m_SourcePort = 968 692 ;
+					- m_TargetPort = 300 729 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
 					}
@@ -1406,7 +1426,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IClass";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "";
 						- _name = "Mode2";
 						- _id = GUID d9e7d211-5b81-4625-b842-da76d715289c;
@@ -1454,7 +1474,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IAttribute";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode2";
 							- _name = "_instance";
 							- _id = GUID 5312d910-bbc2-4765-9fbb-89e679bd76a4;
@@ -1466,7 +1486,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode2";
 							- _name = "chMode(RealTimeLoop*,EmbeddedSystemX*)";
 							- _id = GUID 1a7e5ff8-4090-4237-835f-4929b4f35ebd;
@@ -1474,7 +1494,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode2";
 							- _name = "Instance(EmbeddedSystemX*)";
 							- _id = GUID 062e7900-9aa9-4196-96db-8c87d6d8932b;
@@ -1482,7 +1502,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode2";
 							- _name = "DisplayState()";
 							- _id = GUID ca3ac459-e60b-447e-8499-558f1007a396;
@@ -1520,7 +1540,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IClass";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "";
 						- _name = "Mode3";
 						- _id = GUID f827d5ad-f359-4ebb-9462-8a6380f1fa84;
@@ -1568,7 +1588,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IAttribute";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode3";
 							- _name = "_instance";
 							- _id = GUID f4e1014a-327a-404b-aa37-34592338bc32;
@@ -1580,7 +1600,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode3";
 							- _name = "chMode(RealTimeLoop*,EmbeddedSystemX*)";
 							- _id = GUID e040a28c-d422-4637-a2ec-daa0b93457b4;
@@ -1588,7 +1608,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode3";
 							- _name = "Instance(EmbeddedSystemX*)";
 							- _id = GUID 038c55a8-d6b1-4928-91a3-0ea840c5f4fd;
@@ -1596,7 +1616,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode3";
 							- _name = "DisplayState()";
 							- _id = GUID 5615d3f0-6290-4649-9349-76c992aba5f6;
@@ -1634,7 +1654,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IAssociationEnd";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "Mode2";
 						- _name = "itsM2Strategy";
 						- _id = GUID 8815b2ab-d6ab-446f-bef5-ab4da7f1ce6e;
@@ -1807,7 +1827,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IAssociationEnd";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "Mode3";
 						- _name = "itsM3Strategy";
 						- _id = GUID dedc323c-d8a0-4463-91ff-05863a63bc28;
@@ -1996,7 +2016,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.188857 0 0 0.101604 134.622 225.572 ;
+					- m_transform = 0.188857 0 0 0.101604 122.622 260.572 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -2076,7 +2096,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.181303 0 0 0.101604 14.6374 403.572 ;
+					- m_transform = 0.181303 0 0 0.101604 16.6374 470.572 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -2156,7 +2176,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.182247 0 0 0.101604 233.635 403.572 ;
+					- m_transform = 0.182247 0 0 0.101604 234.635 469.572 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -2401,9 +2421,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_position = 4 -6 -9  62 -9  62 9  -6 9  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
-						- m_transform = 1 0 0 1 321 236 ;
-						- m_nHorizontalSpacing = 53;
-						- m_nVerticalSpacing = -10;
+						- m_transform = 1 0 0 1 220 259 ;
+						- m_nHorizontalSpacing = -41;
+						- m_nVerticalSpacing = -15;
 						- m_nOrientationCtrlPt = 8;
 					}
 					- m_anglePoint1 = 0 0 ;
@@ -2445,7 +2465,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IClass";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "";
 						- _name = "Mode1";
 						- _id = GUID 5c3696c7-e4e8-4b68-b9c7-2b2756fedcf7;
@@ -2493,7 +2513,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IAttribute";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode1";
 							- _name = "_instance";
 							- _id = GUID 0403e32d-8020-4e0b-89d8-d9066a5140d2;
@@ -2505,7 +2525,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode1";
 							- _name = "chMode(RealTimeLoop*,EmbeddedSystemX*)";
 							- _id = GUID cf2834c6-e141-4ef7-8aad-4c7362ce6198;
@@ -2513,7 +2533,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode1";
 							- _name = "Instance(EmbeddedSystemX* )";
 							- _id = GUID fa1be966-7311-46a0-ad85-167104734c59;
@@ -2521,7 +2541,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _filename = "Discrete.sbs";
-							- _subsystem = "Discrete";
+							- _subsystem = "Application::Discrete";
 							- _class = "Mode1";
 							- _name = "DisplayState()";
 							- _id = GUID 095f5fdd-da6f-46bc-8cd7-8924bb46ee8b;
@@ -2559,7 +2579,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IAssociationEnd";
 						- _filename = "Discrete.sbs";
-						- _subsystem = "Discrete";
+						- _subsystem = "Application::Discrete";
 						- _class = "Mode1";
 						- _name = "itsM1Strategy";
 						- _id = GUID a791659f-ce55-4ee4-8704-83460e2ba600;
@@ -2720,8 +2740,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 3.22.2010::14:12:57;
-	- strongCGTime = 3.22.2010::12:37:46;
+	- weakCGTime = 3.22.2010::14:39:12;
+	- strongCGTime = 3.22.2010::14:32:56;
 	- _defaultComposite = GUID d6a3072b-80f8-4c8b-bdc1-7aa468411872;
 	- _eventsBaseID = -1;
 	- Classes = { IRPYRawContainer 
@@ -2731,7 +2751,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID d6a3072b-80f8-4c8b-bdc1-7aa468411872;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 3.22.2010::12:37:46;
+			- weakCGTime = 3.22.2010::14:12:57;
 			- strongCGTime = 3.22.2010::12:37:46;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -2798,11 +2818,11 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _m2Class = "IDiagram";
 				- _id = GUID d403c6af-e0a5-4846-9c67-58d00049b87b;
 			}
-			- _lastID = 7;
-			- weakCGTime = 3.19.2010::21:44:30;
+			- _lastID = 8;
+			- weakCGTime = 3.22.2010::14:39:18;
 			- strongCGTime = 3.2.2010::21:0:20;
 			- Operations = { IRPYRawContainer 
-				- size = 4;
+				- size = 5;
 				- value = 
 				{ IPrimitiveOperation 
 					- _id = GUID 0c3d04e7-d5cc-4497-9c73-30d78f0b6624;
@@ -2893,7 +2913,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "std::cout << \"RealTimeThread start\" << std::endl;";
+						- _bodyData = "std::cout << \"RealTimeThread started\" << std::endl;";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -2921,6 +2941,32 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _constant = 0;
 					- _itsBody = { IBody 
 						- _bodyData = "";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 783487fd-75a3-4dc5-a663-d3e1b21f228e;
+					- _myState = 8192;
+					- _name = "kill";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "std::cout << \"RealTimeThread terminated\" << std::endl;";
 					}
 				}
 			}
@@ -2969,7 +3015,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_startRow = 16;
 							- m_startCol_Short = 1;
 							- m_endRow = 16;
-							- m_endCol_Short = 477;
+							- m_endCol_Short = 451;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -2982,7 +3028,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_startRow = 18;
 							- m_startCol_Short = 1;
 							- m_endRow = 18;
-							- m_endCol_Short = 549;
+							- m_endCol_Short = 523;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -2992,16 +3038,16 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _name = "RealTimeThread";
 							- m_type = implFragment;
 							- m_text = "";
-							- m_startRow = 36;
+							- m_startRow = 38;
 							- m_startCol_Short = 17;
-							- m_endRow = 36;
+							- m_endRow = 38;
 							- m_endCol_Short = 17;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
 								- _id = GUID 3a4cfeb2-2a7f-446c-80c4-8fd31370814b;
 							}
 							- Fragments = { IRPYRawContainer 
-								- size = 9;
+								- size = 10;
 								- value = 
 								{ IFileFragment 
 									- _id = GUID 79b499df-f11a-4bbb-9628-24cb0fc5d267;
@@ -3017,7 +3063,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 26a29323-4d60-4802-ab37-ea18772dfc9f;
-													- _value = "36";
+													- _value = "38";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -3054,9 +3100,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation RealTimeThread():impl";
-									- m_startRow = 36;
+									- m_startRow = 38;
 									- m_startCol_Short = 17;
-									- m_endRow = 39;
+									- m_endRow = 41;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -3076,7 +3122,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 9a4b6ba8-ebdd-437b-bcbd-552857bd5289;
-													- _value = "41";
+													- _value = "43";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -3113,9 +3159,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~RealTimeThread():impl";
-									- m_startRow = 41;
+									- m_startRow = 43;
 									- m_startCol_Short = 18;
-									- m_endRow = 44;
+									- m_endRow = 46;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -3135,7 +3181,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 0d5996b9-e111-4843-94df-b3799308af8c;
-													- _value = "46";
+													- _value = "48";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -3172,9 +3218,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 46;
+									- m_startRow = 48;
 									- m_startCol_Short = 60;
-									- m_endRow = 51;
+									- m_endRow = 53;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -3195,7 +3241,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 124e44d7-b767-4750-85ff-144b17926ac3;
-													- _value = "53";
+													- _value = "55";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -3232,9 +3278,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsEventStrategy() const:impl";
-									- m_startRow = 53;
+									- m_startRow = 55;
 									- m_startCol_Short = 60;
-									- m_endRow = 55;
+									- m_endRow = 57;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -3254,7 +3300,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 1e601de7-74fe-457a-a2b1-86cb4caee4b3;
-													- _value = "57";
+													- _value = "59";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -3291,9 +3337,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsEventStrategy(EventStrategy *):impl";
-									- m_startRow = 57;
+									- m_startRow = 59;
 									- m_startCol_Short = 74;
-									- m_endRow = 67;
+									- m_endRow = 69;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -3313,7 +3359,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID c952c4c2-5589-4989-894c-fc291c8e1d6e;
-													- _value = "69";
+													- _value = "71";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -3350,9 +3396,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():impl";
-									- m_startRow = 69;
+									- m_startRow = 71;
 									- m_startCol_Short = 41;
-									- m_endRow = 75;
+									- m_endRow = 77;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -3372,7 +3418,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID b02b194e-8c98-4d26-b7ff-dc2421ca707a;
-													- _value = "77";
+													- _value = "79";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -3409,9 +3455,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 77;
+									- m_startRow = 79;
 									- m_startCol_Short = 28;
-									- m_endRow = 81;
+									- m_endRow = 83;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -3432,7 +3478,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 26c95a2b-0508-4ef8-8903-086efebe4429;
-													- _value = "83";
+													- _value = "85";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -3453,7 +3499,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID e5a6fdb4-84ef-4508-8bb6-17fd43f8ddee;
-													- _value = "46";
+													- _value = "37";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -3469,9 +3515,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 83;
-									- m_startCol_Short = 46;
-									- m_endRow = 87;
+									- m_startRow = 85;
+									- m_startCol_Short = 37;
+									- m_endRow = 89;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -3492,7 +3538,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 9a27f610-6604-4b5e-87a9-aafc7030c4fa;
-													- _value = "89";
+													- _value = "91";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -3529,13 +3575,73 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 89;
+									- m_startRow = 91;
 									- m_startCol_Short = 30;
-									- m_endRow = 94;
+									- m_endRow = 96;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 21a7efa5-fc2d-4c82-93a6-13b37fc00575;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 3c5cf2a0-41c7-4ec1-958d-724a1bdba597;
+									- _name = "kill";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID 857c7fc3-dd3e-405a-98fb-0f1baa853a83;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID ffe1b783-abb4-409e-b60d-67818204ad34;
+													- _value = "98";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID b1f69697-857a-4b4c-b685-a24bef2a377b;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID bc6b7426-22e6-48d3-a07c-bcf9bef63fec;
+													- _value = "29";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = implFragment;
+									- m_text = "";
+									- m_startRow = 98;
+									- m_startCol_Short = 29;
+									- m_endRow = 103;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID 783487fd-75a3-4dc5-a663-d3e1b21f228e;
 									}
 								}
 							}
@@ -3584,7 +3690,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_startRow = 22;
 							- m_startCol_Short = 1;
 							- m_endRow = 22;
-							- m_endCol_Short = 623;
+							- m_endCol_Short = 597;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -3597,7 +3703,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_startRow = 24;
 							- m_startCol_Short = 1;
 							- m_endRow = 24;
-							- m_endCol_Short = 666;
+							- m_endCol_Short = 640;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -3610,7 +3716,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_startRow = 26;
 							- m_startCol_Short = 1;
 							- m_endRow = 26;
-							- m_endCol_Short = 706;
+							- m_endCol_Short = 680;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -3623,7 +3729,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_startRow = 28;
 							- m_startCol_Short = 1;
 							- m_endRow = 28;
-							- m_endCol_Short = 749;
+							- m_endCol_Short = 723;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -3636,7 +3742,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_startRow = 30;
 							- m_startCol_Short = 1;
 							- m_endRow = 30;
-							- m_endCol_Short = 795;
+							- m_endCol_Short = 769;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -3721,14 +3827,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- m_text = "";
 							- m_startRow = 40;
 							- m_startCol_Short = 1;
-							- m_endRow = 89;
+							- m_endRow = 92;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
 								- _id = GUID 3a4cfeb2-2a7f-446c-80c4-8fd31370814b;
 							}
 							- Fragments = { IRPYRawContainer 
-								- size = 15;
+								- size = 16;
 								- value = 
 								{ IFileFragment 
 									- _id = GUID f75d4695-cfa3-49b4-872f-8b792e626ea5;
@@ -3913,9 +4019,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_type = specFragment;
 									- m_text = "";
 									- m_startRow = 85;
-									- m_startCol_Short = 10;
+									- m_startCol_Short = 12;
 									- m_endRow = 85;
-									- m_endCol_Short = 33;
+									- m_endCol_Short = 24;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID fe0cfee4-4a2c-49f4-9c10-358b31a5abc9;
@@ -3933,6 +4039,20 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 21a7efa5-fc2d-4c82-93a6-13b37fc00575;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID adb81dfe-01b2-4e99-9e66-decdabd3c285;
+									- _name = "kill";
+									- m_type = specFragment;
+									- m_text = "";
+									- m_startRow = 91;
+									- m_startCol_Short = 10;
+									- m_endRow = 91;
+									- m_endCol_Short = 16;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID 783487fd-75a3-4dc5-a663-d3e1b21f228e;
 									}
 								}
 							}
@@ -4844,9 +4964,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
-			}
-			- Associations = { IRPYRawContainer 
-				- size = 0;
 			}
 			- _classModifier = Unspecified;
 		}

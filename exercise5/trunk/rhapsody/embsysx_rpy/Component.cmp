@@ -47,7 +47,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			{ IHandle 
 				- _m2Class = "ISubsystem";
 				- _filename = "Continuous.sbs";
-				- _subsystem = "";
+				- _subsystem = "Application";
 				- _class = "";
 				- _name = "Continuous";
 				- _id = GUID feef58f9-5b35-4e28-b74b-ab6e92db495b;
@@ -55,7 +55,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			{ IHandle 
 				- _m2Class = "ISubsystem";
 				- _filename = "Discrete.sbs";
-				- _subsystem = "";
+				- _subsystem = "Application";
 				- _class = "";
 				- _name = "Discrete";
 				- _id = GUID bf038c11-5336-45b2-b90b-68033de5c7be;
@@ -67,7 +67,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	}
 	- m_configActive = { ICodeGenConfigInfoHandle 
 		- _m2Class = "ICodeGenConfigInfo";
-		- _id = GUID 833236e0-2af8-4b87-abbf-cfe04a01bb6d;
+		- _id = GUID e8b667ce-dd55-4117-aa38-52194b55aa3c;
 	}
 	- Configs = { IRPYRawContainer 
 		- size = 2;
@@ -153,7 +153,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				{ IHandle 
 					- _m2Class = "IClass";
 					- _filename = "Discrete.sbs";
-					- _subsystem = "Discrete";
+					- _subsystem = "Application::Discrete";
 					- _class = "";
 					- _name = "Tester";
 					- _id = GUID 2609214b-03a5-4d38-b6c4-1013596be70b;
@@ -253,7 +253,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				{ IHandle 
 					- _m2Class = "IClass";
 					- _filename = "Discrete.sbs";
-					- _subsystem = "Discrete";
+					- _subsystem = "Application::Discrete";
 					- _class = "";
 					- _name = "Tester";
 					- _id = GUID 2609214b-03a5-4d38-b6c4-1013596be70b;

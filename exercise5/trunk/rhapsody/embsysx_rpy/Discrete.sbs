@@ -1,13 +1,76 @@
 I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 { ISubsystem 
+	- _ownerHandle = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Application.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Application";
+		- _id = GUID e13ed91e-36da-4077-8d2d-9ea2a971507e;
+	}
 	- _id = GUID bf038c11-5336-45b2-b90b-68033de5c7be;
 	- _myState = 8192;
 	- _name = "Discrete";
+	- Dependencies = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IDependency 
+			- _id = GUID 2c4da9e3-d968-41cb-969a-2a4ca5d36dc0;
+			- _myState = 2048;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Dependency";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UsageType";
+										- _Value = "Implementation";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Specification,Implementation,Existence";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "Continuous";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Usage";
+					- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+				}
+			}
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Continuous";
+				- _id = GUID feef58f9-5b35-4e28-b74b-ab6e92db495b;
+			}
+		}
+	}
 	- _theMainDiagram = { IHandle 
 		- _m2Class = "IDiagram";
 		- _id = GUID 84b4f425-b783-43c7-85e2-e6b939f08d60;
 	}
-	- _lastID = 57;
+	- _lastID = 58;
 	- Declaratives = { IRPYRawContainer 
 		- size = 10;
 		- value = 
@@ -381,7 +444,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "CommandStateModel";
-			- _lastModifiedTime = "3.22.2010::14:20:32";
+			- _lastModifiedTime = "3.22.2010::14:57:52";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 9692cb11-283b-4fe7-80c5-1b1ffc4ad7f4;
 				- m_type = 0;
@@ -3566,7 +3629,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "CommandModel";
-			- _lastModifiedTime = "3.22.2010::13:23:14";
+			- _lastModifiedTime = "3.22.2010::14:40:58";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 367ad96d-28ac-40e4-9a25-f6a6fa6c9e85;
 				- m_type = 0;
@@ -6182,7 +6245,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "RealTimeLoopAndState";
-			- _lastModifiedTime = "3.22.2010::14:20:22";
+			- _lastModifiedTime = "3.22.2010::14:57:52";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID eb83fc8b-3f7a-4d01-863b-08fb4d481e93;
 				- m_type = 0;
@@ -6206,7 +6269,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 				- m_drawBehavior = 0;
 				- m_bIsPreferencesInitialized = 0;
-				- elementList = 19;
+				- elementList = 21;
 				{ CGIClass 
 					- _id = GUID 51fa4002-6ab3-44c5-95fe-da3ee91234bd;
 					- m_type = 78;
@@ -7965,6 +8028,98 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_TargetPort = 529 752 ;
 					- m_ShowName = 0;
 					- m_ShowStereotype = 1;
+				}
+				{ CGIAnchor 
+					- _id = GUID fc0d8459-7e22-4a5b-9eb0-42af39a8f593;
+					- m_type = 140;
+					- m_pModelObject = { IHandle 
+						- _m2Class = "";
+					}
+					- m_pParent = ;
+					- m_name = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nOrientationCtrlPt = 8;
+					}
+					- m_drawBehavior = 4096;
+					- m_bIsPreferencesInitialized = 1;
+					- m_pSource = GUID cca04ebc-de4d-4197-9d91-03a0f71171b4;
+					- m_sourceType = 'F';
+					- m_pTarget = GUID 560098f1-3fee-4d09-a0cd-b74f31594d15;
+					- m_targetType = 'T';
+					- m_direction = ' ';
+					- m_rpn = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nOrientationCtrlPt = 8;
+					}
+					- m_anglePoint1 = 0 0 ;
+					- m_anglePoint2 = 0 0 ;
+					- m_line_style = 0;
+					- m_SourcePort = 58 608 ;
+					- m_TargetPort = 698 384 ;
+				}
+				{ CGIAnchor 
+					- _id = GUID 92fdb778-08e3-41f5-8cc0-c7f756ed26dc;
+					- m_type = 140;
+					- m_pModelObject = { IHandle 
+						- _m2Class = "";
+					}
+					- m_pParent = ;
+					- m_name = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nOrientationCtrlPt = 8;
+					}
+					- m_drawBehavior = 4096;
+					- m_bIsPreferencesInitialized = 1;
+					- m_pSource = GUID cca04ebc-de4d-4197-9d91-03a0f71171b4;
+					- m_sourceType = 'F';
+					- m_pTarget = GUID 58f5960b-1732-4a57-9b32-545901832ee8;
+					- m_targetType = 'T';
+					- m_direction = ' ';
+					- m_rpn = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nOrientationCtrlPt = 8;
+					}
+					- m_anglePoint1 = 0 0 ;
+					- m_anglePoint2 = 0 0 ;
+					- m_line_style = 0;
+					- m_SourcePort = 1017 853 ;
+					- m_TargetPort = 232 446 ;
 				}
 				
 				- m_access = 'Z';
@@ -10395,7 +10550,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "PackageViewDiscrete";
-			- _lastModifiedTime = "3.22.2010::14:16:59";
+			- _lastModifiedTime = "3.22.2010::14:57:52";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 73f6e6cb-13d7-460a-917f-7db6150d0a04;
 				- m_type = 0;
@@ -11865,7 +12020,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 5;
+						- size = 6;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IConstructor";
@@ -11886,6 +12041,10 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _id = GUID dfd5b075-2603-47cc-8aee-c208ea2e610d;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID 3be215b2-4ce3-4685-97ac-9e09d542ffa4;
 						}
 					}
 				}
@@ -71850,8 +72009,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 3.22.2010::14:14:8;
-	- strongCGTime = 3.22.2010::12:37:42;
+	- weakCGTime = 3.22.2010::14:37:9;
+	- strongCGTime = 3.22.2010::14:35:37;
 	- _defaultComposite = GUID d45b4129-c4d1-484d-af02-0892adac1bf1;
 	- _eventsBaseID = -1;
 	- Classes = { IRPYRawContainer 
@@ -71861,7 +72020,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID d45b4129-c4d1-484d-af02-0892adac1bf1;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 3.22.2010::12:51:38;
+			- weakCGTime = 3.22.2010::14:14:8;
 			- strongCGTime = 3.22.2010::12:37:42;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -72015,7 +72174,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _dependsOn = { INObjectHandle 
 						- _m2Class = "IClass";
 						- _filename = "Continuous.sbs";
-						- _subsystem = "Continuous";
+						- _subsystem = "Application::Continuous";
 						- _class = "";
 						- _name = "EventStrategy";
 						- _id = GUID ebfd3261-9f63-4eb6-b831-9a9c0b186898;
@@ -72026,11 +72185,11 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _m2Class = "IDiagram";
 				- _id = GUID 4c782279-dd65-468b-a2bb-3838882f6867;
 			}
-			- _lastID = 27;
-			- weakCGTime = 3.22.2010::12:5:10;
+			- _lastID = 28;
+			- weakCGTime = 3.22.2010::14:38:38;
 			- strongCGTime = 3.1.2010::9:2:52;
 			- Operations = { IRPYRawContainer 
-				- size = 5;
+				- size = 6;
 				- value = 
 				{ IConstructor 
 					- _id = GUID db674d9b-0213-4331-b728-f27339b840f3;
@@ -72200,6 +72359,32 @@ itsRealTimeThread = new RealTimeThread();";
 						- _bodyData = "itsRealTimeThread->start();";
 					}
 				}
+				{ IPrimitiveOperation 
+					- _id = GUID 3be215b2-4ce3-4685-97ac-9e09d542ffa4;
+					- _myState = 8192;
+					- _name = "kill";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "itsRealTimeThread->kill();";
+					}
+				}
 			}
 			- ComponentFiles = { IRPYRawContainer 
 				- size = 2;
@@ -72236,7 +72421,7 @@ itsRealTimeThread = new RealTimeThread();";
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 6;
+						- size = 4;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID d86e9fb7-68ba-4422-b8cb-2d394f2505e2;
@@ -72246,7 +72431,7 @@ itsRealTimeThread = new RealTimeThread();";
 							- m_startRow = 16;
 							- m_startCol_Short = 1;
 							- m_endRow = 16;
-							- m_endCol_Short = 480;
+							- m_endCol_Short = 454;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -72259,20 +72444,7 @@ itsRealTimeThread = new RealTimeThread();";
 							- m_startRow = 18;
 							- m_startCol_Short = 1;
 							- m_endRow = 18;
-							- m_endCol_Short = 542;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID 21ba1201-a1dc-4b01-a57f-95114af4d3a4;
-							- _name = "EventStrategy:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency EventStrategy:spec";
-							- m_startRow = 20;
-							- m_startCol_Short = 1;
-							- m_endRow = 20;
-							- m_endCol_Short = 614;
+							- m_endCol_Short = 516;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -72282,23 +72454,10 @@ itsRealTimeThread = new RealTimeThread();";
 							- _name = "RealTimeThread:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency RealTimeThread:spec";
-							- m_startRow = 22;
+							- m_startRow = 20;
 							- m_startCol_Short = 1;
-							- m_endRow = 22;
-							- m_endCol_Short = 672;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID 1130b7c4-db6e-4de8-90e5-fbcde0cd340d;
-							- _name = "Event:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency Event:spec";
-							- m_startRow = 26;
-							- m_startCol_Short = 1;
-							- m_endRow = 26;
-							- m_endCol_Short = 772;
+							- m_endRow = 20;
+							- m_endCol_Short = 574;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -72308,16 +72467,16 @@ itsRealTimeThread = new RealTimeThread();";
 							- _name = "EmbeddedSystemX";
 							- m_type = implFragment;
 							- m_text = "";
-							- m_startRow = 46;
+							- m_startRow = 44;
 							- m_startCol_Short = 19;
-							- m_endRow = 46;
+							- m_endRow = 44;
 							- m_endCol_Short = 19;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
 								- _id = GUID bbd9277d-ca6f-4e3c-b14c-fd226a306c2b;
 							}
 							- Fragments = { IRPYRawContainer 
-								- size = 11;
+								- size = 12;
 								- value = 
 								{ IFileFragment 
 									- _id = GUID 10ac79a8-917d-45ba-92e8-040a9c9ceab5;
@@ -72333,7 +72492,7 @@ itsRealTimeThread = new RealTimeThread();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID dfd3315e-94f9-4b00-8d9f-5b8a36708824;
-													- _value = "46";
+													- _value = "44";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -72370,9 +72529,9 @@ itsRealTimeThread = new RealTimeThread();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~EmbeddedSystemX():impl";
-									- m_startRow = 46;
+									- m_startRow = 44;
 									- m_startCol_Short = 19;
-									- m_endRow = 49;
+									- m_endRow = 47;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -72392,7 +72551,7 @@ itsRealTimeThread = new RealTimeThread();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 1768d614-f0c1-4a5a-8545-c03cb7bfecae;
-													- _value = "51";
+													- _value = "49";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -72429,9 +72588,9 @@ itsRealTimeThread = new RealTimeThread();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 51;
+									- m_startRow = 49;
 									- m_startCol_Short = 48;
-									- m_endRow = 56;
+									- m_endRow = 54;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -72452,7 +72611,7 @@ itsRealTimeThread = new RealTimeThread();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 654645df-1ff1-414e-8777-17df609e5509;
-													- _value = "58";
+													- _value = "56";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -72489,9 +72648,9 @@ itsRealTimeThread = new RealTimeThread();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsESXState() const:impl";
-									- m_startRow = 58;
+									- m_startRow = 56;
 									- m_startCol_Short = 51;
-									- m_endRow = 60;
+									- m_endRow = 58;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -72511,7 +72670,7 @@ itsRealTimeThread = new RealTimeThread();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID f231bc33-9f2c-4169-8b23-9383b04c3cdb;
-													- _value = "62";
+													- _value = "60";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -72548,9 +72707,9 @@ itsRealTimeThread = new RealTimeThread();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsESXState(ESXState *):impl";
-									- m_startRow = 62;
+									- m_startRow = 60;
 									- m_startCol_Short = 60;
-									- m_endRow = 72;
+									- m_endRow = 70;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -72570,7 +72729,7 @@ itsRealTimeThread = new RealTimeThread();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 9a3758ad-c514-4603-86a8-bd878a8506f2;
-													- _value = "74";
+													- _value = "72";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -72607,29 +72766,28 @@ itsRealTimeThread = new RealTimeThread();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():impl";
-									- m_startRow = 74;
+									- m_startRow = 72;
 									- m_startCol_Short = 42;
-									- m_endRow = 85;
+									- m_endRow = 83;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 820b8397-0a93-44c0-9fd5-8016da6b95d1;
-									- _name = "EmbeddedSystemX";
+									- _id = GUID ec3d1eb8-061b-475b-9d63-74a3dc2acd47;
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID 133ea0b4-575f-4201-aa71-9f652aca1d18;
+											- _id = GUID af2775a7-1c40-49a3-8f61-70d3680acd1b;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 98b38f6d-a7d9-4625-a63d-146267c38077;
-													- _value = "87";
+													- _id = GUID 70905b16-58c7-4e13-ac2f-f0c74d9bebeb;
+													- _value = "85";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -72643,13 +72801,13 @@ itsRealTimeThread = new RealTimeThread();";
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID 417b9b33-d35e-48d5-ad65-814b6492afe4;
+											- _id = GUID c8216f8c-8a84-4b53-9895-c299e68f7d43;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID f2b471f1-90a6-46cb-99b5-d4d38f7c27f9;
+													- _id = GUID 2e8b4276-949a-4ae1-9145-6111dcb93486;
 													- _value = "36";
 												}
 											}
@@ -72666,9 +72824,9 @@ itsRealTimeThread = new RealTimeThread();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 87;
+									- m_startRow = 85;
 									- m_startCol_Short = 18;
-									- m_endRow = 95;
+									- m_endRow = 93;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -72689,7 +72847,7 @@ itsRealTimeThread = new RealTimeThread();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 218d3712-3718-4328-8908-290497c469c8;
-													- _value = "97";
+													- _value = "95";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -72726,9 +72884,9 @@ itsRealTimeThread = new RealTimeThread();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 97;
+									- m_startRow = 95;
 									- m_startCol_Short = 56;
-									- m_endRow = 102;
+									- m_endRow = 100;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -72749,7 +72907,7 @@ itsRealTimeThread = new RealTimeThread();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID da7f9742-ebbf-4211-847c-bd5f2c5975e1;
-													- _value = "104";
+													- _value = "102";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -72786,9 +72944,9 @@ itsRealTimeThread = new RealTimeThread();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 104;
+									- m_startRow = 102;
 									- m_startCol_Short = 61;
-									- m_endRow = 109;
+									- m_endRow = 107;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -72809,7 +72967,7 @@ itsRealTimeThread = new RealTimeThread();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID b789d8d5-d7a4-4d4b-8e5e-de94e231da1e;
-													- _value = "111";
+													- _value = "109";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -72846,9 +73004,9 @@ itsRealTimeThread = new RealTimeThread();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsRealTimeThread() const:impl";
-									- m_startRow = 111;
+									- m_startRow = 109;
 									- m_startCol_Short = 63;
-									- m_endRow = 113;
+									- m_endRow = 111;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -72868,7 +73026,7 @@ itsRealTimeThread = new RealTimeThread();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 59bd45e3-ff24-461b-adfb-84cc8a37e7b3;
-													- _value = "115";
+													- _value = "113";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -72905,9 +73063,9 @@ itsRealTimeThread = new RealTimeThread();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsRealTimeThread(RealTimeThread *):impl";
-									- m_startRow = 115;
+									- m_startRow = 113;
 									- m_startCol_Short = 78;
-									- m_endRow = 125;
+									- m_endRow = 123;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -72927,7 +73085,7 @@ itsRealTimeThread = new RealTimeThread();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID a35d31b9-4135-455d-b7fd-dc0721e5a73e;
-													- _value = "127";
+													- _value = "125";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -72964,13 +73122,73 @@ itsRealTimeThread = new RealTimeThread();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 127;
+									- m_startRow = 125;
 									- m_startCol_Short = 31;
-									- m_endRow = 132;
+									- m_endRow = 130;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID dfd5b075-2603-47cc-8aee-c208ea2e610d;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID a8d1dc82-60dd-4ddd-b5f5-cd05e5000ff6;
+									- _name = "kill";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID 58d31bb9-7b33-4a72-b25d-eede2da9e497;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID c9067703-f3c2-4926-a483-5a409878eb35;
+													- _value = "132";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID c717fdfd-e1e6-4a99-8ce8-818c6ec62ef9;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID b42ecfbd-bc26-4d86-8f40-55504499d9f8;
+													- _value = "30";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = implFragment;
+									- m_text = "";
+									- m_startRow = 132;
+									- m_startCol_Short = 30;
+									- m_endRow = 137;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID 3be215b2-4ce3-4685-97ac-9e09d542ffa4;
 									}
 								}
 							}
@@ -73009,7 +73227,7 @@ itsRealTimeThread = new RealTimeThread();";
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 12;
+						- size = 11;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID 1c7cd159-591c-440c-b47e-d09e9dc3672e;
@@ -73019,7 +73237,7 @@ itsRealTimeThread = new RealTimeThread();";
 							- m_startRow = 22;
 							- m_startCol_Short = 1;
 							- m_endRow = 22;
-							- m_endCol_Short = 627;
+							- m_endCol_Short = 601;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -73032,7 +73250,7 @@ itsRealTimeThread = new RealTimeThread();";
 							- m_startRow = 24;
 							- m_startCol_Short = 1;
 							- m_endRow = 24;
-							- m_endCol_Short = 670;
+							- m_endCol_Short = 644;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -73045,7 +73263,7 @@ itsRealTimeThread = new RealTimeThread();";
 							- m_startRow = 26;
 							- m_startCol_Short = 1;
 							- m_endRow = 26;
-							- m_endCol_Short = 710;
+							- m_endCol_Short = 684;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -73058,7 +73276,7 @@ itsRealTimeThread = new RealTimeThread();";
 							- m_startRow = 28;
 							- m_startCol_Short = 1;
 							- m_endRow = 28;
-							- m_endCol_Short = 753;
+							- m_endCol_Short = 727;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -73071,7 +73289,7 @@ itsRealTimeThread = new RealTimeThread();";
 							- m_startRow = 30;
 							- m_startCol_Short = 1;
 							- m_endRow = 30;
-							- m_endCol_Short = 797;
+							- m_endCol_Short = 771;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -73091,16 +73309,17 @@ itsRealTimeThread = new RealTimeThread();";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 237dc479-dacf-4953-9415-66067ce15de5;
-							- _name = "Event:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency Event:spec";
+							- _id = GUID 64af73b0-16fb-4ec9-98d9-9ea8ba3f5c8c;
+							- _name = "EventStrategy";
+							- m_type = specFragment;
+							- m_text = "";
 							- m_startRow = 35;
 							- m_startCol_Short = 1;
 							- m_endRow = 35;
-							- m_endCol_Short = 12;
+							- m_endCol_Short = 20;
 							- m_subject = { INObjectHandle 
-								- _m2Class = "";
+								- _m2Class = "IDependency";
+								- _id = GUID 80ec0977-0f99-49da-934c-355a2003fc2c;
 							}
 						}
 						{ IFileFragment 
@@ -73118,26 +73337,13 @@ itsRealTimeThread = new RealTimeThread();";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 4acb957b-e7dc-47e0-8ba0-e245959de7b0;
-							- _name = "EventStrategy:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency EventStrategy:spec";
-							- m_startRow = 41;
-							- m_startCol_Short = 1;
-							- m_endRow = 41;
-							- m_endCol_Short = 20;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
 							- _id = GUID f3d033b5-0afa-421c-a676-e387eaaec03c;
 							- _name = "RealTimeThread:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency RealTimeThread:spec";
-							- m_startRow = 44;
+							- m_startRow = 41;
 							- m_startCol_Short = 1;
-							- m_endRow = 44;
+							- m_endRow = 41;
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -73148,9 +73354,9 @@ itsRealTimeThread = new RealTimeThread();";
 							- _name = "ESXState:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency ESXState:spec";
-							- m_startRow = 47;
+							- m_startRow = 44;
 							- m_startCol_Short = 1;
-							- m_endRow = 47;
+							- m_endRow = 44;
 							- m_endCol_Short = 15;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -73170,7 +73376,7 @@ itsRealTimeThread = new RealTimeThread();";
 										- value = 
 										{ ILiteralSpecification 
 											- _id = GUID 3d836baf-9462-40cf-bf73-18c0b4ec5225;
-											- _value = "52";
+											- _value = "49";
 										}
 									}
 									- _typeOf = { IHandle 
@@ -73207,16 +73413,16 @@ itsRealTimeThread = new RealTimeThread();";
 							}
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 52;
+							- m_startRow = 49;
 							- m_startCol_Short = 1;
-							- m_endRow = 122;
+							- m_endRow = 119;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
 								- _id = GUID bbd9277d-ca6f-4e3c-b14c-fd226a306c2b;
 							}
 							- Fragments = { IRPYRawContainer 
-								- size = 18;
+								- size = 19;
 								- value = 
 								{ IFileFragment 
 									- _id = GUID 6fa902d9-08ce-4be1-9577-5df3d939a412;
@@ -73224,9 +73430,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- m_type = textFragment;
 									- m_text = "////    Constructors and destructors    ////
 ";
-									- m_startRow = 61;
+									- m_startRow = 58;
 									- m_startCol_Short = 5;
-									- m_endRow = 61;
+									- m_endRow = 58;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -73237,9 +73443,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- _name = "~EmbeddedSystemX:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~EmbeddedSystemX():spec";
-									- m_startRow = 64;
+									- m_startRow = 61;
 									- m_startCol_Short = 6;
-									- m_endRow = 64;
+									- m_endRow = 61;
 									- m_endCol_Short = 6;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -73251,9 +73457,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- m_type = textFragment;
 									- m_text = "////    Operations    ////
 ";
-									- m_startRow = 66;
+									- m_startRow = 63;
 									- m_startCol_Short = 5;
-									- m_endRow = 66;
+									- m_endRow = 63;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -73264,9 +73470,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- _name = "ChangeState";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 71;
+									- m_startRow = 68;
 									- m_startCol_Short = 10;
-									- m_endRow = 71;
+									- m_endRow = 68;
 									- m_endCol_Short = 34;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -73279,9 +73485,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- m_type = textFragment;
 									- m_text = "////    Additional operations    ////
 ";
-									- m_startRow = 73;
+									- m_startRow = 70;
 									- m_startCol_Short = 5;
-									- m_endRow = 73;
+									- m_endRow = 70;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -73292,9 +73498,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- _name = "getItsESXState:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsESXState() const:spec";
-									- m_startRow = 78;
+									- m_startRow = 75;
 									- m_startCol_Short = 15;
-									- m_endRow = 78;
+									- m_endRow = 75;
 									- m_endCol_Short = 37;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -73305,9 +73511,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- _name = "setItsESXState:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsESXState(ESXState *):spec";
-									- m_startRow = 81;
+									- m_startRow = 78;
 									- m_startCol_Short = 10;
-									- m_endRow = 81;
+									- m_endRow = 78;
 									- m_endCol_Short = 46;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -73318,9 +73524,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- _name = "cleanUpRelations:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():spec";
-									- m_startRow = 86;
+									- m_startRow = 83;
 									- m_startCol_Short = 10;
-									- m_endRow = 86;
+									- m_endRow = 83;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -73332,9 +73538,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- m_type = textFragment;
 									- m_text = "////    Relations and components    ////
 ";
-									- m_startRow = 88;
+									- m_startRow = 85;
 									- m_startCol_Short = 5;
-									- m_endRow = 88;
+									- m_endRow = 85;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -73345,9 +73551,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- _name = "itsESXState";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 90;
+									- m_startRow = 87;
 									- m_startCol_Short = 15;
-									- m_endRow = 90;
+									- m_endRow = 87;
 									- m_endCol_Short = 26;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -73360,22 +73566,21 @@ itsRealTimeThread = new RealTimeThread();";
 									- m_type = textFragment;
 									- m_text = "////    Framework operations    ////
 ";
-									- m_startRow = 92;
+									- m_startRow = 89;
 									- m_startCol_Short = 5;
-									- m_endRow = 92;
+									- m_endRow = 89;
 									- m_endCol_Short = 41;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 1787037b-7c74-48ee-9a2b-69683e3536db;
-									- _name = "EmbeddedSystemX";
+									- _id = GUID 7cbc6d1b-21e4-4340-8a84-f5679a1cbe65;
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 97;
+									- m_startRow = 94;
 									- m_startCol_Short = 5;
-									- m_endRow = 97;
+									- m_endRow = 94;
 									- m_endCol_Short = 22;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -73387,9 +73592,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- _name = "HandleCommand";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 100;
+									- m_startRow = 97;
 									- m_startCol_Short = 10;
-									- m_endRow = 100;
+									- m_endRow = 97;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -73401,9 +73606,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- _name = "setStrategy";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 103;
+									- m_startRow = 100;
 									- m_startCol_Short = 10;
-									- m_endRow = 103;
+									- m_endRow = 100;
 									- m_endCol_Short = 47;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -73415,9 +73620,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- _name = "getItsRealTimeThread:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsRealTimeThread() const:spec";
-									- m_startRow = 106;
+									- m_startRow = 103;
 									- m_startCol_Short = 21;
-									- m_endRow = 106;
+									- m_endRow = 103;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -73428,9 +73633,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- _name = "setItsRealTimeThread:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsRealTimeThread(RealTimeThread *):spec";
-									- m_startRow = 109;
+									- m_startRow = 106;
 									- m_startCol_Short = 10;
-									- m_endRow = 109;
+									- m_endRow = 106;
 									- m_endCol_Short = 64;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -73441,9 +73646,9 @@ itsRealTimeThread = new RealTimeThread();";
 									- _name = "itsRealTimeThread";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 113;
+									- m_startRow = 110;
 									- m_startCol_Short = 21;
-									- m_endRow = 113;
+									- m_endRow = 110;
 									- m_endCol_Short = 38;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -73455,13 +73660,27 @@ itsRealTimeThread = new RealTimeThread();";
 									- _name = "start";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 118;
+									- m_startRow = 115;
 									- m_startCol_Short = 10;
-									- m_endRow = 118;
+									- m_endRow = 115;
 									- m_endCol_Short = 17;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID dfd5b075-2603-47cc-8aee-c208ea2e610d;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 32d63ba9-fd15-4f07-af34-17368431f1ee;
+									- _name = "kill";
+									- m_type = specFragment;
+									- m_text = "";
+									- m_startRow = 118;
+									- m_startCol_Short = 10;
+									- m_endRow = 118;
+									- m_endCol_Short = 16;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID 3be215b2-4ce3-4685-97ac-9e09d542ffa4;
 									}
 								}
 							}
@@ -73500,7 +73719,7 @@ itsRealTimeThread = new RealTimeThread();";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
 						- _filename = "Continuous.sbs";
-						- _subsystem = "Continuous";
+						- _subsystem = "Application::Continuous";
 						- _class = "";
 						- _name = "RealTimeThread";
 						- _id = GUID 3a4cfeb2-2a7f-446c-80c4-8fd31370814b;
@@ -79947,6 +80166,28 @@ return _instance;";
 			- Operations = { IRPYRawContainer 
 				- size = 10;
 				- value = 
+				{ IConstructor 
+					- _id = GUID a6725bf7-ebc2-44ae-b35d-3f66334ffea3;
+					- _myState = 8192;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "//itsModeSettingAndState = Mode1a::Instance();
+//itsSimulateAndState = RealTimeExecution::Instance();";
+					}
+					- _initializer = "";
+				}
 				{ IPrimitiveOperation 
 					- _id = GUID cfeddd8d-d899-43bb-9961-e8ef3dcbb380;
 					- _myState = 8192;
@@ -80052,7 +80293,8 @@ return _instance;";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "ChangeState(esx, Ready::Instance());";
+						- _bodyData = "ChangeState(esx, Ready::Instance());
+esx->kill();";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -80290,28 +80532,6 @@ return _instance;";
 						- _bodyData = "itsModeSettingAndState = state;";
 					}
 				}
-				{ IConstructor 
-					- _id = GUID a6725bf7-ebc2-44ae-b35d-3f66334ffea3;
-					- _myState = 8192;
-					- _virtual = 0;
-					- Args = { IRPYRawContainer 
-						- size = 0;
-					}
-					- _returnType = { IHandle 
-						- _m2Class = "";
-					}
-					- _abstract = 0;
-					- _final = 0;
-					- _concurrency = Sequential;
-					- _protection = iPublic;
-					- _static = 0;
-					- _constant = 0;
-					- _itsBody = { IBody 
-						- _bodyData = "//itsModeSettingAndState = Mode1a::Instance();
-//itsSimulateAndState = RealTimeExecution::Instance();";
-					}
-					- _initializer = "";
-				}
 			}
 			- Attrs = { IRPYRawContainer 
 				- size = 1;
@@ -80380,7 +80600,7 @@ return _instance;";
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 9;
+						- size = 10;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID c9bba477-2018-455a-91ec-8d7f46177547;
@@ -80390,7 +80610,7 @@ return _instance;";
 							- m_startRow = 22;
 							- m_startCol_Short = 1;
 							- m_endRow = 22;
-							- m_endCol_Short = 589;
+							- m_endCol_Short = 604;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -80403,7 +80623,7 @@ return _instance;";
 							- m_startRow = 24;
 							- m_startCol_Short = 1;
 							- m_endRow = 24;
-							- m_endCol_Short = 629;
+							- m_endCol_Short = 642;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -80416,7 +80636,7 @@ return _instance;";
 							- m_startRow = 26;
 							- m_startCol_Short = 1;
 							- m_endRow = 26;
-							- m_endCol_Short = 672;
+							- m_endCol_Short = 683;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -80429,7 +80649,20 @@ return _instance;";
 							- m_startRow = 28;
 							- m_startCol_Short = 1;
 							- m_endRow = 28;
-							- m_endCol_Short = 723;
+							- m_endCol_Short = 732;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID c60fbed9-451b-4c3d-a7d3-1dfcefd8e30c;
+							- _name = "Discrete:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency Discrete:spec";
+							- m_startRow = 30;
+							- m_startCol_Short = 1;
+							- m_endRow = 30;
+							- m_endCol_Short = 774;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -80439,9 +80672,9 @@ return _instance;";
 							- _name = "ESXState:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency ESXState:spec";
-							- m_startRow = 30;
+							- m_startRow = 47;
 							- m_startCol_Short = 1;
-							- m_endRow = 30;
+							- m_endRow = 47;
 							- m_endCol_Short = 15;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -80452,9 +80685,9 @@ return _instance;";
 							- _name = "EmbeddedSystemX:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency EmbeddedSystemX:spec";
-							- m_startRow = 33;
+							- m_startRow = 50;
 							- m_startCol_Short = 1;
-							- m_endRow = 33;
+							- m_endRow = 50;
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -80465,9 +80698,9 @@ return _instance;";
 							- _name = "ModeSettingAndState:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency ModeSettingAndState:spec";
-							- m_startRow = 39;
+							- m_startRow = 53;
 							- m_startCol_Short = 1;
-							- m_endRow = 39;
+							- m_endRow = 53;
 							- m_endCol_Short = 26;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -80478,9 +80711,9 @@ return _instance;";
 							- _name = "SimulateAndState:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency SimulateAndState:spec";
-							- m_startRow = 51;
+							- m_startRow = 56;
 							- m_startCol_Short = 1;
-							- m_endRow = 51;
+							- m_endRow = 56;
 							- m_endCol_Short = 23;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -80500,7 +80733,7 @@ return _instance;";
 										- value = 
 										{ ILiteralSpecification 
 											- _id = GUID e1cf9393-39c8-4a66-835e-a2ac784b1960;
-											- _value = "59";
+											- _value = "61";
 										}
 									}
 									- _typeOf = { IHandle 
@@ -80537,16 +80770,16 @@ return _instance;";
 							}
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 59;
+							- m_startRow = 61;
 							- m_startCol_Short = 1;
-							- m_endRow = 145;
+							- m_endRow = 147;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
 								- _id = GUID 3b8f7d60-a32f-44f5-9ed5-c5a453363ef8;
 							}
 							- Fragments = { IRPYRawContainer 
-								- size = 23;
+								- size = 26;
 								- value = 
 								{ IFileFragment 
 									- _id = GUID 18c2534d-59d1-48fa-89f7-5186814bd203;
@@ -80554,9 +80787,9 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Friends    ////
 ";
-									- m_startRow = 60;
+									- m_startRow = 62;
 									- m_startCol_Short = 5;
-									- m_endRow = 60;
+									- m_endRow = 62;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -80568,22 +80801,21 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Constructors and destructors    ////
 ";
-									- m_startRow = 68;
+									- m_startRow = 70;
 									- m_startCol_Short = 5;
-									- m_endRow = 68;
+									- m_endRow = 70;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 30c06d22-2f65-4113-a075-56cd71d31431;
-									- _name = "RealTimeLoop";
+									- _id = GUID 3295f575-9695-44d0-a619-74bd95dc321d;
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 71;
+									- m_startRow = 73;
 									- m_startCol_Short = 5;
-									- m_endRow = 71;
+									- m_endRow = 73;
 									- m_endCol_Short = 19;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -80595,9 +80827,9 @@ return _instance;";
 									- _name = "~RealTimeLoop:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~RealTimeLoop():spec";
-									- m_startRow = 74;
+									- m_startRow = 76;
 									- m_startCol_Short = 14;
-									- m_endRow = 74;
+									- m_endRow = 76;
 									- m_endCol_Short = 14;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -80609,9 +80841,9 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Operations    ////
 ";
-									- m_startRow = 76;
+									- m_startRow = 78;
 									- m_startCol_Short = 5;
-									- m_endRow = 76;
+									- m_endRow = 78;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -80622,9 +80854,9 @@ return _instance;";
 									- _name = "ChangeModeSettingAndState";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 79;
+									- m_startRow = 81;
 									- m_startCol_Short = 10;
-									- m_endRow = 79;
+									- m_endRow = 81;
 									- m_endCol_Short = 64;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -80636,9 +80868,9 @@ return _instance;";
 									- _name = "ChangeSimulateAndState";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 82;
+									- m_startRow = 84;
 									- m_startCol_Short = 10;
-									- m_endRow = 82;
+									- m_endRow = 84;
 									- m_endCol_Short = 58;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -80650,9 +80882,9 @@ return _instance;";
 									- _name = "Instance";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 85;
+									- m_startRow = 87;
 									- m_startCol_Short = 23;
-									- m_endRow = 85;
+									- m_endRow = 87;
 									- m_endCol_Short = 54;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -80664,9 +80896,9 @@ return _instance;";
 									- _name = "RunRealTime";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 88;
+									- m_startRow = 90;
 									- m_startCol_Short = 18;
-									- m_endRow = 88;
+									- m_endRow = 90;
 									- m_endCol_Short = 52;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -80678,9 +80910,9 @@ return _instance;";
 									- _name = "Simulate";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 91;
+									- m_startRow = 93;
 									- m_startCol_Short = 18;
-									- m_endRow = 91;
+									- m_endRow = 93;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -80692,9 +80924,9 @@ return _instance;";
 									- _name = "Stop";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 94;
+									- m_startRow = 96;
 									- m_startCol_Short = 18;
-									- m_endRow = 94;
+									- m_endRow = 96;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -80706,9 +80938,9 @@ return _instance;";
 									- _name = "Suspend";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 97;
+									- m_startRow = 99;
 									- m_startCol_Short = 18;
-									- m_endRow = 97;
+									- m_endRow = 99;
 									- m_endCol_Short = 48;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -80720,9 +80952,9 @@ return _instance;";
 									- _name = "chMode";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 100;
+									- m_startRow = 102;
 									- m_startCol_Short = 18;
-									- m_endRow = 100;
+									- m_endRow = 102;
 									- m_endCol_Short = 47;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -80734,9 +80966,9 @@ return _instance;";
 									- _name = "DisplayState";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 105;
+									- m_startRow = 107;
 									- m_startCol_Short = 18;
-									- m_endRow = 105;
+									- m_endRow = 107;
 									- m_endCol_Short = 32;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -80749,9 +80981,9 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Additional operations    ////
 ";
-									- m_startRow = 107;
+									- m_startRow = 109;
 									- m_startCol_Short = 5;
-									- m_endRow = 107;
+									- m_endRow = 109;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -80762,9 +80994,9 @@ return _instance;";
 									- _name = "get_instance:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation get_instance():spec";
-									- m_startRow = 112;
+									- m_startRow = 114;
 									- m_startCol_Short = 26;
-									- m_endRow = 112;
+									- m_endRow = 114;
 									- m_endCol_Short = 40;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -80775,10 +81007,10 @@ return _instance;";
 									- _name = "set_instance:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation set_instance(RealTimeLoop *):spec";
-									- m_startRow = 115;
+									- m_startRow = 117;
 									- m_startCol_Short = 17;
-									- m_endRow = 115;
-									- m_endCol_Short = 59;
+									- m_endRow = 117;
+									- m_endCol_Short = 56;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
@@ -80788,9 +81020,9 @@ return _instance;";
 									- _name = "getItsModeSettingAndState:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsModeSettingAndState() const:spec";
-									- m_startRow = 118;
+									- m_startRow = 122;
 									- m_startCol_Short = 26;
-									- m_endRow = 118;
+									- m_endRow = 122;
 									- m_endCol_Short = 59;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -80801,9 +81033,9 @@ return _instance;";
 									- _name = "setItsModeSettingAndState:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsModeSettingAndState(ModeSettingAndState *):spec";
-									- m_startRow = 121;
+									- m_startRow = 125;
 									- m_startCol_Short = 10;
-									- m_endRow = 121;
+									- m_endRow = 125;
 									- m_endCol_Short = 79;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -80814,9 +81046,9 @@ return _instance;";
 									- _name = "getItsSimulateAndState:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsSimulateAndState() const:spec";
-									- m_startRow = 124;
+									- m_startRow = 128;
 									- m_startCol_Short = 23;
-									- m_endRow = 124;
+									- m_endRow = 128;
 									- m_endCol_Short = 53;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -80827,9 +81059,9 @@ return _instance;";
 									- _name = "setItsSimulateAndState:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsSimulateAndState(SimulateAndState *):spec";
-									- m_startRow = 127;
+									- m_startRow = 131;
 									- m_startCol_Short = 10;
-									- m_endRow = 127;
+									- m_endRow = 131;
 									- m_endCol_Short = 70;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -80840,9 +81072,9 @@ return _instance;";
 									- _name = "cleanUpRelations:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():spec";
-									- m_startRow = 132;
+									- m_startRow = 136;
 									- m_startCol_Short = 10;
-									- m_endRow = 132;
+									- m_endRow = 136;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -80854,12 +81086,54 @@ return _instance;";
 									- m_type = textFragment;
 									- m_text = "////    Relations and components    ////
 ";
-									- m_startRow = 134;
+									- m_startRow = 138;
 									- m_startCol_Short = 5;
-									- m_endRow = 134;
+									- m_endRow = 138;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 2e2c9101-c812-42b2-a0a1-40302c817b8a;
+									- _name = "_instance";
+									- m_type = specFragment;
+									- m_text = "";
+									- m_startRow = 140;
+									- m_startCol_Short = 26;
+									- m_endRow = 140;
+									- m_endCol_Short = 35;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IAttribute";
+										- _id = GUID b0a5e8f6-c88a-4053-8c36-e1acafbc0af3;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 2f9980a2-bdc1-4486-88e4-338988b34a77;
+									- _name = "itsModeSettingAndState";
+									- m_type = specFragment;
+									- m_text = "";
+									- m_startRow = 144;
+									- m_startCol_Short = 26;
+									- m_endRow = 144;
+									- m_endCol_Short = 48;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IAssociationEnd";
+										- _id = GUID 6951effe-f57a-4971-b506-3d2ab217cf3c;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 0450165d-343d-40cb-b838-adeb1ac2d3b7;
+									- _name = "itsSimulateAndState";
+									- m_type = specFragment;
+									- m_text = "";
+									- m_startRow = 146;
+									- m_startCol_Short = 23;
+									- m_endRow = 146;
+									- m_endCol_Short = 42;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IAssociationEnd";
+										- _id = GUID e42268cb-1b68-4071-b3ff-9b8c0d603b0b;
 									}
 								}
 							}
@@ -80898,7 +81172,7 @@ return _instance;";
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 7;
+						- size = 11;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID 6c866ecb-6fec-4969-a1cb-cb0b12e35a46;
@@ -80908,7 +81182,7 @@ return _instance;";
 							- m_startRow = 12;
 							- m_startCol_Short = 1;
 							- m_endRow = 12;
-							- m_endCol_Short = 398;
+							- m_endCol_Short = 423;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -80918,10 +81192,10 @@ return _instance;";
 							- _name = "PowerOnSelfTest";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 20;
+							- m_startRow = 14;
 							- m_startCol_Short = 1;
-							- m_endRow = 20;
-							- m_endCol_Short = 622;
+							- m_endRow = 14;
+							- m_endCol_Short = 484;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID 0d7f04fa-b984-4fad-8b61-959955b2d710;
@@ -80932,10 +81206,10 @@ return _instance;";
 							- _name = "EmbeddedSystemX:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency EmbeddedSystemX:spec";
-							- m_startRow = 24;
+							- m_startRow = 16;
 							- m_startCol_Short = 1;
-							- m_endRow = 24;
-							- m_endCol_Short = 739;
+							- m_endRow = 16;
+							- m_endCol_Short = 556;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -80945,10 +81219,10 @@ return _instance;";
 							- _name = "ESXState:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency ESXState:spec";
-							- m_startRow = 26;
+							- m_startRow = 18;
 							- m_startCol_Short = 1;
-							- m_endRow = 26;
-							- m_endCol_Short = 806;
+							- m_endRow = 18;
+							- m_endCol_Short = 621;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -80958,10 +81232,10 @@ return _instance;";
 							- _name = "ModeSettingAndState:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency ModeSettingAndState:spec";
-							- m_startRow = 28;
+							- m_startRow = 20;
 							- m_startCol_Short = 1;
-							- m_endRow = 28;
-							- m_endCol_Short = 905;
+							- m_endRow = 20;
+							- m_endCol_Short = 718;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -80971,12 +81245,68 @@ return _instance;";
 							- _name = "SimulateAndState:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency SimulateAndState:spec";
+							- m_startRow = 22;
+							- m_startCol_Short = 1;
+							- m_endRow = 22;
+							- m_endCol_Short = 806;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID ebb88554-f44b-445e-8abe-c39b950cc67c;
+							- _name = "Mode1";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 24;
+							- m_startCol_Short = 1;
+							- m_endRow = 24;
+							- m_endCol_Short = 847;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IDependency";
+								- _id = GUID 7826cef6-0906-4ed9-9a61-e77ac9910cdd;
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 54da647d-a881-4d86-87a6-af828c52f79d;
+							- _name = "Ready";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 26;
+							- m_startCol_Short = 1;
+							- m_endRow = 26;
+							- m_endCol_Short = 888;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IDependency";
+								- _id = GUID 168fe396-a67c-4ef9-8f98-0532c6afd3d9;
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 67504d9b-477a-42dd-93d0-2fa52e85104b;
+							- _name = "RealTimeExecution";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 28;
+							- m_startCol_Short = 1;
+							- m_endRow = 28;
+							- m_endCol_Short = 953;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IDependency";
+								- _id = GUID e4d2db59-3587-455b-ae05-4c0ee7bd4fa9;
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID e08ed8b8-5f0d-49b4-940e-1791aedd0c34;
+							- _name = "Suspended";
+							- m_type = specFragment;
+							- m_text = "";
 							- m_startRow = 30;
 							- m_startCol_Short = 1;
 							- m_endRow = 30;
-							- m_endCol_Short = 995;
+							- m_endCol_Short = 1002;
 							- m_subject = { INObjectHandle 
-								- _m2Class = "";
+								- _m2Class = "IDependency";
+								- _id = GUID 56f35651-236b-46ed-be50-97f42ea32f63;
 							}
 						}
 						{ IFileFragment 
@@ -80993,7 +81323,7 @@ return _instance;";
 								- _id = GUID 3b8f7d60-a32f-44f5-9ed5-c5a453363ef8;
 							}
 							- Fragments = { IRPYRawContainer 
-								- size = 18;
+								- size = 19;
 								- value = 
 								{ IFileFragment 
 									- _id = GUID 4b0defac-e94b-44e6-b6a2-486c71c52828;
@@ -81227,7 +81557,7 @@ return _instance;";
 									- m_text = "";
 									- m_startRow = 56;
 									- m_startCol_Short = 48;
-									- m_endRow = 60;
+									- m_endRow = 61;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -81248,7 +81578,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 810cd585-1c1a-4892-a75c-7f62155c0e81;
-													- _value = "62";
+													- _value = "63";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81285,9 +81615,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 62;
+									- m_startRow = 63;
 									- m_startCol_Short = 51;
-									- m_endRow = 66;
+									- m_endRow = 67;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -81308,7 +81638,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 5dfaaa89-aaa2-420f-9418-bd27681a6405;
-													- _value = "68";
+													- _value = "69";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81345,9 +81675,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 68;
+									- m_startRow = 69;
 									- m_startCol_Short = 55;
-									- m_endRow = 72;
+									- m_endRow = 73;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -81368,7 +81698,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID d0eff015-8724-4aa4-9f8a-a3b98168bb22;
-													- _value = "74";
+													- _value = "75";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81405,9 +81735,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 74;
+									- m_startRow = 75;
 									- m_startCol_Short = 52;
-									- m_endRow = 78;
+									- m_endRow = 79;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -81428,7 +81758,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 6f83dc39-bc53-469d-bf0a-35ad4a26c1ba;
-													- _value = "80";
+													- _value = "81";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81465,9 +81795,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 80;
+									- m_startRow = 81;
 									- m_startCol_Short = 50;
-									- m_endRow = 85;
+									- m_endRow = 86;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -81488,7 +81818,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID abeb6bec-93eb-4f68-8abd-cc02b440c6ad;
-													- _value = "87";
+													- _value = "88";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81525,9 +81855,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():impl";
-									- m_startRow = 87;
+									- m_startRow = 88;
 									- m_startCol_Short = 39;
-									- m_endRow = 100;
+									- m_endRow = 97;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -81547,7 +81877,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID c9454e21-4057-4664-a53b-649d36f58843;
-													- _value = "102";
+													- _value = "99";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81584,9 +81914,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 102;
+									- m_startRow = 99;
 									- m_startCol_Short = 75;
-									- m_endRow = 106;
+									- m_endRow = 103;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -81607,7 +81937,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID cea88fb3-8c50-43b0-82de-ee99274b2497;
-													- _value = "108";
+													- _value = "105";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81644,9 +81974,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 108;
+									- m_startRow = 105;
 									- m_startCol_Short = 69;
-									- m_endRow = 112;
+									- m_endRow = 109;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -81667,7 +81997,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID a5e3bb2e-32b9-428b-8c3e-9d72077a361e;
-													- _value = "116";
+													- _value = "111";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81688,7 +82018,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID d679286f-d777-4ce0-8fb8-5df929b019bd;
-													- _value = "63";
+													- _value = "60";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81704,29 +82034,28 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation set_instance(RealTimeLoop *):impl";
-									- m_startRow = 116;
-									- m_startCol_Short = 63;
-									- m_endRow = 118;
+									- m_startRow = 111;
+									- m_startCol_Short = 60;
+									- m_endRow = 113;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID a65289aa-f231-4920-ba4d-c4f37db5f6e2;
-									- _name = "RealTimeLoop";
+									- _id = GUID 37c380cc-af3f-44d7-82c7-fe49a9b0e0f2;
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID 4dccd727-bb00-42f5-ba06-6c3bef69c3c7;
+											- _id = GUID d89d8c9f-d01e-4918-8e26-c0dcf4db9dfb;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID cdb43dde-1ae8-49f5-a52c-cb7d25a43f27;
-													- _value = "120";
+													- _id = GUID 46b39152-2f6a-4416-881d-6bc18380f2e8;
+													- _value = "115";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81740,13 +82069,13 @@ return _instance;";
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID 2d49ae3d-8b2d-417a-aae4-d1369dfb9295;
+											- _id = GUID fef74e80-7ec2-4ba1-a221-7ee089c396e6;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 6b5fb6bb-99de-49d6-83d8-da7784186cbd;
+													- _id = GUID 8efac7c8-0fbb-468b-a6c0-de3402d45eaf;
 													- _value = "30";
 												}
 											}
@@ -81763,9 +82092,9 @@ return _instance;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 120;
+									- m_startRow = 115;
 									- m_startCol_Short = 15;
-									- m_endRow = 127;
+									- m_endRow = 122;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -81786,7 +82115,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID b3af05e0-f5d9-44c0-ab7d-41f1be224758;
-													- _value = "129";
+													- _value = "124";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81823,9 +82152,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation get_instance():impl";
-									- m_startRow = 129;
+									- m_startRow = 124;
 									- m_startCol_Short = 44;
-									- m_endRow = 131;
+									- m_endRow = 126;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -81845,7 +82174,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID db9dcdb4-9b28-45e3-8786-ea33600b0062;
-													- _value = "133";
+													- _value = "128";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81882,9 +82211,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsModeSettingAndState() const:impl";
-									- m_startRow = 133;
+									- m_startRow = 128;
 									- m_startCol_Short = 70;
-									- m_endRow = 135;
+									- m_endRow = 130;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -81904,7 +82233,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 75f1e12b-5808-40cf-bf3d-16f6beadf765;
-													- _value = "137";
+													- _value = "132";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -81941,9 +82270,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsModeSettingAndState(ModeSettingAndState *):impl";
-									- m_startRow = 137;
+									- m_startRow = 132;
 									- m_startCol_Short = 90;
-									- m_endRow = 139;
+									- m_endRow = 134;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -81963,7 +82292,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 076c93fb-974d-40dc-9cb0-2ed5a4f53058;
-													- _value = "141";
+													- _value = "136";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -82000,9 +82329,9 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsSimulateAndState() const:impl";
-									- m_startRow = 141;
+									- m_startRow = 136;
 									- m_startCol_Short = 64;
-									- m_endRow = 143;
+									- m_endRow = 138;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -82022,7 +82351,7 @@ return _instance;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID ad41de38-7cf4-4a5d-8aaa-59ea7531ff6c;
-													- _value = "145";
+													- _value = "140";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -82059,12 +82388,26 @@ return _instance;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsSimulateAndState(SimulateAndState *):impl";
-									- m_startRow = 145;
+									- m_startRow = 140;
 									- m_startCol_Short = 81;
-									- m_endRow = 147;
+									- m_endRow = 142;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID bae0026e-24fe-4a5e-b3ad-fb10a325c8e5;
+									- _name = "_instance";
+									- m_type = implFragment;
+									- m_text = "";
+									- m_startRow = 144;
+									- m_startCol_Short = 38;
+									- m_endRow = 144;
+									- m_endCol_Short = 38;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IAttribute";
+										- _id = GUID b0a5e8f6-c88a-4053-8c36-e1acafbc0af3;
 									}
 								}
 							}
@@ -83574,7 +83917,7 @@ return _instance;";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
 						- _filename = "Continuous.sbs";
-						- _subsystem = "Continuous";
+						- _subsystem = "Application::Continuous";
 						- _class = "";
 						- _name = "M1Strategy";
 						- _id = GUID f30d8da9-7aa0-4d53-9e2d-13c8f25da3ae;
@@ -84848,7 +85191,7 @@ return _instance;";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
 						- _filename = "Continuous.sbs";
-						- _subsystem = "Continuous";
+						- _subsystem = "Application::Continuous";
 						- _class = "";
 						- _name = "M2Strategy";
 						- _id = GUID e413fff9-cc9a-4963-b2c8-90ab52952c78;
@@ -86108,7 +86451,7 @@ return _instance;";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
 						- _filename = "Continuous.sbs";
-						- _subsystem = "Continuous";
+						- _subsystem = "Application::Continuous";
 						- _class = "";
 						- _name = "M3Strategy";
 						- _id = GUID de210b35-80bf-4423-b8b6-7840ff7f46f8;
@@ -112636,9 +112979,6 @@ std::cout << name << std::endl;";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
 			}
-			- Associations = { IRPYRawContainer 
-				- size = 0;
-			}
 			- _classModifier = Unspecified;
 		}
 		{ IClass 
@@ -112912,9 +113252,6 @@ std::cout << name << std::endl;";
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
-			}
-			- Associations = { IRPYRawContainer 
-				- size = 0;
 			}
 			- _classModifier = Unspecified;
 		}
