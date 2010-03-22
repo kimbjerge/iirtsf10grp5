@@ -2,7 +2,80 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 { IComponent 
 	- _id = GUID 7fa57e01-5ba5-4c03-83e7-d8faa73d90ec;
 	- _myState = 8192;
+	- _properties = { IPropertyContainer 
+		- Subjects = { IRPYRawContainer 
+			- size = 1;
+			- value = 
+			{ IPropertySubject 
+				- _Name = "CPP_CG";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 2;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Attribute";
+						- Properties = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IProperty 
+								- _Name = "AccessorGenerate";
+								- _Value = "True";
+								- _Type = Bool;
+							}
+							{ IProperty 
+								- _Name = "MutatorGenerate";
+								- _Value = "Always";
+								- _Type = Enum;
+								- _ExtraTypeInfo = "Smart, Always, Never";
+							}
+						}
+					}
+					{ IPropertyMetaclass 
+						- _Name = "Framework";
+						- Properties = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IProperty 
+								- _Name = "IncludeHeaderFile";
+								- _Value = "No";
+								- _Type = Enum;
+								- _ExtraTypeInfo = "Yes,OnlyOnAnimation,No";
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	- _name = "DefaultComponent";
+	- Dependencies = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IDependency 
+			- _id = GUID b66552cf-6548-484e-8e94-aebf987f107f;
+			- _myState = 2048;
+			- _name = "CodeCentricCpp";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "AppliedProfile";
+					- _id = GUID d2eca2c1-e5a5-4296-9453-29283c4ed8bc;
+				}
+			}
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "IProfile";
+				- _filename = "CodeCentric75Cpp.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "CodeCentricCpp";
+				- _id = GUID 31554408-0e42-4d1b-8dd8-e9137a1c869a;
+			}
+		}
+	}
 	- _lastID = 3;
 	- m_buildType = Executable;
 	- m_libraries = "";
@@ -14,7 +87,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _id = GUID 53944f4a-522e-40c7-9a13-3658c083dea6;
 		- _myState = 73728;
 		- _name = "Files";
-		- m_path = "C:\\Ubuntu_share\\exercise5\\source\\embsysx\\src\\os\\posix";
+		- m_path = "C:\\Ubuntu_share\\exercise5\\rhapsody\\posix";
 		- Elements = { IRPYRawContainer 
 			- size = 2;
 			- value = 
@@ -36,15 +109,658 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 		- Files = { IRPYRawContainer 
-			- size = 0;
+			- size = 8;
+			- value = 
+			{ IFile 
+				- _id = GUID d259fd98-e24c-4c6a-9b34-de5ce34bc214;
+				- _myState = 8192;
+				- _properties = { IPropertyContainer 
+					- Subjects = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IPropertySubject 
+							- _Name = "CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 3;
+										- value = 
+										{ IProperty 
+											- _Name = "AddToMakefile";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "Generate";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "HeaderDirectivePattern";
+											- _Value = "";
+											- _Type = String;
+										}
+									}
+								}
+							}
+						}
+						{ IPropertySubject 
+							- _Name = "CPP_CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "ImplementationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "ImplementationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				- _name = "semaphore";
+				- m_path = "";
+				- m_type = specFile;
+				- Fragments = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			{ IFile 
+				- _id = GUID 36cd3b8a-9b53-417f-bf0e-f308b1259389;
+				- _myState = 8192;
+				- _properties = { IPropertyContainer 
+					- Subjects = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IPropertySubject 
+							- _Name = "CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 3;
+										- value = 
+										{ IProperty 
+											- _Name = "AddToMakefile";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "Generate";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "HeaderDirectivePattern";
+											- _Value = "";
+											- _Type = String;
+										}
+									}
+								}
+							}
+						}
+						{ IPropertySubject 
+							- _Name = "CPP_CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "ImplementationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "ImplementationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				- _name = "pthread";
+				- m_path = "";
+				- m_type = specFile;
+				- Fragments = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			{ IFile 
+				- _id = GUID 5c716c3d-93ed-4fc0-b971-443597b4e38d;
+				- _myState = 8192;
+				- _properties = { IPropertyContainer 
+					- Subjects = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IPropertySubject 
+							- _Name = "CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 3;
+										- value = 
+										{ IProperty 
+											- _Name = "AddToMakefile";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "Generate";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "HeaderDirectivePattern";
+											- _Value = "";
+											- _Type = String;
+										}
+									}
+								}
+							}
+						}
+						{ IPropertySubject 
+							- _Name = "CPP_CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "ImplementationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "ImplementationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				- _name = "stdlib";
+				- m_path = "";
+				- m_type = specFile;
+				- Fragments = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			{ IFile 
+				- _id = GUID 36e1ab08-3761-48d9-8324-603a569d05db;
+				- _myState = 8192;
+				- _properties = { IPropertyContainer 
+					- Subjects = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IPropertySubject 
+							- _Name = "CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 3;
+										- value = 
+										{ IProperty 
+											- _Name = "AddToMakefile";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "Generate";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "HeaderDirectivePattern";
+											- _Value = "";
+											- _Type = String;
+										}
+									}
+								}
+							}
+						}
+						{ IPropertySubject 
+							- _Name = "CPP_CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "ImplementationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "ImplementationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				- _name = "unistd";
+				- m_path = "";
+				- m_type = specFile;
+				- Fragments = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			{ IFile 
+				- _id = GUID 17b535a5-8ef8-412a-bd22-f870328de0c8;
+				- _myState = 8192;
+				- _properties = { IPropertyContainer 
+					- Subjects = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IPropertySubject 
+							- _Name = "CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "AddToMakefile";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "Generate";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "HeaderDirectivePattern";
+											- _Value = "";
+											- _Type = String;
+										}
+										{ IProperty 
+											- _Name = "SpecExtension";
+											- _Value = " ";
+											- _Type = String;
+										}
+									}
+								}
+							}
+						}
+						{ IPropertySubject 
+							- _Name = "CPP_CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "ImplementationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "ImplementationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				- _name = "iostream";
+				- m_path = "";
+				- m_type = specFile;
+				- Fragments = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			{ IFile 
+				- _id = GUID c9aa1da8-6adc-40cc-a5f6-f6022c4d2a2a;
+				- _myState = 8192;
+				- _properties = { IPropertyContainer 
+					- Subjects = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IPropertySubject 
+							- _Name = "CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 3;
+										- value = 
+										{ IProperty 
+											- _Name = "AddToMakefile";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "Generate";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "HeaderDirectivePattern";
+											- _Value = "";
+											- _Type = String;
+										}
+									}
+								}
+							}
+						}
+						{ IPropertySubject 
+							- _Name = "CPP_CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "ImplementationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "ImplementationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				- _name = "stdio";
+				- m_path = "";
+				- m_type = specFile;
+				- Fragments = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			{ IFile 
+				- _id = GUID 1a4122aa-77e2-47f3-97b5-ecdbf4e50a8a;
+				- _myState = 8192;
+				- _properties = { IPropertyContainer 
+					- Subjects = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IPropertySubject 
+							- _Name = "CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 3;
+										- value = 
+										{ IProperty 
+											- _Name = "AddToMakefile";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "Generate";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "HeaderDirectivePattern";
+											- _Value = "";
+											- _Type = String;
+										}
+									}
+								}
+							}
+						}
+						{ IPropertySubject 
+							- _Name = "CPP_CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "ImplementationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "ImplementationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				- _name = "string";
+				- m_path = "";
+				- m_type = specFile;
+				- Fragments = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			{ IFile 
+				- _id = GUID bd10df46-9f01-49ed-ac1e-d5c5f0efa581;
+				- _myState = 8192;
+				- _properties = { IPropertyContainer 
+					- Subjects = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IPropertySubject 
+							- _Name = "CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "AddToMakefile";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "Generate";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "HeaderDirectivePattern";
+											- _Value = "";
+											- _Type = String;
+										}
+										{ IProperty 
+											- _Name = "SpecExtension";
+											- _Value = " ";
+											- _Type = String;
+										}
+									}
+								}
+							}
+						}
+						{ IPropertySubject 
+							- _Name = "CPP_CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "ImplementationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "ImplementationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				- _name = "algorithm";
+				- m_path = "";
+				- m_type = specFile;
+				- Fragments = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
 		}
 	}
 	- m_configActive = { ICodeGenConfigInfoHandle 
 		- _m2Class = "ICodeGenConfigInfo";
-		- _id = GUID 32bd85d6-f1d7-4f8f-b439-82ddb9ab1bb7;
+		- _id = GUID 771b99dd-1c0e-4dad-bbb7-2c6f8714b9b4;
 	}
 	- Configs = { IRPYRawContainer 
-		- size = 4;
+		- size = 1;
 		- value = 
 		{ ICodeGenConfigInfo 
 			- _id = GUID 771b99dd-1c0e-4dad-bbb7-2c6f8714b9b4;
@@ -133,7 +849,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				{ IHandle 
 					- _m2Class = "IClass";
 					- _filename = "Discrete.sbs";
-					- _subsystem = "Application::Discrete";
+					- _subsystem = "Discrete";
 					- _class = "";
 					- _name = "TestUser";
 					- _id = GUID 3f8c7504-c376-4af2-9f3f-41063de76b8d;
@@ -151,504 +867,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- size = 0;
 				}
 			}
-			- weakCGTime = 2.13.2010::13:11:34;
+			- weakCGTime = 3.22.2010::12:18:46;
 			- strongCGTime = 2.13.2010::13:11:34;
-			- AnimScopeElements = { IRPYRawContainer 
-				- size = 0;
-			}
-			- m_allInAnimScope = 1;
-		}
-		{ ICodeGenConfigInfo 
-			- _id = GUID d5ea84dc-9fba-436f-9b8d-ef4ff9b10445;
-			- _myState = 8192;
-			- _properties = { IPropertyContainer 
-				- Subjects = { IRPYRawContainer 
-					- size = 1;
-					- value = 
-					{ IPropertySubject 
-						- _Name = "CPP_CG";
-						- Metaclasses = { IRPYRawContainer 
-							- size = 1;
-							- value = 
-							{ IPropertyMetaclass 
-								- _Name = "Configuration";
-								- Properties = { IRPYRawContainer 
-									- size = 2;
-									- value = 
-									{ IProperty 
-										- _Name = "ContainerSet";
-										- _Value = "STLContainers";
-										- _Type = Enum;
-										- _ExtraTypeInfo = "OMContainers, STLContainers, OMUContainers";
-									}
-									{ IProperty 
-										- _Name = "Environment";
-										- _Value = "Linux";
-										- _Type = Enum;
-										- _ExtraTypeInfo = "Microsoft,MicrosoftDLL,MSVC9,MSVC9DLL,VxWorks,VxWorks6diab,VxWorks6gnu,VxWorks6diab_RTP,VxWorks6gnu_RTP,Solaris2,Cygwin,MultiWin32,Multi4Win32,MSStandardLibrary,MSVC9StandardLibrary,MicrosoftWinCE600,OseSfk,Linux,Solaris2GNU,QNXNeutrinoGCC, QNXNeutrinoMomentics,INTEGRITY,INTEGRITY5,IntegrityESTL,Integrity5ESTL,NucleusPLUS-PPC,WorkbenchManaged,WorkbenchManaged_RTP";
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			- _name = "LinuxSource";
-			- HyperLinks = { IRPYRawContainer 
-				- size = 2;
-				- value = 
-				{ IMHyperLink 
-					- _id = GUID dd85fcdc-6c9d-4072-977b-1f8018250c65;
-					- _dependsOn = { INObjectHandle 
-						- _m2Class = "";
-					}
-					- _linkDispName = "Edit Makefile";
-					- _linkType = "FREE";
-					- _linkTarget = "C:\\IHA\\TI-IRTS\\Exercise\\embsysx\\DefaultComponent\\configuration_0\\DefaultComponent.mak";
-					- isConfigurationFileHyperLink = 1;
-				}
-				{ IMHyperLink 
-					- _id = GUID 26866773-b7ac-49a7-9b53-e8e9b65dd3a0;
-					- _dependsOn = { INObjectHandle 
-						- _m2Class = "";
-					}
-					- _linkDispName = "Edit Main File";
-					- _linkType = "FREE";
-					- _linkTarget = "C:\\IHA\\TI-IRTS\\Exercise\\embsysx\\DefaultComponent\\configuration_0\\MainDefaultComponent";
-					- isConfigurationFileHyperLink = 1;
-				}
-			}
-			- _scopeType = Explicit;
-			- _libraries = "";
-			- _additionalSources = "";
-			- _standardHeaders = "";
-			- _includePath = "";
-			- _targetMain = "";
-			- _instrumentation = None;
-			- _timeModel = RealTime;
-			- m_generateActors = 1;
-			- _statechartImplementation = Flat;
-			- _initializationCode = "";
-			- _checksList = 0 ;
-			- ScopeElements = { IRPYRawContainer 
-				- size = 0;
-			}
-			- InitialInstances = { IRPYRawContainer 
-				- size = 1;
-				- value = 
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Discrete.sbs";
-					- _subsystem = "Application::Discrete";
-					- _class = "";
-					- _name = "TestUser";
-					- _id = GUID 3f8c7504-c376-4af2-9f3f-41063de76b8d;
-				}
-			}
-			- _root = { IFolder 
-				- _id = GUID f79cfb19-8c21-43d9-9e55-a8835834a909;
-				- _myState = 73728;
-				- _name = "LinuxSource";
-				- m_path = "C:\\Ubuntu_share\\exercise4\\source\\embsysx\\src\\rpy";
-				- Elements = { IRPYRawContainer 
-					- size = 0;
-				}
-				- Files = { IRPYRawContainer 
-					- size = 0;
-				}
-			}
-			- weakCGTime = 3.15.2010::13:33:52;
-			- strongCGTime = 3.15.2010::13:33:52;
-			- AnimScopeElements = { IRPYRawContainer 
-				- size = 0;
-			}
-			- m_allInAnimScope = 1;
-		}
-		{ ICodeGenConfigInfo 
-			- _id = GUID 32bd85d6-f1d7-4f8f-b439-82ddb9ab1bb7;
-			- _myState = 8192;
-			- _properties = { IPropertyContainer 
-				- Subjects = { IRPYRawContainer 
-					- size = 3;
-					- value = 
-					{ IPropertySubject 
-						- _Name = "CPP_CG";
-						- Metaclasses = { IRPYRawContainer 
-							- size = 2;
-							- value = 
-							{ IPropertyMetaclass 
-								- _Name = "Attribute";
-								- Properties = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IProperty 
-										- _Name = "AccessorGenerate";
-										- _Value = "False";
-										- _Type = Bool;
-									}
-								}
-							}
-							{ IPropertyMetaclass 
-								- _Name = "Configuration";
-								- Properties = { IRPYRawContainer 
-									- size = 4;
-									- value = 
-									{ IProperty 
-										- _Name = "ContainerSet";
-										- _Value = "STLContainers";
-										- _Type = Enum;
-										- _ExtraTypeInfo = "OMContainers, STLContainers, OMUContainers";
-									}
-									{ IProperty 
-										- _Name = "DefaultImplementationDirectory";
-										- _Value = "";
-										- _Type = String;
-									}
-									{ IProperty 
-										- _Name = "DefaultSpecificationDirectory";
-										- _Value = "";
-										- _Type = String;
-									}
-									{ IProperty 
-										- _Name = "Environment";
-										- _Value = "Cygwin";
-										- _Type = Enum;
-										- _ExtraTypeInfo = "Microsoft,MicrosoftDLL,MSVC9,MSVC9DLL,VxWorks,VxWorks6diab,VxWorks6gnu,VxWorks6diab_RTP,VxWorks6gnu_RTP,Solaris2,Cygwin,MultiWin32,Multi4Win32,MSStandardLibrary,MSVC9StandardLibrary,MicrosoftWinCE600,OseSfk,Linux,Solaris2GNU,QNXNeutrinoGCC, QNXNeutrinoMomentics,INTEGRITY,INTEGRITY5,IntegrityESTL,Integrity5ESTL,NucleusPLUS-PPC,WorkbenchManaged,WorkbenchManaged_RTP";
-									}
-								}
-							}
-						}
-					}
-					{ IPropertySubject 
-						- _Name = "CPP_ReverseEngineering";
-						- Metaclasses = { IRPYRawContainer 
-							- size = 3;
-							- value = 
-							{ IPropertyMetaclass 
-								- _Name = "Filtering";
-								- Properties = { IRPYRawContainer 
-									- size = 4;
-									- value = 
-									{ IProperty 
-										- _Name = "CreateReferenceClasses";
-										- _Value = "True";
-										- _Type = Bool;
-									}
-									{ IProperty 
-										- _Name = "IncludeInheritanceInReference";
-										- _Value = "False";
-										- _Type = Bool;
-									}
-									{ IProperty 
-										- _Name = "ReferenceClasses";
-										- _Value = "";
-										- _Type = String;
-									}
-									{ IProperty 
-										- _Name = "ReferenceDirectories";
-										- _Value = "";
-										- _Type = String;
-									}
-								}
-							}
-							{ IPropertyMetaclass 
-								- _Name = "ImplementationTrait";
-								- Properties = { IRPYRawContainer 
-									- size = 8;
-									- value = 
-									{ IProperty 
-										- _Name = "AnalyzeIncludeFiles";
-										- _Value = "OnlyFromSelected";
-										- _Type = Enum;
-										- _ExtraTypeInfo = "IgnoreIncludes, OnlyLogicalHeader, OnlyFromSelected, AllIncludes";
-									}
-									{ IProperty 
-										- _Name = "ImportAsExternal";
-										- _Value = "False";
-										- _Type = Bool;
-									}
-									{ IProperty 
-										- _Name = "MapToPackage";
-										- _Value = "User";
-										- _Type = Enum;
-										- _ExtraTypeInfo = "User,Directory";
-									}
-									{ IProperty 
-										- _Name = "ModelStyle";
-										- _Value = "ObjectBased";
-										- _Type = Enum;
-										- _ExtraTypeInfo = "Functional, ObjectBased";
-									}
-									{ IProperty 
-										- _Name = "ReflectDataMembers";
-										- _Value = "VisibilityAndHelpers";
-										- _Type = Enum;
-										- _ExtraTypeInfo = "None, VisibilityOnly, VisibilityAndHelpers";
-									}
-									{ IProperty 
-										- _Name = "RootDirectory";
-										- _Value = "C:\\Ubuntu_share\\exercise5\\source\\embsysx\\src\\os";
-										- _Type = String;
-									}
-									{ IProperty 
-										- _Name = "UserDataTypes";
-										- _Value = "";
-										- _Type = String;
-									}
-									{ IProperty 
-										- _Name = "UserPackage";
-										- _Value = "OSLinux";
-										- _Type = String;
-									}
-								}
-							}
-							{ IPropertyMetaclass 
-								- _Name = "Parser";
-								- Properties = { IRPYRawContainer 
-									- size = 5;
-									- value = 
-									{ IProperty 
-										- _Name = "AdditionalKeywords";
-										- _Value = "far,near";
-										- _Type = String;
-									}
-									{ IProperty 
-										- _Name = "Defined";
-										- _Value = "";
-										- _Type = String;
-									}
-									{ IProperty 
-										- _Name = "ForceExpansionMacros";
-										- _Value = "";
-										- _Type = String;
-									}
-									{ IProperty 
-										- _Name = "IncludePath";
-										- _Value = "C:\\Ubuntu_share\\exercise4\\source\\semaphore\\src,C:\\Ubuntu_share\\exercise4\\source\\mailbox\\src,C:\\Ubuntu_share\\exercise5\\source\\embsysx\\src\\os\\posix";
-										- _Type = String;
-									}
-									{ IProperty 
-										- _Name = "Undefined";
-										- _Value = "";
-										- _Type = String;
-									}
-								}
-							}
-						}
-					}
-					{ IPropertySubject 
-						- _Name = "ReverseEngineering";
-						- Metaclasses = { IRPYRawContainer 
-							- size = 3;
-							- value = 
-							{ IPropertyMetaclass 
-								- _Name = "Main";
-								- Properties = { IRPYRawContainer 
-									- size = 2;
-									- value = 
-									{ IProperty 
-										- _Name = "Files";
-										- _Value = "C:\\Ubuntu_share\\exercise5\\source\\embsysx\\src\\os\\posix\\";
-										- _Type = String;
-									}
-									{ IProperty 
-										- _Name = "UseTreeViewByDefault";
-										- _Value = "True";
-										- _Type = Bool;
-									}
-								}
-							}
-							{ IPropertyMetaclass 
-								- _Name = "Progress";
-								- Properties = { IRPYRawContainer 
-									- size = 2;
-									- value = 
-									{ IProperty 
-										- _Name = "ModelUpdatingFailed";
-										- _Value = "Report";
-										- _Type = Enum;
-										- _ExtraTypeInfo = "Ignore,Report,Abort";
-									}
-									{ IProperty 
-										- _Name = "ParsingError";
-										- _Value = "Report";
-										- _Type = Enum;
-										- _ExtraTypeInfo = "Ignore,Report,Abort";
-									}
-								}
-							}
-							{ IPropertyMetaclass 
-								- _Name = "Update";
-								- Properties = { IRPYRawContainer 
-									- size = 2;
-									- value = 
-									{ IProperty 
-										- _Name = "CreateObjectModelDiagrams";
-										- _Value = "True";
-										- _Type = Bool;
-									}
-									{ IProperty 
-										- _Name = "Policy";
-										- _Value = "Overwrite";
-										- _Type = Enum;
-										- _ExtraTypeInfo = "Overwrite,Merge";
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			- _name = "CygwinConfig";
-			- HyperLinks = { IRPYRawContainer 
-				- size = 2;
-				- value = 
-				{ IMHyperLink 
-					- _id = GUID 8d0a9932-cc2c-4bd7-a711-e8adf3b44e7c;
-					- _dependsOn = { INObjectHandle 
-						- _m2Class = "";
-					}
-					- _linkDispName = "Edit Makefile";
-					- _linkType = "FREE";
-					- _linkTarget = "C:\\Projects\\TIIRTS\\embsysx\\rhapsody\\DefaultComponent\\configuration_1\\DefaultComponent.mak";
-					- isConfigurationFileHyperLink = 1;
-				}
-				{ IMHyperLink 
-					- _id = GUID c6bb90a5-5126-489d-a0d6-2763da8aae6a;
-					- _dependsOn = { INObjectHandle 
-						- _m2Class = "";
-					}
-					- _linkDispName = "Edit Main File";
-					- _linkType = "FREE";
-					- _linkTarget = "C:\\Projects\\TIIRTS\\embsysx\\rhapsody\\DefaultComponent\\configuration_1\\MainDefaultComponent";
-					- isConfigurationFileHyperLink = 1;
-				}
-			}
-			- EmbededFiles = { IRPYRawContainer 
-				- size = 1;
-				- value = 
-				{ IEmbededFile 
-					- _id = GUID f8bbf925-f9e8-4a35-b475-a3ec0d48e575;
-					- _name = "CollectedMacros.h";
-					- _MayNeedToRelocate = 0;
-					- _LastKnownFullPath = "C:\\Ubuntu_share\\exercise5\\rhap\\embsysx_rpy\\CollectedMacros.h";
-				}
-			}
-			- _scopeType = Explicit;
-			- _libraries = "";
-			- _additionalSources = "";
-			- _standardHeaders = "";
-			- _includePath = "";
-			- _targetMain = "";
-			- _instrumentation = Animation;
-			- _timeModel = RealTime;
-			- m_generateActors = 0;
-			- _statechartImplementation = Flat;
-			- _initializationCode = "";
-			- _checksList = 0 ;
-			- ScopeElements = { IRPYRawContainer 
-				- size = 0;
-			}
-			- InitialInstances = { IRPYRawContainer 
-				- size = 1;
-				- value = 
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Discrete.sbs";
-					- _subsystem = "Application::Discrete";
-					- _class = "";
-					- _name = "Tester";
-					- _id = GUID 2609214b-03a5-4d38-b6c4-1013596be70b;
-				}
-			}
-			- _root = { IFolder 
-				- _id = GUID a9d4325d-c851-4010-8178-2f2a7a56a305;
-				- _myState = 73728;
-				- _name = "CygwinConfig";
-				- m_path = "C:\\Ubuntu_share\\exercise5\\rhapsody\\Cygwin";
-				- Elements = { IRPYRawContainer 
-					- size = 0;
-				}
-				- Files = { IRPYRawContainer 
-					- size = 0;
-				}
-			}
-			- weakCGTime = 3.20.2010::12:9:27;
-			- strongCGTime = 3.20.2010::12:9:27;
-			- AnimScopeElements = { IRPYRawContainer 
-				- size = 0;
-			}
-			- m_allInAnimScope = 1;
-		}
-		{ ICodeGenConfigInfo 
-			- _id = GUID 8d97dc1a-4072-4f41-8960-222f67194f9d;
-			- _myState = 8192;
-			- _name = "CygwinStateChart";
-			- HyperLinks = { IRPYRawContainer 
-				- size = 2;
-				- value = 
-				{ IMHyperLink 
-					- _id = GUID 0b301902-b4fb-4b9d-82c3-edfbc0f06aa9;
-					- _dependsOn = { INObjectHandle 
-						- _m2Class = "";
-					}
-					- _linkDispName = "Edit Makefile";
-					- _linkType = "FREE";
-					- _linkTarget = "C:/Ubuntu_share/exercise5/source/embsysx/src/os/posix/configuration_2/DefaultComponent.mak";
-					- isConfigurationFileHyperLink = 1;
-				}
-				{ IMHyperLink 
-					- _id = GUID af9d5f5d-136b-4615-977b-065a776a32bd;
-					- _dependsOn = { INObjectHandle 
-						- _m2Class = "";
-					}
-					- _linkDispName = "Edit Main File";
-					- _linkType = "FREE";
-					- _linkTarget = "C:\\Ubuntu_share\\exercise5\\source\\embsysx\\src\\os\\posix/configuration_2/MainDefaultComponent";
-					- isConfigurationFileHyperLink = 1;
-				}
-			}
-			- _scopeType = Explicit;
-			- _libraries = "";
-			- _additionalSources = "";
-			- _standardHeaders = "";
-			- _includePath = "";
-			- _targetMain = "";
-			- _instrumentation = None;
-			- _timeModel = RealTime;
-			- m_generateActors = 0;
-			- _statechartImplementation = Reuseable;
-			- _initializationCode = "";
-			- _checksList = 0 ;
-			- ScopeElements = { IRPYRawContainer 
-				- size = 0;
-			}
-			- InitialInstances = { IRPYRawContainer 
-				- size = 1;
-				- value = 
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Discrete.sbs";
-					- _subsystem = "Application::Discrete";
-					- _class = "";
-					- _name = "Tester";
-					- _id = GUID 2609214b-03a5-4d38-b6c4-1013596be70b;
-				}
-			}
-			- _root = { IFolder 
-				- _id = GUID 653e3800-577f-43d3-9eca-126858a60a21;
-				- _myState = 73728;
-				- _name = "CygwinStateChart";
-				- m_path = "C:\\Ubuntu_share\\exercise5\\rhapsody\\CygwinStateChart";
-				- Elements = { IRPYRawContainer 
-					- size = 0;
-				}
-				- Files = { IRPYRawContainer 
-					- size = 0;
-				}
-			}
-			- weakCGTime = 3.20.2010::9:27:46;
-			- strongCGTime = 3.20.2010::9:27:46;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
@@ -661,7 +881,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 3.20.2010::12:9:27;
-	- strongCGTime = 3.20.2010::8:56:55;
+	- weakCGTime = 3.22.2010::14:23:7;
+	- strongCGTime = 3.22.2010::13:28:56;
 }
 

@@ -25,7 +25,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _filename = "";
 		- _subsystem = "";
 		- _class = "";
-		- _name = "FiveLayeredArchitectureView";
+		- _name = "SystemFiveLayeredArchitectureView";
 		- _id = GUID 57558d18-7041-4fd2-bb90-000561c3e719;
 	}
 	- _lastID = 1;
@@ -40,8 +40,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 8dfe3ca1-8235-4eb0-a0e1-20cf01668955;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 3.20.2010::7:6:20;
-			- strongCGTime = 3.20.2010::7:6:20;
+			- weakCGTime = 3.20.2010::9:35:10;
+			- strongCGTime = 3.20.2010::7:43:41;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
