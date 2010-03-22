@@ -89,7 +89,7 @@ template <class Item> bool Mailbox<Item>::put(Item n)
 // Mailbox template get Item
 template <class Item> Item Mailbox<Item>::get(void)
 {
-	Item item = 0;
+	Item item;
 	bool succeded = false;
 
 	while (!succeded)

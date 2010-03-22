@@ -27,6 +27,9 @@
 //## auto_generated
 #include "Continuous.h"
 //## dependency Event
+
+#include "../os/posix/Thread.h"
+#include "../os/posix/Mailbox.h"
 class Event;
 
 //## operation setStrategy(EventStrategy*)
@@ -35,7 +38,7 @@ class EventStrategy;
 //## package Continuous
 
 //## class RealTimeThread
-class RealTimeThread {
+class RealTimeThread : public Thread {
     ////    Friends    ////
     
     ////    Constructors and destructors    ////
@@ -77,9 +80,9 @@ public :
     
     //## operation getMailbox()
     void * getMailbox();
+private :
+    Mailbox<Event>* mailBox;
     
-    //## operation start()
-    void start();
 };
 
 #endif

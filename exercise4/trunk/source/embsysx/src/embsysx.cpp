@@ -27,11 +27,14 @@
 #include "ConfigX.h"
 #include "EventX.h"
 #include "EventY.h"
+#include "Event.h"
 #include "SelfTestOk.h"
 #include "TestCase.h"
 #include "Test1.h"
 #include "Test2.h"
 #include "Test3.h"
+#include "TestThread.h"
+#include "os/posix/Mailbox.h"
 
 void TestEx2 (void) {
 
@@ -53,6 +56,12 @@ void TestEx2 (void) {
 	EmbeddedSystemX* itsEmbeddedSystemX = new EmbeddedSystemX();
 
 	// Performing test scenario
+
+//	Mailbox<Event>* mailBox = (Mailbox<Event>*) itsEmbeddedSystemX->getItsRealTimeThread()->getMailbox();
+
+//	TestThread test = new TestThread()
+
+//	TestThread testThread = new TestThread((Mailbox<Event>*) itsEmbeddedSystemX->getItsRealTimeThread()->getMailbox());
 
 	char * temp = new char[3];
 
@@ -122,6 +131,6 @@ void TestEx4 (void) {
 
 int main() {
 
-	TestEx4();
+	TestEx2();
     return 0;
 }

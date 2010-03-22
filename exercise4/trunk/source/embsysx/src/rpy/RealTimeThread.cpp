@@ -17,8 +17,9 @@
 //## package Continuous
 
 //## class RealTimeThread
-RealTimeThread::RealTimeThread() {
+RealTimeThread::RealTimeThread() : Thread(PRIORITY_NORMAL,"RealTimeThread") {
     itsEventStrategy = NULL;
+    mailBox = new Mailbox<Event>(100,true);
 }
 
 RealTimeThread::~RealTimeThread() {
@@ -47,19 +48,18 @@ void RealTimeThread::cleanUpRelations() {
 }
 
 void RealTimeThread::run() {
-    //#[ operation run()
-    //#]
+
+	while(true){
+		Event tmpEvent = mailBox->get();
+		tmpEvent.Execute(itsEventStrategy);
+	}
+
 }
 
 void * RealTimeThread::getMailbox() {
-    //#[ operation getMailbox()
-    //#]
-}
 
-void RealTimeThread::start() {
-    //#[ operation start()
-    std::cout << "RealTimeThread start" << std::endl;
-    //#]
+	return mailBox;
+
 }
 
 /*********************************************************************

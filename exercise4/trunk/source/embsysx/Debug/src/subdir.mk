@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/TestThread.cpp \
 ../src/embsysx.cpp 
 
 OBJS += \
+./src/TestThread.o \
 ./src/embsysx.o 
 
 CPP_DEPS += \
+./src/TestThread.d \
 ./src/embsysx.d 
 
 
