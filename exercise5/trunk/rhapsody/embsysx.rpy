@@ -43,11 +43,11 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	}
 	- _component = { IHandle 
 		- _m2Class = "IComponent";
-		- _filename = "Target.cmp";
+		- _filename = "Component.cmp";
 		- _subsystem = "";
 		- _class = "";
-		- _name = "Target";
-		- _id = GUID 5cbebbee-ff95-4a53-90c9-23133babe318;
+		- _name = "Component";
+		- _id = GUID c8c76e36-2ee2-4fa3-9cfc-5289e09150e5;
 	}
 	- Multiplicities = { IRPYRawContainer 
 		- size = 4;
@@ -1699,7 +1699,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ApplicationTwoLayeredArchitectureView";
-			- _lastModifiedTime = "3.22.2010::21:28:16";
+			- _lastModifiedTime = "3.24.2010::22:5:18";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 71b1f49a-387d-4210-8aef-f08f37e151e0;
 				- m_type = 0;
@@ -3229,7 +3229,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "TestEx1_2Model";
-			- _lastModifiedTime = "3.22.2010::21:28:16";
+			- _lastModifiedTime = "3.24.2010::22:5:18";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 1f6d62cb-d921-4db4-a8f8-6e099b1f1645;
 				- m_type = 0;
@@ -3607,6 +3607,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID bf038c11-5336-45b2-b90b-68033de5c7be;
 			}
 		}
+	}
+	- MSCS = { IRPYRawContainer 
+		- size = 0;
 	}
 	- Components = { IRPYRawContainer 
 		- size = 3;
