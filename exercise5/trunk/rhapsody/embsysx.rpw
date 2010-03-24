@@ -9,6 +9,34 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 132;
+				- m_nTop = 132;
+				- m_nRight = 1202;
+				- m_nBottom = 536;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "ActiveThreads";
+				- _id = GUID ded8f6f0-b1e3-4acf-8085-7969e3d8a0e5;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1226 560 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
 				- m_nFlags = 0;
 				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
@@ -33,34 +61,6 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 			- _DownRight = 998 408 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 4;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -23;
-				- m_nLeft = 132;
-				- m_nTop = 132;
-				- m_nRight = 1202;
-				- m_nBottom = 536;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IDiagram";
-				- _filename = "Discrete.sbs";
-				- _subsystem = "Application::Discrete";
-				- _class = "";
-				- _name = "ActiveThreads";
-				- _id = GUID ded8f6f0-b1e3-4acf-8085-7969e3d8a0e5;
-			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1042 357 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 0;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -261,8 +261,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -282,7 +282,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _id = GUID 5f9c53fe-9437-414b-9689-5f92e4cbe310;
 			}
 			- _UpLeft = 58 10 ;
-			- _DownRight = 965 424 ;
+			- _DownRight = 606 246 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 2;
 		}

@@ -43,11 +43,11 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	}
 	- _component = { IHandle 
 		- _m2Class = "IComponent";
-		- _filename = "Component.cmp";
+		- _filename = "Target.cmp";
 		- _subsystem = "";
 		- _class = "";
-		- _name = "Component";
-		- _id = GUID c8c76e36-2ee2-4fa3-9cfc-5289e09150e5;
+		- _name = "Target";
+		- _id = GUID 5cbebbee-ff95-4a53-90c9-23133babe318;
 	}
 	- Multiplicities = { IRPYRawContainer 
 		- size = 4;

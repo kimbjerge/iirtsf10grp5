@@ -849,7 +849,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				{ IHandle 
 					- _m2Class = "IClass";
 					- _filename = "Discrete.sbs";
-					- _subsystem = "Discrete";
+					- _subsystem = "Application::Discrete";
 					- _class = "";
 					- _name = "TestUser";
 					- _id = GUID 3f8c7504-c376-4af2-9f3f-41063de76b8d;
