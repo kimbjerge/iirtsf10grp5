@@ -11,7 +11,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _name = "SystemFiveLayeredArchitectureView";
 		- _id = GUID 57558d18-7041-4fd2-bb90-000561c3e719;
 	}
-	- _lastID = 8;
+	- _lastID = 9;
 	- Declaratives = { IRPYRawContainer 
 		- size = 1;
 		- value = 
@@ -79,7 +79,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "OS Abstraction";
-			- _lastModifiedTime = "3.22.2010::21:38:21";
+			- _lastModifiedTime = "3.26.2010::18:36:35";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 0f6ae559-1ba8-4825-89ae-9b6ab248e5bf;
 				- m_type = 0;
@@ -223,7 +223,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 7;
+						- size = 8;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -252,6 +252,10 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _id = GUID 036d0a69-bcad-414e-96b5-7f3052d47717;
+						}
+						{ IHandle 
+							- _m2Class = "IConstructor";
+							- _id = GUID 54a719b7-081e-42e4-961d-c7bd8ca8b657;
 						}
 					}
 				}
@@ -645,7 +649,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 3.22.2010::21:38:21;
+	- weakCGTime = 3.26.2010::17:55:38;
 	- strongCGTime = 3.20.2010::7:43:41;
 	- _defaultComposite = GUID fc513e39-edfa-44ff-8922-f38f41b2bcdb;
 	- _eventsBaseID = -1;
@@ -698,10 +702,10 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID 2a7de03f-373f-4c19-8411-305f9f05a8ae;
 			}
 			- _lastID = 3;
-			- weakCGTime = 3.22.2010::20:48:41;
+			- weakCGTime = 3.26.2010::17:57:23;
 			- strongCGTime = 3.22.2010::11:27:6;
 			- Operations = { IRPYRawContainer 
-				- size = 7;
+				- size = 8;
 				- value = 
 				{ IPrimitiveOperation 
 					- _id = GUID fb408e2e-73ee-40ce-b62b-3dcd0fd16f37;
@@ -890,6 +894,49 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _itsBody = { IBody 
 						- _bodyData = "";
 					}
+				}
+				{ IConstructor 
+					- _id = GUID 54a719b7-081e-42e4-961d-c7bd8ca8b657;
+					- _myState = 8192;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IArgument 
+							- _id = GUID 357232d5-42bf-4a17-8656-6fa7ed76e25f;
+							- _name = "priority";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _id = GUID a2a62f34-d476-4b89-9366-e290499653c6;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 1efa0b93-c1fa-4502-9d7d-ec24c6771c0b;
+							- _name = "name";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypesC++.sbs";
+								- _subsystem = "PredefinedTypesCpp";
+								- _class = "";
+								- _name = "char*";
+								- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = In;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _initializer = "";
 				}
 			}
 			- _multiplicity = "";
@@ -1495,6 +1542,45 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _m2Class = "";
 			}
 			- _classModifier = Unspecified;
+		}
+	}
+	- Types = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IType 
+			- _id = GUID a2a62f34-d476-4b89-9366-e290499653c6;
+			- _myState = 8192;
+			- _name = "ThreadPriority";
+			- Literals = { IRPYRawContainer 
+				- size = 5;
+				- value = 
+				{ IEnumerationLiteral 
+					- _id = GUID 2be369b2-68b5-4be0-9d81-8fcab3c0b15e;
+					- _name = "PRIORITY_LOW";
+					- _value = "";
+				}
+				{ IEnumerationLiteral 
+					- _id = GUID 65fe9e72-2c2c-4fc2-9e84-a15d7ef169f7;
+					- _name = "PRIORITY_BELOW_NORMAL";
+					- _value = "";
+				}
+				{ IEnumerationLiteral 
+					- _id = GUID 20c8fbbb-ec41-4d39-b65e-210393381ddb;
+					- _name = "PRIORITY_NORMAL";
+					- _value = "";
+				}
+				{ IEnumerationLiteral 
+					- _id = GUID f23691f6-d0b3-4e87-89fc-d053b5d3b3f1;
+					- _name = "PRIORITY_ABOVE_NORMAL";
+					- _value = "";
+				}
+				{ IEnumerationLiteral 
+					- _id = GUID 37383c56-a36a-419e-9f9a-19880c217521;
+					- _name = "PRIORITY_HIGH";
+					- _value = "";
+				}
+			}
+			- _kind = Enumeration;
 		}
 	}
 	- _configurationRelatedTime = 3.22.2010::14:36:19;

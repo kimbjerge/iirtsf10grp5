@@ -80,14 +80,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- value = "Class"; 
 			}
 		}
-		{ ISubsystem 
-			- fileName = "Discrete";
-			- _id = GUID bf038c11-5336-45b2-b90b-68033de5c7be;
-		}
-		{ ISubsystem 
-			- fileName = "Continuous";
-			- _id = GUID feef58f9-5b35-4e28-b74b-ab6e92db495b;
-		}
 		{ IStereotype 
 			- _id = GUID 4e4c91a7-e94d-421e-9359-7ed3037a9d23;
 			- _myState = 8192;
@@ -96,6 +88,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- size = 1;
 				- value = "Class"; 
 			}
+		}
+		{ ISubsystem 
+			- fileName = "Discrete";
+			- _id = GUID bf038c11-5336-45b2-b90b-68033de5c7be;
+		}
+		{ ISubsystem 
+			- fileName = "Continuous";
+			- _id = GUID feef58f9-5b35-4e28-b74b-ab6e92db495b;
 		}
 	}
 	- weakCGTime = 3.24.2010::22:5:43;
