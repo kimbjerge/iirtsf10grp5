@@ -57,8 +57,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "ActiveThreads";
 				- _id = GUID ded8f6f0-b1e3-4acf-8085-7969e3d8a0e5;
 			}
-			- _UpLeft = 0 252 ;
-			- _DownRight = 1272 857 ;
+			- _UpLeft = 0 146 ;
+			- _DownRight = 1272 640 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 4;
 		}
@@ -141,8 +141,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "RealTimeLoopAndState";
 				- _id = GUID 6839209a-dbb9-4300-bc3b-8f68ea8a5d4c;
 			}
-			- _UpLeft = 0 140 ;
-			- _DownRight = 1084 571 ;
+			- _UpLeft = 0 121 ;
+			- _DownRight = 1097 556 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 5;
 		}
@@ -169,8 +169,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "TestModel";
 				- _id = GUID 5c793e7e-eb0e-4a2d-b6bd-fe07a24b41b6;
 			}
-			- _UpLeft = 0 270 ;
-			- _DownRight = 1042 627 ;
+			- _UpLeft = 0 182 ;
+			- _DownRight = 1042 539 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 		}

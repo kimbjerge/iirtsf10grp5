@@ -1,0 +1,67 @@
+/********************************************************************
+	Rhapsody	: 7.5 
+	Login		: KBE
+	Component	: Target 
+	Configuration 	: Linux
+	Model Element	: Failure
+//!	Generated Date	: Fri, 26, Mar 2010  
+	File Path	: C:/Ubuntu_share/exercise5/source/embsysx/src/rpy/Failure.cpp
+*********************************************************************/
+
+//## auto_generated
+#include "Failure.h"
+//## operation Exit(EmbeddedSystemX*)
+#include "EmbeddedSystemX.h"
+//## dependency PowerOnSelfTest
+#include "PowerOnSelfTest.h"
+//## package Application::Discrete
+
+//## class Failure
+ESXState* Failure::_instance = 0;
+
+Failure::Failure() {
+}
+
+Failure::~Failure() {
+}
+
+void Failure::Exit(EmbeddedSystemX* esx) {
+    //#[ operation Exit(EmbeddedSystemX*)
+    exit(1);
+    defaultChange();
+    //#]
+}
+
+ESXState* Failure::Instance() {
+    //#[ operation Instance()
+    if (_instance == 0)
+    {
+    	_instance = new Failure;
+    }
+    return _instance;
+    //#]
+}
+
+void Failure::Restart(EmbeddedSystemX* esx) {
+    //#[ operation Restart(EmbeddedSystemX*)
+    ChangeState(esx, PowerOnSelfTest::Instance());
+    //#]
+}
+
+void Failure::set_instance(ESXState* p__instance) {
+    _instance = p__instance;
+}
+
+void Failure::DisplayState() {
+    //#[ operation DisplayState()
+    Display("Failure");
+    //#]
+}
+
+ESXState* Failure::get_instance() {
+    return _instance;
+}
+
+/*********************************************************************
+	File Path	: C:/Ubuntu_share/exercise5/source/embsysx/src/rpy/Failure.cpp
+*********************************************************************/
