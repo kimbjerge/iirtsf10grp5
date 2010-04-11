@@ -634,6 +634,8 @@
 <option id="gnu.cpp.compiler.exe.debug.option.debugging.level.1506654015" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 <option id="gnu.cpp.compiler.option.include.paths.458895981" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/embsysx/src/rpy}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/embsysx/src/rpyLocal}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/embsysx/src/os/posix}&quot;"/>
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/embsysx/src/rpy/oxf}&quot;"/>
 </option>
 <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.313320318" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -645,6 +647,9 @@
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.1720956827" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug"/>
 <tool command="arm-none-linux-gnueabi-g++" id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1240073312" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
+<option id="gnu.cpp.link.option.libs.2032699489" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+<listOptionValue builtIn="false" value="pthread"/>
+</option>
 <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.564160829" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 <additionalInput kind="additionalinput" paths="$(LIBS)"/>
