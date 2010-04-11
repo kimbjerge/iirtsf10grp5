@@ -1,4 +1,4 @@
-#How to install and cross compile the WFDB library to target
+How to install and cross compile the WFDB library to target
 
 = Introduction =
 
