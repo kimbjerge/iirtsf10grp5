@@ -9,8 +9,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -30,15 +30,15 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _id = GUID a048c0f1-90e3-4261-bf3d-089e2c4fdf01;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 915 571 ;
+			- _DownRight = 764 406 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -57,8 +57,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "PSIMU";
 				- _id = GUID a3a3569c-3c1c-464d-9009-e2614cf7ff4e;
 			}
-			- _UpLeft = 24 20 ;
-			- _DownRight = 712 385 ;
+			- _UpLeft = 0 20 ;
+			- _DownRight = 1032 843 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
 		}
@@ -91,7 +91,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 			- m_nDiagramIndex = 2;
 		}
 	}
-	- _fullName = "C:\\Ubuntu_share\\sapien190\\rhapsody\\UseCaseV3\\Project";
+	- _fullName = "C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\UseCaseV3\\Project";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}
