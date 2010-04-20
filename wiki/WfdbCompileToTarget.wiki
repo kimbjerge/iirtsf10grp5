@@ -25,8 +25,7 @@ Edit the Makefile in the lib directory of wfdb
 
 See copy of wfdb-lib-arm.tar.z in Downloads 
 
-- contains library files and modified Makefile 
-  ready for crosscompilation
+- contains library files and modified Makefile ready for cross compile
 
 1. Change the install directory of wfdb to:
 
