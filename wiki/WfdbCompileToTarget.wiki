@@ -23,6 +23,11 @@ http://www.physionet.org/physiotools/wfdb.shtml#downloading
 
 Edit the Makefile in the lib directory of wfdb
 
+See copy of wfdb-lib-arm.tar.z in Downloads 
+
+- contains library files and modified Makefile 
+  ready for crosscompilation
+
 1. Change the install directory of wfdb to:
 
 /home/stud/wfdb-arm
