@@ -12,7 +12,7 @@ Peter:
 
 Anders:
 	Done:
-	- Reading patient record and 
+	- Reading patient record and display of WFDB - ECG waveform on Linux
 	Problems:
 	- Crosscompile Qt to target
 	Next:
