@@ -17,12 +17,6 @@ CC            = arm-none-linux-gnueabi-gcc
 
 CXX           = arm-none-linux-gnueabi-g++
 
-DEFINES       = -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB
-
-CFLAGS        = -pipe -g -Wall -W -D_REENTRANT $(DEFINES)
-
-CXXFLAGS      = -pipe -g -Wall -W -D_REENTRANT $(DEFINES)
-
 INCPATH       = -I/opt/CodeSourcery/Sourcery_G++_Lite_2007q3/arm-none-linux-gnueabi/include -I. -I/home/stud/qt-everywhere-opensource-src-4.6.1/include/QtCore -I/home/stud/qt-everywhere-opensource-src-4.6.1/include/QtNetwork -I/home/stud/qt-everywhere-opensource-src-4.6.1/include/QtGui -I/home/stud/qt-everywhere-opensource-src-4.6.1/include -I. -I. -I.
 
 LINK          = arm-none-linux-gnueabi-g++
@@ -35,6 +29,7 @@ AR            = arm-none-linux-gnueabi-ar cqs
 QMAKE         = /home/stud/qt-everywhere-opensource-src-4.6.1/bin/qmake
 
 STRIP         = arm-none-linux-gnueabi-strip
+
 .......
 
 moc_mainwindow.cpp: mainwindow.h
@@ -45,15 +40,12 @@ moc_graph.cpp: graph.h
 
 ......
 
-
 ui_mainwindow.h: mainwindow.ui
 	/home/stud/qt-everywhere-opensource-src-4.6.1/bin/uic mainwindow.ui -o ui_mainwindow.h
 
 ui_graph.h: graph.ui
 	/home/stud/qt-everywhere-opensource-src-4.6.1/bin/uic graph.ui -o ui_graph.h
 .......
-
-
 
 
 
