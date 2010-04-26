@@ -1,0 +1,64 @@
+
+1. Modify the Makefile generated from Qt for Linux - see A Changes to Makefil
+2. make clean
+3. make
+4. file Sandbox
+Sandbox: ELF 32-bit LSB executable, ARM, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.14, not stripped
+
+A: Changes to Makefile:
+
+####### Compiler, tools and options
+
+CC            = arm-none-linux-gnueabi-gcc
+CXX           = arm-none-linux-gnueabi-g++
+DEFINES       = -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB
+CFLAGS        = -pipe -g -Wall -W -D_REENTRANT $(DEFINES)
+CXXFLAGS      = -pipe -g -Wall -W -D_REENTRANT $(DEFINES)
+INCPATH       = -I/opt/CodeSourcery/Sourcery_G++_Lite_2007q3/arm-none-linux-gnueabi/include -I. -I/home/stud/qt-everywhere-opensource-src-4.6.1/include/QtCore -I/home/stud/qt-everywhere-opensource-src-4.6.1/include/QtNetwork -I/home/stud/qt-everywhere-opensource-src-4.6.1/include/QtGui -I/home/stud/qt-everywhere-opensource-src-4.6.1/include -I. -I. -I.
+LINK          = arm-none-linux-gnueabi-g++
+LFLAGS        = 
+LIBS          = $(SUBLIBS) -L/home/stud/tslib_arm/lib -L/home/stud/qt-everywhere-opensource-src-4.6.1/lib -lQtGui -lQtNetwork -lQtCore -lpthread -lts
+AR            = arm-none-linux-gnueabi-ar cqs
+RANLIB        = 
+QMAKE         = /home/stud/qt-everywhere-opensource-src-4.6.1/bin/qmake
+TAR           = tar -cf
+COMPRESS      = gzip -9f
+COPY          = cp -f
+SED           = sed
+COPY_FILE     = $(COPY)
+COPY_DIR      = $(COPY) -r
+STRIP         = arm-none-linux-gnueabi-strip
+INSTALL_FILE  = install -m 644 -p
+INSTALL_DIR   = $(COPY_DIR)
+INSTALL_PROGRAM = install -m 755 -p
+DEL_FILE      = rm -f
+SYMLINK       = ln -f -s
+DEL_DIR       = rmdir
+MOVE          = mv -f
+CHK_DIR_EXISTS= test -d
+MKDIR         = mkdir -p
+
+.......
+
+moc_mainwindow.cpp: mainwindow.h
+	/home/stud/qt-everywhere-opensource-src-4.6.1/bin/moc $(DEFINES) $(INCPATH) mainwindow.h -o moc_mainwindow.cpp
+
+moc_graph.cpp: graph.h
+	/home/stud/qt-everywhere-opensource-src-4.6.1/bin/moc $(DEFINES) $(INCPATH) graph.h -o moc_graph.cpp
+
+......
+
+
+ui_mainwindow.h: mainwindow.ui
+	/home/stud/qt-everywhere-opensource-src-4.6.1/bin/uic mainwindow.ui -o ui_mainwindow.h
+
+ui_graph.h: graph.ui
+	/home/stud/qt-everywhere-opensource-src-4.6.1/bin/uic graph.ui -o ui_graph.h
+.......
+
+
+
+
+
+
+
