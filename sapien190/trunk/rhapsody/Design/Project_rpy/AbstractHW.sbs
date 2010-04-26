@@ -1,0 +1,547 @@
+I-Logix-RPY-Archive version 8.5.2 C++ 1159120
+{ ISubsystem 
+	- _id = GUID 6f603c1a-3403-40b6-aa9f-f570a38b251b;
+	- _myState = 8192;
+	- _name = "AbstractHW";
+	- _theMainDiagram = { IHandle 
+		- _m2Class = "IDiagram";
+		- _filename = "";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "SystemFiveLayeredArchitectureView";
+		- _id = GUID 57558d18-7041-4fd2-bb90-000561c3e719;
+	}
+	- _lastID = 15;
+	- Declaratives = { IRPYRawContainer 
+		- size = 13;
+		- value = 
+		{ INode 
+			- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
+			- _name = "Devkit8000";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Processor";
+					- _id = GUID 26742521-cb8b-11d5-b5bf-00d0b780aafd;
+				}
+			}
+		}
+		{ INode 
+			- _id = GUID d8cc010f-79a7-4f7e-86e5-bf8f67a5d7d8;
+			- _name = "UI";
+		}
+		{ IInformationFlow 
+			- _id = GUID 078ff002-3fb8-48e1-9087-96379ba7693f;
+			- _myState = 2048;
+			- _name = "UI_Devkit8000";
+			- end1_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID d8cc010f-79a7-4f7e-86e5-bf8f67a5d7d8;
+			}
+			- end2_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
+			}
+			- direction_ = toEnd2;
+		}
+		{ INode 
+			- _id = GUID 15743ae4-6a5d-4c1b-b19f-9aab4c51583a;
+			- _name = "DAC_1";
+		}
+		{ IInformationFlow 
+			- _id = GUID e33f5978-61b7-41d9-847b-1e21bbfa9bd7;
+			- _myState = 2048;
+			- _name = "Devkit8000_DAC_1";
+			- end1_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
+			}
+			- end2_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID 15743ae4-6a5d-4c1b-b19f-9aab4c51583a;
+			}
+			- direction_ = toEnd2;
+		}
+		{ INode 
+			- _id = GUID 0d7e8bb3-0ac2-4cdf-ac59-be7eccfc06a0;
+			- _name = "RS232_1";
+		}
+		{ IInformationFlow 
+			- _id = GUID 3579debb-7bb1-4ab7-abc6-48f0e380c9e6;
+			- _myState = 2048;
+			- _name = "Devkit8000_RS232_1";
+			- end1_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
+			}
+			- end2_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID 0d7e8bb3-0ac2-4cdf-ac59-be7eccfc06a0;
+			}
+			- direction_ = toEnd2;
+		}
+		{ IInformationFlow 
+			- _id = GUID 45c83a31-dad8-4693-8d2a-9c832a4eef2b;
+			- _myState = 2048;
+			- _name = "Devkit8000_UI";
+			- end1_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
+			}
+			- end2_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID d8cc010f-79a7-4f7e-86e5-bf8f67a5d7d8;
+			}
+			- direction_ = toEnd2;
+		}
+		{ IInformationFlow 
+			- _id = GUID 08899382-93e9-488c-ad61-98a5cb8d7867;
+			- _myState = 2048;
+			- _name = "RS232_1_Devkit8000";
+			- end1_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID 0d7e8bb3-0ac2-4cdf-ac59-be7eccfc06a0;
+			}
+			- end2_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
+			}
+			- direction_ = toEnd2;
+		}
+		{ INode 
+			- _id = GUID 5e4ea1b0-f3e9-4225-a1dc-9dc644ed058d;
+			- _name = "DAC_2";
+		}
+		{ IInformationFlow 
+			- _id = GUID f6d2d86e-91c6-402d-a97f-4e85b09432cd;
+			- _myState = 2048;
+			- _name = "Devkit8000_DAC_2";
+			- end1_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
+			}
+			- end2_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID 5e4ea1b0-f3e9-4225-a1dc-9dc644ed058d;
+			}
+			- direction_ = toEnd2;
+		}
+		{ INode 
+			- _id = GUID 8a10fde9-4a7d-407b-9dc5-766022e79e53;
+			- _name = "RS232_2";
+		}
+		{ IInformationFlow 
+			- _id = GUID b6912e12-6396-475e-8364-ca6c0ae92bdd;
+			- _myState = 2048;
+			- _name = "Devkit8000_RS232_2";
+			- end1_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
+			}
+			- end2_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID 8a10fde9-4a7d-407b-9dc5-766022e79e53;
+			}
+			- direction_ = toEnd2;
+		}
+	}
+	- weakCGTime = 4.26.2010::15:8:15;
+	- strongCGTime = 4.26.2010::14:47:47;
+	- _defaultComposite = GUID 0fb36dc0-ad37-45a6-b555-77bf7edd4044;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 4;
+		- value = 
+		{ IClass 
+			- _id = GUID 0fb36dc0-ad37-45a6-b555-77bf7edd4044;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 4.26.2010::8:43:41;
+			- strongCGTime = 4.26.2010::8:43:41;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID c298dd4e-8345-4920-9b9d-b2d5af814bdb;
+			- _myState = 8192;
+			- _name = "ExtInputs";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "Application.sbs";
+					- _subsystem = "Application";
+					- _class = "";
+					- _name = "boundary";
+					- _id = GUID ce47bc33-d126-482e-8370-945bf813dfbf;
+				}
+			}
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "DomainModel";
+				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
+			}
+			- weakCGTime = 4.25.2010::20:46:57;
+			- strongCGTime = 4.25.2010::20:46:57;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID fdd650d6-bdff-4fbc-93a8-73abad957300;
+					- _myState = 10240;
+					- _name = "itsPatientModel";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "";
+						- _name = "PatientModel";
+						- _id = GUID 469cf6c8-7d66-4abc-88e2-4d4576f248df;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "PatientModel";
+						- _name = "itsExtInputs";
+						- _id = GUID ae956a11-668d-4ecf-aea6-a5d891e6b3e3;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID dfd3f58a-bfa2-4e01-b5ef-5f8771381f80;
+					- _myState = 10240;
+					- _name = "itsInfusion Pump";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "";
+						- _name = "Infusion Pump";
+						- _id = GUID 402120b6-1e2f-45c8-996c-e09289845048;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "Infusion Pump";
+						- _name = "itsExtInputs";
+						- _id = GUID a790d5d2-8fa3-4cff-a07e-4989edcb98bb;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID e7378ed2-b319-4592-a1ed-ca2e20ecb9df;
+			- _myState = 8192;
+			- _name = "ExtOutAnalogue";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "Application.sbs";
+					- _subsystem = "Application";
+					- _class = "";
+					- _name = "boundary";
+					- _id = GUID ce47bc33-d126-482e-8370-945bf813dfbf;
+				}
+			}
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "DomainModel";
+				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
+			}
+			- _lastID = 2;
+			- weakCGTime = 4.25.2010::20:47:0;
+			- strongCGTime = 4.25.2010::20:47:0;
+			- Attrs = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAttribute 
+					- _id = GUID 70a2cccd-64d7-4aa5-bae6-bf0fb59dc5f4;
+					- _name = "resolution";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 140e94f6-ea45-49c4-bf7f-f2a302148d9d;
+					- _name = "sampleRate";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 3;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID e2cee2ee-2ee5-4657-ae56-caeaaa86c4b7;
+					- _myState = 10240;
+					- _name = "itsSignal";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "";
+						- _name = "Signal";
+						- _id = GUID 3b76f666-d215-44ca-b09e-caef903af79a;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "Signal";
+						- _name = "itsExtOutAnalogue";
+						- _id = GUID f682f269-5755-4090-924b-350a864f4cc7;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 97083f40-e0cb-4749-b2ef-a65f4342bfca;
+					- _myState = 10240;
+					- _name = "itsMonitor";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "";
+						- _name = "Monitor";
+						- _id = GUID c06a3fab-9940-414c-b409-2d0260809e70;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "Monitor";
+						- _name = "itsExtOutAnalogue";
+						- _id = GUID 0f0f3401-fbf5-440e-b862-557bf43fb358;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID a2043cdb-2d3f-4fcd-b6de-415b5fff1531;
+					- _myState = 10240;
+					- _name = "itsPatientModel";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "";
+						- _name = "PatientModel";
+						- _id = GUID 469cf6c8-7d66-4abc-88e2-4d4576f248df;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "PatientModel";
+						- _name = "itsExtOutAnalogue";
+						- _id = GUID efcdfb92-fcbb-4cbd-a40a-a88bf26ae011;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 9947fa55-9bb8-4efa-a5cb-3123a7bb9373;
+			- _myState = 8192;
+			- _name = "ExtOutDigital";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "Application.sbs";
+					- _subsystem = "Application";
+					- _class = "";
+					- _name = "boundary";
+					- _id = GUID ce47bc33-d126-482e-8370-945bf813dfbf;
+				}
+			}
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "DomainModel";
+				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
+			}
+			- weakCGTime = 4.26.2010::9:6:25;
+			- strongCGTime = 4.25.2010::20:47:2;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 2f95b478-7a4d-44ca-be5c-fc9bea5d9e49;
+					- _myState = 10240;
+					- _name = "itsSignal";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "";
+						- _name = "Signal";
+						- _id = GUID 3b76f666-d215-44ca-b09e-caef903af79a;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "Signal";
+						- _name = "itsExtOutDigital";
+						- _id = GUID 8c74ac30-2923-4b94-925f-ee3e1ee7f318;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID a5ab32aa-8f74-4c3f-8023-f423e988fed0;
+					- _myState = 10240;
+					- _name = "itsMonitor";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "";
+						- _name = "Monitor";
+						- _id = GUID c06a3fab-9940-414c-b409-2d0260809e70;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "Monitor";
+						- _name = "itsExtOutDigital";
+						- _id = GUID 0f232549-73f4-4caa-86b8-7b93f1da4e24;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 1d9d55ed-4fe4-4d11-accb-b25e685017d6;
+					- _myState = 10240;
+					- _name = "itsPatientModel";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "";
+						- _name = "PatientModel";
+						- _id = GUID 469cf6c8-7d66-4abc-88e2-4d4576f248df;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "PatientModel";
+						- _name = "itsExtOutDigital";
+						- _id = GUID ad5ba8a6-4bde-4f58-95cc-3e6bcc3fa0d4;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 1473a6ab-7729-4af7-86b9-0d8985106e7f;
+					- _myState = 10240;
+					- _name = "itsPulseUpdater";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Comm.sbs";
+						- _subsystem = "Comm";
+						- _class = "";
+						- _name = "PulseUpdater";
+						- _id = GUID dd445cdf-26d2-43e9-9faf-3d6b72a2e42a;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Comm.sbs";
+						- _subsystem = "Comm";
+						- _class = "PulseUpdater";
+						- _name = "itsExtOutDigital";
+						- _id = GUID 4987f09f-2164-44a8-913f-b4ad38696311;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 4.25.2010::20:48:1;
+}
+

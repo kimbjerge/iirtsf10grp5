@@ -1,0 +1,133 @@
+I-Logix-RPY-Archive version 8.5.2 C++ 1159120
+{ ISubsystem 
+	- _id = GUID ad699984-b70d-45a2-ade8-5d423ff37318;
+	- _myState = 8192;
+	- _name = "Comm";
+	- Dependencies = { IRPYRawContainer 
+		- size = 2;
+		- value = 
+		{ IDependency 
+			- _id = GUID 59abd25a-5e21-471b-b757-b9e69bb0cd9d;
+			- _myState = 2048;
+			- _name = "AbstractOS";
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AbstractOS.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AbstractOS";
+				- _id = GUID dcfee0e4-02ba-4b0c-a96b-f604793a5971;
+			}
+		}
+		{ IDependency 
+			- _id = GUID 2d93cce3-f678-4c56-ae5e-56e463f0dbca;
+			- _myState = 2048;
+			- _name = "AbstractHW";
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AbstractHW.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AbstractHW";
+				- _id = GUID 6f603c1a-3403-40b6-aa9f-f570a38b251b;
+			}
+		}
+	}
+	- _lastID = 2;
+	- weakCGTime = 4.26.2010::9:7:23;
+	- strongCGTime = 4.26.2010::9:7:23;
+	- _defaultComposite = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 2;
+		- value = 
+		{ IClass 
+			- _id = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 4.25.2010::19:51:50;
+			- strongCGTime = 4.25.2010::19:51:50;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID dd445cdf-26d2-43e9-9faf-3d6b72a2e42a;
+			- _myState = 8192;
+			- _name = "PulseUpdater";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "ApplicationModelSimulation";
+				- _id = GUID 91b1333b-64c7-4863-a3c9-43d4a97c0bce;
+			}
+			- weakCGTime = 4.26.2010::9:6:57;
+			- strongCGTime = 4.26.2010::9:6:57;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 4987f09f-2164-44a8-913f-b4ad38696311;
+					- _myState = 10240;
+					- _name = "itsExtOutDigital";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "AbstractHW.sbs";
+						- _subsystem = "AbstractHW";
+						- _class = "";
+						- _name = "ExtOutDigital";
+						- _id = GUID 9947fa55-9bb8-4efa-a5cb-3123a7bb9373;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "AbstractHW.sbs";
+						- _subsystem = "AbstractHW";
+						- _class = "ExtOutDigital";
+						- _name = "itsPulseUpdater";
+						- _id = GUID 1473a6ab-7729-4af7-86b9-0d8985106e7f;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 065787e9-9fa8-47e9-86fa-ce49fd01c93c;
+					- _myState = 10240;
+					- _name = "itsPatientModel";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "";
+						- _name = "PatientModel";
+						- _id = GUID 469cf6c8-7d66-4abc-88e2-4d4576f248df;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "PatientModel";
+						- _name = "itsPulseUpdater";
+						- _id = GUID f595a1d1-4ed2-48cf-9ab9-aec3581d0d2b;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+

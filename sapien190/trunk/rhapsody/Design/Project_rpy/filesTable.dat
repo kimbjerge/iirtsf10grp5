@@ -1,0 +1,20 @@
+I-Logix-RPY-Archive version 8.5.2 * 1159120
+
+- filesTable = { IRPYRawContainer 
+	- size = 13;
+	- value = "Project.rpy" ""
+	"Project_rpy\\AbstractHW.sbs" "AbstractHW"
+	"Project_rpy\\AbstractOS.sbs" "AbstractOS"
+	"Project_rpy\\Application.sbs" "Application"
+	"Project_rpy\\Comm.sbs" "Comm"
+	"Project_rpy\\Continuous.sbs" "Application::Continuous"
+	"Project_rpy\\DefaultComponent.cmp" "DefaultComponent"
+	"Project_rpy\\Discrete.sbs" "Application::Discrete"
+	"Project_rpy\\GUI.sbs" "Application::GUI"
+	"Project_rpy\\GraphicalUserInterface.sbs" "GraphicalUserInterface"
+	"Project_rpy\\LinuxOS.sbs" "AbstractOS::LinuxOS"
+	"Project_rpy\\std.sbs" "AbstractOS::LinuxOS::std"
+	"Projects.rpl" ""
+	
+}
+
