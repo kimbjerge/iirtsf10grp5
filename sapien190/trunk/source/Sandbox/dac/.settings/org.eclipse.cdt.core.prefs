@@ -1,0 +1,3 @@
+#Fri Apr 02 17:08:50 CEST 2010
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.exe.debug.623163808.985239986=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<environment append\="true" appendContributed\="true">\n<variable delimiter\=";" name\="PATH" operation\="replace" value\="/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/usr/games\:/opt/CodeSourcery/Sourcery_G++_Lite_2007q3/bin/"/>\n</environment>\n
