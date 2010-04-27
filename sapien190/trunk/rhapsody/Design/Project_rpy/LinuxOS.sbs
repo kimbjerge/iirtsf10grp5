@@ -3307,10 +3307,10 @@ _isAlive = true;
 							}
 							- _dependsOn = { INObjectHandle 
 								- _m2Class = "IFile";
-								- _filename = "DefaultComponent.cmp";
+								- _filename = "";
 								- _subsystem = "";
 								- _class = "";
-								- _name = "DefaultComponent\\Files\\iostream";
+								- _name = "iostream";
 								- _id = GUID 17b535a5-8ef8-412a-bd22-f870328de0c8;
 							}
 						}
@@ -3378,10 +3378,10 @@ _isAlive = true;
 							}
 							- _dependsOn = { INObjectHandle 
 								- _m2Class = "IFile";
-								- _filename = "DefaultComponent.cmp";
+								- _filename = "";
 								- _subsystem = "";
 								- _class = "";
-								- _name = "DefaultComponent\\Files\\stdio";
+								- _name = "stdio";
 								- _id = GUID c9aa1da8-6adc-40cc-a5f6-f6022c4d2a2a;
 							}
 						}
@@ -3449,10 +3449,10 @@ _isAlive = true;
 							}
 							- _dependsOn = { INObjectHandle 
 								- _m2Class = "IFile";
-								- _filename = "DefaultComponent.cmp";
+								- _filename = "";
 								- _subsystem = "";
 								- _class = "";
-								- _name = "DefaultComponent\\Files\\string";
+								- _name = "string";
 								- _id = GUID 1a4122aa-77e2-47f3-97b5-ecdbf4e50a8a;
 							}
 						}
@@ -3520,10 +3520,10 @@ _isAlive = true;
 							}
 							- _dependsOn = { INObjectHandle 
 								- _m2Class = "IFile";
-								- _filename = "DefaultComponent.cmp";
+								- _filename = "";
 								- _subsystem = "";
 								- _class = "";
-								- _name = "DefaultComponent\\Files\\pthread";
+								- _name = "pthread";
 								- _id = GUID 36cd3b8a-9b53-417f-bf0e-f308b1259389;
 							}
 						}
@@ -4360,10 +4360,10 @@ _isAlive = true;
 							}
 							- _dependsOn = { INObjectHandle 
 								- _m2Class = "IFile";
-								- _filename = "DefaultComponent.cmp";
+								- _filename = "";
 								- _subsystem = "";
 								- _class = "";
-								- _name = "DefaultComponent\\Files\\pthread";
+								- _name = "pthread";
 								- _id = GUID 36cd3b8a-9b53-417f-bf0e-f308b1259389;
 							}
 						}
@@ -4736,10 +4736,10 @@ _isAlive = true;
 							}
 							- _dependsOn = { INObjectHandle 
 								- _m2Class = "IFile";
-								- _filename = "DefaultComponent.cmp";
+								- _filename = "";
 								- _subsystem = "";
 								- _class = "";
-								- _name = "DefaultComponent\\Files\\stdlib";
+								- _name = "stdlib";
 								- _id = GUID 5c716c3d-93ed-4fc0-b971-443597b4e38d;
 							}
 						}
@@ -4807,10 +4807,10 @@ _isAlive = true;
 							}
 							- _dependsOn = { INObjectHandle 
 								- _m2Class = "IFile";
-								- _filename = "DefaultComponent.cmp";
+								- _filename = "";
 								- _subsystem = "";
 								- _class = "";
-								- _name = "DefaultComponent\\Files\\unistd";
+								- _name = "unistd";
 								- _id = GUID 36e1ab08-3761-48d9-8324-603a569d05db;
 							}
 						}
@@ -5602,10 +5602,10 @@ pthread_mutex_init( &hMutex, &attr );";
 							}
 							- _dependsOn = { INObjectHandle 
 								- _m2Class = "IFile";
-								- _filename = "DefaultComponent.cmp";
+								- _filename = "";
 								- _subsystem = "";
 								- _class = "";
-								- _name = "DefaultComponent\\Files\\pthread";
+								- _name = "pthread";
 								- _id = GUID 36cd3b8a-9b53-417f-bf0e-f308b1259389;
 							}
 						}
@@ -7041,10 +7041,10 @@ BinarySemaphore::~BinarySemaphore() {
 							}
 							- _dependsOn = { INObjectHandle 
 								- _m2Class = "IFile";
-								- _filename = "DefaultComponent.cmp";
+								- _filename = "";
 								- _subsystem = "";
 								- _class = "";
-								- _name = "DefaultComponent\\Files\\semaphore";
+								- _name = "semaphore";
 								- _id = GUID d259fd98-e24c-4c6a-9b34-de5ce34bc214;
 							}
 						}
@@ -8292,10 +8292,10 @@ CountingSemaphore::~CountingSemaphore() {
 							}
 							- _dependsOn = { INObjectHandle 
 								- _m2Class = "IFile";
-								- _filename = "DefaultComponent.cmp";
+								- _filename = "";
 								- _subsystem = "";
 								- _class = "";
-								- _name = "DefaultComponent\\Files\\semaphore";
+								- _name = "semaphore";
 								- _id = GUID d259fd98-e24c-4c6a-9b34-de5ce34bc214;
 							}
 						}
