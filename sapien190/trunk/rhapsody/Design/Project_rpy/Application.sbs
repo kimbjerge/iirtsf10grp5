@@ -3454,7 +3454,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ApplicationModelSimulation";
-			- _lastModifiedTime = "4.30.2010::9:8:19";
+			- _lastModifiedTime = "4.30.2010::14:38:58";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 0d0f292e-33ac-4d44-9b63-5af9ae40625f;
 				- m_type = 0;
@@ -14323,10 +14323,10 @@ GU86a6ZGc29dYa7782e7feff9a39222542a463cb13c233f95I839c57bdZGc29dY97fcYbaZGbfe697
 			}
 		}
 	}
-	- weakCGTime = 4.30.2010::9:7:49;
+	- weakCGTime = 4.30.2010::14:39:41;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 445c424b-fba5-4616-8dc0-a22408da37c3;
-	- _eventsBaseID = 18601;
+	- _eventsBaseID = -1;
 	- Classes = { IRPYRawContainer 
 		- size = 11;
 		- value = 
@@ -14334,8 +14334,8 @@ GU86a6ZGc29dYa7782e7feff9a39222542a463cb13c233f95I839c57bdZGc29dY97fcYbaZGbfe697
 			- _id = GUID 445c424b-fba5-4616-8dc0-a22408da37c3;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 4.27.2010::21:47:34;
-			- strongCGTime = 4.26.2010::9:7:23;
+			- weakCGTime = 4.30.2010::9:7:49;
+			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
@@ -15552,17 +15552,7 @@ return *this;";
 		}
 	}
 	- Events = { IRPYRawContainer 
-		- size = 1;
-		- value = 
-		{ IEvent 
-			- _id = GUID b798b36b-5d53-4b0a-b2a4-78d0746406b5;
-			- _myState = 8192;
-			- _name = "evStartSimulation";
-			- _virtual = 0;
-			- Args = { IRPYRawContainer 
-				- size = 0;
-			}
-		}
+		- size = 0;
 	}
 	- UseCases = { IRPYRawContainer 
 		- size = 7;

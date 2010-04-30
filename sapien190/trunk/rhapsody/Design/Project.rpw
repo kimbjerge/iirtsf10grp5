@@ -65,8 +65,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -86,7 +86,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _id = GUID 91b1333b-64c7-4863-a3c9-43d4a97c0bce;
 			}
 			- _UpLeft = -4 0 ;
-			- _DownRight = 1097 771 ;
+			- _DownRight = 1675 726 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 8;
 		}
@@ -121,8 +121,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -141,8 +141,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "PatientModel";
 				- _id = GUID 8a759616-ecaa-4d7f-bba4-6f189212bb78;
 			}
-			- _UpLeft = 75 452 ;
-			- _DownRight = 1247 972 ;
+			- _UpLeft = 12 74 ;
+			- _DownRight = 799 780 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 3;
 		}

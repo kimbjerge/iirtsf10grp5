@@ -18,11 +18,11 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	}
 	- _component = { IHandle 
 		- _m2Class = "IComponent";
-		- _filename = "DefaultComponent.cmp";
+		- _filename = "TargetComponent.cmp";
 		- _subsystem = "";
 		- _class = "";
-		- _name = "DefaultComponent";
-		- _id = GUID 70c70b12-7d6c-4c76-8ce6-548c4ac2a18b;
+		- _name = "TargetComponent";
+		- _id = GUID 1cc071c8-1b53-4e12-abac-6a090ffe65e9;
 	}
 	- Multiplicities = { IRPYRawContainer 
 		- size = 4;
@@ -1888,7 +1888,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "SubSystemsView";
-			- _lastModifiedTime = "4.30.2010::8:48:57";
+			- _lastModifiedTime = "4.30.2010::14:38:58";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID c4a9a0b7-c588-441e-b401-1b9825d901bb;
 				- m_type = 0;
