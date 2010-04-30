@@ -14,8 +14,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 5d5faf91-3bbd-4244-8864-69ff044c6dcd;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 1.1.1970::1:0:0;
-			- strongCGTime = 1.1.1970::1:0:0;
+			- weakCGTime = 4.30.2010::7:31:40;
+			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
@@ -23,6 +23,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _classModifier = Unspecified;
 		}
 	}
-	- _configurationRelatedTime = 1.1.1970::1:0:0;
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
 }
 

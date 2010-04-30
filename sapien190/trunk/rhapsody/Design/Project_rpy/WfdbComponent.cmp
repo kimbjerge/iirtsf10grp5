@@ -300,9 +300,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- _m2Class = "IDependency";
 									- _id = GUID 0f89a645-7572-473e-b9b8-bb24b7c4c3ee;
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID a05337f1-2f9c-4f38-a5ff-e7c57f1deb84;
@@ -317,9 +314,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									- _m2Class = "IDependency";
 									- _id = GUID ad45a1b5-1ba2-4d0e-ad9b-e0878b005c30;
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID b8391f4e-ee04-4a5d-bbd7-837a2ebb091d;
@@ -333,9 +327,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 								- m_subject = { INObjectHandle 
 									- _m2Class = "IDependency";
 									- _id = GUID c8f87a81-6a38-4576-bff5-e9219f51e6c4;
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 						}
@@ -538,9 +529,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID d58f54f0-62a4-42e2-b159-722a2cd6c40f;
@@ -554,9 +542,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -572,9 +557,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 0ed3f0e2-492e-4f8d-9c74-0c77fa559bb0;
@@ -588,9 +570,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -606,9 +585,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 51372c31-5401-4698-a15a-0b102c6381ef;
@@ -622,9 +598,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -640,9 +613,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 71937966-e487-4300-904a-748ec9c5ea1d;
@@ -656,9 +626,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -674,9 +641,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 2daa08b5-7fb8-4141-8f05-01a1422b78a4;
@@ -690,9 +654,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -708,9 +669,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID fb248fcf-124b-4ddb-a2f6-ebdaaeac3baf;
@@ -724,9 +682,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -742,9 +697,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 668a9d53-ac3e-47d3-829e-4131972c907a;
@@ -758,9 +710,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -776,9 +725,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID f00863e8-d4c0-4da4-8093-ec7982cf1b83;
@@ -792,9 +738,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -810,9 +753,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID d3cbcd40-8ed8-48bd-9c95-2b9826a58491;
@@ -827,9 +767,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID d4f71afb-cf03-4390-8915-b1a231008b24;
@@ -843,9 +780,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -863,9 +797,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID a0288bd0-3b2b-42a1-aa76-f4ea66e9605b;
@@ -879,9 +810,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -897,9 +825,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID ff5e5199-a6b9-4650-bf44-3ec6fb43d48f;
@@ -913,9 +838,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -931,9 +853,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 9a7f9f6f-af39-47c4-bce1-bc005a08bd05;
@@ -947,9 +866,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -965,9 +881,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID be8eefae-6730-4cd4-8935-152f3f011020;
@@ -982,9 +895,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 90eda68b-c8a4-4e23-9d34-36dde819d9a9;
@@ -998,9 +908,6 @@ macros before including this file (e.g., `#define map1').*/
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 						}
@@ -1140,9 +1047,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 9c7a4e59-a645-4688-8ed2-4a0f1cc2cd17;
@@ -1156,9 +1060,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 57;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1174,9 +1075,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 57fd4933-8c49-403d-b9e5-878374e5cb98;
@@ -1190,9 +1088,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 35;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1208,9 +1103,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 5fbc0832-5936-4637-a789-a2d39a77a9f9;
@@ -1224,9 +1116,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 52;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1242,9 +1131,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID cbb8850a-4150-4047-b334-84c7b8750d17;
@@ -1258,9 +1144,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 54;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1276,9 +1159,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 2e92beac-e6fd-448a-abed-00bc0b6254d1;
@@ -1292,9 +1172,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 54;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1310,9 +1187,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID dd2ac7e7-62ba-412d-b4cb-e66545619fd4;
@@ -1326,9 +1200,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 64;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1344,9 +1215,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 4f290a18-f285-44ce-90f3-0db6a6616a6e;
@@ -1360,9 +1228,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 53;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1378,9 +1243,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 14dc5956-e1cd-414c-8956-30376251797c;
@@ -1394,9 +1256,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 45;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1412,9 +1271,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 7a978c1b-2282-4f9b-90a0-7ea75e5ffb02;
@@ -1428,9 +1284,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 50;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1446,9 +1299,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID be54f9c6-dac4-44fa-b8c2-df4cfb66b9a5;
@@ -1462,9 +1312,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 35;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1480,9 +1327,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 93d5339b-9a0c-4eeb-9df6-2855d9e27fae;
@@ -1496,9 +1340,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 35;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1514,9 +1355,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 0ad694d2-d119-424d-a006-1468c919e8bc;
@@ -1530,9 +1368,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 48;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1548,9 +1383,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 92e81909-8275-4a1e-ad8e-56dfdf868091;
@@ -1564,9 +1396,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 55;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1582,9 +1411,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID c4f2789b-c95b-44ac-b472-ea53c38848ec;
@@ -1598,9 +1424,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 35;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1616,9 +1439,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID f2324a83-9c3b-45e2-abb8-a25c6d5d3e45;
@@ -1632,9 +1452,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 35;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1650,9 +1467,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 1f98b413-7758-45b7-82ca-e99d7ae32891;
@@ -1666,9 +1480,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 48;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1684,9 +1495,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID af5a3fa4-bded-41de-a94d-c46ee333bf6e;
@@ -1700,9 +1508,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 63;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1718,9 +1523,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 60dd1afe-937f-45ab-b02c-71ac799cc036;
@@ -1734,9 +1536,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 52;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1752,9 +1551,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 6fb29385-9257-46ae-867f-639c09c36f94;
@@ -1768,9 +1564,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 57;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1786,9 +1579,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 497464e4-3b71-4be1-9f97-64d7461f846a;
@@ -1802,9 +1592,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 37;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1820,9 +1607,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID d1214e26-040e-42d6-8b81-e2e80c645d9e;
@@ -1836,9 +1620,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 36;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1854,9 +1635,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 389b90d0-64a7-4275-8160-e7d6cd6092e9;
@@ -1870,9 +1648,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 63;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -1888,9 +1663,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID a9535845-632f-494f-b35c-85b7c95f7d75;
@@ -1904,9 +1676,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 72;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 						}
@@ -2097,9 +1866,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID cec5a513-5bcd-40b2-978e-a9688e7b64ce;
@@ -2113,9 +1879,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2131,9 +1894,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 250cb49e-037e-43f2-bbc6-a0b81c7e3bd7;
@@ -2147,9 +1907,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2165,9 +1922,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID c6cd21e7-7422-4507-9f83-f6fcb33a2d74;
@@ -2181,9 +1935,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2199,9 +1950,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 1b9543a9-85cb-4ee5-9718-31f387adaf58;
@@ -2215,9 +1963,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2233,9 +1978,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 772d35a2-acd9-4533-a429-75ceff90e423;
@@ -2249,9 +1991,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2267,9 +2006,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 041d105d-5165-4ecc-bb71-1101ef2c9424;
@@ -2283,9 +2019,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2301,9 +2034,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID f5e49704-66e2-473c-99fa-50c4f44e9f1b;
@@ -2317,9 +2047,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2335,9 +2062,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID dea5b21a-c60b-4956-a3c7-539831ae1364;
@@ -2351,9 +2075,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2369,9 +2090,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 3c901457-6cd0-48c6-a45e-97c62de56922;
@@ -2385,9 +2103,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2403,9 +2118,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 01ae3989-d930-40aa-a43f-327aa50c4dab;
@@ -2420,9 +2132,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 9247fa63-b6e0-4441-8cab-4be6c14fa65b;
@@ -2436,9 +2145,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2466,9 +2172,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 6c8130e3-ac0f-419b-ac5f-43a0f9373fb7;
@@ -2491,9 +2194,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID b7f06ed8-9e84-402c-8029-4e05a18d2167;
@@ -2507,9 +2207,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2525,9 +2222,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID d9085ea6-ab97-473b-88c3-4306c64c7f06;
@@ -2541,9 +2235,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2559,9 +2250,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID a0048164-fd51-4bd9-bf92-31c91b651fa2;
@@ -2575,9 +2263,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2593,9 +2278,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID cd3dda8b-71e3-43dc-bece-941aac8e5f3a;
@@ -2609,9 +2291,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2627,9 +2306,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 57b37220-bd9c-4b1d-9df8-c01076bd68ea;
@@ -2643,9 +2319,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2661,9 +2334,6 @@ _______________________________________________________________________________
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID ac2843db-c672-4292-b7ec-cc602a9fc1c4;
@@ -2677,9 +2347,6 @@ _______________________________________________________________________________
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2725,9 +2392,6 @@ the legal values for the format field in a WFDB_siginfo structure.
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 4e9c33d2-749d-4314-8881-21307a527a44;
@@ -2741,9 +2405,6 @@ the legal values for the format field in a WFDB_siginfo structure.
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2759,9 +2420,6 @@ the legal values for the format field in a WFDB_siginfo structure.
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 550549a9-aceb-4fd0-9b39-6de4f56298cd;
@@ -2775,9 +2433,6 @@ the legal values for the format field in a WFDB_siginfo structure.
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2793,9 +2448,6 @@ the legal values for the format field in a WFDB_siginfo structure.
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID cdfc9f66-c157-47e7-aada-adfe78c75daa;
@@ -2809,9 +2461,6 @@ the legal values for the format field in a WFDB_siginfo structure.
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2827,9 +2476,6 @@ the legal values for the format field in a WFDB_siginfo structure.
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 2054e2fd-f3a7-464c-9bb5-5231ad93c114;
@@ -2843,9 +2489,6 @@ the legal values for the format field in a WFDB_siginfo structure.
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2863,9 +2506,6 @@ the legal values for the format field in a WFDB_siginfo structure.
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID f57f7999-09db-48f2-8e42-2c5fc8415139;
@@ -2881,9 +2521,6 @@ the legal values for the format field in a WFDB_siginfo structure.
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2903,9 +2540,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID df40551b-f7f1-43f8-ace3-338cb2db84ef;
@@ -2919,9 +2553,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2937,9 +2568,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID ed502374-eede-43b9-9f12-efd786d6b85d;
@@ -2953,9 +2581,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -2971,9 +2596,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID ca529c7b-9581-4d3d-ba95-b25ab06998cf;
@@ -2987,9 +2609,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3005,9 +2624,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID dce55bdc-55b2-47c4-a79a-b6018b7dc074;
@@ -3021,9 +2637,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3039,9 +2652,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID bd7610c8-8682-4e40-bc20-69d1167a52bb;
@@ -3055,9 +2665,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3073,9 +2680,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID fae424e2-a0c5-412a-bb4a-8bd493b545ed;
@@ -3089,9 +2693,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3107,9 +2708,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID f7a1bca0-9408-4e79-93ae-561f1baa6298;
@@ -3123,9 +2721,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3141,9 +2736,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID f6f14c36-c04e-4e03-916e-2c991802035c;
@@ -3157,9 +2749,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3175,9 +2764,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 3212746a-d7c2-46c7-b283-1dcc934d8400;
@@ -3191,9 +2777,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3209,9 +2792,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 22b24faf-73e5-4020-adf8-81fc5ec53f8b;
@@ -3225,9 +2805,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3243,9 +2820,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 6d96b0d3-809c-4718-8d04-b2c2fb5fa0b4;
@@ -3259,9 +2833,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3277,9 +2848,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 3118799b-b2b0-4e30-89f9-d43da9db3995;
@@ -3293,9 +2861,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3311,9 +2876,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 1c4ef5b8-b7a6-4e18-b7bf-252c986b5fe1;
@@ -3327,9 +2889,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3345,9 +2904,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID e70a6b3b-b968-4323-b139-06b782dd52cd;
@@ -3361,9 +2917,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3379,9 +2932,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID c6cd714f-0354-45f0-9bd9-0a6ed2e35e82;
@@ -3395,9 +2945,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3413,9 +2960,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 510faffa-df23-474f-9390-55b21c98aaf3;
@@ -3430,9 +2974,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID adf68a2f-2530-4eaa-aa7e-a9d765ac927d;
@@ -3446,9 +2987,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3466,9 +3004,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID ac47dbe6-b6a0-47b0-8905-8b9a0068e527;
@@ -3482,9 +3017,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3500,9 +3032,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 0c067938-6a18-44e7-98ab-6806ac45de6b;
@@ -3516,9 +3045,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3534,9 +3060,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID d39ed1e1-a4c6-4b37-9ca5-d49daf94937a;
@@ -3550,9 +3073,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3568,9 +3088,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 04a6b807-5008-4c87-8f44-b8168ad19f85;
@@ -3584,9 +3101,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3602,9 +3116,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID a0dd206e-78fa-4cdf-a948-4a4b701aa861;
@@ -3618,9 +3129,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3636,9 +3144,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 2ac096ea-88d7-465d-8525-143e36ee8229;
@@ -3652,9 +3157,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3670,9 +3172,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID aa670e42-1984-4055-bfc3-b1e9ff23dd31;
@@ -3686,9 +3185,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3704,9 +3200,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID d3343622-cd52-4c6d-80ef-1c141fe4abe3;
@@ -3721,9 +3214,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 15f4eb17-92ba-4c90-9494-25cd07804ccd;
@@ -3737,9 +3227,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -3767,9 +3254,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 97037bec-1e44-4c9a-8c8e-b141d1b49483;
@@ -3783,9 +3267,6 @@ shape definitions below to characterize calibration pulses. */
 								- m_subject = { INObjectHandle 
 									- _m2Class = "IDependency";
 									- _id = GUID 2aac9f88-3f88-4dd3-9721-606674bb8d4f;
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 						}
@@ -4031,9 +3512,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 6141615e-3dec-48cc-b57d-4c1dcf774a55;
@@ -4094,9 +3572,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 94c45c79-a6b3-492f-b308-6cbf6a2f4f88;
@@ -4114,9 +3589,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4145,9 +3617,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4187,9 +3656,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 1adfd542-0bbb-4286-b4f9-eeace79f3d30;
@@ -4222,9 +3688,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID b6ddc1c3-413c-4ccb-8a4c-d3d059613529;
@@ -4238,9 +3701,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4267,9 +3727,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4299,9 +3756,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 12085257-ed10-4653-8034-0239e24d59ce;
@@ -4327,9 +3781,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4363,9 +3814,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 180a94e0-22df-4eb8-88d1-b9b42e12615d;
@@ -4386,9 +3834,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID c8f7ee2e-9fc6-4225-a166-1669b6ad3908;
@@ -4402,9 +3847,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4420,9 +3862,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID d001060b-0e24-4b61-ba73-da333301401a;
@@ -4436,9 +3875,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4454,9 +3890,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 0834c872-0e19-4343-9cd9-756b3f833d01;
@@ -4470,9 +3903,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4492,9 +3922,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 10e13484-cb2b-44d8-bc41-b182067d2d8c;
@@ -4508,9 +3935,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4528,9 +3952,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID e30c50b9-656f-4efa-949d-61e0c9f96b16;
@@ -4544,9 +3965,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4562,9 +3980,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 7021b7af-c84c-49ea-b9d6-66854390387f;
@@ -4578,9 +3993,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4596,9 +4008,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID e216134e-7560-45c3-9a1f-bd947ad55407;
@@ -4612,9 +4021,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4630,9 +4036,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID c6606765-052e-41be-91a6-1d1a1bd176ec;
@@ -4646,9 +4049,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4664,9 +4064,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID a7a3bcf3-248a-4636-96e2-3d6c04724acb;
@@ -4680,9 +4077,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4698,9 +4092,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID b545d169-be38-4218-84aa-14a17648b8c1;
@@ -4714,9 +4105,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4732,9 +4120,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 17481ed5-54fe-4f79-8373-5b5c16f410b0;
@@ -4748,9 +4133,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4766,9 +4148,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 3585be86-15ec-449f-babd-cc30c7063fe4;
@@ -4782,9 +4161,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4802,9 +4178,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 664c8b10-0eb4-46a3-a304-2ab7a8e22bf7;
@@ -4818,9 +4191,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4836,9 +4206,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID f81fc633-d0bb-45f2-be87-c726d4eeac22;
@@ -4852,9 +4219,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4870,9 +4234,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID ebf95c31-0f44-485a-b404-4c5953eaad95;
@@ -4886,9 +4247,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_endCol_Short = 65535;
 								- m_subject = { INObjectHandle 
 									- _m2Class = "";
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -4904,9 +4262,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 									- _m2Class = "IDependency";
 									- _id = GUID 7f1bc3c9-773d-4354-bac6-468d74f706fd;
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 58dbf2ac-b81c-4269-973d-2e3ecbbb6331;
@@ -4920,9 +4275,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "IDependency";
 									- _id = GUID c978fe21-96d4-400e-86db-135a6d923790;
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 						}
@@ -5063,9 +4415,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "IDependency";
 									- _id = GUID 3d4ef24c-12d9-4f02-b55b-2829a8ba42c6;
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 						}
@@ -5348,9 +4697,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 									- _m2Class = "IDependency";
 									- _id = GUID fd65e2f2-ef7a-4ae5-8aee-5c136eeeaaa4;
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 14e61d19-98da-4bd5-93df-67c9db714b8b;
@@ -5364,9 +4710,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "IDependency";
 									- _id = GUID 4d6a6971-0a49-4db6-836a-495ebcc0ab60;
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 							{ IFileFragment 
@@ -5382,9 +4725,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 									- _m2Class = "IDependency";
 									- _id = GUID bb47fb86-1ac1-44e4-bcb0-7abfed1d330f;
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID 420023a5-e4fe-4898-b5ed-a18000cabf38;
@@ -5398,9 +4738,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "IDependency";
 									- _id = GUID 5725bd39-fc30-4b7f-9d68-6a323ac68aa9;
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 						}
@@ -5589,9 +4926,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 									- _m2Class = "IDependency";
 									- _id = GUID d34dc558-a20e-4312-b34c-d842f3e559d3;
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 							{ IFileFragment 
 								- _id = GUID efc6b1da-035b-4a49-9835-5331be8635ae;
@@ -5605,9 +4939,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "IDependency";
 									- _id = GUID 8e61361b-635d-4d48-abc5-28433f36fe3c;
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 						}
@@ -5749,9 +5080,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 									- _m2Class = "IDependency";
 									- _id = GUID b9e601c0-4fdf-421c-b23a-399f555d1b29;
 								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
-								}
 							}
 						}
 					}
@@ -5891,9 +5219,6 @@ symbols reserved to the library begin with the characters \"wfdb_\".
 								- m_subject = { INObjectHandle 
 									- _m2Class = "IDependency";
 									- _id = GUID 89ca39ca-c4bb-48af-8cab-c358be7b5ce6;
-								}
-								- Fragments = { IRPYRawContainer 
-									- size = 0;
 								}
 							}
 						}

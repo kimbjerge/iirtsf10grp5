@@ -65,8 +65,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -85,8 +85,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "ApplicationModelSimulation";
 				- _id = GUID 91b1333b-64c7-4863-a3c9-43d4a97c0bce;
 			}
-			- _UpLeft = -4 0 ;
-			- _DownRight = 1675 726 ;
+			- _UpLeft = -4 309 ;
+			- _DownRight = 1221 1167 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 8;
 		}
@@ -121,8 +121,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -141,8 +141,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "PatientModel";
 				- _id = GUID 8a759616-ecaa-4d7f-bba4-6f189212bb78;
 			}
-			- _UpLeft = 12 74 ;
-			- _DownRight = 799 780 ;
+			- _UpLeft = 0 370 ;
+			- _DownRight = 1097 893 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 3;
 		}
@@ -169,8 +169,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StrategyPipesAndFilter";
 				- _id = GUID 86f32eec-a79a-494c-95f1-e1435092e146;
 			}
-			- _UpLeft = 0 68 ;
-			- _DownRight = 617 598 ;
+			- _UpLeft = 95 38 ;
+			- _DownRight = 712 568 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 4;
 		}
@@ -197,8 +197,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "TestContinous";
 				- _id = GUID 1b550d6d-a191-4d94-bec4-6392e500b65a;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1014 371 ;
+			- _UpLeft = 0 120 ;
+			- _DownRight = 1014 491 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 2;
 		}
@@ -225,8 +225,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID 667e57fe-a1bc-4bf0-bd5b-1af732cec4da;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 767 193 ;
+			- _UpLeft = 323 150 ;
+			- _DownRight = 1090 343 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
 		}
@@ -281,8 +281,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "ObserverPattern";
 				- _id = GUID f618e3cb-4956-4631-86ae-ddc4348f3cec;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 843 526 ;
+			- _UpLeft = 0 130 ;
+			- _DownRight = 843 656 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 5;
 		}

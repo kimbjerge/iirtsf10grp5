@@ -9686,7 +9686,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 4.30.2010::9:31:56;
+	- weakCGTime = 4.30.2010::20:3:32;
 	- strongCGTime = 4.30.2010::8:52:39;
 	- _defaultComposite = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 	- _eventsBaseID = -1;
@@ -9697,7 +9697,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 4.30.2010::8:52:39;
+			- weakCGTime = 4.30.2010::9:31:56;
 			- strongCGTime = 4.30.2010::8:52:39;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -12705,9 +12705,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID ce98b630-9793-4a8d-bee3-e0f134cda556;
@@ -12721,9 +12718,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -12739,9 +12733,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 4a414b1f-2603-4c1a-a0ab-48c355940aef;
@@ -12755,9 +12746,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_endCol_Short = 38;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -12773,9 +12761,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID c1ee0487-8952-41da-bb8a-9e6b3aec28bc;
@@ -12789,9 +12774,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_endCol_Short = 28;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -12807,9 +12789,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID e60b1ea8-b3d7-4b61-9f04-de0cecd9d83f;
@@ -12823,9 +12802,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_endCol_Short = 31;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -12841,9 +12817,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 2b5c2144-98a8-4471-a14b-94b10c9d4a25;
@@ -12857,9 +12830,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -12875,9 +12845,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 7905573c-f971-4212-bab7-7efbde9621a9;
@@ -12891,9 +12858,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_endCol_Short = 28;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -12909,9 +12873,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 16fa8450-4a63-4618-ad39-4211d122a09e;
@@ -12925,9 +12886,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_endCol_Short = 31;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -12943,9 +12901,6 @@ itsPulseUpdater = new PulseUpdater();";
 								- _m2Class = "IDependency";
 								- _id = GUID 3971b232-459d-4758-b35a-ad4bc477f014;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 21ad6a9a-2a0e-420b-9b30-1daf8de0892f;
@@ -12959,9 +12914,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID e5e1af66-98ac-4f55-86ce-dcaf6cd48415;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -12977,9 +12929,6 @@ itsPulseUpdater = new PulseUpdater();";
 								- _m2Class = "IDependency";
 								- _id = GUID ee1af382-d603-475b-8e24-f3d72e64ef93;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID ed61e615-8d07-474c-a394-12f576faadb7;
@@ -12993,9 +12942,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID cf95bfef-00d9-4ad9-b5cd-d9fc25ee1e3c;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -13709,9 +13655,6 @@ itsPulseUpdater = new PulseUpdater();";
 								- _m2Class = "IDependency";
 								- _id = GUID d3ce4e36-6ec9-4a05-b251-90b4b225e61f;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 1e80e071-eaa8-46bd-bec3-ed7e13983a8b;
@@ -13725,9 +13668,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID e88192c3-da1e-4de0-82dc-02eaad9a65a9;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -13743,9 +13683,6 @@ itsPulseUpdater = new PulseUpdater();";
 								- _m2Class = "IDependency";
 								- _id = GUID fc9cebe4-5212-48fb-ba81-4143d6116a98;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 42476f2a-3dd6-49f0-8358-a30b61390c5c;
@@ -13759,9 +13696,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID 9264fc43-0f14-49f6-b737-32226a4bf922;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -13777,9 +13711,6 @@ itsPulseUpdater = new PulseUpdater();";
 								- _m2Class = "IDependency";
 								- _id = GUID 8f33e793-dce1-44ee-a1da-f54c053328f9;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID fd6cb851-29cd-4d8b-94b1-63e2892b1f54;
@@ -13794,9 +13725,6 @@ itsPulseUpdater = new PulseUpdater();";
 								- _m2Class = "IDependency";
 								- _id = GUID 12de3008-4675-4972-9206-48f13fb74bf9;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 4f578d5b-eb71-4f34-9190-0451982711c1;
@@ -13810,9 +13738,6 @@ itsPulseUpdater = new PulseUpdater();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID 5af4fe86-898d-423b-98d8-730a95858769;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18119,9 +18044,6 @@ itsPatientModel->GenerateSignals();";
 								- _m2Class = "IDependency";
 								- _id = GUID 4ce92eab-163c-4651-8ca4-a034a20ce904;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID a54ea37c-ea2f-4e8e-8a17-0cc47e09e5a5;
@@ -18135,9 +18057,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID ff571784-d970-4d5d-ae4e-035a97e9cb18;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18153,9 +18072,6 @@ itsPatientModel->GenerateSignals();";
 								- _m2Class = "IDependency";
 								- _id = GUID da02cd2b-c988-4284-92b2-7187bd1a3f16;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 2ca68937-0efc-440d-a91f-091ea26dde55;
@@ -18169,9 +18085,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID 1e93bd13-a9c3-4511-ab0b-77baf0fe1f2e;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18187,9 +18100,6 @@ itsPatientModel->GenerateSignals();";
 								- _m2Class = "IDependency";
 								- _id = GUID cd5f6077-19e6-4279-b190-5c4328b36ef1;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID c17ef5ce-19de-4834-9424-7abec53b654f;
@@ -18203,9 +18113,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID 77ef55f6-b736-4639-9fad-b8a81b72257c;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18647,9 +18554,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID b4bcb3c6-a513-4e1e-a6eb-01625a201fcf;
@@ -18663,9 +18567,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 27;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18681,9 +18582,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 85693794-e629-4a37-8760-eb8108b2de7f;
@@ -18697,9 +18595,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 41;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18715,9 +18610,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 7fbe1040-44ee-4f0a-8695-0c2473527cf2;
@@ -18731,9 +18623,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 26;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18749,9 +18638,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 50a0624f-28e8-4522-be12-cf1b9da881f0;
@@ -18765,9 +18651,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 12;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18783,9 +18666,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 3420691e-82dc-4cea-8d75-711aa9de8514;
@@ -18799,9 +18679,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 11;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18817,9 +18694,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 6ea7da3b-9157-4a80-b4d2-f209d613c3f6;
@@ -18833,9 +18707,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 10;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18851,9 +18722,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID b8227116-dc26-4732-ba52-9655391874a0;
@@ -18867,9 +18735,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 49;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18885,9 +18750,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID a6667d5b-b02f-414d-9412-b15faa84e653;
@@ -18901,9 +18763,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 42;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18919,9 +18778,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID ae958b57-fbe0-4810-8aec-b8c968043244;
@@ -18935,9 +18791,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 41;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18953,9 +18806,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID fb120fd0-9281-4ac8-8df1-97e9ac8268ca;
@@ -18969,9 +18819,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 18;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -18987,9 +18834,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID d59e040a-8d6e-4ba4-9251-c6b6abfc84c9;
@@ -19003,9 +18847,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 16;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19021,9 +18862,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 0ddea94c-2c65-4c80-9e7b-289d76926c75;
@@ -19037,9 +18875,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 16;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19055,9 +18890,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 8dc04e76-bc31-4af4-9012-8e506f974d51;
@@ -19071,9 +18903,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 13;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19089,9 +18918,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 49b8010f-bdec-48cc-850b-99fa463cb527;
@@ -19105,9 +18931,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 49;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19123,9 +18946,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID e51d8968-ba8c-4949-bd61-ae099b1e9d3b;
@@ -19139,9 +18959,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 42;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19157,9 +18974,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 319c5151-81f2-45d7-9ad4-d4e1373de9a4;
@@ -19173,9 +18987,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 41;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19191,9 +19002,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 7c7fcc93-76ff-4016-aced-c0edb597f452;
@@ -19207,9 +19015,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 18;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19225,9 +19030,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 67745897-d0c9-4936-aff5-c2a3af6493ed;
@@ -19241,9 +19043,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 16;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19259,9 +19058,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 6a3cc7ad-1c9a-49d1-8f4e-c92d14e825d4;
@@ -19275,9 +19071,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 16;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19293,9 +19086,6 @@ itsPatientModel->GenerateSignals();";
 								- _m2Class = "IDependency";
 								- _id = GUID ee2f9e3e-8433-45ee-8092-716fad1c9e06;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 513b3924-e3db-4960-9af5-d0afd5c0ac83;
@@ -19310,9 +19100,6 @@ itsPatientModel->GenerateSignals();";
 								- _m2Class = "IDependency";
 								- _id = GUID 795e940c-a769-4336-b43b-701f85cb532f;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID f9cd99df-9d94-4ceb-b1e7-d87b68488a52;
@@ -19326,9 +19113,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID f1295aa8-eeb1-421d-9bb8-b310161cd7cb;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19603,8 +19387,8 @@ itsPatientModel->GenerateSignals();";
 					- _myState = 10240;
 					- _name = "statechart_0";
 					- _lastID = 11;
-					- weakCGTime = 4.30.2010::7:31:40;
-					- strongCGTime = 4.27.2010::21:45:36;
+					- weakCGTime = 4.30.2010::9:39:5;
+					- strongCGTime = 4.30.2010::8:52:39;
 					- _multiplicity = "";
 					- _itsStateChart = { IHandle 
 						- _m2Class = "";
@@ -21498,9 +21282,6 @@ itsPatientModel->GenerateSignals();";
 								- _m2Class = "IDependency";
 								- _id = GUID 6ac367a7-e6e1-4772-ac21-9ec79b888cea;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 01ae3a55-bcc7-428c-b058-a0327c1a57ed;
@@ -21515,9 +21296,6 @@ itsPatientModel->GenerateSignals();";
 								- _m2Class = "IDependency";
 								- _id = GUID 70600318-4754-4c02-a3db-11e87adbd77d;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID fe4f9d13-b74c-4c56-9180-639bf7982edb;
@@ -21531,9 +21309,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID c07c2177-95cc-4b62-bbc1-d8dd69c3ee47;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22068,9 +21843,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID f2c74d61-354c-4159-8bb5-8c646ab0297a;
@@ -22084,9 +21856,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 27;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22102,9 +21871,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID dfd420e8-059e-4d4b-bb6e-11c953fce866;
@@ -22118,9 +21884,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22136,9 +21899,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 1696479d-b4f9-478f-8d23-3212457f1e7e;
@@ -22152,9 +21912,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 38;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22170,9 +21927,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 44f98656-b0fc-487b-ad33-8e485af9db02;
@@ -22186,9 +21940,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22204,9 +21955,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 7e9c898b-2480-4ffd-92d1-3e153691dc94;
@@ -22220,9 +21968,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 31;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22238,9 +21983,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 3c3a9532-6b8f-4ca9-bf2c-6fab9ed5d502;
@@ -22254,9 +21996,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22272,9 +22011,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 3bcd6cdd-071f-42e1-a236-8f361f157f14;
@@ -22288,9 +22024,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 27;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22306,9 +22039,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID f40fc4b7-60cb-4d7d-bb71-0c251d2bd573;
@@ -22322,9 +22052,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 49;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22340,9 +22067,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 811ab528-57e8-424b-82a3-6ce565cc873b;
@@ -22356,9 +22080,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 42;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22374,9 +22095,6 @@ itsPatientModel->GenerateSignals();";
 								- _m2Class = "IDependency";
 								- _id = GUID a3fec3f4-cdeb-42bf-9b32-dde3cd0f8ea2;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 50cb27b5-8a22-4f72-8944-196d05df51a2;
@@ -22390,9 +22108,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID 7675de18-49e9-41be-a4aa-e5d165f11b2c;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22408,9 +22123,6 @@ itsPatientModel->GenerateSignals();";
 								- _m2Class = "IDependency";
 								- _id = GUID 215f44de-f2a3-4589-a7e7-067f05060aad;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID ae844307-052b-42f2-9710-b4735a32008c;
@@ -22424,9 +22136,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID fa7f8bad-30ff-4579-92fa-e634aa85d453;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22442,9 +22151,6 @@ itsPatientModel->GenerateSignals();";
 								- _m2Class = "IDependency";
 								- _id = GUID 587d6956-a0bd-460c-87c6-8fddcbf631d7;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 184d99ad-1d2e-43c8-8655-98e061f18177;
@@ -22458,9 +22164,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID 4ea7f791-de91-4d6b-a6e5-460748b148ad;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22744,9 +22447,6 @@ itsPatientModel->GenerateSignals();";
 			- _lastID = 2;
 			- weakCGTime = 4.30.2010::8:52:39;
 			- strongCGTime = 4.30.2010::8:52:39;
-			- Operations = { IRPYRawContainer 
-				- size = 0;
-			}
 			- Inheritances = { IRPYRawContainer 
 				- size = 1;
 				- value = 
@@ -22767,9 +22467,6 @@ itsPatientModel->GenerateSignals();";
 					- _id = GUID b55d9812-8e13-476d-b836-6ba62af50d04;
 					- _myState = 139264;
 					- _name = "RecordFile";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -22787,9 +22484,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID dcf03475-8cf8-45be-b9bf-663617594b6a;
@@ -22802,9 +22496,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 649;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22819,9 +22510,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 104bda38-37cd-4a8f-9181-9598201417dd;
@@ -22835,9 +22523,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID ec9247e7-c8aa-46ae-ada3-558aef056a1e;
@@ -22850,9 +22535,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 782;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -22930,9 +22612,6 @@ itsPatientModel->GenerateSignals();";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 76cf7de7-c64c-4a51-aa59-7f8bbbdbf493;
@@ -22945,9 +22624,6 @@ itsPatientModel->GenerateSignals();";
 									- m_endCol_Short = 17;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -22963,9 +22639,6 @@ itsPatientModel->GenerateSignals();";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 7b7bd772-7fc8-4249-b216-9c4bd4d3f2ff;
@@ -22980,9 +22653,6 @@ itsPatientModel->GenerateSignals();";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 076e5013-f7b1-45cd-9c4b-24c190da0173;
@@ -22995,9 +22665,6 @@ itsPatientModel->GenerateSignals();";
 									- m_endCol_Short = 32;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -23026,9 +22693,6 @@ itsPatientModel->GenerateSignals();";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -23038,9 +22702,6 @@ itsPatientModel->GenerateSignals();";
 					- _id = GUID bf8bb01b-fba5-4bca-b5f0-64ec44eb2180;
 					- _myState = 139264;
 					- _name = "RecordFile";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -23058,9 +22719,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID d3a05809-5987-4cb8-9434-64dc8e9dfb92;
@@ -23074,9 +22732,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID ea1cfc45-9e6f-470c-8e1d-8ef945997a30;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -23153,9 +22808,6 @@ itsPatientModel->GenerateSignals();";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID aa53aa24-7d5b-4f6b-bcea-e057a5967a36;
@@ -23215,9 +22867,6 @@ itsPatientModel->GenerateSignals();";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 6c8b0b86-84ab-44a5-829f-c771bc031235;
@@ -23276,9 +22925,6 @@ itsPatientModel->GenerateSignals();";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -23595,9 +23241,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID faaa583c-48e4-4f41-9246-25173881ca74;
@@ -23611,9 +23254,6 @@ itsPatientModel->GenerateSignals();";
 							- m_endCol_Short = 31;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -23629,9 +23269,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID a2d174ed-c519-4df7-985c-8ef68faaa99f;
@@ -23645,9 +23282,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID c8d8fceb-6d71-4ca0-aeb0-ee4a4d683c90;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -23860,9 +23494,6 @@ itsPatientModel->GenerateSignals();";
 					- _id = GUID f15aa6f7-dfc6-4d2c-9334-adcc54a1594f;
 					- _myState = 139264;
 					- _name = "RecordIterator";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -23880,9 +23511,6 @@ itsPatientModel->GenerateSignals();";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID e5564ab3-1975-4534-872b-362a4f6407ed;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -24338,7 +23966,7 @@ itsPatientModel->GenerateSignals();";
 				- _m2Class = "IDiagram";
 				- _id = GUID 8a759616-ecaa-4d7f-bba4-6f189212bb78;
 			}
-			- weakCGTime = 4.30.2010::8:52:39;
+			- weakCGTime = 4.30.2010::20:3:32;
 			- strongCGTime = 4.30.2010::8:52:39;
 			- Operations = { IRPYRawContainer 
 				- size = 5;
@@ -24451,7 +24079,8 @@ else
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "endRecord = false;";
+						- _bodyData = "Next();
+";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -24689,9 +24318,6 @@ strcpy(recordName, filename);";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 78eabfdb-3b55-497a-a506-571c064d3a51;
@@ -24705,9 +24331,6 @@ strcpy(recordName, filename);";
 							- m_endCol_Short = 49;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -24723,9 +24346,6 @@ strcpy(recordName, filename);";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 60a24f59-3433-4ed9-b2c2-a83383824958;
@@ -24739,9 +24359,6 @@ strcpy(recordName, filename);";
 							- m_endCol_Short = 42;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -24757,9 +24374,6 @@ strcpy(recordName, filename);";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 390de476-53d4-4d96-a86f-8bff0e143f5e;
@@ -24773,9 +24387,6 @@ strcpy(recordName, filename);";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID 02b064ed-95b3-455f-8668-1dd4b7c1931f;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -24791,9 +24402,6 @@ strcpy(recordName, filename);";
 								- _m2Class = "IClass";
 								- _id = GUID 59d7bc47-a7a3-46a0-8874-6df6e378972e;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 					}
 				}
@@ -24801,9 +24409,6 @@ strcpy(recordName, filename);";
 					- _id = GUID e3de2f7c-2a63-49d0-a166-f416661e2581;
 					- _myState = 139264;
 					- _name = "RecordWfdb";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -24822,9 +24427,6 @@ strcpy(recordName, filename);";
 								- _m2Class = "IDependency";
 								- _id = GUID 2bb5b5b7-e521-4a41-951f-5ebac7bfa23b;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 03102b10-7458-4b4a-9d12-b0d8b4e54232;
@@ -24839,9 +24441,6 @@ strcpy(recordName, filename);";
 								- _m2Class = "IDependency";
 								- _id = GUID f2a6af69-5c2e-4b70-a0fa-7811ad03f112;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID b4ed0505-9edf-4123-99e8-7a0f3af6d8e4;
@@ -24855,9 +24454,6 @@ strcpy(recordName, filename);";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
 								- _id = GUID 59d7bc47-a7a3-46a0-8874-6df6e378972e;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 					}
@@ -25258,9 +24854,6 @@ endRecord = false;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 2bacf114-2c02-421b-b5e2-5d7dd12e2c26;
@@ -25274,9 +24867,6 @@ endRecord = false;
 							- m_endCol_Short = 49;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -25292,9 +24882,6 @@ endRecord = false;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 805a8ae7-a976-4c7a-a83e-a5f69c2d0213;
@@ -25308,9 +24895,6 @@ endRecord = false;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID 7c535ee4-6ffd-45cb-a9b2-f40bcb17699b;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -25326,9 +24910,6 @@ endRecord = false;
 								- _m2Class = "IClass";
 								- _id = GUID be4ec832-cf1f-4173-aa06-4c814c444811;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 					}
 				}
@@ -25336,9 +24917,6 @@ endRecord = false;
 					- _id = GUID 9a314ae3-0f8c-4b2f-97c0-9a1292497189;
 					- _myState = 139264;
 					- _name = "RecordSimulate";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -25357,9 +24935,6 @@ endRecord = false;
 								- _m2Class = "IDependency";
 								- _id = GUID 1d17d223-e665-4f86-8def-8f69ed09fb69;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 06c3b647-a83a-4353-92bd-ce31fd607dc2;
@@ -25374,9 +24949,6 @@ endRecord = false;
 								- _m2Class = "IDependency";
 								- _id = GUID c5045586-953a-4ad4-9845-ced61209de6b;
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 5d6c7c8c-620a-4642-92d0-f7076e1b1c30;
@@ -25390,9 +24962,6 @@ endRecord = false;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
 								- _id = GUID be4ec832-cf1f-4173-aa06-4c814c444811;
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 					}

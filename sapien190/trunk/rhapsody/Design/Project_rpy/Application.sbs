@@ -14334,7 +14334,7 @@ GU86a6ZGc29dYa7782e7feff9a39222542a463cb13c233f95I839c57bdZGc29dY97fcYbaZGbfe697
 			- _id = GUID 445c424b-fba5-4616-8dc0-a22408da37c3;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 4.30.2010::9:7:49;
+			- weakCGTime = 4.30.2010::14:39:41;
 			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -15550,9 +15550,6 @@ return *this;";
 			}
 			- _classModifier = Unspecified;
 		}
-	}
-	- Events = { IRPYRawContainer 
-		- size = 0;
 	}
 	- UseCases = { IRPYRawContainer 
 		- size = 7;
