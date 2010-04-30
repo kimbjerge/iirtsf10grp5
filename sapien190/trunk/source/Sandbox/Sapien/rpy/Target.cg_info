@@ -1,7 +1,7 @@
 I-Logix-RPY-Archive version 8.5.2 * 1159120
 
 - m_fileModifyTime = { IRPYRawContainer 
-	- size = 68;
+	- size = 69;
 	- value = "C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/Application.cpp" 4.30.2010::14:0:3
 	"C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/Application.h" 4.30.2010::14:0:0
 	"C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/Continuous.cpp" 4.30.2010::14:46:2
@@ -54,7 +54,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 	"C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/RecordProxy.h" 4.30.2010::14:46:1
 	"C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/RecordSimulate.cpp" 4.30.2010::14:46:3
 	"C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/RecordSimulate.h" 4.30.2010::14:46:1
-	"C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/RecordWfdb.cpp" 4.30.2010::14:46:3
+	"C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/RecordWfdb.cpp" 4.30.2010::20:3:43
+	"C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/RecordWfdb.h" 4.30.2010::20:3:43
 	"C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/Scenario.cpp" 4.30.2010::14:46:3
 	"C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/Scenario.h" 4.30.2010::14:46:2
 	"C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/ScenarioConfig.cpp" 4.30.2010::14:46:3
@@ -396,7 +397,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 	- _name = "RecordWfdb";
 	- _id = GUID 59d7bc47-a7a3-46a0-8874-6df6e378972e;
 }
-- genTime = 4.30.2010::14:46:3;
+- genTime = 4.30.2010::20:3:43;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = "Continuous.sbs";

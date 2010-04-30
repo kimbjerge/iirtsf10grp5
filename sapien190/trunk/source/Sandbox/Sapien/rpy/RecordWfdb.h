@@ -1,11 +1,11 @@
 /*********************************************************************
 	Rhapsody	: 7.5 
 	Login		: KBE
-	Component	: DefaultComponent 
-	Configuration 	: DefaultConfig
+	Component	: TargetComponent 
+	Configuration 	: Target
 	Model Element	: RecordWfdb
 //!	Generated Date	: Fri, 30, Apr 2010  
-	File Path	: DefaultComponent/DefaultConfig/RecordWfdb.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/RecordWfdb.h
 *********************************************************************/
 
 #ifndef RecordWfdb_H
@@ -25,10 +25,7 @@
 //## auto_generated
 #include <algorithm>
 //## auto_generated
-#include "wfdb/wfdb.h"
-//## auto_generated
-#include "math.h"
-//## auto_generated
+#include <wfdb/wfdb.h>
 #include "Continuous.h"
 //## class RecordWfdb
 #include "RecordFile.h"
@@ -90,5 +87,5 @@ protected :
 
 #endif
 /*********************************************************************
-	File Path	: DefaultComponent/DefaultConfig/RecordWfdb.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/Sapien/rpy/RecordWfdb.h
 *********************************************************************/

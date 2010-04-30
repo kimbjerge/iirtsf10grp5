@@ -33,7 +33,8 @@ RecordWfdb::~RecordWfdb() {
 
 void RecordWfdb::First() {
     //#[ operation First()
-    endRecord = false;
+    Next();
+    
     //#]
 }
 

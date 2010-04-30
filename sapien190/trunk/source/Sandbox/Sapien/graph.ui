@@ -90,7 +90,23 @@
     <string>Refresh</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="simulate">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>260</y>
+     <width>93</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Simulate</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
+ <slots>
+  <slot>on_simulate_clicked()</slot>
+ </slots>
 </ui>

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'graph.ui'
 **
-** Created: Fri Apr 30 16:58:33 2010
+** Created: Fri Apr 30 21:56:34 2010
 **      by: Qt User Interface Compiler version 4.6.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -24,6 +24,7 @@ class Ui_Graph
 {
 public:
     QPushButton *refresh;
+    QPushButton *simulate;
 
     void setupUi(QWidget *Graph)
     {
@@ -43,6 +44,9 @@ public:
         refresh = new QPushButton(Graph);
         refresh->setObjectName(QString::fromUtf8("refresh"));
         refresh->setGeometry(QRect(300, 260, 93, 27));
+        simulate = new QPushButton(Graph);
+        simulate->setObjectName(QString::fromUtf8("simulate"));
+        simulate->setGeometry(QRect(180, 260, 93, 27));
 
         retranslateUi(Graph);
 
@@ -53,6 +57,7 @@ public:
     {
         Graph->setWindowTitle(QApplication::translate("Graph", "Form", 0, QApplication::UnicodeUTF8));
         refresh->setText(QApplication::translate("Graph", "Refresh", 0, QApplication::UnicodeUTF8));
+        simulate->setText(QApplication::translate("Graph", "Simulate", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

@@ -87,6 +87,9 @@ HEADERS += mainwindow.h \
     rpy/RecordWfdb.h \
     rpy/RecordFile.h \
     rpy/Signal.h \
-    hw/Dac.h
+    hw/Dac.h \
+    rpy/NormalGenerator.h \
+    rpy/ExtOutDigital.h \
+    rpy/ExtOutAnalogue.h
 FORMS += mainwindow.ui \
     graph.ui

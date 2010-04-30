@@ -1,9 +1,15 @@
 #include "graph.h"
 #include "ui_graph.h"
+#include "rpy/NormalGenerator.h"
+#include "rpy/Medicine.h"
+#include "rpy/RecordProxy.h"
+#include "rpy/RecordWfdb.h"
+#include "rpy/RecordSimulate.h"
 
 Graph::Graph(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::Graph)
+    ui(new Ui::Graph),
+    itsPatientModel(0)
 {
     this->resolution = 200;
     this->maxValue = 200;
@@ -80,5 +86,30 @@ void Graph::on_refresh_clicked()
                 this->addValue(this->v[1] - 1050);
                 usleep(4000);
             }
+    }
+}
+
+void Graph::on_simulate_clicked()
+{
+    if (itsPatientModel == 0)
+    {
+        // Create the PatientModel and configurate
+        itsPatientModel = new PatientModel();
+        itsPatientModel->SetStrategy(new NormalGenerator());
+        itsPatientModel->AddMedicine(new Medicine());
+        //itsPatientModel->SetRecord(new RecordProxy(new RecordSimulate()));
+        itsPatientModel->SetRecord(new RecordProxy(new RecordWfdb("100s")));
+    }
+    itsPatientModel->StartSimulation();
+    for (int i = 0; i < 1000; i++)
+    {
+        int sample;
+        itsPatientModel->CalcSample();
+        itsPatientModel->GenerateSignals();
+        Generator *gen = itsPatientModel->getItsGenerator();
+        sample = gen->getECGSample();
+        this->addValue(sample-1050);
+        //this->addValue(sample-600);
+        usleep(4000);
     }
 }

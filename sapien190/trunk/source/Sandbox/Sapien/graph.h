@@ -9,6 +9,7 @@
 #include <wfdb/wfdb.h>
 #include <iostream>
 #include <stdio.h>
+#include "rpy/PatientModel.h"
 
 using namespace std;
 
@@ -36,10 +37,12 @@ private:
     char record[100];
     WFDB_Sample v[2];
     WFDB_Siginfo s[2];
+    PatientModel *itsPatientModel;
 
 
 private slots:
     void on_refresh_clicked();
+    void on_simulate_clicked();
 };
 
 #endif // GRAPH_H
