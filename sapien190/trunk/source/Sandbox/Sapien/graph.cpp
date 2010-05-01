@@ -5,6 +5,7 @@
 #include "rpy/RecordProxy.h"
 #include "rpy/RecordWfdb.h"
 #include "rpy/RecordSimulate.h"
+#include "rpy/SmartPtr.h"
 
 Graph::Graph(QWidget *parent) :
     QWidget(parent),
@@ -91,6 +92,8 @@ void Graph::on_refresh_clicked()
 
 void Graph::on_simulate_clicked()
 {
+    //SmartPtr<PatientModel> model(new PatientModel);
+
     if (itsPatientModel == 0)
     {
         // Create the PatientModel and configurate
