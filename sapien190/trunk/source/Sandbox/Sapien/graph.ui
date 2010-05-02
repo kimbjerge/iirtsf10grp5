@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>470</width>
+    <height>250</height>
    </rect>
   </property>
   <property name="palette">
@@ -80,8 +80,8 @@
   <widget class="QPushButton" name="refresh">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>260</y>
+     <x>350</x>
+     <y>200</y>
      <width>93</width>
      <height>27</height>
     </rect>
@@ -93,8 +93,8 @@
   <widget class="QPushButton" name="simulate">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>260</y>
+     <x>20</x>
+     <y>200</y>
      <width>93</width>
      <height>27</height>
     </rect>

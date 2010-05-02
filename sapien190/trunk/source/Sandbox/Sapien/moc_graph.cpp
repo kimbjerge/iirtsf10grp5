@@ -1,8 +1,8 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'graph.h'
 **
-** Created: Sat May 1 23:26:56 2010
-**      by: The Qt Meta Object Compiler version 62 (Qt 4.6.1)
+** Created: Sun May 2 20:32:35 2010
+**      by: The Qt Meta Object Compiler version 62 (Qt 4.6.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -11,7 +11,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'graph.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 62
-#error "This file was generated using the moc from 4.6.1. It"
+#error "This file was generated using the moc from 4.6.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -31,8 +31,8 @@ static const uint qt_meta_data_Graph[] = {
        0,       // signalCount
 
  // slots: signature, parameters, type, tag, flags
-       7,    6,    6,    6, 0x08,
-      28,    6,    6,    6, 0x08,
+       7,    6,    6,    6, 0x0a,
+      28,    6,    6,    6, 0x0a,
 
        0        // eod
 };

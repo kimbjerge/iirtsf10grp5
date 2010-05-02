@@ -40,7 +40,7 @@ private:
     PatientModel *itsPatientModel;
 
 
-private slots:
+public slots:
     void on_refresh_clicked();
     void on_simulate_clicked();
 };

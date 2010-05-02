@@ -1,8 +1,8 @@
 /********************************************************************************
 ** Form generated from reading UI file 'graph.ui'
 **
-** Created: Sat May 1 23:26:27 2010
-**      by: Qt User Interface Compiler version 4.6.1
+** Created: Sun May 2 20:32:08 2010
+**      by: Qt User Interface Compiler version 4.6.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -30,7 +30,7 @@ public:
     {
         if (Graph->objectName().isEmpty())
             Graph->setObjectName(QString::fromUtf8("Graph"));
-        Graph->resize(400, 300);
+        Graph->resize(470, 250);
         QPalette palette;
         QBrush brush(QColor(255, 255, 255, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -43,10 +43,10 @@ public:
         Graph->setPalette(palette);
         refresh = new QPushButton(Graph);
         refresh->setObjectName(QString::fromUtf8("refresh"));
-        refresh->setGeometry(QRect(300, 260, 93, 27));
+        refresh->setGeometry(QRect(350, 200, 93, 27));
         simulate = new QPushButton(Graph);
         simulate->setObjectName(QString::fromUtf8("simulate"));
-        simulate->setGeometry(QRect(180, 260, 93, 27));
+        simulate->setGeometry(QRect(20, 200, 93, 27));
 
         retranslateUi(Graph);
 

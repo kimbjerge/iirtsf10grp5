@@ -25,6 +25,7 @@ ExtOutAnalogue::~ExtOutAnalogue() {
 
 void ExtOutAnalogue::OutputSample(int sample) {
     //#[ operation OutputSample(int)
+    //KBE???
     std::cout << "Ch" << channel << " Sample " << sample << std::endl;
     //#]
 }
