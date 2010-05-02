@@ -1,0 +1,59 @@
+Scrum Status 26. May:
+____________________
+
+Peter:
+	Done:
+	- Reading patient records running on target with analogue output
+	Problems:
+	- WFDB compile to target
+	Next:
+	- ... 
+
+Anders:
+	Done:
+	- Crosscompile and running on target (WfdB+Qt)
+	Problems:
+	- Touch on target doesn't work
+	Next:
+	- State diagram for discrete part of system (Paper) 
+
+Kim:	
+	Done:
+	- Start writing the architecture document
+	- Meeting minutes
+	- UC#1 scenario
+	- Suggestion for logical view in Rhapsody
+	Problems:
+	- 
+	Next:
+	- Meeting minutes
+	- Devkit8000 for development
+	- Continous model in Rhapsody look for patterns (Proxy, Pipes and filters)
+	- Qt with Rhapsody and DAC on target (Qt, WfDB, Rhapsody, Dac, Abstract LinuxOS)
+	- Look on how EDR works - how to used it in our system
+
+
+Next scrum meeting monday at 9:00 (Anders at 11:00)
+	- Scrum status
+	- Design for discrete, process (State, Command, others)
+	- Continue the hole Monday
+
+
+Action list (Backlog) to 1. delivery 11. may:
+____________________________________________
+
+1. week
+	- Domain + application model (Kim)
+	- Use Case senarious for #1 (Kim)
+	- Reading wfdb on target sending data on port (Peter)
+	- Qt running on target reading wfdb record and plotting (Anders)
+
+2. week
+	- Draft achitecture document with UC #1
+	- Design model 4+1 view 
+	- Qt prototype display wfdb records same time as data on port
+
+3. week
+	- Architecture document with 4+1 view of UC #1
+	- Design implemented for first prototype including UC #1
+ 
