@@ -5,7 +5,11 @@ A new breed of Patience Monitoring Systems
 
 This wiki tells a bit about the the Sapien190 Monitoring System. It's all very wet and work in progress.
 
-= TOC =
+== TOC ==
 
 Minutes of Meetings:
-[sdf]
+
+
+
+=== How to compile QT for an embedded target ===
+[QtMakefileForTarget]
