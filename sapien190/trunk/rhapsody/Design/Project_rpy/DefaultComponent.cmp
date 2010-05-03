@@ -29,7 +29,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		}
 	}
 	- _name = "DefaultComponent";
-	- _lastID = 3;
+	- _lastID = 4;
 	- m_buildType = Executable;
 	- m_libraries = "";
 	- m_additionalSources = "";
@@ -42,48 +42,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _name = "Files";
 		- m_path = "";
 		- Elements = { IRPYRawContainer 
-			- size = 42;
+			- size = 36;
 			- value = 
-			{ IHandle 
-				- _m2Class = "IActor";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Infusion Pump";
-				- _id = GUID 402120b6-1e2f-45c8-996c-e09289845048;
-			}
-			{ IHandle 
-				- _m2Class = "IActor";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Instructor";
-				- _id = GUID 459b85e4-bc6d-485a-bc75-9b11fa3f6a25;
-			}
-			{ IHandle 
-				- _m2Class = "IActor";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Monitor";
-				- _id = GUID c06a3fab-9940-414c-b409-2d0260809e70;
-			}
-			{ IHandle 
-				- _m2Class = "IActor";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Remote";
-				- _id = GUID 4b4f1904-3872-431d-a0fc-777cef59af88;
-			}
-			{ IHandle 
-				- _m2Class = "IActor";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Scenarious database";
-				- _id = GUID bf806359-cbb5-477e-9062-fa7474a24360;
-			}
 			{ IHandle 
 				- _m2Class = "ISubsystem";
 				- _filename = "Comm.sbs";
@@ -129,7 +89,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "ECGCalculate";
+				- _name = "Gain";
 				- _id = GUID c89b44fc-d0c2-41d7-91ad-d09b2c6dbe37;
 			}
 			{ IHandle 
@@ -137,7 +97,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "EDRCalculate";
+				- _name = "ECGtoEDR";
 				- _id = GUID 4fa4a21f-b3f9-42c9-918f-0cb8f4216138;
 			}
 			{ IHandle 
@@ -153,7 +113,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "InfECGCalculate";
+				- _name = "ECGMedicineAdjust";
 				- _id = GUID 2f2914e1-3ae2-4d38-b333-92c4598bb15a;
 			}
 			{ IHandle 
@@ -161,7 +121,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "InfusionGenerator";
+				- _name = "InfusionPumpModel";
 				- _id = GUID be7ec2c9-e670-423c-9948-7977ad8ef549;
 			}
 			{ IHandle 
@@ -177,7 +137,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "NormalGenerator";
+				- _name = "NormalModel";
 				- _id = GUID eba8d21a-1698-47cb-a517-fb141b68fd88;
 			}
 			{ IHandle 
@@ -193,7 +153,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "PulseCalculate";
+				- _name = "ECGtoPulse";
 				- _id = GUID d0d2b2e1-269a-4417-9fb2-6253bed3e3f4;
 			}
 			{ IHandle 
@@ -203,14 +163,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _class = "";
 				- _name = "Record";
 				- _id = GUID deeb15dd-0f07-40de-ac65-104eb3411649;
-			}
-			{ IHandle 
-				- _m2Class = "IClass";
-				- _filename = "Continuous.sbs";
-				- _subsystem = "Application::Continuous";
-				- _class = "";
-				- _name = "RecordFile";
-				- _id = GUID 8774caa6-548c-407c-bb08-0c866a5502f8;
 			}
 			{ IHandle 
 				- _m2Class = "IClass";
@@ -238,67 +190,11 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 			{ IHandle 
 				- _m2Class = "IClass";
-				- _filename = "Continuous.sbs";
-				- _subsystem = "Application::Continuous";
+				- _filename = "Test.sbs";
+				- _subsystem = "Application::Test";
 				- _class = "";
-				- _name = "TestContinous";
+				- _name = "TestPatientModel";
 				- _id = GUID c0533ed4-38f4-47c6-a5e0-5640071b1dfd;
-			}
-			{ IHandle 
-				- _m2Class = "IClass";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Control";
-				- _id = GUID 2813ff90-4f05-4af1-81eb-c46b89d4efee;
-			}
-			{ IHandle 
-				- _m2Class = "IClass";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "ECG";
-				- _id = GUID 7d81fa32-26e8-4c7f-875d-1ea9079344b8;
-			}
-			{ IHandle 
-				- _m2Class = "IClass";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "EDR";
-				- _id = GUID 3ad4c72b-1719-4259-8e68-2cf250dca3b7;
-			}
-			{ IHandle 
-				- _m2Class = "IClass";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Execute";
-				- _id = GUID e6d130f7-706b-4d99-b399-931e4049f129;
-			}
-			{ IHandle 
-				- _m2Class = "IClass";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Pulse";
-				- _id = GUID 906b3af1-e79b-46b2-b013-18d6c93f96e3;
-			}
-			{ IHandle 
-				- _m2Class = "IClass";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Signal";
-				- _id = GUID 3b76f666-d215-44ca-b09e-caef903af79a;
-			}
-			{ IHandle 
-				- _m2Class = "IClass";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Simulator";
-				- _id = GUID bd12fd55-8e96-4830-bf97-01a7d36abf13;
 			}
 			{ IHandle 
 				- _m2Class = "IClass";
@@ -310,18 +206,18 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 			{ IHandle 
 				- _m2Class = "IClass";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
 				- _class = "";
 				- _name = "Subject";
 				- _id = GUID c14c7265-394f-499f-a8ba-ea634648c485;
 			}
 			{ IHandle 
 				- _m2Class = "IClass";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "Waveform";
+				- _name = "SignalDistributer";
 				- _id = GUID af47700b-20bf-4d9a-b486-9b7e4dcf23cb;
 			}
 			{ IHandle 
@@ -329,7 +225,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "Generator";
+				- _name = "PhysioModel";
 				- _id = GUID f1e495b6-d0c6-45cf-be31-484c56b87c6b;
 			}
 			{ IHandle 
@@ -380,6 +276,62 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _name = "Thread";
 				- _id = GUID c51cfe03-f948-4830-aded-96f0fcec392d;
 			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "Sample";
+				- _id = GUID 6791c441-f070-41a1-8b34-f85e487085fe;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "SampleSet";
+				- _id = GUID e5d0bdb9-1259-4361-a755-1a84654102ef;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "ConThread";
+				- _id = GUID 86db0731-5d4f-438b-b385-e37d8a1a0603;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "FrameBuffer";
+				- _id = GUID 85946300-ccc8-4d59-8c8a-9139c5ca8603;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "RecordWfdb";
+				- _id = GUID 59d7bc47-a7a3-46a0-8874-6df6e378972e;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Continuous";
+				- _id = GUID 80d1923f-5842-48bd-84c1-c7497be71eca;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Test.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Test";
+				- _id = GUID 0a7d3776-e777-4791-9dd3-a3293bfcccf0;
+			}
 		}
 		- Files = { IRPYRawContainer 
 			- size = 0;
@@ -390,7 +342,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _id = GUID dc2f63f8-5eee-4866-81d1-9c64f39ed657;
 	}
 	- Configs = { IRPYRawContainer 
-		- size = 2;
+		- size = 3;
 		- value = 
 		{ ICodeGenConfigInfo 
 			- _id = GUID dc2f63f8-5eee-4866-81d1-9c64f39ed657;
@@ -449,7 +401,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _scopeType = Explicit;
 			- _libraries = "";
 			- _additionalSources = "";
-			- _standardHeaders = "math.h";
+			- _standardHeaders = "wfdb/wfdb.h,math.h";
 			- _includePath = "";
 			- _targetMain = "";
 			- _instrumentation = None;
@@ -466,10 +418,10 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- value = 
 				{ IHandle 
 					- _m2Class = "IClass";
-					- _filename = "Continuous.sbs";
-					- _subsystem = "Application::Continuous";
+					- _filename = "Test.sbs";
+					- _subsystem = "Application::Test";
 					- _class = "";
-					- _name = "TestContinous";
+					- _name = "TestPatientModel";
 					- _id = GUID c0533ed4-38f4-47c6-a5e0-5640071b1dfd;
 				}
 			}
@@ -485,8 +437,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- size = 0;
 				}
 			}
-			- weakCGTime = 4.30.2010::9:6:54;
-			- strongCGTime = 4.30.2010::9:6:54;
+			- weakCGTime = 5.3.2010::9:27:27;
+			- strongCGTime = 5.3.2010::9:27:27;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
@@ -549,7 +501,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _scopeType = Explicit;
 			- _libraries = "";
 			- _additionalSources = "";
-			- _standardHeaders = "";
+			- _standardHeaders = "wfdb/wfdb.h,math.h";
 			- _includePath = "";
 			- _targetMain = "";
 			- _instrumentation = Animation;
@@ -566,10 +518,10 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- value = 
 				{ IHandle 
 					- _m2Class = "IClass";
-					- _filename = "Continuous.sbs";
-					- _subsystem = "Application::Continuous";
+					- _filename = "Test.sbs";
+					- _subsystem = "Application::Test";
 					- _class = "";
-					- _name = "TestContinous";
+					- _name = "TestPatientModel";
 					- _id = GUID c0533ed4-38f4-47c6-a5e0-5640071b1dfd;
 				}
 			}
@@ -585,8 +537,108 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- size = 0;
 				}
 			}
-			- weakCGTime = 5.1.2010::17:20:29;
-			- strongCGTime = 5.1.2010::17:20:29;
+			- weakCGTime = 5.3.2010::21:6:44;
+			- strongCGTime = 5.3.2010::21:6:44;
+			- AnimScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_allInAnimScope = 1;
+		}
+		{ ICodeGenConfigInfo 
+			- _id = GUID 0872ac8c-585e-4f8a-a759-70223f4802b8;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CPP_CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Configuration";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Environment";
+										- _Value = "Cygwin";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Microsoft,MicrosoftDLL,MSVC9,MSVC9DLL,VxWorks,VxWorks6diab,VxWorks6gnu,VxWorks6diab_RTP,VxWorks6gnu_RTP,Solaris2,Cygwin,MultiWin32,Multi4Win32,MSStandardLibrary,MSVC9StandardLibrary,MicrosoftWinCE600,OseSfk,Linux,Solaris2GNU,QNXNeutrinoGCC, QNXNeutrinoMomentics,INTEGRITY,INTEGRITY5,IntegrityESTL,Integrity5ESTL,NucleusPLUS-PPC,WorkbenchManaged,WorkbenchManaged_RTP";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "TestPatientModel";
+			- HyperLinks = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IMHyperLink 
+					- _id = GUID 1ecf3e46-7e3b-4f9f-a120-eff2c2fff9d7;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Makefile";
+					- _linkType = "FREE";
+					- _linkTarget = "C:/IHA/TI-IRTS/sapien190/rhapsody/Design/DefaultComponent/configuration_3/DefaultComponent.mak";
+					- isConfigurationFileHyperLink = 1;
+				}
+				{ IMHyperLink 
+					- _id = GUID 28e324fe-4574-49e6-883c-8112b2092c99;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Main File";
+					- _linkType = "FREE";
+					- _linkTarget = "C:/IHA/TI-IRTS/sapien190/rhapsody/Design/DefaultComponent/configuration_3/MainDefaultComponent";
+					- isConfigurationFileHyperLink = 1;
+				}
+			}
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "wfdb/wfdb.h,math.h";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = None;
+			- _timeModel = RealTime;
+			- m_generateActors = 0;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "Test.sbs";
+					- _subsystem = "Application::Test";
+					- _class = "";
+					- _name = "TestPatientModel";
+					- _id = GUID c0533ed4-38f4-47c6-a5e0-5640071b1dfd;
+				}
+			}
+			- _root = { IFolder 
+				- _id = GUID 498b19a3-3756-48ab-9903-d839042747eb;
+				- _myState = 8192;
+				- _name = "TestPatientModel";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 5.3.2010::21:0:51;
+			- strongCGTime = 5.3.2010::21:0:51;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
@@ -599,7 +651,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 5.1.2010::17:17:15;
-	- strongCGTime = 5.1.2010::17:17:15;
+	- weakCGTime = 5.3.2010::21:4:26;
+	- strongCGTime = 5.3.2010::21:4:26;
 }
 

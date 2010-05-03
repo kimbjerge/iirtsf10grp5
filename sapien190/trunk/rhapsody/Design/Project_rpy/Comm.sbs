@@ -47,7 +47,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 4.30.2010::9:8:19;
+	- weakCGTime = 5.3.2010::20:42:16;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
 	- _eventsBaseID = -1;
@@ -58,7 +58,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 4.30.2010::9:8:19;
+			- weakCGTime = 5.3.2010::7:54:49;
 			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -69,7 +69,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		{ IClass 
 			- _id = GUID dd445cdf-26d2-43e9-9faf-3d6b72a2e42a;
 			- _myState = 8192;
-			- _name = "PulseUpdater";
+			- _name = "SerialProtocol";
 			- Stereotypes = { IRPYRawContainer 
 				- size = 1;
 				- value = 
@@ -87,8 +87,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID 91b1333b-64c7-4863-a3c9-43d4a97c0bce;
 			}
 			- _lastID = 1;
-			- weakCGTime = 4.30.2010::9:8:19;
-			- strongCGTime = 4.30.2010::9:8:19;
+			- weakCGTime = 5.3.2010::20:42:16;
+			- strongCGTime = 5.3.2010::7:55:58;
 			- Operations = { IRPYRawContainer 
 				- size = 1;
 				- value = 
@@ -141,7 +141,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				{ IFile 
 					- _id = GUID 854b51c9-4808-4aef-a056-74faa0545e04;
 					- _myState = 139264;
-					- _name = "PulseUpdater";
+					- _name = "SerialProtocol";
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -201,7 +201,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						}
 						{ IFileFragment 
 							- _id = GUID b5e87385-b900-41a5-b83f-75882ca38b4d;
-							- _name = "PulseUpdater";
+							- _name = "SerialProtocol";
 							- Tags = { IRPYRawContainer 
 								- size = 2;
 								- value = 
@@ -398,7 +398,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 								}
 								{ IFileFragment 
 									- _id = GUID 1e123c7e-8c82-4c7e-b744-9a08cc0278d8;
-									- _name = "itsExtOutDigital";
+									- _name = "itsExtOutSerial";
 									- m_type = specFragment;
 									- m_text = "";
 									- m_startRow = 64;
@@ -470,7 +470,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				{ IFile 
 					- _id = GUID d95a099e-e19c-4096-80a8-74bf0be97293;
 					- _myState = 139264;
-					- _name = "PulseUpdater";
+					- _name = "SerialProtocol";
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -504,7 +504,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						}
 						{ IFileFragment 
 							- _id = GUID 53c360ce-a7d5-43d6-a2ee-8224ab7efaae;
-							- _name = "PulseUpdater";
+							- _name = "SerialProtocol";
 							- m_type = implFragment;
 							- m_text = "";
 							- m_startRow = 18;
@@ -1065,23 +1065,18 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				{ IAssociationEnd 
 					- _id = GUID 4987f09f-2164-44a8-913f-b4ad38696311;
 					- _myState = 10240;
-					- _name = "itsExtOutDigital";
+					- _name = "itsExtOutSerial";
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
 						- _filename = "AbstractHW.sbs";
 						- _subsystem = "AbstractHW";
 						- _class = "";
-						- _name = "ExtOutDigital";
+						- _name = "ExtOutSerial";
 						- _id = GUID 9947fa55-9bb8-4efa-a5cb-3123a7bb9373;
 					}
 					- _inverse = { IHandle 
-						- _m2Class = "IAssociationEnd";
-						- _filename = "AbstractHW.sbs";
-						- _subsystem = "AbstractHW";
-						- _class = "ExtOutDigital";
-						- _name = "itsPulseUpdater";
-						- _id = GUID 1473a6ab-7729-4af7-86b9-0d8985106e7f;
+						- _m2Class = "";
 					}
 					- _linkName = "";
 					- _linkType = Assoc;

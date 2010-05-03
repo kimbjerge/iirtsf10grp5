@@ -150,7 +150,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- direction_ = toEnd2;
 		}
 	}
-	- weakCGTime = 4.30.2010::9:7:49;
+	- weakCGTime = 5.3.2010::20:41:56;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 0fb36dc0-ad37-45a6-b555-77bf7edd4044;
 	- _eventsBaseID = -1;
@@ -161,7 +161,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 0fb36dc0-ad37-45a6-b555-77bf7edd4044;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 4.30.2010::9:7:49;
+			- weakCGTime = 5.3.2010::7:54:49;
 			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -193,14 +193,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _name = "DomainModel";
 				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
 			}
-			- weakCGTime = 4.30.2010::9:7:49;
+			- weakCGTime = 5.3.2010::20:41:56;
 			- strongCGTime = 4.30.2010::9:7:49;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
 			}
 			- Associations = { IRPYRawContainer 
-				- size = 2;
+				- size = 1;
 				- value = 
 				{ IAssociationEnd 
 					- _id = GUID fdd650d6-bdff-4fbc-93a8-73abad957300;
@@ -222,31 +222,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _class = "PatientModel";
 						- _name = "itsExtInputs";
 						- _id = GUID ae956a11-668d-4ecf-aea6-a5d891e6b3e3;
-					}
-					- _linkName = "";
-					- _linkType = Assoc;
-					- _navigability = Navigable;
-				}
-				{ IAssociationEnd 
-					- _id = GUID dfd3f58a-bfa2-4e01-b5ef-5f8771381f80;
-					- _myState = 10240;
-					- _name = "itsInfusion Pump";
-					- _multiplicity = "1";
-					- _otherClass = { IClassifierHandle 
-						- _m2Class = "IActor";
-						- _filename = "Application.sbs";
-						- _subsystem = "Application";
-						- _class = "";
-						- _name = "Infusion Pump";
-						- _id = GUID 402120b6-1e2f-45c8-996c-e09289845048;
-					}
-					- _inverse = { IHandle 
-						- _m2Class = "IAssociationEnd";
-						- _filename = "Application.sbs";
-						- _subsystem = "Application";
-						- _class = "Infusion Pump";
-						- _name = "itsExtInputs";
-						- _id = GUID a790d5d2-8fa3-4cff-a07e-4989edcb98bb;
 					}
 					- _linkName = "";
 					- _linkType = Assoc;
@@ -280,7 +255,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
 			}
 			- _lastID = 5;
-			- weakCGTime = 4.30.2010::9:7:56;
+			- weakCGTime = 5.3.2010::20:42:5;
 			- strongCGTime = 4.30.2010::9:7:56;
 			- Operations = { IRPYRawContainer 
 				- size = 2;
@@ -1544,7 +1519,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 								- _id = GUID e7378ed2-b319-4592-a1ed-ca2e20ecb9df;
 							}
 							- Fragments = { IRPYRawContainer 
-								- size = 26;
+								- size = 25;
 								- value = 
 								{ IFileFragment 
 									- _id = GUID 7972de28-bc43-4ba5-bb6b-dafa96848bfb;
@@ -1776,20 +1751,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 554414ba-eb85-4bc4-b14d-6fc6a805e4da;
-									- _name = "itsSignal";
-									- m_type = specFragment;
-									- m_text = "";
-									- m_startRow = 86;
-									- m_startCol_Short = 13;
-									- m_endRow = 86;
-									- m_endCol_Short = 22;
-									- m_subject = { INObjectHandle 
-										- _m2Class = "IAssociationEnd";
-										- _id = GUID e2cee2ee-2ee5-4657-ae56-caeaaa86c4b7;
-									}
-								}
-								{ IFileFragment 
 									- _id = GUID ed415c23-7f5d-42ba-b21f-fd5accf9a5c9;
 									- _name = "////    Framework operations    ////";
 									- m_type = textFragment;
@@ -1906,40 +1867,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _m2Class = "";
 			}
 			- Associations = { IRPYRawContainer 
-				- size = 1;
-				- value = 
-				{ IAssociationEnd 
-					- _id = GUID e2cee2ee-2ee5-4657-ae56-caeaaa86c4b7;
-					- _myState = 10240;
-					- _name = "itsSignal";
-					- _multiplicity = "1";
-					- _otherClass = { IClassifierHandle 
-						- _m2Class = "IClass";
-						- _filename = "Application.sbs";
-						- _subsystem = "Application";
-						- _class = "";
-						- _name = "Signal";
-						- _id = GUID 3b76f666-d215-44ca-b09e-caef903af79a;
-					}
-					- _inverse = { IHandle 
-						- _m2Class = "IAssociationEnd";
-						- _filename = "Application.sbs";
-						- _subsystem = "Application";
-						- _class = "Signal";
-						- _name = "itsExtOutAnalogue";
-						- _id = GUID f682f269-5755-4090-924b-350a864f4cc7;
-					}
-					- _linkName = "";
-					- _linkType = Assoc;
-					- _navigability = Navigable;
-				}
+				- size = 0;
 			}
 			- _classModifier = Unspecified;
 		}
 		{ IClass 
 			- _id = GUID 9947fa55-9bb8-4efa-a5cb-3123a7bb9373;
 			- _myState = 8192;
-			- _name = "ExtOutDigital";
+			- _name = "ExtOutSerial";
 			- Stereotypes = { IRPYRawContainer 
 				- size = 1;
 				- value = 
@@ -1960,65 +1895,58 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _name = "DomainModel";
 				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
 			}
-			- weakCGTime = 4.30.2010::9:8:2;
-			- strongCGTime = 4.30.2010::9:8:2;
+			- _lastID = 1;
+			- weakCGTime = 5.3.2010::20:43:37;
+			- strongCGTime = 5.3.2010::7:54:49;
+			- Operations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID 71db1ac1-92c7-4484-beaf-69bac6130328;
+					- _myState = 8192;
+					- _name = "OutputMessage";
+					- _lastID = 1;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 0511d2b2-f467-4607-a77f-50d19d9a1e54;
+							- _name = "str";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypesC++.sbs";
+								- _subsystem = "PredefinedTypesCpp";
+								- _class = "";
+								- _name = "char*";
+								- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = In;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+				}
+			}
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
 			}
 			- Associations = { IRPYRawContainer 
-				- size = 2;
-				- value = 
-				{ IAssociationEnd 
-					- _id = GUID 2f95b478-7a4d-44ca-be5c-fc9bea5d9e49;
-					- _myState = 10240;
-					- _name = "itsSignal";
-					- _multiplicity = "1";
-					- _otherClass = { IClassifierHandle 
-						- _m2Class = "IClass";
-						- _filename = "Application.sbs";
-						- _subsystem = "Application";
-						- _class = "";
-						- _name = "Signal";
-						- _id = GUID 3b76f666-d215-44ca-b09e-caef903af79a;
-					}
-					- _inverse = { IHandle 
-						- _m2Class = "IAssociationEnd";
-						- _filename = "Application.sbs";
-						- _subsystem = "Application";
-						- _class = "Signal";
-						- _name = "itsExtOutDigital";
-						- _id = GUID 8c74ac30-2923-4b94-925f-ee3e1ee7f318;
-					}
-					- _linkName = "";
-					- _linkType = Assoc;
-					- _navigability = Navigable;
-				}
-				{ IAssociationEnd 
-					- _id = GUID 1473a6ab-7729-4af7-86b9-0d8985106e7f;
-					- _myState = 10240;
-					- _name = "itsPulseUpdater";
-					- _multiplicity = "1";
-					- _otherClass = { IClassifierHandle 
-						- _m2Class = "IClass";
-						- _filename = "Comm.sbs";
-						- _subsystem = "Comm";
-						- _class = "";
-						- _name = "PulseUpdater";
-						- _id = GUID dd445cdf-26d2-43e9-9faf-3d6b72a2e42a;
-					}
-					- _inverse = { IHandle 
-						- _m2Class = "IAssociationEnd";
-						- _filename = "Comm.sbs";
-						- _subsystem = "Comm";
-						- _class = "PulseUpdater";
-						- _name = "itsExtOutDigital";
-						- _id = GUID 4987f09f-2164-44a8-913f-b4ad38696311;
-					}
-					- _linkName = "";
-					- _linkType = Assoc;
-					- _navigability = Navigable;
-				}
+				- size = 0;
 			}
 			- _classModifier = Unspecified;
 		}

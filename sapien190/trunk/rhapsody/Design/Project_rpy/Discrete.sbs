@@ -50,18 +50,18 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _id = GUID 69ee0633-361f-4b1f-8dc4-8d7c1f351e73;
 	}
 	- _lastID = 2;
-	- weakCGTime = 4.30.2010::14:39:36;
+	- weakCGTime = 5.3.2010::13:34:32;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 46ef08d8-d87f-48fd-9435-f30da1714c70;
 	- _eventsBaseID = -1;
 	- Classes = { IRPYRawContainer 
-		- size = 5;
+		- size = 7;
 		- value = 
 		{ IClass 
 			- _id = GUID 46ef08d8-d87f-48fd-9435-f30da1714c70;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 4.30.2010::14:39:36;
+			- weakCGTime = 5.3.2010::13:34:32;
 			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -322,6 +322,124 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _linkType = Assoc;
 					- _navigability = Navigable;
 				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 79b0a2e9-1fa3-42a5-b230-24ca55932b41;
+			- _myState = 8192;
+			- _name = "Loader";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "ContinuosThreadModel";
+				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
+			}
+			- weakCGTime = 5.3.2010::13:17:5;
+			- strongCGTime = 5.3.2010::13:16:39;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID cec2ce68-2461-4bc6-bf90-c69ce80fad68;
+					- _myState = 10240;
+					- _name = "itsConThread";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "";
+						- _name = "ConThread";
+						- _id = GUID 86db0731-5d4f-438b-b385-e37d8a1a0603;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID ae0d6a21-86a2-4339-b658-3c660434d74c;
+			- _myState = 8192;
+			- _name = "Observer";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "ObserverPattern";
+				- _id = GUID f618e3cb-4956-4631-86ae-ddc4348f3cec;
+			}
+			- _lastID = 1;
+			- weakCGTime = 5.3.2010::13:34:32;
+			- strongCGTime = 5.3.2010::13:34:32;
+			- Operations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID fd259f36-3970-4c62-b7a1-4fa76eaaf8ef;
+					- _myState = 8192;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "abstract";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "Update";
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
 			}
 			- _classModifier = Unspecified;
 		}

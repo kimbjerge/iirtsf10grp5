@@ -37,18 +37,18 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _id = GUID 69ee0633-361f-4b1f-8dc4-8d7c1f351e73;
 	}
 	- _lastID = 1;
-	- weakCGTime = 4.26.2010::9:9:42;
+	- weakCGTime = 5.3.2010::19:57:8;
 	- strongCGTime = 4.26.2010::8:32:55;
 	- _defaultComposite = GUID 603b73f9-1502-4e89-b98f-f2a9bce97aff;
 	- _eventsBaseID = -1;
 	- Classes = { IRPYRawContainer 
-		- size = 3;
+		- size = 2;
 		- value = 
 		{ IClass 
 			- _id = GUID 603b73f9-1502-4e89-b98f-f2a9bce97aff;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 4.26.2010::9:9:42;
+			- weakCGTime = 5.3.2010::13:34:32;
 			- strongCGTime = 4.26.2010::8:32:55;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -80,7 +80,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _name = "DomainModel";
 				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
 			}
-			- weakCGTime = 4.26.2010::9:10:24;
+			- weakCGTime = 5.3.2010::19:57:8;
 			- strongCGTime = 4.26.2010::8:40:22;
 			- Operations = { IRPYRawContainer 
 				- size = 1;
@@ -142,6 +142,10 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _id = GUID 286e8737-13fc-4654-8be1-aaf1b10f6462;
 					- _dependsOn = { INObjectHandle 
 						- _m2Class = "IClass";
+						- _filename = "Discrete.sbs";
+						- _subsystem = "Application::Discrete";
+						- _class = "";
+						- _name = "Observer";
 						- _id = GUID ae0d6a21-86a2-4339-b658-3c660434d74c;
 					}
 					- _inheritanceType = iPublic;
@@ -158,14 +162,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				{ IAssociationEnd 
 					- _id = GUID 07e9fb13-405f-417b-826b-d995e7417ece;
 					- _myState = 10240;
-					- _name = "itsWaveform";
+					- _name = "itsSignalDistributer";
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
-						- _filename = "Application.sbs";
-						- _subsystem = "Application";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
 						- _class = "";
-						- _name = "Waveform";
+						- _name = "SignalDistributer";
 						- _id = GUID af47700b-20bf-4d9a-b486-9b7e4dcf23cb;
 					}
 					- _inverse = { IHandle 
@@ -228,81 +232,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 			- _classModifier = Unspecified;
 		}
-		{ IClass 
-			- _id = GUID ae0d6a21-86a2-4339-b658-3c660434d74c;
-			- _myState = 8192;
-			- _name = "Observer";
-			- _theMainDiagram = { IHandle 
-				- _m2Class = "IDiagram";
-				- _filename = "Application.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "ObserverPattern";
-				- _id = GUID f618e3cb-4956-4631-86ae-ddc4348f3cec;
-			}
-			- _lastID = 1;
-			- weakCGTime = 4.26.2010::8:40:26;
-			- strongCGTime = 4.26.2010::8:40:26;
-			- Operations = { IRPYRawContainer 
-				- size = 1;
-				- value = 
-				{ IPrimitiveOperation 
-					- _id = GUID fd259f36-3970-4c62-b7a1-4fa76eaaf8ef;
-					- _myState = 8192;
-					- _properties = { IPropertyContainer 
-						- Subjects = { IRPYRawContainer 
-							- size = 1;
-							- value = 
-							{ IPropertySubject 
-								- _Name = "CPP_CG";
-								- Metaclasses = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IPropertyMetaclass 
-										- _Name = "Operation";
-										- Properties = { IRPYRawContainer 
-											- size = 1;
-											- value = 
-											{ IProperty 
-												- _Name = "Kind";
-												- _Value = "abstract";
-												- _Type = Enum;
-												- _ExtraTypeInfo = "common,abstract";
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					- _name = "Update";
-					- _virtual = 1;
-					- Args = { IRPYRawContainer 
-						- size = 0;
-					}
-					- _returnType = { IHandle 
-						- _m2Class = "IType";
-						- _filename = "PredefinedTypesC++.sbs";
-						- _subsystem = "PredefinedTypesCpp";
-						- _class = "";
-						- _name = "void";
-						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
-					}
-					- _abstract = 0;
-					- _final = 0;
-					- _concurrency = Sequential;
-					- _protection = iPublic;
-					- _static = 0;
-					- _constant = 0;
-				}
-			}
-			- _multiplicity = "";
-			- _itsStateChart = { IHandle 
-				- _m2Class = "";
-			}
-			- _classModifier = Unspecified;
-		}
 	}
-	- _configurationRelatedTime = 1.2.1990::0:0:0;
+	- _configurationRelatedTime = 5.3.2010::13:34:32;
 }
 

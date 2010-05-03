@@ -42,7 +42,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _name = "Files";
 		- m_path = "";
 		- Elements = { IRPYRawContainer 
-			- size = 4;
+			- size = 8;
 			- value = 
 			{ IHandle 
 				- _m2Class = "ISubsystem";
@@ -51,14 +51,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _class = "";
 				- _name = "AbstractHW";
 				- _id = GUID 6f603c1a-3403-40b6-aa9f-f570a38b251b;
-			}
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "Application.sbs";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "Application";
-				- _id = GUID ae1cb529-d6a5-4a57-85d0-e4e16822ed75;
 			}
 			{ IHandle 
 				- _m2Class = "ISubsystem";
@@ -76,6 +68,46 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _name = "GraphicalUserInterface";
 				- _id = GUID b087c986-b373-4750-8bfd-a0aa2f5a0d3f;
 			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Continuous";
+				- _id = GUID 80d1923f-5842-48bd-84c1-c7497be71eca;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Discrete.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Discrete";
+				- _id = GUID b99cf7b4-c288-4b92-9148-aa7b0a3c8a1c;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "GUI.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "GUI";
+				- _id = GUID 30c64cb8-f037-4c93-8e36-c33109fd525f;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "SmartPtr";
+				- _id = GUID 73acdc15-541b-488a-abd4-7c082dadb8b7;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "Subject";
+				- _id = GUID c14c7265-394f-499f-a8ba-ea634648c485;
+			}
 		}
 		- Files = { IRPYRawContainer 
 			- size = 0;
@@ -83,7 +115,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	}
 	- m_configActive = { ICodeGenConfigInfoHandle 
 		- _m2Class = "ICodeGenConfigInfo";
-		- _id = GUID fb28499c-c40d-4263-81e7-3de95db6b7d7;
+		- _id = GUID 19bd3465-0e6e-4ca2-b51b-4a7466b87739;
 	}
 	- Configs = { IRPYRawContainer 
 		- size = 2;
@@ -145,7 +177,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _scopeType = Explicit;
 			- _libraries = "";
 			- _additionalSources = "";
-			- _standardHeaders = "";
+			- _standardHeaders = "wfdb/wfdb.h";
 			- _includePath = "";
 			- _targetMain = "";
 			- _instrumentation = None;
@@ -158,22 +190,13 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- size = 0;
 			}
 			- InitialInstances = { IRPYRawContainer 
-				- size = 1;
-				- value = 
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Continuous.sbs";
-					- _subsystem = "Application::Continuous";
-					- _class = "";
-					- _name = "TestContinous";
-					- _id = GUID c0533ed4-38f4-47c6-a5e0-5640071b1dfd;
-				}
+				- size = 0;
 			}
 			- _root = { IFolder 
 				- _id = GUID 59845a93-ce72-4e53-acfd-17501b3abd62;
 				- _myState = 73728;
 				- _name = "Target";
-				- m_path = "C:\\Ubuntu_share\\sapien190\\source\\Sandbox\\Sapien\\rpy";
+				- m_path = "C:\\Ubuntu_share\\sapien190\\source\\Sandbox\\SapienD1\\sapine\\rpy";
 				- Elements = { IRPYRawContainer 
 					- size = 0;
 				}
@@ -181,8 +204,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- size = 0;
 				}
 			}
-			- weakCGTime = 4.30.2010::13:59:9;
-			- strongCGTime = 4.30.2010::13:59:9;
+			- weakCGTime = 5.3.2010::21:14:42;
+			- strongCGTime = 5.3.2010::21:14:42;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
@@ -286,7 +309,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 4.30.2010::14:0:26;
-	- strongCGTime = 4.30.2010::8:39:36;
+	- weakCGTime = 5.3.2010::21:11:28;
+	- strongCGTime = 5.3.2010::21:3:17;
 }
 

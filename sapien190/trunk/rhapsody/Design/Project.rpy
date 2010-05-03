@@ -29,7 +29,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- value = 
 		{ IMultiplicityItem 
 			- _name = "1";
-			- _count = 0;
+			- _count = 2;
 		}
 		{ IMultiplicityItem 
 			- _name = "*";
@@ -1888,7 +1888,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "SubSystemsView";
-			- _lastModifiedTime = "4.30.2010::14:38:58";
+			- _lastModifiedTime = "5.3.2010::20:39:24";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID c4a9a0b7-c588-441e-b401-1b9825d901bb;
 				- m_type = 0;
@@ -2225,7 +2225,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2824;
-					- m_transform = 0.444051 0 0 0.426013 168.791 603.505 ;
+					- m_transform = 0.444051 0 0 0.568017 155.99 406.197 ;
 					- m_bIsPreferencesInitialized = 0;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -2260,7 +2260,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						}
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 9;
+						- size = 7;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -2269,14 +2269,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _class = "PatientModel";
 							- _name = "StartSimulation()";
 							- _id = GUID 78904203-ab98-480c-8ca8-33accfc932bb;
-						}
-						{ IHandle 
-							- _m2Class = "IPrimitiveOperation";
-							- _filename = "Continuous.sbs";
-							- _subsystem = "Application::Continuous";
-							- _class = "PatientModel";
-							- _name = "GenerateSignals()";
-							- _id = GUID 1349ecce-ed72-4820-bb2d-089d37d9a891;
 						}
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -2299,7 +2291,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _filename = "Continuous.sbs";
 							- _subsystem = "Application::Continuous";
 							- _class = "PatientModel";
-							- _name = "SetStrategy(Generator*)";
+							- _name = "SetStrategy(PhysioModel*)";
 							- _id = GUID 32e1cf4b-6764-4cd7-a8c4-5af494e7f978;
 						}
 						{ IHandle 
@@ -2307,7 +2299,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _filename = "Continuous.sbs";
 							- _subsystem = "Application::Continuous";
 							- _class = "PatientModel";
-							- _name = "AddMedicine(Medicine*)";
+							- _name = "SetMedicine(Medicine*)";
 							- _id = GUID 912e54e0-667a-4db4-946d-e0717b7bf4ab;
 						}
 						{ IHandle 
@@ -2325,14 +2317,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _class = "PatientModel";
 							- _name = "PatientModel()";
 							- _id = GUID bc410ae8-bc2f-4f08-a419-46c894e05fee;
-						}
-						{ IHandle 
-							- _m2Class = "IPrimitiveOperation";
-							- _filename = "Continuous.sbs";
-							- _subsystem = "Application::Continuous";
-							- _class = "PatientModel";
-							- _name = "GeneratePulse()";
-							- _id = GUID 5ceda13e-45b5-4d92-8198-3c29d300eefe;
 						}
 					}
 					- m_multiplicity = { CGIText 
@@ -2517,9 +2501,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID ae1cb529-d6a5-4a57-85d0-e4e16822ed75;
 			}
 		}
-	}
-	- MSCS = { IRPYRawContainer 
-		- size = 0;
 	}
 	- Components = { IRPYRawContainer 
 		- size = 3;
