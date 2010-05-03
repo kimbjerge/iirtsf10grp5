@@ -1,0 +1,70 @@
+Scrum Status 03. May:
+____________________
+
+Peter:
+	Done:
+	- Reading about how to generate EDR signals
+	Problems:
+	- 
+	Next:
+	- Implemenent next in RecordWfdb for annotation and sample
+	- Strip part to generate EDR from ECG signals ECGtoEDR
+	- Serial port wrapper
+	- Look at how to generate pulse from EDG annotation 
+
+Anders:
+	Done:
+	- Draft state diagram for discrete part (Scenario, start stop ..)
+	Problems:
+	- 
+	Next:
+	- Look at contents for the Architecture document and contents based on theory
+ 		- Where to put Rhapsody diagrams in document
+	- Start writing chapter 10 General Design Descisions
+	- Design of the controller with command and state pattern and use inputs from Exercise1-5
+	- GUI design and change of views based on the discrete model
+	- Integrate Rhapsody model with GuI and FrameBuffer observer
+
+Kim:	
+	Done:
+	- Meeting minutes
+	- Devkit8000 for development
+	- Continous model in Rhapsody look for patterns (Proxy, Pipes and filters)
+	- Qt with Rhapsody and DAC on target (Qt, WfDB, Rhapsody, Dac, Abstract LinuxOS)
+	- Look on how EDR works - how to used it in our system
+	Problems:
+	- 
+	Next:
+	- Update Rhapsody model with new design for continous part
+	- Thread model - PatientModel and ConThread
+	- FrameBuffer observer pattern
+	- Test with loader for continous part and FrameBuffer observer
+	- Generated and compile Sapien with Qt - test loader and starting of threads
+		- To be completed friday and mail to Anders
+
+
+Next scrum meeting monday at 11:30
+	- Scrum status
+	- Running on target - new design 
+	- Update of Architecture documents with drawings of 1. iteration
+	- Continue to 17:00 
+
+
+Action list (Backlog) to 1. delivery 11. may:
+____________________________________________
+
+1. week
+	- Domain + application model (Kim)
+	- Use Case senarious for #1 (Kim)
+	- Reading wfdb on target sending data on port (Peter)
+	- Qt running on target reading wfdb record and plotting (Anders)
+
+2. week
+	- Draft achitecture document with UC #1 (Kim)
+	- Design model 4+1 view 
+	- Qt prototype display wfdb records same time as data on port (Kim + Peter)
+
+3. week
+	- Architecture document with 4+1 view of UC #1
+	- Design implemented for first prototype including UC #1
+ 
