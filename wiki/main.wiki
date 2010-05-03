@@ -13,3 +13,6 @@ Minutes of Meetings:
 
 === How to compile QT for an embedded target ===
 [QtMakefileForTarget]
+
+=== Domain Model ===
+http://iirtsf10grp5.googlecode.com/files/DSC03543.JPG
