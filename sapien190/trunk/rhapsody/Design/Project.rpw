@@ -85,8 +85,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "ContinuosThreadModel";
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
-			- _UpLeft = 0 330 ;
-			- _DownRight = 1272 946 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1160 565 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
 		}
@@ -113,8 +113,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "Normal generate sample";
 				- _id = GUID 78d4b359-68fd-4706-84d0-9921c6fed79d;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1376 465 ;
+			- _UpLeft = 0 260 ;
+			- _DownRight = 1376 725 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 2;
 		}
@@ -141,8 +141,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "PatientModel";
 				- _id = GUID 8a759616-ecaa-4d7f-bba4-6f189212bb78;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 682 612 ;
+			- _UpLeft = 0 414 ;
+			- _DownRight = 512 873 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 5;
 		}
@@ -169,8 +169,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StrategyPipesAndFilter";
 				- _id = GUID 86f32eec-a79a-494c-95f1-e1435092e146;
 			}
-			- _UpLeft = 0 80 ;
-			- _DownRight = 574 573 ;
+			- _UpLeft = 0 70 ;
+			- _DownRight = 574 563 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 6;
 		}
@@ -225,8 +225,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "ObserverPattern";
 				- _id = GUID f618e3cb-4956-4631-86ae-ddc4348f3cec;
 			}
-			- _UpLeft = 0 30 ;
-			- _DownRight = 843 556 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 843 526 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 7;
 		}

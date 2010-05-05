@@ -177,7 +177,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _scopeType = Explicit;
 			- _libraries = "";
 			- _additionalSources = "";
-			- _standardHeaders = "wfdb/wfdb.h";
+			- _standardHeaders = "wfdb/wfdb.h,math.h,wfdb/ecgcodes.h";
 			- _includePath = "";
 			- _targetMain = "";
 			- _instrumentation = None;
@@ -204,8 +204,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- size = 0;
 				}
 			}
-			- weakCGTime = 5.3.2010::21:14:42;
-			- strongCGTime = 5.3.2010::21:14:42;
+			- weakCGTime = 5.5.2010::19:1:31;
+			- strongCGTime = 5.5.2010::19:1:31;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
@@ -268,7 +268,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _scopeType = Explicit;
 			- _libraries = "";
 			- _additionalSources = "";
-			- _standardHeaders = "wfdb/wfdb.h";
+			- _standardHeaders = "wfdb/wfdb.h,math.h,wfdb/ecgcodes.h";
 			- _includePath = "";
 			- _targetMain = "";
 			- _instrumentation = None;
@@ -295,8 +295,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- size = 0;
 				}
 			}
-			- weakCGTime = 4.30.2010::14:1:19;
-			- strongCGTime = 4.30.2010::14:1:19;
+			- weakCGTime = 5.5.2010::19:1:36;
+			- strongCGTime = 5.5.2010::19:1:36;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
@@ -309,7 +309,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 5.3.2010::21:11:28;
+	- weakCGTime = 5.5.2010::19:1:31;
 	- strongCGTime = 5.3.2010::21:3:17;
 }
 

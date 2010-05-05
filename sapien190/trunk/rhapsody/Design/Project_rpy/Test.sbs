@@ -152,7 +152,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "TestPatientModel";
-			- _lastModifiedTime = "5.3.2010::20:29:18";
+			- _lastModifiedTime = "5.5.2010::21:34:57";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 6a8a2df3-5c3f-4c9d-bf3d-30c21df61768;
 				- m_type = 0;
@@ -371,7 +371,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.304059 0 0 0.221034 487.39 48.2794 ;
+					- m_transform = 0.304059 0 0 0.243316 487.39 40.9487 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -397,7 +397,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 7;
+						- size = 10;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -454,6 +454,30 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _class = "PatientModel";
 							- _name = "PatientModel()";
 							- _id = GUID bc410ae8-bc2f-4f08-a419-46c894e05fee;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "PatientModel";
+							- _name = "GetECGValue(int)";
+							- _id = GUID c645b25b-5790-4e71-a9b4-7da23b8d5cde;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "PatientModel";
+							- _name = "GetEDRValue(int)";
+							- _id = GUID a53bab9a-44bf-4612-a117-38b2b463e557;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "PatientModel";
+							- _name = "GetPulse()";
+							- _id = GUID 1d5aebc7-9de6-4534-a62a-b353bceaf34e;
 						}
 					}
 				}
@@ -527,7 +551,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
 					- m_SourcePort = 894 874 ;
-					- m_TargetPort = 499 1012 ;
+					- m_TargetPort = 499 950 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
 					}
@@ -644,7 +668,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.3.2010::20:23:6;
+	- weakCGTime = 5.5.2010::20:30:33;
 	- strongCGTime = 5.3.2010::19:50:5;
 	- _defaultComposite = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 	- _eventsBaseID = -1;
@@ -655,8 +679,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 1.2.1990::0:0:0;
-			- strongCGTime = 1.2.1990::0:0:0;
+			- weakCGTime = 5.3.2010::20:23:6;
+			- strongCGTime = 5.3.2010::19:50:5;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
@@ -931,7 +955,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID 1b550d6d-a191-4d94-bec4-6392e500b65a;
 			}
 			- _lastID = 4;
-			- weakCGTime = 5.3.2010::20:23:6;
+			- weakCGTime = 5.5.2010::20:31:48;
 			- strongCGTime = 5.3.2010::19:50:22;
 			- Operations = { IRPYRawContainer 
 				- size = 5;
@@ -1038,7 +1062,13 @@ itsPatientModel->SetRecord(new RecordSimulate);
 					- _constant = 0;
 					- _itsBody = { IBody 
 						- _bodyData = "itsPatientModel->CalcSample();
-std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSample() << std::endl;";
+WFDB_Sample e0 = itsPatientModel->GetECGValue(0);
+WFDB_Sample e1 = itsPatientModel->GetECGValue(1);
+std::cout << \"ECG samples \" << e0 << \", \" << e1 << std::endl;  
+
+WFDB_Sample r0 = itsPatientModel->GetEDRValue(0);
+WFDB_Sample r1 = itsPatientModel->GetEDRValue(1);
+std::cout << \"EDR samples \" << r0 << \", \" << r1 << std::endl;";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -1064,7 +1094,8 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "std::cout << \"Pulse \" << itsPatientModel->getItsPhysioModel()->getPulseSample() << std::endl;";
+						- _bodyData = "WFDB_Sample s = itsPatientModel->getItsPhysioModel()->getPulseSample()->GetSample(0)->getValue();
+std::cout << \"Pulse \" << s << std::endl;";
 					}
 				}
 			}
@@ -1196,18 +1227,18 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID e5516f1a-ac8e-4bc5-877c-941eabb949e4;
+									- _id = GUID 18f2a0b6-dd35-4d84-8fe1-959fec8fc349;
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID 6c1bd8dd-c0da-4e23-b2aa-a13fc90a0e38;
+											- _id = GUID cd669df1-ea1b-4863-92f0-cb0cd8d3d5b2;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 02597a7d-fdb2-4a49-92f0-8b91df36af10;
+													- _id = GUID 1b45be8a-9f2c-4ac5-a908-914480d03d05;
 													- _value = "42";
 												}
 											}
@@ -1222,13 +1253,13 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID 6c5601ed-25ea-4fa9-8b3f-42df5356badd;
+											- _id = GUID e8bf48ea-24c5-4f6d-b504-385c78d4b011;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID cd1a877c-df88-4fa1-9c35-1857b0c38788;
+													- _id = GUID 5c9a308e-4954-492e-923a-03dd0cf04d92;
 													- _value = "66";
 												}
 											}
@@ -1255,18 +1286,18 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 167dd383-f0bf-444d-ab8b-8af30d00184c;
+									- _id = GUID c370b81c-69a7-4a88-ab76-c437d254ced3;
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID ae5e0376-236c-4c52-b899-d0b2cc9b22e1;
+											- _id = GUID 50f2023f-028d-45a1-83f4-0d5c75adf400;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID ad221e5d-fc92-4cf2-aad5-bb9491f191d7;
+													- _id = GUID 09791adb-6c14-4494-b1d4-baeef6870896;
 													- _value = "51";
 												}
 											}
@@ -1281,13 +1312,13 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID e7296685-ea5e-4fb3-aea5-31adc5165a16;
+											- _id = GUID 0ff7757e-98f4-454e-a508-6b3d65bd4d78;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 513879fb-300d-4ec0-ab03-bfa384def03b;
+													- _id = GUID 4ceaa8e6-73c5-481a-9116-7b320c6e32eb;
 													- _value = "39";
 												}
 											}
@@ -1366,7 +1397,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- m_text = "";
 									- m_startRow = 59;
 									- m_startCol_Short = 42;
-									- m_endRow = 64;
+									- m_endRow = 70;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -1387,7 +1418,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID c837c08e-f6b8-45bc-a15a-03b3af0e5f99;
-													- _value = "66";
+													- _value = "72";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -1424,9 +1455,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsPatientModel() const:impl";
-									- m_startRow = 66;
+									- m_startRow = 72;
 									- m_startCol_Short = 60;
-									- m_endRow = 68;
+									- m_endRow = 74;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -1446,7 +1477,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID efebbf72-ca4a-4483-a4be-8a45f4733604;
-													- _value = "70";
+													- _value = "76";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -1483,9 +1514,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsPatientModel(PatientModel *):impl";
-									- m_startRow = 70;
+									- m_startRow = 76;
 									- m_startCol_Short = 73;
-									- m_endRow = 72;
+									- m_endRow = 78;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -1505,7 +1536,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 268c2089-ecb2-48e9-a143-66977aa521bd;
-													- _value = "74";
+													- _value = "80";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -1542,9 +1573,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation startBehavior():impl";
-									- m_startRow = 74;
+									- m_startRow = 80;
 									- m_startCol_Short = 40;
-									- m_endRow = 78;
+									- m_endRow = 84;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -1564,7 +1595,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 257b509d-5caa-4025-bfec-a4be638f732f;
-													- _value = "80";
+													- _value = "86";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -1601,9 +1632,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation initStatechart():impl";
-									- m_startRow = 80;
+									- m_startRow = 86;
 									- m_startCol_Short = 41;
-									- m_endRow = 90;
+									- m_endRow = 96;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -1623,7 +1654,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 94df028a-3f46-4e3c-8502-b70046899b72;
-													- _value = "92";
+													- _value = "98";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -1660,9 +1691,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():impl";
-									- m_startRow = 92;
+									- m_startRow = 98;
 									- m_startCol_Short = 43;
-									- m_endRow = 97;
+									- m_endRow = 103;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -1682,7 +1713,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID c66485b2-e205-4f31-8824-49543eefe770;
-													- _value = "99";
+													- _value = "105";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -1719,9 +1750,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cancelTimeouts():impl";
-									- m_startRow = 99;
+									- m_startRow = 105;
 									- m_startCol_Short = 41;
-									- m_endRow = 115;
+									- m_endRow = 121;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -1741,7 +1772,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID e2fac47c-c445-42d1-a34a-5f8e9384aaa8;
-													- _value = "117";
+													- _value = "123";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -1778,9 +1809,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cancelTimeout(const IOxfTimeout *):impl";
-									- m_startRow = 117;
+									- m_startRow = 123;
 									- m_startCol_Short = 62;
-									- m_endRow = 135;
+									- m_endRow = 141;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -1800,7 +1831,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 890d9b0b-8cb3-4cdb-966b-c8d3b289b92e;
-													- _value = "137";
+													- _value = "143";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -1837,9 +1868,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 137;
+									- m_startRow = 143;
 									- m_startCol_Short = 40;
-									- m_endRow = 141;
+									- m_endRow = 148;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -1857,7 +1888,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 53;
+						- size = 54;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID dc7a0f9b-59ea-4f46-8ddb-a32c4ef15869;
@@ -1964,13 +1995,26 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							}
 						}
 						{ IFileFragment 
+							- _id = GUID 13179018-b08a-44d3-985b-503f1114e64b;
+							- _name = "ecgcodes:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency ecgcodes:spec";
+							- m_startRow = 38;
+							- m_startCol_Short = 1;
+							- m_endRow = 38;
+							- m_endCol_Short = 989;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
 							- _id = GUID 9f607ac4-dc6d-4021-9c0c-7f93c653c33f;
 							- _name = "Medicine";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 38;
+							- m_startRow = 40;
 							- m_startCol_Short = 1;
-							- m_endRow = 38;
+							- m_endRow = 40;
 							- m_endCol_Short = 15;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
@@ -1982,9 +2026,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							- _name = "NormalModel";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 41;
+							- m_startRow = 43;
 							- m_startCol_Short = 1;
-							- m_endRow = 41;
+							- m_endRow = 43;
 							- m_endCol_Short = 18;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
@@ -1996,9 +2040,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							- _name = "RecordProxy";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 44;
+							- m_startRow = 46;
 							- m_startCol_Short = 1;
-							- m_endRow = 44;
+							- m_endRow = 46;
 							- m_endCol_Short = 18;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
@@ -2010,9 +2054,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							- _name = "RecordSimulate";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 47;
+							- m_startRow = 49;
 							- m_startCol_Short = 1;
-							- m_endRow = 47;
+							- m_endRow = 49;
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
@@ -2024,9 +2068,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							- _name = "RecordWfdb";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 50;
+							- m_startRow = 52;
 							- m_startCol_Short = 1;
-							- m_endRow = 50;
+							- m_endRow = 52;
 							- m_endCol_Short = 17;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
@@ -2038,131 +2082,117 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							- _name = "PatientModel:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency PatientModel:spec";
-							- m_startRow = 53;
+							- m_startRow = 55;
 							- m_startCol_Short = 1;
-							- m_endRow = 53;
+							- m_endRow = 55;
 							- m_endCol_Short = 19;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 6fe6b69a-95d8-4eeb-baf2-ab593672e4d4;
+							- _id = GUID e8ef69b3-7d8a-4f16-8a33-cb4d49b179e2;
 							- _name = "////    Constructors and destructors    ////";
 							- m_type = textFragment;
 							- m_text = "////    Constructors and destructors    ////
 ";
-							- m_startRow = 55;
+							- m_startRow = 57;
 							- m_startCol_Short = 1;
-							- m_endRow = 55;
+							- m_endRow = 57;
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 230d8616-f53f-4aa2-b0ef-0f91a926935a;
+							- _id = GUID a9505b55-5770-48d2-814c-907beafda795;
 							- _name = "////    Operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Operations    ////
 ";
-							- m_startRow = 57;
+							- m_startRow = 59;
 							- m_startCol_Short = 1;
-							- m_endRow = 57;
+							- m_endRow = 59;
 							- m_endCol_Short = 27;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID d5154e4a-ad58-434d-bd1e-f479af59f721;
+							- _id = GUID 69393902-305b-4e27-af19-716bdd517fb5;
 							- _name = "////    Additional operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Additional operations    ////
 ";
-							- m_startRow = 59;
+							- m_startRow = 61;
 							- m_startCol_Short = 1;
-							- m_endRow = 59;
+							- m_endRow = 61;
 							- m_endCol_Short = 38;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID bcce3f9e-edc1-4444-b91c-e869f7b91cdb;
+							- _id = GUID a681b98e-69bd-4197-8e1d-38d436d11805;
 							- _name = "////    Relations and components    ////";
 							- m_type = textFragment;
 							- m_text = "////    Relations and components    ////
 ";
-							- m_startRow = 61;
+							- m_startRow = 63;
 							- m_startCol_Short = 1;
-							- m_endRow = 61;
+							- m_endRow = 63;
 							- m_endCol_Short = 41;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 742aec42-f21c-433d-b500-45d30af192a9;
+							- _id = GUID c75d21eb-dc6d-4ca8-91a1-dee07e2ec04a;
 							- _name = "////    Framework operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Framework operations    ////
 ";
-							- m_startRow = 63;
+							- m_startRow = 65;
 							- m_startCol_Short = 1;
-							- m_endRow = 63;
+							- m_endRow = 65;
 							- m_endCol_Short = 37;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 99cef13f-2d14-46a1-95ad-b9636f0b7c62;
+							- _id = GUID 454a7ee3-6604-4601-89fb-a8571bb1496a;
 							- _name = "////    Framework    ////";
 							- m_type = textFragment;
 							- m_text = "////    Framework    ////
 ";
-							- m_startRow = 65;
+							- m_startRow = 67;
 							- m_startCol_Short = 1;
-							- m_endRow = 65;
+							- m_endRow = 67;
 							- m_endCol_Short = 26;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 64b76af3-6569-4b65-99ee-e77afe979230;
+							- _id = GUID 6732d89a-6c41-4c78-9198-7290d69e92a6;
 							- _name = "// rootState:";
 							- m_type = textFragment;
 							- m_text = "// rootState:
 ";
-							- m_startRow = 67;
+							- m_startRow = 69;
 							- m_startCol_Short = 1;
-							- m_endRow = 67;
+							- m_endRow = 69;
 							- m_endCol_Short = 14;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID f35f3749-049c-4247-af94-dd9f2078fb20;
+							- _id = GUID fd5d7dff-72c3-4e35-a56a-19179e0a5986;
 							- _name = "// Running:";
 							- m_type = textFragment;
 							- m_text = "// Running:
-";
-							- m_startRow = 69;
-							- m_startCol_Short = 1;
-							- m_endRow = 69;
-							- m_endCol_Short = 12;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID 6b51f36d-8f78-4f6f-b317-2e8ab336e40e;
-							- _name = "// state_4:";
-							- m_type = textFragment;
-							- m_text = "// state_4:
 ";
 							- m_startRow = 71;
 							- m_startCol_Short = 1;
@@ -2173,178 +2203,178 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID d43733cb-87b7-45ff-a343-06609f1927c1;
-							- _name = "// sample:";
+							- _id = GUID 2ed9cdf9-1072-4c56-90c6-b2a582e14f92;
+							- _name = "// state_4:";
 							- m_type = textFragment;
-							- m_text = "// sample:
+							- m_text = "// state_4:
 ";
 							- m_startRow = 73;
 							- m_startCol_Short = 1;
 							- m_endRow = 73;
+							- m_endCol_Short = 12;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 5ada1261-5bb7-4962-af73-ed5a0b68ef63;
+							- _name = "// sample:";
+							- m_type = textFragment;
+							- m_text = "// sample:
+";
+							- m_startRow = 75;
+							- m_startCol_Short = 1;
+							- m_endRow = 75;
 							- m_endCol_Short = 11;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID b9ef1b3a-418e-4efe-8003-ef2b4847bacf;
+							- _id = GUID 6c962c0c-c6e7-4700-8653-49edacc93467;
 							- _name = "// state_3:";
 							- m_type = textFragment;
 							- m_text = "// state_3:
 ";
-							- m_startRow = 75;
+							- m_startRow = 77;
 							- m_startCol_Short = 1;
-							- m_endRow = 75;
+							- m_endRow = 77;
 							- m_endCol_Short = 12;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID cd09d62d-021c-41fc-808d-a10300271a16;
+							- _id = GUID 5476e0c6-45f7-45f7-9d77-7771c8e8b18c;
 							- _name = "// pulse:";
 							- m_type = textFragment;
 							- m_text = "// pulse:
 ";
-							- m_startRow = 77;
+							- m_startRow = 79;
 							- m_startCol_Short = 1;
-							- m_endRow = 77;
+							- m_endRow = 79;
 							- m_endCol_Short = 10;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 6c96d400-cdeb-46ea-8d71-012783a03e62;
+							- _id = GUID ea08f9b7-cdd2-4cc1-9a98-e15def30a5aa;
 							- _name = "// Idle:";
 							- m_type = textFragment;
 							- m_text = "// Idle:
 ";
-							- m_startRow = 79;
+							- m_startRow = 81;
 							- m_startCol_Short = 1;
-							- m_endRow = 79;
+							- m_endRow = 81;
 							- m_endCol_Short = 9;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID eabd07ac-98d2-4b14-8fa3-f638db93f2f8;
+							- _id = GUID 03454588-d5e0-4816-94dd-40125c99a272;
 							- _name = "////    Constructors and destructors    ////";
 							- m_type = textFragment;
 							- m_text = "////    Constructors and destructors    ////
 ";
-							- m_startRow = 81;
+							- m_startRow = 83;
 							- m_startCol_Short = 1;
-							- m_endRow = 81;
+							- m_endRow = 83;
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 60322825-bf1e-4c61-84d9-6095bc4ee920;
+							- _id = GUID 016ca074-e500-44d8-8c04-e333425486c5;
 							- _name = "////    Operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Operations    ////
 ";
-							- m_startRow = 83;
+							- m_startRow = 85;
 							- m_startCol_Short = 1;
-							- m_endRow = 83;
+							- m_endRow = 85;
 							- m_endCol_Short = 27;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 079262a6-5244-45d1-b41c-e3b126b761f7;
+							- _id = GUID 64764812-9c16-44d1-8f06-57806caef6a8;
 							- _name = "////    Additional operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Additional operations    ////
 ";
-							- m_startRow = 85;
+							- m_startRow = 87;
 							- m_startCol_Short = 1;
-							- m_endRow = 85;
+							- m_endRow = 87;
 							- m_endCol_Short = 38;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 905f681e-3b48-407f-ad05-97ecb935db9c;
+							- _id = GUID a78b795d-fd06-4db3-9277-21b0b8ac80ca;
 							- _name = "////    Relations and components    ////";
 							- m_type = textFragment;
 							- m_text = "////    Relations and components    ////
 ";
-							- m_startRow = 87;
+							- m_startRow = 89;
 							- m_startCol_Short = 1;
-							- m_endRow = 87;
+							- m_endRow = 89;
 							- m_endCol_Short = 41;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 05c90cda-2042-4415-a813-20e6d06d77c7;
+							- _id = GUID 977b2b17-6928-4def-b6a1-0d42281e4a8c;
 							- _name = "////    Framework operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Framework operations    ////
 ";
-							- m_startRow = 89;
+							- m_startRow = 91;
 							- m_startCol_Short = 1;
-							- m_endRow = 89;
+							- m_endRow = 91;
 							- m_endCol_Short = 37;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID c79de63a-83eb-4452-82c6-5e47008c4b7e;
+							- _id = GUID f02ab379-2205-4a35-8137-712eae98cdc0;
 							- _name = "////    Framework    ////";
 							- m_type = textFragment;
 							- m_text = "////    Framework    ////
 ";
-							- m_startRow = 91;
+							- m_startRow = 93;
 							- m_startCol_Short = 1;
-							- m_endRow = 91;
+							- m_endRow = 93;
 							- m_endCol_Short = 26;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 0a1d0506-be81-4ba1-8dbf-af5011ca8bec;
+							- _id = GUID f42984d5-d429-45f9-8677-4154f022ea73;
 							- _name = "// rootState:";
 							- m_type = textFragment;
 							- m_text = "// rootState:
 ";
-							- m_startRow = 93;
+							- m_startRow = 95;
 							- m_startCol_Short = 1;
-							- m_endRow = 93;
+							- m_endRow = 95;
 							- m_endCol_Short = 14;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 7fceeac7-6a55-4366-b916-9dcc87d2eafa;
+							- _id = GUID f06fc1fa-2cf6-4e87-8a90-26264e6c6da0;
 							- _name = "// Running:";
 							- m_type = textFragment;
 							- m_text = "// Running:
-";
-							- m_startRow = 95;
-							- m_startCol_Short = 1;
-							- m_endRow = 95;
-							- m_endCol_Short = 12;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID bef99535-75af-47c7-9bc7-043c67a65bb2;
-							- _name = "// state_4:";
-							- m_type = textFragment;
-							- m_text = "// state_4:
 ";
 							- m_startRow = 97;
 							- m_startCol_Short = 1;
@@ -2355,56 +2385,70 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 8f5ca07b-70d7-49e5-a736-c3d0fcd983ac;
-							- _name = "// sample:";
+							- _id = GUID 4ab99551-a332-4aa1-8a7c-da774987dc06;
+							- _name = "// state_4:";
 							- m_type = textFragment;
-							- m_text = "// sample:
+							- m_text = "// state_4:
 ";
 							- m_startRow = 99;
 							- m_startCol_Short = 1;
 							- m_endRow = 99;
-							- m_endCol_Short = 11;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID 9ddd0d36-b1cc-43ff-9882-01f099be6ee0;
-							- _name = "// state_3:";
-							- m_type = textFragment;
-							- m_text = "// state_3:
-";
-							- m_startRow = 101;
-							- m_startCol_Short = 1;
-							- m_endRow = 101;
 							- m_endCol_Short = 12;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 6b1d01e8-e30e-453d-8b97-df42c1b8c50b;
-							- _name = "// pulse:";
+							- _id = GUID fc7ead11-1b03-4910-8201-f7b5cc14965b;
+							- _name = "// sample:";
 							- m_type = textFragment;
-							- m_text = "// pulse:
+							- m_text = "// sample:
+";
+							- m_startRow = 101;
+							- m_startCol_Short = 1;
+							- m_endRow = 101;
+							- m_endCol_Short = 11;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID f36789c5-7737-402c-a1bc-140830b9537e;
+							- _name = "// state_3:";
+							- m_type = textFragment;
+							- m_text = "// state_3:
 ";
 							- m_startRow = 103;
 							- m_startCol_Short = 1;
 							- m_endRow = 103;
+							- m_endCol_Short = 12;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 30abba72-3e1a-4932-b6d7-f58a25c91ce4;
+							- _name = "// pulse:";
+							- m_type = textFragment;
+							- m_text = "// pulse:
+";
+							- m_startRow = 105;
+							- m_startCol_Short = 1;
+							- m_endRow = 105;
 							- m_endCol_Short = 10;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 52cc918a-0fe4-4ec5-a78d-10b36d48b5bf;
+							- _id = GUID 34c1672b-014d-4a16-b82f-16825a762184;
 							- _name = "// Idle:";
 							- m_type = textFragment;
 							- m_text = "// Idle:
 ";
-							- m_startRow = 105;
+							- m_startRow = 107;
 							- m_startCol_Short = 1;
-							- m_endRow = 105;
+							- m_endRow = 107;
 							- m_endCol_Short = 9;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -2416,131 +2460,117 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							- m_type = textFragment;
 							- m_text = "// Configurated:
 ";
-							- m_startRow = 107;
+							- m_startRow = 109;
 							- m_startCol_Short = 1;
-							- m_endRow = 107;
+							- m_endRow = 109;
 							- m_endCol_Short = 17;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 3756f33e-66d2-4bba-b03c-1ade703b209d;
+							- _id = GUID d9635fc3-f8e1-441a-a984-f776a11e384b;
 							- _name = "////    Constructors and destructors    ////";
 							- m_type = textFragment;
 							- m_text = "////    Constructors and destructors    ////
 ";
-							- m_startRow = 109;
+							- m_startRow = 111;
 							- m_startCol_Short = 1;
-							- m_endRow = 109;
+							- m_endRow = 111;
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 8252a2c1-bf1e-4e68-aa04-d80cb7106493;
+							- _id = GUID c120ae8e-0b2b-4a14-8f17-9c042c16e0df;
 							- _name = "////    Operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Operations    ////
 ";
-							- m_startRow = 111;
+							- m_startRow = 113;
 							- m_startCol_Short = 1;
-							- m_endRow = 111;
+							- m_endRow = 113;
 							- m_endCol_Short = 27;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 06d4f0dd-a6e0-4116-8be1-17982bee3952;
+							- _id = GUID e0fb3599-ff75-4941-97aa-1c909d8141e1;
 							- _name = "////    Additional operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Additional operations    ////
 ";
-							- m_startRow = 113;
+							- m_startRow = 115;
 							- m_startCol_Short = 1;
-							- m_endRow = 113;
+							- m_endRow = 115;
 							- m_endCol_Short = 38;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID a2adcddf-6c7d-44b6-b0a8-810e6c03e8c6;
+							- _id = GUID b6548f32-ece4-44b1-8d99-65511803b427;
 							- _name = "////    Relations and components    ////";
 							- m_type = textFragment;
 							- m_text = "////    Relations and components    ////
 ";
-							- m_startRow = 115;
+							- m_startRow = 117;
 							- m_startCol_Short = 1;
-							- m_endRow = 115;
+							- m_endRow = 117;
 							- m_endCol_Short = 41;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID c9b9da33-dce4-4e73-a43f-b05394389941;
+							- _id = GUID 312c6be8-84df-4277-a120-bce4c68a19e5;
 							- _name = "////    Framework operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Framework operations    ////
 ";
-							- m_startRow = 117;
+							- m_startRow = 119;
 							- m_startCol_Short = 1;
-							- m_endRow = 117;
+							- m_endRow = 119;
 							- m_endCol_Short = 37;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID c9c44468-3f19-4729-9962-7d8055bab080;
+							- _id = GUID 19975582-7783-4501-bbdf-c1b9ab31abd8;
 							- _name = "////    Framework    ////";
 							- m_type = textFragment;
 							- m_text = "////    Framework    ////
 ";
-							- m_startRow = 119;
+							- m_startRow = 121;
 							- m_startCol_Short = 1;
-							- m_endRow = 119;
+							- m_endRow = 121;
 							- m_endCol_Short = 26;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 2a75c85e-176c-482c-87c7-7a232098da99;
+							- _id = GUID c355021f-2116-4e63-a01e-42063ec21fa8;
 							- _name = "// rootState:";
 							- m_type = textFragment;
 							- m_text = "// rootState:
 ";
-							- m_startRow = 121;
+							- m_startRow = 123;
 							- m_startCol_Short = 1;
-							- m_endRow = 121;
+							- m_endRow = 123;
 							- m_endCol_Short = 14;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 6428897a-44cd-4e3e-a722-cc2be37fb298;
+							- _id = GUID c79d6e32-ec3d-4178-8c79-0ba3bc0e8e0f;
 							- _name = "// Running:";
 							- m_type = textFragment;
 							- m_text = "// Running:
-";
-							- m_startRow = 123;
-							- m_startCol_Short = 1;
-							- m_endRow = 123;
-							- m_endCol_Short = 12;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID 29660f00-4aca-43aa-a3a7-544f2dbcb962;
-							- _name = "// state_4:";
-							- m_type = textFragment;
-							- m_text = "// state_4:
 ";
 							- m_startRow = 125;
 							- m_startCol_Short = 1;
@@ -2551,28 +2581,42 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 95e7f474-4c2a-414e-92f2-27c16a1cc1b4;
-							- _name = "// sample:";
+							- _id = GUID 5c6ca026-3733-42db-b810-12457f40470c;
+							- _name = "// state_4:";
 							- m_type = textFragment;
-							- m_text = "// sample:
+							- m_text = "// state_4:
 ";
 							- m_startRow = 127;
 							- m_startCol_Short = 1;
 							- m_endRow = 127;
+							- m_endCol_Short = 12;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 818945bf-fa5e-4ace-96b6-106dac941270;
+							- _name = "// sample:";
+							- m_type = textFragment;
+							- m_text = "// sample:
+";
+							- m_startRow = 129;
+							- m_startCol_Short = 1;
+							- m_endRow = 129;
 							- m_endCol_Short = 11;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 7e833318-34ac-4c78-8499-0c44100c58c6;
+							- _id = GUID d7b93665-c239-4339-940d-f31d902500e4;
 							- _name = "// state_3:";
 							- m_type = textFragment;
 							- m_text = "// state_3:
 ";
-							- m_startRow = 129;
+							- m_startRow = 131;
 							- m_startCol_Short = 1;
-							- m_endRow = 129;
+							- m_endRow = 131;
 							- m_endCol_Short = 12;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -2592,7 +2636,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 										- value = 
 										{ ILiteralSpecification 
 											- _id = GUID 58796b77-8857-4df7-bf80-53883fea756f;
-											- _value = "134";
+											- _value = "136";
 										}
 									}
 									- _typeOf = { IHandle 
@@ -2629,9 +2673,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							}
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 134;
+							- m_startRow = 136;
 							- m_startCol_Short = 1;
-							- m_endRow = 292;
+							- m_endRow = 294;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -2646,9 +2690,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- m_type = textFragment;
 									- m_text = "////    Constructors and destructors    ////
 ";
-									- m_startRow = 135;
+									- m_startRow = 137;
 									- m_startCol_Short = 5;
-									- m_endRow = 135;
+									- m_endRow = 137;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -2660,9 +2704,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- m_type = textFragment;
 									- m_text = "////    Operations    ////
 ";
-									- m_startRow = 137;
+									- m_startRow = 139;
 									- m_startCol_Short = 5;
-									- m_endRow = 137;
+									- m_endRow = 139;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -2673,9 +2717,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- _name = "ConfigurePatientModel";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 142;
+									- m_startRow = 144;
 									- m_startCol_Short = 10;
-									- m_endRow = 142;
+									- m_endRow = 144;
 									- m_endCol_Short = 33;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -2688,9 +2732,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- m_type = textFragment;
 									- m_text = "////    Additional operations    ////
 ";
-									- m_startRow = 144;
+									- m_startRow = 146;
 									- m_startCol_Short = 5;
-									- m_endRow = 144;
+									- m_endRow = 146;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -2702,9 +2746,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- m_type = textFragment;
 									- m_text = "////    Relations and components    ////
 ";
-									- m_startRow = 146;
+									- m_startRow = 148;
 									- m_startCol_Short = 5;
-									- m_endRow = 146;
+									- m_endRow = 148;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -2715,9 +2759,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- _name = "itsPatientModel";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 150;
+									- m_startRow = 152;
 									- m_startCol_Short = 19;
-									- m_endRow = 150;
+									- m_endRow = 152;
 									- m_endCol_Short = 34;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -2730,9 +2774,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- m_type = textFragment;
 									- m_text = "////    Framework operations    ////
 ";
-									- m_startRow = 152;
+									- m_startRow = 154;
 									- m_startCol_Short = 5;
-									- m_endRow = 152;
+									- m_endRow = 154;
 									- m_endCol_Short = 41;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -2744,21 +2788,21 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- m_type = textFragment;
 									- m_text = "////    Framework    ////
 ";
-									- m_startRow = 154;
+									- m_startRow = 156;
 									- m_startCol_Short = 5;
-									- m_endRow = 154;
+									- m_endRow = 156;
 									- m_endCol_Short = 30;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 37205ea9-7733-4aef-be83-8d7f744e9d26;
+									- _id = GUID 999ff103-adb0-4bbb-b98e-77f12218d8a7;
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 159;
+									- m_startRow = 161;
 									- m_startCol_Short = 5;
-									- m_endRow = 159;
+									- m_endRow = 161;
 									- m_endCol_Short = 55;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -2766,12 +2810,12 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 0b4873e5-a95a-474c-ab12-b0efacab970a;
+									- _id = GUID 41577f68-c242-44f3-8b0e-885519ab3833;
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 162;
+									- m_startRow = 164;
 									- m_startCol_Short = 6;
-									- m_endRow = 162;
+									- m_endRow = 164;
 									- m_endCol_Short = 6;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IDestructor";
@@ -2783,9 +2827,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- _name = "GenerateSamples";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 165;
+									- m_startRow = 167;
 									- m_startCol_Short = 10;
-									- m_endRow = 165;
+									- m_endRow = 167;
 									- m_endCol_Short = 27;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -2797,9 +2841,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- _name = "getItsPatientModel:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsPatientModel() const:spec";
-									- m_startRow = 168;
+									- m_startRow = 170;
 									- m_startCol_Short = 19;
-									- m_endRow = 168;
+									- m_endRow = 170;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -2810,9 +2854,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- _name = "setItsPatientModel:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsPatientModel(PatientModel *):spec";
-									- m_startRow = 171;
+									- m_startRow = 173;
 									- m_startCol_Short = 10;
-									- m_endRow = 171;
+									- m_endRow = 173;
 									- m_endCol_Short = 58;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -2823,9 +2867,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- _name = "startBehavior:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation startBehavior():spec";
-									- m_startRow = 174;
+									- m_startRow = 176;
 									- m_startCol_Short = 18;
-									- m_endRow = 174;
+									- m_endRow = 176;
 									- m_endCol_Short = 33;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -2836,9 +2880,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- _name = "initStatechart:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation initStatechart():spec";
-									- m_startRow = 179;
+									- m_startRow = 181;
 									- m_startCol_Short = 10;
-									- m_endRow = 179;
+									- m_endRow = 181;
 									- m_endCol_Short = 26;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -2849,9 +2893,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- _name = "cleanUpRelations:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():spec";
-									- m_startRow = 182;
+									- m_startRow = 184;
 									- m_startCol_Short = 10;
-									- m_endRow = 182;
+									- m_endRow = 184;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -2862,9 +2906,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- _name = "cancelTimeouts:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cancelTimeouts():spec";
-									- m_startRow = 185;
+									- m_startRow = 187;
 									- m_startCol_Short = 10;
-									- m_endRow = 185;
+									- m_endRow = 187;
 									- m_endCol_Short = 26;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -2875,9 +2919,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- _name = "cancelTimeout:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cancelTimeout(const IOxfTimeout *):spec";
-									- m_startRow = 188;
+									- m_startRow = 190;
 									- m_startCol_Short = 10;
-									- m_endRow = 188;
+									- m_endRow = 190;
 									- m_endCol_Short = 47;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -2888,9 +2932,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 									- _name = "GeneratePulse";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 193;
+									- m_startRow = 195;
 									- m_startCol_Short = 10;
-									- m_endRow = 193;
+									- m_endRow = 195;
 									- m_endCol_Short = 25;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -2911,8 +2955,8 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 					- _myState = 10240;
 					- _name = "statechart_0";
 					- _lastID = 11;
-					- weakCGTime = 5.3.2010::19:48:31;
-					- strongCGTime = 5.3.2010::12:16:30;
+					- weakCGTime = 5.5.2010::20:31:48;
+					- strongCGTime = 5.3.2010::19:50:22;
 					- _multiplicity = "";
 					- _itsStateChart = { IHandle 
 						- _m2Class = "";
@@ -3019,9 +3063,9 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 								- _id = GUID d1442405-8e80-4466-a443-d40c66f7892b;
 								- _itsTrigger = { ITimeout 
 									- _id = GUID e2838543-fd42-4938-9e42-05101525eccb;
-									- _body = "tm(1000)";
+									- _body = "tm(500)";
 									- _info = "";
-									- _time = "1000";
+									- _time = "500";
 								}
 								- _itsGuard = NULL;
 								- _itsAction = { IAction 
@@ -3110,7 +3154,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							- _defaultTrans = ;
 						}
 					}
-					- _version = 5.3.2010::21:48:31;
+					- _version = 5.5.2010::22:31:48;
 					- _baseVersion = 1.2.1990::0:0:0;
 					- _diagram = { IStateChartDiagram 
 						- _id = GUID 667e57fe-a1bc-4bf0-bd5b-1af732cec4da;
@@ -3193,7 +3237,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 							}
 						}
 						- _name = "statechartdiagram_0";
-						- _lastModifiedTime = "5.3.2010::19:48:31";
+						- _lastModifiedTime = "5.5.2010::20:31:48";
 						- _graphicChart = { CGIStateChart 
 							- _id = GUID 2aafd183-d104-4fb2-9656-64346f79420b;
 							- m_type = 0;
@@ -4061,7 +4105,7 @@ std::cout << \"ECG sample \" << itsPatientModel->getItsPhysioModel()->getECGSamp
 								- m_targetType = 'T';
 								- m_direction = ' ';
 								- m_rpn = { CGIText 
-									- m_str = "tm(1000)/GenerateSamples()";
+									- m_str = "tm(500)/GenerateSamples()";
 									- m_style = "Arial" 10 0 0 0 1 ;
 									- m_color = { IColor 
 										- m_fgColor = 0;

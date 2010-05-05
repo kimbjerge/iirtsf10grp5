@@ -37,7 +37,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _id = GUID 69ee0633-361f-4b1f-8dc4-8d7c1f351e73;
 	}
 	- _lastID = 1;
-	- weakCGTime = 5.3.2010::19:57:8;
+	- weakCGTime = 5.5.2010::21:32:32;
 	- strongCGTime = 4.26.2010::8:32:55;
 	- _defaultComposite = GUID 603b73f9-1502-4e89-b98f-f2a9bce97aff;
 	- _eventsBaseID = -1;
@@ -48,7 +48,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 603b73f9-1502-4e89-b98f-f2a9bce97aff;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.3.2010::13:34:32;
+			- weakCGTime = 5.3.2010::19:57:8;
 			- strongCGTime = 4.26.2010::8:32:55;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -80,7 +80,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _name = "DomainModel";
 				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
 			}
-			- weakCGTime = 5.3.2010::19:57:8;
+			- weakCGTime = 5.5.2010::21:32:32;
 			- strongCGTime = 4.26.2010::8:40:22;
 			- Operations = { IRPYRawContainer 
 				- size = 1;
@@ -162,14 +162,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				{ IAssociationEnd 
 					- _id = GUID 07e9fb13-405f-417b-826b-d995e7417ece;
 					- _myState = 10240;
-					- _name = "itsSignalDistributer";
+					- _name = "itsDistributerThread";
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
 						- _filename = "Continuous.sbs";
 						- _subsystem = "Application::Continuous";
 						- _class = "";
-						- _name = "SignalDistributer";
+						- _name = "DistributerThread";
 						- _id = GUID af47700b-20bf-4d9a-b486-9b7e4dcf23cb;
 					}
 					- _inverse = { IHandle 

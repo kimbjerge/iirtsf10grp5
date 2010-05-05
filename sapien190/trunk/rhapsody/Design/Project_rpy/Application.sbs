@@ -414,7 +414,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "DomainModel";
-			- _lastModifiedTime = "5.3.2010::20:44:44";
+			- _lastModifiedTime = "5.5.2010::21:32:32";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID aa9016c7-4c7f-4ed7-811f-6103c6e1fa3b;
 				- m_type = 0;
@@ -872,12 +872,12 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _filename = "Continuous.sbs";
 						- _subsystem = "Application::Continuous";
 						- _class = "";
-						- _name = "SignalDistributer";
+						- _name = "DistributerThread";
 						- _id = GUID af47700b-20bf-4d9a-b486-9b7e4dcf23cb;
 					}
 					- m_pParent = GUID 945388a9-bc18-4b03-8ff7-01766ab5bfba;
 					- m_name = { CGIText 
-						- m_str = "Continuous::SignalDistributer";
+						- m_str = "Continuous::DistributerThread";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -3203,7 +3203,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _filename = "GUI.sbs";
 						- _subsystem = "Application::GUI";
 						- _class = "LCDScreen";
-						- _name = "itsSignalDistributer";
+						- _name = "itsDistributerThread";
 						- _id = GUID 07e9fb13-405f-417b-826b-d995e7417ece;
 					}
 					- m_pParent = ;
@@ -3614,7 +3614,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ApplicationModelSimulation";
-			- _lastModifiedTime = "5.3.2010::20:46:2";
+			- _lastModifiedTime = "5.5.2010::21:34:57";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 0d0f292e-33ac-4d44-9b63-5af9ae40625f;
 				- m_type = 0;
@@ -6001,12 +6001,12 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _filename = "Continuous.sbs";
 						- _subsystem = "Application::Continuous";
 						- _class = "";
-						- _name = "SignalDistributer";
+						- _name = "DistributerThread";
 						- _id = GUID af47700b-20bf-4d9a-b486-9b7e4dcf23cb;
 					}
 					- m_pParent = GUID 24353f73-6baf-43ab-809d-1b3dbab89d93;
 					- m_name = { CGIText 
-						- m_str = "Continuous::SignalDistributer";
+						- m_str = "Continuous::DistributerThread";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -7584,7 +7584,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _filename = "GUI.sbs";
 						- _subsystem = "Application::GUI";
 						- _class = "LCDScreen";
-						- _name = "itsSignalDistributer";
+						- _name = "itsDistributerThread";
 						- _id = GUID 07e9fb13-405f-417b-826b-d995e7417ece;
 					}
 					- m_pParent = ;
@@ -8514,7 +8514,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ObserverPattern";
-			- _lastModifiedTime = "5.3.2010::20:35:39";
+			- _lastModifiedTime = "5.5.2010::21:32:32";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 5d6f3f08-b245-4c1e-ad15-89d4f465d9b8;
 				- m_type = 0;
@@ -8618,12 +8618,12 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _filename = "Continuous.sbs";
 						- _subsystem = "Application::Continuous";
 						- _class = "";
-						- _name = "SignalDistributer";
+						- _name = "DistributerThread";
 						- _id = GUID af47700b-20bf-4d9a-b486-9b7e4dcf23cb;
 					}
 					- m_pParent = GUID 5728a182-afa0-4b87-874e-07030b5f4ee8;
 					- m_name = { CGIText 
-						- m_str = "Continuous::SignalDistributer";
+						- m_str = "Continuous::DistributerThread";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -9149,7 +9149,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _m2Class = "IGeneralization";
 						- _filename = "Continuous.sbs";
 						- _subsystem = "Application::Continuous";
-						- _class = "SignalDistributer";
+						- _class = "DistributerThread";
 						- _name = "Subject";
 						- _id = GUID d0586242-9287-438b-a2f7-bf91f7051d8c;
 					}
@@ -9306,7 +9306,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _filename = "GUI.sbs";
 						- _subsystem = "Application::GUI";
 						- _class = "LCDScreen";
-						- _name = "itsSignalDistributer";
+						- _name = "itsDistributerThread";
 						- _id = GUID 07e9fb13-405f-417b-826b-d995e7417ece;
 					}
 					- m_pParent = ;
@@ -14067,7 +14067,7 @@ GU86a6ZGc29dYa7782e7feff9a39222542a463cb13c233f95I839c57bdZGc29dY97fcYbaZGbfe697
 			}
 		}
 	}
-	- weakCGTime = 5.3.2010::20:41:56;
+	- weakCGTime = 5.5.2010::21:32:32;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 445c424b-fba5-4616-8dc0-a22408da37c3;
 	- _eventsBaseID = -1;
@@ -14078,7 +14078,7 @@ GU86a6ZGc29dYa7782e7feff9a39222542a463cb13c233f95I839c57bdZGc29dY97fcYbaZGbfe697
 			- _id = GUID 445c424b-fba5-4616-8dc0-a22408da37c3;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.3.2010::13:35:57;
+			- weakCGTime = 5.3.2010::20:41:56;
 			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 

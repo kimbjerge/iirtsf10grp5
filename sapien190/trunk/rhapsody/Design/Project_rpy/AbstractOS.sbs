@@ -79,7 +79,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "OS Abstraction";
-			- _lastModifiedTime = "5.3.2010::20:21:31";
+			- _lastModifiedTime = "5.5.2010::21:34:57";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 0f6ae559-1ba8-4825-89ae-9b6ab248e5bf;
 				- m_type = 0;
@@ -653,7 +653,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 3fdd97e6-2ec0-4ded-b705-0da485ee4ec1;
 		}
 	}
-	- weakCGTime = 5.3.2010::20:22:31;
+	- weakCGTime = 5.5.2010::20:43:38;
 	- strongCGTime = 5.3.2010::13:14:25;
 	- _defaultComposite = GUID fc513e39-edfa-44ff-8922-f38f41b2bcdb;
 	- _eventsBaseID = -1;
@@ -664,7 +664,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID fc513e39-edfa-44ff-8922-f38f41b2bcdb;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.3.2010::13:35:32;
+			- weakCGTime = 5.3.2010::20:22:31;
 			- strongCGTime = 5.3.2010::13:14:25;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -1411,7 +1411,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						}
 					}
 					- _name = "Item";
-					- weakCGTime = 5.3.2010::13:35:32;
+					- weakCGTime = 5.3.2010::20:22:37;
 					- strongCGTime = 4.25.2010::19:46:55;
 					- _multiplicity = "";
 					- _itsStateChart = { IHandle 

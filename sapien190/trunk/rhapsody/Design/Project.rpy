@@ -1888,7 +1888,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "SubSystemsView";
-			- _lastModifiedTime = "5.3.2010::20:39:24";
+			- _lastModifiedTime = "5.5.2010::21:34:57";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID c4a9a0b7-c588-441e-b401-1b9825d901bb;
 				- m_type = 0;
@@ -2248,19 +2248,10 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 <frame name=AttributeListCompartment>
 <frame name=PrimitiveOperationListCompartment>";
 					- Attrs = { IRPYRawContainer 
-						- size = 1;
-						- value = 
-						{ IHandle 
-							- _m2Class = "IAttribute";
-							- _filename = "Continuous.sbs";
-							- _subsystem = "Application::Continuous";
-							- _class = "PatientModel";
-							- _name = "sample";
-							- _id = GUID e3d1046a-738a-4a29-b50d-e39288ee957b;
-						}
+						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 7;
+						- size = 10;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -2317,6 +2308,30 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _class = "PatientModel";
 							- _name = "PatientModel()";
 							- _id = GUID bc410ae8-bc2f-4f08-a419-46c894e05fee;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "PatientModel";
+							- _name = "GetECGValue(int)";
+							- _id = GUID c645b25b-5790-4e71-a9b4-7da23b8d5cde;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "PatientModel";
+							- _name = "GetEDRValue(int)";
+							- _id = GUID a53bab9a-44bf-4612-a117-38b2b463e557;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "PatientModel";
+							- _name = "GetPulse()";
+							- _id = GUID 1d5aebc7-9de6-4534-a62a-b353bceaf34e;
 						}
 					}
 					- m_multiplicity = { CGIText 
