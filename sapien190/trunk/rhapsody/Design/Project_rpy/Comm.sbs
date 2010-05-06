@@ -58,7 +58,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.3.2010::7:54:49;
+			- weakCGTime = 5.3.2010::20:42:16;
 			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 

@@ -50,7 +50,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _id = GUID 69ee0633-361f-4b1f-8dc4-8d7c1f351e73;
 	}
 	- _lastID = 2;
-	- weakCGTime = 5.5.2010::21:32:1;
+	- weakCGTime = 5.6.2010::21:45:30;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 46ef08d8-d87f-48fd-9435-f30da1714c70;
 	- _eventsBaseID = -1;
@@ -61,7 +61,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 46ef08d8-d87f-48fd-9435-f30da1714c70;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.3.2010::13:34:32;
+			- weakCGTime = 5.5.2010::21:32:1;
 			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -382,7 +382,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID f618e3cb-4956-4631-86ae-ddc4348f3cec;
 			}
 			- _lastID = 1;
-			- weakCGTime = 5.3.2010::13:34:32;
+			- weakCGTime = 5.6.2010::21:46:0;
 			- strongCGTime = 5.3.2010::13:34:32;
 			- Operations = { IRPYRawContainer 
 				- size = 1;
@@ -417,9 +417,23 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						}
 					}
 					- _name = "Update";
+					- _lastID = 3;
 					- _virtual = 1;
 					- Args = { IRPYRawContainer 
-						- size = 0;
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID a83e8978-2cab-4e32-8ddb-99a6a59f0f62;
+							- _name = "fp";
+							- myTypeOf = { IType 
+								- _id = GUID 3caafe65-ee3a-40d4-a426-7121a120a75d;
+								- _myState = 8192;
+								- _declaration = "FrameBuffer*";
+								- _kind = Language;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = InOut;
+						}
 					}
 					- _returnType = { IHandle 
 						- _m2Class = "IType";

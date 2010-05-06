@@ -29,7 +29,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		}
 	}
 	- _name = "DefaultComponent";
-	- _lastID = 4;
+	- _lastID = 5;
 	- m_buildType = Executable;
 	- m_libraries = "";
 	- m_additionalSources = "";
@@ -40,66 +40,11 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _id = GUID edeaa38a-4692-4a44-af45-80f9588e4e22;
 		- _myState = 73728;
 		- _name = "Files";
+		- _lastID = 1;
 		- m_path = "";
 		- Elements = { IRPYRawContainer 
-			- size = 36;
+			- size = 39;
 			- value = 
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "Comm.sbs";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "Comm";
-				- _id = GUID ad699984-b70d-45a2-ade8-5d423ff37318;
-			}
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "GraphicalUserInterface.sbs";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "GraphicalUserInterface";
-				- _id = GUID b087c986-b373-4750-8bfd-a0aa2f5a0d3f;
-			}
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "AbstractHW.sbs";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "AbstractHW";
-				- _id = GUID 6f603c1a-3403-40b6-aa9f-f570a38b251b;
-			}
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "Discrete.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Discrete";
-				- _id = GUID b99cf7b4-c288-4b92-9148-aa7b0a3c8a1c;
-			}
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "GUI.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "GUI";
-				- _id = GUID 30c64cb8-f037-4c93-8e36-c33109fd525f;
-			}
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "Continuous.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Continuous";
-				- _id = GUID 80d1923f-5842-48bd-84c1-c7497be71eca;
-			}
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "Test.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "Test";
-				- _id = GUID 0a7d3776-e777-4791-9dd3-a3293bfcccf0;
-			}
 			{ IHandle 
 				- _m2Class = "IClass";
 				- _filename = "Continuous.sbs";
@@ -233,7 +178,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "SignalDistributer";
+				- _name = "DistributerThread";
 				- _id = GUID af47700b-20bf-4d9a-b486-9b7e4dcf23cb;
 			}
 			{ IHandle 
@@ -313,7 +258,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "ConThread";
+				- _name = "RealTimeThread";
 				- _id = GUID 86db0731-5d4f-438b-b385-e37d8a1a0603;
 			}
 			{ IHandle 
@@ -331,6 +276,86 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _class = "";
 				- _name = "RecordWfdb";
 				- _id = GUID 59d7bc47-a7a3-46a0-8874-6df6e378972e;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "GenericPool";
+				- _id = GUID 8b41a6f2-5b82-488f-8905-740c618178d7;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Dummy";
+				- _id = GUID e20c20c7-2065-4e41-aee3-e4b83f01196f;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Comm.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Comm";
+				- _id = GUID ad699984-b70d-45a2-ade8-5d423ff37318;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "GraphicalUserInterface.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "GraphicalUserInterface";
+				- _id = GUID b087c986-b373-4750-8bfd-a0aa2f5a0d3f;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AbstractHW.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AbstractHW";
+				- _id = GUID 6f603c1a-3403-40b6-aa9f-f570a38b251b;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Discrete.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Discrete";
+				- _id = GUID b99cf7b4-c288-4b92-9148-aa7b0a3c8a1c;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "GUI.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "GUI";
+				- _id = GUID 30c64cb8-f037-4c93-8e36-c33109fd525f;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Continuous";
+				- _id = GUID 80d1923f-5842-48bd-84c1-c7497be71eca;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Test.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Test";
+				- _id = GUID 0a7d3776-e777-4791-9dd3-a3293bfcccf0;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AbstractOS.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AbstractOS";
+				- _id = GUID dcfee0e4-02ba-4b0c-a96b-f604793a5971;
 			}
 		}
 		- Files = { IRPYRawContainer 
@@ -651,7 +676,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 5.5.2010::19:1:6;
-	- strongCGTime = 5.3.2010::21:4:26;
+	- weakCGTime = 5.6.2010::20:54:1;
+	- strongCGTime = 5.6.2010::20:54:1;
 }
 

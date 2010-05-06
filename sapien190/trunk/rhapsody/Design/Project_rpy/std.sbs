@@ -3,7 +3,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- _ownerHandle = { IHandle 
 		- _m2Class = "ISubsystem";
 		- _filename = "LinuxOS.sbs";
-		- _subsystem = "AbstractOS";
+		- _subsystem = "";
 		- _class = "";
 		- _name = "LinuxOS";
 		- _id = GUID 3fdd97e6-2ec0-4ded-b705-0da485ee4ec1;

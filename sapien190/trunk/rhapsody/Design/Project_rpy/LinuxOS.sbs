@@ -1,13 +1,5 @@
 I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 { ISubsystem 
-	- _ownerHandle = { IHandle 
-		- _m2Class = "ISubsystem";
-		- _filename = "AbstractOS.sbs";
-		- _subsystem = "";
-		- _class = "";
-		- _name = "AbstractOS";
-		- _id = GUID dcfee0e4-02ba-4b0c-a96b-f604793a5971;
-	}
 	- _id = GUID 3fdd97e6-2ec0-4ded-b705-0da485ee4ec1;
 	- _myState = 8192;
 	- _properties = { IPropertyContainer 
@@ -1372,8 +1364,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.3.2010::13:14:25;
-	- strongCGTime = 5.3.2010::13:14:25;
+	- weakCGTime = 5.6.2010::20:53:44;
+	- strongCGTime = 5.6.2010::20:53:44;
 	- _defaultComposite = GUID a62e3ff3-39cc-4e64-b51a-522b6801ad96;
 	- _eventsBaseID = -1;
 	- Classes = { IRPYRawContainer 
@@ -1962,7 +1954,7 @@ pthread_exit(NULL);";
 					- _dependsOn = { INObjectHandle 
 						- _m2Class = "ISubsystem";
 						- _filename = "std.sbs";
-						- _subsystem = "AbstractOS::LinuxOS";
+						- _subsystem = "LinuxOS";
 						- _class = "";
 						- _name = "std";
 						- _id = GUID f4dcf840-b0c4-4dee-9e11-35d9a61431d6;

@@ -45,7 +45,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		}
 	}
 	- Subsystems = { IRPYRawContainer 
-		- size = 7;
+		- size = 8;
 		- value = 
 		{ ISubsystem 
 			- fileName = "Application";
@@ -70,6 +70,10 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		{ ISubsystem 
 			- fileName = "Wfdb";
 			- _id = GUID 6aab7974-ae0c-457c-adce-2e5eec5b2ffd;
+		}
+		{ ISubsystem 
+			- fileName = "LinuxOS";
+			- _id = GUID 3fdd97e6-2ec0-4ded-b705-0da485ee4ec1;
 		}
 		{ IProfile 
 			- fileName = "CodeCentric75Cpp";
@@ -539,7 +543,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pModelObject = { IHandle 
 						- _m2Class = "ISubsystem";
 						- _filename = "LinuxOS.sbs";
-						- _subsystem = "AbstractOS";
+						- _subsystem = "";
 						- _class = "";
 						- _name = "LinuxOS";
 						- _id = GUID 3fdd97e6-2ec0-4ded-b705-0da485ee4ec1;
@@ -1888,7 +1892,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "SubSystemsView";
-			- _lastModifiedTime = "5.5.2010::21:34:57";
+			- _lastModifiedTime = "5.6.2010::21:32:20";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID c4a9a0b7-c588-441e-b401-1b9825d901bb;
 				- m_type = 0;
