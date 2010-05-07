@@ -1,17 +1,23 @@
 #include "graph.h"
 #include "ui_graph.h"
-#include "rpy/NormalModel.h"
-#include "rpy/Medicine.h"
-#include "rpy/RecordProxy.h"
-#include "rpy/RecordWfdb.h"
-#include "rpy/RecordSimulate.h"
-#include "rpy/SmartPtr.h"
-#include "rpy/SimulatorRealtime.h"
+
+#include "NormalModel.h"
+#include "Medicine.h"
+#include "RecordProxy.h"
+#include "RecordWfdb.h"
+#include "RecordSimulate.h"
+#include "SmartPtr.h"
+#include "SimulatorRealtime.h"
+#include "Record.h"
+#include "FrameBuffer.h"
+#include "DistributerThread.h"
+#include "RealTimeThread.h"
 
 Graph::Graph(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Graph),
-    itsPatientModel(0)
+    itsPatientModel(0),
+    itsSimulatorRealtime(0)
 {
     this->resolution = 200;
     this->maxValue = 200;
@@ -91,6 +97,41 @@ void Graph::on_refresh_clicked()
     }
 }
 
+void Graph::Update(FrameBuffer* fp) {
+    //#[ operation Update(FrameBuffer*)
+    int sample;
+    cout << "FrameBuffer Updated:" << endl;
+    for (fp->First(); !fp->IsDone(); fp->Next())
+    {
+       sample = fp->GetSample();
+       //this->addValue(sample+250); // Unsafe due to called by other task than UI
+       cout << sample << ", ";
+    }
+    cout <<  endl;
+    //#]
+}
+
+/*
+// Threaded version with framebuffer and observer pattern
+void Graph::on_simulate_clicked()
+{
+    Record * record;
+
+    if (itsSimulatorRealtime == 0)
+    {
+        // Create the SimulatorRelatim system and configurate
+        itsSimulatorRealtime = new SimulatorRealtime(5);
+        itsSimulatorRealtime->AttachObserver(this);
+        itsSimulatorRealtime->CreatePatientModel(SimulatorRealtime::Normal);
+        record = itsSimulatorRealtime->CreateWfdbRecord("e0104");
+        //record = itsSimulatorRealtime->CreateSimRecord();
+        itsSimulatorRealtime->AssignRecord(record);
+        itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);
+        itsSimulatorRealtime->StartSimulation();
+    }
+}
+*/
+
 void Graph::on_simulate_clicked()
 {
     //SmartPtr<PatientModel> model(new PatientModel);
@@ -118,3 +159,5 @@ void Graph::on_simulate_clicked()
         usleep(4000);
     }
 }
+
+

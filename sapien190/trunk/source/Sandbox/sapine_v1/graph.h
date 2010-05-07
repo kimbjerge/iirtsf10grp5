@@ -9,7 +9,9 @@
 #include <wfdb/wfdb.h>
 #include <iostream>
 #include <stdio.h>
-#include "rpy/PatientModel.h"
+#include "PatientModel.h"
+#include "SimulatorRealtime.h"
+#include "Observer.h"
 
 using namespace std;
 
@@ -17,12 +19,13 @@ namespace Ui {
     class Graph;
 }
 
-class Graph : public QWidget {
+class Graph : public QWidget, public Observer {
     Q_OBJECT
 public:
     Graph(QWidget *parent = 0);
     void addValue(int);
     void setResolution(int);
+    void Update(FrameBuffer* fp);
     ~Graph();
 
 protected:
@@ -38,6 +41,7 @@ private:
     WFDB_Sample v[2];
     WFDB_Siginfo s[2];
     PatientModel *itsPatientModel;
+    SimulatorRealtime *itsSimulatorRealtime;
 
 
 public slots:
