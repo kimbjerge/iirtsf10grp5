@@ -47,12 +47,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- size = 1;
 			- value = 
 			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "Wfdb.sbs";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "Wfdb";
-				- _id = GUID 6aab7974-ae0c-457c-adce-2e5eec5b2ffd;
+				- _m2Class = "";
 			}
 		}
 		- Files = { IRPYRawContainer 

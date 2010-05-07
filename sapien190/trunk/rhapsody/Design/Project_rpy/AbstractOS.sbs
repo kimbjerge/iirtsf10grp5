@@ -111,7 +111,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "OS Abstraction";
-			- _lastModifiedTime = "5.7.2010::12:3:30";
+			- _lastModifiedTime = "5.7.2010::12:12:58";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 0f6ae559-1ba8-4825-89ae-9b6ab248e5bf;
 				- m_type = 0;
@@ -681,7 +681,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.6.2010::20:53:44;
+	- weakCGTime = 5.7.2010::12:8:12;
 	- strongCGTime = 5.3.2010::13:14:25;
 	- _defaultComposite = GUID fc513e39-edfa-44ff-8922-f38f41b2bcdb;
 	- _eventsBaseID = -1;
@@ -2721,7 +2721,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _classModifier = Unspecified;
 				}
 			}
-			- weakCGTime = 5.7.2010::12:7:8;
+			- weakCGTime = 5.7.2010::12:11:1;
 			- strongCGTime = 4.25.2010::19:46:55;
 			- Operations = { IRPYRawContainer 
 				- size = 3;
@@ -2762,7 +2762,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "return false;";
+						- _bodyData = "mails.push_back(n);
+return true;";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -2786,9 +2787,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "if (freeList.size() > 0) 
+						- _bodyData = "if (mails.size() > 0) 
 {
-	Item *I = *mails.begin(); 
+	Item I = *mails.begin(); 
 	mails.pop_front();
 	return I;
 } 
@@ -2856,9 +2857,9 @@ else
 					- _id = GUID 0d550a20-bba2-4168-b6a3-9ae8a97cc7e5;
 					- _name = "mails";
 					- myTypeOf = { IType 
-						- _id = GUID de3d6c59-5f66-4e48-ada8-c43c87b0b750;
+						- _id = GUID 07674fae-e845-47ae-8d7b-00dd057e7a09;
 						- _myState = 8192;
-						- _declaration = "std::list<Item*>";
+						- _declaration = "std::list<Item>";
 						- _kind = Language;
 					}
 					- _isOrdered = 0;

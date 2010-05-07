@@ -9666,7 +9666,7 @@ Important that Update doesn't call Attach or Detach which will cause a deadlock"
 				}
 			}
 			- _name = "HelperClasses";
-			- _lastModifiedTime = "5.6.2010::21:23:43";
+			- _lastModifiedTime = "5.7.2010::12:12:58";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 748dc66a-ff82-4e72-ae97-4c334a405d8d;
 				- m_type = 0;

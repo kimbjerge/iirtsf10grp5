@@ -5203,7 +5203,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ThreadModel";
-			- _lastModifiedTime = "5.7.2010::11:58:23";
+			- _lastModifiedTime = "5.7.2010::12:12:59";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID b37af65e-7055-4bc1-ab57-f84aba61cf0a;
 				- m_type = 0;
@@ -55716,7 +55716,7 @@ lock.signal();";
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
 			- _lastID = 5;
-			- weakCGTime = 5.7.2010::8:47:45;
+			- weakCGTime = 5.7.2010::12:14:14;
 			- strongCGTime = 5.6.2010::20:28:31;
 			- Operations = { IRPYRawContainer 
 				- size = 7;
@@ -55959,7 +55959,9 @@ lock.signal();";
 					- _constant = 0;
 					- _itsBody = { IBody 
 						- _bodyData = "#ifdef _LINUX
-   mailBox = new Mailbox<FrameBuffer*>(10,true);
+mailbox = new Mailbox<FrameBuffer*>(10,true);
+#else
+mailbox = new Mailbox<FrameBuffer*>();
 #endif";
 					}
 					- _initializer = "";
@@ -56049,10 +56051,10 @@ lock.signal();";
 							- _name = "FrameBufferPool:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency FrameBufferPool:spec";
-							- m_startRow = 12;
+							- m_startRow = 16;
 							- m_startCol_Short = 1;
-							- m_endRow = 12;
-							- m_endCol_Short = 434;
+							- m_endRow = 16;
+							- m_endCol_Short = 481;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -56062,10 +56064,10 @@ lock.signal();";
 							- _name = "FrameBuffer:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency FrameBuffer:spec";
-							- m_startRow = 14;
+							- m_startRow = 18;
 							- m_startCol_Short = 1;
-							- m_endRow = 14;
-							- m_endCol_Short = 498;
+							- m_endRow = 18;
+							- m_endCol_Short = 545;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -56075,9 +56077,9 @@ lock.signal();";
 							- _name = "FrameBufferPool";
 							- m_type = implFragment;
 							- m_text = "";
-							- m_startRow = 22;
+							- m_startRow = 40;
 							- m_startCol_Short = 19;
-							- m_endRow = 22;
+							- m_endRow = 40;
 							- m_endCol_Short = 19;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -56087,20 +56089,19 @@ lock.signal();";
 								- size = 12;
 								- value = 
 								{ IFileFragment 
-									- _id = GUID 2716c26a-b2c0-4fce-8ac1-6a9a87bdf422;
-									- _name = "~FrameBufferPool";
+									- _id = GUID fc14316e-3407-424f-b1fc-48e7e0e1621c;
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID ffd246e7-b69c-4a77-8e40-d30deab50c2f;
+											- _id = GUID 7d57dfd8-c279-41ba-b064-3824c7cfac80;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID a1e3477b-ada1-4bcb-8de5-55f1b53c1d0b;
-													- _value = "22";
+													- _id = GUID 150e56e2-a69c-45de-a3a2-4ff762560995;
+													- _value = "40";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56114,13 +56115,13 @@ lock.signal();";
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID 1a38a479-1978-42e4-8861-c24d8401adf9;
+											- _id = GUID 2c9cdbc4-320c-4511-9b6e-9571357e4587;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 367672fa-b315-4a7a-85d9-848cbd99ce10;
+													- _id = GUID 14039fde-aeac-46d5-aa92-dc325550761c;
 													- _value = "37";
 												}
 											}
@@ -56137,9 +56138,9 @@ lock.signal();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 22;
+									- m_startRow = 40;
 									- m_startCol_Short = 19;
-									- m_endRow = 29;
+									- m_endRow = 48;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IDestructor";
@@ -56160,7 +56161,7 @@ lock.signal();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 8c89ae8e-b4eb-4e56-ad06-1c9d9c4a2f92;
-													- _value = "31";
+													- _value = "50";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56181,7 +56182,7 @@ lock.signal();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 4c511360-382e-4e83-88ec-b7fdeb4849c0;
-													- _value = "55";
+													- _value = "52";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56197,9 +56198,9 @@ lock.signal();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 31;
-									- m_startCol_Short = 55;
-									- m_endRow = 43;
+									- m_startRow = 50;
+									- m_startCol_Short = 52;
+									- m_endRow = 63;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -56220,7 +56221,7 @@ lock.signal();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 3f198bce-0d7f-44c6-9b0b-a3423abdf437;
-													- _value = "45";
+													- _value = "65";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56257,9 +56258,9 @@ lock.signal();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getMailbox() const:impl";
-									- m_startRow = 45;
+									- m_startRow = 65;
 									- m_startCol_Short = 61;
-									- m_endRow = 47;
+									- m_endRow = 67;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -56279,7 +56280,7 @@ lock.signal();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 637085c3-0a5c-430e-bd3e-1a79766e32b3;
-													- _value = "49";
+													- _value = "69";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56316,9 +56317,9 @@ lock.signal();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setMailbox(Mailbox<FrameBuffer*> *):impl";
-									- m_startRow = 49;
+									- m_startRow = 69;
 									- m_startCol_Short = 69;
-									- m_endRow = 51;
+									- m_endRow = 71;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -56338,7 +56339,7 @@ lock.signal();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 719733a1-3400-4c47-8217-61fb33631a5c;
-													- _value = "53";
+													- _value = "73";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56375,9 +56376,9 @@ lock.signal();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getFrameBufferPool() const:impl";
-									- m_startRow = 53;
+									- m_startRow = 73;
 									- m_startCol_Short = 75;
-									- m_endRow = 55;
+									- m_endRow = 75;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -56397,7 +56398,7 @@ lock.signal();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID e55c0ce5-7c34-4658-bdac-e75ae50e2c7a;
-													- _value = "57";
+													- _value = "77";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56434,29 +56435,28 @@ lock.signal();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setFrameBufferPool(GenericPool<FrameBuffer, 2> *):impl";
-									- m_startRow = 57;
+									- m_startRow = 77;
 									- m_startCol_Short = 91;
-									- m_endRow = 59;
+									- m_endRow = 79;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 9ebfa80f-31fd-49f3-bcd7-33829328d7f4;
-									- _name = "FrameBufferPool";
+									- _id = GUID a83b1cc2-1d36-47af-b7ea-213691a14186;
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID 6b450208-1a70-456e-8f68-f14b1b3adb06;
+											- _id = GUID 37bb3456-0621-4206-9c63-c754e3088e0c;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 76d57341-d074-45ff-9f76-5acd5a2ea029;
-													- _value = "61";
+													- _id = GUID a8087054-74cb-452f-b4df-8815a6105d93;
+													- _value = "81";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56470,13 +56470,13 @@ lock.signal();";
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID dfa10fdf-2df1-4956-a70e-5f74c86595c9;
+											- _id = GUID 98634521-9ee7-4321-82ab-e0f03c38d095;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID cd66a32f-e89e-4c9a-bc57-2fc75a64b6b2;
+													- _id = GUID 7c514954-053c-447c-bc58-5d34ffc361ec;
 													- _value = "75";
 												}
 											}
@@ -56493,9 +56493,9 @@ lock.signal();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 61;
+									- m_startRow = 81;
 									- m_startCol_Short = 18;
-									- m_endRow = 67;
+									- m_endRow = 90;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -56516,7 +56516,7 @@ lock.signal();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 29f02078-9c99-472b-8195-4bcdeb9d79ce;
-													- _value = "69";
+													- _value = "92";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56553,9 +56553,9 @@ lock.signal();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 69;
+									- m_startRow = 92;
 									- m_startCol_Short = 53;
-									- m_endRow = 80;
+									- m_endRow = 104;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -56576,7 +56576,7 @@ lock.signal();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 308ba540-f9bb-41b7-86a5-1d1f7a4ce4ba;
-													- _value = "82";
+													- _value = "106";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56613,9 +56613,9 @@ lock.signal();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 82;
+									- m_startRow = 106;
 									- m_startCol_Short = 49;
-									- m_endRow = 87;
+									- m_endRow = 112;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -56636,7 +56636,7 @@ lock.signal();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 07b8fd87-2ae4-4dd9-8f93-3ae7bef070a5;
-													- _value = "89";
+													- _value = "114";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56673,9 +56673,9 @@ lock.signal();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getLock() const:impl";
-									- m_startRow = 89;
+									- m_startRow = 114;
 									- m_startCol_Short = 41;
-									- m_endRow = 91;
+									- m_endRow = 116;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -56695,7 +56695,7 @@ lock.signal();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID d9d3fc26-4ee9-4000-8145-89b92e7d0a47;
-													- _value = "93";
+													- _value = "118";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56732,9 +56732,9 @@ lock.signal();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 93;
+									- m_startRow = 118;
 									- m_startCol_Short = 59;
-									- m_endRow = 102;
+									- m_endRow = 128;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -56755,7 +56755,7 @@ lock.signal();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 4220a2e7-359d-4c5c-9faf-f1153603ba3c;
-													- _value = "104";
+													- _value = "130";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56776,7 +56776,7 @@ lock.signal();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID c3788f03-9004-4a19-b1e3-434463fd431a;
-													- _value = "33";
+													- _value = "41";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -56792,9 +56792,9 @@ lock.signal();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 104;
-									- m_startCol_Short = 33;
-									- m_endRow = 109;
+									- m_startRow = 130;
+									- m_startCol_Short = 41;
+									- m_endRow = 136;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -56812,7 +56812,7 @@ lock.signal();";
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 12;
+						- size = 13;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID 9aa141d0-9ef3-4dbe-9308-17f1b40f5f6d;
@@ -56919,13 +56919,26 @@ lock.signal();";
 							}
 						}
 						{ IFileFragment 
+							- _id = GUID ca49e4ec-e697-4805-aa3d-97bbf19a554f;
+							- _name = "aom:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency aom:spec";
+							- m_startRow = 38;
+							- m_startCol_Short = 1;
+							- m_endRow = 38;
+							- m_endCol_Short = 975;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
 							- _id = GUID 8bf1ef8a-dc59-4181-a590-f73640e78c66;
 							- _name = "GenericPool";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 38;
+							- m_startRow = 40;
 							- m_startCol_Short = 42;
-							- m_endRow = 38;
+							- m_endRow = 40;
 							- m_endCol_Short = 59;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
@@ -56937,9 +56950,9 @@ lock.signal();";
 							- _name = "Mailbox";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 41;
+							- m_startRow = 43;
 							- m_startCol_Short = 23;
-							- m_endRow = 41;
+							- m_endRow = 43;
 							- m_endCol_Short = 36;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
@@ -56951,9 +56964,9 @@ lock.signal();";
 							- _name = "FrameBuffer:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency FrameBuffer:spec";
-							- m_startRow = 44;
+							- m_startRow = 46;
 							- m_startCol_Short = 1;
-							- m_endRow = 44;
+							- m_endRow = 46;
 							- m_endCol_Short = 18;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -56973,7 +56986,7 @@ lock.signal();";
 										- value = 
 										{ ILiteralSpecification 
 											- _id = GUID 9f7b368f-4574-422c-88fe-79ddf06425fb;
-											- _value = "49";
+											- _value = "51";
 										}
 									}
 									- _typeOf = { IHandle 
@@ -57010,9 +57023,9 @@ lock.signal();";
 							}
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 49;
+							- m_startRow = 51;
 							- m_startCol_Short = 1;
-							- m_endRow = 111;
+							- m_endRow = 117;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -57027,22 +57040,21 @@ lock.signal();";
 									- m_type = textFragment;
 									- m_text = "////    Constructors and destructors    ////
 ";
-									- m_startRow = 50;
+									- m_startRow = 58;
 									- m_startCol_Short = 5;
-									- m_endRow = 50;
+									- m_endRow = 58;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID f53eb027-9799-4c82-bfe0-d89430c67d85;
-									- _name = "~FrameBufferPool";
+									- _id = GUID 09a6c181-3271-4e24-a345-ee3005a28ae6;
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 55;
+									- m_startRow = 61;
 									- m_startCol_Short = 6;
-									- m_endRow = 55;
+									- m_endRow = 61;
 									- m_endCol_Short = 6;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IDestructor";
@@ -57055,9 +57067,9 @@ lock.signal();";
 									- m_type = textFragment;
 									- m_text = "////    Operations    ////
 ";
-									- m_startRow = 57;
+									- m_startRow = 63;
 									- m_startCol_Short = 5;
-									- m_endRow = 57;
+									- m_endRow = 63;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -57068,10 +57080,10 @@ lock.signal();";
 									- _name = "CreateFrameBuffers";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 60;
+									- m_startRow = 66;
 									- m_startCol_Short = 10;
-									- m_endRow = 60;
-									- m_endCol_Short = 41;
+									- m_endRow = 66;
+									- m_endCol_Short = 38;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 181d0d8a-2046-4656-afbf-6d1dd4b2c23e;
@@ -57083,9 +57095,9 @@ lock.signal();";
 									- m_type = textFragment;
 									- m_text = "////    Additional operations    ////
 ";
-									- m_startRow = 62;
+									- m_startRow = 68;
 									- m_startCol_Short = 5;
-									- m_endRow = 62;
+									- m_endRow = 68;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -57096,9 +57108,9 @@ lock.signal();";
 									- _name = "getMailbox:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getMailbox() const:spec";
-									- m_startRow = 65;
+									- m_startRow = 71;
 									- m_startCol_Short = 29;
-									- m_endRow = 65;
+									- m_endRow = 71;
 									- m_endCol_Short = 47;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -57109,9 +57121,9 @@ lock.signal();";
 									- _name = "setMailbox:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setMailbox(Mailbox<FrameBuffer*> *):spec";
-									- m_startRow = 68;
+									- m_startRow = 74;
 									- m_startCol_Short = 10;
-									- m_endRow = 68;
+									- m_endRow = 74;
 									- m_endCol_Short = 55;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -57122,9 +57134,9 @@ lock.signal();";
 									- _name = "getFrameBufferPool:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getFrameBufferPool() const:spec";
-									- m_startRow = 73;
+									- m_startRow = 79;
 									- m_startCol_Short = 35;
-									- m_endRow = 73;
+									- m_endRow = 79;
 									- m_endCol_Short = 61;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -57135,9 +57147,9 @@ lock.signal();";
 									- _name = "setFrameBufferPool:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setFrameBufferPool(GenericPool<FrameBuffer, 2> *):spec";
-									- m_startRow = 76;
+									- m_startRow = 82;
 									- m_startCol_Short = 10;
-									- m_endRow = 76;
+									- m_endRow = 82;
 									- m_endCol_Short = 77;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -57149,9 +57161,9 @@ lock.signal();";
 									- m_type = textFragment;
 									- m_text = "////    Attributes    ////
 ";
-									- m_startRow = 78;
+									- m_startRow = 84;
 									- m_startCol_Short = 5;
-									- m_endRow = 78;
+									- m_endRow = 84;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -57162,9 +57174,9 @@ lock.signal();";
 									- _name = "frameBufferPool";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 82;
+									- m_startRow = 88;
 									- m_startCol_Short = 35;
-									- m_endRow = 82;
+									- m_endRow = 88;
 									- m_endCol_Short = 50;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
@@ -57176,9 +57188,9 @@ lock.signal();";
 									- _name = "mailbox";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 84;
+									- m_startRow = 90;
 									- m_startCol_Short = 29;
-									- m_endRow = 84;
+									- m_endRow = 90;
 									- m_endCol_Short = 36;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
@@ -57190,9 +57202,9 @@ lock.signal();";
 									- _name = "lock";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 86;
+									- m_startRow = 92;
 									- m_startCol_Short = 11;
-									- m_endRow = 86;
+									- m_endRow = 92;
 									- m_endCol_Short = 15;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
@@ -57200,13 +57212,12 @@ lock.signal();";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID c7252a7f-3844-4717-b291-a5a70c5e602a;
-									- _name = "FrameBufferPool";
+									- _id = GUID d4540246-46a8-4225-9be4-caafa2448fe5;
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 91;
+									- m_startRow = 97;
 									- m_startCol_Short = 5;
-									- m_endRow = 91;
+									- m_endRow = 97;
 									- m_endCol_Short = 22;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -57218,9 +57229,9 @@ lock.signal();";
 									- _name = "AllocateFrameBuffer";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 94;
+									- m_startRow = 100;
 									- m_startCol_Short = 18;
-									- m_endRow = 94;
+									- m_endRow = 100;
 									- m_endCol_Short = 39;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -57232,9 +57243,9 @@ lock.signal();";
 									- _name = "SendMail";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 97;
+									- m_startRow = 103;
 									- m_startCol_Short = 10;
-									- m_endRow = 97;
+									- m_endRow = 103;
 									- m_endCol_Short = 35;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -57246,9 +57257,9 @@ lock.signal();";
 									- _name = "getLock:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getLock() const:spec";
-									- m_startRow = 102;
+									- m_startRow = 108;
 									- m_startCol_Short = 12;
-									- m_endRow = 102;
+									- m_endRow = 108;
 									- m_endCol_Short = 27;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -57259,9 +57270,9 @@ lock.signal();";
 									- _name = "ReleaseFrameBuffer";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 107;
+									- m_startRow = 113;
 									- m_startCol_Short = 10;
-									- m_endRow = 107;
+									- m_endRow = 113;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -57273,10 +57284,10 @@ lock.signal();";
 									- _name = "GetMail";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 110;
-									- m_startCol_Short = 10;
-									- m_endRow = 110;
-									- m_endCol_Short = 19;
+									- m_startRow = 116;
+									- m_startCol_Short = 18;
+									- m_endRow = 116;
+									- m_endCol_Short = 27;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 216e0384-ca2a-4755-aa05-ba0f36f91fbd;
