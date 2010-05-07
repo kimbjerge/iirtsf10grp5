@@ -149,8 +149,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -169,8 +169,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID dc508800-9a22-47a9-a128-794d95acb6c6;
 			}
-			- _UpLeft = 0 107 ;
-			- _DownRight = 654 356 ;
+			- _UpLeft = 0 106 ;
+			- _DownRight = 1222 787 ;
 			- _instanceName = "TestPatientSimulatorRT[0]";
 			- m_nDiagramIndex = 0;
 		}

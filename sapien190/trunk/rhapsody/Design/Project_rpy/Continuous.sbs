@@ -47040,7 +47040,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.7.2010::14:34:2;
+	- weakCGTime = 5.7.2010::19:32:59;
 	- strongCGTime = 5.3.2010::12:16:30;
 	- _defaultComposite = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 	- _eventsBaseID = -1;
@@ -47051,7 +47051,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.7.2010::13:23:16;
+			- weakCGTime = 5.7.2010::14:34:2;
 			- strongCGTime = 5.3.2010::12:16:30;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -69899,7 +69899,7 @@ if (isAlive()) {
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
 			- _lastID = 11;
-			- weakCGTime = 5.7.2010::13:21:14;
+			- weakCGTime = 5.7.2010::19:33:42;
 			- strongCGTime = 5.3.2010::13:38:18;
 			- Operations = { IRPYRawContainer 
 				- size = 9;
