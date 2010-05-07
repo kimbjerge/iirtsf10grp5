@@ -98,17 +98,18 @@ void Graph::on_refresh_clicked()
 }
 
 void Graph::Update(FrameBuffer* fp) {
-    //#[ operation Update(FrameBuffer*)
     int sample;
     cout << "FrameBuffer Updated:" << endl;
-    for (fp->First(); !fp->IsDone(); fp->Next())
+    fp->First();
+    while (!fp->IsDone())
     {
        sample = fp->GetSample();
        //this->addValue(sample+250); // Unsafe due to called by other task than UI
        cout << sample << ", ";
+       fp->Next();
     }
-    cout <<  endl;
-    //#]
+    sample = fp->GetSample();
+    cout <<  sample << endl;
 }
 
 /*
