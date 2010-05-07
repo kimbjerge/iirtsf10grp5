@@ -50,7 +50,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _id = GUID 69ee0633-361f-4b1f-8dc4-8d7c1f351e73;
 	}
 	- _lastID = 2;
-	- weakCGTime = 5.6.2010::21:45:30;
+	- weakCGTime = 5.7.2010::6:39:26;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 46ef08d8-d87f-48fd-9435-f30da1714c70;
 	- _eventsBaseID = -1;
@@ -61,7 +61,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 46ef08d8-d87f-48fd-9435-f30da1714c70;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.5.2010::21:32:1;
+			- weakCGTime = 5.6.2010::21:45:30;
 			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -334,10 +334,10 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "ContinuosThreadModel";
+				- _name = "ThreadModel";
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
-			- weakCGTime = 5.5.2010::21:32:1;
+			- weakCGTime = 5.7.2010::6:39:51;
 			- strongCGTime = 5.3.2010::13:16:39;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -347,17 +347,17 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- size = 1;
 				- value = 
 				{ IAssociationEnd 
-					- _id = GUID cec2ce68-2461-4bc6-bf90-c69ce80fad68;
+					- _id = GUID 16a7b956-c007-480c-bb33-b27184ea9439;
 					- _myState = 10240;
-					- _name = "itsRealTimeThread";
+					- _name = "itsSimulatorRealtime";
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
 						- _filename = "Continuous.sbs";
 						- _subsystem = "Application::Continuous";
 						- _class = "";
-						- _name = "RealTimeThread";
-						- _id = GUID 86db0731-5d4f-438b-b385-e37d8a1a0603;
+						- _name = "SimulatorRealtime";
+						- _id = GUID 8869c115-2af3-49a6-91aa-c05b292ed0cb;
 					}
 					- _inverse = { IHandle 
 						- _m2Class = "";
@@ -378,7 +378,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _filename = "Application.sbs";
 				- _subsystem = "Application";
 				- _class = "";
-				- _name = "ObserverPattern";
+				- _name = "FrameBufferObserver";
 				- _id = GUID f618e3cb-4956-4631-86ae-ddc4348f3cec;
 			}
 			- _lastID = 1;

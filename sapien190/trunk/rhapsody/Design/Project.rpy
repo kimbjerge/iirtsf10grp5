@@ -2,6 +2,31 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 { IProject 
 	- _id = GUID 4cd0f270-57c7-4035-9363-a8b2b765b5da;
 	- _myState = 8192;
+	- _properties = { IPropertyContainer 
+		- Subjects = { IRPYRawContainer 
+			- size = 1;
+			- value = 
+			{ IPropertySubject 
+				- _Name = "Browser";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Settings";
+						- Properties = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IProperty 
+								- _Name = "ShowOrder";
+								- _Value = "True";
+								- _Type = Bool;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	- _name = "Project";
 	- _lastID = 10;
 	- _UserColors = { IRPYRawContainer 
@@ -45,31 +70,27 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		}
 	}
 	- Subsystems = { IRPYRawContainer 
-		- size = 8;
+		- size = 7;
 		- value = 
 		{ ISubsystem 
 			- fileName = "Application";
 			- _id = GUID ae1cb529-d6a5-4a57-85d0-e4e16822ed75;
 		}
 		{ ISubsystem 
-			- fileName = "AbstractOS";
-			- _id = GUID dcfee0e4-02ba-4b0c-a96b-f604793a5971;
-		}
-		{ ISubsystem 
 			- fileName = "GraphicalUserInterface";
 			- _id = GUID b087c986-b373-4750-8bfd-a0aa2f5a0d3f;
-		}
-		{ ISubsystem 
-			- fileName = "AbstractHW";
-			- _id = GUID 6f603c1a-3403-40b6-aa9f-f570a38b251b;
 		}
 		{ ISubsystem 
 			- fileName = "Comm";
 			- _id = GUID ad699984-b70d-45a2-ade8-5d423ff37318;
 		}
 		{ ISubsystem 
-			- fileName = "Wfdb";
-			- _id = GUID 6aab7974-ae0c-457c-adce-2e5eec5b2ffd;
+			- fileName = "AbstractOS";
+			- _id = GUID dcfee0e4-02ba-4b0c-a96b-f604793a5971;
+		}
+		{ ISubsystem 
+			- fileName = "AbstractHW";
+			- _id = GUID 6f603c1a-3403-40b6-aa9f-f570a38b251b;
 		}
 		{ ISubsystem 
 			- fileName = "LinuxOS";
@@ -1241,7 +1262,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 4104;
-					- m_transform = 0.246856 0 0 0.326613 827.446 563.551 ;
+					- m_transform = 0.246856 0 0 0.326613 827.446 563.678 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -1892,7 +1913,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "SubSystemsView";
-			- _lastModifiedTime = "5.6.2010::21:32:20";
+			- _lastModifiedTime = "5.7.2010::10:33:36";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID c4a9a0b7-c588-441e-b401-1b9825d901bb;
 				- m_type = 0;
@@ -2067,12 +2088,12 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _filename = "Application.sbs";
 						- _subsystem = "Application";
 						- _class = "";
-						- _name = "Simulator";
+						- _name = "SimulatorComp";
 						- _id = GUID bd12fd55-8e96-4830-bf97-01a7d36abf13;
 					}
 					- m_pParent = GUID fa98390c-c6b2-4f55-9fd9-38386fb630d8;
 					- m_name = { CGIText 
-						- m_str = "Simulator";
+						- m_str = "SimulatorComp";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -2117,7 +2138,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _m2Class = "IPort";
 						- _filename = "Application.sbs";
 						- _subsystem = "Application";
-						- _class = "Simulator";
+						- _class = "SimulatorComp";
 						- _name = "ctrl";
 						- _id = GUID 6e6b7bff-28b6-4acb-957a-e26375ea3e18;
 					}
@@ -2210,7 +2231,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _m2Class = "IPart";
 						- _filename = "Application.sbs";
 						- _subsystem = "Application";
-						- _class = "Simulator";
+						- _class = "SimulatorComp";
 						- _name = "itsPatientModel";
 						- _id = GUID 01ab4e23-9497-419c-8822-2e01e2b04862;
 					}
@@ -2438,7 +2459,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _m2Class = "IPort";
 						- _filename = "Application.sbs";
 						- _subsystem = "Application";
-						- _class = "Simulator";
+						- _class = "SimulatorComp";
 						- _name = "exe";
 						- _id = GUID 04316a77-f51a-4a98-8c43-1804788580f6;
 					}
