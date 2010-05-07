@@ -4,12 +4,14 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Subject
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Subject.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Subject.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "Subject.h"
+//## operation Notify(FrameBuffer*)
+#include "FrameBuffer.h"
 //## package Application::Continuous
 
 //## class Subject
@@ -22,16 +24,31 @@ Subject::~Subject() {
 
 void Subject::Attach(Observer& obs) {
     //#[ operation Attach(Observer)
+    lock.wait();
+    addItsObserver(&obs);
+    lock.signal();
     //#]
 }
 
 void Subject::Detach(Observer& obs) {
     //#[ operation Detach(Observer)
+    lock.wait();
+    removeItsObserver(&obs); 
+    lock.signal();
     //#]
 }
 
-void Subject::Notify() {
-    //#[ operation Notify()
+void Subject::Notify(FrameBuffer* fp) {
+    //#[ operation Notify(FrameBuffer*)
+    lock.wait();
+    std::list<Observer*>::const_iterator iter;
+    iter = itsObserver.begin();    
+    while (iter != itsObserver.end()){
+        Observer *pObserver = *iter;
+        pObserver->Update(fp);
+        iter++;
+    }
+    lock.signal();
     //#]
 }
 
@@ -66,6 +83,10 @@ void Subject::cleanUpRelations() {
     }
 }
 
+Mutex* Subject::getLock() const {
+    return (Mutex*) &lock;
+}
+
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Subject.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Subject.cpp
 *********************************************************************/

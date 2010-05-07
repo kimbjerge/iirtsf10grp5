@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: RecordWfdb
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/RecordWfdb.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RecordWfdb.cpp
 *********************************************************************/
 
 //## dependency RecordIterator
@@ -40,7 +40,7 @@ void RecordWfdb::First() {
 
 bool RecordWfdb::Load() {
     //#[ operation Load()
-    #ifdef _TARGET
+    #ifdef _LINUX
     WFDB_Siginfo s[2];
     if (isigopen(recordName, s, 2) < 2) 
     {
@@ -55,12 +55,13 @@ bool RecordWfdb::Load() {
 
 void RecordWfdb::Next() {
     //#[ operation Next()
-    #ifdef _TARGET
+    #ifdef _LINUX
     WFDB_Sample v[2];
     
     if (getvec(v) > 0)
     {
-    	sample = v[0];
+    	for (int idx = 0; idx < itsSampleSet.getNum(); idx++)
+    		itsSampleSet.SetSample(idx, v[idx]); 
     	endRecord = false;
     }
     else
@@ -78,5 +79,5 @@ void RecordWfdb::setRecordName(char* p_recordName) {
 }
 
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/RecordWfdb.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RecordWfdb.cpp
 *********************************************************************/

@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Continuous
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Continuous.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Continuous.h
 *********************************************************************/
 
 #ifndef Continuous_H
@@ -27,7 +27,11 @@
 //## auto_generated
 #include "wfdb/wfdb.h"
 //## auto_generated
-class ConThread;
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## auto_generated
+class DistributerThread;
 
 //## auto_generated
 class ECGMedicineAdjust;
@@ -43,6 +47,9 @@ class Filter;
 
 //## auto_generated
 class FrameBuffer;
+
+//## auto_generated
+class FrameBufferPool;
 
 //## classInstance itsECGCalculate
 class Gain;
@@ -61,6 +68,9 @@ class PatientModel;
 
 //## auto_generated
 class PhysioModel;
+
+//## auto_generated
+class RealTimeThread;
 
 //## auto_generated
 class Record;
@@ -84,7 +94,7 @@ class Sample;
 class SampleSet;
 
 //## auto_generated
-class SignalDistributer;
+class SimulatorRealtime;
 
 //## auto_generated
 class Subject;
@@ -112,5 +122,5 @@ extern ECGtoPulse itsPulseCalculate;
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Continuous.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Continuous.h
 *********************************************************************/

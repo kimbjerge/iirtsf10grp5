@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: RecordIterator
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/RecordIterator.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RecordIterator.h
 *********************************************************************/
 
 #ifndef RecordIterator_H
@@ -27,9 +27,16 @@
 //## auto_generated
 #include "wfdb/wfdb.h"
 //## auto_generated
+#include "math.h"
+//## auto_generated
 #include "Continuous.h"
 //## dependency Record
 #include "Record.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## operation CurrentItem()
+class SampleSet;
+
 ////    Constructors and destructors    ////
 
 ////    Operations    ////
@@ -50,7 +57,7 @@ public :
     ////    Operations    ////
     
     //## operation CurrentItem()
-    SampleType CurrentItem();
+    SampleSet* CurrentItem();
     
     //## operation First()
     void First();
@@ -91,5 +98,5 @@ protected :
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/RecordIterator.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RecordIterator.h
 *********************************************************************/

@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: LCDScreen
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/LCDScreen.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/LCDScreen.h
 *********************************************************************/
 
 #ifndef LCDScreen_H
@@ -26,13 +26,20 @@
 #include <algorithm>
 //## auto_generated
 #include "wfdb/wfdb.h"
+//## auto_generated
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
 //## class LCDScreen
 #include "Observer.h"
 //## link itsController
 class Controller;
 
-//## link itsSignalDistributer
-class SignalDistributer;
+//## link itsDistributerThread
+class DistributerThread;
+
+//## operation Update(FrameBuffer*)
+class FrameBuffer;
 
 //## package Application::GUI
 
@@ -50,8 +57,8 @@ public :
     
     ////    Operations    ////
     
-    //## operation Update()
-    virtual void Update();
+    //## operation Update(FrameBuffer*)
+    virtual void Update(FrameBuffer* fp);
     
     ////    Additional operations    ////
     
@@ -62,10 +69,10 @@ public :
     void setItsController(Controller* p_Controller);
     
     //## auto_generated
-    SignalDistributer* getItsSignalDistributer() const;
+    DistributerThread* getItsDistributerThread() const;
     
     //## auto_generated
-    void setItsSignalDistributer(SignalDistributer* p_SignalDistributer);
+    void setItsDistributerThread(DistributerThread* p_DistributerThread);
 
 protected :
 
@@ -76,7 +83,7 @@ protected :
     
     Controller* itsController;		//## link itsController
     
-    SignalDistributer* itsSignalDistributer;		//## link itsSignalDistributer
+    DistributerThread* itsDistributerThread;		//## link itsDistributerThread
     
     ////    Framework operations    ////
 
@@ -94,5 +101,5 @@ public :
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/LCDScreen.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/LCDScreen.h
 *********************************************************************/

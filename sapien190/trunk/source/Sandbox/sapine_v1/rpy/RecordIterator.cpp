@@ -4,12 +4,14 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: RecordIterator
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/RecordIterator.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RecordIterator.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "RecordIterator.h"
+//## operation CurrentItem()
+#include "SampleSet.h"
 //## package Application::Continuous
 
 //## class RecordIterator
@@ -20,9 +22,9 @@ RecordIterator::RecordIterator(Record* rec) {
     //#]
 }
 
-SampleType RecordIterator::CurrentItem() {
+SampleSet* RecordIterator::CurrentItem() {
     //#[ operation CurrentItem()
-    return itsRecord->getSample();
+    return itsRecord->getItsSampleSet();
     //#]
 }
 
@@ -68,5 +70,5 @@ void RecordIterator::cleanUpRelations() {
 }
 
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/RecordIterator.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RecordIterator.cpp
 *********************************************************************/

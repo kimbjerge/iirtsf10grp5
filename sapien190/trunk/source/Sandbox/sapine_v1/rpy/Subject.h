@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Subject
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Subject.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Subject.h
 *********************************************************************/
 
 #ifndef Subject_H
@@ -27,6 +27,10 @@
 //## auto_generated
 #include "wfdb/wfdb.h"
 //## auto_generated
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## auto_generated
 #include "Continuous.h"
 //## auto_generated
 #include <list>
@@ -34,6 +38,11 @@
 #include <iterator>
 //## link itsObserver
 #include "Observer.h"
+//## attribute lock
+#include "Mutex.h"
+//## operation Notify(FrameBuffer*)
+class FrameBuffer;
+
 //## package Application::Continuous
 
 //## class Subject
@@ -58,8 +67,8 @@ public :
 
 protected :
 
-    //## operation Notify()
-    void Notify();
+    //## operation Notify(FrameBuffer*)
+    void Notify(FrameBuffer* fp);
     
     ////    Additional operations    ////
 
@@ -88,9 +97,18 @@ protected :
     ////    Relations and components    ////
     
     std::list<Observer*> itsObserver;		//## link itsObserver
+
+private :
+
+    //## auto_generated
+    Mutex* getLock() const;
+
+protected :
+
+    Mutex lock;		//## attribute lock
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Subject.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Subject.h
 *********************************************************************/

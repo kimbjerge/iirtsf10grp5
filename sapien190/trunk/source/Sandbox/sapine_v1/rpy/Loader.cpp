@@ -4,40 +4,40 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Loader
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Loader.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Loader.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "Loader.h"
-//## link itsConThread
-#include "ConThread.h"
+//## link itsSimulatorRealtime
+#include "SimulatorRealtime.h"
 //## package Application::Discrete
 
 //## class Loader
 Loader::Loader() {
-    itsConThread = NULL;
+    itsSimulatorRealtime = NULL;
 }
 
 Loader::~Loader() {
     cleanUpRelations();
 }
 
-ConThread* Loader::getItsConThread() const {
-    return itsConThread;
+SimulatorRealtime* Loader::getItsSimulatorRealtime() const {
+    return itsSimulatorRealtime;
 }
 
-void Loader::setItsConThread(ConThread* p_ConThread) {
-    itsConThread = p_ConThread;
+void Loader::setItsSimulatorRealtime(SimulatorRealtime* p_SimulatorRealtime) {
+    itsSimulatorRealtime = p_SimulatorRealtime;
 }
 
 void Loader::cleanUpRelations() {
-    if(itsConThread != NULL)
+    if(itsSimulatorRealtime != NULL)
         {
-            itsConThread = NULL;
+            itsSimulatorRealtime = NULL;
         }
 }
 
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Loader.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Loader.cpp
 *********************************************************************/

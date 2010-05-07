@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: RecordProxy
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/RecordProxy.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RecordProxy.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -26,7 +26,7 @@ RecordProxy::RecordProxy(RecordWfdb* record) {
 
 bool RecordProxy::Load() {
     //#[ operation Load()
-    itsRecordWfdb->Load();
+    return itsRecordWfdb->Load();
     //#]
 }
 
@@ -75,5 +75,5 @@ void RecordProxy::cleanUpRelations() {
 }
 
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/RecordProxy.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RecordProxy.cpp
 *********************************************************************/

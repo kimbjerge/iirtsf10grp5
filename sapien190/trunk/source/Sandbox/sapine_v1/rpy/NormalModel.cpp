@@ -4,49 +4,44 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: NormalModel
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/NormalModel.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/NormalModel.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "NormalModel.h"
+//## operation Generate(SampleSet)
+#include "SampleSet.h"
+//## auto_generated
+#include "Medicine.h"
 //## package Application::Continuous
 
 //## class NormalModel
-void NormalModel::factoryCalculate() {
-    //#[ operation factoryCalculate()
-    addItsFilter(getItsECGCalculate());
-    addItsFilter(getItsEDRCalculate());
-    addItsFilter(getItsPulseCalculate());
+void NormalModel::FactoryFilter() {
+    //#[ operation FactoryFilter()
+    addItsFilter(getItsGain());
+    addItsFilter(getItsECGtoEDR());
+    addItsFilter(getItsECGtoPulse());
     //#]
 }
 
-Gain* NormalModel::getItsECGCalculate() const {
-    return (Gain*) &itsECGCalculate;
-}
-
-ECGtoEDR* NormalModel::getItsEDRCalculate() const {
-    return (ECGtoEDR*) &itsEDRCalculate;
-}
-
-ECGtoPulse* NormalModel::getItsPulseCalculate() const {
-    return (ECGtoPulse*) &itsPulseCalculate;
-}
-
-void NormalModel::Generate(SampleType sample) {
-    //#[ operation Generate(SampleType)
-    ECGSample = itsECGCalculate.output(int2float(sample));
-    EDRSample = itsEDRCalculate.output(ECGSample);
-    PulseSample = itsPulseCalculate.output(ECGSample);
+void NormalModel::Generate(SampleSet& sample) {
+    //#[ operation Generate(SampleSet)
+    itsGain.Output(sample, ECGSample);
+    itsECGtoEDR.Output(ECGSample, EDRSample);
+    itsECGtoPulse.Output(ECGSample, PulseSample);
     //#]
-}
-
-NormalModel::NormalModel() {
 }
 
 NormalModel::~NormalModel() {
 }
 
+NormalModel::NormalModel() {
+    //#[ operation NormalModel()
+    FactoryFilter();
+    //#]
+}
+
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/NormalModel.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/NormalModel.cpp
 *********************************************************************/

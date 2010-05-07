@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Gain
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Gain.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Gain.h
 *********************************************************************/
 
 #ifndef Gain_H
@@ -27,9 +27,16 @@
 //## auto_generated
 #include "wfdb/wfdb.h"
 //## auto_generated
+#include "math.h"
+//## auto_generated
 #include "Continuous.h"
 //## class Gain
 #include "Filter.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## operation Output(SampleSet,SampleSet)
+class SampleSet;
+
 //## package Application::Continuous
 
 //## class Gain
@@ -46,11 +53,23 @@ public :
     
     ////    Operations    ////
     
-    //## operation output(float)
-    virtual float output(float in);
+    //## operation Output(SampleSet,SampleSet)
+    virtual int Output(SampleSet& in, SampleSet& out);
+    
+    //## auto_generated
+    float getGain() const;
+
+protected :
+
+    float gain;		//## attribute gain
+
+public :
+
+    //## auto_generated
+    void setGain(float p_gain);
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Gain.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Gain.h
 *********************************************************************/

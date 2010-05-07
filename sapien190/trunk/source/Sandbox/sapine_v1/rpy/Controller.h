@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Controller
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Controller.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Controller.h
 *********************************************************************/
 
 #ifndef Controller_H
@@ -26,6 +26,10 @@
 #include <algorithm>
 //## auto_generated
 #include "wfdb/wfdb.h"
+//## auto_generated
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
 //## link itsLCDScreen
 class LCDScreen;
 
@@ -127,5 +131,5 @@ public :
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Controller.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Controller.h
 *********************************************************************/

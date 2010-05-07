@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: SampleSet
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/SampleSet.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SampleSet.h
 *********************************************************************/
 
 #ifndef SampleSet_H
@@ -27,9 +27,13 @@
 //## auto_generated
 #include "wfdb/wfdb.h"
 //## auto_generated
+#include "math.h"
+//## auto_generated
 #include "Continuous.h"
 //## link itsSample
 #include "Sample.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
 //## package Application::Continuous
 
 //## class SampleSet
@@ -44,6 +48,11 @@ public :
     //## auto_generated
     ~SampleSet();
     
+    ////    Operations    ////
+    
+    //## operation GetSample(int)
+    Sample* GetSample(int idx);
+    
     ////    Additional operations    ////
     
     //## auto_generated
@@ -54,9 +63,38 @@ public :
 protected :
 
     Sample itsSample[2];		//## link itsSample
+
+public :
+
+    //## operation SetSample(int,Sample)
+    void SetSample(int idx, const Sample& sample);
+    
+    //## auto_generated
+    int getNum() const;
+    
+    //## auto_generated
+    void setNum(int p_num);
+
+protected :
+
+    int num;		//## attribute num
+
+public :
+
+    //## operation GetAnnotation(int)
+    WFDB_Annotation GetAnnotation(int idx);
+    
+    //## operation SetSample(int,WFDB_Sample)
+    void SetSample(int idx, WFDB_Sample value);
+    
+    //## operation SetAnnotation(int,WFDB_Annotation)
+    void SetAnnotation(int idx, WFDB_Annotation annotation);
+    
+    //## operation SetSample(int,WFDB_Sample,WFDB_Annotation)
+    void SetSample(int idx, WFDB_Sample value, WFDB_Annotation ann);
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/SampleSet.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SampleSet.h
 *********************************************************************/

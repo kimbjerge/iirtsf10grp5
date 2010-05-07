@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Continuous
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Continuous.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Continuous.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -19,13 +19,15 @@
 //## classInstance itsNormalGenerator
 #include "NormalModel.h"
 //## auto_generated
-#include "ConThread.h"
+#include "DistributerThread.h"
 //## auto_generated
 #include "ECGMedicineAdjust.h"
 //## auto_generated
 #include "Filter.h"
 //## auto_generated
 #include "FrameBuffer.h"
+//## auto_generated
+#include "FrameBufferPool.h"
 //## auto_generated
 #include "InfusionPumpModel.h"
 //## auto_generated
@@ -34,6 +36,8 @@
 #include "PatientModel.h"
 //## auto_generated
 #include "PhysioModel.h"
+//## auto_generated
+#include "RealTimeThread.h"
 //## auto_generated
 #include "Record.h"
 //## auto_generated
@@ -49,7 +53,7 @@
 //## auto_generated
 #include "SampleSet.h"
 //## auto_generated
-#include "SignalDistributer.h"
+#include "SimulatorRealtime.h"
 //## auto_generated
 #include "Subject.h"
 //## package Application::Continuous
@@ -74,5 +78,5 @@ NormalModel itsNormalGenerator;
 ECGtoPulse itsPulseCalculate;
 
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Continuous.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Continuous.cpp
 *********************************************************************/

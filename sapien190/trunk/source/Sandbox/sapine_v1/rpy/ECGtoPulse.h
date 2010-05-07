@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: ECGtoPulse
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/ECGtoPulse.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/ECGtoPulse.h
 *********************************************************************/
 
 #ifndef ECGtoPulse_H
@@ -27,9 +27,16 @@
 //## auto_generated
 #include "wfdb/wfdb.h"
 //## auto_generated
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## auto_generated
 #include "Continuous.h"
 //## class ECGtoPulse
 #include "Filter.h"
+//## operation Output(SampleSet,SampleSet)
+class SampleSet;
+
 //## package Application::Continuous
 
 //## class ECGtoPulse
@@ -46,11 +53,11 @@ public :
     
     ////    Operations    ////
     
-    //## operation output(float)
-    virtual float output(float in);
+    //## operation Output(SampleSet,SampleSet)
+    virtual int Output(SampleSet& in, SampleSet& out);
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/ECGtoPulse.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/ECGtoPulse.h
 *********************************************************************/

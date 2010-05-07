@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Record
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Record.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Record.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -39,14 +39,6 @@ void Record::setEndRecord(bool p_endRecord) {
     endRecord = p_endRecord;
 }
 
-SampleType Record::getSample() const {
-    return sample;
-}
-
-void Record::setSample(SampleType p_sample) {
-    sample = p_sample;
-}
-
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Record.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Record.cpp
 *********************************************************************/

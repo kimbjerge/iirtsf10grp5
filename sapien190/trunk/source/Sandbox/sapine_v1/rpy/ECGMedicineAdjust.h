@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: ECGMedicineAdjust
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/ECGMedicineAdjust.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/ECGMedicineAdjust.h
 *********************************************************************/
 
 #ifndef ECGMedicineAdjust_H
@@ -27,11 +27,15 @@
 //## auto_generated
 #include "wfdb/wfdb.h"
 //## auto_generated
+#include "math.h"
+//## auto_generated
 #include "Continuous.h"
 //## class ECGMedicineAdjust
 #include "Filter.h"
-//## link itsMedicine
-class Medicine;
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## operation Output(SampleSet,SampleSet)
+class SampleSet;
 
 //## package Application::Continuous
 
@@ -49,28 +53,15 @@ public :
     
     ////    Operations    ////
     
-    //## operation output(float)
-    virtual float output(float in);
+    //## operation Output(SampleSet,SampleSet)
+    virtual int Output(SampleSet& in, SampleSet& out);
     
     ////    Additional operations    ////
     
-    //## auto_generated
-    Medicine* getItsMedicine() const;
-    
-    //## auto_generated
-    void setItsMedicine(Medicine* p_Medicine);
-
-protected :
-
-    //## auto_generated
-    void cleanUpRelations();
-    
     ////    Relations and components    ////
-    
-    Medicine* itsMedicine;		//## link itsMedicine
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/ECGMedicineAdjust.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/ECGMedicineAdjust.h
 *********************************************************************/

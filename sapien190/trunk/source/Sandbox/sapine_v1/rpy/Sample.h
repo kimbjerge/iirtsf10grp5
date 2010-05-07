@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Sample
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Sample.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Sample.h
 *********************************************************************/
 
 #ifndef Sample_H
@@ -27,6 +27,10 @@
 //## auto_generated
 #include "wfdb/wfdb.h"
 //## auto_generated
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## auto_generated
 #include "Continuous.h"
 //## package Application::Continuous
 
@@ -41,6 +45,11 @@ public :
     
     //## auto_generated
     ~Sample();
+    
+    ////    Operations    ////
+    
+    //## operation FactoryAnnotation(char)
+    static WFDB_Annotation FactoryAnnotation(char anntyp);
     
     ////    Additional operations    ////
     
@@ -67,5 +76,5 @@ protected :
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Sample.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Sample.h
 *********************************************************************/

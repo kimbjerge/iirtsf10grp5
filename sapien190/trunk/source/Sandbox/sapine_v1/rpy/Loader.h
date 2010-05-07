@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Loader
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Loader.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Loader.h
 *********************************************************************/
 
 #ifndef Loader_H
@@ -26,8 +26,12 @@
 #include <algorithm>
 //## auto_generated
 #include "wfdb/wfdb.h"
-//## link itsConThread
-class ConThread;
+//## auto_generated
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## link itsSimulatorRealtime
+class SimulatorRealtime;
 
 //## package Application::Discrete
 
@@ -46,10 +50,10 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
-    ConThread* getItsConThread() const;
+    SimulatorRealtime* getItsSimulatorRealtime() const;
     
     //## auto_generated
-    void setItsConThread(ConThread* p_ConThread);
+    void setItsSimulatorRealtime(SimulatorRealtime* p_SimulatorRealtime);
 
 protected :
 
@@ -58,10 +62,10 @@ protected :
     
     ////    Relations and components    ////
     
-    ConThread* itsConThread;		//## link itsConThread
+    SimulatorRealtime* itsSimulatorRealtime;		//## link itsSimulatorRealtime
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Loader.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Loader.h
 *********************************************************************/

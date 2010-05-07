@@ -4,30 +4,33 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: LCDScreen
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/LCDScreen.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/LCDScreen.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "LCDScreen.h"
 //## link itsController
 #include "Controller.h"
-//## link itsSignalDistributer
-#include "SignalDistributer.h"
+//## link itsDistributerThread
+#include "DistributerThread.h"
+//## operation Update(FrameBuffer*)
+#include "FrameBuffer.h"
 //## package Application::GUI
 
 //## class LCDScreen
 LCDScreen::LCDScreen() {
     itsController = NULL;
-    itsSignalDistributer = NULL;
+    itsDistributerThread = NULL;
 }
 
 LCDScreen::~LCDScreen() {
     cleanUpRelations();
 }
 
-void LCDScreen::Update() {
-    //#[ operation Update()
+void LCDScreen::Update(FrameBuffer* fp) {
+    //#[ operation Update(FrameBuffer*)
+    std::cout << "FrameBuffer Update" << std::endl;
     //#]
 }
 
@@ -43,12 +46,12 @@ void LCDScreen::setItsController(Controller* p_Controller) {
     _setItsController(p_Controller);
 }
 
-SignalDistributer* LCDScreen::getItsSignalDistributer() const {
-    return itsSignalDistributer;
+DistributerThread* LCDScreen::getItsDistributerThread() const {
+    return itsDistributerThread;
 }
 
-void LCDScreen::setItsSignalDistributer(SignalDistributer* p_SignalDistributer) {
-    itsSignalDistributer = p_SignalDistributer;
+void LCDScreen::setItsDistributerThread(DistributerThread* p_DistributerThread) {
+    itsDistributerThread = p_DistributerThread;
 }
 
 void LCDScreen::cleanUpRelations() {
@@ -61,9 +64,9 @@ void LCDScreen::cleanUpRelations() {
                 }
             itsController = NULL;
         }
-    if(itsSignalDistributer != NULL)
+    if(itsDistributerThread != NULL)
         {
-            itsSignalDistributer = NULL;
+            itsDistributerThread = NULL;
         }
 }
 
@@ -84,5 +87,5 @@ void LCDScreen::_clearItsController() {
 }
 
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/LCDScreen.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/LCDScreen.cpp
 *********************************************************************/

@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Observer
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Observer.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Observer.h
 *********************************************************************/
 
 #ifndef Observer_H
@@ -26,6 +26,13 @@
 #include <algorithm>
 //## auto_generated
 #include "wfdb/wfdb.h"
+//## auto_generated
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## operation Update(FrameBuffer*)
+class FrameBuffer;
+
 //## package Application::Discrete
 
 //## class Observer
@@ -42,11 +49,11 @@ public :
     
     ////    Operations    ////
     
-    //## operation Update()
-    virtual void Update() = 0;
+    //## operation Update(FrameBuffer*)
+    virtual void Update(FrameBuffer* fp) = 0;
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Observer.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Observer.h
 *********************************************************************/

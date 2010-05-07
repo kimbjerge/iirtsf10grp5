@@ -52,7 +52,7 @@ int Dac::setValue(unsigned int outputValue) {
 //	printf("set value called\n");
 	value = outputValue;
 
-	sprintf(valString, "%i\0", value);
+        sprintf(valString, "%i\0", value);
 
 //	printf("value to be written: %s\n", valString);
 

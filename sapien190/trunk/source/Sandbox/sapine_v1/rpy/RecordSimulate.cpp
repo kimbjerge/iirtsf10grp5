@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: RecordSimulate
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/RecordSimulate.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RecordSimulate.cpp
 *********************************************************************/
 
 //## dependency RecordIterator
@@ -23,7 +23,7 @@ RecordSimulate::~RecordSimulate() {
 
 void RecordSimulate::First() {
     //#[ operation First()
-    sample = Random();
+    SetRandom();
     endRecord = false;
     //#]
 }
@@ -36,18 +36,20 @@ bool RecordSimulate::Load() {
 
 void RecordSimulate::Next() {
     //#[ operation Next()
-    sample = Random();
+    SetRandom();
     endRecord = false;
     
     //#]
 }
 
-SampleType RecordSimulate::Random() {
-    //#[ operation Random()
-    return rand() % 1000;
+void RecordSimulate::SetRandom() {
+    //#[ operation SetRandom()
+    WFDB_Sample sample = rand()%500;
+    for (int idx = 0; idx < itsSampleSet.getNum(); idx++)
+    	itsSampleSet.SetSample(idx, sample);    
     //#]
 }
 
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/RecordSimulate.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RecordSimulate.cpp
 *********************************************************************/

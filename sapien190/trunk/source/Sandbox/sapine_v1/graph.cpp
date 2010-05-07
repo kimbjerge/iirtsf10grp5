@@ -1,11 +1,12 @@
 #include "graph.h"
 #include "ui_graph.h"
-#include "rpy/NormalGenerator.h"
+#include "rpy/NormalModel.h"
 #include "rpy/Medicine.h"
 #include "rpy/RecordProxy.h"
 #include "rpy/RecordWfdb.h"
 #include "rpy/RecordSimulate.h"
 #include "rpy/SmartPtr.h"
+#include "rpy/SimulatorRealtime.h"
 
 Graph::Graph(QWidget *parent) :
     QWidget(parent),
@@ -99,8 +100,8 @@ void Graph::on_simulate_clicked()
     {
         // Create the PatientModel and configurate
         itsPatientModel = new PatientModel();
-        itsPatientModel->SetStrategy(new NormalGenerator());
-        itsPatientModel->AddMedicine(new Medicine());
+        itsPatientModel->SetStrategy(new NormalModel());
+        itsPatientModel->SetMedicine(new Medicine(SimulatorRealtime::Morphine));
         //itsPatientModel->SetRecord(new RecordProxy(new RecordSimulate())); offset = 500;
         //itsPatientModel->SetRecord(new RecordProxy(new RecordWfdb("100s"))); offset = 1050;
         //itsPatientModel->SetRecord(new RecordProxy(new RecordWfdb("e0103"))); offset = 200;
@@ -111,9 +112,8 @@ void Graph::on_simulate_clicked()
     {
         int sample;
         itsPatientModel->CalcSample();
-        itsPatientModel->GenerateSignals();
-        Generator *gen = itsPatientModel->getItsGenerator();
-        sample = gen->getECGSample();
+        sample = itsPatientModel->GetECGValue(0);
+        //sample = itsPatientModel->GetEDRValue(0);
         this->addValue(sample-offset);
         usleep(4000);
     }

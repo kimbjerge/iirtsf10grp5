@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Record
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Record.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Record.h
 *********************************************************************/
 
 #ifndef Record_H
@@ -28,6 +28,10 @@
 #include "Continuous.h"
 //## auto_generated
 #include "wfdb/wfdb.h"
+//## auto_generated
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
 //## link itsSampleSet
 #include "SampleSet.h"
 //## dependency RecordIterator
@@ -73,23 +77,15 @@ private :
     
     //## auto_generated
     void setEndRecord(bool p_endRecord);
-    
-    //## auto_generated
-    SampleType getSample() const;
-    
-    //## auto_generated
-    void setSample(SampleType p_sample);
 
 protected :
 
     bool endRecord;		//## attribute endRecord
-    
-    SampleType sample;		//## attribute sample
     
     SampleSet itsSampleSet;		//## link itsSampleSet
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Record.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Record.h
 *********************************************************************/

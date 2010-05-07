@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: FrameBuffer
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/FrameBuffer.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/FrameBuffer.h
 *********************************************************************/
 
 #ifndef FrameBuffer_H
@@ -27,6 +27,10 @@
 //## auto_generated
 #include "wfdb/wfdb.h"
 //## auto_generated
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## auto_generated
 #include "Continuous.h"
 //## package Application::Continuous
 
@@ -39,11 +43,91 @@ public :
     //## auto_generated
     FrameBuffer();
     
-    //## auto_generated
+    //## operation ~FrameBuffer()
     ~FrameBuffer();
+    
+    ////    Operations    ////
+
+private :
+
+    //## operation CreateBuffer(int)
+    void CreateBuffer(int size);
+
+public :
+
+    //## operation Insert(int)
+    void Insert(int sample);
+    
+    ////    Additional operations    ////
+
+private :
+
+    //## auto_generated
+    int* getBuffer() const;
+    
+    //## auto_generated
+    void setBuffer(int* p_buffer);
+    
+    ////    Attributes    ////
+
+protected :
+
+    int* buffer;		//## attribute buffer
+    
+    int writePos;		//## attribute writePos
+    
+    int bufSize;		//## attribute bufSize
+
+private :
+
+    //## auto_generated
+    int getBufSize() const;
+    
+    //## auto_generated
+    void setBufSize(int p_bufSize);
+
+public :
+
+    //## operation isFull()
+    bool isFull();
+    
+    //## operation FrameBuffer(int)
+    FrameBuffer(int size);
+    
+    //## operation First()
+    void First();
+    
+    //## operation IsDone()
+    bool IsDone();
+    
+    //## operation Next()
+    void Next();
+
+private :
+
+    //## auto_generated
+    int getReadPos() const;
+    
+    //## auto_generated
+    void setReadPos(int p_readPos);
+    
+    //## auto_generated
+    int getWritePos() const;
+    
+    //## auto_generated
+    void setWritePos(int p_writePos);
+
+protected :
+
+    int readPos;		//## attribute readPos
+
+public :
+
+    //## operation GetSample()
+    int GetSample();
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/FrameBuffer.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/FrameBuffer.h
 *********************************************************************/

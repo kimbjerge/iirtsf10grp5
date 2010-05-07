@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Filter
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Filter.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Filter.cpp
 *********************************************************************/
 
 //## auto_generated
@@ -19,6 +19,10 @@ Filter::Filter() {
 Filter::~Filter() {
 }
 
+SampleSet* Filter::getSample() const {
+    return (SampleSet*) &sample;
+}
+
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Filter.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Filter.cpp
 *********************************************************************/

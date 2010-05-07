@@ -4,51 +4,48 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: InfusionPumpModel
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/InfusionPumpModel.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/InfusionPumpModel.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "InfusionPumpModel.h"
+//## operation Generate(SampleSet)
+#include "SampleSet.h"
 //## dependency Gain
 #include "Gain.h"
+//## auto_generated
+#include "Medicine.h"
 //## package Application::Continuous
 
 //## class InfusionPumpModel
-void InfusionPumpModel::factoryCalculate() {
-    //#[ operation factoryCalculate()
-    addItsFilter(getItsInfECGCalculate());
-    addItsFilter(getItsEDRCalculate());
-    addItsFilter(getItsPulseCalculate());
+void InfusionPumpModel::FactoryFilter() {
+    //#[ operation FactoryFilter()
+    addItsFilter(getItsGain());
+    addItsFilter(getItsECGMedicineAdjust());
+    addItsFilter(getItsECGtoEDR());
+    addItsFilter(getItsECGtoPulse());
     //#]
 }
 
-ECGtoEDR* InfusionPumpModel::getItsEDRCalculate() const {
-    return (ECGtoEDR*) &itsEDRCalculate;
-}
-
-ECGMedicineAdjust* InfusionPumpModel::getItsInfECGCalculate() const {
-    return (ECGMedicineAdjust*) &itsInfECGCalculate;
-}
-
-ECGtoPulse* InfusionPumpModel::getItsPulseCalculate() const {
-    return (ECGtoPulse*) &itsPulseCalculate;
-}
-
-void InfusionPumpModel::Generate(SampleType sample) {
-    //#[ operation Generate(SampleType)
-    ECGSample = itsInfECGCalculate.output(int2float(sample));
-    EDRSample = itsEDRCalculate.output(ECGSample);
-    PulseSample = itsPulseCalculate.output(ECGSample);
+void InfusionPumpModel::Generate(SampleSet& sample) {
+    //#[ operation Generate(SampleSet)
+    itsGain.Output(sample, ECGSample); 
+    itsECGMedicineAdjust.Output(ECGSample, ECGSample);
+    itsECGtoEDR.Output(ECGSample, EDRSample);
+    itsECGtoPulse.Output(ECGSample, PulseSample);
     //#]
-}
-
-InfusionPumpModel::InfusionPumpModel() {
 }
 
 InfusionPumpModel::~InfusionPumpModel() {
 }
 
+InfusionPumpModel::InfusionPumpModel() {
+    //#[ operation InfusionPumpModel()
+    FactoryFilter();
+    //#]
+}
+
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/InfusionPumpModel.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/InfusionPumpModel.cpp
 *********************************************************************/

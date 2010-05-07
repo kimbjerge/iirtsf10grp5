@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: InfusionPumpModel
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/InfusionPumpModel.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/InfusionPumpModel.h
 *********************************************************************/
 
 #ifndef InfusionPumpModel_H
@@ -28,16 +28,20 @@
 #include "Continuous.h"
 //## auto_generated
 #include "wfdb/wfdb.h"
-//## attribute itsInfECGCalculate
-#include "ECGMedicineAdjust.h"
-//## attribute itsEDRCalculate
-#include "ECGtoEDR.h"
-//## attribute itsPulseCalculate
-#include "ECGtoPulse.h"
+//## auto_generated
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
 //## class InfusionPumpModel
 #include "PhysioModel.h"
 //## dependency Gain
 class Gain;
+
+//## auto_generated
+class Medicine;
+
+//## operation Generate(SampleSet)
+class SampleSet;
 
 //## package Application::Continuous
 
@@ -49,39 +53,20 @@ class InfusionPumpModel : public PhysioModel {
     
 public :
 
-    //## operation factoryCalculate()
-    virtual void factoryCalculate();
+    //## operation FactoryFilter()
+    virtual void FactoryFilter();
     
-    //## auto_generated
-    ECGtoEDR* getItsEDRCalculate() const;
-    
-    //## auto_generated
-    ECGMedicineAdjust* getItsInfECGCalculate() const;
-    
-    //## auto_generated
-    ECGtoPulse* getItsPulseCalculate() const;
-
-protected :
-
-    ECGtoEDR itsEDRCalculate;		//## attribute itsEDRCalculate
-    
-    ECGMedicineAdjust itsInfECGCalculate;		//## attribute itsInfECGCalculate
-    
-    ECGtoPulse itsPulseCalculate;		//## attribute itsPulseCalculate
-
-public :
-
-    //## operation Generate(SampleType)
-    virtual void Generate(SampleType sample);
-    
-    //## auto_generated
-    InfusionPumpModel();
+    //## operation Generate(SampleSet)
+    virtual void Generate(SampleSet& sample);
     
     //## auto_generated
     virtual ~InfusionPumpModel();
+    
+    //## operation InfusionPumpModel()
+    InfusionPumpModel();
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/InfusionPumpModel.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/InfusionPumpModel.h
 *********************************************************************/

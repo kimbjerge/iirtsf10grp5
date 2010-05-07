@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: RecordWfdb
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/RecordWfdb.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RecordWfdb.h
 *********************************************************************/
 
 #ifndef RecordWfdb_H
@@ -27,9 +27,13 @@
 //## auto_generated
 #include "wfdb/wfdb.h"
 //## auto_generated
+#include "math.h"
+//## auto_generated
 #include "Continuous.h"
 //## class RecordWfdb
 #include "Record.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
 //## dependency RecordIterator
 class RecordIterator;
 
@@ -88,5 +92,5 @@ protected :
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/RecordWfdb.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RecordWfdb.h
 *********************************************************************/

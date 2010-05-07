@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: PatientModel
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/PatientModel.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/PatientModel.h
 *********************************************************************/
 
 #ifndef PatientModel_H
@@ -27,9 +27,18 @@
 //## auto_generated
 #include "wfdb/wfdb.h"
 //## auto_generated
+#include "math.h"
+//## auto_generated
 #include "Continuous.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## class PatientModel
+#include "Monitor.h"
 //## dependency ExtInputs
 class ExtInputs;
+
+//## link itsSampleSet
+class SampleSet;
 
 //## operation SetMedicine(Medicine*)
 class Medicine;
@@ -37,7 +46,7 @@ class Medicine;
 //## operation SetStrategy(PhysioModel*)
 class PhysioModel;
 
-//## operation SetRecord(Record*)
+//## operation AlternateRecord(Record*)
 class Record;
 
 //## link itsRecordIterator
@@ -74,7 +83,7 @@ class RecordIterator;
 //## package Application::Continuous
 
 //## class PatientModel
-class PatientModel {
+class PatientModel : public Monitor {
     ////    Friends    ////
     
     ////    Constructors and destructors    ////
@@ -111,8 +120,6 @@ protected :
     
     ////    Framework operations    ////
     
-    SampleType sample;		//## attribute sample
-    
     RecordIterator* itsRecordIterator;		//## link itsRecordIterator
 
 public :
@@ -125,12 +132,6 @@ public :
     
     //## operation PatientModel()
     PatientModel();
-    
-    //## auto_generated
-    SampleType getSample() const;
-    
-    //## auto_generated
-    void setSample(SampleType p_sample);
     
     //## auto_generated
     ExtInputs* getItsExtInputs() const;
@@ -177,9 +178,45 @@ public :
     
     //## auto_generated
     void _clearItsExtInputs();
+    
+    //## auto_generated
+    SampleSet* getItsSampleSet() const;
+    
+    //## auto_generated
+    void setItsSampleSet(SampleSet* p_SampleSet);
+
+protected :
+
+    SampleSet* itsSampleSet;		//## link itsSampleSet
+
+public :
+
+    //## operation GetECGValue(int)
+    WFDB_Sample GetECGValue(int idx);
+    
+    //## operation GetEDRValue(int)
+    WFDB_Sample GetEDRValue(int idx);
+    
+    //## operation GetPulse()
+    int GetPulse();
+    
+    //## auto_generated
+    bool getPause() const;
+    
+    //## auto_generated
+    void setPause(bool p_pause);
+
+protected :
+
+    bool pause;		//## attribute pause
+
+public :
+
+    //## operation AlternateRecord(Record*)
+    bool AlternateRecord(Record* aRecord);
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/PatientModel.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/PatientModel.h
 *********************************************************************/

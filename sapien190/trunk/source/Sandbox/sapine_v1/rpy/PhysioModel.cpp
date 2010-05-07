@@ -4,25 +4,27 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: PhysioModel
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/PhysioModel.cpp
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/PhysioModel.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "PhysioModel.h"
+//## operation SetMedicine(Medicine*)
+#include "Medicine.h"
 //## package Application::Continuous
 
 //## class PhysioModel
-float PhysioModel::getECGSample() const {
-    return ECGSample;
+SampleSet* PhysioModel::getECGSample() const {
+    return (SampleSet*) &ECGSample;
 }
 
-float PhysioModel::getEDRSample() const {
-    return EDRSample;
+SampleSet* PhysioModel::getEDRSample() const {
+    return (SampleSet*) &EDRSample;
 }
 
-float PhysioModel::getPulseSample() const {
-    return PulseSample;
+SampleSet* PhysioModel::getPulseSample() const {
+    return (SampleSet*) &PulseSample;
 }
 
 std::list<Filter*>::const_iterator PhysioModel::getItsFilter() const {
@@ -54,33 +56,50 @@ void PhysioModel::cleanUpRelations() {
     {
         itsFilter.clear();
     }
-}
-
-float PhysioModel::int2float(const SampleType& s) {
-    //#[ operation int2float(SampleType)
-    return s;
-    //#]
-}
-
-PhysioModel::PhysioModel() {
+    if(itsMedicine != NULL)
+        {
+            itsMedicine = NULL;
+        }
 }
 
 PhysioModel::~PhysioModel() {
     cleanUpRelations();
 }
 
-void PhysioModel::setECGSample(float p_ECGSample) {
-    ECGSample = p_ECGSample;
+ECGMedicineAdjust* PhysioModel::getItsECGMedicineAdjust() const {
+    return (ECGMedicineAdjust*) &itsECGMedicineAdjust;
 }
 
-void PhysioModel::setEDRSample(float p_EDRSample) {
-    EDRSample = p_EDRSample;
+ECGtoEDR* PhysioModel::getItsECGtoEDR() const {
+    return (ECGtoEDR*) &itsECGtoEDR;
 }
 
-void PhysioModel::setPulseSample(float p_PulseSample) {
-    PulseSample = p_PulseSample;
+ECGtoPulse* PhysioModel::getItsECGtoPulse() const {
+    return (ECGtoPulse*) &itsECGtoPulse;
+}
+
+Gain* PhysioModel::getItsGain() const {
+    return (Gain*) &itsGain;
+}
+
+PhysioModel::PhysioModel() {
+    itsMedicine = NULL;
+}
+
+void PhysioModel::SetMedicine(Medicine* aMedicine) {
+    //#[ operation SetMedicine(Medicine*)
+    setItsMedicine(aMedicine);
+    //#]
+}
+
+Medicine* PhysioModel::getItsMedicine() const {
+    return itsMedicine;
+}
+
+void PhysioModel::setItsMedicine(Medicine* p_Medicine) {
+    itsMedicine = p_Medicine;
 }
 
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/PhysioModel.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/PhysioModel.cpp
 *********************************************************************/

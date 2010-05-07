@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Filter
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Filter.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Filter.h
 *********************************************************************/
 
 #ifndef Filter_H
@@ -27,7 +27,13 @@
 //## auto_generated
 #include "wfdb/wfdb.h"
 //## auto_generated
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## auto_generated
 #include "Continuous.h"
+//## attribute sample
+#include "SampleSet.h"
 //## package Application::Continuous
 
 //## class Filter
@@ -44,11 +50,22 @@ public :
     
     ////    Operations    ////
     
-    //## operation output(float)
-    virtual float output(float in) = 0;
+    //## operation Output(SampleSet,SampleSet)
+    virtual int Output(SampleSet& in, SampleSet& out) = 0;
+    
+    ////    Additional operations    ////
+    
+    //## auto_generated
+    SampleSet* getSample() const;
+    
+    ////    Attributes    ////
+
+protected :
+
+    SampleSet sample;		//## attribute sample
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/Filter.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Filter.h
 *********************************************************************/

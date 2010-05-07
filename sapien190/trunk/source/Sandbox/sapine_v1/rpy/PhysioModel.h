@@ -4,8 +4,8 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: PhysioModel
-//!	Generated Date	: Mon, 3, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/PhysioModel.h
+//!	Generated Date	: Fri, 7, May 2010  
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/PhysioModel.h
 *********************************************************************/
 
 #ifndef PhysioModel_H
@@ -34,6 +34,23 @@
 #include "Filter.h"
 //## auto_generated
 #include "wfdb/wfdb.h"
+//## auto_generated
+#include "math.h"
+//## auto_generated
+#include "wfdb/ecgcodes.h"
+//## attribute itsECGMedicineAdjust
+#include "ECGMedicineAdjust.h"
+//## attribute itsECGtoEDR
+#include "ECGtoEDR.h"
+//## attribute itsECGtoPulse
+#include "ECGtoPulse.h"
+//## attribute itsGain
+#include "Gain.h"
+//## attribute ECGSample
+#include "SampleSet.h"
+//## operation SetMedicine(Medicine*)
+class Medicine;
+
 //## package Application::Continuous
 
 //## class PhysioModel
@@ -44,22 +61,22 @@ class PhysioModel {
     
 public :
 
-    //## operation Generate(SampleType)
-    virtual void Generate(SampleType sample) = 0;
+    //## operation Generate(SampleSet)
+    virtual void Generate(SampleSet& sample) = 0;
     
-    //## operation factoryCalculate()
-    virtual void factoryCalculate() = 0;
+    //## operation FactoryFilter()
+    virtual void FactoryFilter() = 0;
     
     ////    Additional operations    ////
     
     //## auto_generated
-    float getECGSample() const;
+    SampleSet* getECGSample() const;
     
     //## auto_generated
-    float getEDRSample() const;
+    SampleSet* getEDRSample() const;
     
     //## auto_generated
-    float getPulseSample() const;
+    SampleSet* getPulseSample() const;
     
     //## auto_generated
     std::list<Filter*>::const_iterator getItsFilter() const;
@@ -83,38 +100,63 @@ protected :
     
     ////    Attributes    ////
     
-    float ECGSample;		//## attribute ECGSample
+    SampleSet ECGSample;		//## attribute ECGSample
     
-    float EDRSample;		//## attribute EDRSample
+    SampleSet EDRSample;		//## attribute EDRSample
     
-    float PulseSample;		//## attribute PulseSample
+    SampleSet PulseSample;		//## attribute PulseSample
     
     ////    Relations and components    ////
     
     std::list<Filter*> itsFilter;		//## link itsFilter
+
+public :
+
+    //## auto_generated
+    virtual ~PhysioModel();
     
-    //## operation int2float(SampleType)
-    float int2float(const SampleType& s);
+    //## auto_generated
+    ECGMedicineAdjust* getItsECGMedicineAdjust() const;
+    
+    //## auto_generated
+    ECGtoEDR* getItsECGtoEDR() const;
+    
+    //## auto_generated
+    ECGtoPulse* getItsECGtoPulse() const;
+    
+    //## auto_generated
+    Gain* getItsGain() const;
+
+protected :
+
+    ECGMedicineAdjust itsECGMedicineAdjust;		//## attribute itsECGMedicineAdjust
+    
+    ECGtoEDR itsECGtoEDR;		//## attribute itsECGtoEDR
+    
+    ECGtoPulse itsECGtoPulse;		//## attribute itsECGtoPulse
+    
+    Gain itsGain;		//## attribute itsGain
 
 public :
 
     //## auto_generated
     PhysioModel();
     
-    //## auto_generated
-    virtual ~PhysioModel();
+    //## operation SetMedicine(Medicine*)
+    void SetMedicine(Medicine* aMedicine);
     
     //## auto_generated
-    void setECGSample(float p_ECGSample);
+    Medicine* getItsMedicine() const;
     
     //## auto_generated
-    void setEDRSample(float p_EDRSample);
-    
-    //## auto_generated
-    void setPulseSample(float p_PulseSample);
+    void setItsMedicine(Medicine* p_Medicine);
+
+protected :
+
+    Medicine* itsMedicine;		//## link itsMedicine
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/SapienD1/sapine/rpy/PhysioModel.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/PhysioModel.h
 *********************************************************************/
