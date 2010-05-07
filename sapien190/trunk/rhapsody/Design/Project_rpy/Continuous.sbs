@@ -285,7 +285,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "SimulatorRealtimeModel";
-			- _lastModifiedTime = "5.7.2010::10:38:32";
+			- _lastModifiedTime = "5.7.2010::11:58:23";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 2d804280-da55-445c-b71f-b55b2eaff8c6;
 				- m_type = 0;
@@ -429,7 +429,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 10;
+						- size = 12;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -470,6 +470,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _id = GUID dce01ef1-669c-448c-ad24-caac9d4a636a;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID 432e9a17-abda-45dc-aa6e-dd3699968cde;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID d80cf80f-2007-4c00-bb36-e7a9d97abb4c;
 						}
 					}
 				}
@@ -3595,7 +3603,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "HWBoundary";
-			- _lastModifiedTime = "5.7.2010::6:26:17";
+			- _lastModifiedTime = "5.7.2010::11:48:32";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 91780ae3-c7ea-42a7-85a3-627f770958f6;
 				- m_type = 0;
@@ -5195,7 +5203,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ThreadModel";
-			- _lastModifiedTime = "5.7.2010::10:33:36";
+			- _lastModifiedTime = "5.7.2010::11:58:23";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID b37af65e-7055-4bc1-ab57-f84aba61cf0a;
 				- m_type = 0;
@@ -7360,7 +7368,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "PatientModel";
-			- _lastModifiedTime = "5.7.2010::10:38:32";
+			- _lastModifiedTime = "5.7.2010::11:56:43";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 90e955ad-5d74-4cab-9310-6b212da8b3d1;
 				- m_type = 0;
@@ -10763,7 +10771,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "PhysioModel";
-			- _lastModifiedTime = "5.7.2010::10:33:36";
+			- _lastModifiedTime = "5.7.2010::11:56:43";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 2a398139-d587-4f14-9b4c-e140c83f23ef;
 				- m_type = 0;
@@ -13432,7 +13440,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "NormalGenerator";
-			- _lastModifiedTime = "5.7.2010::10:33:36";
+			- _lastModifiedTime = "5.7.2010::11:56:43";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 347f98ec-ceb0-4390-bf06-97c840b75066;
 				- m_type = 0;
@@ -16124,7 +16132,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ScenarioCreateRecordRealtime";
-			- _lastModifiedTime = "5.7.2010::8:28:51";
+			- _lastModifiedTime = "5.7.2010::10:58:38";
 			- _graphicChart = { CGIMscChart 
 				- vLadderMargin = 20;
 				- m_usingActivationBar = 0;
@@ -17541,7 +17549,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ScenarioStartSimulatorRealtime";
-			- _lastModifiedTime = "5.7.2010::10:6:39";
+			- _lastModifiedTime = "5.7.2010::11:2:14";
 			- _graphicChart = { CGIMscChart 
 				- vLadderMargin = 20;
 				- m_usingActivationBar = 0;
@@ -18040,7 +18048,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					}
 					- m_pParent = ;
 					- m_name = { CGIText 
-						- m_str = "AssingRecord(aRecord)";
+						- m_str = "AssignRecord(aRecord)";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -18888,7 +18896,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					}
 					{ IMessage 
 						- _id = GUID 5c24ee68-ff48-43fa-990f-42a2165c6b58;
-						- _name = "AssingRecord";
+						- _name = "AssignRecord";
 						- m_szSequence = "1.";
 						- m_szActualArgs = "aRecord";
 						- m_szReturnVal = "";
@@ -30362,7 +30370,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID 86f32eec-a79a-494c-95f1-e1435092e146;
 			}
 			- _lastID = 17;
-			- weakCGTime = 5.7.2010::7:24:10;
+			- weakCGTime = 5.7.2010::10:51:48;
 			- strongCGTime = 5.3.2010::12:16:30;
 			- Operations = { IRPYRawContainer 
 				- size = 3;
@@ -30493,12 +30501,12 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 1;
 						- value = 
 						{ IArgument 
-							- _id = GUID fc6657a4-2e6d-4ce1-95d7-4372db938bc0;
+							- _id = GUID b83e58eb-fc9e-4371-90bc-913d4f66201d;
 							- _name = "aMedicine";
 							- myTypeOf = { IType 
-								- _id = GUID c53a446c-0160-41b4-b947-04e42eaab502;
+								- _id = GUID bd34f32b-4446-497b-875c-f1301728b588;
 								- _myState = 8192;
-								- _declaration = "Medicine";
+								- _declaration = "Medicine*";
 								- _kind = Language;
 							}
 							- _isOrdered = 0;
@@ -34849,7 +34857,7 @@ if (itsMedicine) delete itsMedicine;";
 						- _bodyData = "if (itsRecord != NULL)
 {      
 	if (itsRecordIterator != NULL) delete itsRecordIterator;
-	itsRecordIterator = itsRecord->CreateIterator();
+	setItsRecordIterator(itsRecord->CreateIterator());
 	itsRecordIterator->First();
 }";
 					}
@@ -35133,7 +35141,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 27;
+						- size = 28;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID a0fc5ac3-f322-449c-9d2f-638a834e2224;
@@ -35227,13 +35235,26 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							}
 						}
 						{ IFileFragment 
+							- _id = GUID f4b43b2e-1682-4b82-8445-6489cce5db7f;
+							- _name = "aom:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency aom:spec";
+							- m_startRow = 36;
+							- m_startCol_Short = 1;
+							- m_endRow = 36;
+							- m_endCol_Short = 922;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
 							- _id = GUID ac8b8f3c-3b6b-486a-b36a-9aa7781e0a2e;
 							- _name = "SampleSet:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency SampleSet:spec";
-							- m_startRow = 39;
+							- m_startRow = 41;
 							- m_startCol_Short = 1;
-							- m_endRow = 39;
+							- m_endRow = 41;
 							- m_endCol_Short = 16;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -35244,9 +35265,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- _name = "Medicine:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency Medicine:spec";
-							- m_startRow = 42;
+							- m_startRow = 44;
 							- m_startCol_Short = 1;
-							- m_endRow = 42;
+							- m_endRow = 44;
 							- m_endCol_Short = 15;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -35257,9 +35278,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- _name = "PhysioModel:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency PhysioModel:spec";
-							- m_startRow = 45;
+							- m_startRow = 47;
 							- m_startCol_Short = 1;
-							- m_endRow = 45;
+							- m_endRow = 47;
 							- m_endCol_Short = 18;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -35270,9 +35291,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- _name = "Record:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency Record:spec";
-							- m_startRow = 48;
+							- m_startRow = 50;
 							- m_startCol_Short = 1;
-							- m_endRow = 48;
+							- m_endRow = 50;
 							- m_endCol_Short = 13;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -35283,149 +35304,149 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- _name = "RecordIterator:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency RecordIterator:spec";
-							- m_startRow = 51;
+							- m_startRow = 53;
 							- m_startCol_Short = 1;
-							- m_endRow = 51;
+							- m_endRow = 53;
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 651cbcd7-e01b-468c-8438-7ae5c7d14624;
+							- _id = GUID 144903a9-c4ae-491c-9a6f-269b39dae4fb;
 							- _name = "////    Friends    ////";
 							- m_type = textFragment;
 							- m_text = "////    Friends    ////
 ";
-							- m_startRow = 53;
+							- m_startRow = 55;
 							- m_startCol_Short = 1;
-							- m_endRow = 53;
+							- m_endRow = 55;
 							- m_endCol_Short = 24;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 7142bb59-5437-4fd0-9768-bf6c336cd329;
+							- _id = GUID 358e47e1-691b-43a2-9680-baf9bb53ff65;
 							- _name = "////    Constructors and destructors    ////";
 							- m_type = textFragment;
 							- m_text = "////    Constructors and destructors    ////
 ";
-							- m_startRow = 55;
+							- m_startRow = 57;
 							- m_startCol_Short = 1;
-							- m_endRow = 55;
+							- m_endRow = 57;
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID e7858fe8-8ba6-43a3-ac42-8fdd7920fe8e;
+							- _id = GUID 3a9a6259-9254-4b54-8952-250ce79a5d7f;
 							- _name = "////    Operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Operations    ////
 ";
-							- m_startRow = 57;
+							- m_startRow = 59;
 							- m_startCol_Short = 1;
-							- m_endRow = 57;
+							- m_endRow = 59;
 							- m_endCol_Short = 27;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 2c0d39b6-04e3-4b50-b63f-4764c4a4a5b2;
+							- _id = GUID 75664d5c-aa66-4e4b-bac9-bbb4c6736775;
 							- _name = "////    Additional operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Additional operations    ////
 ";
-							- m_startRow = 59;
+							- m_startRow = 61;
 							- m_startCol_Short = 1;
-							- m_endRow = 59;
+							- m_endRow = 61;
 							- m_endCol_Short = 38;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID a8d0a4dd-db69-4ca9-9b06-26e74a936783;
+							- _id = GUID 973127b7-b0ac-4695-8b0c-c1163a624a17;
 							- _name = "////    Relations and components    ////";
 							- m_type = textFragment;
 							- m_text = "////    Relations and components    ////
 ";
-							- m_startRow = 61;
+							- m_startRow = 63;
 							- m_startCol_Short = 1;
-							- m_endRow = 61;
+							- m_endRow = 63;
 							- m_endCol_Short = 41;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID ef4c91a6-f77f-477c-98d4-ac6278856399;
+							- _id = GUID cf6fbf99-41f8-4388-905f-4102b0343ab6;
 							- _name = "////    Friends    ////";
 							- m_type = textFragment;
 							- m_text = "////    Friends    ////
 ";
-							- m_startRow = 63;
+							- m_startRow = 65;
 							- m_startCol_Short = 1;
-							- m_endRow = 63;
+							- m_endRow = 65;
 							- m_endCol_Short = 24;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 2d611c35-ab73-43f7-a9f0-bd81f690f218;
+							- _id = GUID 2242d6bf-26f4-4d57-b7f9-d4fa859bfeb9;
 							- _name = "////    Constructors and destructors    ////";
 							- m_type = textFragment;
 							- m_text = "////    Constructors and destructors    ////
 ";
-							- m_startRow = 65;
+							- m_startRow = 67;
 							- m_startCol_Short = 1;
-							- m_endRow = 65;
+							- m_endRow = 67;
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 3e876a21-5895-409a-8bab-9ff585e7bfca;
+							- _id = GUID 4e3293b3-4ab5-4b69-8cb8-7520d990fb61;
 							- _name = "////    Operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Operations    ////
 ";
-							- m_startRow = 67;
+							- m_startRow = 69;
 							- m_startCol_Short = 1;
-							- m_endRow = 67;
+							- m_endRow = 69;
 							- m_endCol_Short = 27;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID adf5e1e3-613f-478e-927b-eeb951f0d9c9;
+							- _id = GUID 0ef4cef4-dcfd-4253-94a4-fc86b9ec589c;
 							- _name = "////    Additional operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Additional operations    ////
 ";
-							- m_startRow = 69;
+							- m_startRow = 71;
 							- m_startCol_Short = 1;
-							- m_endRow = 69;
+							- m_endRow = 71;
 							- m_endCol_Short = 38;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 55761dbe-70bc-4867-9691-8dbb9b574e6f;
+							- _id = GUID 7800237b-a25c-411b-be82-6b744a7e276b;
 							- _name = "////    Relations and components    ////";
 							- m_type = textFragment;
 							- m_text = "////    Relations and components    ////
 ";
-							- m_startRow = 71;
+							- m_startRow = 73;
 							- m_startCol_Short = 1;
-							- m_endRow = 71;
+							- m_endRow = 73;
 							- m_endCol_Short = 41;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -35437,51 +35458,51 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- m_type = textFragment;
 							- m_text = "////    Framework operations    ////
 ";
-							- m_startRow = 73;
+							- m_startRow = 75;
 							- m_startCol_Short = 1;
-							- m_endRow = 73;
+							- m_endRow = 75;
 							- m_endCol_Short = 37;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID c0bfb390-a4e0-489f-bab0-30d41cbfd111;
+							- _id = GUID 48c242f7-f4d9-4077-83de-f178961a1f85;
 							- _name = "////    Friends    ////";
 							- m_type = textFragment;
 							- m_text = "////    Friends    ////
 ";
-							- m_startRow = 75;
+							- m_startRow = 77;
 							- m_startCol_Short = 1;
-							- m_endRow = 75;
+							- m_endRow = 77;
 							- m_endCol_Short = 24;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 3850d657-82e4-4844-98da-44b12a04e9b3;
+							- _id = GUID 3ce09cce-476a-4064-8bf9-aef4c0a1ad01;
 							- _name = "////    Constructors and destructors    ////";
 							- m_type = textFragment;
 							- m_text = "////    Constructors and destructors    ////
 ";
-							- m_startRow = 77;
+							- m_startRow = 79;
 							- m_startCol_Short = 1;
-							- m_endRow = 77;
+							- m_endRow = 79;
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
-							- _id = GUID 0f8ec1fc-5cb0-4652-8167-0baca37ed8c4;
+							- _id = GUID fac3895a-6c6e-4b11-a33e-19367a3c945c;
 							- _name = "////    Operations    ////";
 							- m_type = textFragment;
 							- m_text = "////    Operations    ////
 ";
-							- m_startRow = 79;
+							- m_startRow = 81;
 							- m_startCol_Short = 1;
-							- m_endRow = 79;
+							- m_endRow = 81;
 							- m_endCol_Short = 27;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -35501,7 +35522,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 										- value = 
 										{ ILiteralSpecification 
 											- _id = GUID 51708a5e-3a9b-4b64-89f1-76e85081907b;
-											- _value = "84";
+											- _value = "86";
 										}
 									}
 									- _typeOf = { IHandle 
@@ -35538,9 +35559,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							}
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 84;
+							- m_startRow = 86;
 							- m_startCol_Short = 1;
-							- m_endRow = 200;
+							- m_endRow = 206;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -35555,9 +35576,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- m_type = textFragment;
 									- m_text = "////    Friends    ////
 ";
-									- m_startRow = 85;
+									- m_startRow = 87;
 									- m_startCol_Short = 5;
-									- m_endRow = 85;
+									- m_endRow = 87;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35569,9 +35590,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- m_type = textFragment;
 									- m_text = "////    Constructors and destructors    ////
 ";
-									- m_startRow = 87;
+									- m_startRow = 95;
 									- m_startCol_Short = 5;
-									- m_endRow = 87;
+									- m_endRow = 95;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35583,9 +35604,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- m_type = textFragment;
 									- m_text = "////    Operations    ////
 ";
-									- m_startRow = 89;
+									- m_startRow = 97;
 									- m_startCol_Short = 5;
-									- m_endRow = 89;
+									- m_endRow = 97;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35596,9 +35617,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "CalcSample";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 94;
+									- m_startRow = 100;
 									- m_startCol_Short = 10;
-									- m_endRow = 94;
+									- m_endRow = 100;
 									- m_endCol_Short = 22;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -35610,9 +35631,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "SetRecord";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 97;
+									- m_startRow = 103;
 									- m_startCol_Short = 10;
-									- m_endRow = 97;
+									- m_endRow = 103;
 									- m_endCol_Short = 36;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -35624,9 +35645,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "SetStrategy";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 100;
+									- m_startRow = 106;
 									- m_startCol_Short = 10;
-									- m_endRow = 100;
+									- m_endRow = 106;
 									- m_endCol_Short = 48;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -35638,9 +35659,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "StartSimulation";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 103;
+									- m_startRow = 109;
 									- m_startCol_Short = 10;
-									- m_endRow = 103;
+									- m_endRow = 109;
 									- m_endCol_Short = 27;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -35653,9 +35674,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- m_type = textFragment;
 									- m_text = "////    Additional operations    ////
 ";
-									- m_startRow = 105;
+									- m_startRow = 111;
 									- m_startCol_Short = 5;
-									- m_endRow = 105;
+									- m_endRow = 111;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35667,9 +35688,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- m_type = textFragment;
 									- m_text = "////    Relations and components    ////
 ";
-									- m_startRow = 107;
+									- m_startRow = 113;
 									- m_startCol_Short = 5;
-									- m_endRow = 107;
+									- m_endRow = 113;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35680,9 +35701,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "itsExtInputs";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 111;
+									- m_startRow = 117;
 									- m_startCol_Short = 16;
-									- m_endRow = 111;
+									- m_endRow = 117;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -35694,9 +35715,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "itsPhysioModel";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 113;
+									- m_startRow = 119;
 									- m_startCol_Short = 18;
-									- m_endRow = 113;
+									- m_endRow = 119;
 									- m_endCol_Short = 32;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -35708,9 +35729,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "itsMedicine";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 115;
+									- m_startRow = 121;
 									- m_startCol_Short = 15;
-									- m_endRow = 115;
+									- m_endRow = 121;
 									- m_endCol_Short = 26;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -35722,9 +35743,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "itsRecord";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 117;
+									- m_startRow = 123;
 									- m_startCol_Short = 13;
-									- m_endRow = 117;
+									- m_endRow = 123;
 									- m_endCol_Short = 22;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -35737,9 +35758,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- m_type = textFragment;
 									- m_text = "////    Framework operations    ////
 ";
-									- m_startRow = 119;
+									- m_startRow = 125;
 									- m_startCol_Short = 5;
-									- m_endRow = 119;
+									- m_endRow = 125;
 									- m_endCol_Short = 41;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35750,9 +35771,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "itsRecordIterator";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 121;
+									- m_startRow = 127;
 									- m_startCol_Short = 21;
-									- m_endRow = 121;
+									- m_endRow = 127;
 									- m_endCol_Short = 38;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -35764,9 +35785,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "SetMedicine";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 126;
+									- m_startRow = 132;
 									- m_startCol_Short = 10;
-									- m_endRow = 126;
+									- m_endRow = 132;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -35774,12 +35795,12 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID aa92f5d2-974f-49de-b064-d7966322938d;
+									- _id = GUID 4647562b-4783-4235-b35b-654f0579b293;
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 129;
+									- m_startRow = 135;
 									- m_startCol_Short = 6;
-									- m_endRow = 129;
+									- m_endRow = 135;
 									- m_endCol_Short = 6;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IDestructor";
@@ -35787,12 +35808,12 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 3160ebee-1f70-4147-a697-dafcaf4fb0af;
+									- _id = GUID 537cc42e-ebda-4434-9d65-ed21983dac81;
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 132;
+									- m_startRow = 138;
 									- m_startCol_Short = 5;
-									- m_endRow = 132;
+									- m_endRow = 138;
 									- m_endCol_Short = 19;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -35804,9 +35825,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "getItsExtInputs:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsExtInputs() const:spec";
-									- m_startRow = 135;
+									- m_startRow = 141;
 									- m_startCol_Short = 16;
-									- m_endRow = 135;
+									- m_endRow = 141;
 									- m_endCol_Short = 39;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35817,9 +35838,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "setItsExtInputs:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsExtInputs(ExtInputs *):spec";
-									- m_startRow = 138;
+									- m_startRow = 144;
 									- m_startCol_Short = 10;
-									- m_endRow = 138;
+									- m_endRow = 144;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35830,9 +35851,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "getItsMedicine:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsMedicine() const:spec";
-									- m_startRow = 141;
+									- m_startRow = 147;
 									- m_startCol_Short = 15;
-									- m_endRow = 141;
+									- m_endRow = 147;
 									- m_endCol_Short = 37;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35843,9 +35864,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "setItsMedicine:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsMedicine(Medicine *):spec";
-									- m_startRow = 144;
+									- m_startRow = 150;
 									- m_startCol_Short = 10;
-									- m_endRow = 144;
+									- m_endRow = 150;
 									- m_endCol_Short = 46;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35856,9 +35877,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "getItsPhysioModel:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsPhysioModel() const:spec";
-									- m_startRow = 147;
+									- m_startRow = 153;
 									- m_startCol_Short = 18;
-									- m_endRow = 147;
+									- m_endRow = 153;
 									- m_endCol_Short = 43;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35869,9 +35890,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "setItsPhysioModel:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsPhysioModel(PhysioModel *):spec";
-									- m_startRow = 150;
+									- m_startRow = 156;
 									- m_startCol_Short = 10;
-									- m_endRow = 150;
+									- m_endRow = 156;
 									- m_endCol_Short = 55;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35882,9 +35903,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "getItsRecord:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsRecord() const:spec";
-									- m_startRow = 153;
+									- m_startRow = 159;
 									- m_startCol_Short = 13;
-									- m_endRow = 153;
+									- m_endRow = 159;
 									- m_endCol_Short = 33;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35895,9 +35916,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "setItsRecord:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsRecord(Record *):spec";
-									- m_startRow = 156;
+									- m_startRow = 162;
 									- m_startCol_Short = 10;
-									- m_endRow = 156;
+									- m_endRow = 162;
 									- m_endCol_Short = 40;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35908,9 +35929,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "getItsRecordIterator:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsRecordIterator() const:spec";
-									- m_startRow = 159;
+									- m_startRow = 165;
 									- m_startCol_Short = 21;
-									- m_endRow = 159;
+									- m_endRow = 165;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35921,9 +35942,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "setItsRecordIterator:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsRecordIterator(RecordIterator *):spec";
-									- m_startRow = 162;
+									- m_startRow = 168;
 									- m_startCol_Short = 10;
-									- m_endRow = 162;
+									- m_endRow = 168;
 									- m_endCol_Short = 64;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35934,9 +35955,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "cleanUpRelations:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():spec";
-									- m_startRow = 167;
+									- m_startRow = 173;
 									- m_startCol_Short = 10;
-									- m_endRow = 167;
+									- m_endRow = 173;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35947,9 +35968,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "__setItsExtInputs:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation __setItsExtInputs(ExtInputs *):spec";
-									- m_startRow = 172;
+									- m_startRow = 178;
 									- m_startCol_Short = 10;
-									- m_endRow = 172;
+									- m_endRow = 178;
 									- m_endCol_Short = 51;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35960,9 +35981,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "_setItsExtInputs:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation _setItsExtInputs(ExtInputs *):spec";
-									- m_startRow = 175;
+									- m_startRow = 181;
 									- m_startCol_Short = 10;
-									- m_endRow = 175;
+									- m_endRow = 181;
 									- m_endCol_Short = 50;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35973,9 +35994,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "_clearItsExtInputs:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation _clearItsExtInputs():spec";
-									- m_startRow = 178;
+									- m_startRow = 184;
 									- m_startCol_Short = 10;
-									- m_endRow = 178;
+									- m_endRow = 184;
 									- m_endCol_Short = 30;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35986,9 +36007,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "getItsSampleSet:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsSampleSet() const:spec";
-									- m_startRow = 181;
+									- m_startRow = 187;
 									- m_startCol_Short = 16;
-									- m_endRow = 181;
+									- m_endRow = 187;
 									- m_endCol_Short = 39;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -35999,9 +36020,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "setItsSampleSet:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsSampleSet(SampleSet *):spec";
-									- m_startRow = 184;
+									- m_startRow = 190;
 									- m_startCol_Short = 10;
-									- m_endRow = 184;
+									- m_endRow = 190;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -36012,9 +36033,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "itsSampleSet";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 188;
+									- m_startRow = 194;
 									- m_startCol_Short = 16;
-									- m_endRow = 188;
+									- m_endRow = 194;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -36026,9 +36047,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "GetECGValue";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 193;
+									- m_startRow = 199;
 									- m_startCol_Short = 17;
-									- m_endRow = 193;
+									- m_endRow = 199;
 									- m_endCol_Short = 37;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -36040,9 +36061,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "GetEDRValue";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 196;
+									- m_startRow = 202;
 									- m_startCol_Short = 17;
-									- m_endRow = 196;
+									- m_endRow = 202;
 									- m_endCol_Short = 37;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -36054,9 +36075,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									- _name = "GetPulse";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 199;
+									- m_startRow = 205;
 									- m_startCol_Short = 9;
-									- m_endRow = 199;
+									- m_endRow = 205;
 									- m_endCol_Short = 19;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -36081,10 +36102,10 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- _name = "ExtInputs";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 12;
+							- m_startRow = 16;
 							- m_startCol_Short = 1;
-							- m_endRow = 12;
-							- m_endCol_Short = 428;
+							- m_endRow = 16;
+							- m_endCol_Short = 475;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID d3ce4e36-6ec9-4a05-b251-90b4b225e61f;
@@ -36095,10 +36116,10 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- _name = "PatientModel:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency PatientModel:spec";
-							- m_startRow = 14;
+							- m_startRow = 18;
 							- m_startCol_Short = 1;
-							- m_endRow = 14;
-							- m_endCol_Short = 476;
+							- m_endRow = 18;
+							- m_endCol_Short = 523;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -36108,10 +36129,10 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- _name = "Medicine:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency Medicine:spec";
-							- m_startRow = 16;
+							- m_startRow = 20;
 							- m_startCol_Short = 1;
-							- m_endRow = 16;
-							- m_endCol_Short = 538;
+							- m_endRow = 20;
+							- m_endCol_Short = 585;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -36121,10 +36142,10 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- _name = "PhysioModel:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency PhysioModel:spec";
-							- m_startRow = 18;
+							- m_startRow = 22;
 							- m_startCol_Short = 1;
-							- m_endRow = 18;
-							- m_endCol_Short = 606;
+							- m_endRow = 22;
+							- m_endCol_Short = 653;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -36134,10 +36155,10 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- _name = "Record:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency Record:spec";
-							- m_startRow = 20;
+							- m_startRow = 24;
 							- m_startCol_Short = 1;
-							- m_endRow = 20;
-							- m_endCol_Short = 662;
+							- m_endRow = 24;
+							- m_endCol_Short = 709;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -36147,10 +36168,10 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- _name = "RecordIterator:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency RecordIterator:spec";
-							- m_startRow = 22;
+							- m_startRow = 26;
 							- m_startCol_Short = 1;
-							- m_endRow = 22;
-							- m_endCol_Short = 720;
+							- m_endRow = 26;
+							- m_endCol_Short = 767;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -36160,10 +36181,10 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- _name = "SampleSet:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency SampleSet:spec";
-							- m_startRow = 24;
+							- m_startRow = 28;
 							- m_startCol_Short = 1;
-							- m_endRow = 24;
-							- m_endCol_Short = 768;
+							- m_endRow = 28;
+							- m_endCol_Short = 815;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -36173,9 +36194,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 							- _name = "PatientModel";
 							- m_type = implFragment;
 							- m_text = "";
-							- m_startRow = 28;
+							- m_startRow = 52;
 							- m_startCol_Short = 20;
-							- m_endRow = 28;
+							- m_endRow = 52;
 							- m_endCol_Short = 20;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -36198,7 +36219,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 9d821d8e-b076-4fef-9d70-f560463684dd;
-													- _value = "28";
+													- _value = "52";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36235,9 +36256,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 28;
+									- m_startRow = 52;
 									- m_startCol_Short = 33;
-									- m_endRow = 42;
+									- m_endRow = 67;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -36258,7 +36279,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 95818971-8a0f-4c8d-98c9-10021422d543;
-													- _value = "44";
+													- _value = "69";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36295,9 +36316,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 44;
+									- m_startRow = 69;
 									- m_startCol_Short = 47;
-									- m_endRow = 49;
+									- m_endRow = 75;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -36318,7 +36339,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 770b7187-83e9-4445-b992-c246cc5d47a8;
-													- _value = "51";
+													- _value = "77";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36355,9 +36376,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 51;
+									- m_startRow = 77;
 									- m_startCol_Short = 59;
-									- m_endRow = 56;
+									- m_endRow = 83;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -36378,7 +36399,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 636a5199-00e9-4044-91fe-5f81067d345e;
-													- _value = "58";
+													- _value = "85";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36415,9 +36436,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 58;
+									- m_startRow = 85;
 									- m_startCol_Short = 38;
-									- m_endRow = 67;
+									- m_endRow = 95;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -36438,7 +36459,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 44080d9d-4035-4b25-bf7a-926a5db43eff;
-													- _value = "69";
+													- _value = "97";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36475,9 +36496,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 69;
+									- m_startRow = 97;
 									- m_startCol_Short = 53;
-									- m_endRow = 77;
+									- m_endRow = 106;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -36485,19 +36506,19 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID da401ef6-7554-4f7d-9a1f-1be05a0ffa44;
+									- _id = GUID cd92d6ab-8681-4619-a9f0-d955a0348eee;
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID c1d73a90-26f6-41dd-92f6-97c42141ff92;
+											- _id = GUID 12e1ffa9-826b-40e4-af4f-6fda36c49b0f;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 4bed56fd-90b7-4013-aa62-7f8d1d76e033;
-													- _value = "79";
+													- _id = GUID a7e84359-ed95-4af9-84a0-aa0dfb3cc9d8;
+													- _value = "108";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36511,13 +36532,13 @@ if (oldMedicine != NULL) delete oldMedicine;";
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID 4a038074-c446-42f6-9f1f-6616d621173b;
+											- _id = GUID 864e6a34-5969-47a7-a08b-0c0cb48c9499;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 56b638c8-8dfb-4217-bd93-9a23dda221ed;
+													- _id = GUID 8a6ef3e0-c2b5-4549-9813-aecf7e1c5d33;
 													- _value = "31";
 												}
 											}
@@ -36534,9 +36555,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 79;
+									- m_startRow = 108;
 									- m_startCol_Short = 16;
-									- m_endRow = 86;
+									- m_endRow = 116;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IDestructor";
@@ -36544,19 +36565,19 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 18637d01-9606-4cbf-a9e6-77a568d3d5b0;
+									- _id = GUID 4451c93e-afe8-46a6-a223-af2beaf3f96e;
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID 04076230-fa56-46af-bcdb-2837f088e5eb;
+											- _id = GUID 235e8b26-4373-441f-a841-9c771e1987ae;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 73a632ff-54a9-4bfa-8aad-df23538b3554;
-													- _value = "88";
+													- _id = GUID 995f52cc-72c3-4ecd-98a4-dfca8d4c4270;
+													- _value = "118";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36570,13 +36591,13 @@ if (oldMedicine != NULL) delete oldMedicine;";
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID 77355cea-47b8-43b6-b603-edfc823f6c70;
+											- _id = GUID 615761d0-c7b4-470c-af39-2f4bc1093a2a;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 6c379e07-318f-4643-9a39-c948862c4172;
+													- _id = GUID 864a1d69-1b0c-4f8d-9653-35da58f7f5ca;
 													- _value = "30";
 												}
 											}
@@ -36593,9 +36614,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 88;
+									- m_startRow = 118;
 									- m_startCol_Short = 15;
-									- m_endRow = 97;
+									- m_endRow = 128;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -36616,7 +36637,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 34cbede1-f028-45a1-adff-76bd211eefb6;
-													- _value = "99";
+													- _value = "130";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36653,9 +36674,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsExtInputs() const:impl";
-									- m_startRow = 99;
+									- m_startRow = 130;
 									- m_startCol_Short = 50;
-									- m_endRow = 101;
+									- m_endRow = 132;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -36675,7 +36696,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 43712e97-bc8b-4f5c-8e91-88134882fac0;
-													- _value = "103";
+													- _value = "134";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36712,9 +36733,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsExtInputs(ExtInputs *):impl";
-									- m_startRow = 103;
+									- m_startRow = 134;
 									- m_startCol_Short = 60;
-									- m_endRow = 109;
+									- m_endRow = 140;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -36734,7 +36755,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 8c2a1f0c-3604-4b38-89b4-68d9c019ff03;
-													- _value = "111";
+													- _value = "142";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36771,9 +36792,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsMedicine() const:impl";
-									- m_startRow = 111;
+									- m_startRow = 142;
 									- m_startCol_Short = 48;
-									- m_endRow = 113;
+									- m_endRow = 144;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -36793,7 +36814,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID b01a5c43-01e4-4495-95f1-d1455940df67;
-													- _value = "115";
+													- _value = "146";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36830,9 +36851,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsMedicine(Medicine *):impl";
-									- m_startRow = 115;
+									- m_startRow = 146;
 									- m_startCol_Short = 57;
-									- m_endRow = 117;
+									- m_endRow = 156;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -36852,7 +36873,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 88976517-a9c5-440c-886c-3ec7175669e7;
-													- _value = "119";
+													- _value = "158";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36889,9 +36910,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsPhysioModel() const:impl";
-									- m_startRow = 119;
+									- m_startRow = 158;
 									- m_startCol_Short = 54;
-									- m_endRow = 121;
+									- m_endRow = 160;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -36911,7 +36932,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID e0888c73-e31c-4484-b763-a533ffd59c34;
-													- _value = "123";
+													- _value = "162";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -36948,9 +36969,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsPhysioModel(PhysioModel *):impl";
-									- m_startRow = 123;
+									- m_startRow = 162;
 									- m_startCol_Short = 66;
-									- m_endRow = 125;
+									- m_endRow = 172;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -36970,7 +36991,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID d6ea4a1f-48db-491e-a75a-26d627bb10a3;
-													- _value = "127";
+													- _value = "174";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37007,9 +37028,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsRecord() const:impl";
-									- m_startRow = 127;
+									- m_startRow = 174;
 									- m_startCol_Short = 44;
-									- m_endRow = 129;
+									- m_endRow = 176;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -37029,7 +37050,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID db9f3fd3-2dae-4d8d-a5cf-c950742b9125;
-													- _value = "131";
+													- _value = "178";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37066,9 +37087,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsRecord(Record *):impl";
-									- m_startRow = 131;
+									- m_startRow = 178;
 									- m_startCol_Short = 51;
-									- m_endRow = 133;
+									- m_endRow = 188;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -37088,7 +37109,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 69bb0ede-e698-4e91-b692-8f06bd734659;
-													- _value = "135";
+													- _value = "190";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37125,9 +37146,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsRecordIterator() const:impl";
-									- m_startRow = 135;
+									- m_startRow = 190;
 									- m_startCol_Short = 60;
-									- m_endRow = 137;
+									- m_endRow = 192;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -37147,7 +37168,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 4bc91214-3915-4709-adcf-441256d08caa;
-													- _value = "139";
+													- _value = "194";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37184,9 +37205,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsRecordIterator(RecordIterator *):impl";
-									- m_startRow = 139;
+									- m_startRow = 194;
 									- m_startCol_Short = 75;
-									- m_endRow = 141;
+									- m_endRow = 204;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -37206,7 +37227,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 25a8cf3c-3e31-4b4f-991f-f61516ffffd0;
-													- _value = "143";
+													- _value = "206";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37243,9 +37264,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():impl";
-									- m_startRow = 143;
+									- m_startRow = 206;
 									- m_startCol_Short = 39;
-									- m_endRow = 173;
+									- m_endRow = 242;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -37265,7 +37286,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 3271c87d-4916-41f9-816f-2c4a8bd4b2ef;
-													- _value = "175";
+													- _value = "244";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37302,9 +37323,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation __setItsExtInputs(ExtInputs *):impl";
-									- m_startRow = 175;
+									- m_startRow = 244;
 									- m_startCol_Short = 62;
-									- m_endRow = 177;
+									- m_endRow = 254;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -37324,7 +37345,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID f45607b3-058c-451d-882a-d716eb8d2d98;
-													- _value = "179";
+													- _value = "256";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37361,9 +37382,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation _setItsExtInputs(ExtInputs *):impl";
-									- m_startRow = 179;
+									- m_startRow = 256;
 									- m_startCol_Short = 61;
-									- m_endRow = 185;
+									- m_endRow = 262;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -37383,7 +37404,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 6e38678f-7293-4be9-990b-5d3ac62e6837;
-													- _value = "187";
+													- _value = "264";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37420,9 +37441,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation _clearItsExtInputs():impl";
-									- m_startRow = 187;
+									- m_startRow = 264;
 									- m_startCol_Short = 41;
-									- m_endRow = 189;
+									- m_endRow = 267;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -37442,7 +37463,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 2a99bda3-c5e2-4367-892b-b9404be72f2e;
-													- _value = "191";
+													- _value = "269";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37479,9 +37500,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsSampleSet() const:impl";
-									- m_startRow = 191;
+									- m_startRow = 269;
 									- m_startCol_Short = 50;
-									- m_endRow = 193;
+									- m_endRow = 271;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -37501,7 +37522,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID eaa9f8be-f496-4649-88d1-50079a86bab7;
-													- _value = "195";
+													- _value = "273";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37538,9 +37559,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsSampleSet(SampleSet *):impl";
-									- m_startRow = 195;
+									- m_startRow = 273;
 									- m_startCol_Short = 60;
-									- m_endRow = 197;
+									- m_endRow = 283;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -37560,7 +37581,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID d9e951fc-5f4e-47bd-bc44-791e877c7460;
-													- _value = "199";
+													- _value = "285";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37597,9 +37618,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 199;
+									- m_startRow = 285;
 									- m_startCol_Short = 48;
-									- m_endRow = 203;
+									- m_endRow = 290;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -37620,7 +37641,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 6ca0b982-09aa-4906-8e30-00af644c8fa3;
-													- _value = "205";
+													- _value = "292";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37657,9 +37678,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 205;
+									- m_startRow = 292;
 									- m_startCol_Short = 48;
-									- m_endRow = 209;
+									- m_endRow = 297;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -37680,7 +37701,7 @@ if (oldMedicine != NULL) delete oldMedicine;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 13d29a8f-fe27-43ce-8e85-0aec55345beb;
-													- _value = "211";
+													- _value = "299";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -37717,9 +37738,9 @@ if (oldMedicine != NULL) delete oldMedicine;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 211;
+									- m_startRow = 299;
 									- m_startCol_Short = 30;
-									- m_endRow = 215;
+									- m_endRow = 304;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -39735,8 +39756,46 @@ itsECGtoPulse.Output(ECGSample, PulseSample);";
 				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
 			}
 			- _lastID = 2;
-			- weakCGTime = 5.7.2010::7:17:41;
+			- weakCGTime = 5.7.2010::11:29:50;
 			- strongCGTime = 4.30.2010::8:52:39;
+			- Operations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IConstructor 
+					- _id = GUID 73b580a8-9b27-4201-9aac-3196a04fbcdf;
+					- _myState = 8192;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID fe92a6df-2872-4f9b-9940-9494d68f00d4;
+							- _name = "tp";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _id = GUID 500a4525-ab6c-4c6b-92b7-0e85beaa942e;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = In;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "type = tp;
+amount = 0;
+";
+					}
+					- _initializer = "";
+				}
+			}
 			- Attrs = { IRPYRawContainer 
 				- size = 2;
 				- value = 
@@ -39745,7 +39804,7 @@ itsECGtoPulse.Output(ECGSample, PulseSample);";
 					- _name = "type";
 					- _typeOf = { IHandle 
 						- _m2Class = "IType";
-						- _id = GUID fcea061f-7bb8-4797-b261-46473b005f79;
+						- _id = GUID 500a4525-ab6c-4c6b-92b7-0e85beaa942e;
 					}
 					- _isOrdered = 0;
 					- _protection = iPublic;
@@ -43077,40 +43136,6 @@ return 0;";
 			- Operations = { IRPYRawContainer 
 				- size = 5;
 				- value = 
-				{ IConstructor 
-					- _id = GUID 26232f1a-4c87-4182-8925-8aa086a3ac6f;
-					- _myState = 8192;
-					- _virtual = 0;
-					- Args = { IRPYRawContainer 
-						- size = 1;
-						- value = 
-						{ IArgument 
-							- _id = GUID cca06989-098c-4449-9af0-e12a2c679ae0;
-							- _name = "rec";
-							- myTypeOf = { IType 
-								- _id = GUID 998cc855-2096-4787-b3d9-be2f6a1cf36e;
-								- _myState = 8192;
-								- _declaration = "Record*";
-								- _kind = Language;
-							}
-							- _isOrdered = 0;
-							- _argumentDirection = InOut;
-						}
-					}
-					- _returnType = { IHandle 
-						- _m2Class = "";
-					}
-					- _abstract = 0;
-					- _final = 0;
-					- _concurrency = Sequential;
-					- _protection = iPublic;
-					- _static = 0;
-					- _constant = 0;
-					- _itsBody = { IBody 
-						- _bodyData = "itsRecord = rec;";
-					}
-					- _initializer = "";
-				}
 				{ IPrimitiveOperation 
 					- _id = GUID d22653a7-2eb2-4b3b-a09d-09c4eb74af83;
 					- _myState = 8192;
@@ -43210,6 +43235,40 @@ return 0;";
 					- _itsBody = { IBody 
 						- _bodyData = "return itsRecord->getItsSampleSet();";
 					}
+				}
+				{ IConstructor 
+					- _id = GUID 26232f1a-4c87-4182-8925-8aa086a3ac6f;
+					- _myState = 8192;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID cca06989-098c-4449-9af0-e12a2c679ae0;
+							- _name = "rec";
+							- myTypeOf = { IType 
+								- _id = GUID 998cc855-2096-4787-b3d9-be2f6a1cf36e;
+								- _myState = 8192;
+								- _declaration = "Record*";
+								- _kind = Language;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = InOut;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "itsRecord = rec;";
+					}
+					- _initializer = "";
 				}
 			}
 			- ComponentFiles = { IRPYRawContainer 
@@ -48976,7 +49035,7 @@ else
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
 			- _lastID = 10;
-			- weakCGTime = 5.6.2010::21:29:57;
+			- weakCGTime = 5.7.2010::11:58:23;
 			- strongCGTime = 5.5.2010::21:32:1;
 			- Operations = { IRPYRawContainer 
 				- size = 6;
@@ -49010,30 +49069,6 @@ delete itsExtOutAnalogue[0];
 delete mailbox;
 #endif";
 					}
-				}
-				{ IConstructor 
-					- _id = GUID d9cf1e41-c8cf-4139-bd97-83cfc9715de5;
-					- _myState = 8192;
-					- _virtual = 0;
-					- Args = { IRPYRawContainer 
-						- size = 0;
-					}
-					- _returnType = { IHandle 
-						- _m2Class = "";
-					}
-					- _abstract = 0;
-					- _final = 0;
-					- _concurrency = Sequential;
-					- _protection = iPublic;
-					- _static = 0;
-					- _constant = 0;
-					- _itsBody = { IBody 
-						- _bodyData = "itsExtOutAnalogue[0] = new ExtOutAnalogue(1);
-itsExtOutAnalogue[1] = new ExtOutAnalogue(2);
-itsSerialProtocol = new SerialProtocol(); 
-";
-					}
-					- _initializer = "Thread(PRIORITY_NORMAL,\"RealTimeThread\")";
 				}
 				{ IPrimitiveOperation 
 					- _id = GUID 95e5e67d-4cbc-41a6-add7-2dd8701eea84;
@@ -49118,9 +49153,11 @@ if (itsFrameBuffer != NULL)
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "while(isAlive()){
-#ifdef _LINUX                  
+						- _bodyData = "#ifdef _LINUX                  
+while(isAlive()){
 	usleep(4000);
+#else
+if (isAlive()) {
 #endif
 	GenerateSignals(); 
 	counter++;
@@ -49170,6 +49207,30 @@ else
 }";
 					}
 				}
+				{ IConstructor 
+					- _id = GUID d9cf1e41-c8cf-4139-bd97-83cfc9715de5;
+					- _myState = 8192;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "itsExtOutAnalogue[0] = new ExtOutAnalogue(1);
+itsExtOutAnalogue[1] = new ExtOutAnalogue(2);
+itsSerialProtocol = new SerialProtocol(); 
+";
+					}
+					- _initializer = "Thread(PRIORITY_NORMAL,\"RealTimeThread\")";
+				}
 			}
 			- Attrs = { IRPYRawContainer 
 				- size = 3;
@@ -49206,8 +49267,8 @@ else
 						- size = 1;
 						- value = 
 						{ ILiteralSpecification 
-							- _id = GUID c4884416-e36f-4969-ad63-eb1eb05885be;
-							- _value = "100";
+							- _id = GUID 4b683dce-c9ba-4da5-8212-6b7b4e9e6e4d;
+							- _value = "10";
 						}
 					}
 					- _typeOf = { IHandle 
@@ -49282,10 +49343,10 @@ else
 							- _name = "ExtOutAnalogue:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency ExtOutAnalogue:spec";
-							- m_startRow = 12;
+							- m_startRow = 16;
 							- m_startCol_Short = 1;
-							- m_endRow = 12;
-							- m_endCol_Short = 439;
+							- m_endRow = 16;
+							- m_endCol_Short = 486;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -49295,10 +49356,10 @@ else
 							- _name = "FrameBuffer:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency FrameBuffer:spec";
-							- m_startRow = 14;
+							- m_startRow = 18;
 							- m_startCol_Short = 1;
-							- m_endRow = 14;
-							- m_endCol_Short = 496;
+							- m_endRow = 18;
+							- m_endCol_Short = 543;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -49308,10 +49369,10 @@ else
 							- _name = "PatientModel:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency PatientModel:spec";
-							- m_startRow = 16;
+							- m_startRow = 20;
 							- m_startCol_Short = 1;
-							- m_endRow = 16;
-							- m_endCol_Short = 550;
+							- m_endRow = 20;
+							- m_endCol_Short = 597;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -49321,10 +49382,10 @@ else
 							- _name = "SerialProtocol:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency SerialProtocol:spec";
-							- m_startRow = 18;
+							- m_startRow = 22;
 							- m_startCol_Short = 1;
-							- m_endRow = 18;
-							- m_endCol_Short = 608;
+							- m_endRow = 22;
+							- m_endCol_Short = 655;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -49334,10 +49395,10 @@ else
 							- _name = "RealTimeThread:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency RealTimeThread:spec";
-							- m_startRow = 20;
+							- m_startRow = 24;
 							- m_startCol_Short = 1;
-							- m_endRow = 20;
-							- m_endCol_Short = 658;
+							- m_endRow = 24;
+							- m_endCol_Short = 705;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -49347,10 +49408,10 @@ else
 							- _name = "FrameBufferPool:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency FrameBufferPool:spec";
-							- m_startRow = 22;
+							- m_startRow = 26;
 							- m_startCol_Short = 1;
-							- m_endRow = 22;
-							- m_endCol_Short = 718;
+							- m_endRow = 26;
+							- m_endCol_Short = 765;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -49360,9 +49421,9 @@ else
 							- _name = "RealTimeThread";
 							- m_type = implFragment;
 							- m_text = "";
-							- m_startRow = 26;
+							- m_startRow = 42;
 							- m_startCol_Short = 18;
-							- m_endRow = 26;
+							- m_endRow = 42;
 							- m_endCol_Short = 18;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -49372,20 +49433,19 @@ else
 								- size = 23;
 								- value = 
 								{ IFileFragment 
-									- _id = GUID a3b01f56-6a89-4169-b8b7-c955076ae624;
-									- _name = "~RealTimeThread";
+									- _id = GUID 430d672b-01d2-482f-983a-0a381b2f1ddb;
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID 50cb2e84-0972-46f0-8d59-c1907f5b355e;
+											- _id = GUID 1391ccd2-0d3a-4cd3-bd34-e68c0302653f;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 480c3311-fb1b-4c70-baa0-53df2654b9cb;
-													- _value = "26";
+													- _id = GUID ab007238-947a-4739-83f7-e91061f1c67b;
+													- _value = "42";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -49399,13 +49459,13 @@ else
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID 87c0bc09-b9c1-42a6-b155-9997e172a781;
+											- _id = GUID 8500d0eb-cdda-40cf-9611-5e5f97696343;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 7a4a45e9-980a-479d-a137-eb69d7929d3e;
+													- _id = GUID 6bd2931d-7858-4699-8a70-f67b0f5bb12c;
 													- _value = "35";
 												}
 											}
@@ -49422,9 +49482,9 @@ else
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 26;
+									- m_startRow = 42;
 									- m_startCol_Short = 18;
-									- m_endRow = 36;
+									- m_endRow = 53;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IDestructor";
@@ -49445,7 +49505,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 35c0524d-7a44-4a47-92a1-bc319522d56f;
-													- _value = "38";
+													- _value = "55";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -49482,9 +49542,9 @@ else
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 38;
+									- m_startRow = 55;
 									- m_startCol_Short = 40;
-									- m_endRow = 50;
+									- m_endRow = 68;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -49505,7 +49565,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID ba4a1f18-e71e-4ec7-950c-47bd2394bc5c;
-													- _value = "52";
+													- _value = "70";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -49542,9 +49602,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsExtOutAnalogue() const:impl";
-									- m_startRow = 52;
+									- m_startRow = 70;
 									- m_startCol_Short = 50;
-									- m_endRow = 55;
+									- m_endRow = 73;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -49564,7 +49624,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 5db92e04-2294-40ba-b57f-b4ffb68deb10;
-													- _value = "57";
+													- _value = "75";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -49601,9 +49661,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation addItsExtOutAnalogue(ExtOutAnalogue *):impl";
-									- m_startRow = 57;
+									- m_startRow = 75;
 									- m_startCol_Short = 77;
-									- m_endRow = 64;
+									- m_endRow = 90;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -49623,7 +49683,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID a4c91130-10aa-4380-934c-b2b0701d0c6d;
-													- _value = "66";
+													- _value = "92";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -49660,9 +49720,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation removeItsExtOutAnalogue(ExtOutAnalogue *):impl";
-									- m_startRow = 66;
+									- m_startRow = 92;
 									- m_startCol_Short = 80;
-									- m_endRow = 72;
+									- m_endRow = 99;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -49682,7 +49742,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 653a0949-e0cf-41ed-bc5c-3d0fab146ecf;
-													- _value = "74";
+													- _value = "101";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -49719,9 +49779,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation clearItsExtOutAnalogue():impl";
-									- m_startRow = 74;
+									- m_startRow = 101;
 									- m_startCol_Short = 47;
-									- m_endRow = 75;
+									- m_endRow = 104;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -49741,7 +49801,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID d830ce7c-df89-48de-9860-3ae70f0ad342;
-													- _value = "77";
+													- _value = "106";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -49778,9 +49838,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsFrameBuffer() const:impl";
-									- m_startRow = 77;
+									- m_startRow = 106;
 									- m_startCol_Short = 56;
-									- m_endRow = 79;
+									- m_endRow = 108;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -49800,7 +49860,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID f33a9614-824f-4bdd-b797-534eb8025514;
-													- _value = "81";
+													- _value = "110";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -49837,9 +49897,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsFrameBuffer(FrameBuffer *):impl";
-									- m_startRow = 81;
+									- m_startRow = 110;
 									- m_startCol_Short = 71;
-									- m_endRow = 83;
+									- m_endRow = 112;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -49859,7 +49919,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 8ad8d3a3-202b-4c0a-b550-12a84378a8a6;
-													- _value = "85";
+													- _value = "114";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -49896,9 +49956,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsPatientModel() const:impl";
-									- m_startRow = 85;
+									- m_startRow = 114;
 									- m_startCol_Short = 58;
-									- m_endRow = 87;
+									- m_endRow = 116;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -49918,7 +49978,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID a1023ea0-3d72-4155-a8f0-622282a5f913;
-													- _value = "89";
+													- _value = "118";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -49955,9 +50015,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsPatientModel(PatientModel *):impl";
-									- m_startRow = 89;
+									- m_startRow = 118;
 									- m_startCol_Short = 71;
-									- m_endRow = 91;
+									- m_endRow = 128;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -49977,7 +50037,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 03efe6b9-6d28-4e3a-99d5-0747c94014fd;
-													- _value = "93";
+													- _value = "130";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50014,9 +50074,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsSerialProtocol() const:impl";
-									- m_startRow = 93;
+									- m_startRow = 130;
 									- m_startCol_Short = 62;
-									- m_endRow = 95;
+									- m_endRow = 132;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -50036,7 +50096,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 74fd7faa-571c-420b-b40a-d51bc2573338;
-													- _value = "97";
+													- _value = "134";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50073,9 +50133,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsSerialProtocol(SerialProtocol *):impl";
-									- m_startRow = 97;
+									- m_startRow = 134;
 									- m_startCol_Short = 77;
-									- m_endRow = 99;
+									- m_endRow = 144;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -50095,7 +50155,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 92b3f3ed-c866-4c82-b051-f444acc56049;
-													- _value = "101";
+													- _value = "146";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50132,29 +50192,28 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():impl";
-									- m_startRow = 101;
+									- m_startRow = 146;
 									- m_startCol_Short = 41;
-									- m_endRow = 115;
+									- m_endRow = 163;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 16ab09e8-1cd3-4368-9f78-9e884f9c9cf2;
-									- _name = "RealTimeThread";
+									- _id = GUID 48506b00-13dc-4411-a0fa-15d8cce31f17;
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID f15d5026-a894-4ff8-bd26-8f00d3332a35;
+											- _id = GUID d5d0fe73-0b0f-473d-bf39-38f981921cb0;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID d41dda9d-5698-4ce9-b8e7-84c90991d9c8;
-													- _value = "117";
+													- _id = GUID 5261a4fe-b330-4f05-9ae1-1461eb1c697e;
+													- _value = "165";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50168,13 +50227,13 @@ else
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID 5650a73c-449c-4c01-b2af-910ac3c74ed6;
+											- _id = GUID 3c3ed183-1015-4835-a647-8accce2290bc;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 583c3dd3-a106-47e3-946e-6e85940c3063;
+													- _id = GUID 09ae463e-3104-4043-b662-634c82f5bd35;
 													- _value = "129";
 												}
 											}
@@ -50191,9 +50250,9 @@ else
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 117;
+									- m_startRow = 165;
 									- m_startCol_Short = 17;
-									- m_endRow = 132;
+									- m_endRow = 181;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -50214,7 +50273,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 5c41115f-662a-4b1b-aaee-587c5e24b580;
-													- _value = "134";
+													- _value = "183";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50251,9 +50310,9 @@ else
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 134;
+									- m_startRow = 183;
 									- m_startCol_Short = 38;
-									- m_endRow = 138;
+									- m_endRow = 188;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -50274,7 +50333,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 252ac16a-89e2-4b04-8657-2733c854a71c;
-													- _value = "140";
+													- _value = "190";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50311,9 +50370,9 @@ else
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 140;
+									- m_startRow = 190;
 									- m_startCol_Short = 28;
-									- m_endRow = 156;
+									- m_endRow = 209;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -50334,7 +50393,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID e56fa8ba-4176-44df-b399-0a0476da8f4a;
-													- _value = "158";
+													- _value = "211";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50371,9 +50430,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getCounter() const:impl";
-									- m_startRow = 158;
+									- m_startRow = 211;
 									- m_startCol_Short = 40;
-									- m_endRow = 160;
+									- m_endRow = 213;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -50393,7 +50452,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID f1e28a6e-dcb1-442d-8ddd-52ff88b98d69;
-													- _value = "162";
+													- _value = "215";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50430,9 +50489,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setCounter(int):impl";
-									- m_startRow = 162;
+									- m_startRow = 215;
 									- m_startCol_Short = 48;
-									- m_endRow = 164;
+									- m_endRow = 217;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -50452,7 +50511,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 8295b6cf-ed5a-430f-a190-1f67c311d6e3;
-													- _value = "166";
+													- _value = "219";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50489,9 +50548,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getTimeToPulse() const:impl";
-									- m_startRow = 166;
+									- m_startRow = 219;
 									- m_startCol_Short = 44;
-									- m_endRow = 168;
+									- m_endRow = 221;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -50511,7 +50570,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID ae56cee6-ef44-4cb1-8fb1-2e881fd548bb;
-													- _value = "170";
+													- _value = "223";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50548,9 +50607,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setTimeToPulse(int):impl";
-									- m_startRow = 170;
+									- m_startRow = 223;
 									- m_startCol_Short = 56;
-									- m_endRow = 172;
+									- m_endRow = 225;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -50570,7 +50629,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 4994e578-f3fe-4cf8-8f46-400b9570243e;
-													- _value = "174";
+													- _value = "227";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50607,9 +50666,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsFrameBufferPool() const:impl";
-									- m_startRow = 174;
+									- m_startRow = 227;
 									- m_startCol_Short = 64;
-									- m_endRow = 176;
+									- m_endRow = 229;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -50629,7 +50688,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 7a50f0c1-92a0-4fc5-ba52-9b0db084dbc9;
-													- _value = "178";
+													- _value = "231";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50666,9 +50725,9 @@ else
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsFrameBufferPool(FrameBufferPool *):impl";
-									- m_startRow = 178;
+									- m_startRow = 231;
 									- m_startCol_Short = 80;
-									- m_endRow = 180;
+									- m_endRow = 241;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -50688,7 +50747,7 @@ else
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID c776669c-84d9-40f5-823a-5ba8d1d457cb;
-													- _value = "182";
+													- _value = "243";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -50725,9 +50784,9 @@ else
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 182;
+									- m_startRow = 243;
 									- m_startCol_Short = 41;
-									- m_endRow = 197;
+									- m_endRow = 259;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -50745,7 +50804,7 @@ else
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 14;
+						- size = 15;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID 9ec098cf-82b5-4ee2-b4ab-85435147760f;
@@ -50852,13 +50911,26 @@ else
 							}
 						}
 						{ IFileFragment 
+							- _id = GUID c364db39-5745-4c15-90f9-8b607bceca8b;
+							- _name = "aom:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency aom:spec";
+							- m_startRow = 38;
+							- m_startCol_Short = 1;
+							- m_endRow = 38;
+							- m_endCol_Short = 978;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
 							- _id = GUID 7361d0bc-7713-4c6a-ba12-7e523a123b16;
 							- _name = "FrameBufferPool:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency FrameBufferPool:spec";
-							- m_startRow = 38;
+							- m_startRow = 40;
 							- m_startCol_Short = 1;
-							- m_endRow = 38;
+							- m_endRow = 40;
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -50869,9 +50941,9 @@ else
 							- _name = "ExtOutAnalogue:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency ExtOutAnalogue:spec";
-							- m_startRow = 41;
+							- m_startRow = 43;
 							- m_startCol_Short = 1;
-							- m_endRow = 41;
+							- m_endRow = 43;
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -50882,9 +50954,9 @@ else
 							- _name = "FrameBuffer:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency FrameBuffer:spec";
-							- m_startRow = 44;
+							- m_startRow = 46;
 							- m_startCol_Short = 1;
-							- m_endRow = 44;
+							- m_endRow = 46;
 							- m_endCol_Short = 18;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -50895,9 +50967,9 @@ else
 							- _name = "PatientModel:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency PatientModel:spec";
-							- m_startRow = 47;
+							- m_startRow = 49;
 							- m_startCol_Short = 1;
-							- m_endRow = 47;
+							- m_endRow = 49;
 							- m_endCol_Short = 19;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -50908,9 +50980,9 @@ else
 							- _name = "SerialProtocol:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency SerialProtocol:spec";
-							- m_startRow = 50;
+							- m_startRow = 52;
 							- m_startCol_Short = 1;
-							- m_endRow = 50;
+							- m_endRow = 52;
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -50930,7 +51002,7 @@ else
 										- value = 
 										{ ILiteralSpecification 
 											- _id = GUID f2575d7a-5011-4056-8f10-25aaf019ac5d;
-											- _value = "55";
+											- _value = "57";
 										}
 									}
 									- _typeOf = { IHandle 
@@ -50967,9 +51039,9 @@ else
 							}
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 55;
+							- m_startRow = 57;
 							- m_startCol_Short = 1;
-							- m_endRow = 170;
+							- m_endRow = 176;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -50984,22 +51056,21 @@ else
 									- m_type = textFragment;
 									- m_text = "////    Constructors and destructors    ////
 ";
-									- m_startRow = 56;
+									- m_startRow = 64;
 									- m_startCol_Short = 5;
-									- m_endRow = 56;
+									- m_endRow = 64;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 23d616c6-822e-4905-a53e-a2f318d916f6;
-									- _name = "~RealTimeThread";
+									- _id = GUID dbd64fdc-0d26-47b5-8ac2-d8db63797767;
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 61;
+									- m_startRow = 67;
 									- m_startCol_Short = 6;
-									- m_endRow = 61;
+									- m_endRow = 67;
 									- m_endCol_Short = 6;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IDestructor";
@@ -51012,9 +51083,9 @@ else
 									- m_type = textFragment;
 									- m_text = "////    Operations    ////
 ";
-									- m_startRow = 63;
+									- m_startRow = 69;
 									- m_startCol_Short = 5;
-									- m_endRow = 63;
+									- m_endRow = 69;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51025,9 +51096,9 @@ else
 									- _name = "GenerateSignals";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 66;
+									- m_startRow = 72;
 									- m_startCol_Short = 10;
-									- m_endRow = 66;
+									- m_endRow = 72;
 									- m_endCol_Short = 27;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -51040,9 +51111,9 @@ else
 									- m_type = textFragment;
 									- m_text = "////    Additional operations    ////
 ";
-									- m_startRow = 68;
+									- m_startRow = 74;
 									- m_startCol_Short = 5;
-									- m_endRow = 68;
+									- m_endRow = 74;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51053,9 +51124,9 @@ else
 									- _name = "getItsExtOutAnalogue:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsExtOutAnalogue() const:spec";
-									- m_startRow = 71;
+									- m_startRow = 77;
 									- m_startCol_Short = 9;
-									- m_endRow = 71;
+									- m_endRow = 77;
 									- m_endCol_Short = 37;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51066,9 +51137,9 @@ else
 									- _name = "addItsExtOutAnalogue:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation addItsExtOutAnalogue(ExtOutAnalogue *):spec";
-									- m_startRow = 74;
+									- m_startRow = 80;
 									- m_startCol_Short = 10;
-									- m_endRow = 74;
+									- m_endRow = 80;
 									- m_endCol_Short = 64;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51079,9 +51150,9 @@ else
 									- _name = "removeItsExtOutAnalogue:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation removeItsExtOutAnalogue(ExtOutAnalogue *):spec";
-									- m_startRow = 77;
+									- m_startRow = 83;
 									- m_startCol_Short = 10;
-									- m_endRow = 77;
+									- m_endRow = 83;
 									- m_endCol_Short = 67;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51092,9 +51163,9 @@ else
 									- _name = "clearItsExtOutAnalogue:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation clearItsExtOutAnalogue():spec";
-									- m_startRow = 80;
+									- m_startRow = 86;
 									- m_startCol_Short = 10;
-									- m_endRow = 80;
+									- m_endRow = 86;
 									- m_endCol_Short = 34;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51105,9 +51176,9 @@ else
 									- _name = "getItsFrameBuffer:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsFrameBuffer() const:spec";
-									- m_startRow = 85;
+									- m_startRow = 91;
 									- m_startCol_Short = 18;
-									- m_endRow = 85;
+									- m_endRow = 91;
 									- m_endCol_Short = 43;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51118,9 +51189,9 @@ else
 									- _name = "setItsFrameBuffer:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsFrameBuffer(FrameBuffer *):spec";
-									- m_startRow = 88;
+									- m_startRow = 94;
 									- m_startCol_Short = 10;
-									- m_endRow = 88;
+									- m_endRow = 94;
 									- m_endCol_Short = 58;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51131,9 +51202,9 @@ else
 									- _name = "getItsPatientModel:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsPatientModel() const:spec";
-									- m_startRow = 93;
+									- m_startRow = 99;
 									- m_startCol_Short = 19;
-									- m_endRow = 93;
+									- m_endRow = 99;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51144,9 +51215,9 @@ else
 									- _name = "setItsPatientModel:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsPatientModel(PatientModel *):spec";
-									- m_startRow = 96;
+									- m_startRow = 102;
 									- m_startCol_Short = 10;
-									- m_endRow = 96;
+									- m_endRow = 102;
 									- m_endCol_Short = 58;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51157,9 +51228,9 @@ else
 									- _name = "getItsSerialProtocol:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsSerialProtocol() const:spec";
-									- m_startRow = 99;
+									- m_startRow = 105;
 									- m_startCol_Short = 21;
-									- m_endRow = 99;
+									- m_endRow = 105;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51170,9 +51241,9 @@ else
 									- _name = "setItsSerialProtocol:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsSerialProtocol(SerialProtocol *):spec";
-									- m_startRow = 102;
+									- m_startRow = 108;
 									- m_startCol_Short = 10;
-									- m_endRow = 102;
+									- m_endRow = 108;
 									- m_endCol_Short = 64;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51183,9 +51254,9 @@ else
 									- _name = "cleanUpRelations:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():spec";
-									- m_startRow = 107;
+									- m_startRow = 113;
 									- m_startCol_Short = 10;
-									- m_endRow = 107;
+									- m_endRow = 113;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51197,9 +51268,9 @@ else
 									- m_type = textFragment;
 									- m_text = "////    Relations and components    ////
 ";
-									- m_startRow = 109;
+									- m_startRow = 115;
 									- m_startCol_Short = 5;
-									- m_endRow = 109;
+									- m_endRow = 115;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51210,9 +51281,9 @@ else
 									- _name = "itsExtOutAnalogue";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 111;
+									- m_startRow = 117;
 									- m_startCol_Short = 21;
-									- m_endRow = 111;
+									- m_endRow = 117;
 									- m_endCol_Short = 41;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -51224,9 +51295,9 @@ else
 									- _name = "itsPatientModel";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 113;
+									- m_startRow = 119;
 									- m_startCol_Short = 19;
-									- m_endRow = 113;
+									- m_endRow = 119;
 									- m_endCol_Short = 34;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -51238,9 +51309,9 @@ else
 									- _name = "itsSerialProtocol";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 115;
+									- m_startRow = 121;
 									- m_startCol_Short = 21;
-									- m_endRow = 115;
+									- m_endRow = 121;
 									- m_endCol_Short = 38;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -51248,13 +51319,12 @@ else
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 1002a2f2-826c-43e5-90b0-adb877e5a49d;
-									- _name = "RealTimeThread";
+									- _id = GUID 8e9e15a7-71f4-4582-8bf9-95ca9d4f0f27;
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 120;
+									- m_startRow = 126;
 									- m_startCol_Short = 5;
-									- m_endRow = 120;
+									- m_endRow = 126;
 									- m_endCol_Short = 21;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -51266,9 +51336,9 @@ else
 									- _name = "GeneratePulse";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 123;
+									- m_startRow = 129;
 									- m_startCol_Short = 10;
-									- m_endRow = 123;
+									- m_endRow = 129;
 									- m_endCol_Short = 25;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -51280,9 +51350,9 @@ else
 									- _name = "run";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 126;
+									- m_startRow = 132;
 									- m_startCol_Short = 18;
-									- m_endRow = 126;
+									- m_endRow = 132;
 									- m_endCol_Short = 23;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -51294,9 +51364,9 @@ else
 									- _name = "getCounter:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getCounter() const:spec";
-									- m_startRow = 131;
+									- m_startRow = 137;
 									- m_startCol_Short = 9;
-									- m_endRow = 131;
+									- m_endRow = 137;
 									- m_endCol_Short = 27;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51307,9 +51377,9 @@ else
 									- _name = "setCounter:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setCounter(int):spec";
-									- m_startRow = 134;
+									- m_startRow = 140;
 									- m_startCol_Short = 10;
-									- m_endRow = 134;
+									- m_endRow = 140;
 									- m_endCol_Short = 35;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51320,9 +51390,9 @@ else
 									- _name = "counter";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 138;
+									- m_startRow = 144;
 									- m_startCol_Short = 9;
-									- m_endRow = 138;
+									- m_endRow = 144;
 									- m_endCol_Short = 16;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
@@ -51334,9 +51404,9 @@ else
 									- _name = "getTimeToPulse:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getTimeToPulse() const:spec";
-									- m_startRow = 143;
+									- m_startRow = 149;
 									- m_startCol_Short = 9;
-									- m_endRow = 143;
+									- m_endRow = 149;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51347,9 +51417,9 @@ else
 									- _name = "setTimeToPulse:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setTimeToPulse(int):spec";
-									- m_startRow = 146;
+									- m_startRow = 152;
 									- m_startCol_Short = 10;
-									- m_endRow = 146;
+									- m_endRow = 152;
 									- m_endCol_Short = 43;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51360,9 +51430,9 @@ else
 									- _name = "timeToPulse";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 150;
+									- m_startRow = 156;
 									- m_startCol_Short = 9;
-									- m_endRow = 150;
+									- m_endRow = 156;
 									- m_endCol_Short = 20;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
@@ -51374,9 +51444,9 @@ else
 									- _name = "getItsFrameBufferPool:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsFrameBufferPool() const:spec";
-									- m_startRow = 155;
+									- m_startRow = 161;
 									- m_startCol_Short = 22;
-									- m_endRow = 155;
+									- m_endRow = 161;
 									- m_endCol_Short = 51;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51387,9 +51457,9 @@ else
 									- _name = "setItsFrameBufferPool:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsFrameBufferPool(FrameBufferPool *):spec";
-									- m_startRow = 158;
+									- m_startRow = 164;
 									- m_startCol_Short = 10;
-									- m_endRow = 158;
+									- m_endRow = 164;
 									- m_endCol_Short = 67;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -51400,9 +51470,9 @@ else
 									- _name = "itsFrameBuffer";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 162;
+									- m_startRow = 168;
 									- m_startCol_Short = 18;
-									- m_endRow = 162;
+									- m_endRow = 168;
 									- m_endCol_Short = 32;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
@@ -51414,9 +51484,9 @@ else
 									- _name = "itsFrameBufferPool";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 164;
+									- m_startRow = 170;
 									- m_startCol_Short = 22;
-									- m_endRow = 164;
+									- m_endRow = 170;
 									- m_endCol_Short = 40;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -51428,9 +51498,9 @@ else
 									- _name = "CheckFrameBuffer";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 169;
+									- m_startRow = 175;
 									- m_startCol_Short = 10;
-									- m_endRow = 169;
+									- m_endRow = 175;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -51549,7 +51619,7 @@ else
 				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
 			}
 			- _lastID = 3;
-			- weakCGTime = 5.6.2010::21:58:12;
+			- weakCGTime = 5.7.2010::11:49:31;
 			- strongCGTime = 5.5.2010::21:32:32;
 			- Operations = { IRPYRawContainer 
 				- size = 2;
@@ -51598,7 +51668,11 @@ else
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "while(isAlive()){
+						- _bodyData = "#ifdef _LINUX                  
+while(isAlive()){
+#else 
+if (isAlive()) {
+#endif
 	itsFrameBuffer = itsFrameBufferPool->GetMail();
 	if (itsFrameBuffer != NULL) Notify(itsFrameBuffer); 
 	itsFrameBufferPool->ReleaseFrameBuffer(itsFrameBuffer);
@@ -52676,42 +52750,6 @@ else
 						- _bodyData = "delete buffer;";
 					}
 				}
-				{ IConstructor 
-					- _id = GUID bc413db1-e7e4-443b-963e-a5c2332e86c4;
-					- _myState = 8192;
-					- _virtual = 0;
-					- Args = { IRPYRawContainer 
-						- size = 1;
-						- value = 
-						{ IArgument 
-							- _id = GUID 8d9b6bd7-72fe-4b9e-b213-a5d789335fcf;
-							- _name = "size";
-							- _typeOf = { IHandle 
-								- _m2Class = "IType";
-								- _filename = "PredefinedTypesC++.sbs";
-								- _subsystem = "PredefinedTypesCpp";
-								- _class = "";
-								- _name = "int";
-								- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
-							}
-							- _isOrdered = 0;
-							- _argumentDirection = In;
-						}
-					}
-					- _returnType = { IHandle 
-						- _m2Class = "";
-					}
-					- _abstract = 0;
-					- _final = 0;
-					- _concurrency = Sequential;
-					- _protection = iPublic;
-					- _static = 0;
-					- _constant = 0;
-					- _itsBody = { IBody 
-						- _bodyData = "CreateBuffer(size);";
-					}
-					- _initializer = "";
-				}
 				{ IPrimitiveOperation 
 					- _id = GUID a112291c-57e3-45cf-a61f-03cfd6ebf50e;
 					- _myState = 8192;
@@ -52824,6 +52862,42 @@ bufSize = size;";
 					- _itsBody = { IBody 
 						- _bodyData = "return pos >= bufSize;";
 					}
+				}
+				{ IConstructor 
+					- _id = GUID bc413db1-e7e4-443b-963e-a5c2332e86c4;
+					- _myState = 8192;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 8d9b6bd7-72fe-4b9e-b213-a5d789335fcf;
+							- _name = "size";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypesC++.sbs";
+								- _subsystem = "PredefinedTypesCpp";
+								- _class = "";
+								- _name = "int";
+								- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = In;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "CreateBuffer(size);";
+					}
+					- _initializer = "";
 				}
 			}
 			- Attrs = { IRPYRawContainer 
@@ -55675,29 +55749,6 @@ delete mailbox;
 #endif    ";
 					}
 				}
-				{ IConstructor 
-					- _id = GUID 65e9cacb-bc36-466b-b2a8-4ea9133b4c98;
-					- _myState = 8192;
-					- _virtual = 0;
-					- Args = { IRPYRawContainer 
-						- size = 0;
-					}
-					- _returnType = { IHandle 
-						- _m2Class = "";
-					}
-					- _abstract = 0;
-					- _final = 0;
-					- _concurrency = Sequential;
-					- _protection = iPublic;
-					- _static = 0;
-					- _constant = 0;
-					- _itsBody = { IBody 
-						- _bodyData = "#ifdef _LINUX
-   mailBox = new Mailbox<FrameBuffer*>(10,true);
-#endif";
-					}
-					- _initializer = "";
-				}
 				{ IPrimitiveOperation 
 					- _id = GUID 181d0d8a-2046-4656-afbf-6d1dd4b2c23e;
 					- _myState = 8192;
@@ -55889,6 +55940,29 @@ lock.signal();";
 						- _bodyData = "if (mailbox != NULL)
 	return mailbox->get();";
 					}
+				}
+				{ IConstructor 
+					- _id = GUID 65e9cacb-bc36-466b-b2a8-4ea9133b4c98;
+					- _myState = 8192;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "#ifdef _LINUX
+   mailBox = new Mailbox<FrameBuffer*>(10,true);
+#endif";
+					}
+					- _initializer = "";
 				}
 			}
 			- Attrs = { IRPYRawContainer 
@@ -57709,7 +57783,7 @@ lock.signal();";
 				- _m2Class = "IDiagram";
 				- _id = GUID 5435a97b-93b9-4061-a3a4-a062bb5d0d92;
 			}
-			- _lastID = 18;
+			- _lastID = 20;
 			- Declaratives = { IRPYRawContainer 
 				- size = 3;
 				- value = 
@@ -57787,10 +57861,10 @@ lock.signal();";
 					- _kind = Enumeration;
 				}
 			}
-			- weakCGTime = 5.7.2010::10:31:16;
+			- weakCGTime = 5.7.2010::11:42:47;
 			- strongCGTime = 5.7.2010::6:37:22;
 			- Operations = { IRPYRawContainer 
-				- size = 10;
+				- size = 12;
 				- value = 
 				{ IDestructor 
 					- _id = GUID 1b4e1342-b164-45a7-b151-93927f8bf22e;
@@ -57815,7 +57889,7 @@ lock.signal();";
 					- _constant = 0;
 					- _itsBody = { IBody 
 						- _bodyData = "delete itsDistributerThread;
-delete itsPatientThread;
+delete itsRealTimeThread;
 delete itsFrameBufferPool;
 delete itsPatientModel;";
 					}
@@ -57853,10 +57927,10 @@ delete itsPatientModel;";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "itsFrameBufferPool = new FameBufferPool; 
-itsFrameBufferPool->CreateFrameBuffers(size);
-itsPatientThread = new PatientThread(); 
-itsPatientThread->setItsFrameBufferPool(itsFrameBufferPool);
+						- _bodyData = "itsFrameBufferPool = new FrameBufferPool(); 
+itsFrameBufferPool->CreateFrameBuffers(frameBufferSize);
+itsRealTimeThread = new RealTimeThread(); 
+itsRealTimeThread->setItsFrameBufferPool(itsFrameBufferPool);
 itsDistributerThread = new DistributerThread(); 
 itsDistributerThread->setItsFrameBufferPool(itsFrameBufferPool);";
 					}
@@ -57900,7 +57974,7 @@ itsDistributerThread->setItsFrameBufferPool(itsFrameBufferPool);";
 						- _bodyData = "if (state != Running)
 {
   if (itsPatientModel != NULL) delete itsPatientModel;
-  itsPatientModel = new PatientModel();  
+  setItsPatientModel(new PatientModel());  
     
   switch (modelType)  
   {
@@ -57912,7 +57986,7 @@ itsDistributerThread->setItsFrameBufferPool(itsFrameBufferPool);";
     	break;
    };
    
-   state = initialized;
+   state = Initialized;
 }
    ";
 					}
@@ -57927,15 +58001,11 @@ itsDistributerThread->setItsFrameBufferPool(itsFrameBufferPool);";
 						- size = 1;
 						- value = 
 						{ IArgument 
-							- _id = GUID 4b4903d9-1552-40ef-bb99-ab7f1aa64ca2;
+							- _id = GUID 447e4320-656c-4165-9079-7fcf7fdbc997;
 							- _name = "type";
 							- _typeOf = { IHandle 
 								- _m2Class = "IType";
-								- _filename = "PredefinedTypesC++.sbs";
-								- _subsystem = "PredefinedTypesCpp";
-								- _class = "";
-								- _name = "int";
-								- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+								- _id = GUID 500a4525-ab6c-4c6b-92b7-0e85beaa942e;
 							}
 							- _isOrdered = 0;
 							- _argumentDirection = In;
@@ -58023,7 +58093,7 @@ itsDistributerThread->setItsFrameBufferPool(itsFrameBufferPool);";
 				{ IPrimitiveOperation 
 					- _id = GUID a7024e8e-ce15-4c67-bffd-a95e54c671dd;
 					- _myState = 8192;
-					- _name = "AssingRecord";
+					- _name = "AssignRecord";
 					- _lastID = 1;
 					- _virtual = 0;
 					- Args = { IRPYRawContainer 
@@ -58059,7 +58129,7 @@ itsDistributerThread->setItsFrameBufferPool(itsFrameBufferPool);";
 					- _itsBody = { IBody 
 						- _bodyData = "if (itsPatientModel != NULL) 
 {
-	state = stopped;
+	state = Stopped;
 	return itsPatientModel->SetRecord(aRecord);
 }
 return false;";
@@ -58091,8 +58161,9 @@ return false;";
 						- _bodyData = "if ((state == Stopped) && (itsPatientModel != NULL))
 {
 	itsPatientModel->StartSimulation();
-	itsDistributerThread->run();
-	itsRealTimeThread->run();
+	itsRealTimeThread->setItsPatientModel(itsPatientModel);
+	itsDistributerThread->start();
+	itsRealTimeThread->start();
 	state = Running;
 }    ";
 					}
@@ -58138,12 +58209,12 @@ return false;";
 						- size = 1;
 						- value = 
 						{ IArgument 
-							- _id = GUID 790669f6-791f-47f6-a873-8bf8b4fdd70f;
+							- _id = GUID ff5acd2f-2d1a-4768-95ac-0532be9a719e;
 							- _name = "aRecord";
 							- myTypeOf = { IType 
-								- _id = GUID 26280a09-60d5-4860-b914-78013c0cdfa2;
+								- _id = GUID ef0db5e8-e080-41b1-add7-99c07c1d246a;
 								- _myState = 8192;
-								- _declaration = "Record";
+								- _declaration = "Record*";
 								- _kind = Language;
 							}
 							- _isOrdered = 0;
@@ -58172,6 +58243,86 @@ return false;";
 return false;";
 					}
 				}
+				{ IPrimitiveOperation 
+					- _id = GUID 432e9a17-abda-45dc-aa6e-dd3699968cde;
+					- _myState = 8192;
+					- _name = "AttachObserver";
+					- _lastID = 1;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 532d92db-f532-4111-9cce-26d62142d165;
+							- _name = "obs";
+							- myTypeOf = { IType 
+								- _id = GUID 0121fab7-d0e2-45c3-8019-906e9fcb2369;
+								- _myState = 8192;
+								- _declaration = "Observer*";
+								- _kind = Language;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = InOut;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "getItsDistributerThread()->Attach(*obs);";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID d80cf80f-2007-4c00-bb36-e7a9d97abb4c;
+					- _myState = 8192;
+					- _name = "DetachObserver";
+					- _lastID = 1;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 39d5b383-b8c7-4671-9931-4b919ce22ebf;
+							- _name = "obs";
+							- myTypeOf = { IType 
+								- _id = GUID fe625c72-55ca-485c-8f41-99c0dc296faf;
+								- _myState = 8192;
+								- _declaration = "Observer*";
+								- _kind = Language;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = InOut;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "getItsDistributerThread()->Detach(*obs);";
+					}
+				}
 			}
 			- Attrs = { IRPYRawContainer 
 				- size = 1;
@@ -58183,8 +58334,8 @@ return false;";
 						- size = 1;
 						- value = 
 						{ ILiteralSpecification 
-							- _id = GUID f734db1f-fccc-4a5f-bf3d-f19ed041e394;
-							- _value = "uninitialized";
+							- _id = GUID 55c42c0b-16a8-4a5d-bdc9-ab591f3a178b;
+							- _value = "Uninitialized";
 						}
 					}
 					- _typeOf = { IHandle 
@@ -58211,7 +58362,7 @@ return false;";
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 9;
+						- size = 11;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID 54df1d81-b906-448f-9b0a-daa13beecc15;
@@ -58326,19 +58477,45 @@ return false;";
 							}
 						}
 						{ IFileFragment 
+							- _id = GUID 77b9da30-ccac-433f-b054-7134e57a3dde;
+							- _name = "aom:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency aom:spec";
+							- m_startRow = 36;
+							- m_startCol_Short = 1;
+							- m_endRow = 36;
+							- m_endCol_Short = 942;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
 							- _id = GUID d3baf15c-aa4e-4228-9b7f-584c440eae2c;
 							- _name = "Record:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency Record:spec";
-							- m_startRow = 36;
+							- m_startRow = 68;
 							- m_startCol_Short = 1;
-							- m_endRow = 36;
-							- m_endCol_Short = 960;
+							- m_endRow = 68;
+							- m_endCol_Short = 13;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
 							- Fragments = { IRPYRawContainer 
 								- size = 0;
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID c3d1e0c5-8074-4c5b-bcd4-bc9c76e5ed1c;
+							- _name = "Observer:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency Observer:spec";
+							- m_startRow = 71;
+							- m_startCol_Short = 1;
+							- m_endRow = 71;
+							- m_endCol_Short = 15;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
 							}
 						}
 						{ IFileFragment 
@@ -58355,7 +58532,7 @@ return false;";
 										- value = 
 										{ ILiteralSpecification 
 											- _id = GUID 2c7003cc-3225-48d6-b4f0-fec474f09c39;
-											- _value = "70";
+											- _value = "76";
 										}
 									}
 									- _typeOf = { IHandle 
@@ -58392,25 +58569,25 @@ return false;";
 							}
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 70;
+							- m_startRow = 76;
 							- m_startCol_Short = 1;
-							- m_endRow = 188;
+							- m_endRow = 204;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
 								- _id = GUID 8869c115-2af3-49a6-91aa-c05b292ed0cb;
 							}
 							- Fragments = { IRPYRawContainer 
-								- size = 34;
+								- size = 36;
 								- value = 
 								{ IFileFragment 
 									- _id = GUID fa0ba709-ad48-4977-b683-32fc44f1ae8d;
 									- _name = "MODEL_TYPES";
 									- m_type = moduleFragment;
 									- m_text = "";
-									- m_startRow = 74;
+									- m_startRow = 84;
 									- m_startCol_Short = 5;
-									- m_endRow = 77;
+									- m_endRow = 87;
 									- m_endCol_Short = 5;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IType";
@@ -58425,9 +58602,9 @@ return false;";
 									- _name = "MEDICINE_TYPES";
 									- m_type = moduleFragment;
 									- m_text = "";
-									- m_startRow = 80;
+									- m_startRow = 90;
 									- m_startCol_Short = 5;
-									- m_endRow = 82;
+									- m_endRow = 92;
 									- m_endCol_Short = 5;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IType";
@@ -58443,9 +58620,9 @@ return false;";
 									- m_type = textFragment;
 									- m_text = "////    Constructors and destructors    ////
 ";
-									- m_startRow = 84;
+									- m_startRow = 94;
 									- m_startCol_Short = 5;
-									- m_endRow = 84;
+									- m_endRow = 94;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58459,9 +58636,9 @@ return false;";
 									- _name = "SimulatorRealtime:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation SimulatorRealtime():spec";
-									- m_startRow = 87;
+									- m_startRow = 97;
 									- m_startCol_Short = 5;
-									- m_endRow = 87;
+									- m_endRow = 97;
 									- m_endCol_Short = 24;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58476,9 +58653,9 @@ return false;";
 									- m_type = textFragment;
 									- m_text = "////    Operations    ////
 ";
-									- m_startRow = 89;
+									- m_startRow = 99;
 									- m_startCol_Short = 5;
-									- m_endRow = 89;
+									- m_endRow = 99;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58492,9 +58669,9 @@ return false;";
 									- _name = "CreatePatientModel";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 92;
+									- m_startRow = 102;
 									- m_startCol_Short = 10;
-									- m_endRow = 92;
+									- m_endRow = 102;
 									- m_endCol_Short = 58;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -58509,9 +58686,9 @@ return false;";
 									- _name = "CreateSimRecord";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 95;
+									- m_startRow = 105;
 									- m_startCol_Short = 13;
-									- m_endRow = 95;
+									- m_endRow = 105;
 									- m_endCol_Short = 30;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -58526,9 +58703,9 @@ return false;";
 									- _name = "CreateWfdbRecord";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 98;
+									- m_startRow = 108;
 									- m_startCol_Short = 13;
-									- m_endRow = 98;
+									- m_endRow = 108;
 									- m_endCol_Short = 41;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -58543,10 +58720,10 @@ return false;";
 									- _name = "SetMedicine";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 101;
+									- m_startRow = 111;
 									- m_startCol_Short = 10;
-									- m_endRow = 101;
-									- m_endCol_Short = 31;
+									- m_endRow = 111;
+									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID 978af4c2-1ad5-49f4-a96a-c8ef694131a5;
@@ -58561,9 +58738,9 @@ return false;";
 									- m_type = textFragment;
 									- m_text = "////    Additional operations    ////
 ";
-									- m_startRow = 103;
+									- m_startRow = 113;
 									- m_startCol_Short = 5;
-									- m_endRow = 103;
+									- m_endRow = 113;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58577,9 +58754,9 @@ return false;";
 									- _name = "getItsPatientModel:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsPatientModel() const:spec";
-									- m_startRow = 106;
+									- m_startRow = 116;
 									- m_startCol_Short = 19;
-									- m_endRow = 106;
+									- m_endRow = 116;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58593,9 +58770,9 @@ return false;";
 									- _name = "setItsPatientModel:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsPatientModel(PatientModel *):spec";
-									- m_startRow = 109;
+									- m_startRow = 119;
 									- m_startCol_Short = 10;
-									- m_endRow = 109;
+									- m_endRow = 119;
 									- m_endCol_Short = 58;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58609,9 +58786,9 @@ return false;";
 									- _name = "cleanUpRelations:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():spec";
-									- m_startRow = 114;
+									- m_startRow = 124;
 									- m_startCol_Short = 10;
-									- m_endRow = 114;
+									- m_endRow = 124;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58626,9 +58803,9 @@ return false;";
 									- m_type = textFragment;
 									- m_text = "////    Relations and components    ////
 ";
-									- m_startRow = 116;
+									- m_startRow = 126;
 									- m_startCol_Short = 5;
-									- m_endRow = 116;
+									- m_endRow = 126;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58642,9 +58819,9 @@ return false;";
 									- _name = "itsPatientModel";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 118;
+									- m_startRow = 128;
 									- m_startCol_Short = 19;
-									- m_endRow = 118;
+									- m_endRow = 128;
 									- m_endCol_Short = 34;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -58659,9 +58836,9 @@ return false;";
 									- _name = "STATE_TYPES";
 									- m_type = moduleFragment;
 									- m_text = "";
-									- m_startRow = 123;
+									- m_startRow = 133;
 									- m_startCol_Short = 5;
-									- m_endRow = 129;
+									- m_endRow = 139;
 									- m_endCol_Short = 5;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IType";
@@ -58673,9 +58850,9 @@ return false;";
 									- _name = "getState:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getState() const:spec";
-									- m_startRow = 132;
+									- m_startRow = 142;
 									- m_startCol_Short = 17;
-									- m_endRow = 132;
+									- m_endRow = 142;
 									- m_endCol_Short = 33;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58686,9 +58863,9 @@ return false;";
 									- _name = "setState:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setState(STATE_TYPES):spec";
-									- m_startRow = 135;
+									- m_startRow = 145;
 									- m_startCol_Short = 10;
-									- m_endRow = 135;
+									- m_endRow = 145;
 									- m_endCol_Short = 39;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58699,9 +58876,9 @@ return false;";
 									- _name = "state";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 139;
+									- m_startRow = 149;
 									- m_startCol_Short = 17;
-									- m_endRow = 139;
+									- m_endRow = 149;
 									- m_endCol_Short = 22;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
@@ -58709,12 +58886,12 @@ return false;";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 7a3428da-e4da-4e16-8c9e-b8d63c0b2611;
+									- _id = GUID 22acd960-dc24-4652-b2f0-a664abe16117;
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 144;
+									- m_startRow = 154;
 									- m_startCol_Short = 5;
-									- m_endRow = 144;
+									- m_endRow = 154;
 									- m_endCol_Short = 43;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -58726,9 +58903,9 @@ return false;";
 									- _name = "getItsDistributerThread:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsDistributerThread() const:spec";
-									- m_startRow = 147;
+									- m_startRow = 157;
 									- m_startCol_Short = 24;
-									- m_endRow = 147;
+									- m_endRow = 157;
 									- m_endCol_Short = 55;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58739,9 +58916,9 @@ return false;";
 									- _name = "setItsDistributerThread:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsDistributerThread(DistributerThread *):spec";
-									- m_startRow = 150;
+									- m_startRow = 160;
 									- m_startCol_Short = 10;
-									- m_endRow = 150;
+									- m_endRow = 160;
 									- m_endCol_Short = 73;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58752,9 +58929,9 @@ return false;";
 									- _name = "getItsFrameBufferPool:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsFrameBufferPool() const:spec";
-									- m_startRow = 153;
+									- m_startRow = 163;
 									- m_startCol_Short = 22;
-									- m_endRow = 153;
+									- m_endRow = 163;
 									- m_endCol_Short = 51;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58765,9 +58942,9 @@ return false;";
 									- _name = "setItsFrameBufferPool:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsFrameBufferPool(FrameBufferPool *):spec";
-									- m_startRow = 156;
+									- m_startRow = 166;
 									- m_startCol_Short = 10;
-									- m_endRow = 156;
+									- m_endRow = 166;
 									- m_endCol_Short = 67;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58778,9 +58955,9 @@ return false;";
 									- _name = "getItsRealTimeThread:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsRealTimeThread() const:spec";
-									- m_startRow = 159;
+									- m_startRow = 169;
 									- m_startCol_Short = 21;
-									- m_endRow = 159;
+									- m_endRow = 169;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58791,9 +58968,9 @@ return false;";
 									- _name = "setItsRealTimeThread:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsRealTimeThread(RealTimeThread *):spec";
-									- m_startRow = 162;
+									- m_startRow = 172;
 									- m_startCol_Short = 10;
-									- m_endRow = 162;
+									- m_endRow = 172;
 									- m_endCol_Short = 64;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -58804,9 +58981,9 @@ return false;";
 									- _name = "itsDistributerThread";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 166;
+									- m_startRow = 176;
 									- m_startCol_Short = 24;
-									- m_endRow = 166;
+									- m_endRow = 176;
 									- m_endCol_Short = 44;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -58818,9 +58995,9 @@ return false;";
 									- _name = "itsFrameBufferPool";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 168;
+									- m_startRow = 178;
 									- m_startCol_Short = 22;
-									- m_endRow = 168;
+									- m_endRow = 178;
 									- m_endCol_Short = 40;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -58832,9 +59009,9 @@ return false;";
 									- _name = "itsRealTimeThread";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 170;
+									- m_startRow = 180;
 									- m_startCol_Short = 21;
-									- m_endRow = 170;
+									- m_endRow = 180;
 									- m_endCol_Short = 38;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -58842,12 +59019,12 @@ return false;";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID f7c9ee42-6b01-4db5-a9be-47e01ff8ecda;
+									- _id = GUID 49279ff6-ab28-435c-8b5c-9a10e74c3c0d;
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 175;
+									- m_startRow = 185;
 									- m_startCol_Short = 6;
-									- m_endRow = 175;
+									- m_endRow = 185;
 									- m_endCol_Short = 6;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IDestructor";
@@ -58856,12 +59033,12 @@ return false;";
 								}
 								{ IFileFragment 
 									- _id = GUID 324089bc-3012-47bf-ae3c-2bf10e6a5b30;
-									- _name = "AssingRecord";
+									- _name = "AssignRecord";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 178;
+									- m_startRow = 188;
 									- m_startCol_Short = 10;
-									- m_endRow = 178;
+									- m_endRow = 188;
 									- m_endCol_Short = 39;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -58873,9 +59050,9 @@ return false;";
 									- _name = "StartSimulation";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 181;
+									- m_startRow = 191;
 									- m_startCol_Short = 10;
-									- m_endRow = 181;
+									- m_endRow = 191;
 									- m_endCol_Short = 27;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -58887,9 +59064,9 @@ return false;";
 									- _name = "StopSimulation";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 184;
+									- m_startRow = 194;
 									- m_startCol_Short = 10;
-									- m_endRow = 184;
+									- m_endRow = 194;
 									- m_endCol_Short = 26;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -58901,13 +59078,41 @@ return false;";
 									- _name = "AlternateRecord";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 187;
+									- m_startRow = 197;
 									- m_startCol_Short = 10;
-									- m_endRow = 187;
-									- m_endCol_Short = 41;
+									- m_endRow = 197;
+									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID dce01ef1-669c-448c-ad24-caac9d4a636a;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 270a07e9-17f9-45e7-8c17-e31ef52c28e5;
+									- _name = "AttachObserver";
+									- m_type = specFragment;
+									- m_text = "";
+									- m_startRow = 200;
+									- m_startCol_Short = 10;
+									- m_endRow = 200;
+									- m_endCol_Short = 39;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID 432e9a17-abda-45dc-aa6e-dd3699968cde;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 13543aec-980c-4249-b66a-1daae95c06bd;
+									- _name = "DetachObserver";
+									- m_type = specFragment;
+									- m_text = "";
+									- m_startRow = 203;
+									- m_startCol_Short = 10;
+									- m_endRow = 203;
+									- m_endCol_Short = 39;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID d80cf80f-2007-4c00-bb36-e7a9d97abb4c;
 									}
 								}
 							}
@@ -58924,17 +59129,17 @@ return false;";
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 12;
+						- size = 14;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID ffeb90c6-dd94-4303-8487-d023eee7fd28;
 							- _name = "SimulatorRealtime:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency SimulatorRealtime:spec";
-							- m_startRow = 12;
+							- m_startRow = 16;
 							- m_startCol_Short = 1;
-							- m_endRow = 12;
-							- m_endCol_Short = 440;
+							- m_endRow = 16;
+							- m_endCol_Short = 487;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -58947,10 +59152,10 @@ return false;";
 							- _name = "DistributerThread";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 14;
+							- m_startRow = 18;
 							- m_startCol_Short = 1;
-							- m_endRow = 14;
-							- m_endCol_Short = 507;
+							- m_endRow = 18;
+							- m_endCol_Short = 554;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID 0b95c88a-2536-41f8-a4ba-4053505d27db;
@@ -58964,10 +59169,10 @@ return false;";
 							- _name = "FrameBufferPool";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 16;
+							- m_startRow = 20;
 							- m_startCol_Short = 1;
-							- m_endRow = 16;
-							- m_endCol_Short = 570;
+							- m_endRow = 20;
+							- m_endCol_Short = 617;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID f8fd53e7-987d-4bb1-a8b7-bbcb6947c713;
@@ -58981,10 +59186,10 @@ return false;";
 							- _name = "InfusionPumpModel";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 18;
+							- m_startRow = 22;
 							- m_startCol_Short = 1;
-							- m_endRow = 18;
-							- m_endCol_Short = 637;
+							- m_endRow = 22;
+							- m_endCol_Short = 684;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID be7d5cb0-4a5d-484f-afb9-626702d5e521;
@@ -58998,10 +59203,10 @@ return false;";
 							- _name = "Medicine";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 20;
+							- m_startRow = 24;
 							- m_startCol_Short = 1;
-							- m_endRow = 20;
-							- m_endCol_Short = 686;
+							- m_endRow = 24;
+							- m_endCol_Short = 733;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID e21de23e-9259-4d83-90ed-c6ad0fc3809e;
@@ -59015,10 +59220,10 @@ return false;";
 							- _name = "NormalModel";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 22;
+							- m_startRow = 26;
 							- m_startCol_Short = 1;
-							- m_endRow = 22;
-							- m_endCol_Short = 741;
+							- m_endRow = 26;
+							- m_endCol_Short = 788;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID dc3dffd9-ee73-4c74-9a5f-a0c5c353923a;
@@ -59032,10 +59237,10 @@ return false;";
 							- _name = "PatientModel";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 24;
+							- m_startRow = 28;
 							- m_startCol_Short = 1;
-							- m_endRow = 24;
-							- m_endCol_Short = 798;
+							- m_endRow = 28;
+							- m_endCol_Short = 845;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID d1df7ee7-4622-4601-af25-451676acaed6;
@@ -59049,10 +59254,10 @@ return false;";
 							- _name = "RealTimeThread";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 26;
+							- m_startRow = 30;
 							- m_startCol_Short = 1;
-							- m_endRow = 26;
-							- m_endCol_Short = 859;
+							- m_endRow = 30;
+							- m_endCol_Short = 906;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID a76492e8-8790-4416-bea5-8dd273e25b59;
@@ -59066,10 +59271,10 @@ return false;";
 							- _name = "RecordProxy";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 28;
+							- m_startRow = 32;
 							- m_startCol_Short = 1;
-							- m_endRow = 28;
-							- m_endCol_Short = 914;
+							- m_endRow = 32;
+							- m_endCol_Short = 961;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID d7fe3daa-bea1-4e8e-904b-fbe01cdffba0;
@@ -59083,10 +59288,10 @@ return false;";
 							- _name = "RecordSimulate";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 30;
+							- m_startRow = 34;
 							- m_startCol_Short = 1;
-							- m_endRow = 30;
-							- m_endCol_Short = 975;
+							- m_endRow = 34;
+							- m_endCol_Short = 1022;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID 2257d9a2-f651-4dae-881d-a8cd5dc853cb;
@@ -59100,10 +59305,10 @@ return false;";
 							- _name = "RecordWfdb";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 32;
+							- m_startRow = 36;
 							- m_startCol_Short = 1;
-							- m_endRow = 32;
-							- m_endCol_Short = 1028;
+							- m_endRow = 36;
+							- m_endCol_Short = 1075;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
 								- _id = GUID fce61f58-ca82-4b2a-b17e-65da8dbc2d73;
@@ -59113,20 +59318,46 @@ return false;";
 							}
 						}
 						{ IFileFragment 
+							- _id = GUID 02f1a625-9eca-4d1b-aa4a-226f3e1d2b5d;
+							- _name = "Observer:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency Observer:spec";
+							- m_startRow = 38;
+							- m_startCol_Short = 1;
+							- m_endRow = 38;
+							- m_endCol_Short = 1140;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 321dfe7d-11ac-4548-b83d-ab645280b562;
+							- _name = "Record:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency Record:spec";
+							- m_startRow = 40;
+							- m_startCol_Short = 1;
+							- m_endRow = 40;
+							- m_endCol_Short = 1202;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
 							- _id = GUID f861fc52-ef72-402d-b7bb-eee0c5cc8cb6;
 							- _name = "SimulatorRealtime";
 							- m_type = implFragment;
 							- m_text = "";
-							- m_startRow = 36;
+							- m_startRow = 70;
 							- m_startCol_Short = 20;
-							- m_endRow = 36;
+							- m_endRow = 70;
 							- m_endCol_Short = 20;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
 								- _id = GUID 8869c115-2af3-49a6-91aa-c05b292ed0cb;
 							}
 							- Fragments = { IRPYRawContainer 
-								- size = 22;
+								- size = 24;
 								- value = 
 								{ IFileFragment 
 									- _id = GUID 6a51f872-878f-42a4-b25c-cf9c051718a0;
@@ -59142,7 +59373,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 359d8520-adb6-41dd-b148-6653fd5ecd84;
-													- _value = "36";
+													- _value = "70";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59179,9 +59410,9 @@ return false;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation SimulatorRealtime():impl";
-									- m_startRow = 36;
+									- m_startRow = 70;
 									- m_startCol_Short = 20;
-									- m_endRow = 41;
+									- m_endRow = 76;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -59204,7 +59435,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID fc346e92-bc0b-4e05-8552-1e38bce25b78;
-													- _value = "43";
+													- _value = "78";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59241,9 +59472,9 @@ return false;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 43;
+									- m_startRow = 78;
 									- m_startCol_Short = 93;
-									- m_endRow = 64;
+									- m_endRow = 100;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -59267,7 +59498,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 81f87296-b84a-4730-9d67-1076d25bc205;
-													- _value = "66";
+													- _value = "102";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59304,9 +59535,9 @@ return false;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 66;
+									- m_startRow = 102;
 									- m_startCol_Short = 46;
-									- m_endRow = 70;
+									- m_endRow = 107;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -59330,7 +59561,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID de53a552-8a48-4e1f-ab77-85ae23659aa0;
-													- _value = "72";
+													- _value = "109";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59367,9 +59598,9 @@ return false;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 72;
+									- m_startRow = 109;
 									- m_startCol_Short = 57;
-									- m_endRow = 76;
+									- m_endRow = 114;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -59393,7 +59624,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID a486b8f8-2022-4b27-ac78-ee3f0e0f56f7;
-													- _value = "78";
+													- _value = "116";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59414,7 +59645,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID ba2ffa06-d1f2-45b3-862d-6c0b8c0bcbc1;
-													- _value = "47";
+													- _value = "84";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59430,9 +59661,9 @@ return false;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 78;
-									- m_startCol_Short = 47;
-									- m_endRow = 83;
+									- m_startRow = 116;
+									- m_startCol_Short = 84;
+									- m_endRow = 122;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -59456,7 +59687,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID f6ce39a2-f4e3-469a-a870-bdb888cc58c7;
-													- _value = "85";
+													- _value = "124";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59493,9 +59724,9 @@ return false;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsPatientModel() const:impl";
-									- m_startRow = 85;
+									- m_startRow = 124;
 									- m_startCol_Short = 61;
-									- m_endRow = 87;
+									- m_endRow = 126;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -59518,7 +59749,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID bf193d10-084e-4169-beb1-a38784c8efcc;
-													- _value = "89";
+													- _value = "128";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59555,9 +59786,9 @@ return false;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsPatientModel(PatientModel *):impl";
-									- m_startRow = 89;
+									- m_startRow = 128;
 									- m_startCol_Short = 74;
-									- m_endRow = 91;
+									- m_endRow = 138;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -59580,7 +59811,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 75ac5817-1057-49cf-9bbc-c0d7cdf56d25;
-													- _value = "93";
+													- _value = "140";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59617,9 +59848,9 @@ return false;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():impl";
-									- m_startRow = 93;
+									- m_startRow = 140;
 									- m_startCol_Short = 44;
-									- m_endRow = 110;
+									- m_endRow = 161;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -59642,7 +59873,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 4aea62da-71f4-4e71-a62c-7eb764a47a55;
-													- _value = "112";
+													- _value = "163";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59679,9 +59910,9 @@ return false;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getState() const:impl";
-									- m_startRow = 112;
+									- m_startRow = 163;
 									- m_startCol_Short = 68;
-									- m_endRow = 114;
+									- m_endRow = 165;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -59701,7 +59932,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID a6bfed2c-72a9-4997-a533-940a049254ff;
-													- _value = "116";
+													- _value = "167";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59738,28 +59969,28 @@ return false;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setState(STATE_TYPES):impl";
-									- m_startRow = 116;
+									- m_startRow = 167;
 									- m_startCol_Short = 74;
-									- m_endRow = 118;
+									- m_endRow = 169;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 1ec6d95d-64aa-45d0-b74c-b7558b7a5d1c;
+									- _id = GUID abf18d81-76fe-4c24-a85d-ef2ca1082940;
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID e6fff60d-17c1-41a4-8e84-0e7b9f47a71a;
+											- _id = GUID fee5bb3c-2593-4676-951a-ed9d6ae38e17;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 6bf7b1c0-650c-4752-abc2-e69c487cc666;
-													- _value = "120";
+													- _id = GUID fa6d2b4c-c842-48ad-869d-1201c0819694;
+													- _value = "171";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59773,13 +60004,13 @@ return false;";
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID 3cfc3b50-a912-4453-b9ff-091e740e59ff;
+											- _id = GUID de9bfc9d-cda3-4d9b-9ca3-662b121029a2;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 8193b173-8b97-48cf-8af5-9dd4f148cc12;
+													- _id = GUID c344c568-4f0a-44ef-8964-58a93cf279c3;
 													- _value = "82";
 												}
 											}
@@ -59796,9 +60027,9 @@ return false;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 120;
+									- m_startRow = 171;
 									- m_startCol_Short = 20;
-									- m_endRow = 133;
+									- m_endRow = 185;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IConstructor";
@@ -59819,7 +60050,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID b29b79b4-69ab-4ac0-af12-801f34690bdf;
-													- _value = "135";
+													- _value = "187";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59856,9 +60087,9 @@ return false;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsDistributerThread() const:impl";
-									- m_startRow = 135;
+									- m_startRow = 187;
 									- m_startCol_Short = 71;
-									- m_endRow = 137;
+									- m_endRow = 189;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -59878,7 +60109,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID bc080662-4d03-4d0b-865e-40c243354863;
-													- _value = "139";
+													- _value = "191";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59915,9 +60146,9 @@ return false;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsDistributerThread(DistributerThread *):impl";
-									- m_startRow = 139;
+									- m_startRow = 191;
 									- m_startCol_Short = 89;
-									- m_endRow = 141;
+									- m_endRow = 201;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -59937,7 +60168,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID bbb042ae-a62f-4c92-b39a-a8fa21904fa5;
-													- _value = "143";
+													- _value = "203";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -59974,9 +60205,9 @@ return false;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsFrameBufferPool() const:impl";
-									- m_startRow = 143;
+									- m_startRow = 203;
 									- m_startCol_Short = 67;
-									- m_endRow = 145;
+									- m_endRow = 205;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -59996,7 +60227,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 2ed14997-a24d-4187-b920-7000121a7dc0;
-													- _value = "147";
+													- _value = "207";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -60033,9 +60264,9 @@ return false;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsFrameBufferPool(FrameBufferPool *):impl";
-									- m_startRow = 147;
+									- m_startRow = 207;
 									- m_startCol_Short = 83;
-									- m_endRow = 149;
+									- m_endRow = 217;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -60055,7 +60286,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 83f66703-fbb8-4895-8dba-2187464bf514;
-													- _value = "151";
+													- _value = "219";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -60092,9 +60323,9 @@ return false;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsRealTimeThread() const:impl";
-									- m_startRow = 151;
+									- m_startRow = 219;
 									- m_startCol_Short = 65;
-									- m_endRow = 153;
+									- m_endRow = 221;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -60114,7 +60345,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 8c319b90-821c-478b-8ebc-64d2a11843de;
-													- _value = "155";
+													- _value = "223";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -60151,28 +60382,28 @@ return false;";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsRealTimeThread(RealTimeThread *):impl";
-									- m_startRow = 155;
+									- m_startRow = 223;
 									- m_startCol_Short = 80;
-									- m_endRow = 157;
+									- m_endRow = 233;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
 								}
 								{ IFileFragment 
-									- _id = GUID 81d6866f-9522-4466-9b04-dc3190a9709d;
+									- _id = GUID dfc7ece8-2c78-4883-953c-a53b3c2b2b35;
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
 										{ ITag 
-											- _id = GUID 9d0b1a26-bbe2-42a6-a58b-e8fbd621a7ca;
+											- _id = GUID 5385a28e-787c-49a1-898f-29592bc7ada9;
 											- _name = "BodyStartLine";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID ee379a9f-4874-4757-b553-55e128a753b1;
-													- _value = "159";
+													- _id = GUID b9004ea1-ae62-4101-a5c2-e301c1c0988c;
+													- _value = "235";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -60186,13 +60417,13 @@ return false;";
 											- _isOrdered = 0;
 										}
 										{ ITag 
-											- _id = GUID ae6d099c-b563-4446-b061-3d168de62af1;
+											- _id = GUID e74fca73-2d79-49f1-ac82-a028e6751a6e;
 											- _name = "BodyStartCol";
 											- ValueSpecifications = { IRPYRawContainer 
 												- size = 1;
 												- value = 
 												{ ILiteralSpecification 
-													- _id = GUID 12bc8de8-41d5-4097-96dc-4f2da78232d4;
+													- _id = GUID 73305a53-c9be-4e98-96be-59070579a223;
 													- _value = "41";
 												}
 											}
@@ -60209,9 +60440,9 @@ return false;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 159;
+									- m_startRow = 235;
 									- m_startCol_Short = 21;
-									- m_endRow = 167;
+									- m_endRow = 244;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IDestructor";
@@ -60220,7 +60451,7 @@ return false;";
 								}
 								{ IFileFragment 
 									- _id = GUID 4effe2d2-ef43-4ddc-91f4-da05c6322cc2;
-									- _name = "AssingRecord";
+									- _name = "AssignRecord";
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
@@ -60232,7 +60463,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 8930ed93-346f-46b6-b5bf-0c2e48f116fb;
-													- _value = "169";
+													- _value = "246";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -60269,9 +60500,9 @@ return false;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 169;
+									- m_startRow = 246;
 									- m_startCol_Short = 55;
-									- m_endRow = 178;
+									- m_endRow = 256;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -60292,7 +60523,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID f3176f44-a21b-48f9-aa00-f31f8a77c843;
-													- _value = "180";
+													- _value = "258";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -60329,9 +60560,9 @@ return false;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 180;
+									- m_startRow = 258;
 									- m_startCol_Short = 43;
-									- m_endRow = 190;
+									- m_endRow = 270;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -60352,7 +60583,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 68b342e0-0cf2-4cac-b374-fc21110eadf3;
-													- _value = "192";
+													- _value = "272";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -60389,9 +60620,9 @@ return false;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 192;
+									- m_startRow = 272;
 									- m_startCol_Short = 42;
-									- m_endRow = 201;
+									- m_endRow = 282;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -60412,7 +60643,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 0b5fb9b9-8d7f-4f8c-95ee-c6d69cc22dde;
-													- _value = "203";
+													- _value = "284";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -60433,7 +60664,7 @@ return false;";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 65f6c39d-fc9e-47c4-b267-98dac9a90b0d;
-													- _value = "57";
+													- _value = "58";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -60449,13 +60680,133 @@ return false;";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 203;
-									- m_startCol_Short = 57;
-									- m_endRow = 211;
+									- m_startRow = 284;
+									- m_startCol_Short = 58;
+									- m_endRow = 293;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID dce01ef1-669c-448c-ad24-caac9d4a636a;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID e41da9eb-b0ed-4a4f-b5d6-53d8e2450438;
+									- _name = "AttachObserver";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID 718e334c-2a1f-40a1-bdfe-ae642f049881;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID fdb7ab75-f40c-4942-9444-a38cdd604ee8;
+													- _value = "295";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID 34e2be35-c161-4b9f-a591-7a7946adc260;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 0000fdb8-08e6-41e2-9c82-403ab3fc53ca;
+													- _value = "55";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = implFragment;
+									- m_text = "";
+									- m_startRow = 295;
+									- m_startCol_Short = 55;
+									- m_endRow = 300;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID 432e9a17-abda-45dc-aa6e-dd3699968cde;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 9ceb62f3-8f17-4620-af1f-62b2bd861b31;
+									- _name = "DetachObserver";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID 7c86c94c-c68f-4f0c-bbc2-dcaa9af65706;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 25b86d63-34ca-4cb5-aeff-00ebc3beb433;
+													- _value = "302";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID 4ab3e976-3825-40e3-b6c8-e358ffcb6a64;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 4fc2e144-e3d0-4a01-89b1-fbe98e21f6fb;
+													- _value = "55";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = implFragment;
+									- m_text = "";
+									- m_startRow = 302;
+									- m_startCol_Short = 55;
+									- m_endRow = 307;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID d80cf80f-2007-4c00-bb36-e7a9d97abb4c;
 									}
 								}
 							}

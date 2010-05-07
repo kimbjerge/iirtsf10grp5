@@ -429,7 +429,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _standardHeaders = "wfdb/wfdb.h,math.h,wfdb/ecgcodes.h";
 			- _includePath = "";
 			- _targetMain = "";
-			- _instrumentation = None;
+			- _instrumentation = Animation;
 			- _timeModel = RealTime;
 			- m_generateActors = 0;
 			- _statechartImplementation = Flat;
@@ -446,8 +446,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _filename = "Test.sbs";
 					- _subsystem = "Application::Test";
 					- _class = "";
-					- _name = "TestPatientModel";
-					- _id = GUID c0533ed4-38f4-47c6-a5e0-5640071b1dfd;
+					- _name = "TestPatientSimulatorRT";
+					- _id = GUID 7471b71f-c7ce-4ca4-85d3-41fbd422cf0b;
 				}
 			}
 			- _root = { IFolder 
@@ -462,8 +462,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- size = 0;
 				}
 			}
-			- weakCGTime = 5.5.2010::19:1:6;
-			- strongCGTime = 5.5.2010::19:1:6;
+			- weakCGTime = 5.7.2010::11:17:36;
+			- strongCGTime = 5.7.2010::11:17:36;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
@@ -776,7 +776,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 5.7.2010::9:33:50;
+	- weakCGTime = 5.7.2010::11:12:37;
 	- strongCGTime = 5.6.2010::20:54:1;
 }
 

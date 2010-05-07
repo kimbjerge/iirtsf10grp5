@@ -153,7 +153,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ConTestPatientModel";
-			- _lastModifiedTime = "5.7.2010::10:33:36";
+			- _lastModifiedTime = "5.7.2010::11:56:43";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 6a8a2df3-5c3f-4c9d-bf3d-30c21df61768;
 				- m_type = 0;
@@ -833,7 +833,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ConTestCreateSimulatorRealtime";
-			- _lastModifiedTime = "5.7.2010::10:42:49";
+			- _lastModifiedTime = "5.7.2010::11:56:44";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 5b68ece5-7e47-42a0-b0bb-fa533d18cc76;
 				- m_type = 0;
@@ -1096,7 +1096,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						}
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 10;
+						- size = 12;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IDestructor";
@@ -1127,7 +1127,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _filename = "Continuous.sbs";
 							- _subsystem = "Application::Continuous";
 							- _class = "SimulatorRealtime";
-							- _name = "SetMedicine(int)";
+							- _name = "SetMedicine(MEDICINE_TYPES)";
 							- _id = GUID 978af4c2-1ad5-49f4-a96a-c8ef694131a5;
 						}
 						{ IHandle 
@@ -1151,7 +1151,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _filename = "Continuous.sbs";
 							- _subsystem = "Application::Continuous";
 							- _class = "SimulatorRealtime";
-							- _name = "AssingRecord(Record*)";
+							- _name = "AssignRecord(Record*)";
 							- _id = GUID a7024e8e-ce15-4c67-bffd-a95e54c671dd;
 						}
 						{ IHandle 
@@ -1175,8 +1175,24 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _filename = "Continuous.sbs";
 							- _subsystem = "Application::Continuous";
 							- _class = "SimulatorRealtime";
-							- _name = "AlternateRecord(Record)";
+							- _name = "AlternateRecord(Record*)";
 							- _id = GUID dce01ef1-669c-448c-ad24-caac9d4a636a;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "SimulatorRealtime";
+							- _name = "AttachObserver(Observer*)";
+							- _id = GUID 432e9a17-abda-45dc-aa6e-dd3699968cde;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "SimulatorRealtime";
+							- _name = "DetachObserver(Observer*)";
+							- _id = GUID d80cf80f-2007-4c00-bb36-e7a9d97abb4c;
 						}
 					}
 				}
@@ -5683,12 +5699,118 @@ std::cout << \"Pulse \" << s << std::endl;";
 			- _id = GUID 7471b71f-c7ce-4ca4-85d3-41fbd422cf0b;
 			- _myState = 8192;
 			- _name = "TestPatientSimulatorRT";
+			- Dependencies = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IDependency 
+					- _id = GUID 19d4e34f-bf8a-4f56-bad4-91c0ad283685;
+					- _myState = 2048;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Dependency";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "UsageType";
+												- _Value = "Implementation";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Specification,Implementation,Existence";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "RealTimeThread";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "PredefinedTypes.sbs";
+							- _subsystem = "PredefinedTypes";
+							- _class = "";
+							- _name = "Usage";
+							- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "";
+						- _name = "RealTimeThread";
+						- _id = GUID 86db0731-5d4f-438b-b385-e37d8a1a0603;
+					}
+				}
+				{ IDependency 
+					- _id = GUID 2ea11de1-5285-431f-8a7c-d261be1ee05c;
+					- _myState = 2048;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Dependency";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "UsageType";
+												- _Value = "Implementation";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Specification,Implementation,Existence";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "DistributerThread";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "PredefinedTypes.sbs";
+							- _subsystem = "PredefinedTypes";
+							- _class = "";
+							- _name = "Usage";
+							- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "";
+						- _name = "DistributerThread";
+						- _id = GUID af47700b-20bf-4d9a-b486-9b7e4dcf23cb;
+					}
+				}
+			}
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _id = GUID 890d955b-8753-4ce9-bfd5-ed79d2763e87;
 			}
 			- _lastID = 7;
-			- weakCGTime = 5.7.2010::10:37:6;
+			- weakCGTime = 5.7.2010::11:11:47;
 			- strongCGTime = 5.7.2010::8:59:9;
 			- Operations = { IRPYRawContainer 
 				- size = 6;
@@ -5717,7 +5839,7 @@ std::cout << \"Pulse \" << s << std::endl;";
 					- _constant = 0;
 					- _itsBody = { IBody 
 						- _bodyData = "itsSimulatorRealtime = new SimulatorRealtime(5); // Size of framebuffer
-itsSimulatorRealtime->getItsDistributerThread()->Attach(this); ";
+itsSimulatorRealtime->AttachObserver(this); ";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -5743,7 +5865,7 @@ itsSimulatorRealtime->getItsDistributerThread()->Attach(this); ";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "itsSimulatorRealtime->CreatePatientModel(SimulatorRealtime::normal);";
+						- _bodyData = "itsSimulatorRealtime->CreatePatientModel(SimulatorRealtime::Normal);";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -5801,7 +5923,8 @@ itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "itsSimulatorRealtime->getItsDistributerThread()->run();";
+						- _bodyData = "DistributerThread* pDT = itsSimulatorRealtime->getItsDistributerThread();
+pDT->run();";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -5827,7 +5950,8 @@ itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "itsSimulatorRealtime->getItsRealTimeThread()->run();";
+						- _bodyData = "RealTimeThread* pRT = itsSimulatorRealtime->getItsRealTimeThread();
+pRT->run();";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -5867,7 +5991,7 @@ itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "";
+						- _bodyData = "std::cout << \"FrameBuffer Updated\" << std::endl;";
 					}
 				}
 			}
@@ -6909,7 +7033,7 @@ itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);";
 									- m_text = "";
 									- m_startRow = 139;
 									- m_startCol_Short = 57;
-									- m_endRow = 143;
+									- m_endRow = 144;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -6930,7 +7054,7 @@ itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 8937eac9-a28b-4ca7-bcd5-2e9bc906ea8d;
-													- _value = "145";
+													- _value = "146";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6967,9 +7091,9 @@ itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 145;
+									- m_startRow = 146;
 									- m_startCol_Short = 54;
-									- m_endRow = 149;
+									- m_endRow = 151;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -6990,7 +7114,7 @@ itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 2e3c8708-eac2-47b0-aaec-c6bed70047ea;
-													- _value = "151";
+													- _value = "153";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -7027,9 +7151,9 @@ itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 151;
+									- m_startRow = 153;
 									- m_startCol_Short = 54;
-									- m_endRow = 154;
+									- m_endRow = 157;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7909,7 +8033,7 @@ itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);";
 							- _defaultTrans = ;
 						}
 					}
-					- _version = 5.7.2010::12:15:58;
+					- _version = 5.7.2010::13:18:10;
 					- _baseVersion = 1.1.1970::1:0:0;
 					- _diagram = { IStateChartDiagram 
 						- _id = GUID dc508800-9a22-47a9-a128-794d95acb6c6;
