@@ -153,7 +153,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ConTestPatientModel";
-			- _lastModifiedTime = "5.7.2010::11:56:43";
+			- _lastModifiedTime = "5.7.2010::12:51:24";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 6a8a2df3-5c3f-4c9d-bf3d-30c21df61768;
 				- m_type = 0;
@@ -398,7 +398,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 10;
+						- size = 11;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -479,6 +479,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _class = "PatientModel";
 							- _name = "GetPulse()";
 							- _id = GUID 1d5aebc7-9de6-4534-a62a-b353bceaf34e;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "PatientModel";
+							- _name = "AlternateRecord(Record*)";
+							- _id = GUID 21678d3e-4084-48c1-8c2b-e60a92a40fa7;
 						}
 					}
 				}
@@ -833,7 +841,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ConTestCreateSimulatorRealtime";
-			- _lastModifiedTime = "5.7.2010::11:56:44";
+			- _lastModifiedTime = "5.7.2010::13:20:41";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 5b68ece5-7e47-42a0-b0bb-fa533d18cc76;
 				- m_type = 0;
@@ -2101,7 +2109,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.7.2010::10:42:40;
+	- weakCGTime = 5.7.2010::12:23:37;
 	- strongCGTime = 5.3.2010::19:50:5;
 	- _defaultComposite = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 	- _eventsBaseID = -1;
@@ -2112,7 +2120,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.5.2010::20:30:33;
+			- weakCGTime = 5.7.2010::12:23:37;
 			- strongCGTime = 5.3.2010::19:50:5;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -2661,6 +2669,7 @@ std::cout << \"Pulse \" << s << std::endl;";
 								}
 								{ IFileFragment 
 									- _id = GUID a61c0ae7-adaa-4da6-958b-3ca8a3ce530b;
+									- _name = "TestPatientModel";
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
@@ -2720,6 +2729,7 @@ std::cout << \"Pulse \" << s << std::endl;";
 								}
 								{ IFileFragment 
 									- _id = GUID 26cda26e-c71a-4131-b724-1807c15dad38;
+									- _name = "~TestPatientModel";
 									- Tags = { IRPYRawContainer 
 										- size = 2;
 										- value = 
@@ -4231,6 +4241,7 @@ std::cout << \"Pulse \" << s << std::endl;";
 								}
 								{ IFileFragment 
 									- _id = GUID 75d5647d-1143-402b-a11b-719cf2664851;
+									- _name = "TestPatientModel";
 									- m_type = specFragment;
 									- m_text = "";
 									- m_startRow = 161;
@@ -4244,6 +4255,7 @@ std::cout << \"Pulse \" << s << std::endl;";
 								}
 								{ IFileFragment 
 									- _id = GUID 14d88bd3-f2eb-42e1-8f95-415f66069067;
+									- _name = "~TestPatientModel";
 									- m_type = specFragment;
 									- m_text = "";
 									- m_startRow = 164;
@@ -5810,7 +5822,7 @@ std::cout << \"Pulse \" << s << std::endl;";
 				- _id = GUID 890d955b-8753-4ce9-bfd5-ed79d2763e87;
 			}
 			- _lastID = 7;
-			- weakCGTime = 5.7.2010::11:11:47;
+			- weakCGTime = 5.7.2010::13:22:9;
 			- strongCGTime = 5.7.2010::8:59:9;
 			- Operations = { IRPYRawContainer 
 				- size = 6;
@@ -5991,7 +6003,10 @@ pRT->run();";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "std::cout << \"FrameBuffer Updated\" << std::endl;";
+						- _bodyData = "std::cout << \"FrameBuffer Updated:\" << std::endl;
+for (fp->First(); fp->IsDone(); fp->Next())
+   std::cout << fp->GetSample() << \", \";
+std::cout <<  std::endl;";
 					}
 				}
 			}
@@ -6038,28 +6053,22 @@ pRT->run();";
 					- _id = GUID a69bde7d-1cc9-4597-96d7-2eeb1a1546cd;
 					- _myState = 139264;
 					- _name = "TestPatientSimulatorRT";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 6;
+						- size = 5;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID d3c3e152-f0bf-496d-a11b-57594456a7b5;
 							- _name = "TestPatientSimulatorRT:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency TestPatientSimulatorRT:spec";
-							- m_startRow = 12;
+							- m_startRow = 18;
 							- m_startCol_Short = 1;
-							- m_endRow = 12;
-							- m_endCol_Short = 455;
+							- m_endRow = 18;
+							- m_endCol_Short = 528;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -6067,26 +6076,10 @@ pRT->run();";
 							- _name = "SimulatorRealtime:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency SimulatorRealtime:spec";
-							- m_startRow = 14;
+							- m_startRow = 20;
 							- m_startCol_Short = 1;
-							- m_endRow = 14;
-							- m_endCol_Short = 519;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID fb21538f-0f35-4a8a-81aa-80d7400fadb7;
-							- _name = "omthread:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency omthread:spec";
-							- m_startRow = 16;
-							- m_startCol_Short = 1;
-							- m_endRow = 16;
-							- m_endCol_Short = 567;
+							- m_endRow = 20;
+							- m_endCol_Short = 592;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -6096,10 +6089,10 @@ pRT->run();";
 							- _name = "Record:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency Record:spec";
-							- m_startRow = 18;
+							- m_startRow = 22;
 							- m_startCol_Short = 1;
-							- m_endRow = 18;
-							- m_endCol_Short = 611;
+							- m_endRow = 22;
+							- m_endCol_Short = 636;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -6109,10 +6102,10 @@ pRT->run();";
 							- _name = "FrameBuffer:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency FrameBuffer:spec";
-							- m_startRow = 20;
+							- m_startRow = 24;
 							- m_startCol_Short = 1;
-							- m_endRow = 20;
-							- m_endCol_Short = 674;
+							- m_endRow = 24;
+							- m_endCol_Short = 699;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -6122,9 +6115,9 @@ pRT->run();";
 							- _name = "TestPatientSimulatorRT";
 							- m_type = implFragment;
 							- m_text = "";
-							- m_startRow = 24;
+							- m_startRow = 48;
 							- m_startCol_Short = 25;
-							- m_endRow = 24;
+							- m_endRow = 48;
 							- m_endCol_Short = 25;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -6147,7 +6140,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID b2a824ff-1d51-438e-a10f-90c6c09d20f5;
-													- _value = "24";
+													- _value = "48";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6184,15 +6177,12 @@ pRT->run();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation TestPatientSimulatorRT():impl";
-									- m_startRow = 24;
+									- m_startRow = 48;
 									- m_startCol_Short = 25;
-									- m_endRow = 28;
+									- m_endRow = 53;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -6209,7 +6199,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID f0ff9961-c8ed-4938-ba5c-7f583678d161;
-													- _value = "30";
+													- _value = "55";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6246,15 +6236,12 @@ pRT->run();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~TestPatientSimulatorRT():impl";
-									- m_startRow = 30;
+									- m_startRow = 55;
 									- m_startCol_Short = 26;
-									- m_endRow = 33;
+									- m_endRow = 59;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -6271,7 +6258,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 3414f9bf-3983-4fb3-b3f2-6766133bad69;
-													- _value = "35";
+													- _value = "61";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6308,16 +6295,13 @@ pRT->run();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 35;
+									- m_startRow = 61;
 									- m_startCol_Short = 50;
-									- m_endRow = 40;
+									- m_endRow = 67;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID e0453f75-8d66-47dc-8900-464b6f476cb8;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -6334,7 +6318,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 65176b7c-fef7-48fe-92d4-f840064fee28;
-													- _value = "42";
+													- _value = "69";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6371,15 +6355,12 @@ pRT->run();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsSimulatorRealtime() const:impl";
-									- m_startRow = 42;
+									- m_startRow = 69;
 									- m_startCol_Short = 76;
-									- m_endRow = 44;
+									- m_endRow = 71;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -6396,7 +6377,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 03ca6dfe-24c0-45b0-a4e3-b3d3594a1dd4;
-													- _value = "46";
+													- _value = "73";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6433,15 +6414,12 @@ pRT->run();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsSimulatorRealtime(SimulatorRealtime *):impl";
-									- m_startRow = 46;
+									- m_startRow = 73;
 									- m_startCol_Short = 94;
-									- m_endRow = 48;
+									- m_endRow = 83;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -6458,7 +6436,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 047bd6b0-e0dc-4af9-bb22-0457ff6319e6;
-													- _value = "50";
+													- _value = "85";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6495,15 +6473,12 @@ pRT->run();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():impl";
-									- m_startRow = 50;
+									- m_startRow = 85;
 									- m_startCol_Short = 49;
-									- m_endRow = 55;
+									- m_endRow = 91;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -6520,7 +6495,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 6fc092d2-4784-49e0-bac7-4fd1f6ec9a76;
-													- _value = "57";
+													- _value = "93";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6557,9 +6532,9 @@ pRT->run();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 57;
+									- m_startRow = 93;
 									- m_startCol_Short = 54;
-									- m_endRow = 61;
+									- m_endRow = 98;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -6580,7 +6555,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 9173408c-7774-40a4-94ea-6349061b5e3a;
-													- _value = "63";
+													- _value = "100";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6617,9 +6592,9 @@ pRT->run();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getRecord() const:impl";
-									- m_startRow = 63;
+									- m_startRow = 100;
 									- m_startCol_Short = 52;
-									- m_endRow = 65;
+									- m_endRow = 102;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6639,7 +6614,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 360a2f9a-297d-4e9b-8743-25732aa45095;
-													- _value = "67";
+													- _value = "104";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6676,9 +6651,9 @@ pRT->run();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setRecord(Record *):impl";
-									- m_startRow = 67;
+									- m_startRow = 104;
 									- m_startCol_Short = 59;
-									- m_endRow = 69;
+									- m_endRow = 106;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6698,7 +6673,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 64aa16c7-1416-4322-9881-890b07846a34;
-													- _value = "71";
+													- _value = "108";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6735,9 +6710,9 @@ pRT->run();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation startBehavior():impl";
-									- m_startRow = 71;
+									- m_startRow = 108;
 									- m_startCol_Short = 46;
-									- m_endRow = 75;
+									- m_endRow = 112;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6757,7 +6732,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 66a33ad4-f831-42c7-9ec0-a94643203d43;
-													- _value = "77";
+													- _value = "114";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6794,9 +6769,9 @@ pRT->run();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation initStatechart():impl";
-									- m_startRow = 77;
+									- m_startRow = 114;
 									- m_startCol_Short = 47;
-									- m_endRow = 87;
+									- m_endRow = 127;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6816,7 +6791,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID a3584fb8-62c5-4043-8763-0946e9937525;
-													- _value = "89";
+													- _value = "129";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6853,9 +6828,9 @@ pRT->run();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cancelTimeouts():impl";
-									- m_startRow = 89;
+									- m_startRow = 129;
 									- m_startCol_Short = 47;
-									- m_endRow = 105;
+									- m_endRow = 150;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6875,7 +6850,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID f9ee4e76-ca1e-4e42-b4df-bc62c8832204;
-													- _value = "107";
+													- _value = "152";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6912,9 +6887,9 @@ pRT->run();";
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cancelTimeout(const IOxfTimeout *):impl";
-									- m_startRow = 107;
+									- m_startRow = 152;
 									- m_startCol_Short = 68;
-									- m_endRow = 125;
+									- m_endRow = 175;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6934,7 +6909,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID eaadf1df-f450-48df-b9a5-f56c5e8072f2;
-													- _value = "127";
+													- _value = "177";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6971,9 +6946,9 @@ pRT->run();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 127;
+									- m_startRow = 177;
 									- m_startCol_Short = 47;
-									- m_endRow = 137;
+									- m_endRow = 188;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -6994,7 +6969,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID f48be6c0-b693-4bfa-af19-92c0c6466ec1;
-													- _value = "139";
+													- _value = "190";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -7031,9 +7006,9 @@ pRT->run();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 139;
+									- m_startRow = 190;
 									- m_startCol_Short = 57;
-									- m_endRow = 144;
+									- m_endRow = 196;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7054,7 +7029,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 8937eac9-a28b-4ca7-bcd5-2e9bc906ea8d;
-													- _value = "146";
+													- _value = "198";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -7091,9 +7066,9 @@ pRT->run();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 146;
+									- m_startRow = 198;
 									- m_startCol_Short = 54;
-									- m_endRow = 151;
+									- m_endRow = 204;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7114,7 +7089,7 @@ pRT->run();";
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 2e3c8708-eac2-47b0-aaec-c6bed70047ea;
-													- _value = "153";
+													- _value = "206";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -7151,9 +7126,9 @@ pRT->run();";
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 153;
+									- m_startRow = 206;
 									- m_startCol_Short = 54;
-									- m_endRow = 157;
+									- m_endRow = 214;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7168,13 +7143,10 @@ pRT->run();";
 					- _id = GUID 4a2113fd-6eee-4f80-829b-f1536d400994;
 					- _myState = 139264;
 					- _name = "TestPatientSimulatorRT";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 14;
+						- size = 19;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID 6a7b0386-85d3-4bc7-a8f2-e410d970d949;
@@ -7184,12 +7156,9 @@ pRT->run();";
 							- m_startRow = 22;
 							- m_startCol_Short = 1;
 							- m_endRow = 22;
-							- m_endCol_Short = 656;
+							- m_endCol_Short = 648;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -7200,12 +7169,9 @@ pRT->run();";
 							- m_startRow = 24;
 							- m_startCol_Short = 1;
 							- m_endRow = 24;
-							- m_endCol_Short = 696;
+							- m_endCol_Short = 688;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -7216,12 +7182,9 @@ pRT->run();";
 							- m_startRow = 26;
 							- m_startCol_Short = 1;
 							- m_endRow = 26;
-							- m_endCol_Short = 739;
+							- m_endCol_Short = 731;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -7232,12 +7195,9 @@ pRT->run();";
 							- m_startRow = 28;
 							- m_startCol_Short = 1;
 							- m_endRow = 28;
-							- m_endCol_Short = 784;
+							- m_endCol_Short = 776;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -7248,12 +7208,9 @@ pRT->run();";
 							- m_startRow = 30;
 							- m_startCol_Short = 1;
 							- m_endRow = 30;
-							- m_endCol_Short = 824;
+							- m_endCol_Short = 816;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -7264,12 +7221,9 @@ pRT->run();";
 							- m_startRow = 32;
 							- m_startCol_Short = 1;
 							- m_endRow = 32;
-							- m_endCol_Short = 873;
+							- m_endCol_Short = 865;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -7280,7 +7234,7 @@ pRT->run();";
 							- m_startRow = 34;
 							- m_startCol_Short = 1;
 							- m_endRow = 34;
-							- m_endCol_Short = 923;
+							- m_endCol_Short = 915;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7293,7 +7247,7 @@ pRT->run();";
 							- m_startRow = 36;
 							- m_startCol_Short = 1;
 							- m_endRow = 36;
-							- m_endCol_Short = 968;
+							- m_endCol_Short = 960;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7306,7 +7260,7 @@ pRT->run();";
 							- m_startRow = 38;
 							- m_startCol_Short = 1;
 							- m_endRow = 38;
-							- m_endCol_Short = 1013;
+							- m_endCol_Short = 1005;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7319,9 +7273,76 @@ pRT->run();";
 							- m_startRow = 40;
 							- m_startCol_Short = 1;
 							- m_endRow = 40;
-							- m_endCol_Short = 1071;
+							- m_endCol_Short = 1063;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 677e1529-7c23-4fc2-9d4a-b1c39549ca06;
+							- _name = "aom:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency aom:spec";
+							- m_startRow = 42;
+							- m_startCol_Short = 1;
+							- m_endRow = 42;
+							- m_endCol_Short = 1106;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 9e227746-2c26-4145-adf4-e735daff07fb;
+							- _name = "Test:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency Test:spec";
+							- m_startRow = 44;
+							- m_startCol_Short = 1;
+							- m_endRow = 44;
+							- m_endCol_Short = 1146;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 4390b91a-5883-44fa-a1f4-483433b5dc6e;
+							- _name = "omthread:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency omthread:spec";
+							- m_startRow = 46;
+							- m_startCol_Short = 1;
+							- m_endRow = 46;
+							- m_endCol_Short = 1194;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID f06d6ced-d79e-4bcc-bcb6-0110a6552c95;
+							- _name = "DistributerThread";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 48;
+							- m_startCol_Short = 1;
+							- m_endRow = 48;
+							- m_endCol_Short = 24;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IDependency";
+								- _id = GUID 2ea11de1-5285-431f-8a7c-d261be1ee05c;
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 9baee22c-683d-4a06-9424-f6b5291ef672;
+							- _name = "RealTimeThread";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 51;
+							- m_startCol_Short = 1;
+							- m_endRow = 51;
+							- m_endCol_Short = 21;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IDependency";
+								- _id = GUID 19d4e34f-bf8a-4f56-bad4-91c0ad283685;
 							}
 						}
 						{ IFileFragment 
@@ -7329,9 +7350,9 @@ pRT->run();";
 							- _name = "FrameBuffer:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency FrameBuffer:spec";
-							- m_startRow = 42;
+							- m_startRow = 54;
 							- m_startCol_Short = 1;
-							- m_endRow = 42;
+							- m_endRow = 54;
 							- m_endCol_Short = 18;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -7342,9 +7363,9 @@ pRT->run();";
 							- _name = "Record:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency Record:spec";
-							- m_startRow = 45;
+							- m_startRow = 57;
 							- m_startCol_Short = 1;
-							- m_endRow = 45;
+							- m_endRow = 57;
 							- m_endCol_Short = 13;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -7355,15 +7376,12 @@ pRT->run();";
 							- _name = "SimulatorRealtime:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency SimulatorRealtime:spec";
-							- m_startRow = 48;
+							- m_startRow = 60;
 							- m_startCol_Short = 1;
-							- m_endRow = 48;
+							- m_endRow = 60;
 							- m_endCol_Short = 24;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -7380,7 +7398,7 @@ pRT->run();";
 										- value = 
 										{ ILiteralSpecification 
 											- _id = GUID 1f8d50bb-83c3-4c82-a2b6-595e06aca40a;
-											- _value = "53";
+											- _value = "65";
 										}
 									}
 									- _typeOf = { IHandle 
@@ -7417,9 +7435,9 @@ pRT->run();";
 							}
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 53;
+							- m_startRow = 65;
 							- m_startCol_Short = 1;
-							- m_endRow = 237;
+							- m_endRow = 281;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -7434,15 +7452,12 @@ pRT->run();";
 									- m_type = textFragment;
 									- m_text = "////    Constructors and destructors    ////
 ";
-									- m_startRow = 54;
+									- m_startRow = 72;
 									- m_startCol_Short = 5;
-									- m_endRow = 54;
+									- m_endRow = 72;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7450,15 +7465,12 @@ pRT->run();";
 									- _name = "TestPatientSimulatorRT:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation TestPatientSimulatorRT():spec";
-									- m_startRow = 59;
+									- m_startRow = 75;
 									- m_startCol_Short = 5;
-									- m_endRow = 59;
+									- m_endRow = 75;
 									- m_endCol_Short = 61;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7466,15 +7478,12 @@ pRT->run();";
 									- _name = "~TestPatientSimulatorRT:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~TestPatientSimulatorRT():spec";
-									- m_startRow = 62;
+									- m_startRow = 78;
 									- m_startCol_Short = 6;
-									- m_endRow = 62;
+									- m_endRow = 78;
 									- m_endCol_Short = 6;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7483,15 +7492,12 @@ pRT->run();";
 									- m_type = textFragment;
 									- m_text = "////    Operations    ////
 ";
-									- m_startRow = 64;
+									- m_startRow = 80;
 									- m_startCol_Short = 5;
-									- m_endRow = 64;
+									- m_endRow = 80;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7499,16 +7505,13 @@ pRT->run();";
 									- _name = "CreateSimulatorRT";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 67;
+									- m_startRow = 83;
 									- m_startCol_Short = 10;
-									- m_endRow = 67;
+									- m_endRow = 83;
 									- m_endCol_Short = 29;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
 										- _id = GUID e0453f75-8d66-47dc-8900-464b6f476cb8;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7517,15 +7520,12 @@ pRT->run();";
 									- m_type = textFragment;
 									- m_text = "////    Additional operations    ////
 ";
-									- m_startRow = 69;
+									- m_startRow = 85;
 									- m_startCol_Short = 5;
-									- m_endRow = 69;
+									- m_endRow = 85;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7533,15 +7533,12 @@ pRT->run();";
 									- _name = "getItsSimulatorRealtime:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsSimulatorRealtime() const:spec";
-									- m_startRow = 72;
+									- m_startRow = 88;
 									- m_startCol_Short = 24;
-									- m_endRow = 72;
+									- m_endRow = 88;
 									- m_endCol_Short = 55;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7549,15 +7546,12 @@ pRT->run();";
 									- _name = "setItsSimulatorRealtime:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsSimulatorRealtime(SimulatorRealtime *):spec";
-									- m_startRow = 75;
+									- m_startRow = 91;
 									- m_startCol_Short = 10;
-									- m_endRow = 75;
+									- m_endRow = 91;
 									- m_endCol_Short = 73;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7565,15 +7559,12 @@ pRT->run();";
 									- _name = "cleanUpRelations:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():spec";
-									- m_startRow = 80;
+									- m_startRow = 96;
 									- m_startCol_Short = 10;
-									- m_endRow = 80;
+									- m_endRow = 96;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7582,15 +7573,12 @@ pRT->run();";
 									- m_type = textFragment;
 									- m_text = "////    Relations and components    ////
 ";
-									- m_startRow = 82;
+									- m_startRow = 98;
 									- m_startCol_Short = 5;
-									- m_endRow = 82;
+									- m_endRow = 98;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7598,16 +7586,13 @@ pRT->run();";
 									- _name = "itsSimulatorRealtime";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 84;
+									- m_startRow = 100;
 									- m_startCol_Short = 24;
-									- m_endRow = 84;
+									- m_endRow = 100;
 									- m_endCol_Short = 44;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
 										- _id = GUID a040f81e-13f4-453a-832c-9f0c740dba76;
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -7615,9 +7600,9 @@ pRT->run();";
 									- _name = "InitializeSimulatorRT";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 89;
+									- m_startRow = 105;
 									- m_startCol_Short = 10;
-									- m_endRow = 89;
+									- m_endRow = 105;
 									- m_endCol_Short = 33;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7629,9 +7614,9 @@ pRT->run();";
 									- _name = "getRecord:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getRecord() const:spec";
-									- m_startRow = 92;
+									- m_startRow = 108;
 									- m_startCol_Short = 14;
-									- m_endRow = 92;
+									- m_endRow = 108;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7642,9 +7627,9 @@ pRT->run();";
 									- _name = "setRecord:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setRecord(Record *):spec";
-									- m_startRow = 95;
+									- m_startRow = 111;
 									- m_startCol_Short = 10;
-									- m_endRow = 95;
+									- m_endRow = 111;
 									- m_endCol_Short = 38;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7655,9 +7640,9 @@ pRT->run();";
 									- _name = "startBehavior:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation startBehavior():spec";
-									- m_startRow = 98;
+									- m_startRow = 114;
 									- m_startCol_Short = 18;
-									- m_endRow = 98;
+									- m_endRow = 114;
 									- m_endCol_Short = 33;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7668,9 +7653,9 @@ pRT->run();";
 									- _name = "initStatechart:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation initStatechart():spec";
-									- m_startRow = 103;
+									- m_startRow = 119;
 									- m_startCol_Short = 10;
-									- m_endRow = 103;
+									- m_endRow = 119;
 									- m_endCol_Short = 26;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7681,9 +7666,9 @@ pRT->run();";
 									- _name = "cancelTimeouts:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cancelTimeouts():spec";
-									- m_startRow = 106;
+									- m_startRow = 122;
 									- m_startCol_Short = 10;
-									- m_endRow = 106;
+									- m_endRow = 122;
 									- m_endCol_Short = 26;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7694,9 +7679,9 @@ pRT->run();";
 									- _name = "cancelTimeout:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cancelTimeout(const IOxfTimeout *):spec";
-									- m_startRow = 109;
+									- m_startRow = 125;
 									- m_startCol_Short = 10;
-									- m_endRow = 109;
+									- m_endRow = 125;
 									- m_endCol_Short = 47;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7707,9 +7692,9 @@ pRT->run();";
 									- _name = "record";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 111;
+									- m_startRow = 127;
 									- m_startCol_Short = 14;
-									- m_endRow = 111;
+									- m_endRow = 127;
 									- m_endCol_Short = 20;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
@@ -7721,9 +7706,9 @@ pRT->run();";
 									- _name = "CreateScenario";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 116;
+									- m_startRow = 132;
 									- m_startCol_Short = 10;
-									- m_endRow = 116;
+									- m_endRow = 132;
 									- m_endCol_Short = 26;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7735,9 +7720,9 @@ pRT->run();";
 									- _name = "RunTickDistributerThread";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 119;
+									- m_startRow = 135;
 									- m_startCol_Short = 10;
-									- m_endRow = 119;
+									- m_endRow = 135;
 									- m_endCol_Short = 36;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7749,9 +7734,9 @@ pRT->run();";
 									- _name = "RunTickRealTimeThread";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 122;
+									- m_startRow = 138;
 									- m_startCol_Short = 10;
-									- m_endRow = 122;
+									- m_endRow = 138;
 									- m_endCol_Short = 33;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7763,9 +7748,9 @@ pRT->run();";
 									- _name = "Update";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 125;
+									- m_startRow = 141;
 									- m_startCol_Short = 10;
-									- m_endRow = 125;
+									- m_endRow = 141;
 									- m_endCol_Short = 33;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7785,17 +7770,17 @@ pRT->run();";
 					- _id = GUID 798f1711-5f04-43d5-90d7-523045c43c62;
 					- _myState = 10240;
 					- _name = "statechart_1";
-					- _lastID = 9;
-					- weakCGTime = 5.7.2010::10:15:58;
+					- _lastID = 11;
+					- weakCGTime = 5.7.2010::13:22:9;
 					- strongCGTime = 5.7.2010::8:59:9;
 					- _multiplicity = "";
 					- _itsStateChart = { IHandle 
 						- _m2Class = "";
 					}
 					- _classModifier = Unspecified;
-					- _defNumber = 10;
+					- _defNumber = 12;
 					- Transitions = { IRPYRawContainer 
-						- size = 8;
+						- size = 9;
 						- value = 
 						{ IDefaultDrvdTrans 
 							- _id = GUID c58a0c84-d6fd-4437-9d11-9858d68a3cd4;
@@ -7896,7 +7881,7 @@ pRT->run();";
 									- _body = "itsSimulatorRealtime->StartSimulation();";
 								}
 							}
-							- _itsTarget = GUID a06edb96-7555-4f22-8f50-0bfc3e330254;
+							- _itsTarget = GUID 90e4d9d6-078b-426a-8b4d-80ab5549e813;
 							- _staticReaction = 0;
 							- _itsSource = GUID 8c5dbf9e-f90a-46ef-b119-84507875e3b3;
 						}
@@ -7966,9 +7951,31 @@ pRT->run();";
 							- _staticReaction = 0;
 							- _itsSource = GUID e07bff85-9216-4a3d-ba87-69632fa43571;
 						}
+						{ ITransition 
+							- _id = GUID be8914a5-31e3-4696-8557-7b56d9ce1cae;
+							- _myState = 2048;
+							- _name = "transition_10";
+							- _itsLabel = { ILabel 
+								- _id = GUID 2bf72bf4-0e06-4434-ae60-c0e398bf6890;
+								- _itsTrigger = { ITimeout 
+									- _id = GUID f8d7e812-d87c-46e5-817f-31ac4de5cd02;
+									- _body = "tm(3000)";
+									- _info = "";
+									- _time = "3000";
+								}
+								- _itsGuard = NULL;
+								- _itsAction = { IAction 
+									- _id = GUID eab131a4-a8dd-466e-bb0a-1df3e6379a86;
+									- _body = "itsSimulatorRealtime->AlternateRecord(record);";
+								}
+							}
+							- _itsTarget = GUID d2d43f4f-daf9-498d-9525-b164b1856a1d;
+							- _staticReaction = 0;
+							- _itsSource = GUID d2d43f4f-daf9-498d-9525-b164b1856a1d;
+						}
 					}
 					- States = { IRPYRawContainer 
-						- size = 10;
+						- size = 12;
 						- value = 
 						{ IState 
 							- _id = GUID 91464d0d-3117-40c4-909c-22301157f673;
@@ -8032,9 +8039,22 @@ pRT->run();";
 							- _parent = GUID e1a6af29-e97a-424b-95de-1be5c364b9f0;
 							- _defaultTrans = ;
 						}
+						{ IState 
+							- _id = GUID 99f1ded6-a3ba-480c-9a48-519519370a20;
+							- _myState = 2048;
+							- _name = "state_10";
+							- _parent = GUID a06edb96-7555-4f22-8f50-0bfc3e330254;
+							- _defaultTrans = ;
+						}
+						{ IState 
+							- _id = GUID d2d43f4f-daf9-498d-9525-b164b1856a1d;
+							- _name = "Alternate";
+							- _parent = GUID 99f1ded6-a3ba-480c-9a48-519519370a20;
+							- _defaultTrans = ;
+						}
 					}
-					- _version = 5.7.2010::13:18:10;
-					- _baseVersion = 1.1.1970::1:0:0;
+					- _version = 5.7.2010::15:28:25;
+					- _baseVersion = 1.2.1990::0:0:0;
 					- _diagram = { IStateChartDiagram 
 						- _id = GUID dc508800-9a22-47a9-a128-794d95acb6c6;
 						- _myState = 10240;
@@ -8116,7 +8136,7 @@ pRT->run();";
 							}
 						}
 						- _name = "statechartdiagram_0";
-						- _lastModifiedTime = "5.7.2010::10:15:58";
+						- _lastModifiedTime = "5.7.2010::13:5:39";
 						- _graphicChart = { CGIStateChart 
 							- _id = GUID 2af48519-aba4-40ac-887c-cfaabad962fc;
 							- m_type = 0;
@@ -8140,7 +8160,7 @@ pRT->run();";
 							}
 							- m_drawBehavior = 4096;
 							- m_bIsPreferencesInitialized = 1;
-							- elementList = 18;
+							- elementList = 21;
 							{ CGIState 
 								- _id = GUID 9c2537ed-34b7-41c3-9202-923d444e8c47;
 								- m_type = 5;
@@ -8209,7 +8229,7 @@ pRT->run();";
 									- m_nOrientationCtrlPt = 5;
 								}
 								- m_drawBehavior = 4104;
-								- m_transform = 0.0875912 0 0 0.0566038 163 105 ;
+								- m_transform = 0.0875912 0 0 0.0566038 85 110 ;
 								- m_bIsPreferencesInitialized = 1;
 								- m_AdditionalLabel = { CGIText 
 									- m_str = "";
@@ -8303,8 +8323,8 @@ pRT->run();";
 								- m_anglePoint1 = 0 0 ;
 								- m_anglePoint2 = 0 0 ;
 								- m_line_style = 1;
-								- m_SourcePort = 116 53 ;
-								- m_TargetPort = 765 230 ;
+								- m_SourcePort = 48 47 ;
+								- m_TargetPort = -11 124 ;
 								- m_pInheritsFrom = { IHandle 
 									- _m2Class = "";
 								}
@@ -8333,7 +8353,7 @@ pRT->run();";
 									- m_nOrientationCtrlPt = 5;
 								}
 								- m_drawBehavior = 4104;
-								- m_transform = 0.0875912 0 0 0.0566038 807 140 ;
+								- m_transform = 0.0875912 0 0 0.0566038 279 40 ;
 								- m_bIsPreferencesInitialized = 1;
 								- m_AdditionalLabel = { CGIText 
 									- m_str = "";
@@ -8419,12 +8439,12 @@ pRT->run();";
 										- m_bgColor = 0;
 										- m_bgFlag = 0;
 									}
-									- m_position = 4 -83 -23  128 -23  128 -5  -83 -5  ;
+									- m_position = 4 -6 -9  205 -9  205 9  -6 9  ;
 									- m_nIdent = 0;
 									- m_bImplicitSetRectPoints = 0;
-									- m_transform = 1 0 0 1 438 138 ;
-									- m_nHorizontalSpacing = -84;
-									- m_nVerticalSpacing = -16;
+									- m_transform = 1 0 0 1 78 39 ;
+									- m_nHorizontalSpacing = -143;
+									- m_nVerticalSpacing = -60;
 									- m_nOrientationCtrlPt = 0;
 								}
 								- m_anglePoint1 = 0 0 ;
@@ -8460,7 +8480,7 @@ pRT->run();";
 									- m_nOrientationCtrlPt = 5;
 								}
 								- m_drawBehavior = 4104;
-								- m_transform = 0.0875912 0 0 0.0566038 835 307 ;
+								- m_transform = 0.0875912 0 0 0.0566038 575 73 ;
 								- m_bIsPreferencesInitialized = 1;
 								- m_AdditionalLabel = { CGIText 
 									- m_str = "";
@@ -8546,12 +8566,12 @@ pRT->run();";
 										- m_bgColor = 0;
 										- m_bgFlag = 0;
 									}
-									- m_position = 4 -27 -37  197 -37  197 -19  -27 -19  ;
+									- m_position = 4 -6 -9  218 -9  218 9  -6 9  ;
 									- m_nIdent = 0;
 									- m_bImplicitSetRectPoints = 0;
-									- m_transform = 1 0 0 1 711 267 ;
-									- m_nHorizontalSpacing = -13;
-									- m_nVerticalSpacing = -19;
+									- m_transform = 1 0 0 1 335 162 ;
+									- m_nHorizontalSpacing = -116;
+									- m_nVerticalSpacing = 51;
 									- m_nOrientationCtrlPt = 0;
 								}
 								- m_anglePoint1 = 0 0 ;
@@ -8587,7 +8607,7 @@ pRT->run();";
 									- m_nOrientationCtrlPt = 5;
 								}
 								- m_drawBehavior = 4104;
-								- m_transform = 0.0875912 0 0 0.0566038 664 413 ;
+								- m_transform = 0.0875912 0 0 0.0566038 628 214 ;
 								- m_bIsPreferencesInitialized = 1;
 								- m_AdditionalLabel = { CGIText 
 									- m_str = "";
@@ -8673,9 +8693,12 @@ pRT->run();";
 										- m_bgColor = 0;
 										- m_bgFlag = 0;
 									}
-									- m_position = 1 0 0  ;
+									- m_position = 4 -6 -9  180 -9  180 9  -6 9  ;
 									- m_nIdent = 0;
 									- m_bImplicitSetRectPoints = 0;
+									- m_transform = 1 0 0 1 673 156 ;
+									- m_nHorizontalSpacing = 4;
+									- m_nVerticalSpacing = -10;
 									- m_nOrientationCtrlPt = 0;
 								}
 								- m_anglePoint1 = 0 0 ;
@@ -8736,7 +8759,7 @@ pRT->run();";
 									- m_nOrientationCtrlPt = 5;
 								}
 								- m_drawBehavior = 4104;
-								- m_transform = 0.508212 0 0 0.21475 12 340 ;
+								- m_transform = 0.508212 0 0 0.427789 12 340 ;
 								- m_bIsPreferencesInitialized = 1;
 								- m_AdditionalLabel = { CGIText 
 									- m_str = "";
@@ -8754,14 +8777,16 @@ pRT->run();";
 								- m_polygon = 4 0 0  0 1060  1096 1060  1096 0  ;
 								- m_nNameFormat = 0;
 								- m_nIsNameFormat = 0;
-								- nAndLineCount = 1;
-								- andLinePoly = 2 499 0  499 1060  ;
+								- nAndLineCount = 3;
+								- andLinePoly = 2 499 573  499 0  ;
+								- andLinePoly = 2 0 573  499 573  ;
+								- andLinePoly = 2 499 1060  499 573  ;
 								- m_pInheritsFrom = { IHandle 
 									- _m2Class = "";
 								}
 								- m_nInheritanceMask = 0;
 								- m_pDefaultComponentRelation = ;
-								- m_moveAndLineTimeStamp = 5.7.2010::11:40:3;
+								- m_moveAndLineTimeStamp = 5.7.2010::14:56:9;
 							}
 							{ CGITrans 
 								- _id = GUID 7ba07784-d6f7-4a08-9e85-2d8a1e57a5b7;
@@ -8813,7 +8838,7 @@ pRT->run();";
 								- m_bIsPreferencesInitialized = 1;
 								- m_pSource = GUID d8769df7-375a-4d76-8909-ff7f0e3747ce;
 								- m_sourceType = 'F';
-								- m_pTarget = GUID 94322217-5ebb-4407-aa29-fcd7e8f29b87;
+								- m_pTarget = GUID 2d366cc5-bfd0-4b80-90c7-99025b6bf0f4;
 								- m_targetType = 'T';
 								- m_direction = ' ';
 								- m_rpn = { CGIText 
@@ -8827,16 +8852,16 @@ pRT->run();";
 									- m_position = 4 -6 -9  329 -9  329 9  -6 9  ;
 									- m_nIdent = 0;
 									- m_bImplicitSetRectPoints = 0;
-									- m_transform = 1 0 0 1 432 661 ;
-									- m_nHorizontalSpacing = -122;
-									- m_nVerticalSpacing = 56;
+									- m_transform = 1 0 0 1 591 466 ;
+									- m_nHorizontalSpacing = -110;
+									- m_nVerticalSpacing = 74;
 									- m_nOrientationCtrlPt = 0;
 								}
 								- m_anglePoint1 = 0 0 ;
 								- m_anglePoint2 = 0 0 ;
 								- m_line_style = 1;
-								- m_SourcePort = 114 1060 ;
-								- m_TargetPort = 776 1042 ;
+								- m_SourcePort = 1096 1060 ;
+								- m_TargetPort = 1084 236 ;
 								- m_pInheritsFrom = { IHandle 
 									- _m2Class = "";
 								}
@@ -8907,17 +8932,17 @@ pRT->run();";
 									- m_position = 4 -6 -9  329 -9  329 9  -6 9  ;
 									- m_nIdent = 0;
 									- m_bImplicitSetRectPoints = 0;
-									- m_transform = 1 0 0 1 407 249 ;
-									- m_nHorizontalSpacing = -162;
-									- m_nVerticalSpacing = -47;
+									- m_transform = 1 0 0 1 250 259 ;
+									- m_nHorizontalSpacing = -264;
+									- m_nVerticalSpacing = -26;
 									- m_nOrientationCtrlPt = 0;
 								}
-								- m_arrow = 1 560 274  ;
+								- m_arrow = 1 560 280  ;
 								- m_anglePoint1 = 0 0 ;
 								- m_anglePoint2 = 0 0 ;
 								- m_line_style = 1;
 								- m_SourcePort = 776 71 ;
-								- m_TargetPort = 605 -18 ;
+								- m_TargetPort = 91 618 ;
 								- m_pInheritsFrom = { IHandle 
 									- _m2Class = "";
 								}
@@ -8947,7 +8972,7 @@ pRT->run();";
 								}
 								- m_drawBehavior = 4096;
 								- m_bIsPreferencesInitialized = 1;
-								- m_polygon = 4 499 0  499 1060  0 1060  0 0  ;
+								- m_polygon = 4 0 573  499 573  499 0  0 0  ;
 								- m_nNameFormat = 0;
 								- m_nIsNameFormat = 0;
 								- nAndLineCount = 0;
@@ -9039,7 +9064,7 @@ pRT->run();";
 									- m_nOrientationCtrlPt = 5;
 								}
 								- m_drawBehavior = 4104;
-								- m_transform = 0.295198 0 0 0.269219 600.569 233.005 ;
+								- m_transform = 0.264784 0 0 0.165503 641.846 240.309 ;
 								- m_bIsPreferencesInitialized = 1;
 								- m_AdditionalLabel = { CGIText 
 									- m_str = "";
@@ -9133,7 +9158,7 @@ pRT->run();";
 									- m_nVerticalSpacing = 22;
 									- m_nOrientationCtrlPt = 0;
 								}
-								- m_arrow = 1 417 497  ;
+								- m_arrow = 1 428 574  ;
 								- m_anglePoint1 = 0 0 ;
 								- m_anglePoint2 = 0 0 ;
 								- m_line_style = 1;
@@ -9192,7 +9217,7 @@ pRT->run();";
 									- m_nOrientationCtrlPt = 5;
 								}
 								- m_drawBehavior = 4104;
-								- m_transform = 0.299168 0 0 0.264564 90.5174 228.21 ;
+								- m_transform = 0.245425 0 0 0.169762 78.7106 90.605 ;
 								- m_bIsPreferencesInitialized = 1;
 								- m_AdditionalLabel = { CGIText 
 									- m_str = "";
@@ -9278,20 +9303,182 @@ pRT->run();";
 										- m_bgColor = 0;
 										- m_bgFlag = 0;
 									}
-									- m_position = 4 -98 -23  147 -23  147 -5  -98 -5  ;
+									- m_position = 4 -6 -9  231 -9  231 9  -6 9  ;
 									- m_nIdent = 0;
 									- m_bImplicitSetRectPoints = 0;
-									- m_transform = 1 0 0 1 167 558 ;
-									- m_nHorizontalSpacing = -101;
-									- m_nVerticalSpacing = 23;
+									- m_transform = 1 0 0 1 34 509 ;
+									- m_nHorizontalSpacing = -89;
+									- m_nVerticalSpacing = 27;
 									- m_nOrientationCtrlPt = 0;
 								}
-								- m_arrow = 1 152 523  ;
+								- m_arrow = 1 120 488  ;
 								- m_anglePoint1 = 0 0 ;
 								- m_anglePoint2 = 0 0 ;
 								- m_line_style = 1;
 								- m_SourcePort = 912 954 ;
 								- m_TargetPort = 162 936 ;
+								- m_pInheritsFrom = { IHandle 
+									- _m2Class = "";
+								}
+								- m_nInheritanceMask = 0;
+								- m_bShowName = 1;
+							}
+							{ CGIState 
+								- _id = GUID 5f6d497d-507c-4730-ab93-46317c1c2357;
+								- m_type = 9;
+								- m_pModelObject = { IHandle 
+									- _m2Class = "IState";
+									- _id = GUID 99f1ded6-a3ba-480c-9a48-519519370a20;
+								}
+								- m_pParent = GUID 94322217-5ebb-4407-aa29-fcd7e8f29b87;
+								- m_name = { CGIText 
+									- m_str = "state_10";
+									- m_style = "Arial" 10 0 0 0 1 ;
+									- m_color = { IColor 
+										- m_fgColor = 0;
+										- m_bgColor = 0;
+										- m_bgFlag = 0;
+									}
+									- m_position = 1 0 0  ;
+									- m_nIdent = 0;
+									- m_bImplicitSetRectPoints = 0;
+									- m_nOrientationCtrlPt = 1;
+								}
+								- m_drawBehavior = 4096;
+								- m_bIsPreferencesInitialized = 1;
+								- m_polygon = 4 0 573  499 573  499 1060  0 1060  ;
+								- m_nNameFormat = 0;
+								- m_nIsNameFormat = 0;
+								- nAndLineCount = 0;
+								- m_pInheritsFrom = { IHandle 
+									- _m2Class = "";
+								}
+								- m_nInheritanceMask = 0;
+								- m_pDefaultComponentRelation = ;
+								- m_pVirtualParent = GUID 8032e0e1-2368-486e-ae84-ee515e6ed9b4;
+							}
+							{ CGIState 
+								- _id = GUID f5bc740b-9cc4-43a3-b4bd-40b45193c554;
+								- m_type = 8;
+								- m_pModelObject = { IHandle 
+									- _m2Class = "IState";
+									- _id = GUID d2d43f4f-daf9-498d-9525-b164b1856a1d;
+								}
+								- m_pParent = GUID 5f6d497d-507c-4730-ab93-46317c1c2357;
+								- m_name = { CGIText 
+									- m_str = "Alternate";
+									- m_style = "Arial" 10 0 0 0 1 ;
+									- m_color = { IColor 
+										- m_fgColor = 0;
+										- m_bgColor = 0;
+										- m_bgFlag = 0;
+									}
+									- m_position = 1 0 0  ;
+									- m_nIdent = 0;
+									- m_bImplicitSetRectPoints = 0;
+									- m_nOrientationCtrlPt = 5;
+								}
+								- m_drawBehavior = 4104;
+								- m_transform = 0.172352 0 0 0.132317 96.4165 656.866 ;
+								- m_bIsPreferencesInitialized = 1;
+								- m_AdditionalLabel = { CGIText 
+									- m_str = "";
+									- m_style = "Arial" 10 0 0 0 1 ;
+									- m_color = { IColor 
+										- m_fgColor = 0;
+										- m_bgColor = 0;
+										- m_bgFlag = 0;
+									}
+									- m_position = 1 0 0  ;
+									- m_nIdent = 0;
+									- m_bImplicitSetRectPoints = 0;
+									- m_nOrientationCtrlPt = 1;
+								}
+								- m_polygon = 4 0 0  0 1060  1096 1060  1096 0  ;
+								- m_nNameFormat = 0;
+								- m_nIsNameFormat = 0;
+								- nAndLineCount = 0;
+								- m_pInheritsFrom = { IHandle 
+									- _m2Class = "";
+								}
+								- m_nInheritanceMask = 0;
+								- m_pDefaultComponentRelation = ;
+							}
+							{ CGITrans 
+								- _id = GUID 15df6f2b-b2e7-4f00-980b-513249ad793d;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "General";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Graphics";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "ShowLabels";
+															- _Value = "False";
+															- _Type = Bool;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- m_type = 28;
+								- m_pModelObject = { IHandle 
+									- _m2Class = "ITransition";
+									- _id = GUID be8914a5-31e3-4696-8557-7b56d9ce1cae;
+								}
+								- m_pParent = ;
+								- m_name = { CGIText 
+									- m_str = "";
+									- m_style = "Arial" 10 0 0 0 1 ;
+									- m_color = { IColor 
+										- m_fgColor = 0;
+										- m_bgColor = 0;
+										- m_bgFlag = 0;
+									}
+									- m_position = 1 0 0  ;
+									- m_nIdent = 0;
+									- m_bImplicitSetRectPoints = 0;
+									- m_nOrientationCtrlPt = 8;
+								}
+								- m_drawBehavior = 0;
+								- m_bIsPreferencesInitialized = 1;
+								- m_pSource = GUID f5bc740b-9cc4-43a3-b4bd-40b45193c554;
+								- m_sourceType = 'F';
+								- m_pTarget = GUID f5bc740b-9cc4-43a3-b4bd-40b45193c554;
+								- m_targetType = 'T';
+								- m_direction = ' ';
+								- m_rpn = { CGIText 
+									- m_str = "tm(3000)/itsSimulatorRealtime->AlternateRecord(record);";
+									- m_style = "Arial" 10 0 0 0 1 ;
+									- m_color = { IColor 
+										- m_fgColor = 0;
+										- m_bgColor = 0;
+										- m_bgFlag = 0;
+									}
+									- m_position = 4 -6 -9  381 -9  381 9  -6 9  ;
+									- m_nIdent = 0;
+									- m_bImplicitSetRectPoints = 0;
+									- m_transform = 1 0 0 1 28 738 ;
+									- m_nHorizontalSpacing = -206;
+									- m_nVerticalSpacing = 66;
+									- m_nOrientationCtrlPt = 0;
+								}
+								- m_arrow = 1 250 666  ;
+								- m_anglePoint1 = 0 0 ;
+								- m_anglePoint2 = 0 0 ;
+								- m_line_style = 1;
+								- m_SourcePort = 1062 689 ;
+								- m_TargetPort = 868 972 ;
 								- m_pInheritsFrom = { IHandle 
 									- _m2Class = "";
 								}

@@ -67,7 +67,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _name = "PackageView";
 		- _id = GUID 69ee0633-361f-4b1f-8dc4-8d7c1f351e73;
 	}
-	- _lastID = 75;
+	- _lastID = 76;
 	- Declaratives = { IRPYRawContainer 
 		- size = 14;
 		- value = 
@@ -414,7 +414,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "DomainModel";
-			- _lastModifiedTime = "5.7.2010::11:56:43";
+			- _lastModifiedTime = "5.7.2010::12:50:38";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID aa9016c7-4c7f-4ed7-811f-6103c6e1fa3b;
 				- m_type = 0;
@@ -3614,7 +3614,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ApplicationModelSimulation";
-			- _lastModifiedTime = "5.7.2010::11:56:43";
+			- _lastModifiedTime = "5.7.2010::12:50:38";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 0d0f292e-33ac-4d44-9b63-5af9ae40625f;
 				- m_type = 0;
@@ -6686,7 +6686,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					}
 					- m_pParent = GUID 24353f73-6baf-43ab-809d-1b3dbab89d93;
 					- m_name = { CGIText 
-						- m_str = "Monitor";
+						- m_str = "Bedside Monitor";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -8514,7 +8514,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "FrameBufferObserver";
-			- _lastModifiedTime = "5.7.2010::11:56:43";
+			- _lastModifiedTime = "5.7.2010::13:20:40";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 5d6f3f08-b245-4c1e-ad15-89d4f465d9b8;
 				- m_type = 0;
@@ -9666,7 +9666,7 @@ Important that Update doesn't call Attach or Detach which will cause a deadlock"
 				}
 			}
 			- _name = "HelperClasses";
-			- _lastModifiedTime = "5.7.2010::12:12:58";
+			- _lastModifiedTime = "5.7.2010::12:50:37";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 748dc66a-ff82-4e72-ae97-4c334a405d8d;
 				- m_type = 0;
@@ -9690,7 +9690,7 @@ Important that Update doesn't call Attach or Detach which will cause a deadlock"
 				}
 				- m_drawBehavior = 0;
 				- m_bIsPreferencesInitialized = 0;
-				- elementList = 3;
+				- elementList = 4;
 				{ CGIClass 
 					- _id = GUID 82563505-29a4-49f8-af3b-44177fc9a99f;
 					- m_type = 78;
@@ -9784,7 +9784,7 @@ Important that Update doesn't call Attach or Detach which will cause a deadlock"
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2152;
-					- m_transform = 0.307266 0 0 0.165435 87.3854 53.5718 ;
+					- m_transform = 0.307266 0 0 0.165435 81.3854 -2.4282 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -9803,7 +9803,7 @@ Important that Update doesn't call Attach or Detach which will cause a deadlock"
 					- m_polygon = 4 2 329  2 1451  1061 1451  1061 329  ;
 					- m_nNameFormat = 0;
 					- m_nIsNameFormat = 0;
-					- frameset = "<frameset rows=35%,65%>
+					- frameset = "<frameset rows=21%,79%>
 <frame name=AttributeListCompartment>
 <frame name=PrimitiveOperationListCompartment>";
 					- Attrs = { IRPYRawContainer 
@@ -9886,7 +9886,7 @@ Important that Update doesn't call Attach or Detach which will cause a deadlock"
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2152;
-					- m_transform = 0.246196 0 0 0.177096 534.508 51.7353 ;
+					- m_transform = 0.246196 0 0 0.177096 500.508 68.7353 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -9946,6 +9946,96 @@ Important that Update doesn't call Attach or Detach which will cause a deadlock"
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _id = GUID 14640940-68a3-4f88-a7f1-01906d64a355;
+						}
+					}
+				}
+				{ CGIClass 
+					- _id = GUID 9996944f-6208-4a27-8ba6-d8c525155f5e;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "General";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Graphics";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "FitBoxToItsTextuals";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- m_type = 87;
+					- m_pModelObject = { IHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e6b67b4c-b05f-4fdd-8a42-be4f6d59435e;
+					}
+					- m_pParent = GUID 82563505-29a4-49f8-af3b-44177fc9a99f;
+					- m_name = { CGIText 
+						- m_str = "Monitor";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nOrientationCtrlPt = 5;
+					}
+					- m_drawBehavior = 2152;
+					- m_transform = 0.247403 0 0 0.104278 104.505 246.693 ;
+					- m_bIsPreferencesInitialized = 1;
+					- m_AdditionalLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nOrientationCtrlPt = 1;
+					}
+					- m_bFramesetModified = 1;
+					- m_polygon = 4 2 329  2 1451  1061 1451  1061 329  ;
+					- m_nNameFormat = 0;
+					- m_nIsNameFormat = 0;
+					- frameset = "<frameset rows=40%,60%>
+<frame name=AttributeListCompartment>
+<frame name=PrimitiveOperationListCompartment>";
+					- Attrs = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IAttribute";
+							- _id = GUID 7357f41d-5952-4c48-a594-5b103863cb54;
+						}
+					}
+					- Operations = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID eb8f473e-2523-44cf-9773-2a0391c502ce;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID 3c56e163-4efd-4c8d-b517-0712414a3f0d;
 						}
 					}
 				}
@@ -10225,7 +10315,7 @@ Important that Update doesn't call Attach or Detach which will cause a deadlock"
 				}
 			}
 			- _name = "PSIMU";
-			- _lastModifiedTime = "4.30.2010::7:31:40";
+			- _lastModifiedTime = "5.7.2010::12:36:43";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 174e3ee9-ab1d-46ec-b9a2-d64135658c95;
 				- m_type = 0;
@@ -10521,7 +10611,7 @@ Important that Update doesn't call Attach or Detach which will cause a deadlock"
 					}
 					- m_pParent = GUID 943fee58-9742-4195-82d5-f7f8b700423f;
 					- m_name = { CGIText 
-						- m_str = "Monitor";
+						- m_str = "Bedside Monitor";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -12873,7 +12963,7 @@ Important that Update doesn't call Attach or Detach which will cause a deadlock"
 				}
 			}
 			- _name = "Context";
-			- _lastModifiedTime = "4.30.2010::7:31:40";
+			- _lastModifiedTime = "5.7.2010::12:36:43";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID b36f4dbc-a5c1-462d-8ea9-c6297540e8c2;
 				- m_type = 0;
@@ -12994,7 +13084,7 @@ Important that Update doesn't call Attach or Detach which will cause a deadlock"
 					}
 					- m_pParent = GUID 406263b2-3f5a-48a5-893e-d1e230be9a4a;
 					- m_name = { CGIText 
-						- m_str = "Monitor";
+						- m_str = "Bedside Monitor";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -14249,18 +14339,18 @@ GU86a6ZGc29dYa7782e7feff9a39222542a463cb13c233f95I839c57bdZGc29dY97fcYbaZGbfe697
 			}
 		}
 	}
-	- weakCGTime = 5.7.2010::7:17:41;
+	- weakCGTime = 5.7.2010::12:39:34;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 445c424b-fba5-4616-8dc0-a22408da37c3;
 	- _eventsBaseID = -1;
 	- Classes = { IRPYRawContainer 
-		- size = 7;
+		- size = 8;
 		- value = 
 		{ IClass 
 			- _id = GUID 445c424b-fba5-4616-8dc0-a22408da37c3;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.6.2010::19:53:5;
+			- weakCGTime = 5.7.2010::12:39:34;
 			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -16836,6 +16926,100 @@ else
 			}
 			- _classModifier = Unspecified;
 		}
+		{ IClass 
+			- _id = GUID e6b67b4c-b05f-4fdd-8a42-be4f6d59435e;
+			- _myState = 8192;
+			- _name = "Monitor";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _id = GUID 5161b586-8bf3-4f77-b833-b73b81dc57ea;
+			}
+			- _lastID = 2;
+			- weakCGTime = 5.7.2010::12:43:34;
+			- strongCGTime = 5.7.2010::12:36:52;
+			- Operations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID eb8f473e-2523-44cf-9773-2a0391c502ce;
+					- _myState = 8192;
+					- _name = "enter";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iProtected;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "lock.wait();";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 3c56e163-4efd-4c8d-b517-0712414a3f0d;
+					- _myState = 8192;
+					- _name = "exit";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iProtected;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "lock.signal();";
+					}
+				}
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAttribute 
+					- _id = GUID 7357f41d-5952-4c48-a594-5b103863cb54;
+					- _name = "lock";
+					- _typeOf = { IHandle 
+						- _m2Class = "IClass";
+						- _filename = "AbstractOS.sbs";
+						- _subsystem = "AbstractOS";
+						- _class = "";
+						- _name = "Mutex";
+						- _id = GUID f6630bb6-f9ca-4853-8521-99dba9011235;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
 	}
 	- UseCases = { IRPYRawContainer 
 		- size = 7;
@@ -16958,7 +17142,7 @@ else
 				{ IAssociationEnd 
 					- _id = GUID 0248a0e8-7d55-47b9-a685-42df9eb66175;
 					- _myState = 10240;
-					- _name = "itsMonitor";
+					- _name = "itsBedside Monitor";
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IActor";
@@ -17189,7 +17373,7 @@ else
 				{ IAssociationEnd 
 					- _id = GUID 2703683e-e163-4672-8385-943efa0a0dcd;
 					- _myState = 10240;
-					- _name = "itsMonitor";
+					- _name = "itsBedside Monitor";
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IActor";
@@ -17570,13 +17754,13 @@ else
 		{ IActor 
 			- _id = GUID c06a3fab-9940-414c-b409-2d0260809e70;
 			- _myState = 8192;
-			- _name = "Monitor";
+			- _name = "Bedside Monitor";
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IUCDiagram";
 				- _id = GUID a048c0f1-90e3-4261-bf3d-089e2c4fdf01;
 			}
-			- weakCGTime = 5.3.2010::7:54:49;
-			- strongCGTime = 3.31.2010::11:8:45;
+			- weakCGTime = 5.7.2010::12:36:43;
+			- strongCGTime = 5.7.2010::12:36:43;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";

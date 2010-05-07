@@ -4,7 +4,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- _myState = 8192;
 	- _properties = { IPropertyContainer 
 		- Subjects = { IRPYRawContainer 
-			- size = 1;
+			- size = 2;
 			- value = 
 			{ IPropertySubject 
 				- _Name = "Browser";
@@ -20,6 +20,26 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 								- _Name = "ShowOrder";
 								- _Value = "True";
 								- _Type = Bool;
+							}
+						}
+					}
+				}
+			}
+			{ IPropertySubject 
+				- _Name = "General";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Model";
+						- Properties = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IProperty 
+								- _Name = "ModelCodeAssociativityFineTune";
+								- _Value = "Bidirectional";
+								- _Type = Enum;
+								- _ExtraTypeInfo = "Bidirectional,RoundTrip,CodeGeneration";
 							}
 						}
 					}
@@ -1913,7 +1933,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "SubSystemsView";
-			- _lastModifiedTime = "5.7.2010::11:56:43";
+			- _lastModifiedTime = "5.7.2010::12:51:24";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID c4a9a0b7-c588-441e-b401-1b9825d901bb;
 				- m_type = 0;
@@ -2273,10 +2293,19 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 <frame name=AttributeListCompartment>
 <frame name=PrimitiveOperationListCompartment>";
 					- Attrs = { IRPYRawContainer 
-						- size = 0;
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IAttribute";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "PatientModel";
+							- _name = "pause";
+							- _id = GUID 001f526d-1430-420f-b82f-e9cc6c5da958;
+						}
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 10;
+						- size = 11;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -2357,6 +2386,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _class = "PatientModel";
 							- _name = "GetPulse()";
 							- _id = GUID 1d5aebc7-9de6-4534-a62a-b353bceaf34e;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "PatientModel";
+							- _name = "AlternateRecord(Record*)";
+							- _id = GUID 21678d3e-4084-48c1-8c2b-e60a92a40fa7;
 						}
 					}
 					- m_multiplicity = { CGIText 
