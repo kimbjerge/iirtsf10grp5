@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: SimulatorRealtime
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Sun, 9, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SimulatorRealtime.h
 *********************************************************************/
 
@@ -195,6 +195,9 @@ public :
     
     //## operation DetachObserver(Observer*)
     void DetachObserver(Observer* obs);
+    
+    //## operation SetSampleRate(int)
+    void SetSampleRate(int rate);
 };
 
 #endif

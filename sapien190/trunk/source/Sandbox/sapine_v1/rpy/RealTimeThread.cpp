@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: RealTimeThread
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Sun, 9, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RealTimeThread.cpp
 *********************************************************************/
 
@@ -112,7 +112,7 @@ void RealTimeThread::cleanUpRelations() {
         }
 }
 
-RealTimeThread::RealTimeThread() : counter(0), itsFrameBuffer(NULL), timeToPulse(10), Thread(PRIORITY_NORMAL,"RealTimeThread") {
+RealTimeThread::RealTimeThread() : computeTime(0), counter(0), itsFrameBuffer(NULL), sampleTime(4000), timeToPulse(10), Thread(PRIORITY_NORMAL,"RealTimeThread") {
     {
         for (int pos = 0; pos < 2; pos++) {
         	itsExtOutAnalogue[pos] = NULL;
@@ -139,10 +139,11 @@ void RealTimeThread::run() {
     //#[ operation run()
     #ifdef _LINUX                  
     while(isAlive()){
-    	usleep(4000);
+    	usleep(sampleTime - computeTime);
     #else
     if (isAlive()) {
     #endif
+    	LogTime();
     	GenerateSignals(); 
     	counter++;
     	if (counter > timeToPulse)
@@ -151,6 +152,7 @@ void RealTimeThread::run() {
     		counter = 0; 
     	}   
         CheckFrameBuffer();
+        LogTime();
     }
     //#]
 }
@@ -194,6 +196,59 @@ void RealTimeThread::CheckFrameBuffer() {
      	itsFrameBuffer = itsFrameBufferPool->AllocateFrameBuffer();  
     }
     //#]
+}
+
+void RealTimeThread::SetSampleTime(unsigned long time) {
+    //#[ operation SetSampleTime(unsigned long)
+    sampleTime = time;
+    //#]
+}
+
+void RealTimeThread::LogTime() {
+    //#[ operation LogTime()
+    #ifdef _LINUX
+    
+    struct timeval tv;
+    struct timezone zone;
+    gettimeofday(&tv, &zone);
+    unsigned long diffTime = 0; 
+    unsigned long currTime = tv.tv_usec;
+     
+    if (currTime > prevTime)
+    {   
+    	diffTime = currTime - prevTime;
+    	if (diffTime > sampleTime) 
+    		diffTime = sampleTime;
+    }
+    computeTime = diffTime;
+    prevTime = currTime;
+    
+    #endif
+    //#]
+}
+
+unsigned long RealTimeThread::getComputeTime() const {
+    return computeTime;
+}
+
+void RealTimeThread::setComputeTime(unsigned long p_computeTime) {
+    computeTime = p_computeTime;
+}
+
+unsigned long RealTimeThread::getPrevTime() const {
+    return prevTime;
+}
+
+void RealTimeThread::setPrevTime(unsigned long p_prevTime) {
+    prevTime = p_prevTime;
+}
+
+unsigned long RealTimeThread::getSampleTime() const {
+    return sampleTime;
+}
+
+void RealTimeThread::setSampleTime(unsigned long p_sampleTime) {
+    sampleTime = p_sampleTime;
 }
 
 /*********************************************************************

@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: FrameBuffer
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Sun, 9, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/FrameBuffer.cpp
 *********************************************************************/
 
@@ -103,6 +103,13 @@ void FrameBuffer::setWritePos(int p_writePos) {
 int FrameBuffer::GetSample() {
     //#[ operation GetSample()
     return buffer[readPos];
+    //#]
+}
+
+void FrameBuffer::Clear() {
+    //#[ operation Clear()
+    writePos = 0;
+    
     //#]
 }
 

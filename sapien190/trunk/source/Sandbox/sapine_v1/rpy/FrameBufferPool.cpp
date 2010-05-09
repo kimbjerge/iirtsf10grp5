@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: FrameBufferPool
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Sun, 9, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/FrameBufferPool.cpp
 *********************************************************************/
 
@@ -70,7 +70,7 @@ FrameBufferPool::FrameBufferPool() : frameBufferPool(NULL), mailbox(NULL) {
 
 FrameBuffer* FrameBufferPool::AllocateFrameBuffer() {
     //#[ operation AllocateFrameBuffer()
-    FrameBuffer *fp;
+    FrameBuffer *fp = NULL;
     enter();     
     if (frameBufferPool != NULL)
     {
@@ -90,9 +90,10 @@ void FrameBufferPool::SendMail(FrameBuffer* fp) {
 
 void FrameBufferPool::ReleaseFrameBuffer(FrameBuffer* fp) {
     //#[ operation ReleaseFrameBuffer(FrameBuffer*)
+    if (fp) fp->Clear();
     enter();     
     if (frameBufferPool != NULL)
-    {
+    {   
     	frameBufferPool->Release(fp);
     }
     exit();

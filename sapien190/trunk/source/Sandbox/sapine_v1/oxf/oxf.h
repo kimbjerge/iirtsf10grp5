@@ -14,4 +14,8 @@ using namespace std;
 #include <stdio.h>
 #include <string.h>
 
+// Linux additional includes
+#include <sys/time.h>
+#include <time.h>
+
 #endif /* OXF_H_ */

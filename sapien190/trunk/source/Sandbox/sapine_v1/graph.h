@@ -12,6 +12,7 @@
 #include "PatientModel.h"
 #include "SimulatorRealtime.h"
 #include "Observer.h"
+#include "Record.h"
 
 using namespace std;
 
@@ -37,16 +38,28 @@ private:
     vector<int> values;
     int resolution;
     int maxValue;
-    char record[100];
+    char recordName[100];
     WFDB_Sample v[2];
     WFDB_Siginfo s[2];
+    bool running;
+
     PatientModel *itsPatientModel;
     SimulatorRealtime *itsSimulatorRealtime;
+
+    Record *pRecord;
+    Record *pRecord1;
+    Record *pRecord2;
+    int offset;
+    int offset1;
+    int offset2;
 
 
 public slots:
     void on_refresh_clicked();
     void on_simulate_clicked();
+    void on_stop_simulate_clicked();
+    void on_testModel_clicked();
+    void on_alterRecord_clicked();
 };
 
 #endif // GRAPH_H

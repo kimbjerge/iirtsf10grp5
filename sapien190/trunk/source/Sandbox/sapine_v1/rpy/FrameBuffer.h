@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: FrameBuffer
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Sun, 9, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/FrameBuffer.h
 *********************************************************************/
 
@@ -125,6 +125,9 @@ public :
 
     //## operation GetSample()
     int GetSample();
+    
+    //## operation Clear()
+    void Clear();
 };
 
 #endif

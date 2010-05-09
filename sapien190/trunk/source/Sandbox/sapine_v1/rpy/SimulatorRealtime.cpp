@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: SimulatorRealtime
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Sun, 9, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SimulatorRealtime.cpp
 *********************************************************************/
 
@@ -224,6 +224,16 @@ void SimulatorRealtime::AttachObserver(Observer* obs) {
 void SimulatorRealtime::DetachObserver(Observer* obs) {
     //#[ operation DetachObserver(Observer*)
     getItsDistributerThread()->Detach(*obs);
+    //#]
+}
+
+void SimulatorRealtime::SetSampleRate(int rate) {
+    //#[ operation SetSampleRate(int)
+    if (itsRealTimeThread != NULL)  
+    {
+    	unsigned long sampePeriode = 100000/rate;
+    	itsRealTimeThread->SetSampleTime(sampePeriode);  
+    }
     //#]
 }
 

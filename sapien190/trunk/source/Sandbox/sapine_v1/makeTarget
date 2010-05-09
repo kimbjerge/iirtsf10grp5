@@ -1,4 +1,4 @@
 make clean
 /home/stud/qt-everywhere-opensource-src-4.6.1/bin/qmake -project
-/home/stud/qt-everywhere-opensource-src-4.6.1/bin/qmake LIBS+="-L/home/stud/wfdb-arm/lib -lts -lwfdb" INCPATH+=/home/stud/wfdb-arm/include
+/home/stud/qt-everywhere-opensource-src-4.6.1/bin/qmake LIBS+="-L/home/stud/wfdb-arm/lib -lts -lwfdb" DEFINES+=_LINUX INCPATH+=/home/stud/wfdb-arm/include
 make

@@ -8,7 +8,6 @@
 #include "RecordSimulate.h"
 #include "SmartPtr.h"
 #include "SimulatorRealtime.h"
-#include "Record.h"
 #include "FrameBuffer.h"
 #include "DistributerThread.h"
 #include "RealTimeThread.h"
@@ -17,12 +16,13 @@ Graph::Graph(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Graph),
     itsPatientModel(0),
-    itsSimulatorRealtime(0)
+    itsSimulatorRealtime(0),
+    running(false)
 {
     this->resolution = 200;
     this->maxValue = 200;
 
-        strcpy(this->record, "100s");
+    strcpy(this->recordName, "100s");
 
     ui->setupUi(this);
 }
@@ -30,6 +30,9 @@ Graph::Graph(QWidget *parent) :
 Graph::~Graph()
 {
     delete ui;
+    delete pRecord1;
+    delete pRecord2;
+    delete itsSimulatorRealtime;
     //wfdbquit();
 }
 
@@ -81,22 +84,6 @@ void Graph::changeEvent(QEvent *e)
     }
 }
 
-void Graph::on_refresh_clicked()
-{
-
-    if (isigopen(this->record, s, 2) < 2)
-    {
-
-    }
-    else
-    {
-        while  (getvec(this->v) > 0) {
-                this->addValue(this->v[1] - 1050);
-                usleep(4000);
-            }
-    }
-}
-
 void Graph::Update(FrameBuffer* fp) {
     int sample;
     cout << "FrameBuffer Updated:" << endl;
@@ -112,31 +99,63 @@ void Graph::Update(FrameBuffer* fp) {
     cout <<  sample << endl;
 }
 
-/*
 // Threaded version with framebuffer and observer pattern
 void Graph::on_simulate_clicked()
 {
-    Record * record;
 
     if (itsSimulatorRealtime == 0)
     {
-        // Create the SimulatorRelatim system and configurate
-        itsSimulatorRealtime = new SimulatorRealtime(5);
-        itsSimulatorRealtime->AttachObserver(this);
-        itsSimulatorRealtime->CreatePatientModel(SimulatorRealtime::Normal);
-        record = itsSimulatorRealtime->CreateWfdbRecord("e0104");
-        //record = itsSimulatorRealtime->CreateSimRecord();
-        itsSimulatorRealtime->AssignRecord(record);
-        itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);
-        itsSimulatorRealtime->StartSimulation();
+        // Create the SimulatorRelatime system and configurate with normal model
+        itsSimulatorRealtime = new SimulatorRealtime(5); // Size of frame buffer
+        itsSimulatorRealtime->AttachObserver(this); // Observe on frame buffer
+        itsSimulatorRealtime->SetSampleRate(1); // Sample rate 1 hz (250 hz)
+        itsSimulatorRealtime->CreatePatientModel(SimulatorRealtime::Normal); // Create patient model
+        pRecord1 = itsSimulatorRealtime->CreateWfdbRecord("e0104"); offset1 = -250; // Create record for simulation
+        pRecord2 = itsSimulatorRealtime->CreateWfdbRecord("e0103"); offset2 = 200;
+        //pRecord2 = itsSimulatorRealtime->CreateSimRecord(); offset2 = 500;
+    }
+
+    if (!running)
+    {
+        pRecord = pRecord1;
+        offset = offset1;
+        itsSimulatorRealtime->AssignRecord(pRecord); // Assign a record for simulation
+        itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine); // Create and set medicine
+        itsSimulatorRealtime->StartSimulation(); // Start simulation
+        running = true;
     }
 }
-*/
 
-void Graph::on_simulate_clicked()
+void Graph::on_stop_simulate_clicked()
+{
+    if (running)
+    {
+        itsSimulatorRealtime->StopSimulation(); // Stop simulation
+        running = false;
+    }
+}
+
+void Graph::on_alterRecord_clicked()
+{
+    if (running)
+    {
+        if (pRecord == pRecord1)
+        {
+            pRecord = pRecord2;
+            offset = offset2;
+        }
+        else
+        {
+            pRecord = pRecord1;
+            offset = offset1;
+        }
+        itsSimulatorRealtime->AlternateRecord(pRecord);
+    }
+}
+
+void Graph::on_testModel_clicked()
 {
     //SmartPtr<PatientModel> model(new PatientModel);
-    static int offset;
 
     if (itsPatientModel == 0)
     {
@@ -158,6 +177,22 @@ void Graph::on_simulate_clicked()
         //sample = itsPatientModel->GetEDRValue(0);
         this->addValue(sample-offset);
         usleep(4000);
+    }
+}
+
+void Graph::on_refresh_clicked()
+{
+
+    if (isigopen(this->recordName, s, 2) < 2)
+    {
+
+    }
+    else
+    {
+        while  (getvec(this->v) > 0) {
+                this->addValue(this->v[1] - 1050);
+                usleep(4000);
+            }
     }
 }
 
