@@ -154,6 +154,8 @@ void RealTimeThread::run() {
         CheckFrameBuffer();
         LogTime();
     }
+    //if (itsFrameBuffer != NULL)
+    //    itsFrameBufferPool->SendMail(itsFrameBuffer); // To stop DistributerThread
     //#]
 }
 

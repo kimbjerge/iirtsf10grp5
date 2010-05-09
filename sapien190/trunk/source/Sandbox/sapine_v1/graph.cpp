@@ -15,9 +15,10 @@
 Graph::Graph(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Graph),
+    running(false),
+    sampleRate(1),
     itsPatientModel(0),
-    itsSimulatorRealtime(0),
-    running(false)
+    itsSimulatorRealtime(0)
 {
     this->resolution = 200;
     this->maxValue = 200;
@@ -108,7 +109,7 @@ void Graph::on_simulate_clicked()
         // Create the SimulatorRelatime system and configurate with normal model
         itsSimulatorRealtime = new SimulatorRealtime(5); // Size of frame buffer
         itsSimulatorRealtime->AttachObserver(this); // Observe on frame buffer
-        itsSimulatorRealtime->SetSampleRate(1); // Sample rate 1 hz (250 hz)
+        itsSimulatorRealtime->SetSampleRate(sampleRate); // Sample rate default 1 hz (250 hz - Records)
         itsSimulatorRealtime->CreatePatientModel(SimulatorRealtime::Normal); // Create patient model
         pRecord1 = itsSimulatorRealtime->CreateWfdbRecord("e0104"); offset1 = -250; // Create record for simulation
         pRecord2 = itsSimulatorRealtime->CreateWfdbRecord("e0103"); offset2 = 200;
@@ -153,6 +154,15 @@ void Graph::on_alterRecord_clicked()
     }
 }
 
+void Graph::on_sampleRate_changed(int rate)
+{
+   sampleRate = rate;
+   if (itsSimulatorRealtime != 0)
+   {
+       itsSimulatorRealtime->SetSampleRate(sampleRate); // Sample rate
+   }
+}
+
 void Graph::on_testModel_clicked()
 {
     //SmartPtr<PatientModel> model(new PatientModel);
@@ -169,29 +179,31 @@ void Graph::on_testModel_clicked()
         itsPatientModel->SetRecord(new RecordProxy(new RecordWfdb("e0104"))); offset = -250;
     }
     itsPatientModel->StartSimulation();
-    for (int i = 0; i < 2000; i++)
+    for (int i = 0; i < 500; i++)
     {
         int sample;
         itsPatientModel->CalcSample();
         sample = itsPatientModel->GetECGValue(0);
         //sample = itsPatientModel->GetEDRValue(0);
         this->addValue(sample-offset);
-        usleep(4000);
+        usleep(3000);
     }
 }
 
 void Graph::on_refresh_clicked()
 {
+    int maxCount = 0;
 
-    if (isigopen(this->recordName, s, 2) < 2)
+    if (isigopen(recordName, s, 2) < 2)
     {
-
+        cout << "Error open record " << recordName << endl;
     }
     else
     {
         while  (getvec(this->v) > 0) {
                 this->addValue(this->v[1] - 1050);
                 usleep(4000);
+                if (maxCount++ > 500) break;
             }
     }
 }

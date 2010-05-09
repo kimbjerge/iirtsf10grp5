@@ -10,7 +10,7 @@
 void * InitializeThread(void* p){
 	Thread* t = (Thread *)p;
 	t->run();
-	pthread_exit(NULL);
+        pthread_exit(NULL);
 }
 
 void Thread::run(){
@@ -23,6 +23,8 @@ bool Thread::isAlive(){
 
 void Thread::kill(){
 	_isAlive = false;
+        cout << "Kill Thread " << getName()  << endl;
+        pthread_cancel(thread);
 }
 
 Thread::Thread(ThreadPriority _pri,string _name) {
@@ -43,9 +45,9 @@ string Thread::getName(){
 }
 
 void Thread::start(){
-        threadId = pthread_create(&thread,NULL,InitializeThread,(void *)this);
-	_isAlive = true;
-	//int thread_Id = pthread_create(&this->thread,NULL,InitializeThread,(void *)this);
+    _isAlive = true;
+    threadId = pthread_create(&thread,NULL,InitializeThread,(void *)this);
+    //int thread_Id = pthread_create(&this->thread,NULL,InitializeThread,(void *)this);
 }
 
 

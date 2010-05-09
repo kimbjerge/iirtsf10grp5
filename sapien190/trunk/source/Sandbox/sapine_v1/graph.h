@@ -42,6 +42,7 @@ private:
     WFDB_Sample v[2];
     WFDB_Siginfo s[2];
     bool running;
+    int sampleRate;
 
     PatientModel *itsPatientModel;
     SimulatorRealtime *itsSimulatorRealtime;
@@ -60,6 +61,7 @@ public slots:
     void on_stop_simulate_clicked();
     void on_testModel_clicked();
     void on_alterRecord_clicked();
+    void on_sampleRate_changed(int rate);
 };
 
 #endif // GRAPH_H
