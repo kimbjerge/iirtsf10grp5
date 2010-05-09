@@ -2579,6 +2579,9 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
+	- MSCS = { IRPYRawContainer 
+		- size = 0;
+	}
 	- Components = { IRPYRawContainer 
 		- size = 3;
 		- value = 

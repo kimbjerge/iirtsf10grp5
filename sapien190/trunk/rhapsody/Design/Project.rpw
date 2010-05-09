@@ -141,8 +141,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID dc508800-9a22-47a9-a128-794d95acb6c6;
 			}
-			- _UpLeft = 0 79 ;
-			- _DownRight = 950 457 ;
+			- _UpLeft = 0 189 ;
+			- _DownRight = 950 567 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 2;
 		}
@@ -169,8 +169,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID dc508800-9a22-47a9-a128-794d95acb6c6;
 			}
-			- _UpLeft = 0 106 ;
-			- _DownRight = 1222 787 ;
+			- _UpLeft = 0 20 ;
+			- _DownRight = 1328 631 ;
 			- _instanceName = "TestPatientSimulatorRT[0]";
 			- m_nDiagramIndex = 0;
 		}

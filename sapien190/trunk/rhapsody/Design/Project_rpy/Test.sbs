@@ -841,7 +841,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ConTestCreateSimulatorRealtime";
-			- _lastModifiedTime = "5.7.2010::13:20:41";
+			- _lastModifiedTime = "5.9.2010::12:22:46";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 5b68ece5-7e47-42a0-b0bb-fa533d18cc76;
 				- m_type = 0;
@@ -1104,7 +1104,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						}
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 12;
+						- size = 13;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IDestructor";
@@ -1201,6 +1201,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _class = "SimulatorRealtime";
 							- _name = "DetachObserver(Observer*)";
 							- _id = GUID d80cf80f-2007-4c00-bb36-e7a9d97abb4c;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "SimulatorRealtime";
+							- _name = "SetSampleRate(int)";
+							- _id = GUID a3caab6f-2070-4a44-a311-9e90dfd46dde;
 						}
 					}
 				}
@@ -2109,7 +2117,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.7.2010::19:31:26;
+	- weakCGTime = 5.9.2010::12:22:31;
 	- strongCGTime = 5.3.2010::19:50:5;
 	- _defaultComposite = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 	- _eventsBaseID = -1;
@@ -2120,7 +2128,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.7.2010::12:23:37;
+			- weakCGTime = 5.7.2010::19:31:26;
 			- strongCGTime = 5.3.2010::19:50:5;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -7776,7 +7784,7 @@ std::cout << fp->GetSample() << std::endl;
 					- _myState = 10240;
 					- _name = "statechart_1";
 					- _lastID = 11;
-					- weakCGTime = 5.7.2010::13:22:9;
+					- weakCGTime = 5.7.2010::19:39:9;
 					- strongCGTime = 5.7.2010::8:59:9;
 					- _multiplicity = "";
 					- _itsStateChart = { IHandle 

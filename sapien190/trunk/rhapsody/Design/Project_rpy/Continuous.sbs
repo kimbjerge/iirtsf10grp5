@@ -285,7 +285,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "SimulatorRealtimeModel";
-			- _lastModifiedTime = "5.7.2010::13:20:40";
+			- _lastModifiedTime = "5.9.2010::12:24:13";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 2d804280-da55-445c-b71f-b55b2eaff8c6;
 				- m_type = 0;
@@ -429,7 +429,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 12;
+						- size = 13;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -478,6 +478,10 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _id = GUID d80cf80f-2007-4c00-bb36-e7a9d97abb4c;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID a3caab6f-2070-4a44-a311-9e90dfd46dde;
 						}
 					}
 				}
@@ -1014,7 +1018,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 6;
+						- size = 8;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IDestructor";
@@ -1039,6 +1043,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IConstructor";
 							- _id = GUID d9cf1e41-c8cf-4139-bd97-83cfc9715de5;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID deaf4993-c405-4df0-9b95-7d4b8f8fa867;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID 0ad48858-8e3f-47fc-8a18-18323dfb9fe6;
 						}
 					}
 				}
@@ -5207,7 +5219,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ThreadModel";
-			- _lastModifiedTime = "5.7.2010::13:20:40";
+			- _lastModifiedTime = "5.9.2010::12:24:13";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID b37af65e-7055-4bc1-ab57-f84aba61cf0a;
 				- m_type = 0;
@@ -5325,7 +5337,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2152;
-					- m_transform = 0.199245 0 0 0.197861 707.601 213.904 ;
+					- m_transform = 0.199245 0 0 0.206774 707.601 210.972 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -5344,11 +5356,11 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_polygon = 4 2 329  2 1451  1061 1451  1061 329  ;
 					- m_nNameFormat = 0;
 					- m_nIsNameFormat = 0;
-					- frameset = "<frameset rows=38%,62%>
+					- frameset = "<frameset rows=34%,66%>
 <frame name=AttributeListCompartment>
 <frame name=PrimitiveOperationListCompartment>";
 					- Attrs = { IRPYRawContainer 
-						- size = 3;
+						- size = 6;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IAttribute";
@@ -5362,9 +5374,21 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _m2Class = "IAttribute";
 							- _id = GUID f0ae7281-3f7e-41ca-af23-a518206db7f3;
 						}
+						{ IHandle 
+							- _m2Class = "IAttribute";
+							- _id = GUID eac7d17e-093f-42fb-bc80-5b313b85ac07;
+						}
+						{ IHandle 
+							- _m2Class = "IAttribute";
+							- _id = GUID f27ef9aa-2035-40f9-be10-377e2edfcbca;
+						}
+						{ IHandle 
+							- _m2Class = "IAttribute";
+							- _id = GUID 7032a1f8-c8eb-4e4a-ab5e-973b1100e170;
+						}
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 6;
+						- size = 8;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -5389,6 +5413,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
 							- _id = GUID 72bf6e90-f228-430c-84c2-12b0d89a8a22;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID deaf4993-c405-4df0-9b95-7d4b8f8fa867;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _id = GUID 0ad48858-8e3f-47fc-8a18-18323dfb9fe6;
 						}
 					}
 				}
@@ -6574,7 +6606,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_anglePoint1 = 0 0 ;
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
-					- m_SourcePort = 47 839 ;
+					- m_SourcePort = 47 817 ;
 					- m_TargetPort = 978 600 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
@@ -47040,7 +47072,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.7.2010::19:32:59;
+	- weakCGTime = 5.9.2010::12:31:27;
 	- strongCGTime = 5.3.2010::12:16:30;
 	- _defaultComposite = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 	- _eventsBaseID = -1;
@@ -47051,7 +47083,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.7.2010::14:34:2;
+			- weakCGTime = 5.7.2010::19:32:59;
 			- strongCGTime = 5.3.2010::12:16:30;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -66209,11 +66241,11 @@ else
 				- _m2Class = "IDiagram";
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
-			- _lastID = 10;
-			- weakCGTime = 5.7.2010::14:51:52;
+			- _lastID = 15;
+			- weakCGTime = 5.9.2010::12:24:13;
 			- strongCGTime = 5.5.2010::21:32:1;
 			- Operations = { IRPYRawContainer 
-				- size = 6;
+				- size = 8;
 				- value = 
 				{ IDestructor 
 					- _id = GUID 09dd31bd-1a84-4df3-ad5c-cf8e29dfee36;
@@ -66352,10 +66384,11 @@ if (itsFrameBuffer != NULL)
 					- _itsBody = { IBody 
 						- _bodyData = "#ifdef _LINUX                  
 while(isAlive()){
-	usleep(4000);
+	usleep(sampleTime - computeTime);
 #else
 if (isAlive()) {
 #endif
+	LogTime();
 	GenerateSignals(); 
 	counter++;
 	if (counter > timeToPulse)
@@ -66364,6 +66397,7 @@ if (isAlive()) {
 		counter = 0; 
 	}   
     CheckFrameBuffer();
+    LogTime();
 }";
 					}
 				}
@@ -66404,9 +66438,94 @@ else
 }";
 					}
 				}
+				{ IPrimitiveOperation 
+					- _id = GUID deaf4993-c405-4df0-9b95-7d4b8f8fa867;
+					- _myState = 8192;
+					- _name = "LogTime";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "#ifdef _LINUX
+
+struct timeval tv;
+struct timezone zone;
+gettimeofday(&tv, &zone);
+unsigned long diffTime = 0; 
+unsigned long currTime = tv.tv_usec;
+ 
+if (currTime > prevTime)
+{   
+	diffTime = currTime - prevTime;
+	if (diffTime > sampleTime) 
+		diffTime = sampleTime;
+}
+computeTime = diffTime;
+prevTime = currTime;
+
+#endif";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 0ad48858-8e3f-47fc-8a18-18323dfb9fe6;
+					- _myState = 8192;
+					- _name = "SetSampleTime";
+					- _lastID = 1;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 9e510083-774a-4cbd-931d-eb54f293cd08;
+							- _name = "time";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypesC++.sbs";
+								- _subsystem = "PredefinedTypesCpp";
+								- _class = "";
+								- _name = "unsigned long";
+								- _id = GUID c8a5c793-f60c-46d1-80a0-4ea6d9338a78;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = In;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "sampleTime = time;";
+					}
+				}
 			}
 			- Attrs = { IRPYRawContainer 
-				- size = 3;
+				- size = 6;
 				- value = 
 				{ IAttribute 
 					- _id = GUID cd6d6ec0-6b5a-4cbd-8d35-04051f5cbf49;
@@ -66474,6 +66593,73 @@ else
 						- _myState = 8192;
 						- _declaration = "FrameBuffer*";
 						- _kind = Language;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID eac7d17e-093f-42fb-bc80-5b313b85ac07;
+					- _name = "prevTime";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "unsigned long";
+						- _id = GUID c8a5c793-f60c-46d1-80a0-4ea6d9338a78;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID f27ef9aa-2035-40f9-be10-377e2edfcbca;
+					- _name = "computeTime";
+					- ValueSpecifications = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ ILiteralSpecification 
+							- _id = GUID aa40ec96-69d5-41b2-8abb-3e05be9dd94b;
+							- _value = "0";
+						}
+					}
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "unsigned long";
+						- _id = GUID c8a5c793-f60c-46d1-80a0-4ea6d9338a78;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 7032a1f8-c8eb-4e4a-ab5e-973b1100e170;
+					- _name = "sampleTime";
+					- ValueSpecifications = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ ILiteralSpecification 
+							- _id = GUID 8d5d2a5a-b516-4307-82d2-535425406199;
+							- _value = "4000";
+						}
+					}
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "unsigned long";
+						- _id = GUID c8a5c793-f60c-46d1-80a0-4ea6d9338a78;
 					}
 					- _isOrdered = 0;
 					- _protection = iPrivate;
@@ -69898,11 +70084,11 @@ if (isAlive()) {
 				- _m2Class = "IDiagram";
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
-			- _lastID = 11;
-			- weakCGTime = 5.7.2010::19:33:42;
+			- _lastID = 12;
+			- weakCGTime = 5.9.2010::12:18:52;
 			- strongCGTime = 5.3.2010::13:38:18;
 			- Operations = { IRPYRawContainer 
-				- size = 9;
+				- size = 10;
 				- value = 
 				{ IDestructor 
 					- _id = GUID 847e0db6-1626-45a9-847e-e8f96c5a332a;
@@ -70181,6 +70367,33 @@ bufSize = size;";
 					- _constant = 0;
 					- _itsBody = { IBody 
 						- _bodyData = "return buffer[readPos];";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 10d6900a-187d-44cd-8313-f71152b0cfb5;
+					- _myState = 8192;
+					- _name = "Clear";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "writePos = 0;
+";
 					}
 				}
 			}
@@ -73484,7 +73697,7 @@ lock.signal();";
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
 			- _lastID = 5;
-			- weakCGTime = 5.7.2010::14:49:4;
+			- weakCGTime = 5.9.2010::14:4:2;
 			- strongCGTime = 5.6.2010::20:28:31;
 			- Operations = { IRPYRawContainer 
 				- size = 7;
@@ -73654,7 +73867,7 @@ mailbox = new Mailbox<FrameBuffer*>();
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "FrameBuffer *fp;
+						- _bodyData = "FrameBuffer *fp = NULL;
 enter();     
 if (frameBufferPool != NULL)
 {
@@ -73701,9 +73914,10 @@ return fp;";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "enter();     
+						- _bodyData = "if (fp) fp->Clear();
+enter();     
 if (frameBufferPool != NULL)
-{
+{   
 	frameBufferPool->Release(fp);
 }
 exit();";
@@ -75566,7 +75780,7 @@ return NULL;";
 				- _m2Class = "IDiagram";
 				- _id = GUID 5435a97b-93b9-4061-a3a4-a062bb5d0d92;
 			}
-			- _lastID = 20;
+			- _lastID = 21;
 			- Declaratives = { IRPYRawContainer 
 				- size = 3;
 				- value = 
@@ -75644,10 +75858,10 @@ return NULL;";
 					- _kind = Enumeration;
 				}
 			}
-			- weakCGTime = 5.7.2010::11:42:47;
+			- weakCGTime = 5.9.2010::12:31:27;
 			- strongCGTime = 5.7.2010::6:37:22;
 			- Operations = { IRPYRawContainer 
-				- size = 12;
+				- size = 13;
 				- value = 
 				{ IDestructor 
 					- _id = GUID 1b4e1342-b164-45a7-b151-93927f8bf22e;
@@ -76105,6 +76319,52 @@ itsDistributerThread = new DistributerThread();
 itsDistributerThread->setItsFrameBufferPool(itsFrameBufferPool);";
 					}
 					- _initializer = "";
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID a3caab6f-2070-4a44-a311-9e90dfd46dde;
+					- _myState = 8192;
+					- _name = "SetSampleRate";
+					- _lastID = 1;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 3c96b671-d135-4552-b109-b997714e9b1f;
+							- _name = "rate";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypesC++.sbs";
+								- _subsystem = "PredefinedTypesCpp";
+								- _class = "";
+								- _name = "int";
+								- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = In;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "if (itsRealTimeThread != NULL)  
+{
+	unsigned long sampePeriode = 100000/rate;
+	itsRealTimeThread->SetSampleTime(sampePeriode);  
+}";
+					}
 				}
 			}
 			- Attrs = { IRPYRawContainer 
