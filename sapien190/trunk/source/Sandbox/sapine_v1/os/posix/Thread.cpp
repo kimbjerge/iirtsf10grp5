@@ -24,7 +24,7 @@ bool Thread::isAlive(){
 void Thread::kill(){
 	_isAlive = false;
         cout << "Kill Thread " << getName()  << endl;
-        pthread_cancel(thread);
+        //pthread_cancel(thread);
 }
 
 Thread::Thread(ThreadPriority _pri,string _name) {

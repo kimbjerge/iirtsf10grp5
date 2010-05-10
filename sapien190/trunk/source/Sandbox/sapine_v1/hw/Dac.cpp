@@ -54,7 +54,7 @@ int Dac::setValue(unsigned int outputValue) {
 
         sprintf(valString, "%i\0", value);
 
-//	printf("value to be written: %s\n", valString);
+//      printf("val[%i]: %s\n", fd, valString);
 
 	write(fd, valString, 3); // Skriv to bytes til driver
 

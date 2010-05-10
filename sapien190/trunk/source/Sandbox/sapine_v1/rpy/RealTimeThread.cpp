@@ -122,8 +122,8 @@ RealTimeThread::RealTimeThread() : computeTime(0), counter(0), itsFrameBuffer(NU
     itsPatientModel = NULL;
     itsSerialProtocol = NULL;
     //#[ operation RealTimeThread()
-    itsExtOutAnalogue[0] = new ExtOutAnalogue(1);
-    itsExtOutAnalogue[1] = new ExtOutAnalogue(2);
+    itsExtOutAnalogue[0] = new ExtOutAnalogue(0);
+    itsExtOutAnalogue[1] = new ExtOutAnalogue(1);
     itsSerialProtocol = new SerialProtocol(); 
     
     //#]
@@ -154,8 +154,9 @@ void RealTimeThread::run() {
         CheckFrameBuffer();
         LogTime();
     }
-    //if (itsFrameBuffer != NULL)
-    //    itsFrameBufferPool->SendMail(itsFrameBuffer); // To stop DistributerThread
+    // Ensure that Distributer thread will die
+    if ((itsFrameBuffer != NULL) && (itsFrameBufferPool != NULL))
+            itsFrameBufferPool->SendMail(itsFrameBuffer);
     //#]
 }
 

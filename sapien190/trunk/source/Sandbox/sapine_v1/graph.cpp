@@ -107,7 +107,7 @@ void Graph::on_simulate_clicked()
     if (itsSimulatorRealtime == 0)
     {
         // Create the SimulatorRelatime system and configurate with normal model
-        itsSimulatorRealtime = new SimulatorRealtime(5); // Size of frame buffer
+        itsSimulatorRealtime = new SimulatorRealtime(25); // Size of frame buffer
         itsSimulatorRealtime->AttachObserver(this); // Observe on frame buffer
         itsSimulatorRealtime->SetSampleRate(sampleRate); // Sample rate default 1 hz (250 hz - Records)
         itsSimulatorRealtime->CreatePatientModel(SimulatorRealtime::Normal); // Create patient model
