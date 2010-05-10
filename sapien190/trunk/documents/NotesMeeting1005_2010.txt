@@ -1,0 +1,60 @@
+Scrum Status 10. May:
+____________________
+
+Peter:
+	Done:
+	- Meeting minutes
+	- Implemented WDFB interface
+	- Implemented annotation import
+	Problems:
+	- 
+	Next:
+	- DAC 
+	- Implement ECG to EDR filter
+	- Implement ECG to Pulse filter
+	- Implement Serial Port Interface
+	- Consider how to set parameters in filters
+	- Add text to ch 5+6 in Architecture Doc
+
+Anders:
+	Done:
+	- written a bit in chapter 10, General Design Descisions
+	Problems:
+	- 
+	Next:
+	- Look at contents for the Architecture document and contents based on theory
+	- Design of the controller with command and state pattern and use inputs from Exercise1-5
+	- GUI design and change of views based on the discrete model
+	- Integrate Rhapsody model with GuI and FrameBuffer observer
+
+Kim:	
+	Done:
+	- Updated Rhapsody model with new design for continous part
+	- FrameBuffer observer pattern
+	- Test with loader for continous part and FrameBuffer observer
+	- Generated and compile Sapien with Qt - test loader and starting of threads
+	Problems:
+	- 
+	Next:
+	- AssignRecord -> ChangeRecord
+	- Update SampleSet according to RecordTest project. Add gain attribute to Sample
+	- Add Metadata to Framebuffer Class
+	- Consider how to set parameters in filters
+	- Add text to ch 13+14 in Architecture Doc
+
+Next scrum meeting monday at 11:30
+	- Scrum status
+	- Review implementation of the discrete model
+	- Merge discrete system into existing system.
+	- Continue to 17:00 
+
+
+Action list (Backlog) to final delivery 04. june:
+____________________________________________
+
+	- Finalize Requirement Specification
+	- Finalize Product Architecture Document
+	- Finalize Test Documentation
+	- Finalize Project Report
+	- Prototype with Use Case #1 (Run Simulation) and #2 (Select and initiate Scenario) implemented
+	- Optionally implement Use Case #3 (Adjust Scenario Parameters)
