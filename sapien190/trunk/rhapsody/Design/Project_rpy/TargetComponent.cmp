@@ -42,16 +42,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _name = "Files";
 		- m_path = "";
 		- Elements = { IRPYRawContainer 
-			- size = 12;
+			- size = 11;
 			- value = 
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "AbstractHW.sbs";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "AbstractHW";
-				- _id = GUID 6f603c1a-3403-40b6-aa9f-f570a38b251b;
-			}
 			{ IHandle 
 				- _m2Class = "ISubsystem";
 				- _filename = "Comm.sbs";
@@ -59,14 +51,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _class = "";
 				- _name = "Comm";
 				- _id = GUID ad699984-b70d-45a2-ade8-5d423ff37318;
-			}
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "GraphicalUserInterface.sbs";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "GraphicalUserInterface";
-				- _id = GUID b087c986-b373-4750-8bfd-a0aa2f5a0d3f;
 			}
 			{ IHandle 
 				- _m2Class = "ISubsystem";
@@ -83,14 +67,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _class = "";
 				- _name = "Discrete";
 				- _id = GUID b99cf7b4-c288-4b92-9148-aa7b0a3c8a1c;
-			}
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "GUI.sbs";
-				- _subsystem = "Application";
-				- _class = "";
-				- _name = "GUI";
-				- _id = GUID 30c64cb8-f037-4c93-8e36-c33109fd525f;
 			}
 			{ IHandle 
 				- _m2Class = "IClass";
@@ -134,11 +110,27 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 			{ IHandle 
 				- _m2Class = "IClass";
-				- _filename = "Test.sbs";
-				- _subsystem = "Application::Test";
+				- _filename = "AbstractHW.sbs";
+				- _subsystem = "AbstractHW";
 				- _class = "";
-				- _name = "TestPatientSimulatorRT";
-				- _id = GUID 7471b71f-c7ce-4ca4-85d3-41fbd422cf0b;
+				- _name = "ExtInputs";
+				- _id = GUID c298dd4e-8345-4920-9b9d-b2d5af814bdb;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "AbstractHW.sbs";
+				- _subsystem = "AbstractHW";
+				- _class = "";
+				- _name = "ExtOutAnalogue";
+				- _id = GUID e7378ed2-b319-4592-a1ed-ca2e20ecb9df;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "AbstractHW.sbs";
+				- _subsystem = "AbstractHW";
+				- _class = "";
+				- _name = "ExtOutSerial";
+				- _id = GUID 9947fa55-9bb8-4efa-a5cb-3123a7bb9373;
 			}
 		}
 		- Files = { IRPYRawContainer 
@@ -341,7 +333,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 5.7.2010::14:56:7;
-	- strongCGTime = 5.7.2010::14:56:7;
+	- weakCGTime = 5.13.2010::20:26:1;
+	- strongCGTime = 5.13.2010::20:26:1;
 }
 

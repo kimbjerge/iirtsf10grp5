@@ -63,11 +63,11 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	}
 	- _component = { IHandle 
 		- _m2Class = "IComponent";
-		- _filename = "DefaultComponent.cmp";
+		- _filename = "TargetComponent.cmp";
 		- _subsystem = "";
 		- _class = "";
-		- _name = "DefaultComponent";
-		- _id = GUID 70c70b12-7d6c-4c76-8ce6-548c4ac2a18b;
+		- _name = "TargetComponent";
+		- _id = GUID 1cc071c8-1b53-4e12-abac-6a090ffe65e9;
 	}
 	- Multiplicities = { IRPYRawContainer 
 		- size = 4;
@@ -1212,7 +1212,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 4104;
-					- m_transform = 0.230513 0 0 0.299129 423.021 226.916 ;
+					- m_transform = 0.230513 0 0 0.299129 423.021 227.17 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -1933,7 +1933,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "SubSystemsView";
-			- _lastModifiedTime = "5.7.2010::12:51:24";
+			- _lastModifiedTime = "5.13.2010::20:23:0";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID c4a9a0b7-c588-441e-b401-1b9825d901bb;
 				- m_type = 0;
@@ -2578,9 +2578,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID ae1cb529-d6a5-4a57-85d0-e4e16822ed75;
 			}
 		}
-	}
-	- MSCS = { IRPYRawContainer 
-		- size = 0;
 	}
 	- Components = { IRPYRawContainer 
 		- size = 3;
