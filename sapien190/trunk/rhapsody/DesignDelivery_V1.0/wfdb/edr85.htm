@@ -1,0 +1,426 @@
+<html>
+<head>
+<title>Derivation of Respiratory Signals from Multi-lead ECGs</title>
+</head>
+<body bgcolor="white">
+<h1>Derivation of Respiratory Signals from Multi-lead ECGs</h1>
+
+<b>
+George B. Moody(*), Roger G. Mark(*), Andrea Zoccola(+), and Sara Mantero(+)
+<br>
+<br>
+Massachusetts Institute of Technology, Cambridge, Mass., and Beth
+Israel Hospital, Boston, Mass., USA (*); Politecnico di Milano, Milan,
+Italy (+)</b>
+
+<p>
+<center><table bgcolor="lightblue">
+<tr><td>
+This article originally appeared in <em>Computers in Cardiology 1985</em>,
+vol. 12, pp. 113-116 (Washington, DC: IEEE Computer Society Press).  Please
+cite this publication when referencing this material.  A sample implementation
+of the algorithm described in this paper is available in source form
+<a href="../edr.c">here</a>.
+</td></tr>
+</table></center>
+
+<h2>Summary</h2>
+
+<p>
+Knowledge of respiratory patterns would be clinically useful in many
+situations in which the ECG, but not respiration, is routinely
+monitored. We describe a signal-processing technique which derives
+respiratory waveforms from ordinary ECGs, permitting reliable
+detection of respiratory efforts.  Central and mixed apnea, hypopnea,
+and tachypnea may be identified with confidence.  In many cases,
+obstructive apnea and changes in tidal volume are also clearly visible
+in the ECG-derived respiratory signal (EDR).  We compare examples of
+the EDR with conventional respiration measurements. In the context of
+multiple-lead arrhythmia detectors, the additional computation
+required for recovery of the EDR is insignificant.  The technique is
+applicable to both real-time monitors and tape systems, requires no
+supplementary transducers or hardware modifications, and yields
+significant information of clinical value.
+
+<h2>Relationships of cardiac and respiratory rhythms</h2>
+
+<p>
+The clinical significance of certain cardiac arrhythmias can be
+understood only with reference to respiration.  The normal respiratory
+cycle is accompanied by changes in autonomic tone which modulate heart
+rate, causing sinus arrhythmia. Apnea may be associated with
+tachycardia, increased ventricular ectopy, or asystole.  Stress,
+congestive heart failure, and chronic lung disease may result in both
+tachypnea and tachyarrhythmia. Thus, simultaneous observation of the
+ECG and the respiratory cycle over long periods is often clinically
+useful.
+
+<h2>Respiration monitoring techniques</h2>
+
+<p>
+Methods of respiration monitoring fall into two categories.  Devices
+such as spirometers and nasal thermocouples measure air flow into and
+out of the lungs directly.  Respiration can also be monitored
+indirectly, by measuring body volume changes; transthoracic inductance
+and impedance plethysmographs, strain gauge measurement of thoracic
+circumference, pneumatic respiration transducers, and whole-body
+plethysmographs are examples of indirect techniques.  Each method has
+unique advantages and disadvantages.  Direct measurements are the most
+accurate, but interfere with normal respiration.  The whole-body
+plethysmograph can be highly accurate and does not interfere with
+respiration, but requires immobilizing the patient. Other techniques
+require frequent recalibration but the transducers (belts or
+electrodes) do not significantly burden a stationary patient; these
+are the only methods suitable for ambulatory respiration monitoring.
+
+<h2>Measurement of mean axis direction</h2>
+
+<p>
+ECGs recorded from the surface of the chest are influenced by motion
+of the electrodes with respect to the heart, and by changes in the
+electrical impedance of the thoracic cavity.  The expansion and
+contraction of the chest which accompanies respiration results in
+motion of chest electrodes. Short-term changes in thoracic impedance
+reflect the filling and emptying of the lungs, a phenomenon which is
+the basis of impedance plethysmography.
+
+<p>
+These physical influences of respiration result in amplitude
+variations in the observed ECG (figure 1).  In terms of the equivalent
+dipole model of cardiac electrical activity, respiration induces an
+apparent modulation in the direction of the mean cardiac electrical
+axis.  This phenomenon is independent of what is generally known as
+electrode motion artifact, an intermittent and generally aperiodic
+signal component which results from mechanical deformation of the
+electrode/skin interface.
+
+<center><table width=90% bgcolor="#e0e0e0" border=0 cellspacing=0
+cellpadding=10 vspace=10>
+<tr><td align=center>
+<img src="fig1.png" alt="[EDR and PRT signals]">
+</td></tr>
+<tr><td align=center>
+<em>Figure 1.</em>  Respiration-induced modulation of QRS amplitude.  Upper
+trace: ECG; lower trace: respiration measured by a pneumatic
+respiration transducer (PRT) placed around the chest.  Duration: 10
+seconds.
+</td></tr>
+</table></center>
+
+<p>
+Several years ago, Pinciroli[1] began studying methods for determining
+the direction of the axis, in order to create ``virtual ECG leads''
+which would represent what might be obtained from electrodes fixed in
+position relative to the heart.  We expected that fluctuations in axis
+direction measurements would reflect the physical influences of
+respiration on the ECG, and began a study to determine if these
+measurements could be used to derive information about respiration.
+
+<h2>ECG-derived respiratory signals</h2>
+
+<p>
+This relationship was confirmed by comparing axis direction
+measurements with simultaneously recorded measurements of chest
+circumference using a mercury strain gauge; later studies used
+pneumatic respiration transducer (PRT) measurements. Axis direction
+measurements based on chest electrodes correlate better with chest
+circumference and impedance than with abdomen measurements, or with
+direct measurements.
+
+<p>
+Although many techniques for measuring the direction of the axis work
+well, we found that shown in figure 2 both accurate and
+computationally simple.  After subtracting the baseline, the area of
+each normal QRS complex in each of two leads is measured over a fixed
+window (the width of which is determined during the learning phase of
+the ECG analysis program to match the interval from the PQ junction to
+the J-point of a normal QRS).  Area measurements such as these are
+made routinely by many arrhythmia detectors, either for direct use in
+feature-extraction approaches, or for normalization in
+template-matching methods.  Since the window width is fixed, the area
+is proportional to the mean amplitude of the signal, hence to the
+projection of the mean cardiac electrical vector on the lead axis.
+Assuming that the leads are orthogonal, the arctangent of the ratio of
+the areas measured in the two leads gives the angle of the mean axis
+with respect to one of the lead axes.  If the leads are not
+orthogonal, a systematic but harmless error in axis direction
+estimation results from this computationally convenient assumption.
+
+<center><table width=90% bgcolor="#e0e0e0" border=0 cellspacing=0
+cellpadding=10 vspace=10>
+<tr><td align=center>
+<img src="fig2.png" alt="[Axis estimation]">
+</td></tr>
+<tr><td align=center>
+<em>Figure 2.</em>  Estimation of the direction of the mean cardiac electrical
+axis from measurements of QRS area.
+</td></tr>
+</table></center>
+
+<p>
+Axis direction measurement during the QRS complex provides one sample
+of the ECG-derived respiratory (EDR) signal per cardiac cycle.  Given
+that the heart rate is almost always greater than twice the
+respiration rate, the frequency of respiratory effort can be measured
+well from this limited set of samples.  Interpolation using cubic
+splines produces a continuous EDR signal (figure 3) which bears a
+remarkable resemblance to the signal obtained from a PRT chest
+measurement.
+
+<center><table width=90% bgcolor="#e0e0e0" border=0 cellspacing=0
+cellpadding=10 vspace=10>
+<tr><td align=center>
+<img src="fig3.png" alt="[Normal respiration]">
+</td></tr>
+<tr><td align=center>
+<em>Figure 3.</em>  Normal respiration.  Lower trace: chest PRT; center trace:
+mean cardiac electrical axis direction; upper trace: QRS area in V1.
+Cubic spline interpolation has been used between measured points in
+the center and upper traces.  Duration: 10 seconds.
+</td></tr>
+</table></center>
+
+<p>
+If small numbers of ectopic beats are present, they may be
+disregarded.  When many similar ectopic beats occur, a better strategy
+is to make lead axis measurements for each morphology.  Measurements
+for beats of different morphologies will generally differ by constant
+angles which can be determined from the differences of the means of
+the measurements for each morphology.  Once these constant correction
+angles are known, measurements can be merged (figure 4).  If ectopic
+beat morphologies are poorly differentiated (for example, if many
+fusion PVCs are present), the distributions of ectopic beat
+measurements will not match that for normal beats, and such
+measurements should be discarded rather than allowing them to corrupt
+the EDR.
+
+<center><table width=90% bgcolor="#e0e0e0" border=0 cellspacing=0
+cellpadding=10 vspace=10>
+<tr><td align=center>
+<img src="fig4.png" alt="[EDR during ventricular bigeminy]">
+</td></tr>
+<tr><td align=center>
+<em>Figure 4.</em> Figure 4.  EDR (upper trace) derived from the ECG
+during ventricular bigeminy (lower trace). A constant correction angle
+is applied to the measurements obtained from the PVCs before merging
+them with data from normal beats.  Duration: 10 seconds.
+</td></tr>
+</table></center>
+
+<p>
+Additional samples of the EDR can be obtained by measuring the mean
+axis direction during the T-wave, which in general is not parallel to
+that observed during the QRS complex.  T-wave axis measurements may
+be merged into a stream of QRS axis measurements by adding a
+correction angle as described above.  Calculation of the correction
+angle should be made continuously in order to track ischemic changes,
+which can rotate the T-wave axis relative to the QRS axis.
+
+<p>
+If only one ECG lead is available, QRS area measurements from that
+lead can still be used in many cases as an approximation to the
+respiratory signal, The single-lead EDR works best if the lead axis is
+significantly different from the mean electrical axis, in order to
+obtain a relatively large signal.  Since noise does not vary in
+proportion to the signal, the greatest signal-to-noise ratio is
+usually obtained when the lead axis is orthogonal to the mean
+electrical axis.
+
+<p>
+EDR signals may be analyzed to determine the frequency of respiratory
+effort by counting peaks which follow significant level changes.  The
+normal range of respiration-induced axis shift is between 2 and 12
+degrees, peak-to-peak.  The amplitude of the EDR from any given set
+of electrodes is roughly proportional to respiratory tidal volume.
+
+<h2>Evaluation</h2>
+
+<p>
+In order to evaluate the technique, and to explore its limitations,
+simultaneous recordings of EDR and respiration signals were made in
+the sleep laboratory at Beth Israel Hospital in Boston.  Two roughly
+orthogonal ECG chest leads, and chest and abdomen PRT signals, were
+recorded for each of seven patients who were referred to the
+laboratory with diagnosed or suspected sleep apneas.  Of this group,
+obstructive apneas were recorded in four patients, including one who
+also had mixed apneas; central apneas were observed in a fifth
+patient, hypopneas in a sixth, and the seventh patient had normal
+respiration.  Twenty-nine hours of recordings were analyzed using a
+two-lead arrhythmia detector[2] which had been modified to calculate the
+EDR.
+
+<p>
+Figure 5 shows a central apnea, as seen from the chest PRT and from
+the EDR. The central apneas observed were easily identifiable in both
+signals.
+
+<center><table width=90% bgcolor="#e0e0e0" border=0 cellspacing=0
+cellpadding=10 vspace=10>
+<tr><td align=center>
+<img src="fig5.png" alt="[Central apnea]">
+</td></tr>
+<tr><td align=center>
+<em>Figure 5.</em>  Central apnea.  Lower trace: chest PRT; upper trace: EDR.
+Duration: 30 seconds.
+</td></tr>
+</table></center>
+
+<p>
+Figure 6 shows a rather remarkable event which begins with a 45-second
+obstructive apnea (the beginning is not shown).  After nearly 35
+seconds have passed, several sinus pauses occur, culminating in a 5.2
+second asystole.  Shortly after the heartbeat resumes, a central apnea
+begins, and persists for 15 seconds.  The figure shows a tidal volume
+signal formed by combining the chest and abdomen PRT signals, and a
+single-lead EDR (the second ECG lead was not recorded during this
+event).  The obstructive apnea cannot be unambiguously diagnosed from
+the single-lead EDR in this case, but the central apnea is quite
+clear.
+
+<center><table width=90% bgcolor="#e0e0e0" border=0 cellspacing=0
+cellpadding=10 vspace=10>
+<tr><td align=center>
+<img src="fig6.png" alt="[Mixed apnea]">
+</td></tr>
+<tr><td align=center>
+<em>Figure 6.</em>  Mixed apnea.  Lower trace: tidal volume (from chest and
+abdominal PRT signals); upper trace: single-lead EDR from ECG in center
+trace.  Duration: 35 seconds.
+</td></tr>
+</table></center>
+
+<p>
+The arrhythmia in this case is the result of a respiratory
+disturbance, and its clinical significance can be appreciated only if
+this is known.  A cardiac pacemaker is not indicated on the basis of
+this asystole.
+
+<p>
+Reliable detection of obstructive apneas using indirect techniques
+requires both chest and abdominal measurements, since persistent
+respiratory efforts during obstructive apneas are often
+indistinguishable from normal respiration on the basis of a single
+signal.  If both measurements are available, obstructive apneas are
+indicated by out-of-phase signals ("paradoxical respiration"), which
+cancel each other when added together if the instrument has been
+calibrated properly.  Often the amplitude of each signal is
+substantially lowered during obstructive apnea, and this
+characteristic is shared by the EDR (figure 7).  Although some
+episodes may not be detectable on the basis of the EDR, it appears
+unlikely that chronic obstructive apnea could go unnoticed using this
+technique.
+
+<center><table width=90% bgcolor="#e0e0e0" border=0 cellspacing=0
+cellpadding=10 vspace=10>
+<tr><td align=center>
+<img src="fig7.png" alt="[Obstructive apnea]">
+</td></tr>
+<tr><td align=center>
+<em>Figure 7.</em>  Obstructive apnea. Duration: 30 seconds.
+</td></tr>
+</table></center>
+
+<p>
+Changes in respiration rate are easily detected (figure 8).  Artifact
+can cause false peaks to appear in the EDR, however, and the best
+strategy for interpreting an apparent sudden increase in rate is to
+ignore it unless it persists for several cycles or reappears in the
+same context.  Since the EDR is sparsely sampled, it night be thought
+to be quite noise-sensitive.  In practice, although noise in the PRT
+signal is sometimes visible in the EDR (figure 9), in many cases the
+EDR is cleaner.
+
+<center><table width=90% bgcolor="#e0e0e0" border=0 cellspacing=0
+cellpadding=10 vspace=10>
+<tr><td align=center>
+<img src="fig8.png" alt="[Hypopnea]">
+</td></tr>
+<tr><td align=center>
+<em>Figure 8.</em>  Hypopnea.  Duration: 30 seconds.
+</td></tr>
+</table></center>
+
+<center><table width=90% bgcolor="#e0e0e0" border=0 cellspacing=0
+cellpadding=10 vspace=10>
+<tr><td align=center>
+<img src="fig9.png" alt="[Noise in PRT and EDR]">
+</td></tr>
+<tr><td align=center>
+<em>Figure 9.</em>  Noise in PRT (lower) and EDR (upper) signala.  Duration: 30
+seconds.
+</td></tr>
+</table></center>
+
+<p>
+Examination of the MIT/BIH and AHA arrhythmia databases [3,4] showed
+that signals qualitatively similar to respiration waveforms could be
+recovered in all cases.  Since no independent respiration measurements
+are available, the fidelity of the recovered signals cannot be
+evaluated.
+
+<p>
+The technique has also been applied successfully to recordings made on
+infants at risk of sudden infant death syndrome (SIDS).  For these
+infants, long-term respiratory monitoring for detection of central
+apnea is of critical importance.  Derivation of a respiratory signal
+from the ECG offers the possibility of reducing the number of
+transducers needed for monitoring SIDS infants.
+
+<h2>Conclusions</h2>
+
+<p>
+Beat-by-beat measurements of mean cardiac electrical axis direction
+relative to lead axis direction have been shown to be strongly
+correlated with conventional measurements of respiration.  The
+phenomenon has been observed in a wide variety of data.  The frequency
+of respiratory efforts may be measured easily and accurately from the
+ECG-derived respiration (EDR) signal.  Respiratory disturbances which
+are reflected in changes of respiration frequency are clearly
+observable in the EDR.  Disturbances which are reflected only in tidal
+volume changes, such as obstructive apneas, may not always be detected
+using this method, although tidal volume changes are often visible in
+the EDR.
+
+<p>
+The technique is computationally simple, and applicable to any type of
+automated ECG analysis. It can be incorporated into real-time
+arrhythmia monitors as well as tape scanning systems without the need
+for additional transducers or hardware redesign.  Although the method
+works best when two orthogonal ECG leads are available, it is possible
+to generate an EDR from only one lead.  With an insignificant amount
+of additional computation, any automated system for ECG analysis can
+use this technique to produce significant, previously unavailable
+information of clinical value.
+
+<h2>Acknowledgments</h2>
+
+<p>
+The authors wish to thank M.  Mograss and N. Logowitz of the Beth
+Israel Hospital Sleep Laboratory for their assistance, advice, and
+encouragement; and F.  Pinciroli of the Politecnico di Milano, whose
+idea for improving ECG signal quality provided the impetus for the
+present study.
+
+<h2>References</h2>
+
+<ol>
+<li> Pellegrini, A., Pinciroli, F., Rossi, R., and Vergani, L.  Virtual
+leads for ambulatory ECG monitoring: Remarks on the persistency of
+their direction.  <em>Computers in Biomedical Research</em>, 18:62-78.  1985.
+
+<li> Moody, G.B., and Mark, R.G.  Development and evaluation of a
+two-lead EKG analysis program. <em>Computers in Cardiology</em>, 9:39-44.  Long
+Beach, California: IEEE Computer Society.  1982.
+
+<li> Mark, R., Schluter, P., Moody, G., Devlin, P., and Chernoff, D.
+An annotated database for evaluating arrhythmia detectors. In
+<em>Frontiers of Engineering in Health Care</em> pp. 205-210. Proc. 4th Annual
+Conf.  IEEE Engineering in Medicine and Biology Society.  1982.
+
+<li> Hermes, R. and Oliver, G.  Use of the American Heart Association
+database.  In <em>Ambulatory Electrocardiographic Recording</em>, pp.  165-181.
+Eds.  Wenger, N., Mock, M., and Ringqvist, R. Yearbook Med. Pub.
+1980.
+</ol>
+</body>
+</html>

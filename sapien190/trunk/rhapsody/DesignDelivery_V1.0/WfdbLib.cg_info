@@ -1,0 +1,299 @@
+I-Logix-RPY-Archive version 8.5.2 * 1159120
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 12;
+	- value = "c:\\iha\\ti-irts\\sapien190\\rhapsody\\design\\mainwfdbcomponent.cpp" 4.30.2010::7:34:5
+	"c:\\iha\\ti-irts\\sapien190\\rhapsody\\design\\mainwfdbcomponent.h" 4.30.2010::7:34:5
+	"c:\\iha\\ti-irts\\sapien190\\rhapsody\\design\\wfdb\\annot.c" 4.28.2010::20:6:15
+	"c:\\iha\\ti-irts\\sapien190\\rhapsody\\design\\wfdb\\calib.c" 4.28.2010::20:6:21
+	"c:\\iha\\ti-irts\\sapien190\\rhapsody\\design\\wfdb\\ecgcodes.h" 4.28.2010::20:6:25
+	"c:\\iha\\ti-irts\\sapien190\\rhapsody\\design\\wfdb\\ecgmap.h" 4.28.2010::20:6:29
+	"c:\\iha\\ti-irts\\sapien190\\rhapsody\\design\\wfdb\\edr.c" 4.28.2010::20:17:51
+	"c:\\iha\\ti-irts\\sapien190\\rhapsody\\design\\wfdb\\signal.c" 4.28.2010::20:6:33
+	"c:\\iha\\ti-irts\\sapien190\\rhapsody\\design\\wfdb\\wfdb.h" 4.28.2010::20:42:13
+	"c:\\iha\\ti-irts\\sapien190\\rhapsody\\design\\wfdb\\wfdbinit.c" 4.28.2010::20:6:45
+	"c:\\iha\\ti-irts\\sapien190\\rhapsody\\design\\wfdb\\wfdbio.c" 4.28.2010::20:6:49
+	"c:\\iha\\ti-irts\\sapien190\\rhapsody\\design\\wfdb\\wfdblib.h" 4.28.2010::20:42:16
+	
+}
+- size = 31;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\wfdb\\wfdbinit";
+	- _id = GUID f0673774-bfb7-45e6-a009-62934b030a1f;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 1d6ae7dd-6ed0-460f-9aee-bb3695c0ec74;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\WfdbLib";
+	- _id = GUID 9a19293e-b1ee-41f5-af56-00f403fcfd7c;
+}
+- genTime = 4.30.2010::7:34:5;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\wfdb\\ecgcodes";
+	- _id = GUID d7da0fe3-f11c-4c6e-86a0-6e8b371faae7;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 0598a1dc-2eaf-4163-bf79-47c58e8ac446;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 5402a762-ed5d-4d85-b6ee-e50911a7592b;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "IComponent";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent";
+	- _id = GUID 4c889174-623b-45f4-a4aa-fbd6880e010b;
+}
+- genTime = 4.30.2010::7:34:5;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 8820bd62-1187-4e65-b1bb-df2bea9f8982;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\wfdb\\wfdb";
+	- _id = GUID cc1939cd-c4e3-43fd-8e6c-5658cc1016c0;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\wfdb\\signal";
+	- _id = GUID d33b235c-93b4-4fde-a359-b0d0cd50d055;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\wfdb\\wfdblib";
+	- _id = GUID 92b1548d-ed54-489a-bcbc-c8a07520b6ec;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID b7a15448-d05c-43f0-bec0-feda16c48b70;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 78266dee-fe44-4674-8ba9-38d0f01cb208;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 8ad5966a-0028-4027-8e11-1ded982306e0;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 42cc4aea-7856-4f68-814b-479fd04c6ef1;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\stdio";
+	- _id = GUID 5a91f8c1-34c5-4b5a-ba58-ba3128f2dafe;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\wfdb\\wfdbio";
+	- _id = GUID f0d7a70c-fdd7-48bd-b252-26888ac5c897;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\time";
+	- _id = GUID d7ad62a1-89eb-44a1-b5e3-640dec4e5be5;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\wfdb\\edr";
+	- _id = GUID cf02fcd0-67f5-4041-8de6-cdc43da0c171;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID a4d126c6-ff46-4720-bf84-bb3bc6a722db;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID a9c75902-3efd-4339-b45f-33ed6f3469a9;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\wfdb\\ecgmap";
+	- _id = GUID dd51b182-a198-4dd5-a4a5-9f26431d212a;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\wfdb\\annot";
+	- _id = GUID 7c6405a0-ee6c-4242-bf01-7a202ffef3ec;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\wfdb\\calib";
+	- _id = GUID 7fa4c740-9c2c-4c27-8074-45f27367a5a5;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 82d828d7-de29-4bee-9a53-28cb5a9730e6;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\math";
+	- _id = GUID de8dbb38-4942-48a7-b9b7-cc6423f5d1eb;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 4d72c6ea-bcca-49f8-a6d2-a3847d188b86;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "WfdbComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "WfdbComponent\\Files\\string";
+	- _id = GUID 9b7ad2b0-b4f2-4a72-9b58-e406b6f0da3b;
+}
+- genTime = 4.30.2010::7:31:41;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID e273f482-52ce-4c47-8ce9-2762c7eed299;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID c06d3057-3f0d-4b63-91f6-d734bb22e0ec;
+}
+- genTime = 4.30.2010::7:32:30;
+- hElement = { IHandle 
+	- _m2Class = "IProject";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Project";
+	- _id = GUID 4cd0f270-57c7-4035-9363-a8b2b765b5da;
+}
+- genTime = 4.30.2010::7:32:31;
+
