@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: ExtOutAnalogue
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Thu, 13, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/ExtOutAnalogue.h
 *********************************************************************/
 
@@ -30,6 +30,9 @@
 #include "math.h"
 //## auto_generated
 #include "wfdb/ecgcodes.h"
+//## link itsDAC
+class DAC;
+
 //## package AbstractHW
 
 //## class ExtOutAnalogue
@@ -50,6 +53,11 @@ public :
     void OutputSample(int sample);
     
     ////    Additional operations    ////
+
+protected :
+
+    //## auto_generated
+    void cleanUpRelations();
 
 private :
 
@@ -93,6 +101,18 @@ private :
 protected :
 
     int channel;		//## attribute channel
+
+public :
+
+    //## auto_generated
+    DAC* getItsDAC() const;
+    
+    //## auto_generated
+    void setItsDAC(DAC* p_DAC);
+
+protected :
+
+    DAC* itsDAC;		//## link itsDAC
 };
 
 #endif

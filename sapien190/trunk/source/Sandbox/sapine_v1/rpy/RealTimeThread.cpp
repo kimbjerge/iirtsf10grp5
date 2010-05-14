@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: RealTimeThread
-//!	Generated Date	: Sun, 9, May 2010  
+//!	Generated Date	: Thu, 13, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RealTimeThread.cpp
 *********************************************************************/
 
@@ -153,10 +153,12 @@ void RealTimeThread::run() {
     	}   
         CheckFrameBuffer();
         LogTime();
-    }
+    }   
     // Ensure that Distributer thread will die
+    #ifdef _LINUX                  
     if ((itsFrameBuffer != NULL) && (itsFrameBufferPool != NULL))
-            itsFrameBufferPool->SendMail(itsFrameBuffer);
+       	itsFrameBufferPool->SendMail(itsFrameBuffer);
+    #endif
     //#]
 }
 

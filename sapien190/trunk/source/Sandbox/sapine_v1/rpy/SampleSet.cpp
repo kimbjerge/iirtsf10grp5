@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: SampleSet
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Thu, 13, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SampleSet.cpp
 *********************************************************************/
 
@@ -84,6 +84,14 @@ void SampleSet::SetSample(int idx, WFDB_Sample value, WFDB_Annotation ann) {
     	itsSample[idx].setAnnotation(ann);
     }
     //#]
+}
+
+WFDB_Annotation SampleSet::getAnnotation() const {
+    return annotation;
+}
+
+void SampleSet::setAnnotation(WFDB_Annotation p_annotation) {
+    annotation = p_annotation;
 }
 
 /*********************************************************************
