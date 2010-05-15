@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: PatientModel
-//!	Generated Date	: Thu, 13, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/PatientModel.h
 *********************************************************************/
 
@@ -36,6 +36,9 @@
 #include "Monitor.h"
 //## dependency ExtInputs
 class ExtInputs;
+
+//## link itsIPumpProtocol
+class IPumpProtocol;
 
 //## link itsSampleSet
 class SampleSet;
@@ -110,8 +113,6 @@ public :
 
 protected :
 
-    ExtInputs* itsExtInputs;		//## link itsExtInputs
-    
     PhysioModel* itsPhysioModel;		//## link itsPhysioModel
     
     Medicine* itsMedicine;		//## link itsMedicine
@@ -132,12 +133,6 @@ public :
     
     //## operation PatientModel()
     PatientModel();
-    
-    //## auto_generated
-    ExtInputs* getItsExtInputs() const;
-    
-    //## auto_generated
-    void setItsExtInputs(ExtInputs* p_ExtInputs);
     
     //## auto_generated
     Medicine* getItsMedicine() const;
@@ -170,15 +165,6 @@ protected :
 
 public :
 
-    //## auto_generated
-    void __setItsExtInputs(ExtInputs* p_ExtInputs);
-    
-    //## auto_generated
-    void _setItsExtInputs(ExtInputs* p_ExtInputs);
-    
-    //## auto_generated
-    void _clearItsExtInputs();
-    
     //## auto_generated
     SampleSet* getItsSampleSet() const;
     
@@ -214,6 +200,16 @@ public :
 
     //## operation AlternateRecord(Record*)
     bool AlternateRecord(Record* aRecord);
+    
+    //## auto_generated
+    IPumpProtocol* getItsIPumpProtocol() const;
+    
+    //## auto_generated
+    void setItsIPumpProtocol(IPumpProtocol* p_IPumpProtocol);
+
+protected :
+
+    IPumpProtocol* itsIPumpProtocol;		//## link itsIPumpProtocol
 };
 
 #endif

@@ -3,13 +3,13 @@
 	Login		: KBE
 	Component	: TargetComponent 
 	Configuration 	: Target
-	Model Element	: Parameter
+	Model Element	: GainParam
 //!	Generated Date	: Sat, 15, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Parameter.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/GainParam.h
 *********************************************************************/
 
-#ifndef Parameter_H
-#define Parameter_H
+#ifndef GainParam_H
+#define GainParam_H
 
 //#[ ignore
 #ifdef _MSC_VER
@@ -32,39 +32,43 @@
 #include "wfdb/ecgcodes.h"
 //## auto_generated
 #include "Continuous.h"
-//## dependency PatientModel
-class PatientModel;
-
-//## dependency PhysioModel
-class PhysioModel;
-
-//## dependency SimulatorRealtime
-class SimulatorRealtime;
-
+//## class GainParam
+#include "Parameter.h"
 //## package Application::Continuous
 
-//## class Parameter
-class Parameter {
+//## class GainParam
+class GainParam : public Parameter {
     ////    Constructors and destructors    ////
     
 public :
 
     //## auto_generated
-    Parameter();
+    GainParam();
     
     //## auto_generated
-    virtual ~Parameter();
+    virtual ~GainParam();
     
     ////    Operations    ////
     
     //## operation Execute(SimulatorRealtime*)
-    virtual void Execute(SimulatorRealtime* ps) = 0;
+    virtual void Execute(SimulatorRealtime* ps);
     
-    //## operation GetPhysioModel(SimulatorRealtime*)
-    PhysioModel* GetPhysioModel(SimulatorRealtime* ps);
+    ////    Additional operations    ////
+    
+    //## auto_generated
+    float getGain() const;
+    
+    //## auto_generated
+    void setGain(float p_gain);
+    
+    ////    Attributes    ////
+
+protected :
+
+    float gain;		//## attribute gain
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Parameter.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/GainParam.h
 *********************************************************************/

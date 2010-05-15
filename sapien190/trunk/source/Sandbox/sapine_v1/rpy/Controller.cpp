@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Controller
-//!	Generated Date	: Thu, 13, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Controller.cpp
 *********************************************************************/
 
@@ -12,20 +12,19 @@
 #include "Controller.h"
 //## link itsLCDScreen
 #include "LCDScreen.h"
-//## link itsParameter
+//## dependency Parameter
 #include "Parameter.h"
-//## link itsPatientModel
-#include "PatientModel.h"
 //## link itsScenario
 #include "Scenario.h"
+//## link itsSimulatorRealtime
+#include "SimulatorRealtime.h"
 //## package Application::Discrete
 
 //## class Controller
 Controller::Controller() {
     itsLCDScreen = NULL;
-    itsParameter = NULL;
-    itsPatientModel = NULL;
     itsScenario = NULL;
+    itsSimulatorRealtime = NULL;
 }
 
 Controller::~Controller() {
@@ -44,26 +43,6 @@ void Controller::setItsLCDScreen(LCDScreen* p_LCDScreen) {
     _setItsLCDScreen(p_LCDScreen);
 }
 
-Parameter* Controller::getItsParameter() const {
-    return itsParameter;
-}
-
-void Controller::setItsParameter(Parameter* p_Parameter) {
-    if(p_Parameter != NULL)
-        {
-            p_Parameter->_setItsController(this);
-        }
-    _setItsParameter(p_Parameter);
-}
-
-PatientModel* Controller::getItsPatientModel() const {
-    return itsPatientModel;
-}
-
-void Controller::setItsPatientModel(PatientModel* p_PatientModel) {
-    itsPatientModel = p_PatientModel;
-}
-
 Scenario* Controller::getItsScenario() const {
     return itsScenario;
 }
@@ -76,6 +55,14 @@ void Controller::setItsScenario(Scenario* p_Scenario) {
     _setItsScenario(p_Scenario);
 }
 
+SimulatorRealtime* Controller::getItsSimulatorRealtime() const {
+    return itsSimulatorRealtime;
+}
+
+void Controller::setItsSimulatorRealtime(SimulatorRealtime* p_SimulatorRealtime) {
+    itsSimulatorRealtime = p_SimulatorRealtime;
+}
+
 void Controller::cleanUpRelations() {
     if(itsLCDScreen != NULL)
         {
@@ -86,19 +73,6 @@ void Controller::cleanUpRelations() {
                 }
             itsLCDScreen = NULL;
         }
-    if(itsParameter != NULL)
-        {
-            Controller* p_Controller = itsParameter->getItsController();
-            if(p_Controller != NULL)
-                {
-                    itsParameter->__setItsController(NULL);
-                }
-            itsParameter = NULL;
-        }
-    if(itsPatientModel != NULL)
-        {
-            itsPatientModel = NULL;
-        }
     if(itsScenario != NULL)
         {
             Controller* p_Controller = itsScenario->getItsController();
@@ -107,6 +81,10 @@ void Controller::cleanUpRelations() {
                     itsScenario->__setItsController(NULL);
                 }
             itsScenario = NULL;
+        }
+    if(itsSimulatorRealtime != NULL)
+        {
+            itsSimulatorRealtime = NULL;
         }
 }
 
@@ -124,22 +102,6 @@ void Controller::_setItsLCDScreen(LCDScreen* p_LCDScreen) {
 
 void Controller::_clearItsLCDScreen() {
     itsLCDScreen = NULL;
-}
-
-void Controller::__setItsParameter(Parameter* p_Parameter) {
-    itsParameter = p_Parameter;
-}
-
-void Controller::_setItsParameter(Parameter* p_Parameter) {
-    if(itsParameter != NULL)
-        {
-            itsParameter->__setItsController(NULL);
-        }
-    __setItsParameter(p_Parameter);
-}
-
-void Controller::_clearItsParameter() {
-    itsParameter = NULL;
 }
 
 void Controller::__setItsScenario(Scenario* p_Scenario) {

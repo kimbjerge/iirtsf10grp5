@@ -3,13 +3,13 @@
 	Login		: KBE
 	Component	: TargetComponent 
 	Configuration 	: Target
-	Model Element	: Parameter
+	Model Element	: RateParam
 //!	Generated Date	: Sat, 15, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Parameter.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RateParam.cpp
 *********************************************************************/
 
 //## auto_generated
-#include "Parameter.h"
+#include "RateParam.h"
 //## dependency PatientModel
 #include "PatientModel.h"
 //## dependency PhysioModel
@@ -18,23 +18,27 @@
 #include "SimulatorRealtime.h"
 //## package Application::Continuous
 
-//## class Parameter
-Parameter::Parameter() {
+//## class RateParam
+RateParam::RateParam() {
 }
 
-Parameter::~Parameter() {
+RateParam::~RateParam() {
 }
 
-PhysioModel* Parameter::GetPhysioModel(SimulatorRealtime* ps) {
-    //#[ operation GetPhysioModel(SimulatorRealtime*)
-    PatientModel *pm = ps->getItsPatientModel(); 
-    if (pm != NULL)
-       return pm->getItsPhysioModel(); 
-    else
-       return NULL;
+void RateParam::Execute(SimulatorRealtime* ps) {
+    //#[ operation Execute(SimulatorRealtime*)
+    ps->SetSampleRate(rate);
     //#]
 }
 
+int RateParam::getRate() const {
+    return rate;
+}
+
+void RateParam::setRate(int p_rate) {
+    rate = p_rate;
+}
+
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Parameter.cpp
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RateParam.cpp
 *********************************************************************/

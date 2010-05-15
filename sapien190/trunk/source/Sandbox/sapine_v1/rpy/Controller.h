@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Controller
-//!	Generated Date	: Thu, 13, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Controller.h
 *********************************************************************/
 
@@ -33,14 +33,14 @@
 //## link itsLCDScreen
 class LCDScreen;
 
-//## link itsParameter
+//## dependency Parameter
 class Parameter;
-
-//## link itsPatientModel
-class PatientModel;
 
 //## link itsScenario
 class Scenario;
+
+//## link itsSimulatorRealtime
+class SimulatorRealtime;
 
 //## package Application::Discrete
 
@@ -65,22 +65,16 @@ public :
     void setItsLCDScreen(LCDScreen* p_LCDScreen);
     
     //## auto_generated
-    Parameter* getItsParameter() const;
-    
-    //## auto_generated
-    void setItsParameter(Parameter* p_Parameter);
-    
-    //## auto_generated
-    PatientModel* getItsPatientModel() const;
-    
-    //## auto_generated
-    void setItsPatientModel(PatientModel* p_PatientModel);
-    
-    //## auto_generated
     Scenario* getItsScenario() const;
     
     //## auto_generated
     void setItsScenario(Scenario* p_Scenario);
+    
+    //## auto_generated
+    SimulatorRealtime* getItsSimulatorRealtime() const;
+    
+    //## auto_generated
+    void setItsSimulatorRealtime(SimulatorRealtime* p_SimulatorRealtime);
 
 protected :
 
@@ -91,11 +85,9 @@ protected :
     
     LCDScreen* itsLCDScreen;		//## link itsLCDScreen
     
-    Parameter* itsParameter;		//## link itsParameter
-    
-    PatientModel* itsPatientModel;		//## link itsPatientModel
-    
     Scenario* itsScenario;		//## link itsScenario
+    
+    SimulatorRealtime* itsSimulatorRealtime;		//## link itsSimulatorRealtime
     
     ////    Framework operations    ////
 
@@ -109,15 +101,6 @@ public :
     
     //## auto_generated
     void _clearItsLCDScreen();
-    
-    //## auto_generated
-    void __setItsParameter(Parameter* p_Parameter);
-    
-    //## auto_generated
-    void _setItsParameter(Parameter* p_Parameter);
-    
-    //## auto_generated
-    void _clearItsParameter();
     
     //## auto_generated
     void __setItsScenario(Scenario* p_Scenario);

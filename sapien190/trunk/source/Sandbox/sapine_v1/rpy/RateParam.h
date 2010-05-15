@@ -3,13 +3,13 @@
 	Login		: KBE
 	Component	: TargetComponent 
 	Configuration 	: Target
-	Model Element	: Parameter
+	Model Element	: RateParam
 //!	Generated Date	: Sat, 15, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Parameter.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RateParam.h
 *********************************************************************/
 
-#ifndef Parameter_H
-#define Parameter_H
+#ifndef RateParam_H
+#define RateParam_H
 
 //#[ ignore
 #ifdef _MSC_VER
@@ -32,6 +32,8 @@
 #include "wfdb/ecgcodes.h"
 //## auto_generated
 #include "Continuous.h"
+//## class RateParam
+#include "Parameter.h"
 //## dependency PatientModel
 class PatientModel;
 
@@ -43,28 +45,39 @@ class SimulatorRealtime;
 
 //## package Application::Continuous
 
-//## class Parameter
-class Parameter {
+//## class RateParam
+class RateParam : public Parameter {
     ////    Constructors and destructors    ////
     
 public :
 
     //## auto_generated
-    Parameter();
+    RateParam();
     
     //## auto_generated
-    virtual ~Parameter();
+    virtual ~RateParam();
     
     ////    Operations    ////
     
     //## operation Execute(SimulatorRealtime*)
-    virtual void Execute(SimulatorRealtime* ps) = 0;
+    virtual void Execute(SimulatorRealtime* ps);
     
-    //## operation GetPhysioModel(SimulatorRealtime*)
-    PhysioModel* GetPhysioModel(SimulatorRealtime* ps);
+    ////    Additional operations    ////
+    
+    //## auto_generated
+    int getRate() const;
+    
+    //## auto_generated
+    void setRate(int p_rate);
+    
+    ////    Attributes    ////
+
+protected :
+
+    int rate;		//## attribute rate
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Parameter.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RateParam.h
 *********************************************************************/

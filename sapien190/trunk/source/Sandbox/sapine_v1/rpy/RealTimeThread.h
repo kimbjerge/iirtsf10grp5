@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: RealTimeThread
-//!	Generated Date	: Thu, 13, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RealTimeThread.h
 *********************************************************************/
 
@@ -168,8 +168,8 @@ public :
     //## operation CheckFrameBuffer()
     void CheckFrameBuffer();
     
-    //## operation SetSampleTime(unsigned long)
-    void SetSampleTime(unsigned long time);
+    //## operation SetSampleRate(int)
+    void SetSampleRate(int rate);
 
 private :
 
@@ -201,6 +201,18 @@ protected :
     unsigned long prevTime;		//## attribute prevTime
     
     unsigned long sampleTime;		//## attribute sampleTime
+
+public :
+
+    //## auto_generated
+    int getSampleRate() const;
+    
+    //## auto_generated
+    void setSampleRate(int p_sampleRate);
+
+protected :
+
+    int sampleRate;		//## attribute sampleRate
 };
 
 #endif

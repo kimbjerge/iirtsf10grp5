@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: ECGMedicineAdjust
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/ECGMedicineAdjust.cpp
 *********************************************************************/
 
@@ -25,6 +25,7 @@ int ECGMedicineAdjust::Output(SampleSet& in, SampleSet& out) {
     //#[ operation Output(SampleSet,SampleSet)
     for (int idx = 0; idx < out.getNum(); idx++)
     	out.SetSample(idx, *in.GetSample(idx));
+    out.SetAnnotation(out.GetAnnotation());
     return 0;
     //#]
 }

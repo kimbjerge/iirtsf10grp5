@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: SampleSet
-//!	Generated Date	: Thu, 13, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SampleSet.cpp
 *********************************************************************/
 
@@ -48,13 +48,9 @@ void SampleSet::setNum(int p_num) {
     num = p_num;
 }
 
-WFDB_Annotation SampleSet::GetAnnotation(int idx) {
-    //#[ operation GetAnnotation(int)
-    
-     if (idx < num)
-    	return itsSample[idx].getAnnotation();
-     else 
-     	return Sample::FactoryAnnotation(NOTQRS);
+WFDB_Annotation SampleSet::GetAnnotation() {
+    //#[ operation GetAnnotation()
+    return annotation;
      
     //#]
 }
@@ -64,15 +60,14 @@ void SampleSet::SetSample(int idx, WFDB_Sample value) {
     if (idx < num)
     {
     	itsSample[idx].setValue(value);
-    	itsSample[idx].setAnnotation(Sample::FactoryAnnotation(NORMAL));
     }
     //#]
 }
 
-void SampleSet::SetAnnotation(int idx, WFDB_Annotation annotation) {
-    //#[ operation SetAnnotation(int,WFDB_Annotation)
-     if (idx < num)
-    	itsSample[idx].setAnnotation(annotation);
+void SampleSet::SetAnnotation(WFDB_Annotation _annotation) {
+    //#[ operation SetAnnotation(WFDB_Annotation)
+    annotation = _annotation;
+    
     //#]
 }
 
@@ -81,8 +76,44 @@ void SampleSet::SetSample(int idx, WFDB_Sample value, WFDB_Annotation ann) {
     if (idx < num)
     {
     	itsSample[idx].setValue(value);
-    	itsSample[idx].setAnnotation(ann);
+       	SetAnnotation(ann);
     }
+    //#]
+}
+
+WFDB_Sample SampleSet::GetSampleValue(int idx) {
+    //#[ operation GetSampleValue(int)
+    if (idx < num)
+    	return itsSample[idx].getValue();
+    else
+    	return 0;
+    //#]
+}
+
+WFDB_Time SampleSet::GetSampleID() {
+    //#[ operation GetSampleID()
+    return sampleID;
+    
+    //#]
+}
+
+void SampleSet::SetSampleID(WFDB_Time _sampleID) {
+    //#[ operation SetSampleID(WFDB_Time)
+    sampleID = _sampleID;
+    
+    //#]
+}
+
+WFDB_Annotation SampleSet::FactoryAnnotation(char anntyp) {
+    //#[ operation FactoryAnnotation(char)
+    WFDB_Annotation ann;
+    ann.time = 0;
+    ann.anntyp = anntyp;
+    ann.subtyp = 0;
+    ann.chan  = 0; 
+    ann.num = 0;
+    ann.aux = 0; 
+    return ann;
     //#]
 }
 
@@ -92,6 +123,14 @@ WFDB_Annotation SampleSet::getAnnotation() const {
 
 void SampleSet::setAnnotation(WFDB_Annotation p_annotation) {
     annotation = p_annotation;
+}
+
+WFDB_Time SampleSet::getSampleID() const {
+    return sampleID;
+}
+
+void SampleSet::setSampleID(WFDB_Time p_sampleID) {
+    sampleID = p_sampleID;
 }
 
 /*********************************************************************

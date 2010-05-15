@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Gain
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Gain.cpp
 *********************************************************************/
 
@@ -28,9 +28,10 @@ int Gain::Output(SampleSet& in, SampleSet& out) {
     {   
     	Sample *s = in.GetSample(idx);
     	WFDB_Sample sample = (WFDB_Sample)((float)(s->getValue())*gain); 
-    	WFDB_Annotation ann = s->getAnnotation();
-    	out.SetSample(idx, sample, ann); 
+    	out.SetSample(idx, sample); 
     }
+    WFDB_Annotation ann = out.GetAnnotation();
+    out.SetAnnotation(ann); 
     return 0;
     //#]
 }

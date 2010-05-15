@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: SimulatorRealtime
-//!	Generated Date	: Thu, 13, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SimulatorRealtime.h
 *********************************************************************/
 
@@ -98,8 +98,8 @@ public :
     //## operation CreateSimRecord()
     Record* CreateSimRecord();
     
-    //## operation CreateWfdbRecord(char*)
-    Record* CreateWfdbRecord(char* name);
+    //## operation CreateWfdbRecord(char*,char*)
+    Record* CreateWfdbRecord(char* name, char* annotation);
     
     //## operation SetMedicine(MEDICINE_TYPES)
     void SetMedicine(const MEDICINE_TYPES& type);
@@ -178,8 +178,8 @@ public :
     //## operation ~SimulatorRealtime()
     ~SimulatorRealtime();
     
-    //## operation AssignRecord(Record*)
-    bool AssignRecord(Record* aRecord);
+    //## operation SetRecord(Record*)
+    bool SetRecord(Record* aRecord);
     
     //## operation StartSimulation()
     void StartSimulation();

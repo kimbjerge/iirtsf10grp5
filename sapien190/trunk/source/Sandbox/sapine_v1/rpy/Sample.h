@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Sample
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Sample.h
 *********************************************************************/
 
@@ -48,16 +48,7 @@ public :
     
     ////    Operations    ////
     
-    //## operation FactoryAnnotation(char)
-    static WFDB_Annotation FactoryAnnotation(char anntyp);
-    
     ////    Additional operations    ////
-    
-    //## auto_generated
-    WFDB_Annotation getAnnotation() const;
-    
-    //## auto_generated
-    void setAnnotation(WFDB_Annotation p_annotation);
     
     //## auto_generated
     WFDB_Sample getValue() const;
@@ -69,9 +60,19 @@ public :
 
 protected :
 
-    WFDB_Annotation annotation;		//## attribute annotation
-    
     WFDB_Sample value;		//## attribute value
+
+public :
+
+    //## auto_generated
+    float getGain() const;
+    
+    //## auto_generated
+    void setGain(float p_gain);
+
+protected :
+
+    float gain;		//## attribute gain
 };
 
 #endif

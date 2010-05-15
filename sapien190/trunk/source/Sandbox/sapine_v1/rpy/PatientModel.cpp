@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: PatientModel
-//!	Generated Date	: Thu, 13, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/PatientModel.cpp
 *********************************************************************/
 
@@ -22,6 +22,8 @@
 #include "RecordIterator.h"
 //## link itsSampleSet
 #include "SampleSet.h"
+//## link itsIPumpProtocol
+#include "IPumpProtocol.h"
 //## package Application::Continuous
 
 //## class PatientModel
@@ -91,7 +93,7 @@ PatientModel::~PatientModel() {
 }
 
 PatientModel::PatientModel() : pause(false) {
-    itsExtInputs = NULL;
+    itsIPumpProtocol = NULL;
     itsMedicine = NULL;
     itsPhysioModel = NULL;
     itsRecord = NULL;
@@ -99,18 +101,6 @@ PatientModel::PatientModel() : pause(false) {
     itsSampleSet = NULL;
     //#[ operation PatientModel()
     //#]
-}
-
-ExtInputs* PatientModel::getItsExtInputs() const {
-    return itsExtInputs;
-}
-
-void PatientModel::setItsExtInputs(ExtInputs* p_ExtInputs) {
-    if(p_ExtInputs != NULL)
-        {
-            p_ExtInputs->_setItsPatientModel(this);
-        }
-    _setItsExtInputs(p_ExtInputs);
 }
 
 Medicine* PatientModel::getItsMedicine() const {
@@ -146,14 +136,9 @@ void PatientModel::setItsRecordIterator(RecordIterator* p_RecordIterator) {
 }
 
 void PatientModel::cleanUpRelations() {
-    if(itsExtInputs != NULL)
+    if(itsIPumpProtocol != NULL)
         {
-            PatientModel* p_PatientModel = itsExtInputs->getItsPatientModel();
-            if(p_PatientModel != NULL)
-                {
-                    itsExtInputs->__setItsPatientModel(NULL);
-                }
-            itsExtInputs = NULL;
+            itsIPumpProtocol = NULL;
         }
     if(itsMedicine != NULL)
         {
@@ -175,22 +160,6 @@ void PatientModel::cleanUpRelations() {
         {
             itsSampleSet = NULL;
         }
-}
-
-void PatientModel::__setItsExtInputs(ExtInputs* p_ExtInputs) {
-    itsExtInputs = p_ExtInputs;
-}
-
-void PatientModel::_setItsExtInputs(ExtInputs* p_ExtInputs) {
-    if(itsExtInputs != NULL)
-        {
-            itsExtInputs->__setItsPatientModel(NULL);
-        }
-    __setItsExtInputs(p_ExtInputs);
-}
-
-void PatientModel::_clearItsExtInputs() {
-    itsExtInputs = NULL;
 }
 
 SampleSet* PatientModel::getItsSampleSet() const {
@@ -238,6 +207,14 @@ bool PatientModel::AlternateRecord(Record* aRecord) {
     }
     return false;
     //#]
+}
+
+IPumpProtocol* PatientModel::getItsIPumpProtocol() const {
+    return itsIPumpProtocol;
+}
+
+void PatientModel::setItsIPumpProtocol(IPumpProtocol* p_IPumpProtocol) {
+    itsIPumpProtocol = p_IPumpProtocol;
 }
 
 /*********************************************************************

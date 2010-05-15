@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: ECGtoEDR
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/ECGtoEDR.cpp
 *********************************************************************/
 
@@ -25,10 +25,11 @@ int ECGtoEDR::Output(SampleSet& in, SampleSet& out) {
     //#[ operation Output(SampleSet,SampleSet)
     for (int idx = 0; idx < out.getNum(); idx++)
     {
-    	WFDB_Sample sample = (WFDB_Sample)((float)in.GetSample(idx)->getValue()*0.5); 
-    	WFDB_Annotation ann = in.GetSample(idx)->getAnnotation();
-    	out.SetSample(idx, sample, ann); 
+    	WFDB_Sample sample = (WFDB_Sample)((float)in.GetSampleValue(idx)*0.5); 
+    	out.SetSample(idx, sample); 
     }
+    WFDB_Annotation ann = in.GetAnnotation();
+    out.SetAnnotation(ann); 
     return 0;
     //#]
 }

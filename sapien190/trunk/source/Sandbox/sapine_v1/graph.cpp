@@ -87,7 +87,7 @@ void Graph::changeEvent(QEvent *e)
 
 void Graph::Update(FrameBuffer* fp) {
     int sample;
-    cout << "FrameBuffer Updated:" << endl;
+    cout << "FrameBuffer Updated Pulse: " << fp->getPulse() << " Rate : " << fp->getSampleRate() << endl;
     fp->First();
     while (!fp->IsDone())
     {
@@ -111,8 +111,8 @@ void Graph::on_simulate_clicked()
         itsSimulatorRealtime->AttachObserver(this); // Observe on frame buffer
         itsSimulatorRealtime->SetSampleRate(sampleRate); // Sample rate default 1 hz (250 hz - Records)
         itsSimulatorRealtime->CreatePatientModel(SimulatorRealtime::Normal); // Create patient model
-        pRecord1 = itsSimulatorRealtime->CreateWfdbRecord("e0104"); offset1 = -250; // Create record for simulation
-        pRecord2 = itsSimulatorRealtime->CreateWfdbRecord("e0103"); offset2 = 200;
+        pRecord1 = itsSimulatorRealtime->CreateWfdbRecord("e0104", "atr"); offset1 = -250; // Create record for simulation
+        pRecord2 = itsSimulatorRealtime->CreateWfdbRecord("e0103", "atr"); offset2 = 200;
         //pRecord2 = itsSimulatorRealtime->CreateSimRecord(); offset2 = 500;
     }
 
@@ -120,7 +120,7 @@ void Graph::on_simulate_clicked()
     {
         pRecord = pRecord1;
         offset = offset1;
-        itsSimulatorRealtime->AssignRecord(pRecord); // Assign a record for simulation
+        itsSimulatorRealtime->SetRecord(pRecord); // Assign a record for simulation
         itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine); // Create and set medicine
         itsSimulatorRealtime->StartSimulation(); // Start simulation
         running = true;
@@ -163,6 +163,15 @@ void Graph::on_sampleRate_changed(int rate)
    }
 }
 
+void Graph::on_gain_changed(double gain)
+{
+    if (itsSimulatorRealtime != 0)
+    {
+        gainParam.setGain(gain);
+        gainParam.Execute(itsSimulatorRealtime);
+    }
+}
+
 void Graph::on_testModel_clicked()
 {
     //SmartPtr<PatientModel> model(new PatientModel);
@@ -174,9 +183,9 @@ void Graph::on_testModel_clicked()
         itsPatientModel->SetStrategy(new NormalModel());
         itsPatientModel->SetMedicine(new Medicine(SimulatorRealtime::Morphine));
         //itsPatientModel->SetRecord(new RecordProxy(new RecordSimulate())); offset = 500;
-        //itsPatientModel->SetRecord(new RecordProxy(new RecordWfdb("100s"))); offset = 1050;
-        //itsPatientModel->SetRecord(new RecordProxy(new RecordWfdb("e0103"))); offset = 200;
-        itsPatientModel->SetRecord(new RecordProxy(new RecordWfdb("e0104"))); offset = -250;
+        //itsPatientModel->SetRecord(new RecordProxy(new RecordWfdb("100s", "atr"))); offset = 1050;
+        //itsPatientModel->SetRecord(new RecordProxy(new RecordWfdb("e0103", "atr"))); offset = 200;
+        itsPatientModel->SetRecord(new RecordProxy(new RecordWfdb("e0104", "atr"))); offset = -250;
     }
     itsPatientModel->StartSimulation();
     for (int i = 0; i < 500; i++)

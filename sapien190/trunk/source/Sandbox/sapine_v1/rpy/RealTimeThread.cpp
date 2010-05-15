@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: RealTimeThread
-//!	Generated Date	: Thu, 13, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/RealTimeThread.cpp
 *********************************************************************/
 
@@ -112,7 +112,7 @@ void RealTimeThread::cleanUpRelations() {
         }
 }
 
-RealTimeThread::RealTimeThread() : computeTime(0), counter(0), itsFrameBuffer(NULL), sampleTime(4000), timeToPulse(10), Thread(PRIORITY_NORMAL,"RealTimeThread") {
+RealTimeThread::RealTimeThread() : computeTime(0), counter(0), itsFrameBuffer(NULL), sampleRate(250), sampleTime(4000), timeToPulse(10), Thread(PRIORITY_NORMAL,"RealTimeThread") {
     {
         for (int pos = 0; pos < 2; pos++) {
         	itsExtOutAnalogue[pos] = NULL;
@@ -131,7 +131,10 @@ RealTimeThread::RealTimeThread() : computeTime(0), counter(0), itsFrameBuffer(NU
 
 void RealTimeThread::GeneratePulse() {
     //#[ operation GeneratePulse()
-    itsSerialProtocol->OutputPulse(itsPatientModel->GetPulse());
+    int pulse = itsPatientModel->GetPulse();
+    itsSerialProtocol->OutputPulse(pulse);
+    if (itsFrameBuffer != NULL)
+    	itsFrameBuffer->setPulse(pulse);
     //#]
 }
 
@@ -188,24 +191,35 @@ void RealTimeThread::setItsFrameBufferPool(FrameBufferPool* p_FrameBufferPool) {
 
 void RealTimeThread::CheckFrameBuffer() {
     //#[ operation CheckFrameBuffer()
+    bool initFrameBuffer = false;
     if (itsFrameBuffer != NULL)
     {            
        	if (itsFrameBuffer->isFull())
        	{   
        		itsFrameBufferPool->SendMail(itsFrameBuffer);
-       		itsFrameBuffer = itsFrameBufferPool->AllocateFrameBuffer();  
+       		itsFrameBuffer = itsFrameBufferPool->AllocateFrameBuffer(); 
+       		initFrameBuffer = (itsFrameBuffer != NULL);
        	}
     } 
     else
     {
      	itsFrameBuffer = itsFrameBufferPool->AllocateFrameBuffer();  
+     	initFrameBuffer = (itsFrameBuffer != NULL);
+    }
+    if (initFrameBuffer)
+    {   
+    	itsFrameBuffer->Clear(); 
+     	itsFrameBuffer->setSampleRate(sampleRate);
+     	itsFrameBuffer->setPulse(itsPatientModel->GetPulse());  
     }
     //#]
 }
 
-void RealTimeThread::SetSampleTime(unsigned long time) {
-    //#[ operation SetSampleTime(unsigned long)
-    sampleTime = time;
+void RealTimeThread::SetSampleRate(int rate) {
+    //#[ operation SetSampleRate(int)
+    unsigned long sampePeriode = 100000/rate; 
+    sampleRate = rate;
+    sampleTime = sampePeriode;
     //#]
 }
 
@@ -254,6 +268,14 @@ unsigned long RealTimeThread::getSampleTime() const {
 
 void RealTimeThread::setSampleTime(unsigned long p_sampleTime) {
     sampleTime = p_sampleTime;
+}
+
+int RealTimeThread::getSampleRate() const {
+    return sampleRate;
+}
+
+void RealTimeThread::setSampleRate(int p_sampleRate) {
+    sampleRate = p_sampleRate;
 }
 
 /*********************************************************************

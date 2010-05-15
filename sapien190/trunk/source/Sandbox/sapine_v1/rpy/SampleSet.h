@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: SampleSet
-//!	Generated Date	: Thu, 13, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SampleSet.h
 *********************************************************************/
 
@@ -81,27 +81,47 @@ protected :
 
 public :
 
-    //## operation GetAnnotation(int)
-    WFDB_Annotation GetAnnotation(int idx);
+    //## operation GetAnnotation()
+    WFDB_Annotation GetAnnotation();
     
     //## operation SetSample(int,WFDB_Sample)
     void SetSample(int idx, WFDB_Sample value);
     
-    //## operation SetAnnotation(int,WFDB_Annotation)
-    void SetAnnotation(int idx, WFDB_Annotation annotation);
+    //## operation SetAnnotation(WFDB_Annotation)
+    void SetAnnotation(WFDB_Annotation _annotation);
     
     //## operation SetSample(int,WFDB_Sample,WFDB_Annotation)
     void SetSample(int idx, WFDB_Sample value, WFDB_Annotation ann);
+    
+    //## operation GetSampleValue(int)
+    WFDB_Sample GetSampleValue(int idx);
+    
+    //## operation GetSampleID()
+    WFDB_Time GetSampleID();
+    
+    //## operation SetSampleID(WFDB_Time)
+    void SetSampleID(WFDB_Time _sampleID);
+    
+    //## operation FactoryAnnotation(char)
+    static WFDB_Annotation FactoryAnnotation(char anntyp);
     
     //## auto_generated
     WFDB_Annotation getAnnotation() const;
     
     //## auto_generated
     void setAnnotation(WFDB_Annotation p_annotation);
+    
+    //## auto_generated
+    WFDB_Time getSampleID() const;
+    
+    //## auto_generated
+    void setSampleID(WFDB_Time p_sampleID);
 
 protected :
 
     WFDB_Annotation annotation;		//## attribute annotation
+    
+    WFDB_Time sampleID;		//## attribute sampleID
 };
 
 #endif

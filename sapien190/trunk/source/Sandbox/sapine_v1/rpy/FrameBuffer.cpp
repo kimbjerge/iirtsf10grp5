@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: FrameBuffer
-//!	Generated Date	: Thu, 13, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/FrameBuffer.cpp
 *********************************************************************/
 
@@ -13,7 +13,7 @@
 //## package Application::Continuous
 
 //## class FrameBuffer
-FrameBuffer::FrameBuffer() {
+FrameBuffer::FrameBuffer() : pulse(0), sampleRate(0) {
 }
 
 FrameBuffer::~FrameBuffer() {
@@ -60,7 +60,7 @@ bool FrameBuffer::isFull() {
     //#]
 }
 
-FrameBuffer::FrameBuffer(int size) {
+FrameBuffer::FrameBuffer(int size) : pulse(0), sampleRate(0) {
     //#[ operation FrameBuffer(int)
     CreateBuffer(size);
     //#]
@@ -109,8 +109,26 @@ int FrameBuffer::GetSample() {
 void FrameBuffer::Clear() {
     //#[ operation Clear()
     writePos = 0;
+    readPos = 0;
+    
     
     //#]
+}
+
+int FrameBuffer::getPulse() const {
+    return pulse;
+}
+
+void FrameBuffer::setPulse(int p_pulse) {
+    pulse = p_pulse;
+}
+
+int FrameBuffer::getSampleRate() const {
+    return sampleRate;
+}
+
+void FrameBuffer::setSampleRate(int p_sampleRate) {
+    sampleRate = p_sampleRate;
 }
 
 /*********************************************************************

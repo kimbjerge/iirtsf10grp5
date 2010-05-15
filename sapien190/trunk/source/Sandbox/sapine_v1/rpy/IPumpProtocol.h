@@ -3,13 +3,13 @@
 	Login		: KBE
 	Component	: TargetComponent 
 	Configuration 	: Target
-	Model Element	: Parameter
+	Model Element	: IPumpProtocol
 //!	Generated Date	: Sat, 15, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Parameter.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/IPumpProtocol.h
 *********************************************************************/
 
-#ifndef Parameter_H
-#define Parameter_H
+#ifndef IPumpProtocol_H
+#define IPumpProtocol_H
 
 //#[ ignore
 #ifdef _MSC_VER
@@ -30,41 +30,42 @@
 #include "math.h"
 //## auto_generated
 #include "wfdb/ecgcodes.h"
-//## auto_generated
-#include "Continuous.h"
-//## dependency PatientModel
-class PatientModel;
+//## link itsExtInputs
+class ExtInputs;
 
-//## dependency PhysioModel
-class PhysioModel;
+//## package Comm
 
-//## dependency SimulatorRealtime
-class SimulatorRealtime;
-
-//## package Application::Continuous
-
-//## class Parameter
-class Parameter {
+//## class IPumpProtocol
+class IPumpProtocol {
     ////    Constructors and destructors    ////
     
 public :
 
     //## auto_generated
-    Parameter();
+    IPumpProtocol();
     
     //## auto_generated
-    virtual ~Parameter();
+    ~IPumpProtocol();
     
-    ////    Operations    ////
+    ////    Additional operations    ////
     
-    //## operation Execute(SimulatorRealtime*)
-    virtual void Execute(SimulatorRealtime* ps) = 0;
+    //## auto_generated
+    ExtInputs* getItsExtInputs() const;
     
-    //## operation GetPhysioModel(SimulatorRealtime*)
-    PhysioModel* GetPhysioModel(SimulatorRealtime* ps);
+    //## auto_generated
+    void setItsExtInputs(ExtInputs* p_ExtInputs);
+
+protected :
+
+    //## auto_generated
+    void cleanUpRelations();
+    
+    ////    Relations and components    ////
+    
+    ExtInputs* itsExtInputs;		//## link itsExtInputs
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Parameter.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/IPumpProtocol.h
 *********************************************************************/

@@ -146,7 +146,7 @@
    <property name="geometry">
     <rect>
      <x>440</x>
-     <y>10</y>
+     <y>0</y>
      <width>20</width>
      <height>141</height>
     </rect>
@@ -180,7 +180,7 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>410</x>
+     <x>430</x>
      <y>150</y>
      <width>62</width>
      <height>17</height>
@@ -188,6 +188,38 @@
    </property>
    <property name="text">
     <string>Rate</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>170</y>
+     <width>62</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>2.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.100000000000000</double>
+   </property>
+   <property name="value">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>150</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Gain</string>
    </property>
   </widget>
  </widget>
@@ -287,11 +319,11 @@
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>432</x>
-     <y>130</y>
+     <x>430</x>
+     <y>120</y>
     </hint>
     <hint type="destinationlabel">
-     <x>442</x>
+     <x>402</x>
      <y>181</y>
     </hint>
    </hints>
@@ -303,12 +335,12 @@
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>456</x>
+     <x>416</x>
      <y>179</y>
     </hint>
     <hint type="destinationlabel">
-     <x>432</x>
-     <y>122</y>
+     <x>430</x>
+     <y>112</y>
     </hint>
    </hints>
   </connection>
@@ -319,8 +351,8 @@
    <slot>on_sampleRate_changed(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>424</x>
-     <y>77</y>
+     <x>430</x>
+     <y>67</y>
     </hint>
     <hint type="destinationlabel">
      <x>370</x>
@@ -344,6 +376,22 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>doubleSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>Graph</receiver>
+   <slot>on_gain_changed(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>183</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>265</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>on_simulate_clicked()</slot>
@@ -352,5 +400,6 @@
   <slot>on_alterRecord_clicked()</slot>
   <slot>on_refresh_clicked()</slot>
   <slot>on_sampleRate_changed(int)</slot>
+  <slot>on_gain_changed(double)</slot>
  </slots>
 </ui>

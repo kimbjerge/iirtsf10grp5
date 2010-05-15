@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: SimulatorRealtime
-//!	Generated Date	: Thu, 13, May 2010  
+//!	Generated Date	: Sat, 15, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SimulatorRealtime.cpp
 *********************************************************************/
 
@@ -73,9 +73,9 @@ Record* SimulatorRealtime::CreateSimRecord() {
     //#]
 }
 
-Record* SimulatorRealtime::CreateWfdbRecord(char* name) {
-    //#[ operation CreateWfdbRecord(char*)
-    return new RecordProxy(new RecordWfdb(name));
+Record* SimulatorRealtime::CreateWfdbRecord(char* name, char* annotation) {
+    //#[ operation CreateWfdbRecord(char*,char*)
+    return new RecordProxy(new RecordWfdb(name, annotation));
     //#]
 }
 
@@ -170,8 +170,8 @@ SimulatorRealtime::~SimulatorRealtime() {
     cleanUpRelations();
 }
 
-bool SimulatorRealtime::AssignRecord(Record* aRecord) {
-    //#[ operation AssignRecord(Record*)
+bool SimulatorRealtime::SetRecord(Record* aRecord) {
+    //#[ operation SetRecord(Record*)
     if (itsPatientModel != NULL) 
     {
     	state = Stopped;
@@ -231,8 +231,7 @@ void SimulatorRealtime::SetSampleRate(int rate) {
     //#[ operation SetSampleRate(int)
     if (itsRealTimeThread != NULL)  
     {
-    	unsigned long sampePeriode = 100000/rate;
-    	itsRealTimeThread->SetSampleTime(sampePeriode);  
+    	itsRealTimeThread->SetSampleRate(rate);  
     }
     //#]
 }

@@ -13,6 +13,7 @@
 #include "SimulatorRealtime.h"
 #include "Observer.h"
 #include "Record.h"
+#include "GainParam.h"
 
 using namespace std;
 
@@ -53,6 +54,7 @@ private:
     int offset;
     int offset1;
     int offset2;
+    GainParam gainParam;
 
 
 public slots:
@@ -62,6 +64,7 @@ public slots:
     void on_testModel_clicked();
     void on_alterRecord_clicked();
     void on_sampleRate_changed(int rate);
+    void on_gain_changed(double gain);
 };
 
 #endif // GRAPH_H
