@@ -792,7 +792,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.10.2010::9:36:24;
+	- weakCGTime = 5.15.2010::6:49:40;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 0fb36dc0-ad37-45a6-b555-77bf7edd4044;
 	- _eventsBaseID = -1;
@@ -835,40 +835,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _name = "DomainModel";
 				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
 			}
-			- weakCGTime = 5.3.2010::20:41:56;
+			- weakCGTime = 5.15.2010::6:49:56;
 			- strongCGTime = 4.30.2010::9:7:49;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
 			}
 			- Associations = { IRPYRawContainer 
-				- size = 1;
-				- value = 
-				{ IAssociationEnd 
-					- _id = GUID fdd650d6-bdff-4fbc-93a8-73abad957300;
-					- _myState = 10240;
-					- _name = "itsPatientModel";
-					- _multiplicity = "1";
-					- _otherClass = { IClassifierHandle 
-						- _m2Class = "IClass";
-						- _filename = "Continuous.sbs";
-						- _subsystem = "Application::Continuous";
-						- _class = "";
-						- _name = "PatientModel";
-						- _id = GUID 469cf6c8-7d66-4abc-88e2-4d4576f248df;
-					}
-					- _inverse = { IHandle 
-						- _m2Class = "IAssociationEnd";
-						- _filename = "Continuous.sbs";
-						- _subsystem = "Application::Continuous";
-						- _class = "PatientModel";
-						- _name = "itsExtInputs";
-						- _id = GUID ae956a11-668d-4ecf-aea6-a5d891e6b3e3;
-					}
-					- _linkName = "";
-					- _linkType = Assoc;
-					- _navigability = Navigable;
-				}
+				- size = 0;
 			}
 			- _classModifier = Unspecified;
 		}

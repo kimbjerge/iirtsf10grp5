@@ -33,7 +33,15 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- _lastID = 4;
+	- _theMainDiagram = { IHandle 
+		- _m2Class = "IDiagram";
+		- _filename = "Application.sbs";
+		- _subsystem = "Application";
+		- _class = "";
+		- _name = "UseCase1_ExecuteControlSimulation";
+		- _id = GUID 1d3ef076-7e1d-45fd-9e3d-cd7ab4a1942c;
+	}
+	- _lastID = 5;
 	- Declaratives = { IRPYRawContainer 
 		- size = 2;
 		- value = 
@@ -534,12 +542,12 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.3.2010::20:42:16;
+	- weakCGTime = 5.15.2010::6:54:14;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
 	- _eventsBaseID = -1;
 	- Classes = { IRPYRawContainer 
-		- size = 2;
+		- size = 3;
 		- value = 
 		{ IClass 
 			- _id = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
@@ -1561,6 +1569,58 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- _class = "";
 						- _name = "ExtOutSerial";
 						- _id = GUID 9947fa55-9bb8-4efa-a5cb-3123a7bb9373;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID d360e795-b6e9-425e-b69e-35f4e30304c3;
+			- _myState = 8192;
+			- _name = "IPumpProtocol";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _id = GUID eb150c9b-489d-424c-a933-268bbf6c798b;
+				}
+			}
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "UseCase1_ExecuteControlSimulation";
+				- _id = GUID 1d3ef076-7e1d-45fd-9e3d-cd7ab4a1942c;
+			}
+			- weakCGTime = 5.15.2010::6:54:14;
+			- strongCGTime = 5.15.2010::6:48:52;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID d2bbb42b-2270-4669-9d3d-eac2c40e049c;
+					- _myState = 10240;
+					- _name = "itsExtInputs";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "AbstractHW.sbs";
+						- _subsystem = "AbstractHW";
+						- _class = "";
+						- _name = "ExtInputs";
+						- _id = GUID c298dd4e-8345-4920-9b9d-b2d5af814bdb;
 					}
 					- _inverse = { IHandle 
 						- _m2Class = "";

@@ -153,7 +153,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ConTestPatientModel";
-			- _lastModifiedTime = "5.13.2010::20:23:0";
+			- _lastModifiedTime = "5.15.2010::10:53:46";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 6a8a2df3-5c3f-4c9d-bf3d-30c21df61768;
 				- m_type = 0;
@@ -841,7 +841,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ConTestCreateSimulatorRealtime";
-			- _lastModifiedTime = "5.9.2010::12:22:46";
+			- _lastModifiedTime = "5.15.2010::10:56:28";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 5b68ece5-7e47-42a0-b0bb-fa533d18cc76;
 				- m_type = 0;
@@ -1143,7 +1143,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _filename = "Continuous.sbs";
 							- _subsystem = "Application::Continuous";
 							- _class = "SimulatorRealtime";
-							- _name = "CreateWfdbRecord(char*)";
+							- _name = "CreateWfdbRecord(char*,char*)";
 							- _id = GUID 8139d375-a389-4c1e-bbb4-276d35a66f50;
 						}
 						{ IHandle 
@@ -1159,7 +1159,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _filename = "Continuous.sbs";
 							- _subsystem = "Application::Continuous";
 							- _class = "SimulatorRealtime";
-							- _name = "AssignRecord(Record*)";
+							- _name = "SetRecord(Record*)";
 							- _id = GUID a7024e8e-ce15-4c67-bffd-a95e54c671dd;
 						}
 						{ IHandle 
@@ -2117,7 +2117,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.9.2010::12:22:31;
+	- weakCGTime = 5.15.2010::10:31:7;
 	- strongCGTime = 5.3.2010::19:50:5;
 	- _defaultComposite = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 	- _eventsBaseID = -1;
@@ -2128,7 +2128,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.9.2010::12:22:31;
+			- weakCGTime = 5.14.2010::12:35:33;
 			- strongCGTime = 5.3.2010::19:50:5;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -5720,7 +5720,7 @@ std::cout << \"Pulse \" << s << std::endl;";
 			- _myState = 8192;
 			- _name = "TestPatientSimulatorRT";
 			- Dependencies = { IRPYRawContainer 
-				- size = 2;
+				- size = 3;
 				- value = 
 				{ IDependency 
 					- _id = GUID 19d4e34f-bf8a-4f56-bad4-91c0ad283685;
@@ -5824,13 +5824,64 @@ std::cout << \"Pulse \" << s << std::endl;";
 						- _id = GUID af47700b-20bf-4d9a-b486-9b7e4dcf23cb;
 					}
 				}
+				{ IDependency 
+					- _id = GUID cc5ed6c4-33de-4bf8-a013-e91ecf3b1764;
+					- _myState = 2048;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Dependency";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "UsageType";
+												- _Value = "Implementation";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Specification,Implementation,Existence";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "GainParam";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "PredefinedTypes.sbs";
+							- _subsystem = "PredefinedTypes";
+							- _class = "";
+							- _name = "Usage";
+							- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "";
+						- _name = "GainParam";
+						- _id = GUID ec19d07b-b706-4f05-8226-399778794b8c;
+					}
+				}
 			}
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _id = GUID 890d955b-8753-4ce9-bfd5-ed79d2763e87;
 			}
 			- _lastID = 7;
-			- weakCGTime = 5.7.2010::19:39:9;
+			- weakCGTime = 5.15.2010::10:54:41;
 			- strongCGTime = 5.7.2010::8:59:9;
 			- Operations = { IRPYRawContainer 
 				- size = 6;
@@ -5911,13 +5962,16 @@ itsSimulatorRealtime->AttachObserver(this); ";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "#ifdef _LINUX
-record = itsSimulatorRealtime->CreateWfdbSimRecord(\"100s\"); 
+						- _bodyData = "GainParam gainParam;
+#ifdef _LINUX
+record = itsSimulatorRealtime->CreateWfdbSimRecord(\"100s\", \"atr\"); 
 #else
 record = itsSimulatorRealtime->CreateSimRecord(); 
 #endif
-itsSimulatorRealtime->AssignRecord(record);
-itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);";
+itsSimulatorRealtime->SetRecord(record);
+itsSimulatorRealtime->SetMedicine(SimulatorRealtime::Morphine);
+gainParam.setGain(0.50);
+gainParam.Execute(itsSimulatorRealtime);";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -6011,7 +6065,7 @@ pRT->run();";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "std::cout << \"FrameBuffer Updated:\" << std::endl;
+						- _bodyData = "std::cout << \"FrameBuffer Updated Pulse : \" << fp->getPulse() << \" Rate : \" << fp->getSampleRate()  << std::endl;
 fp->First(); 
 while (!fp->IsDone())
 {
@@ -6069,17 +6123,17 @@ std::cout << fp->GetSample() << std::endl;
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 5;
+						- size = 6;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID d3c3e152-f0bf-496d-a11b-57594456a7b5;
 							- _name = "TestPatientSimulatorRT:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency TestPatientSimulatorRT:spec";
-							- m_startRow = 18;
+							- m_startRow = 12;
 							- m_startCol_Short = 1;
-							- m_endRow = 18;
-							- m_endCol_Short = 528;
+							- m_endRow = 12;
+							- m_endCol_Short = 456;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -6089,10 +6143,10 @@ std::cout << fp->GetSample() << std::endl;
 							- _name = "SimulatorRealtime:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency SimulatorRealtime:spec";
-							- m_startRow = 20;
+							- m_startRow = 14;
 							- m_startCol_Short = 1;
-							- m_endRow = 20;
-							- m_endCol_Short = 592;
+							- m_endRow = 14;
+							- m_endCol_Short = 520;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -6102,10 +6156,10 @@ std::cout << fp->GetSample() << std::endl;
 							- _name = "Record:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency Record:spec";
-							- m_startRow = 22;
+							- m_startRow = 16;
 							- m_startCol_Short = 1;
-							- m_endRow = 22;
-							- m_endCol_Short = 636;
+							- m_endRow = 16;
+							- m_endCol_Short = 564;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -6115,10 +6169,23 @@ std::cout << fp->GetSample() << std::endl;
 							- _name = "FrameBuffer:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency FrameBuffer:spec";
-							- m_startRow = 24;
+							- m_startRow = 18;
 							- m_startCol_Short = 1;
-							- m_endRow = 24;
-							- m_endCol_Short = 699;
+							- m_endRow = 18;
+							- m_endCol_Short = 627;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 33e1d186-cf65-42a6-a594-4969f9fc8c2b;
+							- _name = "omthread:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency omthread:spec";
+							- m_startRow = 20;
+							- m_startCol_Short = 1;
+							- m_endRow = 20;
+							- m_endCol_Short = 675;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -6128,9 +6195,9 @@ std::cout << fp->GetSample() << std::endl;
 							- _name = "TestPatientSimulatorRT";
 							- m_type = implFragment;
 							- m_text = "";
-							- m_startRow = 48;
+							- m_startRow = 30;
 							- m_startCol_Short = 25;
-							- m_endRow = 48;
+							- m_endRow = 30;
 							- m_endCol_Short = 25;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -6153,7 +6220,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID b2a824ff-1d51-438e-a10f-90c6c09d20f5;
-													- _value = "48";
+													- _value = "30";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6190,9 +6257,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation TestPatientSimulatorRT():impl";
-									- m_startRow = 48;
+									- m_startRow = 30;
 									- m_startCol_Short = 25;
-									- m_endRow = 53;
+									- m_endRow = 34;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6212,7 +6279,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID f0ff9961-c8ed-4938-ba5c-7f583678d161;
-													- _value = "55";
+													- _value = "36";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6249,9 +6316,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~TestPatientSimulatorRT():impl";
-									- m_startRow = 55;
+									- m_startRow = 36;
 									- m_startCol_Short = 26;
-									- m_endRow = 59;
+									- m_endRow = 39;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6271,7 +6338,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 3414f9bf-3983-4fb3-b3f2-6766133bad69;
-													- _value = "61";
+													- _value = "41";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6308,9 +6375,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 61;
+									- m_startRow = 41;
 									- m_startCol_Short = 50;
-									- m_endRow = 67;
+									- m_endRow = 46;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -6331,7 +6398,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 65176b7c-fef7-48fe-92d4-f840064fee28;
-													- _value = "69";
+													- _value = "48";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6368,9 +6435,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsSimulatorRealtime() const:impl";
-									- m_startRow = 69;
+									- m_startRow = 48;
 									- m_startCol_Short = 76;
-									- m_endRow = 71;
+									- m_endRow = 50;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6390,7 +6457,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 03ca6dfe-24c0-45b0-a4e3-b3d3594a1dd4;
-													- _value = "73";
+													- _value = "52";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6427,9 +6494,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsSimulatorRealtime(SimulatorRealtime *):impl";
-									- m_startRow = 73;
+									- m_startRow = 52;
 									- m_startCol_Short = 94;
-									- m_endRow = 83;
+									- m_endRow = 54;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6449,7 +6516,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 047bd6b0-e0dc-4af9-bb22-0457ff6319e6;
-													- _value = "85";
+													- _value = "56";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6486,9 +6553,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():impl";
-									- m_startRow = 85;
+									- m_startRow = 56;
 									- m_startCol_Short = 49;
-									- m_endRow = 91;
+									- m_endRow = 61;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6508,7 +6575,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 6fc092d2-4784-49e0-bac7-4fd1f6ec9a76;
-													- _value = "93";
+													- _value = "63";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6545,9 +6612,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 93;
+									- m_startRow = 63;
 									- m_startCol_Short = 54;
-									- m_endRow = 98;
+									- m_endRow = 67;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -6568,7 +6635,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 9173408c-7774-40a4-94ea-6349061b5e3a;
-													- _value = "100";
+													- _value = "69";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6605,9 +6672,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getRecord() const:impl";
-									- m_startRow = 100;
+									- m_startRow = 69;
 									- m_startCol_Short = 52;
-									- m_endRow = 102;
+									- m_endRow = 71;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6627,7 +6694,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 360a2f9a-297d-4e9b-8743-25732aa45095;
-													- _value = "104";
+													- _value = "73";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6664,9 +6731,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setRecord(Record *):impl";
-									- m_startRow = 104;
+									- m_startRow = 73;
 									- m_startCol_Short = 59;
-									- m_endRow = 106;
+									- m_endRow = 75;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6686,7 +6753,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 64aa16c7-1416-4322-9881-890b07846a34;
-													- _value = "108";
+													- _value = "77";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6723,9 +6790,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation startBehavior():impl";
-									- m_startRow = 108;
+									- m_startRow = 77;
 									- m_startCol_Short = 46;
-									- m_endRow = 112;
+									- m_endRow = 81;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6745,7 +6812,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 66a33ad4-f831-42c7-9ec0-a94643203d43;
-													- _value = "114";
+													- _value = "83";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6782,9 +6849,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation initStatechart():impl";
-									- m_startRow = 114;
+									- m_startRow = 83;
 									- m_startCol_Short = 47;
-									- m_endRow = 127;
+									- m_endRow = 96;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6804,7 +6871,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID a3584fb8-62c5-4043-8763-0946e9937525;
-													- _value = "129";
+													- _value = "98";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6841,9 +6908,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cancelTimeouts():impl";
-									- m_startRow = 129;
+									- m_startRow = 98;
 									- m_startCol_Short = 47;
-									- m_endRow = 150;
+									- m_endRow = 119;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6863,7 +6930,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID f9ee4e76-ca1e-4e42-b4df-bc62c8832204;
-													- _value = "152";
+													- _value = "121";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6900,9 +6967,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cancelTimeout(const IOxfTimeout *):impl";
-									- m_startRow = 152;
+									- m_startRow = 121;
 									- m_startCol_Short = 68;
-									- m_endRow = 175;
+									- m_endRow = 144;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -6922,7 +6989,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID eaadf1df-f450-48df-b9a5-f56c5e8072f2;
-													- _value = "177";
+													- _value = "146";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -6959,9 +7026,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 177;
+									- m_startRow = 146;
 									- m_startCol_Short = 47;
-									- m_endRow = 188;
+									- m_endRow = 159;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -6982,7 +7049,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID f48be6c0-b693-4bfa-af19-92c0c6466ec1;
-													- _value = "190";
+													- _value = "161";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -7019,9 +7086,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 190;
+									- m_startRow = 161;
 									- m_startCol_Short = 57;
-									- m_endRow = 196;
+									- m_endRow = 166;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7042,7 +7109,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 8937eac9-a28b-4ca7-bcd5-2e9bc906ea8d;
-													- _value = "198";
+													- _value = "168";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -7079,9 +7146,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 198;
+									- m_startRow = 168;
 									- m_startCol_Short = 54;
-									- m_endRow = 204;
+									- m_endRow = 173;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7102,7 +7169,7 @@ std::cout << fp->GetSample() << std::endl;
 												- value = 
 												{ ILiteralSpecification 
 													- _id = GUID 2e3c8708-eac2-47b0-aaec-c6bed70047ea;
-													- _value = "206";
+													- _value = "175";
 												}
 											}
 											- _typeOf = { IHandle 
@@ -7139,9 +7206,9 @@ std::cout << fp->GetSample() << std::endl;
 									}
 									- m_type = implFragment;
 									- m_text = "";
-									- m_startRow = 206;
+									- m_startRow = 175;
 									- m_startCol_Short = 54;
-									- m_endRow = 214;
+									- m_endRow = 187;
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7159,7 +7226,7 @@ std::cout << fp->GetSample() << std::endl;
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
-						- size = 19;
+						- size = 17;
 						- value = 
 						{ IFileFragment 
 							- _id = GUID 6a7b0386-85d3-4bc7-a8f2-e410d970d949;
@@ -7169,7 +7236,7 @@ std::cout << fp->GetSample() << std::endl;
 							- m_startRow = 22;
 							- m_startCol_Short = 1;
 							- m_endRow = 22;
-							- m_endCol_Short = 648;
+							- m_endCol_Short = 657;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7182,7 +7249,7 @@ std::cout << fp->GetSample() << std::endl;
 							- m_startRow = 24;
 							- m_startCol_Short = 1;
 							- m_endRow = 24;
-							- m_endCol_Short = 688;
+							- m_endCol_Short = 697;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7195,7 +7262,7 @@ std::cout << fp->GetSample() << std::endl;
 							- m_startRow = 26;
 							- m_startCol_Short = 1;
 							- m_endRow = 26;
-							- m_endCol_Short = 731;
+							- m_endCol_Short = 740;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7208,7 +7275,7 @@ std::cout << fp->GetSample() << std::endl;
 							- m_startRow = 28;
 							- m_startCol_Short = 1;
 							- m_endRow = 28;
-							- m_endCol_Short = 776;
+							- m_endCol_Short = 785;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7221,7 +7288,7 @@ std::cout << fp->GetSample() << std::endl;
 							- m_startRow = 30;
 							- m_startCol_Short = 1;
 							- m_endRow = 30;
-							- m_endCol_Short = 816;
+							- m_endCol_Short = 825;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7234,7 +7301,7 @@ std::cout << fp->GetSample() << std::endl;
 							- m_startRow = 32;
 							- m_startCol_Short = 1;
 							- m_endRow = 32;
-							- m_endCol_Short = 865;
+							- m_endCol_Short = 874;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7247,7 +7314,7 @@ std::cout << fp->GetSample() << std::endl;
 							- m_startRow = 34;
 							- m_startCol_Short = 1;
 							- m_endRow = 34;
-							- m_endCol_Short = 915;
+							- m_endCol_Short = 924;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7260,7 +7327,7 @@ std::cout << fp->GetSample() << std::endl;
 							- m_startRow = 36;
 							- m_startCol_Short = 1;
 							- m_endRow = 36;
-							- m_endCol_Short = 960;
+							- m_endCol_Short = 969;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7273,7 +7340,7 @@ std::cout << fp->GetSample() << std::endl;
 							- m_startRow = 38;
 							- m_startCol_Short = 1;
 							- m_endRow = 38;
-							- m_endCol_Short = 1005;
+							- m_endCol_Short = 1014;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7286,46 +7353,7 @@ std::cout << fp->GetSample() << std::endl;
 							- m_startRow = 40;
 							- m_startCol_Short = 1;
 							- m_endRow = 40;
-							- m_endCol_Short = 1063;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID 677e1529-7c23-4fc2-9d4a-b1c39549ca06;
-							- _name = "aom:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency aom:spec";
-							- m_startRow = 42;
-							- m_startCol_Short = 1;
-							- m_endRow = 42;
-							- m_endCol_Short = 1106;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID 9e227746-2c26-4145-adf4-e735daff07fb;
-							- _name = "Test:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency Test:spec";
-							- m_startRow = 44;
-							- m_startCol_Short = 1;
-							- m_endRow = 44;
-							- m_endCol_Short = 1146;
-							- m_subject = { INObjectHandle 
-								- _m2Class = "";
-							}
-						}
-						{ IFileFragment 
-							- _id = GUID 4390b91a-5883-44fa-a1f4-483433b5dc6e;
-							- _name = "omthread:spec";
-							- m_type = textFragment;
-							- m_text = "//## auto:dependency omthread:spec";
-							- m_startRow = 46;
-							- m_startCol_Short = 1;
-							- m_endRow = 46;
-							- m_endCol_Short = 1194;
+							- m_endCol_Short = 1072;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
@@ -7335,9 +7363,9 @@ std::cout << fp->GetSample() << std::endl;
 							- _name = "DistributerThread";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 48;
+							- m_startRow = 42;
 							- m_startCol_Short = 1;
-							- m_endRow = 48;
+							- m_endRow = 42;
 							- m_endCol_Short = 24;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
@@ -7345,13 +7373,27 @@ std::cout << fp->GetSample() << std::endl;
 							}
 						}
 						{ IFileFragment 
+							- _id = GUID 3ecc9624-5f66-4213-8fa7-0c0f31790d36;
+							- _name = "GainParam";
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 45;
+							- m_startCol_Short = 1;
+							- m_endRow = 45;
+							- m_endCol_Short = 16;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IDependency";
+								- _id = GUID cc5ed6c4-33de-4bf8-a013-e91ecf3b1764;
+							}
+						}
+						{ IFileFragment 
 							- _id = GUID 9baee22c-683d-4a06-9424-f6b5291ef672;
 							- _name = "RealTimeThread";
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 51;
+							- m_startRow = 48;
 							- m_startCol_Short = 1;
-							- m_endRow = 51;
+							- m_endRow = 48;
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IDependency";
@@ -7363,9 +7405,9 @@ std::cout << fp->GetSample() << std::endl;
 							- _name = "FrameBuffer:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency FrameBuffer:spec";
-							- m_startRow = 54;
+							- m_startRow = 51;
 							- m_startCol_Short = 1;
-							- m_endRow = 54;
+							- m_endRow = 51;
 							- m_endCol_Short = 18;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -7376,9 +7418,9 @@ std::cout << fp->GetSample() << std::endl;
 							- _name = "Record:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency Record:spec";
-							- m_startRow = 57;
+							- m_startRow = 54;
 							- m_startCol_Short = 1;
-							- m_endRow = 57;
+							- m_endRow = 54;
 							- m_endCol_Short = 13;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -7389,9 +7431,9 @@ std::cout << fp->GetSample() << std::endl;
 							- _name = "SimulatorRealtime:spec";
 							- m_type = textFragment;
 							- m_text = "//## auto:dependency SimulatorRealtime:spec";
-							- m_startRow = 60;
+							- m_startRow = 57;
 							- m_startCol_Short = 1;
-							- m_endRow = 60;
+							- m_endRow = 57;
 							- m_endCol_Short = 24;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
@@ -7411,7 +7453,7 @@ std::cout << fp->GetSample() << std::endl;
 										- value = 
 										{ ILiteralSpecification 
 											- _id = GUID 1f8d50bb-83c3-4c82-a2b6-595e06aca40a;
-											- _value = "65";
+											- _value = "62";
 										}
 									}
 									- _typeOf = { IHandle 
@@ -7448,9 +7490,9 @@ std::cout << fp->GetSample() << std::endl;
 							}
 							- m_type = specFragment;
 							- m_text = "";
-							- m_startRow = 65;
+							- m_startRow = 62;
 							- m_startCol_Short = 1;
-							- m_endRow = 281;
+							- m_endRow = 271;
 							- m_endCol_Short = 1;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "IClass";
@@ -7465,9 +7507,9 @@ std::cout << fp->GetSample() << std::endl;
 									- m_type = textFragment;
 									- m_text = "////    Constructors and destructors    ////
 ";
-									- m_startRow = 72;
+									- m_startRow = 63;
 									- m_startCol_Short = 5;
-									- m_endRow = 72;
+									- m_endRow = 63;
 									- m_endCol_Short = 49;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7478,9 +7520,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "TestPatientSimulatorRT:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation TestPatientSimulatorRT():spec";
-									- m_startRow = 75;
+									- m_startRow = 68;
 									- m_startCol_Short = 5;
-									- m_endRow = 75;
+									- m_endRow = 68;
 									- m_endCol_Short = 61;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7491,9 +7533,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "~TestPatientSimulatorRT:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation ~TestPatientSimulatorRT():spec";
-									- m_startRow = 78;
+									- m_startRow = 71;
 									- m_startCol_Short = 6;
-									- m_endRow = 78;
+									- m_endRow = 71;
 									- m_endCol_Short = 6;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7505,9 +7547,9 @@ std::cout << fp->GetSample() << std::endl;
 									- m_type = textFragment;
 									- m_text = "////    Operations    ////
 ";
-									- m_startRow = 80;
+									- m_startRow = 73;
 									- m_startCol_Short = 5;
-									- m_endRow = 80;
+									- m_endRow = 73;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7518,9 +7560,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "CreateSimulatorRT";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 83;
+									- m_startRow = 76;
 									- m_startCol_Short = 10;
-									- m_endRow = 83;
+									- m_endRow = 76;
 									- m_endCol_Short = 29;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7533,9 +7575,9 @@ std::cout << fp->GetSample() << std::endl;
 									- m_type = textFragment;
 									- m_text = "////    Additional operations    ////
 ";
-									- m_startRow = 85;
+									- m_startRow = 78;
 									- m_startCol_Short = 5;
-									- m_endRow = 85;
+									- m_endRow = 78;
 									- m_endCol_Short = 42;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7546,9 +7588,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "getItsSimulatorRealtime:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getItsSimulatorRealtime() const:spec";
-									- m_startRow = 88;
+									- m_startRow = 81;
 									- m_startCol_Short = 24;
-									- m_endRow = 88;
+									- m_endRow = 81;
 									- m_endCol_Short = 55;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7559,9 +7601,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "setItsSimulatorRealtime:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setItsSimulatorRealtime(SimulatorRealtime *):spec";
-									- m_startRow = 91;
+									- m_startRow = 84;
 									- m_startCol_Short = 10;
-									- m_endRow = 91;
+									- m_endRow = 84;
 									- m_endCol_Short = 73;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7572,9 +7614,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "cleanUpRelations:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cleanUpRelations():spec";
-									- m_startRow = 96;
+									- m_startRow = 89;
 									- m_startCol_Short = 10;
-									- m_endRow = 96;
+									- m_endRow = 89;
 									- m_endCol_Short = 28;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7586,9 +7628,9 @@ std::cout << fp->GetSample() << std::endl;
 									- m_type = textFragment;
 									- m_text = "////    Relations and components    ////
 ";
-									- m_startRow = 98;
+									- m_startRow = 91;
 									- m_startCol_Short = 5;
-									- m_endRow = 98;
+									- m_endRow = 91;
 									- m_endCol_Short = 45;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7599,9 +7641,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "itsSimulatorRealtime";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 100;
+									- m_startRow = 93;
 									- m_startCol_Short = 24;
-									- m_endRow = 100;
+									- m_endRow = 93;
 									- m_endCol_Short = 44;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAssociationEnd";
@@ -7613,9 +7655,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "InitializeSimulatorRT";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 105;
+									- m_startRow = 98;
 									- m_startCol_Short = 10;
-									- m_endRow = 105;
+									- m_endRow = 98;
 									- m_endCol_Short = 33;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7627,9 +7669,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "getRecord:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation getRecord() const:spec";
-									- m_startRow = 108;
+									- m_startRow = 101;
 									- m_startCol_Short = 14;
-									- m_endRow = 108;
+									- m_endRow = 101;
 									- m_endCol_Short = 31;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7640,9 +7682,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "setRecord:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation setRecord(Record *):spec";
-									- m_startRow = 111;
+									- m_startRow = 104;
 									- m_startCol_Short = 10;
-									- m_endRow = 111;
+									- m_endRow = 104;
 									- m_endCol_Short = 38;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7653,9 +7695,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "startBehavior:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation startBehavior():spec";
-									- m_startRow = 114;
+									- m_startRow = 107;
 									- m_startCol_Short = 18;
-									- m_endRow = 114;
+									- m_endRow = 107;
 									- m_endCol_Short = 33;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7666,9 +7708,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "initStatechart:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation initStatechart():spec";
-									- m_startRow = 119;
+									- m_startRow = 112;
 									- m_startCol_Short = 10;
-									- m_endRow = 119;
+									- m_endRow = 112;
 									- m_endCol_Short = 26;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7679,9 +7721,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "cancelTimeouts:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cancelTimeouts():spec";
-									- m_startRow = 122;
+									- m_startRow = 115;
 									- m_startCol_Short = 10;
-									- m_endRow = 122;
+									- m_endRow = 115;
 									- m_endCol_Short = 26;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7692,9 +7734,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "cancelTimeout:spec";
 									- m_type = textFragment;
 									- m_text = "//## auto:operation cancelTimeout(const IOxfTimeout *):spec";
-									- m_startRow = 125;
+									- m_startRow = 118;
 									- m_startCol_Short = 10;
-									- m_endRow = 125;
+									- m_endRow = 118;
 									- m_endCol_Short = 47;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
@@ -7705,9 +7747,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "record";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 127;
+									- m_startRow = 120;
 									- m_startCol_Short = 14;
-									- m_endRow = 127;
+									- m_endRow = 120;
 									- m_endCol_Short = 20;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IAttribute";
@@ -7719,9 +7761,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "CreateScenario";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 132;
+									- m_startRow = 125;
 									- m_startCol_Short = 10;
-									- m_endRow = 132;
+									- m_endRow = 125;
 									- m_endCol_Short = 26;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7733,9 +7775,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "RunTickDistributerThread";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 135;
+									- m_startRow = 128;
 									- m_startCol_Short = 10;
-									- m_endRow = 135;
+									- m_endRow = 128;
 									- m_endCol_Short = 36;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7747,9 +7789,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "RunTickRealTimeThread";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 138;
+									- m_startRow = 131;
 									- m_startCol_Short = 10;
-									- m_endRow = 138;
+									- m_endRow = 131;
 									- m_endCol_Short = 33;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7761,9 +7803,9 @@ std::cout << fp->GetSample() << std::endl;
 									- _name = "Update";
 									- m_type = specFragment;
 									- m_text = "";
-									- m_startRow = 141;
+									- m_startRow = 134;
 									- m_startCol_Short = 10;
-									- m_endRow = 141;
+									- m_endRow = 134;
 									- m_endCol_Short = 33;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "IPrimitiveOperation";
@@ -7784,7 +7826,7 @@ std::cout << fp->GetSample() << std::endl;
 					- _myState = 10240;
 					- _name = "statechart_1";
 					- _lastID = 11;
-					- weakCGTime = 5.7.2010::19:39:9;
+					- weakCGTime = 5.14.2010::12:35:33;
 					- strongCGTime = 5.7.2010::8:59:9;
 					- _multiplicity = "";
 					- _itsStateChart = { IHandle 
