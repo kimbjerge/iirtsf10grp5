@@ -1,0 +1,57 @@
+Scrum Status 10. May:
+____________________
+
+Peter:
+	Done:
+	- Meeting minutes
+	- Added text to Chapter 5
+	Problems:
+	- 
+	Next:
+	- Continue writing on chapter 5+6 in architecture document 
+
+Anders:
+	Done:
+	- Design and implementation of QT controller with command and state pattern
+	Problems:
+	- 
+	Next:
+	- Look at contents for the Architecture document and contents based on theory
+	- Document discrete system in architecture document
+	- Finalize chapter 10 in architecture document
+
+Kim:	
+	Done:
+	- AssignRecord -> ChangeRecord
+	- Update SampleSet according to RecordTest project. Add gain attribute to Sample
+	- Add Metadata to Framebuffer Class
+	- Consider how to set parameters in filters
+	- Add text to ch 13+14 in Architecture Doc
+	Problems:
+	- 
+	Next:
+	- Write on project execution section in the Report
+	- Format report
+	- Add mediator and singleton diagrams to architecture document.
+
+Next scrum meeting monday at 9:00
+	- Scrum status
+	- Review implementation of the discrete model
+	- Merge discrete system into existing system.
+	- Continue to 17:00 
+
+
+Action list (Backlog) to final delivery 04. june:
+____________________________________________
+
+	- Finalize Requirement Specification
+	- Finalize Product Architecture Document
+	- Finalize Test Documentation
+	- Finalize Project Report
+	- Prototype with Use Case #1 (Run Simulation) and #2 (Select and initiate Scenario) implemented
+	- GUI design and change of views based on the discrete model
+	- Integrate Rhapsody model with GuI and FrameBuffer observer
+	- Implement ECG to EDR filter
+	- Implement ECG to Pulse filter
+	- Implement Serial Port Interface
+	- Optionally implement Use Case #3 (Adjust Scenario Parameters)
