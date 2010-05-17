@@ -1,4 +1,4 @@
-Scrum Status 10. May:
+Scrum Status 17. May:
 ____________________
 
 Peter:
@@ -32,12 +32,14 @@ Kim:
 	Next:
 	- Write on project execution section in the Report
 	- Format report
-	- Add mediator and singleton diagrams to architecture document.
+	- Add mediator and singleton diagrams to architecture document
+	- Update Rhapsody model with command - state - singleton design Anders has made when completed
 
-Next scrum meeting monday at 9:00
+Next scrum meeting wedensday at 15:30
 	- Scrum status
+	- Status on writing Architecture document
+	- Status on report writing and assigment of tasks
 	- Review implementation of the discrete model
-	- Merge discrete system into existing system.
 	- Continue to 17:00 
 
 
