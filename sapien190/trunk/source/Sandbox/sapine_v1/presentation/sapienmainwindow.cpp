@@ -1,19 +1,19 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "sapienmainwindow.h"
+#include "ui_sapienmainwindow.h"
 
-MainWindow::MainWindow(QWidget *parent) :
+SapienMainWindow::SapienMainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    ui(new Ui::SapienMainWindow)
 {
     ui->setupUi(this);
 }
 
-MainWindow::~MainWindow()
+SapienMainWindow::~SapienMainWindow()
 {
     delete ui;
 }
 
-void MainWindow::changeEvent(QEvent *e)
+void SapienMainWindow::changeEvent(QEvent *e)
 {
     QMainWindow::changeEvent(e);
     switch (e->type()) {

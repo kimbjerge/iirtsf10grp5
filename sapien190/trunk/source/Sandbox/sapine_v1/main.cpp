@@ -1,12 +1,6 @@
-#include <QtGui/QApplication>
-#include "mainwindow.h"
-#include "graph.h"
-
+#include "presentation/sapienapplication.h"
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    //MainWindow w;
-    Graph g;
-    g.show();
+    SapienApplication a(argc,argv);
     return a.exec();
 }

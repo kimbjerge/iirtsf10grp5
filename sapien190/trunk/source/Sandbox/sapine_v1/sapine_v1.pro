@@ -16,9 +16,7 @@ INCLUDEPATH += . \
     hw
 
 # Input
-HEADERS += graph.h \
-    mainwindow.h \
-    hw/Dac.h \
+HEADERS += hw/Dac.h \
     oxf/oxf.h \
     rpy/Continuous.h \
     rpy/Controller.h \
@@ -67,12 +65,24 @@ HEADERS += graph.h \
     os/posix/Mutex.h \
     os/posix/SleepTimer.h \
     os/posix/Thread.h \
-    rpy/LCDScreen.h
-FORMS += graph.ui \
-    mainwindow.ui
-SOURCES += graph.cpp \
-    main.cpp \
-    mainwindow.cpp \
+    rpy/LCDScreen.h \
+    presentation/sapienmainwindow.h \
+    presentation/sapienapplication.h \
+    presentation/views/simulationrunning.h \
+    presentation/views/widgets/graph.h \
+    presentation/SimState/simstate.h \
+    presentation/SimState/simcommand.h \
+    presentation/SimState/startcommand.h \
+    presentation/SimState/stopcommand.h \
+    presentation/SimState/resumecommand.h \
+    presentation/SimState/pausecommand.h \
+    presentation/SimState/initializedstate.h \
+    presentation/SimState/runningstate.h \
+    presentation/SimState/pausedstate.h
+FORMS += presentation/sapienmainwindow.ui \
+    presentation/views/simulationrunning.ui \
+    presentation/views/widgets/graph.ui
+SOURCES += main.cpp \
     hw/Dac.cpp \
     rpy/Continuous.cpp \
     rpy/Controller.cpp \
@@ -118,4 +128,17 @@ SOURCES += graph.cpp \
     os/posix/Mutex.cpp \
     os/posix/SleepTimer.cpp \
     os/posix/Thread.cpp \
-    rpy/LCDScreen.cpp
+    rpy/LCDScreen.cpp \
+    presentation/sapienmainwindow.cpp \
+    presentation/sapienapplication.cpp \
+    presentation/views/simulationrunning.cpp \
+    presentation/views/widgets/graph.cpp \
+    presentation/SimState/simstate.cpp \
+    presentation/SimState/simcommand.cpp \
+    presentation/SimState/startcommand.cpp \
+    presentation/SimState/stopcommand.cpp \
+    presentation/SimState/resumecommand.cpp \
+    presentation/SimState/pausecommand.cpp \
+    presentation/SimState/initializedstate.cpp \
+    presentation/SimState/runningstate.cpp \
+    presentation/SimState/pausedstate.cpp
