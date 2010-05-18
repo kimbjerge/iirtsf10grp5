@@ -67,7 +67,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _name = "PackageView";
 		- _id = GUID 69ee0633-361f-4b1f-8dc4-8d7c1f351e73;
 	}
-	- _lastID = 77;
+	- _lastID = 78;
 	- Declaratives = { IRPYRawContainer 
 		- size = 15;
 		- value = 
@@ -7813,7 +7813,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "FrameBufferObserver";
-			- _lastModifiedTime = "5.15.2010::10:56:27";
+			- _lastModifiedTime = "5.18.2010::20:10:0";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 5d6f3f08-b245-4c1e-ad15-89d4f465d9b8;
 				- m_type = 0;
@@ -8815,7 +8815,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_pParent = GUID 5728a182-afa0-4b87-874e-07030b5f4ee8;
 					- m_name = { CGIText 
 						- m_str = "Observer pattern used for updating of LCDScreen 
-(Lektion 9)
+(Lesson 9)
 
 Important that Update doesn't call Attach or Detach which will cause a deadlock";
 						- m_style = "Arial" 10 0 0 0 1 ;
@@ -16356,7 +16356,7 @@ GU86a6ZGc29dYa7782e7feff9a39222542a463cb13c233f95I839c57bdZGc29dY97fcYbaZGbfe697
 			}
 		}
 	}
-	- weakCGTime = 5.18.2010::14:0:57;
+	- weakCGTime = 5.18.2010::20:10:0;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 445c424b-fba5-4616-8dc0-a22408da37c3;
 	- _eventsBaseID = -1;
@@ -16367,7 +16367,7 @@ GU86a6ZGc29dYa7782e7feff9a39222542a463cb13c233f95I839c57bdZGc29dY97fcYbaZGbfe697
 			- _id = GUID 445c424b-fba5-4616-8dc0-a22408da37c3;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.15.2010::9:6:37;
+			- weakCGTime = 5.18.2010::14:0:57;
 			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -19846,6 +19846,6 @@ else
 			- _classModifier = Unspecified;
 		}
 	}
-	- _configurationRelatedTime = 5.3.2010::20:39:32;
+	- _configurationRelatedTime = 5.18.2010::18:51:55;
 }
 

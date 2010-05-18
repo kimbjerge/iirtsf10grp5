@@ -285,7 +285,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "SimulatorRealtimeModel";
-			- _lastModifiedTime = "5.18.2010::12:15:21";
+			- _lastModifiedTime = "5.18.2010::19:14:57";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 2d804280-da55-445c-b71f-b55b2eaff8c6;
 				- m_type = 0;
@@ -1004,7 +1004,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.209632 0 0 0.206773 1013.58 445.972 ;
+					- m_transform = 0.209632 0 0 0.206773 955.58 444.972 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -1113,7 +1113,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.148253 0 0 0.12656 1037.7 22.3619 ;
+					- m_transform = 0.148253 0 0 0.12656 998.7 45.3619 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -1324,7 +1324,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2056;
-					- m_transform = 0.115203 0 0 0.101604 1053.77 211.572 ;
+					- m_transform = 0.115203 0 0 0.101604 1019.77 243.572 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -1802,7 +1802,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_anglePoint1 = 0 0 ;
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
-					- m_SourcePort = 532 817 ;
+					- m_SourcePort = 532 822 ;
 					- m_TargetPort = 531 886 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
@@ -1970,8 +1970,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_anglePoint1 = 0 0 ;
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
-					- m_SourcePort = 489 1093 ;
-					- m_TargetPort = 540 1087 ;
+					- m_SourcePort = 555 1093 ;
+					- m_TargetPort = 453 1087 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
 					}
@@ -2138,8 +2138,8 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- m_anglePoint1 = 0 0 ;
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
-					- m_SourcePort = 521 890 ;
-					- m_TargetPort = 531 890 ;
+					- m_SourcePort = 501 890 ;
+					- m_TargetPort = 462 890 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
 					}
@@ -2877,7 +2877,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 4096;
-					- m_transform = 0.130996 0 0 0.0766423 271 -0.230148 ;
+					- m_transform = 0.130996 0 0 0.0766423 274 9.76985 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -3010,12 +3010,12 @@ pattern
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 7;
 					}
-					- m_arrow = 1 1033 336  ;
+					- m_arrow = 1 977 336  ;
 					- m_anglePoint1 = 0 0 ;
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
 					- m_SourcePort = 828 1423 ;
-					- m_TargetPort = 93 358 ;
+					- m_TargetPort = 102 358 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
 					}
@@ -3183,7 +3183,7 @@ pattern
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
 					- m_SourcePort = 982 716 ;
-					- m_TargetPort = 198 858 ;
+					- m_TargetPort = 198 677 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
 					}
@@ -3352,7 +3352,7 @@ pattern
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
 					- m_SourcePort = 1011 950 ;
-					- m_TargetPort = 202 870 ;
+					- m_TargetPort = 202 555 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
 					}
@@ -3498,7 +3498,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 4096;
-					- m_transform = 0.107011 0 0 0.0556569 260 177.833 ;
+					- m_transform = 0.107011 0 0 0.0556569 295 179.833 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -3748,7 +3748,7 @@ pattern
 				}
 			}
 			- _name = "HWBoundary";
-			- _lastModifiedTime = "5.18.2010::14:0:57";
+			- _lastModifiedTime = "5.18.2010::20:41:16";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 91780ae3-c7ea-42a7-85a3-627f770958f6;
 				- m_type = 0;
@@ -3895,7 +3895,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2056;
-					- m_transform = 0.143532 0 0 0.101604 855.713 92.5722 ;
+					- m_transform = 0.143532 0 0 0.101604 836.713 98.5722 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -3974,7 +3974,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2152;
-					- m_transform = 0.188857 0 0 0.14795 575.622 204.324 ;
+					- m_transform = 0.188857 0 0 0.14795 575.622 216.324 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -4252,7 +4252,7 @@ pattern
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
 					- m_SourcePort = 527 959 ;
-					- m_TargetPort = 659 674 ;
+					- m_TargetPort = 659 593 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
 					}
@@ -4999,7 +4999,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.175637 0 0 0.101604 602.649 84.5722 ;
+					- m_transform = 0.175637 0 0 0.101604 591.649 97.5722 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -5109,8 +5109,8 @@ pattern
 					- m_anglePoint1 = 0 0 ;
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
-					- m_SourcePort = 537 1018 ;
-					- m_TargetPort = 531 939 ;
+					- m_SourcePort = 537 890 ;
+					- m_TargetPort = 531 880 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
 					}
@@ -5278,7 +5278,7 @@ pattern
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
 					- m_SourcePort = 595 890 ;
-					- m_TargetPort = 600 1018 ;
+					- m_TargetPort = 600 890 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
 					}
@@ -5638,7 +5638,7 @@ pattern
 				}
 			}
 			- _name = "ThreadModel";
-			- _lastModifiedTime = "5.18.2010::12:2:13";
+			- _lastModifiedTime = "5.18.2010::19:19:14";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID b37af65e-7055-4bc1-ab57-f84aba61cf0a;
 				- m_type = 0;
@@ -5756,7 +5756,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2152;
-					- m_transform = 0.199245 0 0 0.206774 707.601 210.972 ;
+					- m_transform = 0.199245 0 0 0.280749 741.601 90.6344 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -5775,7 +5775,7 @@ pattern
 					- m_polygon = 4 2 329  2 1451  1061 1451  1061 329  ;
 					- m_nNameFormat = 0;
 					- m_nIsNameFormat = 0;
-					- frameset = "<frameset rows=31%,69%>
+					- frameset = "<frameset rows=46%,54%>
 <frame name=AttributeListCompartment>
 <frame name=PrimitiveOperationListCompartment>";
 					- Attrs = { IRPYRawContainer 
@@ -5974,7 +5974,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2056;
-					- m_transform = 0.146364 0 0 0.101604 810.707 531.572 ;
+					- m_transform = 0.146364 0 0 0.101604 779.707 532.572 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -6071,8 +6071,8 @@ pattern
 					- m_anglePoint1 = 0 0 ;
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
-					- m_SourcePort = 825 1446 ;
-					- m_TargetPort = 419 801 ;
+					- m_SourcePort = 654 1447 ;
+					- m_TargetPort = 631 801 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
 					}
@@ -6236,7 +6236,7 @@ pattern
 					- m_polygon = 4 2 329  2 1451  1061 1451  1061 329  ;
 					- m_nNameFormat = 0;
 					- m_nIsNameFormat = 0;
-					- frameset = "<frameset rows=29%,71%>
+					- frameset = "<frameset rows=33%,67%>
 <frame name=AttributeListCompartment>
 <frame name=PrimitiveOperationListCompartment>";
 					- Attrs = { IRPYRawContainer 
@@ -6400,7 +6400,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2056;
-					- m_transform = 0.130312 0 0 0.101604 338.739 0.572205 ;
+					- m_transform = 0.130312 0 0 0.101604 335.739 73.5722 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -6571,8 +6571,8 @@ pattern
 					- m_anglePoint1 = 0 0 ;
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 0;
-					- m_SourcePort = 625 1213 ;
-					- m_TargetPort = 225 457 ;
+					- m_SourcePort = 47 781 ;
+					- m_TargetPort = 225 772 ;
 					- m_ShowName = 0;
 					- m_ShowStereotype = 1;
 				}
@@ -6627,7 +6627,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2056;
-					- m_transform = 0.169017 0 0 0.0944704 495.895 644.919 ;
+					- m_transform = 0.169017 0 0 0.0944704 495.895 652.919 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -7029,7 +7029,7 @@ pattern
 					- m_anglePoint1 = 0 0 ;
 					- m_anglePoint2 = 0 0 ;
 					- m_line_style = 2;
-					- m_SourcePort = 47 817 ;
+					- m_SourcePort = 47 1031 ;
 					- m_TargetPort = 978 600 ;
 					- m_pInverseModelObject = { IAssociationEndHandle 
 						- _m2Class = "";
@@ -8050,7 +8050,7 @@ pattern
 				}
 			}
 			- _name = "PatientModel";
-			- _lastModifiedTime = "5.18.2010::12:0:46";
+			- _lastModifiedTime = "5.18.2010::20:43:14";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 90e955ad-5d74-4cab-9310-6b212da8b3d1;
 				- m_type = 0;
@@ -9133,7 +9133,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.274788 0 0 0.171123 535.45 556.7 ;
+					- m_transform = 0.274788 0 0 0.171123 538.45 556.7 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -9308,7 +9308,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 4096;
-					- m_transform = 0.18727 0 0 0.108577 873 678.674 ;
+					- m_transform = 0.18727 0 0 0.108577 876 678.674 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -9971,7 +9971,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2088;
-					- m_transform = 0.164306 0 0 0.166667 275.671 567.167 ;
+					- m_transform = 0.164306 0 0 0.166667 278.671 567.167 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -10072,7 +10072,7 @@ pattern
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2152;
-					- m_transform = 0.17847 0 0 0.13369 34.6431 593.016 ;
+					- m_transform = 0.17847 0 0 0.13369 37.6431 593.016 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -17336,7 +17336,7 @@ from RealTimeThread";
 				}
 			}
 			- _name = "SettingParametersModel";
-			- _lastModifiedTime = "5.18.2010::12:19:56";
+			- _lastModifiedTime = "5.18.2010::19:21:59";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 0060858e-d405-41e5-b590-97d82cfe7c4f;
 				- m_type = 0;
@@ -17579,7 +17579,7 @@ from RealTimeThread";
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 4136;
-					- m_transform = 0.230406 0 0 0.101604 176.539 247.572 ;
+					- m_transform = 0.230406 0 0 0.101604 194.539 241.572 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -17594,10 +17594,11 @@ from RealTimeThread";
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
+					- m_bFramesetModified = 1;
 					- m_polygon = 4 2 329  2 1451  1061 1451  1061 329  ;
 					- m_nNameFormat = 0;
 					- m_nIsNameFormat = 0;
-					- frameset = "<frameset rows=50%,50%>
+					- frameset = "<frameset rows=32%,68%>
 <frame name=AttributeListCompartment>
 <frame name=PrimitiveOperationListCompartment>";
 					- Attrs = { IRPYRawContainer 
@@ -17618,6 +17619,31 @@ from RealTimeThread";
 				}
 				{ CGIClass 
 					- _id = GUID e5b4178c-f9f6-4564-834b-f64ed1d9d984;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "General";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Graphics";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "FitBoxToItsTextuals";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 87;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IClass";
@@ -17638,7 +17664,7 @@ from RealTimeThread";
 						- m_nOrientationCtrlPt = 5;
 					}
 					- m_drawBehavior = 2056;
-					- m_transform = 0.0944287 0 0 0.101604 595.811 434.572 ;
+					- m_transform = 0.115203 0 0 0.101604 595.769 434.572 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_AdditionalLabel = { CGIText 
 						- m_str = "";
@@ -55337,7 +55363,7 @@ from RealTimeThread";
 			}
 		}
 	}
-	- weakCGTime = 5.18.2010::14:0:57;
+	- weakCGTime = 5.18.2010::20:41:16;
 	- strongCGTime = 5.3.2010::12:16:30;
 	- _defaultComposite = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 	- _eventsBaseID = -1;
@@ -55348,7 +55374,7 @@ from RealTimeThread";
 			- _id = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.18.2010::12:20:47;
+			- weakCGTime = 5.18.2010::14:0:57;
 			- strongCGTime = 5.3.2010::12:16:30;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
