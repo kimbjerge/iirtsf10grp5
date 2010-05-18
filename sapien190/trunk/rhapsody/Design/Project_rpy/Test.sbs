@@ -153,7 +153,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ConTestPatientModel";
-			- _lastModifiedTime = "5.15.2010::10:53:46";
+			- _lastModifiedTime = "5.18.2010::10:27:23";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 6a8a2df3-5c3f-4c9d-bf3d-30c21df61768;
 				- m_type = 0;
@@ -398,7 +398,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						- size = 0;
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 11;
+						- size = 13;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -487,6 +487,22 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _class = "PatientModel";
 							- _name = "AlternateRecord(Record*)";
 							- _id = GUID 21678d3e-4084-48c1-8c2b-e60a92a40fa7;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "PatientModel";
+							- _name = "CreateProtocols()";
+							- _id = GUID c212e530-671e-4757-8e5f-4020238e28f3;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "PatientModel";
+							- _name = "ProtocolChanged(ProtocolColleague*)";
+							- _id = GUID b8ee3c8e-e5bc-4f1d-ad92-286d6afedf33;
 						}
 					}
 				}
@@ -841,7 +857,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ConTestCreateSimulatorRealtime";
-			- _lastModifiedTime = "5.15.2010::10:56:28";
+			- _lastModifiedTime = "5.18.2010::12:12:44";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 5b68ece5-7e47-42a0-b0bb-fa533d18cc76;
 				- m_type = 0;
@@ -1092,7 +1108,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 <frame name=AttributeListCompartment>
 <frame name=PrimitiveOperationListCompartment>";
 					- Attrs = { IRPYRawContainer 
-						- size = 1;
+						- size = 2;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IAttribute";
@@ -1102,9 +1118,17 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _name = "state";
 							- _id = GUID c254885b-4ffa-4daa-b657-422a119c5164;
 						}
+						{ IHandle 
+							- _m2Class = "IAttribute";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "SimulatorRealtime";
+							- _name = "_instance";
+							- _id = GUID 10df1477-e34c-4665-ae49-660243b1359d;
+						}
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 13;
+						- size = 14;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IDestructor";
@@ -1209,6 +1233,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _class = "SimulatorRealtime";
 							- _name = "SetSampleRate(int)";
 							- _id = GUID a3caab6f-2070-4a44-a311-9e90dfd46dde;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "SimulatorRealtime";
+							- _name = "Instance(int)";
+							- _id = GUID 288971c2-47fc-4b63-a6af-e275805331e1;
 						}
 					}
 				}
@@ -2117,7 +2149,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.15.2010::10:31:7;
+	- weakCGTime = 5.18.2010::12:6:57;
 	- strongCGTime = 5.3.2010::19:50:5;
 	- _defaultComposite = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 	- _eventsBaseID = -1;
@@ -2128,7 +2160,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.14.2010::12:35:33;
+			- weakCGTime = 5.15.2010::10:31:7;
 			- strongCGTime = 5.3.2010::19:50:5;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -7826,7 +7858,7 @@ std::cout << fp->GetSample() << std::endl;
 					- _myState = 10240;
 					- _name = "statechart_1";
 					- _lastID = 11;
-					- weakCGTime = 5.14.2010::12:35:33;
+					- weakCGTime = 5.15.2010::10:54:41;
 					- strongCGTime = 5.7.2010::8:59:9;
 					- _multiplicity = "";
 					- _itsStateChart = { IHandle 

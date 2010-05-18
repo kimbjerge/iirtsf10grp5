@@ -4,8 +4,64 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		- size = 0;
 	}
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 8;
+		- size = 12;
 		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 66;
+				- m_nTop = 66;
+				- m_nRight = 674;
+				- m_nBottom = 490;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "AbstractHW.sbs";
+				- _subsystem = "AbstractHW";
+				- _class = "";
+				- _name = "AbstractHW classes";
+				- _id = GUID ef200d69-8525-4d1e-8706-d93c9a6ae7fb;
+			}
+			- _UpLeft = 30 130 ;
+			- _DownRight = 610 507 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 44;
+				- m_nTop = 44;
+				- m_nRight = 564;
+				- m_nBottom = 484;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "AbstractOS.sbs";
+				- _subsystem = "AbstractOS";
+				- _class = "";
+				- _name = "OS Abstraction";
+				- _id = GUID 2a7de03f-373f-4c19-8411-305f9f05a8ae;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 492 393 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 1;
+		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
@@ -29,10 +85,10 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "ContinousOverview";
 				- _id = GUID 4dc0fb2d-6ed3-4195-865f-b385ac8fad8e;
 			}
-			- _UpLeft = 115 310 ;
-			- _DownRight = 851 716 ;
+			- _UpLeft = 57 0 ;
+			- _DownRight = 839 432 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 1;
+			- m_nDiagramIndex = 5;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -57,8 +113,36 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "HWBoundary";
 				- _id = GUID 05f3ad76-cead-43c6-8e3e-1d9322e68f10;
 			}
-			- _UpLeft = 110 90 ;
-			- _DownRight = 696 579 ;
+			- _UpLeft = 314 40 ;
+			- _DownRight = 900 529 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 6;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 0;
+				- m_nTop = 0;
+				- m_nRight = 697;
+				- m_nBottom = 424;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "NormalGenerator";
+				- _id = GUID 94399c3b-18f8-43a3-b545-0e96108c6ba0;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 669 377 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 2;
 		}
@@ -85,10 +169,38 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "PatientModel";
 				- _id = GUID 8a759616-ecaa-4d7f-bba4-6f189212bb78;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 575 515 ;
+			- _UpLeft = 177 198 ;
+			- _DownRight = 859 810 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 6;
+			- m_nDiagramIndex = 10;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 198;
+				- m_nTop = 198;
+				- m_nRight = 895;
+				- m_nBottom = 622;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "PatientModelMediator";
+				- _id = GUID b088716d-3f3a-4521-9d25-fb92f7ccff95;
+			}
+			- _UpLeft = 0 86 ;
+			- _DownRight = 669 463 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 3;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -113,10 +225,10 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "PhysioModel";
 				- _id = GUID 86f32eec-a79a-494c-95f1-e1435092e146;
 			}
-			- _UpLeft = 0 130 ;
-			- _DownRight = 741 550 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1037 719 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 7;
+			- m_nDiagramIndex = 11;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -141,10 +253,10 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "SettingParametersModel";
 				- _id = GUID aa4820ae-df24-490f-990b-73fed80217b6;
 			}
-			- _UpLeft = 0 245 ;
-			- _DownRight = 649 529 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 729 319 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 0;
+			- m_nDiagramIndex = 4;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -169,10 +281,10 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "SimulatorRealtimeModel";
 				- _id = GUID 5435a97b-93b9-4061-a3a4-a062bb5d0d92;
 			}
-			- _UpLeft = 74 0 ;
-			- _DownRight = 536 489 ;
+			- _UpLeft = 200 0 ;
+			- _DownRight = 662 489 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 3;
+			- m_nDiagramIndex = 7;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -197,10 +309,10 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "ThreadModel";
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
-			- _UpLeft = 0 218 ;
-			- _DownRight = 733 493 ;
+			- _UpLeft = 80 360 ;
+			- _DownRight = 813 635 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 4;
+			- m_nDiagramIndex = 8;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -225,10 +337,10 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID dc508800-9a22-47a9-a128-794d95acb6c6;
 			}
-			- _UpLeft = 0 71 ;
-			- _DownRight = 1027 480 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1241 494 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 5;
+			- m_nDiagramIndex = 9;
 		}
 	}
 	- _fullName = "C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\Project";

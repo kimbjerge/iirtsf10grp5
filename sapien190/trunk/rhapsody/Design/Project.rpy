@@ -63,11 +63,11 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	}
 	- _component = { IHandle 
 		- _m2Class = "IComponent";
-		- _filename = "TargetComponent.cmp";
+		- _filename = "DefaultComponent.cmp";
 		- _subsystem = "";
 		- _class = "";
-		- _name = "TargetComponent";
-		- _id = GUID 1cc071c8-1b53-4e12-abac-6a090ffe65e9;
+		- _name = "DefaultComponent";
+		- _id = GUID 70c70b12-7d6c-4c76-8ce6-548c4ac2a18b;
 	}
 	- Multiplicities = { IRPYRawContainer 
 		- size = 4;
@@ -1933,7 +1933,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "SubSystemsView";
-			- _lastModifiedTime = "5.15.2010::10:53:46";
+			- _lastModifiedTime = "5.18.2010::10:27:23";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID c4a9a0b7-c588-441e-b401-1b9825d901bb;
 				- m_type = 0;
@@ -2305,7 +2305,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						}
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 11;
+						- size = 12;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IPrimitiveOperation";
@@ -2394,6 +2394,14 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _class = "PatientModel";
 							- _name = "AlternateRecord(Record*)";
 							- _id = GUID 21678d3e-4084-48c1-8c2b-e60a92a40fa7;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "PatientModel";
+							- _name = "ProtocolChanged(ProtocolColleague*)";
+							- _id = GUID b8ee3c8e-e5bc-4f1d-ad92-286d6afedf33;
 						}
 					}
 					- m_multiplicity = { CGIText 
