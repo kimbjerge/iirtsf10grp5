@@ -183,7 +183,7 @@ bool SimulatorRealtime::SetRecord(Record* aRecord) {
 
 void SimulatorRealtime::StartSimulation() {
     //#[ operation StartSimulation()
-    if ((state == Initialized) && (itsPatientModel != NULL))
+    if ( ((state == Initialized) || (state == Stopped)) && (itsPatientModel != NULL) )
     {
     	itsPatientModel->StartSimulation();
     	itsRealTimeThread->setItsPatientModel(itsPatientModel);
