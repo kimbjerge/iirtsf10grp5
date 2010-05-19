@@ -1,0 +1,66 @@
+Scrum Status 19. May:
+____________________
+
+Peter:
+	Done:
+	- Meeting minutes
+	- Added text to Chapter 5
+	Problems:
+	- 
+	Next:
+	- Merge Anders and Peter changes to architecture document
+	- Continue writing on chapter 5+6 in architecture document except for 5.2.2 
+
+Anders:
+	Done:
+	- Continued with design and implementation of QT controller with command and state pattern
+	Problems:
+	- 
+	Next:
+	- Complete discrete demonstrator
+	- Document discrete system in architecture document chapter 5.2.2
+	- Finalize chapter 10 in architecture document
+	- Architecture document chapter 7. deployment + 8. implementation view
+	- Architecture document chapter 11. and 12. 
+
+Kim:	
+	Done:
+	- Add mediator and singleton diagrams to architecture document
+	- Update Rhapsody model with command - state - singleton design Anders has made when completed
+	Problems:
+	- 
+	Next:
+	- Meeting minutes
+        - Update with newest changes from Anders
+	- Format report
+	- Architecture document chapter 6. Process/task view
+	- Write on project execution section in the Report
+	- Appendix screen dumps of test
+
+
+Next scrum meeting tuesday at 9:00
+	- Scrum status
+	- Status on writing Architecture document
+	- Status on report writing and assigment of tasks
+	- Continue to 16:00 
+
+
+Action list (Backlog) to final delivery 04. june:
+____________________________________________
+
+Planned meettings to finialize:
+	- Tirsdag 25, Fredag 28
+	- Mandag 31, Tirsdag 1, Torsdag 3
+
+	- Finalize Requirement Specification
+	- Finalize Product Architecture Document
+	- Finalize Test Documentation
+	- Finalize Project Report
+	- Prototype with Use Case #1 (Run Simulation) and #2 (Select and initiate Scenario) implemented
+
+	- GUI design and change of views based on the discrete model
+	- Integrate Rhapsody model with GuI and FrameBuffer observer
+	- Implement ECG to EDR filter
+	- Implement ECG to Pulse filter
+	- Implement Serial Port Interface
+	- Optionally implement Use Case #3 (Adjust Scenario Parameters)
