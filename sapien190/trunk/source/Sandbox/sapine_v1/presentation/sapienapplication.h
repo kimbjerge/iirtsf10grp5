@@ -20,16 +20,6 @@ class SapienApplication : public QApplication
 {
 public:
     SapienApplication(int argc, char *argv[]);
-    SimulatorRealtime* GetSimulatorRealtime();
-    void ChangeState(SimState*);
-
-private:
-    SimulationRunning sim;
-    SimState *simState;
-    SimulatorRealtime *itsSimulatorRealtime;
-
-public slots:
-    void SimulatorButtonPushed(SimCommand*);
 };
 
 #endif // SAPIENAPPLICATION_H

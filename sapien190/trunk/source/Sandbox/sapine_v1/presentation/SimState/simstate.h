@@ -2,21 +2,22 @@
 #define SIMSTATE_H
 
 #include "SimulatorRealtime.h"
-#include "presentation/sapienapplication.h"
+#include "presentation/uicontroller.h"
 
 class SimState
 {
 public:
-    SimState(SapienApplication*);
-    void Initialize(Record*,SimulatorRealtime::MODEL_TYPES,SimulatorRealtime::MEDICINE_TYPES);
-    void Start();
-    void Stop();
-    void Pause();
-    void Resume();
-    void SetSapienApplication(SapienApplication*);
+    SimState(UIController*);
+    virtual void Initialize(Record*,SimulatorRealtime::MODEL_TYPES,SimulatorRealtime::MEDICINE_TYPES);
+    virtual void Start();
+    virtual void Stop();
+    virtual void Pause();
+    virtual void Resume();
+    void SetSapienApplication(UIController*);
 protected:
     void ChangeState(SimState*);
-    SapienApplication* sapienApp;
+    UIController* controller;
+    string name;
 };
 
 #endif // SIMSTATE_H

@@ -1,10 +1,11 @@
 #include "initializedstate.h"
 
-InitializedState::InitializedState(SapienApplication* app) : SimState(app)
+InitializedState::InitializedState(UIController* controller) : SimState(controller)
 {
+    this->name = "Initialized";
 }
 
 void InitializedState::Start()
 {
-    this->sapienApp->GetSimulatorRealtime()->StartSimulation();
+    this->controller->GetSimulatorRealtime()->StartSimulation();
 }

@@ -6,7 +6,7 @@
 class InitializedState : public SimState
 {
 public:
-    InitializedState(SapienApplication*);
+    InitializedState(UIController*);
     void Start();
 };
 

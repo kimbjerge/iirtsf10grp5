@@ -16,9 +16,14 @@ SimulationRunning::SimulationRunning(QWidget *parent) :
     top->move(50,250);
     top->show();
 
+    connect(this,SIGNAL(frameBufferUpdated()),top,SLOT(frameBufferUpdated()), Qt::QueuedConnection);
+
+
     bottom = new Graph(this);
     bottom->move(50,50);
     bottom->show();
+
+    connect(this,SIGNAL(frameBufferUpdated()),bottom,SLOT(frameBufferUpdated()), Qt::QueuedConnection);
 }
 
 SimulationRunning::~SimulationRunning()

@@ -50,7 +50,25 @@
  </data>
  <data>
   <variable>activebuildconfiguration</variable>
-  <value type="QString">Debug</value>
+  <value type="QString">4.6.2 Debug</value>
+ </data>
+ <data>
+  <variable>buildConfiguration-4.6.2 Debug</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">4.6.2 Debug</value>
+   <value key="QtVersionId" type="int">7</value>
+   <value key="ToolChain" type="int">0</value>
+   <value key="buildConfiguration" type="int">2</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildConfiguration-4.6.2 Release</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">4.6.2 Release</value>
+   <value key="QtVersionId" type="int">7</value>
+   <value key="ToolChain" type="int">0</value>
+   <value key="buildConfiguration" type="int">0</value>
+  </valuemap>
  </data>
  <data>
   <variable>buildConfiguration-Debug</variable>
@@ -63,42 +81,59 @@
   </valuemap>
  </data>
  <data>
-  <variable>buildconfiguration-Debug-buildstep0</variable>
+  <variable>buildConfiguration-Qt 4.6.1 OpenSource Debug</variable>
   <valuemap type="QVariantMap">
-   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Qt 4.6.1 OpenSource Debug</value>
+   <value key="QtVersionId" type="int">2</value>
+   <value key="buildConfiguration" type="int">2</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildConfiguration-Qt 4.6.1 OpenSource Release</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Qt 4.6.1 OpenSource Release</value>
+   <value key="QtVersionId" type="int">2</value>
+   <value key="ToolChain" type="int">0</value>
+   <value key="buildConfiguration" type="int">0</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-4.6.2 Debug-buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">4.6.2 Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-aEnGyF7AIW,guid=3c52950439503fdd73465c504bf19065</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-KZMuc37LzL,guid=a020b8c5dce760bc3efe24a34bf3986d</value>
     <value type="QString">DESKTOP_SESSION=gnome</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">GDMSESSION=gnome</value>
     <value type="QString">GDM_KEYBOARD_LAYOUT=dk</value>
     <value type="QString">GDM_LANG=en_US.UTF-8</value>
     <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_PID=1885</value>
-    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-meZpad/socket</value>
+    <value type="QString">GNOME_KEYRING_PID=1634</value>
+    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-iU4cjK/socket</value>
     <value type="QString">GTK_MODULES=canberra-gtk-module</value>
     <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/stud/.gtkrc-1.2-gnome2</value>
     <value type="QString">HOME=/home/stud</value>
     <value type="QString">LANG=en_US.UTF-8</value>
-    <value type="QString">LD_LIBRARY_PATH=/home/stud/qtsdk-2010.02/lib/qtcreator:</value>
+    <value type="QString">LD_LIBRARY_PATH=/home/stud/qtsdk-2010.01/lib/qtcreator:</value>
     <value type="QString">LOGNAME=stud</value>
     <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-stud</value>
     <value type="QString">PATH=/home/stud/qtsdk-2010.02/qt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
     <value type="QString">PWD=/home/stud</value>
     <value type="QString">QTDIR=/home/stud/qtsdk-2010.02/qt</value>
-    <value type="QString">SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1900,unix/ubuntu:/tmp/.ICE-unix/1900</value>
+    <value type="QString">SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1649,unix/ubuntu:/tmp/.ICE-unix/1649</value>
     <value type="QString">SHELL=/bin/bash</value>
     <value type="QString">SPEECHD_PORT=7560</value>
-    <value type="QString">SSH_AGENT_PID=1942</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-meZpad/socket.ssh</value>
+    <value type="QString">SSH_AGENT_PID=1689</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-iU4cjK/socket.ssh</value>
     <value type="QString">USER=stud</value>
     <value type="QString">USERNAME=stud</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-stud-IMmNfh/database</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-stud-pl8HgO/database</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
-    <value type="QString">XDG_SESSION_COOKIE=29d726dbac1c763a337b96144b4dc567-1274122338.916163-2034188742</value>
+    <value type="QString">XDG_SESSION_COOKIE=29d726dbac1c763a337b96144b4dc567-1274255468.551235-1550087824</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
-    <value type="QString">/mnt/hgfs/Ubuntu_share/sapine_v1/sapine_v1.pro</value>
+    <value type="QString">/home/stud/Documents/sapien190v2/source/Sandbox/sapine_v1/sapine_v1.pro</value>
     <value type="QString">-spec</value>
     <value type="QString">linux-g++</value>
     <value type="QString">-r</value>
@@ -108,7 +143,214 @@
    </valuelist>
    <value key="abstractProcess.command" type="QString">/home/stud/qtsdk-2010.02/qt/bin/qmake</value>
    <value key="abstractProcess.enabled" type="bool">false</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/mnt/hgfs/Ubuntu_share/sapine_v1</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/stud/Documents/sapien190v2/source/Sandbox/sapine_v1</value>
+   <valuelist key="qmakeArgs" type="QVariantList">
+    <value type="QString">LIBS+=-lwfdb</value>
+    <value type="QString">DEFINES+=_LINUX</value>
+   </valuelist>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-4.6.2 Debug-buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">4.6.2 Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-KZMuc37LzL,guid=a020b8c5dce760bc3efe24a34bf3986d</value>
+    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">GDMSESSION=gnome</value>
+    <value type="QString">GDM_KEYBOARD_LAYOUT=dk</value>
+    <value type="QString">GDM_LANG=en_US.UTF-8</value>
+    <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
+    <value type="QString">GNOME_KEYRING_PID=1634</value>
+    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-iU4cjK/socket</value>
+    <value type="QString">GTK_MODULES=canberra-gtk-module</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/stud/.gtkrc-1.2-gnome2</value>
+    <value type="QString">HOME=/home/stud</value>
+    <value type="QString">LANG=en_US.UTF-8</value>
+    <value type="QString">LD_LIBRARY_PATH=/home/stud/qtsdk-2010.01/lib/qtcreator:</value>
+    <value type="QString">LOGNAME=stud</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-stud</value>
+    <value type="QString">PATH=/home/stud/qtsdk-2010.02/qt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/stud</value>
+    <value type="QString">QTDIR=/home/stud/qtsdk-2010.02/qt</value>
+    <value type="QString">SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1649,unix/ubuntu:/tmp/.ICE-unix/1649</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SPEECHD_PORT=7560</value>
+    <value type="QString">SSH_AGENT_PID=1689</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-iU4cjK/socket.ssh</value>
+    <value type="QString">USER=stud</value>
+    <value type="QString">USERNAME=stud</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-stud-pl8HgO/database</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
+    <value type="QString">XDG_SESSION_COOKIE=29d726dbac1c763a337b96144b4dc567-1274255468.551235-1550087824</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">-w</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/stud/Documents/sapien190v2/source/Sandbox/sapine_v1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-4.6.2 Debug-cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">4.6.2 Debug</value>
+   <value key="cleanConfig" type="bool">true</value>
+   <valuelist key="makeargs" type="QVariantList">
+    <value type="QString">clean</value>
+   </valuelist>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-4.6.2 Release-buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">4.6.2 Release</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-KZMuc37LzL,guid=a020b8c5dce760bc3efe24a34bf3986d</value>
+    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">GDMSESSION=gnome</value>
+    <value type="QString">GDM_KEYBOARD_LAYOUT=dk</value>
+    <value type="QString">GDM_LANG=en_US.UTF-8</value>
+    <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
+    <value type="QString">GNOME_KEYRING_PID=1634</value>
+    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-iU4cjK/socket</value>
+    <value type="QString">GTK_MODULES=canberra-gtk-module</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/stud/.gtkrc-1.2-gnome2</value>
+    <value type="QString">HOME=/home/stud</value>
+    <value type="QString">LANG=en_US.UTF-8</value>
+    <value type="QString">LD_LIBRARY_PATH=/home/stud/qtsdk-2010.01/lib/qtcreator:</value>
+    <value type="QString">LOGNAME=stud</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-stud</value>
+    <value type="QString">PATH=/home/stud/qtsdk-2010.02/qt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/stud</value>
+    <value type="QString">QTDIR=/home/stud/qtsdk-2010.02/qt</value>
+    <value type="QString">SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1649,unix/ubuntu:/tmp/.ICE-unix/1649</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SPEECHD_PORT=7560</value>
+    <value type="QString">SSH_AGENT_PID=1689</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-iU4cjK/socket.ssh</value>
+    <value type="QString">USER=stud</value>
+    <value type="QString">USERNAME=stud</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-stud-pl8HgO/database</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
+    <value type="QString">XDG_SESSION_COOKIE=29d726dbac1c763a337b96144b4dc567-1274255468.551235-1550087824</value>
+   </valuelist>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">/home/stud/Documents/sapien190v2/source/Sandbox/sapine_v1/sapine_v1.pro</value>
+    <value type="QString">-spec</value>
+    <value type="QString">linux-g++</value>
+    <value type="QString">-r</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/home/stud/qtsdk-2010.02/qt/bin/qmake</value>
+   <value key="abstractProcess.enabled" type="bool">false</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/stud/Documents/sapien190v2/source/Sandbox/sapine_v1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-4.6.2 Release-buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">4.6.2 Release</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-KZMuc37LzL,guid=a020b8c5dce760bc3efe24a34bf3986d</value>
+    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">GDMSESSION=gnome</value>
+    <value type="QString">GDM_KEYBOARD_LAYOUT=dk</value>
+    <value type="QString">GDM_LANG=en_US.UTF-8</value>
+    <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
+    <value type="QString">GNOME_KEYRING_PID=1634</value>
+    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-iU4cjK/socket</value>
+    <value type="QString">GTK_MODULES=canberra-gtk-module</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/stud/.gtkrc-1.2-gnome2</value>
+    <value type="QString">HOME=/home/stud</value>
+    <value type="QString">LANG=en_US.UTF-8</value>
+    <value type="QString">LD_LIBRARY_PATH=/home/stud/qtsdk-2010.01/lib/qtcreator:</value>
+    <value type="QString">LOGNAME=stud</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-stud</value>
+    <value type="QString">PATH=/home/stud/qtsdk-2010.02/qt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/stud</value>
+    <value type="QString">QTDIR=/home/stud/qtsdk-2010.02/qt</value>
+    <value type="QString">SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1649,unix/ubuntu:/tmp/.ICE-unix/1649</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SPEECHD_PORT=7560</value>
+    <value type="QString">SSH_AGENT_PID=1689</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-iU4cjK/socket.ssh</value>
+    <value type="QString">USER=stud</value>
+    <value type="QString">USERNAME=stud</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-stud-pl8HgO/database</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
+    <value type="QString">XDG_SESSION_COOKIE=29d726dbac1c763a337b96144b4dc567-1274255468.551235-1550087824</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">-w</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/stud/Documents/sapien190v2/source/Sandbox/sapine_v1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-4.6.2 Release-cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">4.6.2 Release</value>
+   <value key="cleanConfig" type="bool">true</value>
+   <valuelist key="makeargs" type="QVariantList">
+    <value type="QString">clean</value>
+   </valuelist>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Debug-buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-KZMuc37LzL,guid=a020b8c5dce760bc3efe24a34bf3986d</value>
+    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">GDMSESSION=gnome</value>
+    <value type="QString">GDM_KEYBOARD_LAYOUT=dk</value>
+    <value type="QString">GDM_LANG=en_US.UTF-8</value>
+    <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
+    <value type="QString">GNOME_KEYRING_PID=1634</value>
+    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-iU4cjK/socket</value>
+    <value type="QString">GTK_MODULES=canberra-gtk-module</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/stud/.gtkrc-1.2-gnome2</value>
+    <value type="QString">HOME=/home/stud</value>
+    <value type="QString">LANG=en_US.UTF-8</value>
+    <value type="QString">LD_LIBRARY_PATH=/home/stud/qtsdk-2010.01/lib/qtcreator:</value>
+    <value type="QString">LOGNAME=stud</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-stud</value>
+    <value type="QString">PATH=/usr/local/Trolltech/QtEmbedded-4.6.1-arm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/stud</value>
+    <value type="QString">QTDIR=/usr/local/Trolltech/QtEmbedded-4.6.1-arm</value>
+    <value type="QString">SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1649,unix/ubuntu:/tmp/.ICE-unix/1649</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SPEECHD_PORT=7560</value>
+    <value type="QString">SSH_AGENT_PID=1689</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-iU4cjK/socket.ssh</value>
+    <value type="QString">USER=stud</value>
+    <value type="QString">USERNAME=stud</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-stud-pl8HgO/database</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
+    <value type="QString">XDG_SESSION_COOKIE=29d726dbac1c763a337b96144b4dc567-1274255468.551235-1550087824</value>
+   </valuelist>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">/home/stud/Documents/sapien190v2/source/Sandbox/sapine_v1/sapine_v1.pro</value>
+    <value type="QString">-spec</value>
+    <value type="QString">/usr/local/Trolltech/QtEmbedded-4.6.1-arm/mkspecs/qws/linux-arm-g++</value>
+    <value type="QString">-r</value>
+    <value type="QString">CONFIG+=debug</value>
+    <value type="QString">LIBS+=-lwfdb</value>
+    <value type="QString">DEFINES+=_LINUX</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/home/stud/qt-everywhere-opensource-src-4.6.1/bin/qmake</value>
+   <value key="abstractProcess.enabled" type="bool">false</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/stud/Documents/sapien190v2/source/Sandbox/sapine_v1</value>
    <valuelist key="qmakeArgs" type="QVariantList">
     <value type="QString">LIBS+=-lwfdb</value>
     <value type="QString">DEFINES+=_LINUX</value>
@@ -120,35 +362,35 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-aEnGyF7AIW,guid=3c52950439503fdd73465c504bf19065</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-KZMuc37LzL,guid=a020b8c5dce760bc3efe24a34bf3986d</value>
     <value type="QString">DESKTOP_SESSION=gnome</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">GDMSESSION=gnome</value>
     <value type="QString">GDM_KEYBOARD_LAYOUT=dk</value>
     <value type="QString">GDM_LANG=en_US.UTF-8</value>
     <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_PID=1885</value>
-    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-meZpad/socket</value>
+    <value type="QString">GNOME_KEYRING_PID=1634</value>
+    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-iU4cjK/socket</value>
     <value type="QString">GTK_MODULES=canberra-gtk-module</value>
     <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/stud/.gtkrc-1.2-gnome2</value>
     <value type="QString">HOME=/home/stud</value>
     <value type="QString">LANG=en_US.UTF-8</value>
-    <value type="QString">LD_LIBRARY_PATH=/home/stud/qtsdk-2010.02/lib/qtcreator:</value>
+    <value type="QString">LD_LIBRARY_PATH=/home/stud/qtsdk-2010.01/lib/qtcreator:</value>
     <value type="QString">LOGNAME=stud</value>
     <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-stud</value>
-    <value type="QString">PATH=/home/stud/qtsdk-2010.02/qt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PATH=/usr/local/Trolltech/QtEmbedded-4.6.1-arm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
     <value type="QString">PWD=/home/stud</value>
-    <value type="QString">QTDIR=/home/stud/qtsdk-2010.02/qt</value>
-    <value type="QString">SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1900,unix/ubuntu:/tmp/.ICE-unix/1900</value>
+    <value type="QString">QTDIR=/usr/local/Trolltech/QtEmbedded-4.6.1-arm</value>
+    <value type="QString">SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1649,unix/ubuntu:/tmp/.ICE-unix/1649</value>
     <value type="QString">SHELL=/bin/bash</value>
     <value type="QString">SPEECHD_PORT=7560</value>
-    <value type="QString">SSH_AGENT_PID=1942</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-meZpad/socket.ssh</value>
+    <value type="QString">SSH_AGENT_PID=1689</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-iU4cjK/socket.ssh</value>
     <value type="QString">USER=stud</value>
     <value type="QString">USERNAME=stud</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-stud-IMmNfh/database</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-stud-pl8HgO/database</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
-    <value type="QString">XDG_SESSION_COOKIE=29d726dbac1c763a337b96144b4dc567-1274122338.916163-2034188742</value>
+    <value type="QString">XDG_SESSION_COOKIE=29d726dbac1c763a337b96144b4dc567-1274255468.551235-1550087824</value>
    </valuelist>
    <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
@@ -156,52 +398,53 @@
    </valuelist>
    <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
    <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/mnt/hgfs/Ubuntu_share/sapine_v1</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/stud/Documents/sapien190v2/source/Sandbox/sapine_v1</value>
   </valuemap>
  </data>
  <data>
   <variable>buildconfiguration-Debug-cleanstep0</variable>
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
-   <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-aEnGyF7AIW,guid=3c52950439503fdd73465c504bf19065</value>
-    <value type="QString">DESKTOP_SESSION=gnome</value>
-    <value type="QString">DISPLAY=:0.0</value>
-    <value type="QString">GDMSESSION=gnome</value>
-    <value type="QString">GDM_KEYBOARD_LAYOUT=dk</value>
-    <value type="QString">GDM_LANG=en_US.UTF-8</value>
-    <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_PID=1885</value>
-    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-meZpad/socket</value>
-    <value type="QString">GTK_MODULES=canberra-gtk-module</value>
-    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/stud/.gtkrc-1.2-gnome2</value>
-    <value type="QString">HOME=/home/stud</value>
-    <value type="QString">LANG=en_US.UTF-8</value>
-    <value type="QString">LD_LIBRARY_PATH=/home/stud/qtsdk-2010.02/lib/qtcreator:</value>
-    <value type="QString">LOGNAME=stud</value>
-    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-stud</value>
-    <value type="QString">PATH=/home/stud/qtsdk-2010.02/qt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
-    <value type="QString">PWD=/home/stud</value>
-    <value type="QString">QTDIR=/home/stud/qtsdk-2010.02/qt</value>
-    <value type="QString">SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1900,unix/ubuntu:/tmp/.ICE-unix/1900</value>
-    <value type="QString">SHELL=/bin/bash</value>
-    <value type="QString">SPEECHD_PORT=7560</value>
-    <value type="QString">SSH_AGENT_PID=1942</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-meZpad/socket.ssh</value>
-    <value type="QString">USER=stud</value>
-    <value type="QString">USERNAME=stud</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-stud-IMmNfh/database</value>
-    <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
-    <value type="QString">XDG_SESSION_COOKIE=29d726dbac1c763a337b96144b4dc567-1274122338.916163-2034188742</value>
-   </valuelist>
-   <value key="abstractProcess.IgnoreReturnValue" type="bool">true</value>
-   <valuelist key="abstractProcess.arguments" type="QVariantList">
+   <value key="cleanConfig" type="bool">true</value>
+   <valuelist key="makeargs" type="QVariantList">
     <value type="QString">clean</value>
-    <value type="QString">-w</value>
    </valuelist>
-   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
-   <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/mnt/hgfs/Ubuntu_share/sapine_v1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Qt 4.6.1 OpenSource Debug-buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Qt 4.6.1 OpenSource Debug</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Qt 4.6.1 OpenSource Debug-buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Qt 4.6.1 OpenSource Debug</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Qt 4.6.1 OpenSource Debug-cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Qt 4.6.1 OpenSource Debug</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Qt 4.6.1 OpenSource Release-buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Qt 4.6.1 OpenSource Release</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Qt 4.6.1 OpenSource Release-buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Qt 4.6.1 OpenSource Release</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Qt 4.6.1 OpenSource Release-cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Qt 4.6.1 OpenSource Release</value>
    <value key="cleanConfig" type="bool">true</value>
    <valuelist key="makeargs" type="QVariantList">
     <value type="QString">clean</value>
@@ -212,6 +455,10 @@
   <variable>buildconfigurations</variable>
   <valuelist type="QVariantList">
    <value type="QString">Debug</value>
+   <value type="QString">4.6.2 Debug</value>
+   <value type="QString">4.6.2 Release</value>
+   <value type="QString">Qt 4.6.1 OpenSource Debug</value>
+   <value type="QString">Qt 4.6.1 OpenSource Release</value>
   </valuelist>
  </data>
  <data>

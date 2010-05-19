@@ -2,17 +2,17 @@
 #include "pausedstate.h"
 #include "initializedstate.h"
 
-#include "presentation/sapienapplication.h""
+#include "presentation/uicontroller.h""
 
-RunningState::RunningState(SapienApplication* app) : SimState(app)
+RunningState::RunningState(UIController* controller) : SimState(controller)
 {
 }
 
 void RunningState::Pause(){
-    this->ChangeState(new PausedState(this->sapienApp));
+    this->ChangeState(new PausedState(this->controller));
 }
 
 void RunningState::Stop(){
-    this->sapienApp->GetSimulatorRealtime()->StopSimulation();
-    this->ChangeState(new InitializedState(this->sapienApp));
+    this->controller->GetSimulatorRealtime()->StopSimulation();
+    this->ChangeState(new InitializedState(this->controller));
 }

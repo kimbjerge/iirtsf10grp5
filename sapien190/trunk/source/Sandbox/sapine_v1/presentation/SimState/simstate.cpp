@@ -1,28 +1,27 @@
 #include "simstate.h"
 #include "initializedstate.h"
 
-SimState::SimState(SapienApplication* sapienApp)
+SimState::SimState(UIController* controller)
 {
-    this->sapienApp = sapienApp;
+    this->controller = controller;
+    this->name = "SimState";
 }
 
 void SimState::Initialize(Record * record, SimulatorRealtime::MODEL_TYPES type,SimulatorRealtime::MEDICINE_TYPES medicin){
 
-    this->sapienApp->GetSimulatorRealtime()->AlternateRecord(record);
+    this->controller->GetSimulatorRealtime()->CreatePatientModel(type);
 
-    this->sapienApp->GetSimulatorRealtime()->CreatePatientModel(type);
+    this->controller->GetSimulatorRealtime()->SetMedicine(medicin);
 
-    this->sapienApp->GetSimulatorRealtime()->AlternateRecord(record);
+    this->controller->GetSimulatorRealtime()->SetRecord(record);
 
-    this->sapienApp->GetSimulatorRealtime()->SetMedicine(medicin);
-
-    this->ChangeState(new InitializedState(this->sapienApp));
+    this->ChangeState(new InitializedState(this->controller));
 
 }
 
 void SimState::Start()
 {
-
+ //   this->controller->GetSimulatorRealtime()->StartSimulation();
 }
 
 void SimState::Pause()
@@ -38,5 +37,5 @@ void SimState::Stop()
 }
 
 void SimState::ChangeState(SimState * simState){
-    this->sapienApp->ChangeState(simState);
+    this->controller->ChangeState(simState);
 }

@@ -8,7 +8,7 @@ class SapienApplication;
 class RunningState : public SimState
 {
 public:
-    RunningState(SapienApplication*);
+    RunningState(UIController*);
     void Pause();
     void Stop();
 };

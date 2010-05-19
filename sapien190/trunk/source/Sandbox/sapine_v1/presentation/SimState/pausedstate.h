@@ -8,7 +8,7 @@ class SapienApplication;
 class PausedState : public SimState
 {
 public:
-    PausedState(SapienApplication*);
+    PausedState(UIController*);
     void Resume();
     void Stop();
 };

@@ -6,10 +6,6 @@
 #include <QPainter>
 #include <vector>
 #include <cstdlib>
-#include <wfdb/wfdb.h>
-#include <iostream>
-#include <stdio.h>
-#include "Observer.h"
 #include "FrameBuffer.h"
 
 using namespace std;
