@@ -9,11 +9,13 @@ SimState::SimState(UIController* controller)
 
 void SimState::Initialize(Record * record, SimulatorRealtime::MODEL_TYPES type,SimulatorRealtime::MEDICINE_TYPES medicin){
 
+    this->controller->GetSimulatorRealtime()->SetSampleRate(1);
+
     this->controller->GetSimulatorRealtime()->CreatePatientModel(type);
 
-    this->controller->GetSimulatorRealtime()->SetMedicine(medicin);
-
     this->controller->GetSimulatorRealtime()->SetRecord(record);
+
+    this->controller->GetSimulatorRealtime()->SetMedicine(medicin);
 
     this->ChangeState(new InitializedState(this->controller));
 
@@ -21,7 +23,8 @@ void SimState::Initialize(Record * record, SimulatorRealtime::MODEL_TYPES type,S
 
 void SimState::Start()
 {
- //   this->controller->GetSimulatorRealtime()->StartSimulation();
+ //
+    this->controller->GetSimulatorRealtime()->StartSimulation();
 }
 
 void SimState::Pause()
