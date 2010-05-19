@@ -10,6 +10,7 @@ Peter:
 	Next:
 	- Merge Anders and Peter changes to architecture document
 	- Continue writing on chapter 5+6 in architecture document except for 5.2.2 
+	- Architecture document chapter 11. and 12. 
 
 Anders:
 	Done:
@@ -21,7 +22,7 @@ Anders:
 	- Document discrete system in architecture document chapter 5.2.2
 	- Finalize chapter 10 in architecture document
 	- Architecture document chapter 7. deployment + 8. implementation view
-	- Architecture document chapter 11. and 12. 
+
 
 Kim:	
 	Done:
