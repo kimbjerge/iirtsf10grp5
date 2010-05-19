@@ -55363,7 +55363,7 @@ from RealTimeThread";
 			}
 		}
 	}
-	- weakCGTime = 5.18.2010::20:41:16;
+	- weakCGTime = 5.19.2010::20:30:5;
 	- strongCGTime = 5.3.2010::12:16:30;
 	- _defaultComposite = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 	- _eventsBaseID = -1;
@@ -55374,7 +55374,7 @@ from RealTimeThread";
 			- _id = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.18.2010::14:0:57;
+			- weakCGTime = 5.18.2010::20:41:16;
 			- strongCGTime = 5.3.2010::12:16:30;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -83844,7 +83844,7 @@ mailbox = new Mailbox<FrameBuffer*>();
 					- _kind = Enumeration;
 				}
 			}
-			- weakCGTime = 5.18.2010::12:12:43;
+			- weakCGTime = 5.19.2010::20:30:5;
 			- strongCGTime = 5.7.2010::6:37:22;
 			- Operations = { IRPYRawContainer 
 				- size = 14;
@@ -84113,7 +84113,7 @@ return false;";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "if ((state == Stopped) && (itsPatientModel != NULL))
+						- _bodyData = "if ( ((state == Initialized) || (state == Stopped)) && (itsPatientModel != NULL) )
 {
 	itsPatientModel->StartSimulation();
 	itsRealTimeThread->setItsPatientModel(itsPatientModel);
