@@ -19,7 +19,7 @@ UIController::UIController(QObject *parent) :
 void UIController::start(){
     sim.show();
     Record * record;
-    record = itsSimulatorRealtime->CreateWfdbRecord("e0104","ECG");
+    record = itsSimulatorRealtime->CreateWfdbRecord("e0104","atr");
 
     this->simState->Initialize(record,SimulatorRealtime::Normal,SimulatorRealtime::Morphine);
  //   this->itsSimulatorRealtime->StartSimulation();
