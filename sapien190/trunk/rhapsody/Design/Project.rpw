@@ -4,7 +4,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		- size = 0;
 	}
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 21;
+		- size = 22;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -225,8 +225,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "PhysioModel";
 				- _id = GUID 86f32eec-a79a-494c-95f1-e1435092e146;
 			}
-			- _UpLeft = 0 10 ;
-			- _DownRight = 808 704 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 808 694 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 20;
 		}
@@ -457,8 +457,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -477,8 +477,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "DiscretePackage";
 				- _id = GUID 3d38243a-11f9-45dc-a21d-a89341087797;
 			}
-			- _UpLeft = 0 10 ;
-			- _DownRight = 875 537 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1478 1464 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
 		}
@@ -502,6 +502,34 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _filename = "DiscreteDoc.sbs";
 				- _subsystem = "DiscreteDoc";
 				- _class = "SapienApplication";
+				- _name = "StatechartDiagram";
+				- _id = GUID 2c072c71-fe3c-45ba-b053-f727514f2d51;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 875 527 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 2;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 176;
+				- m_nTop = 176;
+				- m_nRight = 1079;
+				- m_nBottom = 750;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "DiscreteDoc.sbs";
+				- _subsystem = "DiscreteDoc";
+				- _class = "UIController";
 				- _name = "StatechartDiagram";
 				- _id = GUID 2c072c71-fe3c-45ba-b053-f727514f2d51;
 			}
@@ -562,7 +590,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _id = GUID 2021e426-9f2a-4d1f-81c8-35033e6cd34c;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1435 647 ;
+			- _DownRight = 1458 657 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 		}
