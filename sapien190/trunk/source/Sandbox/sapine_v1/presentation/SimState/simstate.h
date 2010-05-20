@@ -13,6 +13,7 @@ public:
     virtual void Stop();
     virtual void Pause();
     virtual void Resume();
+    void Default();
     void SetSapienApplication(UIController*);
 protected:
     void ChangeState(SimState*);

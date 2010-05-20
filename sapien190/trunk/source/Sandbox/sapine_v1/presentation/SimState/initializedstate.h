@@ -7,7 +7,7 @@ class InitializedState : public SimState
 {
 public:
     InitializedState(UIController*);
-    void Start();
+    virtual void Start();
 };
 
 #endif // INITIALIZEDSTATE_H

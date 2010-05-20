@@ -7,30 +7,37 @@ UIController::UIController(QObject *parent) :
 
     connect(&sim,SIGNAL(ButtonPushed(SimCommand*)),this,SLOT(SimulatorButtonPushed(SimCommand*)), Qt::QueuedConnection);
 
+    connect(&sim,SIGNAL(ParameterChanged(Parameter*)),this,SLOT(SimulatorParameterChanged(Parameter*)), Qt::QueuedConnection);
+
     // Create the SimulatorRelatim system and configurate
 
-    itsSimulatorRealtime = new SimulatorRealtime(200);
+    itsSimulatorRealtime = new SimulatorRealtime(50);
 
     itsSimulatorRealtime->AttachObserver(&sim);
 
     this->simState = new SimState(this);
 }
 
-void UIController::start(){
+void UIController::start() {
     sim.show();
     Record * record;
-    record = itsSimulatorRealtime->CreateWfdbRecord("e0104","atr");
+    record = itsSimulatorRealtime->CreateWfdbRecord("e0103","atr");
 
-    this->simState->Initialize(record,SimulatorRealtime::Normal,SimulatorRealtime::Morphine);
- //   this->itsSimulatorRealtime->StartSimulation();
+    this->simState->Initialize(record, SimulatorRealtime::Normal, SimulatorRealtime::Morphine);
 }
 
-void UIController::SimulatorButtonPushed(SimCommand * simCommand){
+void UIController::SimulatorButtonPushed(SimCommand * simCommand) {
     simCommand->setState(this->simState);
     simCommand->Execute();
-    }
+    delete simCommand;
+}
+
+void UIController::SimulatorParameterChanged(Parameter * simParameter) {
+    simParameter->Execute(itsSimulatorRealtime);
+}
 
 void UIController::ChangeState(SimState * simState){
+    delete this->simState;
     this->simState = simState;
 }
 

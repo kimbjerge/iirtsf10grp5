@@ -12,6 +12,7 @@
 #include "SimulatorRealtime.h"
 #include "Record.h"
 #include "SimState/simcommand.h"
+#include "rpy/Parameter.h"
 
 class UIController : public QObject
 {
@@ -30,6 +31,7 @@ private:
 
 public slots:
     void SimulatorButtonPushed(SimCommand*);
+    void SimulatorParameterChanged(Parameter*);
 
 signals:
 

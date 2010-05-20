@@ -9,8 +9,8 @@ class PausedState : public SimState
 {
 public:
     PausedState(UIController*);
-    void Resume();
-    void Stop();
+    virtual void Resume();
+    virtual void Stop();
 };
 
 #endif // PAUSEDSTATE_H

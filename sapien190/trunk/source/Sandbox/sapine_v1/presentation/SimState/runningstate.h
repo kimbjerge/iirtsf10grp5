@@ -9,8 +9,8 @@ class RunningState : public SimState
 {
 public:
     RunningState(UIController*);
-    void Pause();
-    void Stop();
+    virtual void Pause();
+    virtual void Stop();
 };
 
 #endif // RUNNINGSTATE_H

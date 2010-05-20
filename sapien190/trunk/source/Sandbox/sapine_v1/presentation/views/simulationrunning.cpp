@@ -13,17 +13,10 @@ SimulationRunning::SimulationRunning(QWidget *parent) :
     ui->setupUi(this);
 
     top = new Graph(this);
-    top->move(50,250);
+    top->move(0,0);
     top->show();
 
     connect(this,SIGNAL(frameBufferUpdated()),top,SLOT(frameBufferUpdated()), Qt::QueuedConnection);
-
-
-    bottom = new Graph(this);
-    bottom->move(50,50);
-    bottom->show();
-
-    connect(this,SIGNAL(frameBufferUpdated()),bottom,SLOT(frameBufferUpdated()), Qt::QueuedConnection);
 }
 
 SimulationRunning::~SimulationRunning()
@@ -85,4 +78,16 @@ void SimulationRunning::on_resumeButton_clicked()
 void SimulationRunning::on_stopButton_clicked()
 {
     emit ButtonPushed(new StopCommand());
+}
+
+void SimulationRunning::on_gain_changed(double gain)
+{
+    gainParam.setGain((float)gain);
+    emit ParameterChanged(&gainParam);
+}
+
+void SimulationRunning::on_rate_changed(int rate)
+{
+    rateParam.setRate(rate);
+    emit ParameterChanged(&rateParam);
 }

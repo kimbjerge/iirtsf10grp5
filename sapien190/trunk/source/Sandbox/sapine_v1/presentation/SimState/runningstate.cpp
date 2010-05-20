@@ -6,9 +6,12 @@
 
 RunningState::RunningState(UIController* controller) : SimState(controller)
 {
+    this->name = "Running";
 }
 
 void RunningState::Pause(){
+    // To be inserted
+    // this->controller->GetSimulatorRealtime()->PauseSimulation();
     this->ChangeState(new PausedState(this->controller));
 }
 
