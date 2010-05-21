@@ -20,6 +20,7 @@ public:
     Graph(QWidget *parent = 0);
     void addValue(int);
     void setResolution(int);
+    void setRefreshRate(int);
     ~Graph();
 
 protected:
@@ -35,6 +36,8 @@ private:
     int resolution;
     int maxValue;
     int minValue;
+    int refreshRate;
+    int refreshCounter;
     char record[100];
 };
 

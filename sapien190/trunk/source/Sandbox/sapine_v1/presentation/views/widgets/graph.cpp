@@ -9,6 +9,9 @@ Graph::Graph(QWidget *parent) :
     this->maxValue = -100000;
     this->minValue = 100000;
 
+    this->refreshRate = 50;
+    this->refreshCounter;
+
     this->setStyleSheet("QWidget {background-color: white;}");
 
     ui->setupUi(this);
@@ -42,12 +45,19 @@ void Graph::paintEvent(QPaintEvent *){
         int startY = offset;
         if(i != 0) {
             startX = i * resValue;
-            startY = this->values[this->values.size() - accourence + i - 1] * corValue * -1;
+            startY = this->values[this->values.size() - accourence + i - 1] * corValue * -1 + offset;
         }
 
-        painter.drawLine(startX,startY,resValue * (i + 1),offset + this->values[this->values.size() - accourence + i] * corValue * -1);
+        int toX = resValue * (i + 1);
+        int toY = offset + this->values[this->values.size() - accourence + i] * corValue * -1;
+
+        painter.drawLine(startX,startY,toX,toY);
     }
 
+}
+
+void Graph::setRefreshRate(int rate){
+    this->refreshRate = rate;
 }
 
 void Graph::setResolution(int value){
@@ -60,6 +70,7 @@ void Graph::addValue(int value){
 
     if(this->values.size() > this->resolution) this->values.erase(this->values.begin());
     this->values.push_back(value);
+    this->refreshCounter++;
     //this->repaint(0,0,this->width(),this->height());
 }
 
@@ -76,8 +87,12 @@ void Graph::changeEvent(QEvent *e)
     }
 }
 
-void Graph::frameBufferUpdated(){
-    this->repaint(0,0,this->width(),this->height());
+void Graph::frameBufferUpdated()
+{
+ //   if(this->refreshCounter > this->refreshRate){
+        this->repaint(0,0,this->width(),this->height());
+      //  this->refreshCounter = 0;
+  //  }
 }
 
 
