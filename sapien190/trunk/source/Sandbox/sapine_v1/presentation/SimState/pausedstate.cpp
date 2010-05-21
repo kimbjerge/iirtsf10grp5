@@ -8,7 +8,7 @@ PausedState::PausedState(UIController* controller) : SimState(controller)
 
 void PausedState::Resume(){
     // To be inserted
-    // this->controller->GetSimulatorRealtime()->ResumeSimulation();
+    this->controller->GetSimulatorRealtime()->ResumeSimulation();
     this->ChangeState(new RunningState(this->controller));
 }
 

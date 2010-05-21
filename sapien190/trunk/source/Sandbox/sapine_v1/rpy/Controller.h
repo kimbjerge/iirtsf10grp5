@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Controller
-//!	Generated Date	: Sat, 15, May 2010  
+//!	Generated Date	: Fri, 21, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Controller.h
 *********************************************************************/
 
@@ -30,6 +30,8 @@
 #include "math.h"
 //## auto_generated
 #include "wfdb/ecgcodes.h"
+//## class Controller
+#include "Observer.h"
 //## link itsLCDScreen
 class LCDScreen;
 
@@ -45,7 +47,7 @@ class SimulatorRealtime;
 //## package Application::Discrete
 
 //## class Controller
-class Controller {
+class Controller : public Observer {
     ////    Constructors and destructors    ////
     
 public :

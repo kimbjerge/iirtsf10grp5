@@ -11,7 +11,7 @@ UIController::UIController(QObject *parent) :
 
     // Create the SimulatorRelatim system and configurate
 
-    itsSimulatorRealtime = new SimulatorRealtime(50);
+    itsSimulatorRealtime = SimulatorRealtime::Instance(50);
 
     itsSimulatorRealtime->AttachObserver(&sim);
 
@@ -22,6 +22,7 @@ void UIController::start() {
     sim.show();
     Record * record;
     record = itsSimulatorRealtime->CreateWfdbRecord("e0103","atr");
+    //record = itsSimulatorRealtime->CreateWfdbRecord("e0104","atr");
 
     this->simState->Initialize(record, SimulatorRealtime::Normal, SimulatorRealtime::Morphine);
 }

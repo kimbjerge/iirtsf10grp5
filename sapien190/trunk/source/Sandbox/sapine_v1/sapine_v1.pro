@@ -91,7 +91,9 @@ HEADERS += hw/Dac.h \
     presentation/SimState/startcommand.h \
     presentation/SimState/stopcommand.h \
     presentation/views/simulationrunning.h \
-    presentation/views/widgets/graph.h
+    presentation/views/widgets/graph.h \
+    rpy/ProtocolColleague.h \
+    rpy/ModelMediator.h
 FORMS += presentation/sapienmainwindow.ui \
     presentation/views/simulationrunning.ui \
     presentation/views/widgets/graph.ui
@@ -156,4 +158,6 @@ SOURCES += main.cpp \
     presentation/SimState/startcommand.cpp \
     presentation/SimState/stopcommand.cpp \
     presentation/views/simulationrunning.cpp \
-    presentation/views/widgets/graph.cpp
+    presentation/views/widgets/graph.cpp \
+    rpy/ProtocolColleague.cpp \
+    rpy/ModelMediator.cpp

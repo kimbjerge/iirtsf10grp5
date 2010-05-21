@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: PatientModel
-//!	Generated Date	: Sat, 15, May 2010  
+//!	Generated Date	: Fri, 21, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/PatientModel.cpp
 *********************************************************************/
 
@@ -24,6 +24,8 @@
 #include "SampleSet.h"
 //## link itsIPumpProtocol
 #include "IPumpProtocol.h"
+//## operation ProtocolChanged(ProtocolColleague*)
+#include "ProtocolColleague.h"
 //## package Application::Continuous
 
 //## class PatientModel
@@ -209,12 +211,29 @@ bool PatientModel::AlternateRecord(Record* aRecord) {
     //#]
 }
 
+void PatientModel::ProtocolChanged(ProtocolColleague* protocol) {
+    //#[ operation ProtocolChanged(ProtocolColleague*)
+    if (protocol == itsIPumpProtocol)
+    {
+    	if ((itsMedicine!= NULL) and
+    		(itsMedicine->getType() == itsIPumpProtocol->getType()))
+      		itsMedicine->setAmount(itsIPumpProtocol->getAmount());
+    }
+    //#]
+}
+
 IPumpProtocol* PatientModel::getItsIPumpProtocol() const {
     return itsIPumpProtocol;
 }
 
 void PatientModel::setItsIPumpProtocol(IPumpProtocol* p_IPumpProtocol) {
     itsIPumpProtocol = p_IPumpProtocol;
+}
+
+void PatientModel::CreateProtocols() {
+    //#[ operation CreateProtocols()
+    itsIPumpProtocol = new IPumpProtocol(this);
+    //#]
 }
 
 /*********************************************************************

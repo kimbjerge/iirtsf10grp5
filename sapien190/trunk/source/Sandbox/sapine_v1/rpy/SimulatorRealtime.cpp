@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: SimulatorRealtime
-//!	Generated Date	: Sat, 15, May 2010  
+//!	Generated Date	: Fri, 21, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SimulatorRealtime.cpp
 *********************************************************************/
 
@@ -196,10 +196,13 @@ void SimulatorRealtime::StartSimulation() {
 
 void SimulatorRealtime::StopSimulation() {
     //#[ operation StopSimulation()
-    if ((state == Running) && (itsPatientModel != NULL))
+    if (itsPatientModel != NULL)
     {
-    	itsDistributerThread->kill();
-    	itsRealTimeThread->kill();
+    	if (state == Running)
+    	{
+    		itsDistributerThread->kill();
+    		itsRealTimeThread->kill();
+    	}
     	state = Stopped;
     }    
     //#]
@@ -227,6 +230,39 @@ void SimulatorRealtime::DetachObserver(Observer* obs) {
     //#]
 }
 
+SimulatorRealtime* SimulatorRealtime::_instance(0);
+
+SimulatorRealtime* SimulatorRealtime::Instance(int size) {
+    //#[ operation Instance(int)
+    if (_instance == 0)
+    	_instance = new SimulatorRealtime(size);
+    return _instance;
+    //#]
+}
+
+void SimulatorRealtime::PauseSimulation() {
+    //#[ operation PauseSimulation()
+    if ((state == Running) && (itsPatientModel != NULL))
+    {
+    	itsDistributerThread->kill();
+    	itsRealTimeThread->kill();
+    	state = Paused;
+    } 
+    //#]
+}
+
+void SimulatorRealtime::ResumeSimulation() {
+    //#[ operation ResumeSimulation()
+    if ((state == Paused) && (itsPatientModel != NULL))
+    {
+    	itsRealTimeThread->setItsPatientModel(itsPatientModel);
+    	itsDistributerThread->start();
+    	itsRealTimeThread->start();
+    	state = Running;
+    } 
+    //#]
+}
+
 void SimulatorRealtime::SetSampleRate(int rate) {
     //#[ operation SetSampleRate(int)
     if (itsRealTimeThread != NULL)  
@@ -234,6 +270,14 @@ void SimulatorRealtime::SetSampleRate(int rate) {
     	itsRealTimeThread->SetSampleRate(rate);  
     }
     //#]
+}
+
+SimulatorRealtime* SimulatorRealtime::get_instance() {
+    return _instance;
+}
+
+void SimulatorRealtime::set_instance(SimulatorRealtime* p__instance) {
+    _instance = p__instance;
 }
 
 /*********************************************************************

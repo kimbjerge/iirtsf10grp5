@@ -2,7 +2,7 @@
 #include "pausedstate.h"
 #include "initializedstate.h"
 
-#include "presentation/uicontroller.h""
+#include "presentation/uicontroller.h"
 
 RunningState::RunningState(UIController* controller) : SimState(controller)
 {
@@ -10,8 +10,7 @@ RunningState::RunningState(UIController* controller) : SimState(controller)
 }
 
 void RunningState::Pause(){
-    // To be inserted
-    // this->controller->GetSimulatorRealtime()->PauseSimulation();
+    this->controller->GetSimulatorRealtime()->PauseSimulation();
     this->ChangeState(new PausedState(this->controller));
 }
 

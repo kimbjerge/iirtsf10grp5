@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: SerialProtocol
-//!	Generated Date	: Fri, 7, May 2010  
+//!	Generated Date	: Fri, 21, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SerialProtocol.cpp
 *********************************************************************/
 
@@ -12,6 +12,8 @@
 #include "SerialProtocol.h"
 //## link itsExtOutSerial
 #include "ExtOutSerial.h"
+//## auto_generated
+#include "ModelMediator.h"
 //## package Comm
 
 //## class SerialProtocol

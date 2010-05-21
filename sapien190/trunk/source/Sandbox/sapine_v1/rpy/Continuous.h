@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Continuous
-//!	Generated Date	: Sat, 15, May 2010  
+//!	Generated Date	: Fri, 21, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Continuous.h
 *********************************************************************/
 
@@ -63,6 +63,9 @@ class InfusionPumpModel;
 //## auto_generated
 class Medicine;
 
+//## auto_generated
+class ModelMediator;
+
 //## classInstance itsNormalGenerator
 class NormalModel;
 
@@ -74,6 +77,9 @@ class PatientModel;
 
 //## auto_generated
 class PhysioModel;
+
+//## auto_generated
+class ProtocolColleague;
 
 //## auto_generated
 class RateParam;

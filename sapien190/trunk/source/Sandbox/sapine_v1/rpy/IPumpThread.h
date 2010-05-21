@@ -3,13 +3,13 @@
 	Login		: KBE
 	Component	: TargetComponent 
 	Configuration 	: Target
-	Model Element	: SerialProtocol
+	Model Element	: IPumpThread
 //!	Generated Date	: Fri, 21, May 2010  
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SerialProtocol.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/IPumpThread.h
 *********************************************************************/
 
-#ifndef SerialProtocol_H
-#define SerialProtocol_H
+#ifndef IPumpThread_H
+#define IPumpThread_H
 
 //#[ ignore
 #ifdef _MSC_VER
@@ -30,28 +30,39 @@
 #include "math.h"
 //## auto_generated
 #include "wfdb/ecgcodes.h"
-//## class SerialProtocol
-#include "ProtocolColleague.h"
-//## link itsExtOutSerial
-class ExtOutSerial;
+//## link itsExtInputs
+class ExtInputs;
 
-//## auto_generated
-class ModelMediator;
+//## link itsIPumpProtocol
+class IPumpProtocol;
 
 //## package Comm
 
-//## class SerialProtocol
-class SerialProtocol : public ProtocolColleague {
+//## class IPumpThread
+class IPumpThread {
     ////    Constructors and destructors    ////
-    
-    ////    Operations    ////
     
 public :
 
-    //## operation OutputPulse(int)
-    void OutputPulse(int pulse);
+    //## auto_generated
+    IPumpThread();
+    
+    //## auto_generated
+    ~IPumpThread();
     
     ////    Additional operations    ////
+    
+    //## auto_generated
+    ExtInputs* getItsExtInputs() const;
+    
+    //## auto_generated
+    void setItsExtInputs(ExtInputs* p_ExtInputs);
+    
+    //## auto_generated
+    IPumpProtocol* getItsIPumpProtocol() const;
+    
+    //## auto_generated
+    void setItsIPumpProtocol(IPumpProtocol* p_IPumpProtocol);
 
 protected :
 
@@ -60,26 +71,12 @@ protected :
     
     ////    Relations and components    ////
     
-    ExtOutSerial* itsExtOutSerial;		//## link itsExtOutSerial
+    ExtInputs* itsExtInputs;		//## link itsExtInputs
     
-    ////    Framework operations    ////
-
-public :
-
-    //## auto_generated
-    SerialProtocol();
-    
-    //## auto_generated
-    ~SerialProtocol();
-    
-    //## auto_generated
-    ExtOutSerial* getItsExtOutSerial() const;
-    
-    //## auto_generated
-    void setItsExtOutSerial(ExtOutSerial* p_ExtOutSerial);
+    IPumpProtocol* itsIPumpProtocol;		//## link itsIPumpProtocol
 };
 
 #endif
 /*********************************************************************
-	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SerialProtocol.h
+	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/IPumpThread.h
 *********************************************************************/

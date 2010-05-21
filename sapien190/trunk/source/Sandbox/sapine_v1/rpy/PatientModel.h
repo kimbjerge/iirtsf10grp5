@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: PatientModel
-//!	Generated Date	: Sat, 15, May 2010  
+//!	Generated Date	: Fri, 21, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/PatientModel.h
 *********************************************************************/
 
@@ -34,11 +34,16 @@
 #include "wfdb/ecgcodes.h"
 //## class PatientModel
 #include "Monitor.h"
+//## class PatientModel
+#include "ModelMediator.h"
 //## dependency ExtInputs
 class ExtInputs;
 
 //## link itsIPumpProtocol
 class IPumpProtocol;
+
+//## operation ProtocolChanged(ProtocolColleague*)
+class ProtocolColleague;
 
 //## link itsSampleSet
 class SampleSet;
@@ -86,7 +91,7 @@ class RecordIterator;
 //## package Application::Continuous
 
 //## class PatientModel
-class PatientModel : public Monitor {
+class PatientModel : public Monitor, public ModelMediator {
     ////    Friends    ////
     
     ////    Constructors and destructors    ////
@@ -201,6 +206,16 @@ public :
     //## operation AlternateRecord(Record*)
     bool AlternateRecord(Record* aRecord);
     
+    //## operation ProtocolChanged(ProtocolColleague*)
+    virtual void ProtocolChanged(ProtocolColleague* protocol);
+
+protected :
+
+    //## operation CreateProtocols()
+    virtual void CreateProtocols();
+
+public :
+
     //## auto_generated
     IPumpProtocol* getItsIPumpProtocol() const;
     

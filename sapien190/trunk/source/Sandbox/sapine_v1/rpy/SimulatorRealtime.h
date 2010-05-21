@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: SimulatorRealtime
-//!	Generated Date	: Sat, 15, May 2010  
+//!	Generated Date	: Fri, 21, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/SimulatorRealtime.h
 *********************************************************************/
 
@@ -129,7 +129,8 @@ public :
         Initialized = 1,
         Stopped = 2,
         Running = 3,
-        Suspended = 4
+        Suspended = 4,
+        Paused = 5
     };
     
     //## auto_generated
@@ -196,8 +197,29 @@ public :
     //## operation DetachObserver(Observer*)
     void DetachObserver(Observer* obs);
     
+    //## operation Instance(int)
+    static SimulatorRealtime* Instance(int size);
+    
+    //## operation PauseSimulation()
+    void PauseSimulation();
+    
+    //## operation ResumeSimulation()
+    void ResumeSimulation();
+    
     //## operation SetSampleRate(int)
     void SetSampleRate(int rate);
+
+private :
+
+    //## auto_generated
+    static SimulatorRealtime* get_instance();
+    
+    //## auto_generated
+    static void set_instance(SimulatorRealtime* p__instance);
+
+protected :
+
+    static SimulatorRealtime* _instance;		//## attribute _instance
 };
 
 #endif

@@ -4,7 +4,7 @@
 	Component	: TargetComponent 
 	Configuration 	: Target
 	Model Element	: Continuous
-//!	Generated Date	: Sat, 15, May 2010  
+//!	Generated Date	: Fri, 21, May 2010  
 	File Path	: C:/Ubuntu_share/sapien190/source/Sandbox/sapine_v1/rpy/Continuous.cpp
 *********************************************************************/
 
@@ -35,11 +35,15 @@
 //## auto_generated
 #include "Medicine.h"
 //## auto_generated
+#include "ModelMediator.h"
+//## auto_generated
 #include "Parameter.h"
 //## auto_generated
 #include "PatientModel.h"
 //## auto_generated
 #include "PhysioModel.h"
+//## auto_generated
+#include "ProtocolColleague.h"
 //## auto_generated
 #include "RateParam.h"
 //## auto_generated
