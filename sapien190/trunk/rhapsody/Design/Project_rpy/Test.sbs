@@ -153,7 +153,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ConTestPatientModel";
-			- _lastModifiedTime = "5.18.2010::10:27:23";
+			- _lastModifiedTime = "5.21.2010::20:5:53";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 6a8a2df3-5c3f-4c9d-bf3d-30c21df61768;
 				- m_type = 0;
@@ -857,7 +857,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ConTestCreateSimulatorRealtime";
-			- _lastModifiedTime = "5.18.2010::20:10:0";
+			- _lastModifiedTime = "5.21.2010::20:10:38";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 5b68ece5-7e47-42a0-b0bb-fa533d18cc76;
 				- m_type = 0;
@@ -1128,7 +1128,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 						}
 					}
 					- Operations = { IRPYRawContainer 
-						- size = 14;
+						- size = 16;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IDestructor";
@@ -1241,6 +1241,22 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 							- _class = "SimulatorRealtime";
 							- _name = "Instance(int)";
 							- _id = GUID 288971c2-47fc-4b63-a6af-e275805331e1;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "SimulatorRealtime";
+							- _name = "PauseSimulation()";
+							- _id = GUID 564fc11c-d18d-4823-91bc-010642a3731d;
+						}
+						{ IHandle 
+							- _m2Class = "IPrimitiveOperation";
+							- _filename = "Continuous.sbs";
+							- _subsystem = "Application::Continuous";
+							- _class = "SimulatorRealtime";
+							- _name = "ResumeSimulation()";
+							- _id = GUID f100de4d-dddb-4b0a-9e1d-4d0853552d95;
 						}
 					}
 				}
@@ -2149,7 +2165,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.18.2010::20:10:0;
+	- weakCGTime = 5.21.2010::20:10:38;
 	- strongCGTime = 5.3.2010::19:50:5;
 	- _defaultComposite = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 	- _eventsBaseID = -1;

@@ -1,8 +1,9 @@
 I-Logix-RPY-Archive version 8.5.2 * 1159120
 
 - filesTable = { IRPYRawContainer 
-	- size = 24;
-	- value = "Project.rpy" ""
+	- size = 25;
+	- value = "C:\\Programmer\\IBM\\Rational\\Rhapsody\\7.5\\Share\\Profiles\\CGSimplifiedModelProfileCpp.sbs" "CGSimplifiedModelProfileCpp"
+	"Project.rpy" ""
 	"Project_rpy\\AbstractHW.sbs" "AbstractHW"
 	"Project_rpy\\AbstractOS.sbs" "AbstractOS"
 	"Project_rpy\\Application.sbs" "Application"

@@ -966,7 +966,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.15.2010::9:6:37;
+	- weakCGTime = 5.21.2010::20:10:38;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 46ef08d8-d87f-48fd-9435-f30da1714c70;
 	- _eventsBaseID = -1;
@@ -1065,8 +1065,21 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID 91b1333b-64c7-4863-a3c9-43d4a97c0bce;
 			}
 			- _lastID = 4;
-			- weakCGTime = 5.15.2010::9:8:20;
+			- weakCGTime = 5.21.2010::20:10:38;
 			- strongCGTime = 4.30.2010::14:38:58;
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID 23841bb3-5bd9-4ef8-b059-dbca1fcb30ce;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID ae0d6a21-86a2-4339-b658-3c660434d74c;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
@@ -1247,7 +1260,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "ThreadModel";
+				- _name = "RealTimeThreadModel";
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
 			- weakCGTime = 5.7.2010::6:39:51;

@@ -542,12 +542,12 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.18.2010::11:57:18;
+	- weakCGTime = 5.21.2010::20:2:1;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
 	- _eventsBaseID = -1;
 	- Classes = { IRPYRawContainer 
-		- size = 3;
+		- size = 4;
 		- value = 
 		{ IClass 
 			- _id = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
@@ -2493,6 +2493,78 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- value = 
 				{ IAssociationEnd 
 					- _id = GUID d2bbb42b-2270-4669-9d3d-eac2c40e049c;
+					- _myState = 10240;
+					- _name = "itsExtInputs";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "AbstractHW.sbs";
+						- _subsystem = "AbstractHW";
+						- _class = "";
+						- _name = "ExtInputs";
+						- _id = GUID c298dd4e-8345-4920-9b9d-b2d5af814bdb;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 38317586-03f8-4b48-aed3-02ba400647e9;
+			- _myState = 8192;
+			- _name = "IPumpThread";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "Application.sbs";
+					- _subsystem = "Application";
+					- _class = "";
+					- _name = "thread";
+					- _id = GUID 54bf1669-d1a2-4f3c-87ba-814f03889d76;
+				}
+			}
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "PatientModelMediator";
+				- _id = GUID b088716d-3f3a-4521-9d25-fb92f7ccff95;
+			}
+			- weakCGTime = 5.21.2010::20:2:1;
+			- strongCGTime = 5.21.2010::19:58:27;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 34d58d41-778c-45b4-85cc-f0882de5dc1f;
+					- _myState = 10240;
+					- _name = "itsIPumpProtocol";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID d360e795-b6e9-425e-b69e-35f4e30304c3;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID af6150e5-cdc0-427c-a669-a28704a1ee6a;
 					- _myState = 10240;
 					- _name = "itsExtInputs";
 					- _multiplicity = "1";

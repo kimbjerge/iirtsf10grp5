@@ -414,7 +414,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "DomainModel";
-			- _lastModifiedTime = "5.18.2010::10:27:21";
+			- _lastModifiedTime = "5.21.2010::20:5:53";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID aa9016c7-4c7f-4ed7-811f-6103c6e1fa3b;
 				- m_type = 0;
@@ -3438,7 +3438,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "ApplicationModelSimulation";
-			- _lastModifiedTime = "5.18.2010::14:0:57";
+			- _lastModifiedTime = "5.21.2010::20:5:53";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 0d0f292e-33ac-4d44-9b63-5af9ae40625f;
 				- m_type = 0;
@@ -7813,7 +7813,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				}
 			}
 			- _name = "FrameBufferObserver";
-			- _lastModifiedTime = "5.18.2010::20:10:0";
+			- _lastModifiedTime = "5.21.2010::20:10:38";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 5d6f3f08-b245-4c1e-ad15-89d4f465d9b8;
 				- m_type = 0;
@@ -9563,7 +9563,7 @@ Important that Update doesn't call Attach or Detach which will cause a deadlock"
 				}
 			}
 			- _name = "UseCase1_ExecuteControlSimulation";
-			- _lastModifiedTime = "5.15.2010::6:54:14";
+			- _lastModifiedTime = "5.21.2010::20:5:53";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 45f4bf51-dcd9-4409-a063-ed2fb8ffb206;
 				- m_type = 0;
@@ -16356,7 +16356,7 @@ GU86a6ZGc29dYa7782e7feff9a39222542a463cb13c233f95I839c57bdZGc29dY97fcYbaZGbfe697
 			}
 		}
 	}
-	- weakCGTime = 5.18.2010::20:10:0;
+	- weakCGTime = 5.21.2010::20:10:38;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 445c424b-fba5-4616-8dc0-a22408da37c3;
 	- _eventsBaseID = -1;
@@ -17178,7 +17178,7 @@ return *this;";
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "ThreadModel";
+				- _name = "RealTimeThreadModel";
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
 			- _lastID = 9;
