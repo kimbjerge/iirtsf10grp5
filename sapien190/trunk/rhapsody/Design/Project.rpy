@@ -124,7 +124,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _isReference = 1;
 		}
 		{ ISubsystem 
-			- fileName = "DiscreteDoc";
+			- fileName = "Discrete_";
 			- _id = GUID 9ea9fc05-2a42-4f53-bb90-7e4f5ebc7b84;
 		}
 	}

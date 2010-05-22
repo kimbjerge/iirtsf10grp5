@@ -43,7 +43,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _lastID = 1;
 		- m_path = "";
 		- Elements = { IRPYRawContainer 
-			- size = 40;
+			- size = 39;
 			- value = 
 			{ IHandle 
 				- _m2Class = "IClass";
@@ -308,14 +308,6 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _class = "";
 				- _name = "Comm";
 				- _id = GUID ad699984-b70d-45a2-ade8-5d423ff37318;
-			}
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "GraphicalUserInterface.sbs";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "GraphicalUserInterface";
-				- _id = GUID b087c986-b373-4750-8bfd-a0aa2f5a0d3f;
 			}
 			{ IHandle 
 				- _m2Class = "ISubsystem";
@@ -784,7 +776,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 5.7.2010::12:59:19;
-	- strongCGTime = 5.7.2010::12:59:19;
+	- weakCGTime = 5.22.2010::18:11:12;
+	- strongCGTime = 5.22.2010::18:11:12;
 }
 

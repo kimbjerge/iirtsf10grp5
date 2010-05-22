@@ -16356,7 +16356,7 @@ GU86a6ZGc29dYa7782e7feff9a39222542a463cb13c233f95I839c57bdZGc29dY97fcYbaZGbfe697
 			}
 		}
 	}
-	- weakCGTime = 5.21.2010::20:10:38;
+	- weakCGTime = 5.22.2010::18:17:34;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 445c424b-fba5-4616-8dc0-a22408da37c3;
 	- _eventsBaseID = -1;
@@ -16367,7 +16367,7 @@ GU86a6ZGc29dYa7782e7feff9a39222542a463cb13c233f95I839c57bdZGc29dY97fcYbaZGbfe697
 			- _id = GUID 445c424b-fba5-4616-8dc0-a22408da37c3;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.18.2010::20:10:0;
+			- weakCGTime = 5.21.2010::20:10:38;
 			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -19439,14 +19439,14 @@ else
 				- _m2Class = "IUCDiagram";
 				- _id = GUID a048c0f1-90e3-4261-bf3d-089e2c4fdf01;
 			}
-			- weakCGTime = 4.30.2010::7:31:40;
+			- weakCGTime = 5.22.2010::18:17:34;
 			- strongCGTime = 4.20.2010::19:8:57;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
 			}
 			- Associations = { IRPYRawContainer 
-				- size = 5;
+				- size = 6;
 				- value = 
 				{ IAssociationEnd 
 					- _id = GUID c3c2f30b-a398-4ec5-8620-2f8484c95186;
@@ -19533,6 +19533,26 @@ else
 						- _class = "LCDScreen";
 						- _name = "itsInstructor";
 						- _id = GUID d4546dd7-701e-487a-8db9-adf7e66f8406;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID dd290898-a6ef-4ef2-acb4-46e66957fbd1;
+					- _myState = 10240;
+					- _name = "itsSimulationRunning";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Discrete_.sbs";
+						- _subsystem = "Discrete_";
+						- _class = "";
+						- _name = "SimulationRunning";
+						- _id = GUID 0b24488f-9f42-4dee-a28a-99430eb19c65;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
 					}
 					- _linkName = "";
 					- _linkType = Assoc;

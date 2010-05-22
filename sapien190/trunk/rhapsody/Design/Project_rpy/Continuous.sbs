@@ -17344,7 +17344,7 @@ from RealTimeThread";
 				}
 			}
 			- _name = "SettingParametersModel";
-			- _lastModifiedTime = "5.21.2010::20:5:53";
+			- _lastModifiedTime = "5.22.2010::18:17:16";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 0060858e-d405-41e5-b590-97d82cfe7c4f;
 				- m_type = 0;
@@ -58628,7 +58628,7 @@ from RealTimeThread";
 			}
 		}
 	}
-	- weakCGTime = 5.21.2010::20:19:50;
+	- weakCGTime = 5.22.2010::18:17:16;
 	- strongCGTime = 5.3.2010::12:16:30;
 	- _defaultComposite = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 	- _eventsBaseID = -1;
@@ -58639,7 +58639,7 @@ from RealTimeThread";
 			- _id = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.21.2010::20:15:21;
+			- weakCGTime = 5.21.2010::20:19:50;
 			- strongCGTime = 5.3.2010::12:16:30;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -92607,7 +92607,7 @@ else
 				- _id = GUID aa4820ae-df24-490f-990b-73fed80217b6;
 			}
 			- _lastID = 1;
-			- weakCGTime = 5.15.2010::10:35:24;
+			- weakCGTime = 5.22.2010::18:21:58;
 			- strongCGTime = 5.15.2010::8:49:46;
 			- Operations = { IRPYRawContainer 
 				- size = 1;
@@ -93417,6 +93417,9 @@ if (pPhysioModel != NULL)
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 0;
 			}
 			- _classModifier = Unspecified;
 		}
