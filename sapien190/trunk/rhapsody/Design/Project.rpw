@@ -253,8 +253,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "RealTimeThreadModel";
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
-			- _UpLeft = 0 82 ;
-			- _DownRight = 733 357 ;
+			- _UpLeft = 0 52 ;
+			- _DownRight = 733 327 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 21;
 		}
@@ -281,8 +281,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "ScenarioUpdateWaveform";
 				- _id = GUID 8949a762-d1f3-4c94-8e6f-440d8eaebc37;
 			}
-			- _UpLeft = 0 8 ;
-			- _DownRight = 1147 806 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1147 923 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 		}
@@ -589,8 +589,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "DiscretePackage";
 				- _id = GUID 3d38243a-11f9-45dc-a21d-a89341087797;
 			}
-			- _UpLeft = 0 80 ;
-			- _DownRight = 875 607 ;
+			- _UpLeft = 0 134 ;
+			- _DownRight = 875 661 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 5;
 		}
