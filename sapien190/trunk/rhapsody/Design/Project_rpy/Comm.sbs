@@ -542,7 +542,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.21.2010::20:2:1;
+	- weakCGTime = 5.23.2010::5:45:43;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
 	- _eventsBaseID = -1;
@@ -553,7 +553,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.18.2010::11:57:18;
+			- weakCGTime = 5.21.2010::20:2:1;
 			- strongCGTime = 4.30.2010::7:31:40;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -2538,8 +2538,59 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _name = "PatientModelMediator";
 				- _id = GUID b088716d-3f3a-4521-9d25-fb92f7ccff95;
 			}
-			- weakCGTime = 5.21.2010::20:2:1;
+			- _lastID = 2;
+			- weakCGTime = 5.23.2010::5:45:59;
 			- strongCGTime = 5.21.2010::19:58:27;
+			- Operations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID 9546785d-fe93-4961-92a3-902a6941d8ec;
+					- _myState = 8192;
+					- _name = "run";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID faef1850-3041-4ec2-8861-7113ee95987b;
+					- _myState = 8192;
+					- _name = "UpdateMedicine";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+				}
+			}
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
