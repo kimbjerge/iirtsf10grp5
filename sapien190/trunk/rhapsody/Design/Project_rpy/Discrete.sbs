@@ -966,7 +966,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.21.2010::20:10:38;
+	- weakCGTime = 5.23.2010::15:33:58;
 	- strongCGTime = 4.30.2010::7:31:40;
 	- _defaultComposite = GUID 46ef08d8-d87f-48fd-9435-f30da1714c70;
 	- _eventsBaseID = -1;
@@ -1064,9 +1064,50 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _name = "ApplicationModelSimulation";
 				- _id = GUID 91b1333b-64c7-4863-a3c9-43d4a97c0bce;
 			}
-			- _lastID = 4;
-			- weakCGTime = 5.21.2010::20:10:38;
+			- _lastID = 5;
+			- weakCGTime = 5.23.2010::15:34:26;
 			- strongCGTime = 4.30.2010::14:38:58;
+			- Operations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID d50eedfe-8272-4fd9-ba4d-6bf7ef5537e9;
+					- _myState = 8192;
+					- _name = "Update";
+					- _lastID = 1;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID a2169624-5efc-4395-8812-5514967c0fa1;
+							- _name = "fp";
+							- myTypeOf = { IType 
+								- _id = GUID d2613abc-1319-4c0d-a8c3-393b293bc373;
+								- _myState = 8192;
+								- _declaration = "FrameBuffer*";
+								- _kind = Language;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = InOut;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+				}
+			}
 			- Inheritances = { IRPYRawContainer 
 				- size = 1;
 				- value = 
