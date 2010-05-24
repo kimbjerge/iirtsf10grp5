@@ -91,3 +91,12 @@ void SimulationRunning::on_rate_changed(int rate)
     rateParam.setRate(rate);
     emit ParameterChanged(&rateParam);
 }
+
+void SimulationRunning::on_comboBox_currentIndexChanged(QString record)
+{
+    recordParam.SetRecord(record.toStdString());
+    emit ParameterChanged(&recordParam);
+
+    top->clearGraph();
+
+}

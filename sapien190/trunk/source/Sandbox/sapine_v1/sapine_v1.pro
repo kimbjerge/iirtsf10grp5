@@ -93,7 +93,8 @@ HEADERS += hw/Dac.h \
     presentation/views/simulationrunning.h \
     presentation/views/widgets/graph.h \
     rpy/ProtocolColleague.h \
-    rpy/ModelMediator.h
+    rpy/ModelMediator.h \
+    rpy/Recordparameter.h
 FORMS += presentation/sapienmainwindow.ui \
     presentation/views/simulationrunning.ui \
     presentation/views/widgets/graph.ui
@@ -160,4 +161,5 @@ SOURCES += main.cpp \
     presentation/views/simulationrunning.cpp \
     presentation/views/widgets/graph.cpp \
     rpy/ProtocolColleague.cpp \
-    rpy/ModelMediator.cpp
+    rpy/ModelMediator.cpp \
+    rpy/Recordparameter.cpp

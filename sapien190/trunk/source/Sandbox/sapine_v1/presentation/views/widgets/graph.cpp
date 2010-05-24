@@ -28,12 +28,12 @@ void Graph::paintEvent(QPaintEvent *){
 
     QPainter painter(this);
     //int width = 100;
-    int resValue = this->width() / this->resolution;
+    double resValue = (double) this->width() / (double) this->resolution;
     int span = maxValue - minValue;
 
-    int offset = this->height();
+    double corValue = (double) this->height() /  ( 2 * (double)span);
 
-    double corValue = (double) this->height() /  (2 * (double)span);
+    int offset = this->height()  / 2;
 
     int accourence = this->values.size();
 
@@ -87,10 +87,18 @@ void Graph::changeEvent(QEvent *e)
     }
 }
 
+void Graph::clearGraph()
+{
+    this->maxValue = -100000;
+    this->minValue = 100000;
+    this->values.clear();
+    this->repaint(0,0,this->width(),this->height());
+}
+
 void Graph::frameBufferUpdated()
 {
- //   if(this->refreshCounter > this->refreshRate){
-        this->repaint(0,0,this->width(),this->height());
+
+    this->repaint(0,0,this->width(),this->height());
       //  this->refreshCounter = 0;
   //  }
 }

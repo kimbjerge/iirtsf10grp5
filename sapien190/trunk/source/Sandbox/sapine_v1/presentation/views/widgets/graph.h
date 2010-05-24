@@ -21,6 +21,7 @@ public:
     void addValue(int);
     void setResolution(int);
     void setRefreshRate(int);
+    void clearGraph();
     ~Graph();
 
 protected:
@@ -38,7 +39,6 @@ private:
     int minValue;
     int refreshRate;
     int refreshCounter;
-    char record[100];
 };
 
 #endif // GRAPH_H

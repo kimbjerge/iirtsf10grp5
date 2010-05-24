@@ -6,9 +6,10 @@
 #include "rpy/Observer.h"
 #include "rpy/FrameBuffer.h"
 #include "presentation/SimState/simcommand.h"
-#include "rpy/parameter.h"
+#include "rpy/Parameter.h"
 #include "rpy/GainParam.h"
 #include "rpy/RateParam.h"
+#include "rpy/Recordparameter.h"
 
 namespace Ui {
     class SimulationRunning;
@@ -32,9 +33,11 @@ private:
     Graph *bottom;
     GainParam gainParam;
     RateParam rateParam;
+    RecordParameter recordParam;
 
 
 private slots:
+    void on_comboBox_currentIndexChanged(QString );
     void on_stopButton_clicked();
     void on_resumeButton_clicked();
     void on_pauseButton_clicked();

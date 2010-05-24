@@ -8,9 +8,12 @@ class SapienApplication;
 class RunningState : public SimState
 {
 public:
-    RunningState(UIController*);
+    static SimState* GetInstance();
     virtual void Pause();
     virtual void Stop();
+protected:
+    RunningState();
+    static SimState* instance;
 };
 
 #endif // RUNNINGSTATE_H

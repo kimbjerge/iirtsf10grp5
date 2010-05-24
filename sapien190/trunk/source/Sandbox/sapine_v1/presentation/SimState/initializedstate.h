@@ -6,8 +6,12 @@
 class InitializedState : public SimState
 {
 public:
-    InitializedState(UIController*);
+    static SimState* GetInstance();
     virtual void Start();
+protected:
+        InitializedState();
+        static SimState* instance;
+
 };
 
 #endif // INITIALIZEDSTATE_H

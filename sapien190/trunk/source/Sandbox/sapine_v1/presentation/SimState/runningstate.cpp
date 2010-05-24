@@ -4,17 +4,26 @@
 
 #include "presentation/uicontroller.h"
 
-RunningState::RunningState(UIController* controller) : SimState(controller)
+SimState* RunningState::instance = 0;
+
+RunningState::RunningState()
 {
     this->name = "Running";
 }
 
+SimState* RunningState::GetInstance(){
+    if(instance == 0){
+        instance = new RunningState;
+    }
+    return instance;
+}
+
 void RunningState::Pause(){
     this->controller->GetSimulatorRealtime()->PauseSimulation();
-    this->ChangeState(new PausedState(this->controller));
+    this->ChangeState(PausedState::GetInstance());
 }
 
 void RunningState::Stop(){
     this->controller->GetSimulatorRealtime()->StopSimulation();
-    this->ChangeState(new InitializedState(this->controller));
+    this->ChangeState(InitializedState::GetInstance());
 }

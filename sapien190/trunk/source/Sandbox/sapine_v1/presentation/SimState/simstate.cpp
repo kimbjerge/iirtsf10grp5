@@ -1,10 +1,19 @@
 #include "simstate.h"
 #include "initializedstate.h"
 
-SimState::SimState(UIController* controller)
+
+SimState* SimState::instance = 0;
+
+SimState::SimState()
 {
-    this->controller = controller;
     this->name = "SimState";
+}
+
+SimState* SimState::GetInstance(){
+    if(instance == 0){
+        instance = new SimState;
+    }
+    return instance;
 }
 
 void SimState::Initialize(Record * record, SimulatorRealtime::MODEL_TYPES type, SimulatorRealtime::MEDICINE_TYPES medicin){
@@ -13,11 +22,11 @@ void SimState::Initialize(Record * record, SimulatorRealtime::MODEL_TYPES type, 
 
     this->controller->GetSimulatorRealtime()->CreatePatientModel(type);
 
-    this->controller->GetSimulatorRealtime()->SetMedicine(medicin);
-
     this->controller->GetSimulatorRealtime()->SetRecord(record);
 
-    this->ChangeState(new InitializedState(this->controller));
+    this->controller->GetSimulatorRealtime()->SetMedicine(medicin);
+
+    this->ChangeState(InitializedState::GetInstance());
 
 }
 
@@ -49,3 +58,8 @@ void SimState::Default()
 void SimState::ChangeState(SimState * simState){
     this->controller->ChangeState(simState);
 }
+
+void SimState::SetSapienApplication(UIController * controller){
+    this->controller = controller;
+}
+

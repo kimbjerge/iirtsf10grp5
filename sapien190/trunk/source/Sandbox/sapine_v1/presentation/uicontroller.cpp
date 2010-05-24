@@ -15,14 +15,15 @@ UIController::UIController(QObject *parent) :
 
     itsSimulatorRealtime->AttachObserver(&sim);
 
-    this->simState = new SimState(this);
+    this->simState = SimState::GetInstance();
+    this->simState->SetSapienApplication(this);
 }
 
 void UIController::start() {
     sim.show();
     Record * record;
-    record = itsSimulatorRealtime->CreateWfdbRecord("e0103","atr");
-    //record = itsSimulatorRealtime->CreateWfdbRecord("e0104","atr");
+    //record = itsSimulatorRealtime->CreateWfdbRecord("e0103","atr");
+    record = itsSimulatorRealtime->CreateWfdbRecord("e0104","atr");
 
     this->simState->Initialize(record, SimulatorRealtime::Normal, SimulatorRealtime::Morphine);
 }
@@ -40,6 +41,7 @@ void UIController::SimulatorParameterChanged(Parameter * simParameter) {
 void UIController::ChangeState(SimState * simState){
     delete this->simState;
     this->simState = simState;
+    this->simState->SetSapienApplication(this);
 }
 
 SimulatorRealtime* UIController::GetSimulatorRealtime(){
