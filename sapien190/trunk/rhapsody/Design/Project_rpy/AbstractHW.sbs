@@ -11,13 +11,16 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _name = "SystemFiveLayeredArchitectureView";
 		- _id = GUID 57558d18-7041-4fd2-bb90-000561c3e719;
 	}
-	- _lastID = 17;
+	- _lastID = 23;
 	- Declaratives = { IRPYRawContainer 
-		- size = 14;
+		- size = 12;
 		- value = 
 		{ INode 
 			- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
 			- _name = "Devkit8000";
+			- Dependencies = { IRPYRawContainer 
+				- size = 0;
+			}
 			- Stereotypes = { IRPYRawContainer 
 				- size = 1;
 				- value = 
@@ -30,124 +33,333 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _id = GUID 26742521-cb8b-11d5-b5bf-00d0b780aafd;
 				}
 			}
+			- ComponentInstances = { IRPYRawContainer 
+				- size = 9;
+				- value = 
+				{ IComponentInstance 
+					- _id = GUID 8fb3c637-0803-481b-894e-6d62e3ecb0cf;
+					- _myState = 2048;
+					- _name = "componentinstance_0";
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IComponent";
+						- _filename = "dev_dac.cmp";
+						- _subsystem = "";
+						- _class = "";
+						- _name = "dev_dac";
+						- _id = GUID ce657afb-0a68-4fac-95ba-abcc5b7dac9b;
+					}
+				}
+				{ IComponentInstance 
+					- _id = GUID ee8240d1-e529-4527-b702-1ab58860e7dc;
+					- _name = "dev_dac0";
+					- Dependencies = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IDependency 
+							- _id = GUID 0b9e621b-99e1-4795-a62e-0d1a7a48abf5;
+							- _myState = 2048;
+							- _name = "DAC1_ECG";
+							- Stereotypes = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IStereotype";
+									- _id = GUID 04243d1e-cf97-4d8a-9bd7-ff15dec13cbe;
+								}
+							}
+							- _dependsOn = { INObjectHandle 
+								- _m2Class = "INode";
+								- _id = GUID 15743ae4-6a5d-4c1b-b19f-9aab4c51583a;
+							}
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IComponent";
+						- _filename = "dev_dac.cmp";
+						- _subsystem = "";
+						- _class = "";
+						- _name = "dev_dac";
+						- _id = GUID ce657afb-0a68-4fac-95ba-abcc5b7dac9b;
+					}
+				}
+				{ IComponentInstance 
+					- _id = GUID e991bbb5-37c0-4471-8457-74616fb43326;
+					- _name = "dev_dac1";
+					- Dependencies = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IDependency 
+							- _id = GUID 0cb71d05-6f43-438c-9cc6-28936613d358;
+							- _myState = 2048;
+							- _name = "DAC2_EDR";
+							- Stereotypes = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IStereotype";
+									- _id = GUID 04243d1e-cf97-4d8a-9bd7-ff15dec13cbe;
+								}
+							}
+							- _dependsOn = { INObjectHandle 
+								- _m2Class = "INode";
+								- _id = GUID 5e4ea1b0-f3e9-4225-a1dc-9dc644ed058d;
+							}
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IComponent";
+						- _filename = "dev_dac.cmp";
+						- _subsystem = "";
+						- _class = "";
+						- _name = "dev_dac";
+						- _id = GUID ce657afb-0a68-4fac-95ba-abcc5b7dac9b;
+					}
+				}
+				{ IComponentInstance 
+					- _id = GUID d705b37e-10b5-4ccf-85c2-2304a48eee33;
+					- _name = "dev_ttyS1";
+					- Dependencies = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IDependency 
+							- _id = GUID b9bbab97-5a13-45f6-ad0a-5a76bbc25bbd;
+							- _myState = 2048;
+							- _name = "UART1_REMOTE";
+							- Stereotypes = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IStereotype";
+									- _id = GUID 335da08c-8b03-49cf-96db-f2bbcfe0008d;
+								}
+							}
+							- _dependsOn = { INObjectHandle 
+								- _m2Class = "INode";
+								- _id = GUID 0d7e8bb3-0ac2-4cdf-ac59-be7eccfc06a0;
+							}
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IComponent";
+						- _filename = "dev_tty.cmp";
+						- _subsystem = "";
+						- _class = "";
+						- _name = "dev_tty";
+						- _id = GUID 580fbc60-cdd7-41e5-a0d3-1463ca26b68b;
+					}
+				}
+				{ IComponentInstance 
+					- _id = GUID 3f1e4b3a-048b-421f-9080-f0e0997318ab;
+					- _name = "dev_ttyS2";
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IComponent";
+						- _filename = "dev_tty.cmp";
+						- _subsystem = "";
+						- _class = "";
+						- _name = "dev_tty";
+						- _id = GUID 580fbc60-cdd7-41e5-a0d3-1463ca26b68b;
+					}
+				}
+				{ IComponentInstance 
+					- _id = GUID 2a7c0a16-ae77-40c8-b869-dbd8da3063a8;
+					- _name = "libts";
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IComponent";
+						- _filename = "libts.cmp";
+						- _subsystem = "";
+						- _class = "";
+						- _name = "libts";
+						- _id = GUID 88e5a607-62e2-470c-a9ec-951a5eeb86b4;
+					}
+				}
+				{ IComponentInstance 
+					- _id = GUID 98c28074-5329-4eef-81e3-532e4734f36e;
+					- _myState = 2048;
+					- _name = "componentinstance_1";
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IComponent";
+						- _filename = "libQtGui.cmp";
+						- _subsystem = "";
+						- _class = "";
+						- _name = "libQtGui";
+						- _id = GUID 73206bee-831b-4f65-9203-2e611456171a;
+					}
+				}
+				{ IComponentInstance 
+					- _id = GUID 566a1ecc-e5ca-4a40-961c-c1910d1dfd4c;
+					- _name = "libQtCore";
+					- Dependencies = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IDependency 
+							- _id = GUID 1d1f9523-5d18-4de1-ad0b-dcac3fef6ed6;
+							- _myState = 2048;
+							- _name = "LCDController";
+							- Stereotypes = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IStereotype";
+									- _id = GUID 3dbfff1b-89fe-43e5-9c07-36f1de2e9534;
+								}
+							}
+							- _dependsOn = { INObjectHandle 
+								- _m2Class = "INode";
+								- _id = GUID 08ff9d61-10e4-488f-adcf-435ff3cb2298;
+							}
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IComponent";
+						- _filename = "libQtCore.cmp";
+						- _subsystem = "";
+						- _class = "";
+						- _name = "libQtCore";
+						- _id = GUID 8f617875-0702-47f8-8c20-4e67a9898ae6;
+					}
+				}
+				{ IComponentInstance 
+					- _id = GUID 318ef50e-7c49-4053-805e-c231d292b124;
+					- _name = "Sapien190";
+					- Dependencies = { IRPYRawContainer 
+						- size = 7;
+						- value = 
+						{ IDependency 
+							- _id = GUID d752152b-f468-433d-9bab-03f7b6efaf28;
+							- _myState = 2048;
+							- _name = "libts";
+							- _dependsOn = { INObjectHandle 
+								- _m2Class = "IComponentInstance";
+								- _id = GUID 2a7c0a16-ae77-40c8-b869-dbd8da3063a8;
+							}
+						}
+						{ IDependency 
+							- _id = GUID b12e7c6d-e1c4-4947-8188-9b7e4e994b25;
+							- _myState = 2048;
+							- _name = "dev_ttyS1";
+							- _dependsOn = { INObjectHandle 
+								- _m2Class = "IComponentInstance";
+								- _id = GUID d705b37e-10b5-4ccf-85c2-2304a48eee33;
+							}
+						}
+						{ IDependency 
+							- _id = GUID 374a444f-c352-44be-adcf-98dea4e051a6;
+							- _myState = 2048;
+							- _name = "libts_0";
+							- _dependsOn = { INObjectHandle 
+								- _m2Class = "IComponentInstance";
+								- _id = GUID 2a7c0a16-ae77-40c8-b869-dbd8da3063a8;
+							}
+						}
+						{ IDependency 
+							- _id = GUID b78c1f39-c8f0-4b3b-bcbe-b105cb59e187;
+							- _myState = 2048;
+							- _name = "dev_ttyS2";
+							- _dependsOn = { INObjectHandle 
+								- _m2Class = "IComponentInstance";
+								- _id = GUID 3f1e4b3a-048b-421f-9080-f0e0997318ab;
+							}
+						}
+						{ IDependency 
+							- _id = GUID c88d88f8-087a-43af-bb2b-b5f0f5febe08;
+							- _myState = 2048;
+							- _name = "libQtCore";
+							- _dependsOn = { INObjectHandle 
+								- _m2Class = "IComponentInstance";
+								- _id = GUID 566a1ecc-e5ca-4a40-961c-c1910d1dfd4c;
+							}
+						}
+						{ IDependency 
+							- _id = GUID 50f179d8-df8c-49e4-8ed1-a7023ac5abec;
+							- _myState = 2048;
+							- _name = "dev_dac1";
+							- _dependsOn = { INObjectHandle 
+								- _m2Class = "IComponentInstance";
+								- _id = GUID e991bbb5-37c0-4471-8457-74616fb43326;
+							}
+						}
+						{ IDependency 
+							- _id = GUID 695385b0-ddfa-4432-8abe-be68de1b9f1c;
+							- _myState = 2048;
+							- _name = "dev_dac0";
+							- _dependsOn = { INObjectHandle 
+								- _m2Class = "IComponentInstance";
+								- _id = GUID ee8240d1-e529-4527-b702-1ab58860e7dc;
+							}
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IComponent";
+						- _filename = "DefaultComponent.cmp";
+						- _subsystem = "";
+						- _class = "";
+						- _name = "DefaultComponent";
+						- _id = GUID 70c70b12-7d6c-4c76-8ce6-548c4ac2a18b;
+					}
+				}
+			}
 		}
 		{ INode 
 			- _id = GUID d8cc010f-79a7-4f7e-86e5-bf8f67a5d7d8;
-			- _name = "UI";
+			- _name = "TouchscreenController";
+			- Dependencies = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IDependency 
+					- _id = GUID a8514489-37c6-4b79-9226-7095d9db6577;
+					- _myState = 2048;
+					- _name = "libts";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _id = GUID 04243d1e-cf97-4d8a-9bd7-ff15dec13cbe;
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IComponentInstance";
+						- _id = GUID 2a7c0a16-ae77-40c8-b869-dbd8da3063a8;
+					}
+				}
+			}
 		}
 		{ INode 
 			- _id = GUID 15743ae4-6a5d-4c1b-b19f-9aab4c51583a;
-			- _name = "DAC_1";
+			- _name = "DAC1_ECG";
 		}
 		{ INode 
 			- _id = GUID 0d7e8bb3-0ac2-4cdf-ac59-be7eccfc06a0;
-			- _name = "RS232_1";
+			- _name = "UART1_REMOTE";
 		}
 		{ INode 
 			- _id = GUID 5e4ea1b0-f3e9-4225-a1dc-9dc644ed058d;
-			- _name = "DAC_2";
+			- _name = "DAC2_EDR";
 		}
 		{ INode 
 			- _id = GUID 8a10fde9-4a7d-407b-9dc5-766022e79e53;
-			- _name = "RS232_2";
-		}
-		{ IInformationFlow 
-			- _id = GUID 078ff002-3fb8-48e1-9087-96379ba7693f;
-			- _myState = 2048;
-			- _name = "UI_Devkit8000";
-			- end1_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID d8cc010f-79a7-4f7e-86e5-bf8f67a5d7d8;
+			- _name = "UART2_IPUMP";
+			- Dependencies = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IDependency 
+					- _id = GUID 6372154c-e5a6-4d8f-80bf-1cc3625d3594;
+					- _myState = 2048;
+					- _name = "dev_ttyS2";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _id = GUID 335da08c-8b03-49cf-96db-f2bbcfe0008d;
+						}
+					}
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IComponentInstance";
+						- _id = GUID 3f1e4b3a-048b-421f-9080-f0e0997318ab;
+					}
+				}
 			}
-			- end2_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
-			}
-			- direction_ = toEnd2;
-		}
-		{ IInformationFlow 
-			- _id = GUID e33f5978-61b7-41d9-847b-1e21bbfa9bd7;
-			- _myState = 2048;
-			- _name = "Devkit8000_DAC_1";
-			- end1_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
-			}
-			- end2_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID 15743ae4-6a5d-4c1b-b19f-9aab4c51583a;
-			}
-			- direction_ = toEnd2;
-		}
-		{ IInformationFlow 
-			- _id = GUID 3579debb-7bb1-4ab7-abc6-48f0e380c9e6;
-			- _myState = 2048;
-			- _name = "Devkit8000_RS232_1";
-			- end1_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
-			}
-			- end2_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID 0d7e8bb3-0ac2-4cdf-ac59-be7eccfc06a0;
-			}
-			- direction_ = toEnd2;
-		}
-		{ IInformationFlow 
-			- _id = GUID 45c83a31-dad8-4693-8d2a-9c832a4eef2b;
-			- _myState = 2048;
-			- _name = "Devkit8000_UI";
-			- end1_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
-			}
-			- end2_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID d8cc010f-79a7-4f7e-86e5-bf8f67a5d7d8;
-			}
-			- direction_ = toEnd2;
-		}
-		{ IInformationFlow 
-			- _id = GUID 08899382-93e9-488c-ad61-98a5cb8d7867;
-			- _myState = 2048;
-			- _name = "RS232_1_Devkit8000";
-			- end1_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID 0d7e8bb3-0ac2-4cdf-ac59-be7eccfc06a0;
-			}
-			- end2_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
-			}
-			- direction_ = toEnd2;
-		}
-		{ IInformationFlow 
-			- _id = GUID f6d2d86e-91c6-402d-a97f-4e85b09432cd;
-			- _myState = 2048;
-			- _name = "Devkit8000_DAC_2";
-			- end1_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
-			}
-			- end2_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID 5e4ea1b0-f3e9-4225-a1dc-9dc644ed058d;
-			}
-			- direction_ = toEnd2;
-		}
-		{ IInformationFlow 
-			- _id = GUID b6912e12-6396-475e-8364-ca6c0ae92bdd;
-			- _myState = 2048;
-			- _name = "Devkit8000_RS232_2";
-			- end1_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID b4348bf5-938b-4d97-8fa9-9954b6762206;
-			}
-			- end2_ = { IHandle 
-				- _m2Class = "INode";
-				- _id = GUID 8a10fde9-4a7d-407b-9dc5-766022e79e53;
-			}
-			- direction_ = toEnd2;
 		}
 		{ IDiagram 
 			- _id = GUID ef200d69-8525-4d1e-8706-d93c9a6ae7fb;
@@ -1205,9 +1417,49 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 				- _id = GUID 6f603c1a-3403-40b6-aa9f-f570a38b251b;
 			}
 		}
+		{ IStereotype 
+			- _id = GUID 04243d1e-cf97-4d8a-9bd7-ff15dec13cbe;
+			- _myState = 8192;
+			- _name = "SPI";
+			- _m2Classes = { IRPYRawContainer 
+				- size = 1;
+				- value = "Dependency"; 
+			}
+		}
+		{ IStereotype 
+			- _id = GUID 6c801839-a9c9-47d2-9f97-51c23ac8ed7e;
+			- _myState = 8192;
+			- _name = "I2C";
+			- _m2Classes = { IRPYRawContainer 
+				- size = 1;
+				- value = "Dependency"; 
+			}
+		}
+		{ INode 
+			- _id = GUID 08ff9d61-10e4-488f-adcf-435ff3cb2298;
+			- _name = "LCDController";
+		}
+		{ IStereotype 
+			- _id = GUID 335da08c-8b03-49cf-96db-f2bbcfe0008d;
+			- _myState = 8192;
+			- _name = "RS232";
+			- _m2Classes = { IRPYRawContainer 
+				- size = 1;
+				- value = "Dependency"; 
+			}
+		}
+		{ IStereotype 
+			- _id = GUID 3dbfff1b-89fe-43e5-9c07-36f1de2e9534;
+			- _myState = 8192;
+			- _name = "DVI";
+			- _m2Classes = { IRPYRawContainer 
+				- size = 1;
+				- value = "Dependency"; 
+			}
+		}
 	}
-	- weakCGTime = 5.18.2010::19:16:32;
-	- strongCGTime = 4.30.2010::7:31:40;
+	- weakCGTime = 5.25.2010::9:32:31;
+	- strongCGTime = 5.25.2010::8:46:39;
 	- _defaultComposite = GUID 0fb36dc0-ad37-45a6-b555-77bf7edd4044;
 	- _eventsBaseID = -1;
 	- Classes = { IRPYRawContainer 
