@@ -112,7 +112,7 @@ void RealTimeThread::cleanUpRelations() {
         }
 }
 
-RealTimeThread::RealTimeThread() : computeTime(0), counter(0), itsFrameBuffer(NULL), sampleRate(250), sampleTime(4000), timeToPulse(10), Thread(PRIORITY_NORMAL,"RealTimeThread") {
+RealTimeThread::RealTimeThread() : computeTime(0), counter(0), itsFrameBuffer(NULL), sampleRate(250), sampleTime(4000), timeToPulse(200), Thread(PRIORITY_NORMAL,"RealTimeThread") {
     {
         for (int pos = 0; pos < 2; pos++) {
         	itsExtOutAnalogue[pos] = NULL;
