@@ -1,13 +1,18 @@
 #include "graph.h"
 #include "ui_graph.h"
 
+// KBE removed scaling
+#define MIN_DEFAULT 0 // -100000
+#define MAX_DEFAULT 500 // 100000
+
 Graph::Graph(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Graph)
 {
     this->resolution = 200;
-    this->maxValue = -100000;
-    this->minValue = 100000;
+
+    this->minValue = MIN_DEFAULT;
+    this->maxValue = MAX_DEFAULT;
 
     this->refreshRate = 50;
     this->refreshCounter;
@@ -33,7 +38,7 @@ void Graph::paintEvent(QPaintEvent *){
 
     double corValue = (double) this->height() /  ( 2 * (double)span);
 
-    int offset = this->height()  / 2;
+    int offset = this->height() - 10;
 
     int accourence = this->values.size();
 
@@ -65,8 +70,10 @@ void Graph::setResolution(int value){
 }
 
 void Graph::addValue(int value){
+    /* KBE removed scaling
     if(this->minValue > value) this->minValue = value;
     if(this->maxValue < value) this->maxValue = value;
+    */
 
     if(this->values.size() > this->resolution) this->values.erase(this->values.begin());
     this->values.push_back(value);
@@ -89,8 +96,9 @@ void Graph::changeEvent(QEvent *e)
 
 void Graph::clearGraph()
 {
-    this->maxValue = -100000;
-    this->minValue = 100000;
+    this->minValue = MIN_DEFAULT;
+    this->maxValue = MAX_DEFAULT;
+
     this->values.clear();
     this->repaint(0,0,this->width(),this->height());
 }
