@@ -39,7 +39,6 @@ void UIController::SimulatorParameterChanged(Parameter * simParameter) {
 }
 
 void UIController::ChangeState(SimState * simState){
-    delete this->simState;
     this->simState = simState;
     this->simState->SetSapienApplication(this);
 }
