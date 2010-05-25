@@ -18,7 +18,7 @@ Dac::Dac(unsigned int channel) {
 	// TODO Auto-generated constructor stub
 	char device[20];
         //printf("Constructor called\n");
-        //sprintf(device,"%s%i", DAC_PATH, channel);
+        sprintf(device,"%s%i", DAC_PATH, channel);
         //printf("device: %s\n", device);
 	fd = open(device, O_WRONLY);
         //printf("m_fd: %d\n", fd);
@@ -52,7 +52,7 @@ int Dac::setValue(unsigned int outputValue) {
 //	printf("set value called\n");
 	value = outputValue;
 
-      //  sprintf(valString, "%i\0", value);
+        sprintf(valString, "%i\0", value);
 
 //      printf("val[%i]: %s\n", fd, valString);
 
