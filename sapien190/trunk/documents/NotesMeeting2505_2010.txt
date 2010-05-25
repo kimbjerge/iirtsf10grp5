@@ -1,0 +1,66 @@
+Scrum Status 25. May:
+____________________
+
+Peter:
+	Done:
+	- Meeting minutes
+	- Added text to Chapter 5 + 11 + 12
+	Problems:
+	- What exactly to put into ch 11+12
+	Next:
+	- Finalize chapter 5
+	- Finalize chapter 11+12 
+	- Look at chapter 3.5 in the Report, Design Process
+	- Merge architecture document
+
+Anders:
+	Done:
+	- Complete discrete demonstrator
+	- Document discrete system in architecture document chapter 5.2.2
+	- Integrate Rhapsody model with GuI and FrameBuffer observer
+	- GUI design and change of views based on the discrete model
+	Problems:
+	- Content of ch 10
+	Next:
+	- Finalize chapter 10 in architecture document
+	- Finalize Architecture document chapter 7. deployment + 8. implementation view
+	- Finalize ch 5.3.2
+	- Send document to PHM thursday afternoon.
+	- Inputs to Report chapter 3.7-3.11
+
+Kim:	
+	Done:
+	- Format report
+	- Write on project execution section in the Report
+	- Appendix screen dumps of test
+	- Architecture document chapter 6. Process/task view
+	- RMA Analysis
+	Problems:
+	- 
+	Next:
+	- Write on Report Section 3.2, Project Execution
+	- Write on Report section 3.3, methods
+	- Update UML diagrams arch ch 7+8
+
+Next scrum meeting friday at 9:00
+	- Scrum status
+	- Close Architecture document
+	- Status on report writing and assigment of tasks
+	- discuss content of 3.7 - 3.11
+	- Continue to 16:00 
+
+
+Action list (Backlog) to final delivery 04. june:
+____________________________________________
+
+Planned meettings to finialize:
+	- Fredag 28
+	- Mandag 31, Tirsdag 1, Torsdag 3
+
+	- Finalize Requirement Specification
+	- Finalize Product Architecture Document
+	- Finalize Project Report
+	- Implement ECG to EDR filter
+	- Implement ECG to Pulse filter
+	- Implement Serial Port Interface
+	- Optionally implement Use Case #2 (Select and initiate Scenario)
