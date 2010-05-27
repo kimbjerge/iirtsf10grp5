@@ -2165,7 +2165,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			}
 		}
 	}
-	- weakCGTime = 5.21.2010::20:10:38;
+	- weakCGTime = 5.27.2010::11:58:32;
 	- strongCGTime = 5.3.2010::19:50:5;
 	- _defaultComposite = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 	- _eventsBaseID = -1;
@@ -5929,7 +5929,7 @@ std::cout << \"Pulse \" << s << std::endl;";
 				- _id = GUID 890d955b-8753-4ce9-bfd5-ed79d2763e87;
 			}
 			- _lastID = 7;
-			- weakCGTime = 5.15.2010::10:54:41;
+			- weakCGTime = 5.27.2010::11:58:38;
 			- strongCGTime = 5.7.2010::8:59:9;
 			- Operations = { IRPYRawContainer 
 				- size = 6;
@@ -6045,8 +6045,9 @@ gainParam.Execute(itsSimulatorRealtime);";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "DistributerThread* pDT = itsSimulatorRealtime->getItsDistributerThread();
-pDT->run();";
+						- _bodyData = "RealTimeThread* pRT = itsSimulatorRealtime->getItsRealTimeThread();
+pRT->run();
+";
 					}
 				}
 				{ IPrimitiveOperation 
@@ -6072,8 +6073,8 @@ pDT->run();";
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "RealTimeThread* pRT = itsSimulatorRealtime->getItsRealTimeThread();
-pRT->run();";
+						- _bodyData = "DistributerThread* pDT = itsSimulatorRealtime->getItsDistributerThread();
+pDT->run();";
 					}
 				}
 				{ IPrimitiveOperation 

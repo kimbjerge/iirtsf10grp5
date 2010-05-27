@@ -65,6 +65,34 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 88;
+				- m_nTop = 88;
+				- m_nRight = 817;
+				- m_nBottom = 372;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IMSC";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "Animated ScenarioStartSimulatorRealtimeReport";
+				- _id = GUID 76c9cfec-0fcf-4d94-b5ae-f1e3bb8e396e;
+			}
+			- _UpLeft = 0 7091 ;
+			- _DownRight = 819 7445 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
 				- m_nFlags = 0;
 				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
@@ -267,10 +295,10 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
 				- m_ptMaxPositionY = -23;
-				- m_nLeft = 264;
-				- m_nTop = 264;
-				- m_nRight = 1167;
-				- m_nBottom = 838;
+				- m_nLeft = 154;
+				- m_nTop = 154;
+				- m_nRight = 752;
+				- m_nBottom = 491;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
@@ -278,13 +306,13 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _filename = "Continuous.sbs";
 				- _subsystem = "Application::Continuous";
 				- _class = "";
-				- _name = "ScenarioUpdateWaveform";
-				- _id = GUID 8949a762-d1f3-4c94-8e6f-440d8eaebc37;
+				- _name = "ScenarioStartSimulatorRealtime";
+				- _id = GUID dcc7a8d4-cc0b-4163-8008-979ecae41e70;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1094 634 ;
+			- _DownRight = 570 270 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 0;
+			- m_nDiagramIndex = 1;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -449,8 +477,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID dc508800-9a22-47a9-a128-794d95acb6c6;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1241 494 ;
+			- _UpLeft = 0 170 ;
+			- _DownRight = 1241 664 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 22;
 		}
@@ -509,34 +537,6 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 			- _DownRight = 875 527 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 9;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -4;
-				- m_ptMaxPositionY = -23;
-				- m_nLeft = 264;
-				- m_nTop = 264;
-				- m_nRight = 1167;
-				- m_nBottom = 838;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IMSC";
-				- _filename = "Discrete_.sbs";
-				- _subsystem = "Discrete_";
-				- _class = "";
-				- _name = "AdjustGainParameter";
-				- _id = GUID 6efe9dc9-8720-4d68-8859-7a2a462c8439;
-			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1346 780 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 1;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -625,8 +625,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -646,7 +646,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _id = GUID 10fc6437-0494-4476-98b9-e80c070802ce;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 827 758 ;
+			- _DownRight = 619 586 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 12;
 		}
