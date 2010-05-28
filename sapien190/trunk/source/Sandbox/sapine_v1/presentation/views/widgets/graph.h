@@ -7,6 +7,7 @@
 #include <vector>
 #include <cstdlib>
 #include "FrameBuffer.h"
+#include "TimeMeassure.h"
 
 using namespace std;
 
@@ -23,6 +24,7 @@ public:
     void setRefreshRate(int);
     void clearGraph();
     ~Graph();
+    TimeMeassure timeMeas;
 
 protected:
     void changeEvent(QEvent *e);

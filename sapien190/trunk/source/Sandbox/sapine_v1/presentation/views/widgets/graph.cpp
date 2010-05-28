@@ -107,6 +107,9 @@ void Graph::frameBufferUpdated()
 {
 
     this->repaint(0,0,this->width(),this->height());
+    this->timeMeas.LogTime();
+    // std::cout << "CTGraphUpdate " << timeMeas.getComputeTime() << std::endl;
+
       //  this->refreshCounter = 0;
   //  }
 }

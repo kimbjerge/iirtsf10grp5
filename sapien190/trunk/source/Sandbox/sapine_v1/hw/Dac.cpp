@@ -22,6 +22,7 @@ Dac::Dac(unsigned int channel) {
         //printf("device: %s\n", device);
 	fd = open(device, O_WRONLY);
         //printf("m_fd: %d\n", fd);
+        toggleTest = false;
 }
 
 Dac::~Dac() {
@@ -51,6 +52,20 @@ int Dac::setValue(unsigned int outputValue) {
 	char valString[10];
 //	printf("set value called\n");
 	value = outputValue;
+
+        // KBE code for debug testing
+        /*
+        if (toggleTest == true)
+        {
+            value = 500;
+            toggleTest = false;
+        }
+        else
+        {
+            value = 0;
+            toggleTest = true;
+        }
+        */
 
         sprintf(valString, "%i\0", value);
 

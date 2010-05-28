@@ -47,6 +47,7 @@ Graph* SimulationRunning::getBottomGraph(){
 void SimulationRunning::Update(FrameBuffer *fp){
 
     int sample;
+    top->timeMeas.LogTime();
     fp->First();
     while (!fp->IsDone())
     {

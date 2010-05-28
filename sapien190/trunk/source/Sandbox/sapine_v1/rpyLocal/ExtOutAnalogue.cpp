@@ -28,8 +28,7 @@ void ExtOutAnalogue::OutputSample(int sample) {
 #ifdef _USE_HW_DAC
     pDac[channel]->setValue(sample);
 #else
-    //
-    std::cout << "Ch" << channel << " Sample " << sample << std::endl;
+    //std::cout << "Ch" << channel << " Sample " << sample << std::endl;
 #endif
     //#]
 }

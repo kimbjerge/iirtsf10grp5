@@ -156,6 +156,7 @@ void RealTimeThread::run() {
     	}   
         CheckFrameBuffer();
         LogTime();
+        // std::cout << "CTSample " << computeTime << std::endl;
     }   
     // Ensure that Distributer thread will die
     #ifdef _LINUX                  

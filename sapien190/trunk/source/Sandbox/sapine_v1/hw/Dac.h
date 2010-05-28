@@ -26,6 +26,7 @@ private:
 //	Mutex *mutex;// = new Mutex();
 	unsigned int value;
 	int fd;
+        bool toggleTest;
 };
 
 #endif /* DAC_H_ */

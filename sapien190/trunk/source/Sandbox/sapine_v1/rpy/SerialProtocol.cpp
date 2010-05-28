@@ -19,6 +19,7 @@
 //## class SerialProtocol
 void SerialProtocol::OutputPulse(int pulse) {
     //#[ operation OutputPulse(int)
+    //
     std::cout << "Pulse " << pulse << std::endl;
     //#]
 }

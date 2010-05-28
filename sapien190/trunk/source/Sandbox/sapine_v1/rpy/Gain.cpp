@@ -23,11 +23,13 @@ Gain::~Gain() {
 
 int Gain::Output(SampleSet& in, SampleSet& out) {
     //#[ operation Output(SampleSet,SampleSet)
-    
+    int offset = 0;
+
     for (int idx = 0; idx < out.getNum(); idx++)
     {   
     	Sample *s = in.GetSample(idx);
-    	WFDB_Sample sample = (WFDB_Sample)((float)(s->getValue())*gain); 
+        if (s->getValue() < 0) offset = 500; // This is a dirty hack only for e0103 and e0104
+        WFDB_Sample sample = (WFDB_Sample)((float)(s->getValue()+offset)*gain);
     	out.SetSample(idx, sample); 
     }
     WFDB_Annotation ann = out.GetAnnotation();
