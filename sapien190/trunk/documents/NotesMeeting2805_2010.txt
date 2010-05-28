@@ -1,0 +1,69 @@
+Scrum Status 27. May:
+____________________
+
+Peter:
+	Done:
+	- Meeting minutes
+	Problems:
+	-
+	Next:
+	- Finalize chapter 5
+	- Finalize chapter 11+12 
+	- Look at chapter 3.5 in the Report, Design Process
+	- Merge architecture document
+	- Responsible for report chapters 1, 2 and 3.6
+
+Anders:
+	Done:
+	- Finalize chapter 10 in architecture document
+	- Finalize Architecture document chapter 7. deployment + 8. implementation view
+	- Finalize ch 5.3.2
+	- Send document to PHM thursday afternoon.
+	- Inputs to Report chapter 3.7-3.11
+	Problems:
+	-
+	Next:
+	- Architecture document chapter 3.5 describe signal, slots and emit in Qt
+        - Responsible for report chapters 3.7 - 3.10 
+
+Kim:	
+	Done:
+	- Write on Report Section 3.2, Project Execution
+	- Write on Report section 3.3, methods
+	- Update UML diagrams arch ch 7+8
+	- Updated sequence diagrams for ch 5 and added code snippets
+	Problems:
+	- 
+	Next:
+	- Meeting minutes
+	- Merge reports inputs from anders
+	- Produce test data 
+		- Test signal 0/1 to meassure sample rate and jitter
+		- Memory usages
+		- Messurment of calculate times and update graph times
+        - Responsible for report chapters 3.1 - 3.5 
+
+
+Next scrum meeting monday at 13:00
+	- Scrum status
+	- Close Architecture document
+	- Status on report writing
+	- Discuss conclusion and assing of chapter 
+	- Review of report chapters 3.11 and 4
+	- Continue to 15:30 
+
+
+Action list (Backlog) to final delivery 04. june:
+____________________________________________
+
+Planned meettings to finialize:
+	- Tirsdag 1, Torsdag 3
+
+	- Finalize Requirement Specification
+	- Finalize Product Architecture Document
+	- Finalize Project Report
+
+	- Implement ECG to EDR filter
+	- Implement ECG to Pulse filter
+	- Implement Serial Port Interface
+	- Optionally implement Use Case #2 (Select and initiate Scenario)
