@@ -218,7 +218,7 @@ void RealTimeThread::CheckFrameBuffer() {
 
 void RealTimeThread::SetSampleRate(int rate) {
     //#[ operation SetSampleRate(int)
-    unsigned long sampePeriode = 100000/rate; 
+    unsigned long sampePeriode = 1000000/rate; 
     sampleRate = rate;
     sampleTime = sampePeriode;
     //#]
