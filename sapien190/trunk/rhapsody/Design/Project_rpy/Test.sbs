@@ -2176,7 +2176,7 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 			- _id = GUID 269d5882-17f7-4256-b982-951a514c97f1;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.21.2010::20:10:38;
+			- weakCGTime = 5.27.2010::11:58:32;
 			- strongCGTime = 5.3.2010::19:50:5;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -7875,7 +7875,7 @@ std::cout << fp->GetSample() << std::endl;
 					- _myState = 10240;
 					- _name = "statechart_1";
 					- _lastID = 11;
-					- weakCGTime = 5.15.2010::10:54:41;
+					- weakCGTime = 5.27.2010::11:58:38;
 					- strongCGTime = 5.7.2010::8:59:9;
 					- _multiplicity = "";
 					- _itsStateChart = { IHandle 

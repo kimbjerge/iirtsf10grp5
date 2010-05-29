@@ -26434,9 +26434,6 @@ from RealTimeThread";
 						}
 					}
 				}
-				- InteractionOccurrences = { IRPYRawContainer 
-					- size = 0;
-				}
 				- CombinedFragments = { IRPYRawContainer 
 					- size = 1;
 					- value = 
@@ -64117,6 +64114,8 @@ from RealTimeThread";
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -995;
+						- m_nVerticalSpacing = -54;
 						- m_nOrientationCtrlPt = 8;
 					}
 					- m_drawBehavior = 0;
@@ -64135,7 +64134,7 @@ from RealTimeThread";
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 0 0  ;
+					- m_position = 4 -48 0  -48 437  48 437  48 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -64216,6 +64215,8 @@ from RealTimeThread";
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -894;
+						- m_nVerticalSpacing = -54;
 						- m_nOrientationCtrlPt = 8;
 					}
 					- m_drawBehavior = 0;
@@ -64234,7 +64235,7 @@ from RealTimeThread";
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 0 0  ;
+					- m_position = 4 -48 0  -48 437  48 437  48 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -64315,6 +64316,8 @@ from RealTimeThread";
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -375;
+						- m_nVerticalSpacing = -54;
 						- m_nOrientationCtrlPt = 8;
 					}
 					- m_drawBehavior = 0;
@@ -64333,7 +64336,7 @@ from RealTimeThread";
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 0 0  ;
+					- m_position = 4 -48 0  -48 437  48 437  48 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -64414,6 +64417,8 @@ from RealTimeThread";
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -781;
+						- m_nVerticalSpacing = -54;
 						- m_nOrientationCtrlPt = 8;
 					}
 					- m_drawBehavior = 0;
@@ -64432,7 +64437,7 @@ from RealTimeThread";
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 0 0  ;
+					- m_position = 4 -48 0  -48 437  48 437  48 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -64513,6 +64518,8 @@ from RealTimeThread";
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -648;
+						- m_nVerticalSpacing = -54;
 						- m_nOrientationCtrlPt = 8;
 					}
 					- m_drawBehavior = 0;
@@ -64531,7 +64538,7 @@ from RealTimeThread";
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 0 0  ;
+					- m_position = 4 -48 0  -48 437  48 437  48 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -64612,6 +64619,8 @@ from RealTimeThread";
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -511;
+						- m_nVerticalSpacing = -54;
 						- m_nOrientationCtrlPt = 8;
 					}
 					- m_drawBehavior = 0;
@@ -64630,7 +64639,7 @@ from RealTimeThread";
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 0 0  ;
+					- m_position = 4 -48 0  -48 437  48 437  48 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -64711,6 +64720,8 @@ from RealTimeThread";
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -238;
+						- m_nVerticalSpacing = -54;
 						- m_nOrientationCtrlPt = 8;
 					}
 					- m_drawBehavior = 0;
@@ -64729,7 +64740,7 @@ from RealTimeThread";
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 0 0  ;
+					- m_position = 4 -48 0  -48 437  48 437  48 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -64810,6 +64821,8 @@ from RealTimeThread";
 						- m_position = 1 0 0  ;
 						- m_nIdent = 0;
 						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -63;
+						- m_nVerticalSpacing = -54;
 						- m_nOrientationCtrlPt = 8;
 					}
 					- m_drawBehavior = 0;
@@ -64828,7 +64841,7 @@ from RealTimeThread";
 						- m_bImplicitSetRectPoints = 0;
 						- m_nOrientationCtrlPt = 1;
 					}
-					- m_position = 1 0 0  ;
+					- m_position = 4 -48 0  -48 437  48 437  48 0  ;
 					- m_pInheritsFrom = { IHandle 
 						- _m2Class = "";
 					}
@@ -64837,6 +64850,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 3f54aa99-f547-47ad-97d8-73bb6bf59b92;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -65107,6 +65145,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 34c48861-41a5-4799-96b5-a4f846a0d7fc;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -65377,6 +65440,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID a5c753a5-28df-4f4f-8b66-8955de6f3455;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -65743,6 +65831,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID e6fc2a9a-c528-46df-807b-40fc23fb69be;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -66060,6 +66173,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 39338a0b-ae8e-4220-9db2-bb72a7bc6125;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -67011,6 +67149,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 7ec630f1-8e83-4525-80a2-76de91546fdb;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -67914,6 +68077,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 6e89234a-1939-44e7-8ad2-487afdad1f2b;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -68817,6 +69005,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID e31c4ded-4927-423f-9426-0e77d026eaed;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -69089,6 +69302,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 8eda73df-bec2-4496-a0bf-cdb4f771049a;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -69943,6 +70181,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 6328d89e-7e03-4f33-b4ac-b99f9a886a76;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -70895,6 +71158,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 7bfab881-2f60-4640-b59f-b67142b7ee09;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -71069,6 +71357,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID 08eb32c5-4447-4222-b1a1-217fc791037a;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -72069,6 +72382,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID a8fa67cb-6278-47ec-a844-81f7341599ef;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -72389,6 +72727,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID a76daa7e-769b-48b9-a6fc-4801dd67561d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -73292,6 +73655,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID d6dbb8a4-9008-4ebd-8254-879b1f2410d5;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -73466,6 +73854,31 @@ from RealTimeThread";
 				}
 				{ CGIMscConditionMark 
 					- _id = GUID ab8d12ab-53e5-46ee-b35b-5b7ac06ec1a1;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "SequenceDiagram";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Condition_Mark";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AlignConditionMarksLeft";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- m_type = 114;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IMessage";
@@ -80600,7 +81013,7 @@ from RealTimeThread";
 			}
 		}
 	}
-	- weakCGTime = 5.27.2010::12:0:49;
+	- weakCGTime = 5.29.2010::21:9:0;
 	- strongCGTime = 5.3.2010::12:16:30;
 	- _defaultComposite = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 	- _eventsBaseID = -1;
@@ -80611,7 +81024,7 @@ from RealTimeThread";
 			- _id = GUID 2a1df7e6-51c6-4eb9-8d46-f07eb6b69f9b;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- weakCGTime = 5.23.2010::19:12:22;
+			- weakCGTime = 5.27.2010::12:0:49;
 			- strongCGTime = 5.3.2010::12:16:30;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -100218,7 +100631,7 @@ return ann;";
 				- _id = GUID 4db23c61-cc8a-45a6-83f3-3f27954f0733;
 			}
 			- _lastID = 16;
-			- weakCGTime = 5.21.2010::20:15:21;
+			- weakCGTime = 5.29.2010::21:9:0;
 			- strongCGTime = 5.5.2010::21:32:1;
 			- Operations = { IRPYRawContainer 
 				- size = 8;
@@ -100489,7 +100902,7 @@ prevTime = currTime;
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "unsigned long sampePeriode = 100000/rate; 
+						- _bodyData = "unsigned long sampePeriode = 1000000/rate; 
 sampleRate = rate;
 sampleTime = sampePeriode;";
 					}

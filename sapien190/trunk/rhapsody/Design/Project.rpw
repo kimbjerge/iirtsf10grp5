@@ -85,8 +85,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "Animated ScenarioStartSimulatorRealtimeReport";
 				- _id = GUID 76c9cfec-0fcf-4d94-b5ae-f1e3bb8e396e;
 			}
-			- _UpLeft = 0 7091 ;
-			- _DownRight = 819 7445 ;
+			- _UpLeft = 0 6917 ;
+			- _DownRight = 828 7325 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 		}
@@ -477,8 +477,8 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID dc508800-9a22-47a9-a128-794d95acb6c6;
 			}
-			- _UpLeft = 0 170 ;
-			- _DownRight = 1241 664 ;
+			- _UpLeft = 0 164 ;
+			- _DownRight = 1241 658 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 22;
 		}
@@ -646,7 +646,7 @@ I-Logix-RPY-Archive version 8.5.2 * 1159120
 				- _id = GUID 10fc6437-0494-4476-98b9-e80c070802ce;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 619 586 ;
+			- _DownRight = 635 601 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 12;
 		}
