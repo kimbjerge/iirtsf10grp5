@@ -30,6 +30,7 @@ int ECGtoEDR::Output(SampleSet& in, SampleSet& out) {
     }
     WFDB_Annotation ann = in.GetAnnotation();
     out.SetAnnotation(ann); 
+    out.SetSampleID(in.getSampleID());
     return 0;
     //#]
 }
