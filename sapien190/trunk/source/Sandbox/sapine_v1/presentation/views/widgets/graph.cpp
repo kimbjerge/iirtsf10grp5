@@ -15,7 +15,7 @@ Graph::Graph(QWidget *parent) :
     this->maxValue = MAX_DEFAULT;
 
     this->refreshRate = 50;
-    this->refreshCounter;
+    this->refreshCounter = 0;
 
     this->setStyleSheet("QWidget {background-color: white;}");
 
