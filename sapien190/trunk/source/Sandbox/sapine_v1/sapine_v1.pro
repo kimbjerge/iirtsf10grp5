@@ -106,17 +106,14 @@ SOURCES += main.cpp \
     presentation/uicontroller.cpp \
     rpy/Continuous.cpp \
     rpy/Controller.cpp \
-    rpy/DistributerThread.cpp \
     rpy/Dummy.cpp \
     rpy/ECGMedicineAdjust.cpp \
     rpy/ECGtoEDR.cpp \
-    rpy/ECGtoPulse.cpp \
     rpy/ExtInputs.cpp \
     rpy/ExtOutSerial.cpp \
     rpy/Filter.cpp \
     rpy/FrameBuffer.cpp \
     rpy/FrameBufferPool.cpp \
-    rpy/Gain.cpp \
     rpy/GainParam.cpp \
     rpy/InfusionPumpModel.cpp \
     rpy/IPumpProtocol.cpp \
@@ -130,7 +127,6 @@ SOURCES += main.cpp \
     rpy/PatientModel.cpp \
     rpy/PhysioModel.cpp \
     rpy/RateParam.cpp \
-    rpy/RealTimeThread.cpp \
     rpy/Record.cpp \
     rpy/RecordIterator.cpp \
     rpy/RecordProxy.cpp \
@@ -143,7 +139,6 @@ SOURCES += main.cpp \
     rpy/SerialProtocol.cpp \
     rpy/SimulatorRealtime.cpp \
     rpy/Subject.cpp \
-    rpyLocal/ExtOutAnalogue.cpp \
     os/posix/BinarySemaphore.cpp \
     os/posix/CountingSemaphore.cpp \
     os/posix/Mutex.cpp \
@@ -164,4 +159,9 @@ SOURCES += main.cpp \
     rpy/ProtocolColleague.cpp \
     rpy/ModelMediator.cpp \
     rpy/Recordparameter.cpp \
-    os/posix/TimeMeassure.cpp
+    os/posix/TimeMeassure.cpp \
+    rpyLocal/RealTimeThread.cpp \
+    rpyLocal/ExtOutAnalogue.cpp \
+    rpyLocal/ECGtoPulse.cpp \
+    rpyLocal/Gain.cpp \
+    rpy/DistributerThread.cpp

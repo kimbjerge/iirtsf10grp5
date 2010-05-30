@@ -14,8 +14,12 @@
 #include "SampleSet.h"
 //## package Application::Continuous
 
+#define SAPIEN_SAMPLING_FREQ 250
+
 //## class ECGtoPulse
 ECGtoPulse::ECGtoPulse() {
+	lastBeat = 0;
+	calcPulse = 0;
 }
 
 ECGtoPulse::~ECGtoPulse() {
@@ -23,13 +27,22 @@ ECGtoPulse::~ECGtoPulse() {
 
 int ECGtoPulse::Output(SampleSet& in, SampleSet& out) {
     //#[ operation Output(SampleSet,SampleSet)
-    for (int idx = 0; idx < out.getNum(); idx++)
+	if (in.GetAnnotation().anntyp == NORMAL) {
+		float pulse = 60.0*(in.GetSampleID() - lastBeat)/SAPIEN_SAMPLING_FREQ;
+		calcPulse = (WFDB_Sample)pulse;
+		//cout << "Pulse: " << pulse << endl;
+		lastBeat = in.GetSampleID();
+	}
+	for (int idx = 0; idx < out.getNum(); idx++)
     {
-    	WFDB_Sample sample = in.GetSampleValue(idx); 
-    	out.SetSample(idx, sample); 
+    	//WFDB_Sample sample = in.GetSampleValue(idx); 
+
+    	//out.SetSample(idx, sample); 
+    	out.SetSample(idx, calcPulse); 
     } 
     // Setting default annotation not used for pulse
     out.SetAnnotation(out.FactoryAnnotation(NORMAL));
+    out.SetSampleID(in.getSampleID());
     return 0;
     //#]
 }

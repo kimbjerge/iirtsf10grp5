@@ -141,6 +141,7 @@ void RealTimeThread::GeneratePulse() {
 void RealTimeThread::run() {
     //#[ operation run()
     #ifdef _LINUX                  
+    setPriority(PRIORITY_HIGH);
     while(isAlive()){
     	usleep(sampleTime - computeTime);
     #else

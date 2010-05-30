@@ -32,8 +32,9 @@ int Gain::Output(SampleSet& in, SampleSet& out) {
         WFDB_Sample sample = (WFDB_Sample)((float)(s->getValue()+offset)*gain);
     	out.SetSample(idx, sample); 
     }
-    WFDB_Annotation ann = out.GetAnnotation();
+    WFDB_Annotation ann = in.GetAnnotation();
     out.SetAnnotation(ann); 
+    out.SetSampleID(in.getSampleID());
     return 0;
     //#]
 }

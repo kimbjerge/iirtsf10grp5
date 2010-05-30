@@ -55,6 +55,10 @@ public :
     
     //## operation Output(SampleSet,SampleSet)
     virtual int Output(SampleSet& in, SampleSet& out);
+
+private :
+	WFDB_Time lastBeat;
+	WFDB_Sample calcPulse;
 };
 
 #endif
