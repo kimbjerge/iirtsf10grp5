@@ -41,7 +41,8 @@ public:
 	virtual void run();
 
 private:
-	ThreadPriority priority;
+        int translatePriority(int policy);
+        ThreadPriority priority;
 	bool _isAlive;
 	string name;
 	pthread_t thread;
