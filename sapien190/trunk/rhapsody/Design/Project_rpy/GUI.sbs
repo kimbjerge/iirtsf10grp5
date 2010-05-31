@@ -37,12 +37,12 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 		- _id = GUID 69ee0633-361f-4b1f-8dc4-8d7c1f351e73;
 	}
 	- _lastID = 1;
-	- weakCGTime = 5.6.2010::21:46:15;
+	- weakCGTime = 5.31.2010::18:33:42;
 	- strongCGTime = 4.26.2010::8:32:55;
 	- _defaultComposite = GUID 603b73f9-1502-4e89-b98f-f2a9bce97aff;
 	- _eventsBaseID = -1;
 	- Classes = { IRPYRawContainer 
-		- size = 2;
+		- size = 3;
 		- value = 
 		{ IClass 
 			- _id = GUID 603b73f9-1502-4e89-b98f-f2a9bce97aff;
@@ -1428,6 +1428,83 @@ I-Logix-RPY-Archive version 8.5.2 C++ 1159120
 					- _linkType = Assoc;
 					- _navigability = Navigable;
 				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID de6015fc-2079-460d-a526-50d4a249e387;
+			- _myState = 8192;
+			- _name = "Graph";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Discrete_.sbs";
+				- _subsystem = "Discrete_";
+				- _class = "";
+				- _name = "DiscretePackage";
+				- _id = GUID 3d38243a-11f9-45dc-a21d-a89341087797;
+			}
+			- _lastID = 1;
+			- weakCGTime = 5.31.2010::18:33:42;
+			- strongCGTime = 5.31.2010::18:33:42;
+			- Operations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID dbd970c6-c5f4-4641-a01b-f046da64889d;
+					- _myState = 8192;
+					- _name = "frameBufferUpdated";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "Discrete_.sbs";
+							- _subsystem = "Discrete_";
+							- _class = "";
+							- _name = "slots";
+							- _id = GUID add103ac-350c-48a1-bf15-6c3894b05e40;
+						}
+					}
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+				}
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID 84d876ad-c846-46f2-a788-3d784055f775;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _filename = "GraphicalUserInterface.sbs";
+						- _subsystem = "GraphicalUserInterface";
+						- _class = "";
+						- _name = "QWidget";
+						- _id = GUID 35dcbe10-d3d2-4a9f-9302-bd2db352c0bc;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
 			}
 			- _classModifier = Unspecified;
 		}
