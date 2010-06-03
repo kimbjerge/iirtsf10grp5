@@ -1,0 +1,62 @@
+Scrum Status 2. May:
+____________________
+
+Peter:
+	Done:
+	- Preface and Introduction 1, 2
+	- Design describe Logical View - continous package 3.4.3
+		- Solution in context, Why, implication, alternatives
+	- Merge architecture document
+	Problems:
+	-
+	Next:
+	- Reveiw
+
+Anders:
+	Done:
+	- Design describe Logical View - discrete package 3.4.2 - UK
+	- Design describe Logical View - communication package 3.4.4 - UK
+		- Solution in context, Why, implications, alternatives
+	- Development tools 3.6 - UK  
+	- Suggestion to improvemenents 3.11 - UK
+	- Inputs to conclusion 
+	Problems:
+	-
+	Next:
+	- Reveiw
+ 
+Kim:	
+	Done:
+	- Meeting minutes
+	- New class diagram with packages to describe overview (Tirsdag)
+		- Insert in report 
+	- Chapters 3.7 - 3.10 - UK version based on inputs from Anders
+	- Design describe, Logical View - process view 3.4. - UK
+	- Architecture document chapter 3.5 describe signal, slots and emit in Qt
+	- Conclusion
+	Problems:
+	- 
+	Next:
+	- Finish conclusion and review
+
+
+Next scrum meeting 3. June Thursday at 9:00:
+	- Finalize Requirement Specification
+	- Finalize Product Architecture Document
+	- Finalize Project Report
+	- Finialize, printing, CD
+	- Continue to finished 
+
+
+Action list (Backlog) to final delivery 04. june:
+____________________________________________
+
+
+Open and not completed in project:
+
+	- Implement ECG to EDR filter
+	- Implement Serial Port Interface
+	- Implement Infusion Pump thread, mediator
+	- Bug fixing - memory leak kill -> start threads
+	- Complete Use Case #2 (Select and initiate Scenario)
+	- Use cases #4 (Monitor medicine) + #5 (Manage Scenarios)
